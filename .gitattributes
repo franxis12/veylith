@@ -1,0 +1,14 @@
+# Normalize source text across checkouts.
+* text=auto eol=lf
+
+# Preserve original assets and archived snapshots byte for byte.
+public/assets/** -text
+docs/level-archive/** -text
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.wav binary
+*.mp3 binary
+*.zip binary

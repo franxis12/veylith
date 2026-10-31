@@ -7,7 +7,10 @@ const { chromium } = createRequire(import.meta.url)(
 const base = process.env.VEYLITH_URL || 'http://127.0.0.1:5187';
 const out = process.env.SMOKE_OUTPUT || 'work/exit-door';
 await mkdir(out, { recursive: true });
-const browser = await chromium.launch({ channel: 'chrome', headless: true });
+const browser = await chromium.launch({
+  channel: process.env.BROWSER_CHANNEL || 'chrome',
+  headless: true,
+});
 const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
 const errors = [],
   samples = [];

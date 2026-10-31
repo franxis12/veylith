@@ -2,7 +2,8 @@
 
 ## Scope and safety
 
-- Work in this existing Elements directory. Inspect current files before changes; preserve existing functionality and user work.
+- Work in the current repository checkout, wherever it is located. The historical local directory was named Elements; never depend on that personal path. Inspect current files before changes; preserve existing functionality and user work.
+- Start with README.md and docs/cloud-development.md. Use Dev (case-sensitive) as the development base and preserve its origin/Dev tracking. Do not force-push shared branches or promote changes to main without task authorization.
 - Keep code modular, small, focused, and strictly typed. Separate React UI, Phaser world logic, application state, and platform services.
 - Preserve the authorized movement, elemental abilities, immediate gem replacement, UI/progression, ten Earth-only Ancient Forest campaign levels and the original prototypes and development visual editor. Additional enemies, damage, shops, monetization and unrelated gameplay require a separate request.
 - Never invent missing assets, filenames, animation metadata, or fallback character art. Inspect the user's real assets before writing loaders or registries.
@@ -41,3 +42,11 @@ Rectangular colliders remain independent of visual sizes. Expose only properties
 The original forest, wind puzzle, movement sandbox and character lab remain available. Do not modify original assets to resolve cosmetic issues. Read `docs/level-editor.md`, `docs/forest-puzzles.md` and `docs/architecture.md` before extending these systems.
 
 Collectible coins are supported in canonical/editor levels. Preserve attempt-local pickup/reset, optional collection, independent colliders and playtest isolation. Campaign victories bank each saved coin ID once, in addition to the existing star entitlement. Resolve values from the canonical level, preserve prior v1 saves and validate the complete ledger; never mint currency on pickup, retry, failure or preview.
+
+## Cloud handoff and evidence
+
+- Install with `npm ci` using the supported Node version in `.nvmrc`/`package.json`. All required artwork is committed under `public/assets`; no external personal asset folder is needed. Do not regenerate originals or archived hash fixtures.
+- Run browser tests from the same environment as Vite using localhost. Keep the editor service loopback/same-origin restrictions; do not expose filesystem writes to make a public preview work. See the cloud guide for isolated Playwright setup and `BROWSER_CHANNEL=chromium`.
+- At repository handoff (2026-10-31), the full suite has 574 passing tests and three known failures: forest-1 geometry and two stale illustrated-campaign evidence checks. Preserve these checks and report failures; never skip them or replace hashes without new real solution runs.
+- The latest exit update verified one canonical victory (forest-2) and editor round trips on all ten. Historical ten-level wins are not proof of current solvability. Repair/validate the first level and rerun all solutions, negative strategies and resets before certifying the campaign again.
+- Keep transient browser output in ignored `work/`; only commit deliberately reviewed final evidence. Browser saves are local to their origin, outside Git. Never reset the user’s saves to test progression.

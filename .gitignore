@@ -16,3 +16,15 @@ ios/capacitor-cordova-ios-plugins/
 **/xcuserdata/
 **/.build/
 **/.swiftpm/
+
+# Local browser tools and temporary verification output
+work/
+playwright-report/
+test-results/
+
+# Signing material and private keys
+*.p12
+*.p8
+*.key
+*.pem
+*.mobileprovision

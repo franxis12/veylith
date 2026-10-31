@@ -24,7 +24,8 @@
     "test:illustrated:browser": "node scripts/illustrated-campaign-smoke.js",
     "test:illustrated:editor": "node scripts/illustrated-campaign-editor-smoke.js",
     "test:illustrated:negative": "node scripts/earth-puzzle-negative-smoke.js",
-    "audit:illustrated": "node scripts/integrate-illustrated-assets.js --check"
+    "audit:illustrated": "node scripts/integrate-illustrated-assets.js --check",
+    "test:exit:browser": "node scripts/exit-door-smoke.js"
   },
   "dependencies": {
     "@capacitor/app": "8.1.2",

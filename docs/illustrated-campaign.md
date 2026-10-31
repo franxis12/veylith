@@ -1,10 +1,10 @@
 # Ancient Forest — campaña ilustrada 1–10
 
-Implementación local verificada el 27 de octubre de 2026 en `/Users/francismartinez/Projects/Elements`. **10/10 niveles con victoria real, reinicio y playtest del editor comprobados.** La dificultad humana y el rendimiento en iPhone físico quedan por evaluar.
+Este documento conserva el diseño y la evidencia de diez victorias del **27 de octubre de 2026**. Esa evidencia es histórica: las ediciones posteriores del primer nivel y del personaje requieren repetir las soluciones. La entrega del 31 de octubre verifica victoria reciente en `forest-2` y ciclos de editor en los diez; hay tres tests pendientes. Consulta [el estado actual y la guía de continuidad](cloud-development.md#prioridad-al-retomar-la-campaña) y [la salida nueva](exit-door.md). La dificultad humana y el rendimiento en iPhone físico quedan por evaluar.
 
 ## Datos, conservación y fuentes
 
-- La ubicación histórica sigue siendo la ubicación real. No hay repositorio Git en esa carpeta; se hizo un archivo versionado antes de editar, con manifiesto SHA-256 en `docs/level-archive/before-illustrated-campaign-2026-10-26/`.
+- La implementación original se hizo en `/Users/francismartinez/Projects/Elements`, antes de inicializar Git. Hoy el proyecto se puede clonar desde `franxis12/veylith`, rama `Dev`. Se conserva el archivo previo a esa integración, con manifiesto SHA-256 en `docs/level-archive/before-illustrated-campaign-2026-10-26/`.
 - Ese archivo conserva todos los JSON de niveles previos, incluidos laboratorios, el catálogo ilustrado anterior, las rutas previas y el orden de campaña. `illustrated-assets-sha256.json` contiene las huellas de los **299 archivos originales** del árbol ilustrado; la prueba de integridad comprueba cada byte. No se regeneró, recortó, deformó ni sobrescribió ninguna ilustración.
 - Los saves del usuario no se abrieron ni sobrescribieron. Las pruebas usaron contextos de Chrome nuevos y un saldo de prueba en memoria. Save v1, IDs de nivel, monedas colocadas anteriores y récords se conservan. El nivel visible 8 no tenía monedas: recibe una moneda nueva de valor 1.
 - La fuente editable sigue siendo `src/game/levels/data/<id>.json`, esquema v1 del Level Editor. No hay una segunda geometría de gameplay en código. Las rutas de prueba son entradas de controles, no layouts alternativos.
@@ -349,7 +349,7 @@ npm run audit:assets
 
 Los scripts aceptan `VEYLITH_URL`, `PLAYWRIGHT_MODULE` y `SMOKE_OUTPUT`; las rutas positiva/negativa aceptan `LEVELS` para aislar un ID. El colector de evidencia exige los diez resultados actuales. Las herramientas y harness de navegador son de desarrollo y no se incorporan al juego de producción.
 
-## Limitaciones pendientes
+## Limitaciones de la verificación histórica del 27 de octubre
 
 - **Jugabilidad verificada: 10/10. Niveles bloqueados sin victoria comprobada: 0.** Queda balance humano de dificultad, claridad de pistas y tiempos de estrellas; los umbrales son una primera propuesta conservadora por encima del recorrido conocido, no un estudio de usuarios.
 - No se certifica que todas las monedas puedan recogerse en una única ruta óptima. Se preservaron sus valores e IDs, se verificó la recogida en los diez niveles y el sistema de pago/repetición con pruebas. El tercero incluye un desvío opcional desde el ascensor a la repisa izquierda para recoger su moneda y volver a la plataforma elevada.
@@ -358,7 +358,7 @@ Los scripts aceptan `VEYLITH_URL`, `PLAYWRIGHT_MODULE` y `SMOKE_OUTPUT`; las rut
 - La auditoría general incluye recursos históricos de otros elementos, laboratorios y variantes sin uso. No se declara toda la biblioteca integrada por aparecer registrada. Las tres hojas alternativas de impacto/giro avanzado se verifican por metadata y frames, pero permanecen sin consumidor de gameplay.
 - Los documentos históricos `earth-puzzles.md` y `illustrated-environments.md` describen etapas anteriores; esta especificación y los JSON canónicos son la referencia de la campaña vigente.
 
-## Resultado de comprobaciones
+## Resultado histórico de comprobaciones del 27 de octubre
 
 - Typecheck, lint y build de producción: correctos.
 - Suite completa: **570 pruebas aprobadas en 63 archivos**; sin fallos.

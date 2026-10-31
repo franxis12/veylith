@@ -12,3 +12,8 @@ docs/level-archive/before-illustrated-campaign-2026-10-26
 
 # Byte-preserved snapshot before the new exit presentation
 docs/level-archive/before-exit-door-2026-10-31
+
+# Local tooling and temporary browser evidence
+work
+playwright-report
+test-results
