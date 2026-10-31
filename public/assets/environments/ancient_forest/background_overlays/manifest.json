@@ -1,0 +1,147 @@
+{
+  "pack": "Veylith — Ancient Forest Environment Expansion",
+  "version": "1.0",
+  "source_art": "85 individually generated assets; modular variants assembled from the new art",
+  "perspective": "orthographic side elevation",
+  "lighting": "upper-left",
+  "units": "pixels",
+  "tile_grid": 128,
+  "layer_order_back_to_front": [
+    "background",
+    "behind_gameplay",
+    "behind_platforms",
+    "terrain_detail",
+    "world_decoration",
+    "behind_platforms_effects",
+    "foreground"
+  ],
+  "integration": {
+    "existing_assets_modified": false,
+    "terrain_detail_underlay": "Interior tiles contain genuine alpha cracks. Put existing terrain backing behind them; edge and corner overlays mask the front artwork only.",
+    "tile_repeat": "Repeat on the listed axis at step_px. Do not auto-trim sprites.",
+    "static_magic": "Runes, rings, trails and particles are independent static overlays.",
+    "scale": "Assets are authored in pixel space; place at 1× before applying a common world scale."
+  },
+  "assets": [
+    {
+      "id": "distant_ruins",
+      "file": "assets/environments/ancient_forest/background_overlays/distant_ruins.png",
+      "category": "background_overlays",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "background",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "distant_ruins",
+      "description": "One isolated distant ancient ruin silhouette: a small group of connected broken columns and one partial arch, muted dusty blue-green palette and low contrast, simple atmospheric soft cel shading. No sky, mountains, ground, scenery or fog rectangle. Transparent around and between architecture."
+    },
+    {
+      "id": "tree_trunk_a",
+      "file": "assets/environments/ancient_forest/background_overlays/tree_trunk_a.png",
+      "category": "background_overlays",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "background",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "tree_trunk_a",
+      "description": "One isolated tall decorative ancient tree TRUNK only, full visible root flare below, thick brown-grey twisted trunk branching into three short sawn/broken upper limbs, small moss accents. No leaf canopy, terrain or background. Side elevation, muted back-layer palette."
+    },
+    {
+      "id": "tree_trunk_b",
+      "file": "assets/environments/ancient_forest/background_overlays/tree_trunk_b.png",
+      "category": "background_overlays",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "background",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "tree_trunk_b",
+      "description": "One isolated tall decorative tree trunk variation, narrow leaning hollow trunk with a large oval knot hole, long buttress root and two broken upper branches. Whole silhouette visible. Muted desaturated olive-brown background palette, no leaves or scenery."
+    },
+    {
+      "id": "background_roots",
+      "file": "assets/environments/ancient_forest/background_overlays/background_roots.png",
+      "category": "background_overlays",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "background",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "background_roots",
+      "description": "One separate wide tangled ancient root overlay, soft desaturated brown-grey roots weaving horizontally, thin strands and transparent gaps. No host tree, earth, rocks or scene. Lower contrast intended behind gameplay."
+    },
+    {
+      "id": "background_vines",
+      "file": "assets/environments/ancient_forest/background_overlays/background_vines.png",
+      "category": "background_overlays",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        24
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.046875
+      ],
+      "intended_layer": "background",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        24
+      ],
+      "role": "isolated_sprite",
+      "source": "background_vines",
+      "description": "One separate hanging curtain of three sparse forest vines with small leaves, muted blue-green color, different lengths, graceful curving strands, transparent between all vines. Whole attachment tips and ends visible. No canopy or scene."
+    }
+  ]
+}

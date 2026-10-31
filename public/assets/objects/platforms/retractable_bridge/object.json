@@ -1,0 +1,43 @@
+{
+  "id": "retractable_bridge",
+  "label": "Puente retráctil",
+  "category": "platforms",
+  "width": 1024,
+  "height": 512,
+  "anchor": [
+    176,
+    290
+  ],
+  "notes": "Collision deck extends from x=176 to x=984 at y=290. Clip to the revealed width; housing is drawn last.",
+  "states": {
+    "retracted": {
+      "layers": [
+        "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+        "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+      ]
+    },
+    "extended": {
+      "layers": [
+        "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+        "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+      ]
+    },
+    "bridge_extending": {
+      "animation": "bridge_extending"
+    },
+    "bridge_retracting": {
+      "animation": "bridge_retracting"
+    }
+  },
+  "components": [
+    "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+    "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+    "assets/objects/platforms/retractable_bridge/bridge_extended.png"
+  ],
+  "directory": "assets/objects/platforms/retractable_bridge",
+  "defaultBack": [],
+  "defaultFront": [
+    "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+  ],
+  "thumbnail": "assets/objects/platforms/retractable_bridge/preview.png"
+}

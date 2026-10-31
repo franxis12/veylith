@@ -1,0 +1,1826 @@
+{
+  "forest-1": {
+    "version": 1,
+    "id": "forest-1",
+    "name": "El primer despertar",
+    "theme": "ancient-forest",
+    "width": 2048,
+    "height": 1100,
+    "fallLimit": 1000,
+    "background": {
+      "sky": true,
+      "forest": true,
+      "foreground": true
+    },
+    "timer": {
+      "threeStarsMs": 25000,
+      "twoStarsMs": 50000
+    },
+    "objects": [
+      {
+        "id": "spawn",
+        "type": "spawn",
+        "asset": null,
+        "x": 149,
+        "y": 476,
+        "width": 62,
+        "height": 174,
+        "rotation": 0,
+        "visible": true,
+        "layer": 1,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 62,
+          "height": 174
+        },
+        "element": "water"
+      },
+      {
+        "id": "clearing",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 0,
+        "y": 650,
+        "width": 2048,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 2016,
+          "height": 450
+        }
+      },
+      {
+        "id": "tank",
+        "type": "tank",
+        "asset": "tank",
+        "x": 528.64,
+        "y": 432.08000000000004,
+        "width": 222.72,
+        "height": 217.92,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 16.360000000000014,
+          "y": 17.91999999999996,
+          "width": 190,
+          "height": 200
+        },
+        "hits": 3,
+        "hint": "Agua: apunta al depósito y pulsa Poder (E) tres veces para llenarlo."
+      },
+      {
+        "id": "water-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 998.4,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.60000000000002,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["tank"]
+      },
+      {
+        "id": "exit",
+        "type": "exit",
+        "asset": "portal",
+        "x": 1672.5,
+        "y": 374,
+        "width": 255,
+        "height": 276,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 62.5,
+          "y": 273,
+          "width": 130,
+          "height": 6
+        },
+        "requires": ["tank"]
+      },
+      {
+        "id": "welcome",
+        "type": "label",
+        "asset": null,
+        "x": 70,
+        "y": 300,
+        "width": 440,
+        "height": 72,
+        "rotation": 0,
+        "visible": true,
+        "layer": 1,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 440,
+          "height": 72
+        },
+        "text": "AGUA → DEPÓSITO → PUERTA\nApunta a la derecha y pulsa Poder 3 veces."
+      },
+      {
+        "id": "stars",
+        "type": "label",
+        "asset": null,
+        "x": 1250,
+        "y": 310,
+        "width": 440,
+        "height": 72,
+        "rotation": 0,
+        "visible": true,
+        "layer": 1,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 440,
+          "height": 72
+        },
+        "text": "El tiempo solo cambia las estrellas.\nNo hay límite para terminar."
+      },
+      {
+        "id": "first-hop",
+        "type": "coin",
+        "asset": "coin",
+        "x": 880,
+        "y": 365,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      }
+    ]
+  },
+  "forest-2": {
+    "version": 1,
+    "id": "forest-2",
+    "name": "La llama escondida",
+    "theme": "ancient-forest",
+    "width": 2560,
+    "height": 1100,
+    "fallLimit": 1000,
+    "background": {
+      "sky": true,
+      "forest": true,
+      "foreground": true
+    },
+    "timer": {
+      "threeStarsMs": 35000,
+      "twoStarsMs": 65000
+    },
+    "objects": [
+      {
+        "id": "spawn",
+        "type": "spawn",
+        "asset": null,
+        "x": 149,
+        "y": 476,
+        "width": 62,
+        "height": 174,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 62,
+          "height": 174
+        },
+        "element": "water"
+      },
+      {
+        "id": "clearing",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 0,
+        "y": 650,
+        "width": 2560,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 2528,
+          "height": 450
+        }
+      },
+      {
+        "id": "clearing-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 52.8,
+        "y": 589.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "clearing-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 10.5,
+        "y": 290,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "fire",
+        "type": "gem",
+        "asset": "gem:fire",
+        "x": 298,
+        "y": 513,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "fire",
+        "respawn": "restart"
+      },
+      {
+        "id": "torch-1",
+        "type": "torch",
+        "asset": "torch",
+        "x": 670.6,
+        "y": 455.12,
+        "width": 58.379999999999995,
+        "height": 194.88,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": -0.6000000000000227,
+          "y": -5.1200000000000045,
+          "width": 60,
+          "height": 200
+        },
+        "hits": 1,
+        "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+      },
+      {
+        "id": "torch-2",
+        "type": "torch",
+        "asset": "torch",
+        "x": 1320.6,
+        "y": 455.12,
+        "width": 58.379999999999995,
+        "height": 194.88,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": -0.599999999999909,
+          "y": -5.1200000000000045,
+          "width": 60,
+          "height": 200
+        },
+        "hits": 1,
+        "hint": "Falta la segunda antorcha. Las encendidas permanecen activas."
+      },
+      {
+        "id": "fire-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 1598.3999999999999,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.60000000000014,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["torch-1", "torch-2"]
+      },
+      {
+        "id": "exit",
+        "type": "exit",
+        "asset": "portal",
+        "x": 2172.3999999999996,
+        "y": 373.9,
+        "width": 255.20000000000002,
+        "height": 276.1,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 62.600000000000364,
+          "y": 273.1,
+          "width": 130,
+          "height": 6
+        },
+        "requires": ["torch-1", "torch-2"]
+      },
+      {
+        "id": "sign-0",
+        "type": "label",
+        "asset": null,
+        "x": 180,
+        "y": 380,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+      },
+      {
+        "id": "sign-1",
+        "type": "label",
+        "asset": null,
+        "x": 2100,
+        "y": 305,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "SALIDA"
+      },
+      {
+        "id": "fire-instruction",
+        "type": "label",
+        "asset": null,
+        "x": 540,
+        "y": 300,
+        "width": 440,
+        "height": 72,
+        "rotation": 0,
+        "visible": true,
+        "layer": 1,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 440,
+          "height": 72
+        },
+        "text": "FUEGO → DOS ANTORCHAS\nCada gema reemplaza tu forma al tocarla."
+      },
+      {
+        "id": "torch-bonus",
+        "type": "coin",
+        "asset": "coin",
+        "x": 1450,
+        "y": 365,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      }
+    ]
+  },
+  "forest-3": {
+    "version": 1,
+    "id": "forest-3",
+    "name": "El camino del aire",
+    "theme": "ancient-forest",
+    "width": 2944,
+    "height": 1100,
+    "fallLimit": 1000,
+    "background": {
+      "sky": true,
+      "forest": true,
+      "foreground": true
+    },
+    "timer": {
+      "threeStarsMs": 30000,
+      "twoStarsMs": 60000
+    },
+    "objects": [
+      {
+        "id": "spawn",
+        "type": "spawn",
+        "asset": null,
+        "x": 149,
+        "y": 196,
+        "width": 62,
+        "height": 174,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 62,
+          "height": 174
+        },
+        "element": "water"
+      },
+      {
+        "id": "upper-clearing",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 0,
+        "y": 370,
+        "width": 768,
+        "height": 730,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 736,
+          "height": 730
+        }
+      },
+      {
+        "id": "upper-clearing-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 52.8,
+        "y": 309.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "upper-clearing-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 10.5,
+        "y": 10,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "launch",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 768,
+        "y": 650,
+        "width": 512,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 480,
+          "height": 450
+        }
+      },
+      {
+        "id": "launch-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 820.8,
+        "y": 589.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "launch-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 778.5,
+        "y": 290,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "landing",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 2048,
+        "y": 650,
+        "width": 896,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 864,
+          "height": 450
+        }
+      },
+      {
+        "id": "landing-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 2100.8,
+        "y": 589.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "landing-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 2058.5,
+        "y": 290,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "earth-decoy",
+        "type": "gem",
+        "asset": "gem:earth",
+        "x": 348,
+        "y": 48,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "earth",
+        "respawn": "restart"
+      },
+      {
+        "id": "air",
+        "type": "gem",
+        "asset": "gem:air",
+        "x": 948,
+        "y": 513,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "air",
+        "respawn": "restart"
+      },
+      {
+        "id": "crossing",
+        "type": "crossing",
+        "asset": null,
+        "x": 1264,
+        "y": 0,
+        "width": 800,
+        "height": 650,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 800,
+          "height": 650
+        },
+        "landingY": 650,
+        "hint": "Recoge Aire. Salta desde el borde y mantén Salto para planear hasta el otro lado."
+      },
+      {
+        "id": "wind-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 2238.4,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.5999999999999,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["crossing"]
+      },
+      {
+        "id": "exit",
+        "type": "exit",
+        "asset": "portal",
+        "x": 2572.3999999999996,
+        "y": 373.9,
+        "width": 255.20000000000002,
+        "height": 276.1,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 62.600000000000364,
+          "y": 273.1,
+          "width": 130,
+          "height": 6
+        },
+        "requires": ["crossing"]
+      },
+      {
+        "id": "sign-0",
+        "type": "label",
+        "asset": null,
+        "x": 180,
+        "y": 100,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+      },
+      {
+        "id": "sign-1",
+        "type": "label",
+        "asset": null,
+        "x": 2500,
+        "y": 305,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "SALIDA"
+      },
+      {
+        "id": "sign-2",
+        "type": "label",
+        "asset": null,
+        "x": 924,
+        "y": 295,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "AIRE →\nSalta cerca del borde\ny mantén Salto"
+      },
+      {
+        "id": "sign-3",
+        "type": "label",
+        "asset": null,
+        "x": 220,
+        "y": 5,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "¿Más peso para cruzar?"
+      },
+      {
+        "id": "sign-4",
+        "type": "label",
+        "asset": null,
+        "x": 800,
+        "y": 350,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "La bajada no tiene retorno.\nRecoge Aire antes del abismo."
+      },
+      {
+        "id": "landing-reward",
+        "type": "coin",
+        "asset": "coin",
+        "x": 2190,
+        "y": 530,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      }
+    ]
+  },
+  "forest-4": {
+    "version": 1,
+    "id": "forest-4",
+    "name": "El peso de la decisión",
+    "theme": "ancient-forest",
+    "width": 2560,
+    "height": 1100,
+    "fallLimit": 1000,
+    "background": {
+      "sky": true,
+      "forest": true,
+      "foreground": true
+    },
+    "timer": {
+      "threeStarsMs": 40000,
+      "twoStarsMs": 75000
+    },
+    "objects": [
+      {
+        "id": "spawn",
+        "type": "spawn",
+        "asset": null,
+        "x": 149,
+        "y": 476,
+        "width": 62,
+        "height": 174,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 62,
+          "height": 174
+        },
+        "element": "water"
+      },
+      {
+        "id": "clearing",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 0,
+        "y": 650,
+        "width": 2560,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 2528,
+          "height": 450
+        }
+      },
+      {
+        "id": "clearing-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 52.8,
+        "y": 589.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "clearing-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 10.5,
+        "y": 290,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "earth",
+        "type": "gem",
+        "asset": "gem:earth",
+        "x": 298,
+        "y": 513,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "earth",
+        "respawn": "restart"
+      },
+      {
+        "id": "heavy-block",
+        "type": "block",
+        "asset": "block",
+        "x": 618,
+        "y": 587.7142857142857,
+        "width": 64,
+        "height": 62.285714285714285,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 6.285714285714334,
+          "width": 64,
+          "height": 56
+        },
+        "plateId": "plate"
+      },
+      {
+        "id": "plate",
+        "type": "plate",
+        "asset": "plate",
+        "x": 990,
+        "y": 624.25,
+        "width": 120,
+        "height": 25.75,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 28,
+          "y": 24.75,
+          "width": 64,
+          "height": 1
+        },
+        "requiredWeight": 1,
+        "hint": "Recoge Tierra. Camina contra el bloque para encajarlo en la placa."
+      },
+      {
+        "id": "wall",
+        "type": "wall",
+        "asset": "wallIntact",
+        "x": 1580,
+        "y": 32,
+        "width": 100,
+        "height": 618,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 100,
+          "height": 618
+        },
+        "hint": "Con Tierra, acércate a la pared agrietada y pulsa Poder (E)."
+      },
+      {
+        "id": "plate-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 1168.3999999999999,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.60000000000014,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["plate"]
+      },
+      {
+        "id": "exit",
+        "type": "exit",
+        "asset": "portal",
+        "x": 2192.3999999999996,
+        "y": 373.9,
+        "width": 255.20000000000002,
+        "height": 276.1,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 62.600000000000364,
+          "y": 273.1,
+          "width": 130,
+          "height": 6
+        },
+        "requires": ["plate", "wall"]
+      },
+      {
+        "id": "sign-0",
+        "type": "label",
+        "asset": null,
+        "x": 180,
+        "y": 380,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+      },
+      {
+        "id": "sign-1",
+        "type": "label",
+        "asset": null,
+        "x": 2120,
+        "y": 305,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "SALIDA"
+      },
+      {
+        "id": "sign-2",
+        "type": "label",
+        "asset": null,
+        "x": 850,
+        "y": 325,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "TIERRA → BLOQUE → PLACA\nAl encajar, salta sobre el bloque."
+      },
+      {
+        "id": "plate-reward",
+        "type": "coin",
+        "asset": "coin",
+        "x": 1160,
+        "y": 520,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      }
+    ]
+  },
+  "forest-5": {
+    "version": 1,
+    "id": "forest-5",
+    "name": "El santuario elemental",
+    "theme": "ancient-forest",
+    "width": 6144,
+    "height": 1100,
+    "fallLimit": 1000,
+    "background": {
+      "sky": true,
+      "forest": true,
+      "foreground": true
+    },
+    "timer": {
+      "threeStarsMs": 75000,
+      "twoStarsMs": 130000
+    },
+    "objects": [
+      {
+        "id": "spawn",
+        "type": "spawn",
+        "asset": null,
+        "x": 149,
+        "y": 476,
+        "width": 62,
+        "height": 174,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 62,
+          "height": 174
+        },
+        "element": "water"
+      },
+      {
+        "id": "first-trials",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 0,
+        "y": 650,
+        "width": 2816,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 2784,
+          "height": 450
+        }
+      },
+      {
+        "id": "first-trials-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 52.8,
+        "y": 589.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "first-trials-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 10.5,
+        "y": 290,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "last-trial",
+        "type": "terrain",
+        "asset": "ground",
+        "x": 3584,
+        "y": 650,
+        "width": 2560,
+        "height": 450,
+        "rotation": 0,
+        "visible": true,
+        "layer": -5,
+        "collider": {
+          "enabled": true,
+          "x": 16,
+          "y": 0,
+          "width": 2528,
+          "height": 450
+        }
+      },
+      {
+        "id": "last-trial-fern",
+        "type": "decoration",
+        "asset": "fern",
+        "x": 3636.8,
+        "y": 589.2,
+        "width": 94.4,
+        "height": 60.800000000000004,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 94.4,
+          "height": 60.800000000000004
+        }
+      },
+      {
+        "id": "last-trial-column",
+        "type": "decoration",
+        "asset": "column",
+        "x": 3594.5,
+        "y": 290,
+        "width": 99,
+        "height": 360,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 99,
+          "height": 360
+        }
+      },
+      {
+        "id": "fire",
+        "type": "gem",
+        "asset": "gem:fire",
+        "x": 1168,
+        "y": 513,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "fire",
+        "respawn": "restart"
+      },
+      {
+        "id": "air",
+        "type": "gem",
+        "asset": "gem:air",
+        "x": 2408,
+        "y": 513,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "air",
+        "respawn": "restart"
+      },
+      {
+        "id": "earth",
+        "type": "gem",
+        "asset": "gem:earth",
+        "x": 3898,
+        "y": 513,
+        "width": 104,
+        "height": 104,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 30,
+          "y": 12,
+          "width": 44,
+          "height": 80
+        },
+        "element": "earth",
+        "respawn": "restart"
+      },
+      {
+        "id": "tank",
+        "type": "tank",
+        "asset": "tank",
+        "x": 438.64,
+        "y": 432.08000000000004,
+        "width": 222.72,
+        "height": 217.92,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 16.360000000000014,
+          "y": 17.91999999999996,
+          "width": 190,
+          "height": 200
+        },
+        "hits": 3,
+        "hint": "Agua: apunta al depósito y pulsa Poder (E) tres veces para llenarlo."
+      },
+      {
+        "id": "torch-1",
+        "type": "torch",
+        "asset": "torch",
+        "x": 1520.6,
+        "y": 455.12,
+        "width": 58.379999999999995,
+        "height": 194.88,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": -0.599999999999909,
+          "y": -5.1200000000000045,
+          "width": 60,
+          "height": 200
+        },
+        "hits": 1,
+        "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+      },
+      {
+        "id": "torch-2",
+        "type": "torch",
+        "asset": "torch",
+        "x": 1890.6,
+        "y": 455.12,
+        "width": 58.379999999999995,
+        "height": 194.88,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": -0.599999999999909,
+          "y": -5.1200000000000045,
+          "width": 60,
+          "height": 200
+        },
+        "hits": 1,
+        "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+      },
+      {
+        "id": "crossing",
+        "type": "crossing",
+        "asset": null,
+        "x": 2800,
+        "y": 0,
+        "width": 800,
+        "height": 650,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 800,
+          "height": 650
+        },
+        "landingY": 650,
+        "hint": "Recoge Aire. Salta desde el borde y mantén Salto para planear hasta el otro lado."
+      },
+      {
+        "id": "heavy-block",
+        "type": "block",
+        "asset": "block",
+        "x": 4218,
+        "y": 587.7142857142857,
+        "width": 64,
+        "height": 62.285714285714285,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 6.285714285714334,
+          "width": 64,
+          "height": 56
+        },
+        "plateId": "plate"
+      },
+      {
+        "id": "plate",
+        "type": "plate",
+        "asset": "plate",
+        "x": 4540,
+        "y": 624.25,
+        "width": 120,
+        "height": 25.75,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 28,
+          "y": 24.75,
+          "width": 64,
+          "height": 1
+        },
+        "requiredWeight": 1,
+        "hint": "Recoge Tierra. Camina contra el bloque para encajarlo en la placa."
+      },
+      {
+        "id": "wall",
+        "type": "wall",
+        "asset": "wallIntact",
+        "x": 5050,
+        "y": 32,
+        "width": 100,
+        "height": 618,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 100,
+          "height": 618
+        },
+        "hint": "Con Tierra, acércate a la pared agrietada y pulsa Poder (E)."
+      },
+      {
+        "id": "water-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 798.4,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.60000000000002,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["tank"]
+      },
+      {
+        "id": "fire-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 1998.3999999999999,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.60000000000014,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["tank", "torch-1", "torch-2"]
+      },
+      {
+        "id": "wind-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 3588.4,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.5999999999999,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["crossing"]
+      },
+      {
+        "id": "plate-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 4688.400000000001,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.59999999999945,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["plate"]
+      },
+      {
+        "id": "final-door",
+        "type": "door",
+        "asset": "doorClosed",
+        "x": 5298.400000000001,
+        "y": 30.799999999999955,
+        "width": 403.2,
+        "height": 619.2,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 155.59999999999945,
+          "y": 1.2000000000000455,
+          "width": 92,
+          "height": 618
+        },
+        "initiallyOpen": false,
+        "requires": ["tank", "torch-1", "torch-2", "crossing", "plate", "wall"]
+      },
+      {
+        "id": "exit",
+        "type": "exit",
+        "asset": "portal",
+        "x": 5722.4,
+        "y": 373.9,
+        "width": 255.20000000000002,
+        "height": 276.1,
+        "rotation": 0,
+        "visible": true,
+        "layer": -2,
+        "collider": {
+          "enabled": true,
+          "x": 62.600000000000364,
+          "y": 273.1,
+          "width": 130,
+          "height": 6
+        },
+        "requires": ["tank", "torch-1", "torch-2", "crossing", "plate", "wall"]
+      },
+      {
+        "id": "sign-0",
+        "type": "label",
+        "asset": null,
+        "x": 180,
+        "y": 380,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+      },
+      {
+        "id": "sign-1",
+        "type": "label",
+        "asset": null,
+        "x": 5650,
+        "y": 305,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "SALIDA"
+      },
+      {
+        "id": "sign-2",
+        "type": "label",
+        "asset": null,
+        "x": 2460,
+        "y": 295,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "AIRE →\nSalta cerca del borde\ny mantén Salto"
+      },
+      {
+        "id": "sign-3",
+        "type": "label",
+        "asset": null,
+        "x": 4400,
+        "y": 325,
+        "width": 400,
+        "height": 70,
+        "rotation": 0,
+        "visible": true,
+        "layer": 2,
+        "collider": {
+          "enabled": false,
+          "x": 0,
+          "y": 0,
+          "width": 400,
+          "height": 70
+        },
+        "text": "TIERRA → BLOQUE → PLACA\nAl encajar, salta sobre el bloque."
+      },
+      {
+        "id": "sanctuary-water",
+        "type": "coin",
+        "asset": "coin",
+        "x": 780,
+        "y": 530,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      },
+      {
+        "id": "sanctuary-air",
+        "type": "coin",
+        "asset": "coin",
+        "x": 3630,
+        "y": 530,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      },
+      {
+        "id": "sanctuary-earth",
+        "type": "coin",
+        "asset": "coin",
+        "x": 5260,
+        "y": 530,
+        "width": 40,
+        "height": 40,
+        "rotation": 0,
+        "visible": true,
+        "layer": 3,
+        "collider": {
+          "enabled": true,
+          "x": 0,
+          "y": 0,
+          "width": 40,
+          "height": 40
+        },
+        "value": 5
+      }
+    ]
+  }
+}

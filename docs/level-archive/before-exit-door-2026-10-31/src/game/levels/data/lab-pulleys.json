@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "id": "lab-pulleys",
+  "name": "Laboratorio · Polea y contrapeso",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 600,
+      "y": 226,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "instructions",
+      "asset": null,
+      "x": 70,
+      "y": 65,
+      "width": 1100,
+      "height": 90,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "Tierra pesa 2: permanece en la plataforma para bajarla. Al salir, vuelve y el contrapeso desciende. R reinicia."
+    },
+    {
+      "id": "platform",
+      "asset": "world:pulley_platform",
+      "x": 400,
+      "y": 250,
+      "width": 512,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 30,
+        "y": 150,
+        "width": 452,
+        "height": 30,
+        "enabled": true
+      },
+      "kind": "pulley_platform",
+      "effect": {
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 256,
+        "enabled": false
+      },
+      "hint": "Enlaza un contrapeso separado por ID. El peso baja la plataforma; el contrapeso sube la misma distancia.",
+      "behavior": {
+        "kind": "pulley",
+        "counterweightId": "weight",
+        "travelY": 200,
+        "speed": 100,
+        "mode": "weight",
+        "threshold": 1,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "type": "world"
+    },
+    {
+      "id": "weight",
+      "asset": "world:pulley_counterweight",
+      "x": 1040,
+      "y": 480,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 24,
+        "y": 22,
+        "width": 80,
+        "height": 98,
+        "enabled": true
+      },
+      "kind": "pulley_counterweight",
+      "effect": {
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "enabled": false
+      },
+      "hint": "Pieza sólida independiente. Enlázala desde una sola plataforma de polea; reserva su recorrido inverso.",
+      "behavior": {
+        "kind": "pulleyWeight",
+        "mass": 1
+      },
+      "state": "idle",
+      "type": "world"
+    }
+  ]
+}

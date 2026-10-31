@@ -1,0 +1,537 @@
+{
+  "version": 1,
+  "id": "forest-3",
+  "name": "El camino de las alturas",
+  "theme": "ancient-forest",
+  "width": 4864,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 55000,
+    "twoStarsMs": 110000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 546,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "ferry-dock",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 720,
+      "width": 768,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 680
+      }
+    },
+    {
+      "id": "ferry-lever",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 496,
+      "y": 600,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "kind": "interactive_lever",
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": 8,
+        "y": -54,
+        "width": 112,
+        "height": 174
+      },
+      "hint": "Activa la plataforma y espera en el muelle: siempre vuelve."
+    },
+    {
+      "id": "ferry",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 745.1428571428571,
+      "y": 605,
+      "width": 365.7142857142857,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 22.857142857142858,
+        "y": 115,
+        "width": 320,
+        "height": 14
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "requires": ["ferry-lever"],
+        "autostart": false,
+        "travelX": 768,
+        "travelY": 0,
+        "speed": 95,
+        "mode": "pingpong"
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 365.7142857142857,
+        "height": 256
+      },
+      "hint": "El ascensor vuelve: espera en el borde y sube cuando llegue."
+    },
+    {
+      "id": "arrival-dock",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1888,
+      "y": 720,
+      "width": 512,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 680
+      }
+    },
+    {
+      "id": "cliff-steps-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2400,
+      "y": 680,
+      "width": 256,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 720
+      }
+    },
+    {
+      "id": "cliff-steps-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2656,
+      "y": 640,
+      "width": 256,
+      "height": 760,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 760
+      }
+    },
+    {
+      "id": "cliff-steps-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2912,
+      "y": 600,
+      "width": 256,
+      "height": 800,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 800
+      }
+    },
+    {
+      "id": "cliff-steps-4",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3168,
+      "y": 560,
+      "width": 256,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 840
+      }
+    },
+    {
+      "id": "cliff-court",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3424,
+      "y": 560,
+      "width": 512,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 840
+      }
+    },
+    {
+      "id": "cliff-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 3636,
+      "y": 285,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "cliff-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 3852.3564356435645,
+      "y": 415,
+      "width": 486.65346534653463,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 83.64356435643565,
+        "y": 145,
+        "width": 384,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["cliff-wall"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 486.65346534653463,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "cliff-exit",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 4320,
+      "y": 560,
+      "width": 512,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 840
+      }
+    },
+    {
+      "id": "end-edge",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 4736,
+      "y": 560,
+      "width": 128,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 840
+      }
+    },
+    {
+      "id": "ferry-lake",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 768,
+      "y": 910,
+      "width": 3552,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 3552,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 3552,
+        "height": 410
+      },
+      "hint": "Tierra se hunde. Cruza por las plataformas."
+    },
+    {
+      "id": "landing-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 3000,
+      "y": 370,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 4492.5,
+      "y": 284,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["ferry-lever", "cliff-wall"]
+    },
+    {
+      "id": "ferry-sign",
+      "type": "label",
+      "asset": null,
+      "x": 250,
+      "y": 400,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "Espera la plataforma en el muelle.\nBaja en la otra orilla."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 659.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-1",
+      "type": "decoration",
+      "asset": "column",
+      "x": 618,
+      "y": 360,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-4",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1933,
+      "y": 659.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-9",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 3469,
+      "y": 499.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-12",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 4365,
+      "y": 499.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    }
+  ]
+}

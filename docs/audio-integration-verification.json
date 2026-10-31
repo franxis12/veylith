@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-21",
+  "automatedTests": {
+    "files": 43,
+    "passed": 371
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      "Trusted gesture unlocks one context; real movement, jump, landing and forest ambience play",
+      "Resize, pause, mute, volume persistence, automatic background pause, resume, restart and unmount clean up audio",
+      "A real portal collision plays one victory, three earned stars, record and reward; teardown cancels the result sequence",
+      "All 74 registered WAVs fetch and decode in the browser"
+    ],
+    "errors": [],
+    "diagnostics": {
+      "voices": 0,
+      "cached": 53,
+      "pending": 0,
+      "failed": [],
+      "contextState": "running",
+      "scopes": 1
+    }
+  },
+  "worldRegression": {
+    "passed": true,
+    "checks": [
+      "Lever input activates elevator; the real player rides upward",
+      "Restart restores lift and lever state",
+      "Horizontal fan blocks Water, Fire and Air; Earth moves against it",
+      "Matching elements traverse liquid surfaces; wrong elements restart the attempt",
+      "Actual Water shots activate the wheel; Fire cannot",
+      "Boiler receives Water, then Fire after an actual gem pickup; no manual transformation",
+      "Earth timed strike destroys wall after configured hits and removes collision",
+      "Lever extends and retracts bridge; collision follows completed extension"
+    ],
+    "errors": []
+  },
+  "worldRegressionTimingNote": "Original world-smoke assertions passed with wall-clock waits multiplied by 2.5 for the headless browser frame rate. No game simulation or physics changed.",
+  "audioFilesPreserved": {
+    "wav": 74,
+    "originalMp3": 74,
+    "allHashesMatch": true
+  },
+  "nativeDevice": "not performed; physical iPhone audio-session and listening checks pending",
+  "foundationChecks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "format": "passed"
+  }
+}

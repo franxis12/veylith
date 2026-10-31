@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "id": "lab-conveyors",
+  "name": "Laboratorio · Cinta transportadora",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 460,
+      "y": 316,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "instructions",
+      "asset": null,
+      "x": 70,
+      "y": 65,
+      "width": 1100,
+      "height": 90,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "La cinta transporta al jugador y al bloque. Poder junto al interruptor alterna la cinta. El bloque puede caer a su placa."
+    },
+    {
+      "id": "belt",
+      "asset": "world:conveyor",
+      "x": 400,
+      "y": 450,
+      "width": 640,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 12,
+        "y": 40,
+        "width": 616,
+        "height": 56,
+        "enabled": true
+      },
+      "kind": "conveyor",
+      "effect": {
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 128,
+        "enabled": false
+      },
+      "hint": "Transporta jugador, bloques y espejos apoyados. Segmentos centrales entre dos extremos; velocidad en unidades por segundo.",
+      "behavior": {
+        "kind": "conveyor",
+        "direction": 1,
+        "speed": 120,
+        "segments": 3,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "type": "world"
+    },
+    {
+      "id": "plate",
+      "asset": "plate",
+      "x": 1000,
+      "y": 610,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "type": "plate",
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque pesado en la placa."
+    },
+    {
+      "id": "cargo",
+      "asset": "block",
+      "x": 700,
+      "y": 304,
+      "width": 192,
+      "height": 186,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 6,
+        "width": 192,
+        "height": 180
+      },
+      "type": "block",
+      "plateId": "plate"
+    },
+    {
+      "id": "belt-switch",
+      "asset": "world:fire_switch",
+      "x": 430,
+      "y": 362,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 28,
+        "y": 76,
+        "width": 72,
+        "height": 44
+      },
+      "kind": "fire_switch",
+      "effect": {
+        "enabled": true,
+        "x": -45,
+        "y": -40,
+        "width": 218,
+        "height": 168
+      },
+      "behavior": {
+        "kind": "switch",
+        "action": "toggle",
+        "trigger": "interact",
+        "targets": ["belt"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Envía activar, desactivar o alternar a los IDs elegidos; también emite su propia señal.",
+      "type": "world"
+    }
+  ]
+}

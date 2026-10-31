@@ -1,0 +1,821 @@
+{
+  "pack": "Veylith — Ancient Forest Environment Expansion",
+  "version": "1.0",
+  "source_art": "85 individually generated assets; modular variants assembled from the new art",
+  "perspective": "orthographic side elevation",
+  "lighting": "upper-left",
+  "units": "pixels",
+  "tile_grid": 128,
+  "layer_order_back_to_front": [
+    "background",
+    "behind_gameplay",
+    "behind_platforms",
+    "terrain_detail",
+    "world_decoration",
+    "behind_platforms_effects",
+    "foreground"
+  ],
+  "integration": {
+    "existing_assets_modified": false,
+    "terrain_detail_underlay": "Interior tiles contain genuine alpha cracks. Put existing terrain backing behind them; edge and corner overlays mask the front artwork only.",
+    "tile_repeat": "Repeat on the listed axis at step_px. Do not auto-trim sprites.",
+    "static_magic": "Runes, rings, trails and particles are independent static overlays.",
+    "scale": "Assets are authored in pixel space; place at 1× before applying a common world scale."
+  },
+  "assets": [
+    {
+      "id": "slope_rising_right",
+      "file": "assets/environments/ancient_forest/terrain_expansion/slope_rising_right.png",
+      "category": "terrain_expansion",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "slope_rising_right",
+      "description": "One decorative natural terrain slope OVERLAY rising from lower-left to upper-right at approximately 30 degrees. Thin grassy mossy rim on a narrow broken grey rock-and-brown-earth wedge. Fully visible free-standing wedge silhouette, no rectangular backdrop. Side elevation, no platform scenery, no character."
+    },
+    {
+      "id": "slope_rising_left",
+      "file": "assets/environments/ancient_forest/terrain_expansion/slope_rising_left.png",
+      "category": "terrain_expansion",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "slope_rising_left",
+      "description": "One decorative natural terrain slope OVERLAY rising from lower-right to upper-left at approximately 30 degrees. Thin grassy mossy rim on a narrow broken grey rock-and-brown-earth wedge. Upper-left lighting. Fully visible isolated wedge, no rectangular backdrop or scenery."
+    },
+    {
+      "id": "broken_ground_a",
+      "file": "assets/environments/ancient_forest/terrain_expansion/broken_ground_a.png",
+      "category": "terrain_expansion",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "broken_ground_a",
+      "description": "One broken grassy ground crest overlay. Two uneven earth lips with a small natural eroded gap between them and hanging root tips, scattered embedded grey stone. Compact wide horizontal shape, both lips connect near the bottom as one piece, transparent surroundings, no loose flying particles or scene."
+    },
+    {
+      "id": "broken_ground_b",
+      "file": "assets/environments/ancient_forest/terrain_expansion/broken_ground_b.png",
+      "category": "terrain_expansion",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "broken_ground_b",
+      "description": "One collapsed ground-edge overlay: flat grassy top interrupted by a jagged bite, exposed brown soil, angular grey fractured stones, three hanging roots. Wide compact isolated piece, visibly different from a symmetrical crack. No background, no particles outside the object."
+    },
+    {
+      "id": "dirt_interior",
+      "file": "assets/environments/ancient_forest/terrain_expansion/dirt_interior.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "repeatable_detail_overlay",
+      "repeat": {
+        "axes": [
+          "x",
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "usage": "Place over an existing terrain backing fill; transparent cracks expose the backing.",
+      "source": "soil_interior_source"
+    },
+    {
+      "id": "stone_interior",
+      "file": "assets/environments/ancient_forest/terrain_expansion/stone_interior.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "repeatable_detail_overlay",
+      "repeat": {
+        "axes": [
+          "x",
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "usage": "Place over an existing terrain backing fill; transparent cracks expose the backing.",
+      "source": "stone_interior_source"
+    },
+    {
+      "id": "underground_stone",
+      "file": "assets/environments/ancient_forest/terrain_expansion/underground_stone.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "repeatable_detail_overlay",
+      "repeat": {
+        "axes": [
+          "x",
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "usage": "Place over an existing terrain backing fill; transparent cracks expose the backing.",
+      "source": "underground_stone_source"
+    },
+    {
+      "id": "grass_rim_a",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_rim_a.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "repeatable_rim",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "id": "grass_rim_b",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_rim_b.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "repeatable_rim",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "id": "grass_top_a",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_top_a.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "top_terrain_tile",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "connection_family": "dirt"
+    },
+    {
+      "id": "grass_top_b",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_top_b.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "top_terrain_tile",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "connection_family": "dirt"
+    },
+    {
+      "id": "grass_stone_top",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_stone_top.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "top_terrain_tile",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "connection_family": "stone"
+    },
+    {
+      "id": "dirt_edge_left",
+      "file": "assets/environments/ancient_forest/terrain_expansion/dirt_edge_left.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "outer_edge",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "grass_corner_left",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_corner_left.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "outer_top_corner",
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "bottom_corner_left",
+      "file": "assets/environments/ancient_forest/terrain_expansion/bottom_corner_left.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "outer_bottom_corner",
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "inner_corner_left",
+      "file": "assets/environments/ancient_forest/terrain_expansion/inner_corner_left.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "concave_corner",
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "dirt_edge_right",
+      "file": "assets/environments/ancient_forest/terrain_expansion/dirt_edge_right.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "outer_edge",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "grass_corner_right",
+      "file": "assets/environments/ancient_forest/terrain_expansion/grass_corner_right.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "outer_top_corner",
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "bottom_corner_right",
+      "file": "assets/environments/ancient_forest/terrain_expansion/bottom_corner_right.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "outer_bottom_corner",
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "inner_corner_right",
+      "file": "assets/environments/ancient_forest/terrain_expansion/inner_corner_right.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "concave_corner",
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "dirt_bottom_edge",
+      "file": "assets/environments/ancient_forest/terrain_expansion/dirt_bottom_edge.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "outer_bottom_edge",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connection_family": "dirt",
+      "requires_underlay": true
+    },
+    {
+      "id": "dirt_to_stone",
+      "file": "assets/environments/ancient_forest/terrain_expansion/dirt_to_stone.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "material_transition",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "connections": {
+        "left": "dirt",
+        "right": "stone"
+      }
+    },
+    {
+      "id": "stone_to_dirt",
+      "file": "assets/environments/ancient_forest/terrain_expansion/stone_to_dirt.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "material_transition",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "connections": {
+        "left": "stone",
+        "right": "dirt"
+      }
+    },
+    {
+      "id": "cliff_wall_overlay",
+      "file": "assets/environments/ancient_forest/terrain_expansion/cliff_wall_overlay.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        128,
+        0
+      ],
+      "anchor_normalized": [
+        1,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        0
+      ],
+      "role": "repeatable_outer_wall_overlay",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "usage": "Overlap the rightmost 16 pixels over the terrain backing; open air is on the left."
+    },
+    {
+      "id": "mossy_ledge_segment",
+      "file": "assets/environments/ancient_forest/terrain_expansion/mossy_ledge_segment.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "surface_y": 32,
+      "role": "repeatable_ledge",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "id": "exposed_roots_a",
+      "file": "assets/environments/ancient_forest/terrain_expansion/exposed_roots_a.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        64,
+        16
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.125
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        64,
+        16
+      ],
+      "role": "root_overlay",
+      "source": "tree_roots_a"
+    },
+    {
+      "id": "exposed_roots_b",
+      "file": "assets/environments/ancient_forest/terrain_expansion/exposed_roots_b.png",
+      "category": "terrain_expansion",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        64,
+        16
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.125
+      ],
+      "intended_layer": "terrain_detail",
+      "alpha": "straight RGBA",
+      "anchor": [
+        64,
+        16
+      ],
+      "role": "root_overlay",
+      "source": "tree_roots_b"
+    }
+  ]
+}

@@ -1,0 +1,3712 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-10-27T04:27:45.140Z",
+  "passed": true,
+  "methodology": "Real Chrome / Phaser Arcade, normal movement/jump/power input only; no teleport, solved-signal injection or speed changes. Isolated remembered v1 selection allows each level entry. Editor copies are disposable. This is automated solvability evidence, not human difficulty certification.",
+  "sourceHashes": {
+    "src/app/App.tsx": "449bd0eec1cf7ae5762543d6a103c3346fd203c687b0ce6f9599cae77ca65e20",
+    "src/app/config.ts": "68846f633a5887e1b817106d844159be19374fb10047d3fd147244197f817548",
+    "src/components/dev/CharacterPreviewPanel.tsx": "ebdd5b4d17ecaf9308b2d3fa11ae195571949aa1631f3aad0a917f7de95cdd24",
+    "src/components/dev/character-preview.css": "1e5f543409fdcfac5abfeef7b2a9ff20fc5d0066ef6a679eb53126151708e8b4",
+    "src/components/game/ForestHud.tsx": "ee89a9ea7b071b42631d6206f9b140b93052fcea82299a6823bab481ba160c26",
+    "src/components/game/GameCanvas.tsx": "f6ce960425db2e21b86f270087ccb123f2ca5a93760a87eda126372245bc4d7d",
+    "src/components/game/GameplayControls.tsx": "756ef6d7143917dd52e94ca2ae1b01deeb5396906987847fbb135ec436d9a2ab",
+    "src/components/game/GestureControls.tsx": "7c44fc76f5185284538fb97f82cac5d636f2ebe57990d0fe06cd1168e711d09d",
+    "src/components/game/PuzzleHints.tsx": "8b55f1b81f5f63640c5d8748ce01953b4da6cdeb6ee24c1eb09c9aadc2024234",
+    "src/components/game/PuzzleHud.tsx": "588ea8a2c90a1fca38adcd66ead290ca209c7ff89d289eed5e5f1c94ca9b88dc",
+    "src/components/game/ReflectorControls.tsx": "1b70f03ec73bee4bfdde86e5843afead5e44d1d57c1adf7991cfacc9eed2f662",
+    "src/components/game/RunHud.tsx": "6ff9609475801b04a8a567f51c515b47481fc19bbc9f0a2065be4efd9bc887d0",
+    "src/components/game/WorldControls.tsx": "cf2ead327f4a788c591edeabbcde702df7c6911f875508b96fea31c42b38f4d4",
+    "src/components/game/gameplay-controls.css": "c65e68830368aef68e60496c3e584c944de91fdb1276a2ed06ed05a305098cc5",
+    "src/components/game/reflector-controls.css": "51764234f4fc12ff3c6c9c9be8f183cb069748a586a7feee4a8ecb475fa1e85b",
+    "src/components/ui/Art.tsx": "a1d9a55616100b8eea14f9887d502b927cd7cf7bda705a560607af78958c9df0",
+    "src/components/ui/AudioRuntime.tsx": "fff370ed590af7c582cb159d3858bb3784c2ef67e2cc6629ac2f98a07b313848",
+    "src/components/ui/AudioSettings.tsx": "51e686d2433f2d99bb5ded092cb7b2b7e7799a8d1f82f205093b0bad53004e97",
+    "src/components/ui/MenuScreens.tsx": "32820989730036806ca2761bcd41da9621e63d63a24d279033907fb2ec22ba6f",
+    "src/components/ui/OptionsMenu.tsx": "67a83c2cbd3ea391521d50b02b41ee20de4dc74b7d41884764313d054072ef3e",
+    "src/components/ui/SpriteAnimation.tsx": "01724c208c7fe5f01bd6c574e54295482e4157da4b54f20a203d9ee5d22bc039",
+    "src/components/ui/assets.ts": "7ab166c45087c00796a4f96ab31421b7072be03329c1856c58c0a164b91d6591",
+    "src/components/ui/audio.css": "9b993a246490703bb23b7ffe1afb171f85a4b8fce6724c8c0effc7ed6ff886b3",
+    "src/components/ui/formatTime.ts": "e28877f006820a27168caec195b5da76de5d1c5fbf47747b775af42d3472ef1a",
+    "src/components/ui/level-map.css": "e335d1ac41c6f047bea3507433e7210dd8eec29567c8cb58d9cad7f99abf1725",
+    "src/components/ui/options.css": "a195cb3f3f58685658961b33f1e050829938ba8872196c9e38ef3dfa4f6dc57c",
+    "src/components/ui/ui.css": "53620a5fd26b32c392b248355fcc0544867534c624381d38a18735b9bfb3fa8d",
+    "src/components/ui/victory-animation.css": "684bc19fd9e68e2cc06fc85acd44f07d8174cb1aeadc0ad66ebff357e278fca4",
+    "src/editor/AdvancedInspector.tsx": "e07c0858113f5825de5ee3eb72fbfaa28f929b720ce13da38e39840cfa05e987",
+    "src/editor/AssetLibrary.tsx": "b571ed218673acc0ba84ae1d6571589063ffb21370cfdbf199e7f4e87322e705",
+    "src/editor/CommandTargets.tsx": "6129937a70717d1b14655386b41352cb60cc21651b1804714b4e0c1c71cdca66",
+    "src/editor/EditorApp.tsx": "80d5a5f8b51c2f8024a0cd143b6299807ee5bffa5148e8c6fd95cb8e0e81f01f",
+    "src/editor/EditorCanvas.tsx": "92555549d73fc466b5494fd1aeb79d0c75dd5829129941ab626db5aef052a9d4",
+    "src/editor/EditorScene.ts": "2ca28bf54b94ae6d93cffacc3590a7adc4cdd745964689886822cbb424e01ff2",
+    "src/editor/EnvironmentInspector.tsx": "41a12c6c2acc3631f841f20073cbe9f84c1b06bc274535eab73722a0af30266e",
+    "src/editor/IllustratedInspector.tsx": "b10b4ee7aceb953372e856d03c48ed24219decb96bf96b90a9353ca2d16e914d",
+    "src/editor/Inspector.tsx": "808f698edb34901ceeef6af8db14146b0f62ac9fa93609da1cee62bf0311f8a2",
+    "src/editor/LeverInspector.tsx": "1a3b36f968e0f2ca4a4e38eb47103bd4b2322b0e3d97e08821de59fe9b0ce315",
+    "src/editor/PlayerCollisionInspector.tsx": "82148b6392e4f526fd48411cb8b08ebdef942d804a1a65bd2d014e3317b5cf01",
+    "src/editor/Playtest.tsx": "1da2e6dcdb1c17d7ea36c1f9a15d0b4581d51ea0ebd5129e83921b808119eddf",
+    "src/editor/StageOneInspector.tsx": "b86d6af79fbc038778dfea67f87db9d0a25c0aebec8bd2345736a1c0cbe7c5e2",
+    "src/editor/WorldInspector.tsx": "efbf9cbbd6bb0a24ad6c7dc6d7e881fcfaccd156b010ba18b1d9632089555e2b",
+    "src/editor/api.ts": "d4a9eb1c6423a7b4790b8d7b612026ecf2a0db554b19c55768ad759153e8b0cb",
+    "src/editor/editor.css": "11c5766984372319e5c8875d550464fb120f92fc3677af1dd947e39b429538c3",
+    "src/editor/environmentResize.ts": "bd436aa362332ca8e480421837fa592650d9d1eed84ee9c39be0b7e8f74d6d5a",
+    "src/editor/geometry.ts": "1a9a80104c0cdb342d17a16cd382deb59d589a648e49c71595716bb79cbc4ca8",
+    "src/editor/library.ts": "7db9fc4e81d3b1c4940a3b96f5ee15b80008dc958528ca47f20428c74632b8ef",
+    "src/editor/model.ts": "22b13d45d995634b962d903ed2ea89d403d8fce4679199bfcf816cb581e08690",
+    "src/game/assets/advancedArt.ts": "3110efcb180a41329bac6a169eb165933f9a771354858946b2d22cc691669cc1",
+    "src/game/assets/advancedManifest.json": "dbed15855ac35814b417429df741ea568ce188a633306ec2d9757cea9e757dcf",
+    "src/game/assets/characterSheets.ts": "f501d23e07375916556bde2f97c276649aa28e25261c6b22bd3011546b37c5bd",
+    "src/game/assets/coinAsset.ts": "902fec42a89699d1ec33bd6d6f70abdd04fb4f77cd9c56b9bd5306f27aad0a7e",
+    "src/game/assets/effectSheets.ts": "205b11cfcf4dabd12585b9e00b3e7ab16a90e8079de78b1cf9505c4bdda9c0fb",
+    "src/game/assets/environmentAssets.ts": "896c805f51c1861594becc8b0d32c5b8ef2eeb51ea6e4cbffa5912d113c3f009",
+    "src/game/assets/environmentCatalog.ts": "e2d01994ccea15d1a3d234ddb03da855de55a20f5a3165a41f59eb91e134cabb",
+    "src/game/assets/environmentManifest.json": "1108e56499921a246982193cedce42b94da263d5a4715de5c16f8f8528908833",
+    "src/game/assets/forestAnimations.ts": "7a4657bf380608e5daaa3303e5cc2dbb4a05872c820ca2948b0daeb87e51bff7",
+    "src/game/assets/forestAssets.ts": "45fdfd1adc922cfc518ba123a755c3570a3353412845184cad32daf4bd97c81a",
+    "src/game/assets/gemSheets.ts": "b07d1dc3ed84fa3f551bb8574f0f171eb3566e21d29794920a5f1c9e1c34256d",
+    "src/game/assets/illustratedAssets.ts": "93fb2e97ebd822e2f2af48a18d7190fda97f6bd003a80bc40a5856b0ec998dea",
+    "src/game/assets/illustratedCatalog.ts": "1ebfba759d49e926a8ebd4aa9c291b817a993fff7b3a94ce2534c34c5013030c",
+    "src/game/assets/illustratedManifest.json": "799c65f972b9adae4f0f927d145f42ffe22d5dafbcb9d8e24ee267bed3b69292",
+    "src/game/assets/loadCharacterAssets.ts": "4c36bfa51c022fb9deb0627b2cf87413af859761f34d4e7f789d21fdb0bd2ac9",
+    "src/game/assets/optionalSheet.ts": "563b2e5cd3078de3181f027422034e64f0d5e7612c47b502ceea38b42f6462c7",
+    "src/game/assets/worldAssets.ts": "1467fb90b57b596575940552447444785aee7f49ac61dd09523582c8d3f2f5b9",
+    "src/game/assets/worldManifest.json": "8b018894a82d641301332753ba9795027322dd9ee44a40e2a2a98dfefdb6e795",
+    "src/game/config/elements.ts": "f1c036b6bd5e1592241334b40c4acadbd0841a537e8884ddd11da1035e2fda94",
+    "src/game/config/settings.ts": "f4b79edc27078b3e10397c9d4820f0d1d5997f0a16a32ac43481ca5580783658",
+    "src/game/core/Game.ts": "8ea96533c06a8cc88308092545adbd4982f1a5fae025b225aaab92de57b40015",
+    "src/game/core/GameConfig.ts": "1cf0f79bb3e0e369f242a6574645466cddd0ca78361b8c9f1f36bc5193b455fc",
+    "src/game/core/GameOptions.ts": "0e0258fa5c5433225e780be2ee48d5ae473f5f578d4b150e3738029413918e53",
+    "src/game/core/WorldCamera.ts": "a8cdd87f519dc6e37d6fd03f647ae0fa4da85d59fc4ab774b53ec02008d792a3",
+    "src/game/dev/CharacterPreviewScene.ts": "44ab463bb94aef1380dbf574270208cb5cab7936893f7a44acb3a59e6b364de3",
+    "src/game/dev/createPreviewSession.ts": "e10fa73f3af65707112eb1d534f47df164c2e713412960380e0dc0404542fa93",
+    "src/game/dev/elementPreviewKeyboard.ts": "f183d5b78da0f7e8a81fa195d0a500486a6cbd7c6b43d6c6255c65c7d36e2685",
+    "src/game/dev/previewBridge.ts": "42dc993a2b11450ae6b6e5b3470eae165d69294b455483ec2cd37bf5890f9a23",
+    "src/game/entities/player/PlayablePlayer.ts": "38831653d3427507338d4da8a6ec0dcbee9b39f1b026740bbfc23790428bb225",
+    "src/game/entities/player/Player.ts": "093fe2c3bfc26242d856efbf518919074cee899606dc7ce96fa3cfae6aa02113",
+    "src/game/entities/player/PlayerMotor.ts": "64253345f7b5446acc6922f14bb0b38fd3875dfb6ef6dd903dde9cd8912d6c9e",
+    "src/game/entities/player/PlayerPowers.ts": "65eb70e578c5099fd2844f86ab580f1cb7266005db140fe3742b5ed137cfb0b9",
+    "src/game/entities/player/PushAnimationState.ts": "195ea0347752f1f6d358e705d22389b6dc04405a9b6182d1ef23bb4e5c25a713",
+    "src/game/levels/LevelProgress.ts": "067fe1735313bd9800936236df9e8f4b36e3be979a5a1725cdc60877ac783194",
+    "src/game/levels/ancientForest/AncientForest.ts": "188a6ea13f71d2fae296b82c48c4f70e52ea5f32481c158cda4a5c63ce0e99a9",
+    "src/game/levels/ancientForest/ForestAnimatedProps.ts": "c4976a627bb78b88c794024d92fe9dee12cfbeb8f578b85a9f031fd0b3b54b6a",
+    "src/game/levels/ancientForest/ForestBackdrop.ts": "24bb826077fab099f298153fcb76db678a651fdc346df3310d13aada0d1989bc",
+    "src/game/levels/ancientForest/ForestState.ts": "bfdd0c08aaede52d724f01f035c3a015cc493bc8b04f50d3fba0f8868e144e17",
+    "src/game/levels/ancientForest/ForestTerrain.ts": "1846fa49a5d2377419df0fa93ae63849903e6fb7744338a502e7570e15888baf",
+    "src/game/levels/ancientForest/layout.ts": "0424654fd22d463beee9aa3afa4c9c933fe901f2f122c1fea9508bde51182de2",
+    "src/game/levels/campaignOrder.ts": "3f86b96a707363f5dfc7cdfb94ee3cdbc562bf7a6b9840f177bd512f949cd84c",
+    "src/game/levels/catalog.ts": "f5f7944024fea5c09ed1d8f969ead71b939f1273ab958ced9478f35a3052fb73",
+    "src/game/levels/data/forest-1.json": "7eda9041e2bf9194114cfc482846e68ebd3483eccca9739535744c51e41a6e2b",
+    "src/game/levels/data/forest-10.json": "3d04d77d5bf4ddb71ad033d9cc1bad0c6d9ef6297f7c660cf9ffc0dc39c28f22",
+    "src/game/levels/data/forest-2.json": "b91e66bd54e6852f8c0f36d708040d03fbbb4d5efb246ede73a09fb8ba3631df",
+    "src/game/levels/data/forest-3.json": "316a338aaf9aa0dbfbed80b52a71f06f8873bf21431f7dbeba25a3d572b6472a",
+    "src/game/levels/data/forest-4.json": "21ff127635cffa374ba633d188419edad086ec2fd1b446593bff9f40e1be960b",
+    "src/game/levels/data/forest-5.json": "4fb22c324943013288b31a14dc04df08dae4fbdd2ee0ecca5fd620fbc38f2b93",
+    "src/game/levels/data/forest-6.json": "f2a2b6a57b4fd19c4deb0a98cb7fafb28c53b324ee2b4e10c1b45e3dd4b58aed",
+    "src/game/levels/data/forest-7.json": "dc59ee12863af5ca942a454f60ffaed7a37e974ca185b05a8a5715b0990f9c5d",
+    "src/game/levels/data/forest-8.json": "e4e37d9a58f5f856170b9d563625b2de7ab88002b0b6ea40aaf41c94bffb7fb8",
+    "src/game/levels/data/forest-9.json": "d87fa40e735a450e7eb22c4a9e96cc1e036d8825b31ce09e490ccd67ccec00ac",
+    "src/game/levels/data/lab-bounce.json": "8eebe78b98efdb481434b7f7a0414416eefc8a4f8478fa9ac3b13a8a0e5c10a7",
+    "src/game/levels/data/lab-conveyors.json": "e40f37d3f78cac37e75a02d20ee9b881e603f704c1d85fc8df95cc2d824e4b12",
+    "src/game/levels/data/lab-directional-gates.json": "5cb273dc0e7fa9c3d50092f5decffaeef558a25ad6dd27fee386e0ed9b3eb5cc",
+    "src/game/levels/data/lab-energy-barrier.json": "6589418a6bed2d23773986f610376dd2a4ece309b7a41fb43868cff21e7f0b5c",
+    "src/game/levels/data/lab-floating-block.json": "b008a669f40101e9f0614109861e574d87f7f7a67aa1c6343c760fedd73e3413",
+    "src/game/levels/data/lab-illustrated.json": "e32d4d7ac5c53c566ac6742eed5a2f208b17e730fe2dec857bf519f91f42fbbd",
+    "src/game/levels/data/lab-lever-return.json": "08d5a53578edf40dd56f8e1f192b84a52f70a3aa2ff5c499aa2c60903b693c8f",
+    "src/game/levels/data/lab-multiple-blocks.json": "42ebdea555e9d21be2cf21588b28e4d187da93c162ed4591473cf6b8469c96d4",
+    "src/game/levels/data/lab-phase-platform.json": "e626bf653b17296e22ca43c8e2103ff896f373fdb04b00ea9d1935404b033bae",
+    "src/game/levels/data/lab-pulleys.json": "7195931f6d31af00d8524e92cb15ca72e5abbd1833e01e72f905cb85fc5d7032",
+    "src/game/levels/data/lab-reflectors.json": "e176ab721233297ba0a0e615544a6934a98a542638e33bf80ce1802384e0df3e",
+    "src/game/levels/data/lab-switch.json": "621548b42895583d99b816a42772645b13e2fe0d106ff7b185fbe7d3fe19929b",
+    "src/game/levels/data/lab-timed-door.json": "55025c8e4d929cc7c0db4a693ff3a0020614fc385a922baa8cd16e6004d6465c",
+    "src/game/levels/earthValidation.ts": "416f4e537683b12980abe9ceb51baa805e78be8d1f4566e689157241ea0f524f",
+    "src/game/levels/firstPuzzle/FirstPuzzle.ts": "df2313fff9a2ae86d7895c1dcbc9353aef0154624f76c8a7f6aaccc0d6d1c815",
+    "src/game/levels/firstPuzzle/FirstPuzzleState.ts": "60d7a1d310220c8d9221799102e8abb80735def00433f2bc50667eb57d73bd78",
+    "src/game/levels/firstPuzzle/layout.ts": "5bd111e4186ce7a1f178c57273047dd7c62c757ad5dcec78cb1f380de8831478",
+    "src/game/levels/forestPuzzles/BlockStackTransport.ts": "eec6994fe6a90b9ea5265e821e807a70f9f7ba78c4d556006a7261a6dca664de",
+    "src/game/levels/forestPuzzles/ForestPuzzle.ts": "ddd1b87d6743f4948ace774d9e0e1e3051ea99df3dd79beaa8dba15e2d1ff20c",
+    "src/game/levels/forestPuzzles/ForestPuzzleState.ts": "dc46153e25277bdd2d0bd6f17605742a8420957242133a8bd9ef419c3fa541ab",
+    "src/game/levels/forestPuzzles/HeavyBlock.ts": "a7d24971d46392730fe4aba1838c76d545da55a035467ca9232cda59c4feb0ae",
+    "src/game/levels/forestPuzzles/heavyBlockRules.ts": "23359253f680048c0c152a73b3951f33ca760b604d3ebba4310999539d6c0859",
+    "src/game/levels/forestPuzzles/layouts.ts": "17b6aea7b9a80925a91a29f51c60c81e3c87d6e68d467090c8b2699cee8f0557",
+    "src/game/levels/gems.ts": "e4b0ca705ac133ac392c6c9024991396c85daeebaa94bc4afa625a50df73cf83",
+    "src/game/levels/levelSelection.ts": "f30fea789021de2deb9f3add698c1f1ef93d0d99768f8a432eebde1fce4a2615",
+    "src/game/levels/schema/animateObject.ts": "2968a6b11d048cf1e8e0e9d8ff0965b4a3a635e3d481b528bb6fddf14c8c56f0",
+    "src/game/levels/schema/compile.ts": "5511fefbf471f93e8e4a3dffe1eec7dacf9544ee3c952b0e9a49f4444720bec6",
+    "src/game/levels/schema/playerCollision.ts": "3fa7699bf902b1b40f6ee8adcc623a87ab886f0ee33a0647f02de37f62e77b3d",
+    "src/game/levels/schema/renderEnvironment.ts": "1c90bea9afb5ce99d4b9f76e154115bf6d167cc34c3d5db4d83951febffd0dd8",
+    "src/game/levels/schema/renderIllustration.ts": "dd5c5ca63f0a0edb03eda933d4436a685ffa2019f482a35c1377c468b3beffe2",
+    "src/game/levels/schema/renderObject.ts": "9847374c756dca67bd3c2aaec100af57eafda9d18d1b06554392057c576e14e6",
+    "src/game/levels/schema/types.ts": "2a79eb7c5e7f418f0a200c484491d9fa17d8e892f476cbab194b427632bc0eb1",
+    "src/game/levels/schema/validate.ts": "41ac8fdd24a4bf41d2322e467e1eccef94157d76053de360c8f802eeaad8d414",
+    "src/game/levels/schema/validateIllustration.ts": "f289e94b9467fed95ed97417a109204089a2b1fff956bd887fc580a728a8553f",
+    "src/game/levels/testLevel.ts": "7042b9c287775aebd4318ef227575413b7bee73ec6562b0d59808486412ef494",
+    "src/game/scenes/BootScene.ts": "feecb228381258f773d01b5cdc96331c84fba76eff91b361fc1b9c599ec1664c",
+    "src/game/scenes/MainScene.ts": "d25bca905ca024b3c1ed173034eee72c72435cc953fd67f4e9cbecc438479e1d",
+    "src/game/session/RunSession.ts": "80c0280d5f95f378c7ee9ae64e006f690137194f0f17215a690a5608b5d2ec24",
+    "src/game/systems/animation/PlayerAnimationController.ts": "90904b438958d8ef30876c9f80cc6cc8bc5e8b626fc8fb2e8030a064a2e6111a",
+    "src/game/systems/animation/alignment.ts": "b3228752c4acd8e9110b98b151b3a765983e7bf60e309481768e94a1185e0568",
+    "src/game/systems/animation/animationRegistry.ts": "e8275569efe375fcf705ec8dc65935b42e13c03955c547f8aceac4ec0ca2f1c5",
+    "src/game/systems/audio/MovementAudio.ts": "a99cb069ae8dbc1bb7f4f0c976d491f594103237f000b43ae3e1762f2c3e7095",
+    "src/game/systems/audio/SceneSound.ts": "5644ba0b306ea06fbbadb7bad618afa1602b2daee94a93b40871cff44543d18b",
+    "src/game/systems/audio/WorldAudio.ts": "82f3c2615400d8ee04bfb5c6887a14e399c37b53be4225a420f3e7e0187edbea",
+    "src/game/systems/audio/propSounds.ts": "a8ef70d1190f88f3df96f8d6d9c2edbb645446ab08d1abcd13a702d798df9613",
+    "src/game/systems/coins/CoinEffects.ts": "6713054200356ace6af43b3fdbd2d1c8e7cbecb73f971f24665efc12ca143154",
+    "src/game/systems/coins/CoinState.ts": "9a9a4d99f15f23bea073f7c5e9f114948ebe47659394e80a88d3cf40e805a9af",
+    "src/game/systems/gems/GemState.ts": "4377aedbb22ae6fb1fec57a54cd7af5e35f9f9b5e0647f5faaea994da43083d1",
+    "src/game/systems/gems/GemSystem.ts": "9ae421e51b62bddeb0ecb1dbdb44d567957e5408a72a552285f114c36959a812",
+    "src/game/systems/gems/TransformationEffect.ts": "3b3965d8818fa26e33c69dd7b48f8f92c167e86530b76d854aefaade89695161",
+    "src/game/systems/input/ActionState.ts": "c5a101a633d402a87faa48dde91403914e9a1fc5492f3ee8bd830867f1e5654c",
+    "src/game/systems/input/TouchGestures.ts": "ca81c6a9ac4a3e7ecf9069fd6b667294a83373adcde877a07e11a7e5a7114d6f",
+    "src/game/systems/input/actions.ts": "1e28b0df410609eea1351ff9eceb971fa737c35722941441457a9d3f746eb77b",
+    "src/game/systems/input/gameplayKeyboard.ts": "97bd7b6646243aa841b9036d599394533a2538a494776d754b84395348044daf",
+    "src/game/systems/powers/PowerEffects.ts": "7f264a4f20bbecd4d0ebb66a9f91ac31423e5caba98ff5fa4def6b186958b67b",
+    "src/game/systems/powers/breakableStrikeHit.ts": "513e8904e586a4806e9ea305f9d0480931feef87fc0796928d152a3ca8be2311",
+    "src/game/systems/powers/projectileCollision.ts": "4b0bf914a0d0b3a1838f202f038719dd84857d0c73c125766367d453d2e6da35",
+    "src/game/systems/world/AdvancedOptics.ts": "0a80e77cd91df1f9bd50cfa91b298fbdf9c58fe1cb8aa9fbd375988dcc5fe399",
+    "src/game/systems/world/AdvancedPhysics.ts": "2ad66781b3286c5e10676dcc738a6515b7cc94ca0b26b7466af18320befb4435",
+    "src/game/systems/world/DirectionalGates.ts": "3cae4e60e8280f7317be7c00e8f697db213e07c862e6d23d2ff2f3f103284e61",
+    "src/game/systems/world/PlatformMotion.ts": "f6d84352f80146881e070002d9574427ac5227f65ebfe00a4e51fa1680087eb2",
+    "src/game/systems/world/PulleyMotion.ts": "a4742c7f2845c78ca57a04ce215af9e63fbe405ad95238cfc54c9b94294d85bb",
+    "src/game/systems/world/ReflectorInteraction.ts": "36febf424d0a483504c4f7c68ad5dd45a80f2b46e5edbb64a5c1cb6be3134f91",
+    "src/game/systems/world/StageOnePhysics.ts": "fc304d458af19044197a712c089caefac54b05cc8aad8fe40dd8646a098a75c6",
+    "src/game/systems/world/StageOneVisuals.ts": "661eda684598f56b44430a6e5078dfd8df313dd2b4f9222092a80b3cdda9455f",
+    "src/game/systems/world/SurfaceTransport.ts": "5791391c4c2b8a77bd65465e79946d96afecbbff23aa68a96ceacf7f1aa8c2d0",
+    "src/game/systems/world/WindMotion.ts": "affbce677f92679b09fdc7fb95d08db5cf4d4dc074b4c5d434cfffb3b37c70eb",
+    "src/game/systems/world/WorldState.ts": "fdcabe72c47f18ea8037ece8518f0f04449384f9e30e410b0813cec06be9d685",
+    "src/game/systems/world/WorldSystem.ts": "93f07c8367eb505d3b8b3075d767e3d25d4c874a7fd532abd37765d5e560b394",
+    "src/game/systems/world/advancedPresets.ts": "ed7a626a1de7fdff395d4433aafcee205df37d82ad94f72fcacdf5014357a5d2",
+    "src/game/systems/world/advancedRules.ts": "100a0ad0fef1cec2c749455d922b522bfac0be4acbba36e1a34d96daa1cf80df",
+    "src/game/systems/world/advancedTypes.ts": "3e0a9ec0688ae22e3c021cee359b2e92c40fc66bece6810c0d0a351df1cd948d",
+    "src/game/systems/world/mechanismCollision.ts": "cbd571f098e4a83beb20888599da96da185939c9d20858acc08db1553e862439",
+    "src/game/systems/world/mechanismPhysics.ts": "edbb00d9c53bd6a1534b4dc2f1ce2205611f1c40aa114646088a1af8e08c2bce",
+    "src/game/systems/world/presets.ts": "d523f493c8d7b8e27af42e8cd550bcbbba59d806c2abdea9ece17290ecf1a83b",
+    "src/game/systems/world/reflectorAngles.ts": "b16f657504575110863db7f658edbe71e20645b12dd3cb3eff7102a29fe91ea2",
+    "src/game/systems/world/types.ts": "44f0f97c2a97590f989888ec14607b8734c6d8727fe7f4552f87e211421c2b65",
+    "src/game/systems/world/validateAdvanced.ts": "d6e77176ad67535e288d52d21463a8f6df65c37a1ea4f97cdd4fd50f46f6fd27",
+    "src/game/systems/world/validateWorld.ts": "f06e64f1fe1d8ade60f47040c858f2008583bc372ecd1fda275143e3252211e0",
+    "src/game/types/character.ts": "8f6578283990141cc4105a9db87da7234243eb1424cedb6e6167a8a254fc82c2",
+    "src/main.tsx": "f0312d1d2abff84efccb2c95aa3567d5e7ca314d79d4f9e3283fdb43a525e184",
+    "src/services/audio/AudioEngine.ts": "bdbc946291107cf21c3ea03aebb78ee336c0c0578ae11d3b0fc54b9421f872a9",
+    "src/services/audio/AudioScope.ts": "8faf8ec1fb23dc62f8e5478703223e183373830f867641189cc1490b70fcd0ad",
+    "src/services/audio/catalog.ts": "a93092cc802033173cfc14d5ef6222fe33acd47c2dd38a1b29288db53bad4854",
+    "src/services/audio/gameAudio.ts": "0168deb192ebdc12fd6bbe46b8ab79cdb29ba0e120c3b767a4bc3a665b940b8e",
+    "src/services/audio/preferences.ts": "2938416bbae27b12a89aabfdfd594303721a9a5b7d1dabaffb825fbf0a636be2",
+    "src/services/audio/runAudio.ts": "42d2558270ef1de1481ddb374c617393714d42de20f1592143d752c7597f3efa",
+    "src/services/i18n/earthLevelText.ts": "dc4a759da5fb4a79d03d12ef0403ef196baea1a87b995367345b9741b43ca192",
+    "src/services/i18n/illustratedLevelText.ts": "1c88132ef5aa7df6dc657ebebf64130c679be6624ff7729e29fc2c1b4bd8c3d2",
+    "src/services/i18n/levelText.ts": "7b741899458a19512635ff73b6f6b4d12cdecdfbd300fa784b1fdef368087f33",
+    "src/services/i18n/localizeGameText.ts": "409a46171d28e1eb0bad9f594be51156de5075d1c2de9f361c782a32273bc934",
+    "src/services/i18n/messages.ts": "c3fec0fbd31a7e8aea6800551b396b94c780cf5379624f15699f0ef03d2ad236",
+    "src/services/i18n/translate.ts": "63a87e2addc5fa23c1a0ff6e5bc1ffb37077f9ff1593b51c5f0022419634e670",
+    "src/services/i18n/useTranslation.ts": "55dba5b9da4df87e4a3e6f38497c99f3d86d0446ce69db330f3ce03355f7fdff",
+    "src/services/lifecycle/observeAppActivity.ts": "cfdd085b84b7c63cad0b66f759a30062026af7b0c189ca5ee497c3a0b4b24229",
+    "src/services/progress/progress.ts": "40bf576eb88b0728357b3c7edf66e7fb4bbaa9672842ae7ea31a7e45ac62afc1",
+    "src/stores/appStore.ts": "9c2898e99dca67a332bd2d38129f1760f2a9a67e53ca4c1e18afea9a7a3a66ba",
+    "src/stores/preferencesStore.ts": "c4195fc1214d161614e94d41d4d20c71dd5d7d4c1c616a33d7105381d4a0a276",
+    "src/stores/progressStore.ts": "d540c4da4bbca8fa02ab555f15d6256a00fff12ecf31be4498d996711e46cd48",
+    "src/styles/global.css": "649b9221e30bc5109edaac253971adb4c286bd0d8b3a836cd437dc5fbe57611c"
+  },
+  "scripts": {
+    "scripts/illustrated-campaign-smoke.js": "deb92d726da24a55372269743050cea303c3b72cb6de4b082a0af2a1ed62f686",
+    "scripts/earth-puzzle-negative-smoke.js": "01b57da5b34360734db5a0f7fd28becfffecd068e65d016c7261c2b83be032de",
+    "scripts/illustrated-campaign-editor-smoke.js": "9796aba71c0f75e8df08fc18f4e947090d0b95691fbfef79a785a0139eecf6de",
+    "scripts/illustrated-routes.json": "2117a4a0031816ace9009ac48451ebac6c46a4c4d246f40b5dc37e4edfce4aeb"
+  },
+  "solutions": [
+    {
+      "id": "forest-1",
+      "passed": true,
+      "victory": {
+        "level": "forest-1",
+        "elapsedMs": 14358.299999952316,
+        "bestTimeMs": 14358.299999952316,
+        "stars": 3,
+        "earnedCoins": 103,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 3,
+      "nextRememberedLevel": "forest-2",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 346,
+      "elapsedMs": 14358.299999952316,
+      "sha256": "affd4d3b9fadcf6eb223d764860b2e3cd284b912487fd7b5697d925ffbda0fa4",
+      "trace": [
+        {
+          "step": ["m", 375],
+          "x": 378.74999999999994,
+          "feet": 753,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 487.5],
+          "x": 494.49999999999955,
+          "feet": 625.5,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 712.5],
+          "x": 719.0833333333339,
+          "feet": 525,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 945],
+          "x": 952.5000000000018,
+          "feet": 525,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["push", "seal-plate", "left"],
+          "x": 846,
+          "feet": 525,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 945],
+          "x": 952.1666666666677,
+          "feet": 525,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 1087.5],
+          "x": 1092.0000000000005,
+          "feet": 412.5,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 1455],
+          "x": 1459.4999999999936,
+          "feet": 525,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 1725],
+          "x": 1728.9999999999886,
+          "feet": 570,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["cast"],
+          "x": 1733.083333333322,
+          "feet": 570,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["upper-seal"]
+        },
+        {
+          "step": ["j", 1920],
+          "x": 1923.4999999999973,
+          "feet": 412.5,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["upper-seal"]
+        },
+        {
+          "step": ["j", 2130],
+          "x": 2135.8333333333285,
+          "feet": 645,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["upper-seal"]
+        },
+        {
+          "step": ["m", 2430],
+          "x": 2433.916666666673,
+          "feet": 645,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["upper-seal"]
+        },
+        {
+          "step": ["end"],
+          "x": 2433.916666666673,
+          "feet": 645,
+          "block": {
+            "x": 483.75,
+            "top": 625.5,
+            "bottom": 753,
+            "width": 112.5,
+            "height": 127.5,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["upper-seal"]
+        }
+      ]
+    },
+    {
+      "id": "forest-2",
+      "passed": true,
+      "victory": {
+        "level": "forest-2",
+        "elapsedMs": 14010.5,
+        "bestTimeMs": 14010.5,
+        "stars": 3,
+        "earnedCoins": 107,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 7,
+      "nextRememberedLevel": "forest-6",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 352,
+      "elapsedMs": 14010.5,
+      "sha256": "8ac2c09b449b2cecfe594e4f439016f383300b7f115d00c73ab25bb28d39afdc",
+      "trace": [
+        {
+          "step": ["m", 195],
+          "x": 203.08333333333343,
+          "feet": 787.5,
+          "block": {
+            "x": 293.75,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 150,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 292.5],
+          "x": 302.91666666666686,
+          "feet": 652.5,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 532.5],
+          "x": 535.6666666666656,
+          "feet": 502.5,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 750],
+          "x": 756.1666666666675,
+          "feet": 352.5,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 945],
+          "x": 948.083333333336,
+          "feet": 406.5555555555555,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["push", "west-plate", "right"],
+          "x": 1136.5,
+          "feet": 495,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 1365],
+          "x": 1369.2499999999957,
+          "feet": 495,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 1530],
+          "x": 1536.6666666666592,
+          "feet": 360,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 1590],
+          "x": 1593.8333333333248,
+          "feet": 360,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 1830],
+          "x": 1835.4166666666626,
+          "feet": 360,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["push", "east-plate", "left"],
+          "x": 1668.5,
+          "feet": 360,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 1860],
+          "x": 1860.416666666663,
+          "feet": 360,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 2085],
+          "x": 2093.166666666658,
+          "feet": 627,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 2265],
+          "x": 2270.583333333338,
+          "feet": 477,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 2430],
+          "x": 2433.9166666666774,
+          "feet": 477,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["end"],
+          "x": 2433.9166666666774,
+          "feet": 477,
+          "block": {
+            "x": 296.25,
+            "top": 652.5,
+            "bottom": 787.5,
+            "width": 112.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        }
+      ]
+    },
+    {
+      "id": "forest-6",
+      "passed": true,
+      "victory": {
+        "level": "forest-6",
+        "elapsedMs": 19627.700000047684,
+        "bestTimeMs": 19627.700000047684,
+        "stars": 3,
+        "earnedCoins": 105,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 5,
+      "nextRememberedLevel": "forest-7",
+      "artNodes": 10,
+      "animatedInstances": 7,
+      "restartVerified": true,
+      "restartMs": 358,
+      "elapsedMs": 19627.700000047684,
+      "sha256": "a2f0da1e82d2bb6527bc905d1a11591e40f94fff7e76c4f9d6f8f94198121a4b",
+      "trace": [
+        {
+          "step": ["m", 315],
+          "x": 317.41666666666697,
+          "feet": 787.5,
+          "block": null,
+          "signals": []
+        },
+        {
+          "step": ["cast"],
+          "x": 321.5000000000003,
+          "feet": 787.5,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["wait", 1500],
+          "x": 321.5000000000003,
+          "feet": 787.5,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["j", 487.5],
+          "x": 492.9999999999995,
+          "feet": 615,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["m", 870],
+          "x": 872.7500000000019,
+          "feet": 615,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["m", 997.5],
+          "x": 999.3333333333364,
+          "feet": 632.5555555555554,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["feet", 825],
+          "x": 1003.4166666666698,
+          "feet": 840,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["m", 885],
+          "x": 880.9166666666687,
+          "feet": 840,
+          "block": null,
+          "signals": ["west-call", "west-lift"]
+        },
+        {
+          "step": ["cast"],
+          "x": 876.8333333333353,
+          "feet": 840,
+          "block": null,
+          "signals": ["west-call", "west-lift", "lower-seal"]
+        },
+        {
+          "step": ["m", 1020],
+          "x": 1023.8333333333367,
+          "feet": 840,
+          "block": null,
+          "signals": ["west-call", "west-lift", "lower-seal"]
+        },
+        {
+          "step": ["j", 1282.5],
+          "x": 1289.25,
+          "feet": 810,
+          "block": null,
+          "signals": ["west-call", "west-lift", "lower-seal"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1289.25,
+          "feet": 760.1666666666666,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["ride", "cross-lift", 0.99],
+          "x": 1289.25,
+          "feet": 355.00000000000074,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["j", 1072.5],
+          "x": 1064.6666666666708,
+          "feet": 487.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["j", 1282.5],
+          "x": 1289.25,
+          "feet": 352.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["j", 1485],
+          "x": 1489.3333333333296,
+          "feet": 352.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["m", 1710],
+          "x": 1713.9166666666588,
+          "feet": 352.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["j", 1920],
+          "x": 1926.2499999999882,
+          "feet": 637.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["m", 2040],
+          "x": 2040.5833333333194,
+          "feet": 637.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["j", 2295],
+          "x": 2297.8333333333258,
+          "feet": 502.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["m", 2430],
+          "x": 2432.5833333333308,
+          "feet": 502.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        },
+        {
+          "step": ["end"],
+          "x": 2432.5833333333308,
+          "feet": 502.5,
+          "block": null,
+          "signals": [
+            "west-call",
+            "west-lift",
+            "lower-seal",
+            "lift-call",
+            "cross-lift"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forest-7",
+      "passed": true,
+      "victory": {
+        "level": "forest-7",
+        "elapsedMs": 13187.900000095367,
+        "bestTimeMs": 13187.900000095367,
+        "stars": 3,
+        "earnedCoins": 105,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 5,
+      "nextRememberedLevel": "forest-8",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 341,
+      "elapsedMs": 13187.900000095367,
+      "sha256": "345d81fdabd34b884a44d19868eb3b3893b894fc1c3e9a9c8f751596b377f095",
+      "trace": [
+        {
+          "step": ["m", 277.5],
+          "x": 279.3333333333337,
+          "feet": 787.5,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["j", 420],
+          "x": 426.916666666666,
+          "feet": 705,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["j", 525],
+          "x": 533.0833333333319,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["m", 607.5],
+          "x": 610.6666666666657,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["j", 930],
+          "x": 933.250000000002,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["m", 1012.5],
+          "x": 1014.9166666666695,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["j", 1222.5],
+          "x": 1227.2500000000007,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter"]
+        },
+        {
+          "step": ["push", "receiver", "left"],
+          "x": 1090.0625,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["m", 1177.5],
+          "x": 1181.479166666665,
+          "feet": 525,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["j", 1410],
+          "x": 1414.2291666666606,
+          "feet": 375,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["m", 1627.5],
+          "x": 1630.6458333333233,
+          "feet": 375,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["j", 1815],
+          "x": 1822.5624999999864,
+          "feet": 607.5,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["m", 1980],
+          "x": 1981.8124999999834,
+          "feet": 607.5,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["j", 2175],
+          "x": 2178.4166666666674,
+          "feet": 442.5,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["m", 2400],
+          "x": 2403.000000000009,
+          "feet": 442.5,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        },
+        {
+          "step": ["end"],
+          "x": 2403.000000000009,
+          "feet": 442.5,
+          "block": null,
+          "signals": ["emitter", "receiver"]
+        }
+      ]
+    },
+    {
+      "id": "forest-8",
+      "passed": true,
+      "victory": {
+        "level": "forest-8",
+        "elapsedMs": 15142,
+        "bestTimeMs": 15142,
+        "stars": 3,
+        "earnedCoins": 105,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 5,
+      "nextRememberedLevel": "forest-9",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 384,
+      "elapsedMs": 15142,
+      "sha256": "b3085f14950839bc00073aaa16a1680ce59bcefc69db2e7dc45f8e86e1d62979",
+      "trace": [
+        {
+          "step": ["m", 112.5],
+          "x": 110.83333333333307,
+          "feet": 780,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["cast"],
+          "x": 106.74999999999974,
+          "feet": 780,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["m", 435],
+          "x": 437.4999999999994,
+          "feet": 780,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["j", 547.5],
+          "x": 555.166666666666,
+          "feet": 645,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["m", 990],
+          "x": 992.0833333333367,
+          "feet": 645,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["j", 1140],
+          "x": 1147.250000000003,
+          "feet": 577.5,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["j", 1417.5],
+          "x": 1424.9166666666645,
+          "feet": 577.5,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["m", 1447.5],
+          "x": 1449.416666666664,
+          "feet": 577.5,
+          "block": {
+            "x": 1301.25,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["return-control", "entry-bridge"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1415.1666666666622,
+          "feet": 577.5,
+          "block": {
+            "x": 1262.916666666665,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt"
+          ]
+        },
+        {
+          "step": ["signal", "cargo-plate"],
+          "x": 1343.4999999999923,
+          "feet": 577.5,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt"
+          ]
+        },
+        {
+          "step": ["wait", 900],
+          "x": 1270.999999999995,
+          "feet": 577.5,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        },
+        {
+          "step": ["j", 1620],
+          "x": 1622.1666666666551,
+          "feet": 615,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        },
+        {
+          "step": ["m", 1860],
+          "x": 1863.0833333333173,
+          "feet": 652.5,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        },
+        {
+          "step": ["m", 2040],
+          "x": 2042.7499999999807,
+          "feet": 652.5,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        },
+        {
+          "step": ["j", 2265],
+          "x": 2271.4166666666524,
+          "feet": 510,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        },
+        {
+          "step": ["m", 2445],
+          "x": 2446.9999999999923,
+          "feet": 510,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        },
+        {
+          "step": ["end"],
+          "x": 2446.9999999999923,
+          "feet": 510,
+          "block": {
+            "x": 1191.249999999995,
+            "top": 442.5,
+            "bottom": 577.5,
+            "width": 97.5,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": [
+            "return-control",
+            "entry-bridge",
+            "belt-control",
+            "delivery-belt",
+            "exit-bridge"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forest-9",
+      "passed": true,
+      "victory": {
+        "level": "forest-9",
+        "elapsedMs": 14974.800000190735,
+        "bestTimeMs": 14974.800000190735,
+        "stars": 3,
+        "earnedCoins": 105,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 5,
+      "nextRememberedLevel": "forest-10",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 376,
+      "elapsedMs": 14974.800000190735,
+      "sha256": "7d33d3a943affe83dc2796d915171384d93433b270640e67556066e2c3ff09b8",
+      "trace": [
+        {
+          "step": ["m", 450],
+          "x": 452.16666666666634,
+          "feet": 840,
+          "block": {
+            "x": 798.75,
+            "top": 555,
+            "bottom": 705,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 622.5],
+          "x": 627.7499999999997,
+          "feet": 705,
+          "block": {
+            "x": 798.75,
+            "top": 555,
+            "bottom": 705,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 885],
+          "x": 889.0833333333354,
+          "feet": 705,
+          "block": {
+            "x": 798.75,
+            "top": 555,
+            "bottom": 705,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["push", "power-plate", "left"],
+          "x": 776,
+          "feet": 705,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 900],
+          "x": 902.5833333333345,
+          "feet": 705,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 1065],
+          "x": 1066.5,
+          "feet": 705,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 1020],
+          "x": 1019.4999999999993,
+          "feet": 705,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance", "counterweight"]
+        },
+        {
+          "step": ["ride", "balance", 0.98],
+          "x": 1015.416666666666,
+          "feet": 705,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance", "counterweight"]
+        },
+        {
+          "step": ["j", 1237.5],
+          "x": 1244.08333333333,
+          "feet": 577.5,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 1380],
+          "x": 1382.9166666666608,
+          "feet": 577.5,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 1500],
+          "x": 1501.3333333333253,
+          "feet": 617.1666666666666,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 1875],
+          "x": 1876.999999999985,
+          "feet": 705,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["j", 2077.5],
+          "x": 2085.24999999998,
+          "feet": 555,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["j", 2295],
+          "x": 2301.6666666666547,
+          "feet": 525,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["m", 2430],
+          "x": 2436.4166666666597,
+          "feet": 525,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        },
+        {
+          "step": ["end"],
+          "x": 2440.499999999993,
+          "feet": 525,
+          "block": {
+            "x": 696.25,
+            "top": 553.5,
+            "bottom": 703.5,
+            "width": 97.5,
+            "height": 150,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["balance"]
+        }
+      ]
+    },
+    {
+      "id": "forest-10",
+      "passed": true,
+      "victory": {
+        "level": "forest-10",
+        "elapsedMs": 17182.200000047684,
+        "bestTimeMs": 17182.200000047684,
+        "stars": 3,
+        "earnedCoins": 105,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 5,
+      "nextRememberedLevel": "forest-3",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 369,
+      "elapsedMs": 17182.200000047684,
+      "sha256": "bef7e44e41ae5b4b5f3cf0958279157aea16d15d8cf6bfaaa0d33c705b32a269",
+      "trace": [
+        {
+          "step": ["m", 270],
+          "x": 272.50000000000034,
+          "feet": 810,
+          "block": {
+            "x": 362.5,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 150,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["j", 367.5],
+          "x": 375.4166666666663,
+          "feet": 705,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["j", 600],
+          "x": 608.1666666666658,
+          "feet": 562.5,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["m", 900],
+          "x": 902.1666666666686,
+          "feet": 562.5,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["j", 1215],
+          "x": 1216.5833333333344,
+          "feet": 532.5,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["m", 1440],
+          "x": 1441.1666666666636,
+          "feet": 542.3333333333333,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["feet", 840],
+          "x": 1445.2499999999968,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["m", 1215],
+          "x": 1212.5000000000011,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["m", 1162.5],
+          "x": 1159.4166666666688,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["j", 1020],
+          "x": 1012.4166666666696,
+          "feet": 750,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["east-barrier"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1012.4166666666696,
+          "feet": 750,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-barrier"]
+        },
+        {
+          "step": ["m", 1215],
+          "x": 1216.5833333333344,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-barrier"]
+        },
+        {
+          "step": ["feet", 840],
+          "x": 1216.5833333333344,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-barrier"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1220.6666666666677,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["m", 1440],
+          "x": 1441.1666666666636,
+          "feet": 855,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["j", 1650],
+          "x": 1657.5833333333262,
+          "feet": 682.5,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1657.5833333333262,
+          "feet": 682.5,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["m", 2130],
+          "x": 2131.249999999986,
+          "feet": 682.5,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["j", 2295],
+          "x": 2297.91666666667,
+          "feet": 495,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["m", 2430],
+          "x": 2432.666666666675,
+          "feet": 495,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-seal", "west-barrier", "selector"]
+        },
+        {
+          "step": ["end"],
+          "x": 2432.666666666675,
+          "feet": 495,
+          "block": {
+            "x": 365,
+            "top": 705,
+            "bottom": 810,
+            "width": 105,
+            "height": 105,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["west-seal", "east-seal", "west-barrier", "selector"]
+        }
+      ]
+    },
+    {
+      "id": "forest-3",
+      "passed": true,
+      "victory": {
+        "level": "forest-3",
+        "elapsedMs": 20429.900000095367,
+        "bestTimeMs": 20429.900000095367,
+        "stars": 3,
+        "earnedCoins": 101,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 1,
+      "nextRememberedLevel": "forest-4",
+      "artNodes": 10,
+      "animatedInstances": 7,
+      "restartVerified": true,
+      "restartMs": 360,
+      "elapsedMs": 20429.900000095367,
+      "sha256": "562b6c3abf707cc9b3efc3b24b38ba80585c00c5dc991b220a64e88057479332",
+      "trace": [
+        {
+          "step": ["m", 240],
+          "x": 243.91666666666683,
+          "feet": 810,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 337.5],
+          "x": 343.16666666666663,
+          "feet": 675,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 547.5],
+          "x": 550.9166666666656,
+          "feet": 502.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 720],
+          "x": 722.4166666666672,
+          "feet": 502.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 802.5],
+          "x": 804.0833333333346,
+          "feet": 512.3333333333333,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["feet", 802.5],
+          "x": 808.166666666668,
+          "feet": 817.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["cast"],
+          "x": 808.166666666668,
+          "feet": 767.6666666666666,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["ride", "first-lift", 0.99],
+          "x": 808.166666666668,
+          "feet": 518.4999999999994,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["j", 975],
+          "x": 979.6666666666696,
+          "feet": 517.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["m", 1200],
+          "x": 1200.1666666666683,
+          "feet": 550.8055555555554,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["feet", 847.5],
+          "x": 1204.2500000000016,
+          "feet": 862.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["j", 1402.5],
+          "x": 1408.6666666666633,
+          "feet": 862.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["push", "relay-plate", "left"],
+          "x": 1316,
+          "feet": 862.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["j", 1207.5],
+          "x": 1201.6666666666688,
+          "feet": 718.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["j", 1485],
+          "x": 1487.4999999999968,
+          "feet": 652.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["m", 1680],
+          "x": 1683.4999999999932,
+          "feet": 652.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["j", 1800],
+          "x": 1805.999999999991,
+          "feet": 750,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1805.999999999991,
+          "feet": 700.1666666666666,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call", "second-lift", "second-call"]
+        },
+        {
+          "step": ["ride", "second-lift", 0.99],
+          "x": 1805.999999999991,
+          "feet": 466.16666666666754,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call", "second-lift", "second-call"]
+        },
+        {
+          "step": ["j", 1980],
+          "x": 1985.6666666666542,
+          "feet": 465,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call", "second-lift", "second-call"]
+        },
+        {
+          "step": ["j", 2235],
+          "x": 2242.9166666666574,
+          "feet": 442.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call", "second-lift", "second-call"]
+        },
+        {
+          "step": ["m", 2370],
+          "x": 2373.583333333329,
+          "feet": 442.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call", "second-lift", "second-call"]
+        },
+        {
+          "step": ["end"],
+          "x": 2373.583333333329,
+          "feet": 442.5,
+          "block": {
+            "x": 337.5,
+            "top": 675,
+            "bottom": 810,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["first-lift", "first-call", "second-lift", "second-call"]
+        }
+      ]
+    },
+    {
+      "id": "forest-4",
+      "passed": true,
+      "victory": {
+        "level": "forest-4",
+        "elapsedMs": 20292.799999952316,
+        "bestTimeMs": 20292.799999952316,
+        "stars": 3,
+        "earnedCoins": 105,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 5,
+      "nextRememberedLevel": "forest-5",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 353,
+      "elapsedMs": 20292.799999952316,
+      "sha256": "0c152657f5e601c44e2fedc3fb07a35d1b478ae1ec93d2ff88180112fd73ba4c",
+      "trace": [
+        {
+          "step": ["m", 240],
+          "x": 243.91666666666683,
+          "feet": 720,
+          "block": {
+            "x": 1177.5,
+            "top": 420,
+            "bottom": 555,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 390],
+          "x": 396.91666666666634,
+          "feet": 607.5,
+          "block": {
+            "x": 1177.5,
+            "top": 420,
+            "bottom": 555,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 600],
+          "x": 605.1666666666661,
+          "feet": 555,
+          "block": {
+            "x": 1177.5,
+            "top": 420,
+            "bottom": 555,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 892.5],
+          "x": 895.0833333333354,
+          "feet": 555,
+          "block": {
+            "x": 1177.5,
+            "top": 420,
+            "bottom": 555,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 1117.5],
+          "x": 1123.750000000003,
+          "feet": 420,
+          "block": {
+            "x": 1177.5,
+            "top": 420,
+            "bottom": 555,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["j", 1252.5],
+          "x": 1258.5000000000005,
+          "feet": 555,
+          "block": {
+            "x": 1177.5,
+            "top": 420,
+            "bottom": 555,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["push", "lower-plate", "left"],
+          "x": 1025.4166666666656,
+          "feet": 696,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": []
+        },
+        {
+          "step": ["m", 975],
+          "x": 972.3333333333318,
+          "feet": 696,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge"]
+        },
+        {
+          "step": ["j", 915],
+          "x": 906.9999999999978,
+          "feet": 555,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge"]
+        },
+        {
+          "step": ["j", 825],
+          "x": 817.1666666666637,
+          "feet": 555,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge"]
+        },
+        {
+          "step": ["m", 1230],
+          "x": 1233.6666666666633,
+          "feet": 555,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge"]
+        },
+        {
+          "step": ["m", 1350],
+          "x": 1352.0833333333278,
+          "feet": 588.3055555555555,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge"]
+        },
+        {
+          "step": ["m", 1590],
+          "x": 1592.99999999999,
+          "feet": 675,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1597.0833333333233,
+          "feet": 675,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["j", 1530],
+          "x": 1523.5833333333246,
+          "feet": 675,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["j", 1710],
+          "x": 1715.4999999999877,
+          "feet": 555,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["m", 2070],
+          "x": 2070.74999999998,
+          "feet": 555,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["j", 2220],
+          "x": 2225.9166666666515,
+          "feet": 607.5,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["j", 2400],
+          "x": 2405.583333333325,
+          "feet": 525,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["m", 2460],
+          "x": 2462.7499999999936,
+          "feet": 525,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        },
+        {
+          "step": ["end"],
+          "x": 2462.7499999999936,
+          "feet": 525,
+          "block": {
+            "x": 978,
+            "top": 696,
+            "bottom": 831,
+            "width": 90,
+            "height": 135,
+            "vx": 0,
+            "vy": 0,
+            "grounded": false
+          },
+          "signals": ["return-bridge", "clock-door", "clock-start"]
+        }
+      ]
+    },
+    {
+      "id": "forest-5",
+      "passed": true,
+      "victory": {
+        "level": "forest-5",
+        "elapsedMs": 18377.5,
+        "bestTimeMs": 18377.5,
+        "stars": 3,
+        "earnedCoins": 165,
+        "newRecord": true
+      },
+      "attempts": 1,
+      "element": "earth",
+      "collectedCoinValue": 15,
+      "nextRememberedLevel": "forest-5",
+      "artNodes": 8,
+      "animatedInstances": 5,
+      "restartVerified": true,
+      "restartMs": 363,
+      "elapsedMs": 18377.5,
+      "sha256": "ca3c713c3e8fe0e82a5eafeb866e1bee5b23e60573d897da3653d1dd3d941dcc",
+      "trace": [
+        {
+          "step": ["m", 195],
+          "x": 199.00000000000009,
+          "feet": 802.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["cast"],
+          "x": 199.00000000000009,
+          "feet": 802.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["wait", 500],
+          "x": 199.00000000000009,
+          "feet": 802.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["m", 277.5],
+          "x": 280.6666666666671,
+          "feet": 802.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["j", 397.5],
+          "x": 403.1666666666663,
+          "feet": 645,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["j", 570],
+          "x": 574.6666666666656,
+          "feet": 502.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["j", 735],
+          "x": 741.916666666668,
+          "feet": 502.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["push", "upper-plate", "left"],
+          "x": 663.5,
+          "feet": 502.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["final-barrier"]
+        },
+        {
+          "step": ["m", 720],
+          "x": 720.6666666666672,
+          "feet": 502.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "final-barrier"]
+        },
+        {
+          "step": ["wait", 800],
+          "x": 724.7500000000006,
+          "feet": 502.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "final-barrier"]
+        },
+        {
+          "step": ["j", 975],
+          "x": 982.000000000003,
+          "feet": 472.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "final-barrier"]
+        },
+        {
+          "step": ["m", 1140],
+          "x": 1141.2500000000027,
+          "feet": 512.1666666666666,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "final-barrier"]
+        },
+        {
+          "step": ["feet", 705],
+          "x": 1145.333333333336,
+          "feet": 720,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "final-barrier"]
+        },
+        {
+          "step": ["m", 1170],
+          "x": 1173.9166666666688,
+          "feet": 720,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "final-barrier"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1178.000000000002,
+          "feet": 720,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal"]
+        },
+        {
+          "step": ["j", 1312.5],
+          "x": 1316.8333333333328,
+          "feet": 645,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal"]
+        },
+        {
+          "step": ["m", 1395],
+          "x": 1398.499999999998,
+          "feet": 645,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal"]
+        },
+        {
+          "step": ["j", 1477.5],
+          "x": 1484.2499999999964,
+          "feet": 750,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal"]
+        },
+        {
+          "step": ["cast"],
+          "x": 1484.2499999999964,
+          "feet": 700.1666666666666,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        },
+        {
+          "step": ["ride", "final-lift", 0.99],
+          "x": 1484.2499999999964,
+          "feet": 474.83333333333394,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        },
+        {
+          "step": ["j", 1710],
+          "x": 1716.999999999992,
+          "feet": 472.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        },
+        {
+          "step": ["m", 1815],
+          "x": 1819.0833333333235,
+          "feet": 472.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        },
+        {
+          "step": ["j", 2040],
+          "x": 2047.749999999986,
+          "feet": 427.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        },
+        {
+          "step": ["m", 2430],
+          "x": 2431.5833333333308,
+          "feet": 472.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        },
+        {
+          "step": ["end"],
+          "x": 2431.5833333333308,
+          "feet": 472.5,
+          "block": {
+            "x": 401.25,
+            "top": 645,
+            "bottom": 735,
+            "width": 97.5,
+            "height": 90,
+            "vx": 0,
+            "vy": 0,
+            "grounded": true
+          },
+          "signals": ["relay-bridge", "lower-seal", "final-lift", "lift-call"]
+        }
+      ]
+    }
+  ],
+  "negative": [
+    {
+      "id": "forest-1",
+      "passed": true,
+      "documentSha256": "affd4d3b9fadcf6eb223d764860b2e3cd284b912487fd7b5697d925ffbda0fa4",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 8793.200000047684,
+          "maxX": 642.5833333333336,
+          "x": 509.00000000000006,
+          "feet": 753,
+          "iterations": 212,
+          "attempts": 4,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 6792.599999904633,
+          "maxX": 760.9166666666683,
+          "x": 549.6249999999993,
+          "feet": 625.5,
+          "iterations": 164,
+          "attempts": 7,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-2",
+      "passed": true,
+      "documentSha256": "8ac2c09b449b2cecfe594e4f439016f383300b7f115d00c73ab25bb28d39afdc",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 5890.400000095367,
+          "maxX": 404,
+          "x": 279,
+          "feet": 787.5,
+          "iterations": 125,
+          "attempts": 4,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 6026,
+          "maxX": 516.5,
+          "x": 307.125,
+          "feet": 632.8333333333333,
+          "iterations": 137,
+          "attempts": 7,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-6",
+      "passed": true,
+      "documentSha256": "a2f0da1e82d2bb6527bc905d1a11591e40f94fff7e76c4f9d6f8f94198121a4b",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 6542.899999856949,
+          "maxX": 708.5,
+          "x": 541.9999999999991,
+          "feet": 787.5,
+          "iterations": 145,
+          "attempts": 3,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 8652.099999904633,
+          "maxX": 1164.7083333333348,
+          "x": 1072.833333333337,
+          "feet": 487.5,
+          "iterations": 196,
+          "attempts": 5,
+          "signals": ["west-call", "west-lift"],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-7",
+      "passed": true,
+      "documentSha256": "345d81fdabd34b884a44d19868eb3b3893b894fc1c3e9a9c8f751596b377f095",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 4578,
+          "maxX": 284,
+          "x": 284,
+          "feet": 787.5,
+          "iterations": 102,
+          "attempts": 1,
+          "signals": ["emitter"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 7045.700000047684,
+          "maxX": 829.1250000000014,
+          "x": 825.041666666668,
+          "feet": 940.9722222222221,
+          "iterations": 155,
+          "attempts": 3,
+          "signals": ["emitter"],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-8",
+      "passed": true,
+      "documentSha256": "b3085f14950839bc00073aaa16a1680ce59bcefc69db2e7dc45f8e86e1d62979",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 4592.399999856949,
+          "maxX": 449,
+          "x": 449,
+          "feet": 780,
+          "iterations": 106,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 6798.299999952316,
+          "maxX": 911.1666666666687,
+          "x": 477.5833333333332,
+          "feet": 611.3333333333333,
+          "iterations": 163,
+          "attempts": 4,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-9",
+      "passed": true,
+      "documentSha256": "7d33d3a943affe83dc2796d915171384d93433b270640e67556066e2c3ff09b8",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 5585,
+          "maxX": 531.5,
+          "x": 531.5,
+          "feet": 840,
+          "iterations": 123,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 15320.300000190735,
+          "maxX": 2219,
+          "x": 2219,
+          "feet": 832.5,
+          "iterations": 367,
+          "attempts": 2,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-10",
+      "passed": true,
+      "documentSha256": "bef7e44e41ae5b4b5f3cf0958279157aea16d15d8cf6bfaaa0d33c705b32a269",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 5854.900000095367,
+          "maxX": 483.4999999999999,
+          "x": 207.16666666666677,
+          "feet": 810,
+          "iterations": 138,
+          "attempts": 4,
+          "signals": ["east-barrier"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 6597.5,
+          "maxX": 648.2500000000002,
+          "x": 442.4166666666663,
+          "feet": 705,
+          "iterations": 159,
+          "attempts": 7,
+          "signals": ["east-barrier"],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-3",
+      "passed": true,
+      "documentSha256": "562b6c3abf707cc9b3efc3b24b38ba80585c00c5dc991b220a64e88057479332",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 4523.699999809265,
+          "maxX": 269,
+          "x": 269,
+          "feet": 810,
+          "iterations": 109,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 8479.800000190735,
+          "maxX": 940.8750000000019,
+          "x": 777.5416666666671,
+          "feet": 502.5,
+          "iterations": 204,
+          "attempts": 3,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-4",
+      "passed": true,
+      "documentSha256": "0c152657f5e601c44e2fedc3fb07a35d1b478ae1ec93d2ff88180112fd73ba4c",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 4464.100000143051,
+          "maxX": 254,
+          "x": 254,
+          "feet": 720,
+          "iterations": 107,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 8554.699999809265,
+          "maxX": 1117.6250000000018,
+          "x": 946.1250000000015,
+          "feet": 555,
+          "iterations": 206,
+          "attempts": 3,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restart": true
+    },
+    {
+      "id": "forest-5",
+      "passed": true,
+      "documentSha256": "ca3c713c3e8fe0e82a5eafeb866e1bee5b23e60573d897da3653d1dd3d941dcc",
+      "policies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 4332,
+          "maxX": 209,
+          "x": 209,
+          "feet": 802.5,
+          "iterations": 105,
+          "attempts": 1,
+          "signals": ["final-barrier"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 5818,
+          "maxX": 524,
+          "x": 366.41666666666646,
+          "feet": 606.1666666666667,
+          "iterations": 140,
+          "attempts": 4,
+          "signals": ["final-barrier"],
+          "plate": false
+        }
+      ],
+      "restart": true
+    }
+  ],
+  "editor": [
+    {
+      "id": "forest-1",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-2",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-6",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-7",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-8",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-9",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-10",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-3",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-4",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    },
+    {
+      "id": "forest-5",
+      "passed": true,
+      "roundTrip": true,
+      "playtest": true,
+      "restart": true,
+      "resize": true,
+      "oneCanvas": true,
+      "campaignSaveUnchanged": true
+    }
+  ]
+}

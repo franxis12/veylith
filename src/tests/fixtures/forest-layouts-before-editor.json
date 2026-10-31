@@ -1,0 +1,380 @@
+{
+  "forest-1": {
+    "height": 1100,
+    "fallLimit": 1000,
+    "initialElement": "water",
+    "spawn": {
+      "x": 180,
+      "feetY": 650
+    },
+    "id": "forest-1",
+    "width": 2048,
+    "exit": {
+      "x": 1800,
+      "feetY": 650,
+      "halfWidth": 65
+    },
+    "surfaces": [
+      {
+        "id": "clearing",
+        "x": 0,
+        "columns": 16,
+        "top": 650,
+        "kind": "ground"
+      }
+    ],
+    "gems": [],
+    "targets": [
+      {
+        "id": "tank",
+        "kind": "tank",
+        "x": 640,
+        "hits": 3
+      }
+    ],
+    "gates": [
+      {
+        "id": "water-door",
+        "x": 1200,
+        "requires": ["tank"]
+      }
+    ],
+    "objectives": [
+      {
+        "id": "tank",
+        "hint": "Agua: apunta al depósito y pulsa Poder (E) tres veces para llenarlo."
+      }
+    ]
+  },
+  "forest-2": {
+    "height": 1100,
+    "fallLimit": 1000,
+    "initialElement": "water",
+    "spawn": {
+      "x": 180,
+      "feetY": 650
+    },
+    "id": "forest-2",
+    "width": 2560,
+    "exit": {
+      "x": 2300,
+      "feetY": 650,
+      "halfWidth": 65
+    },
+    "surfaces": [
+      {
+        "id": "clearing",
+        "x": 0,
+        "columns": 20,
+        "top": 650,
+        "kind": "ground"
+      }
+    ],
+    "gems": [
+      {
+        "id": "fire",
+        "element": "fire",
+        "x": 350,
+        "y": 565
+      }
+    ],
+    "targets": [
+      {
+        "id": "torch-1",
+        "kind": "torch",
+        "x": 700,
+        "hits": 1
+      },
+      {
+        "id": "torch-2",
+        "kind": "torch",
+        "x": 1350,
+        "hits": 1
+      }
+    ],
+    "gates": [
+      {
+        "id": "fire-door",
+        "x": 1800,
+        "requires": ["torch-1", "torch-2"]
+      }
+    ],
+    "objectives": [
+      {
+        "id": "torch-1",
+        "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+      },
+      {
+        "id": "torch-2",
+        "hint": "Falta la segunda antorcha. Las encendidas permanecen activas."
+      }
+    ]
+  },
+  "forest-3": {
+    "height": 1100,
+    "fallLimit": 1000,
+    "initialElement": "water",
+    "spawn": {
+      "x": 180,
+      "feetY": 370
+    },
+    "id": "forest-3",
+    "width": 2944,
+    "exit": {
+      "x": 2700,
+      "feetY": 650,
+      "halfWidth": 65
+    },
+    "surfaces": [
+      {
+        "id": "upper-clearing",
+        "x": 0,
+        "columns": 6,
+        "top": 370,
+        "kind": "ground"
+      },
+      {
+        "id": "launch",
+        "x": 768,
+        "columns": 4,
+        "top": 650,
+        "kind": "ground"
+      },
+      {
+        "id": "landing",
+        "x": 2048,
+        "columns": 7,
+        "top": 650,
+        "kind": "ground"
+      }
+    ],
+    "gems": [
+      {
+        "id": "earth-decoy",
+        "element": "earth",
+        "x": 400,
+        "y": 100
+      },
+      {
+        "id": "air",
+        "element": "air",
+        "x": 1000,
+        "y": 565
+      }
+    ],
+    "targets": [],
+    "crossing": {
+      "from": 1264,
+      "to": 2064
+    },
+    "gates": [
+      {
+        "id": "wind-door",
+        "x": 2440,
+        "requires": ["crossing"]
+      }
+    ],
+    "objectives": [
+      {
+        "id": "crossing",
+        "hint": "Recoge Aire. Salta desde el borde y mantén Salto para planear hasta el otro lado."
+      }
+    ]
+  },
+  "forest-4": {
+    "height": 1100,
+    "fallLimit": 1000,
+    "initialElement": "water",
+    "spawn": {
+      "x": 180,
+      "feetY": 650
+    },
+    "id": "forest-4",
+    "width": 2560,
+    "exit": {
+      "x": 2320,
+      "feetY": 650,
+      "halfWidth": 65
+    },
+    "surfaces": [
+      {
+        "id": "clearing",
+        "x": 0,
+        "columns": 20,
+        "top": 650,
+        "kind": "ground"
+      }
+    ],
+    "gems": [
+      {
+        "id": "earth",
+        "element": "earth",
+        "x": 350,
+        "y": 565
+      }
+    ],
+    "targets": [],
+    "block": {
+      "x": 650,
+      "plateX": 1050
+    },
+    "wall": {
+      "id": "wall",
+      "x": 1630
+    },
+    "gates": [
+      {
+        "id": "plate-door",
+        "x": 1370,
+        "requires": ["plate"]
+      }
+    ],
+    "objectives": [
+      {
+        "id": "plate",
+        "hint": "Recoge Tierra. Camina contra el bloque para encajarlo en la placa."
+      },
+      {
+        "id": "wall",
+        "hint": "Con Tierra, acércate a la pared agrietada y pulsa Poder (E)."
+      }
+    ]
+  },
+  "forest-5": {
+    "height": 1100,
+    "fallLimit": 1000,
+    "initialElement": "water",
+    "spawn": {
+      "x": 180,
+      "feetY": 650
+    },
+    "id": "forest-5",
+    "width": 6144,
+    "exit": {
+      "x": 5850,
+      "feetY": 650,
+      "halfWidth": 65
+    },
+    "surfaces": [
+      {
+        "id": "first-trials",
+        "x": 0,
+        "columns": 22,
+        "top": 650,
+        "kind": "ground"
+      },
+      {
+        "id": "last-trial",
+        "x": 3584,
+        "columns": 20,
+        "top": 650,
+        "kind": "ground"
+      }
+    ],
+    "gems": [
+      {
+        "id": "fire",
+        "element": "fire",
+        "x": 1220,
+        "y": 565
+      },
+      {
+        "id": "air",
+        "element": "air",
+        "x": 2460,
+        "y": 565
+      },
+      {
+        "id": "earth",
+        "element": "earth",
+        "x": 3950,
+        "y": 565
+      }
+    ],
+    "targets": [
+      {
+        "id": "tank",
+        "kind": "tank",
+        "x": 550,
+        "hits": 3
+      },
+      {
+        "id": "torch-1",
+        "kind": "torch",
+        "x": 1550,
+        "hits": 1
+      },
+      {
+        "id": "torch-2",
+        "kind": "torch",
+        "x": 1920,
+        "hits": 1
+      }
+    ],
+    "crossing": {
+      "from": 2800,
+      "to": 3600
+    },
+    "block": {
+      "x": 4250,
+      "plateX": 4600
+    },
+    "wall": {
+      "id": "wall",
+      "x": 5100
+    },
+    "gates": [
+      {
+        "id": "water-door",
+        "x": 1000,
+        "requires": ["tank"]
+      },
+      {
+        "id": "fire-door",
+        "x": 2200,
+        "requires": ["tank", "torch-1", "torch-2"]
+      },
+      {
+        "id": "wind-door",
+        "x": 3790,
+        "requires": ["crossing"]
+      },
+      {
+        "id": "plate-door",
+        "x": 4890,
+        "requires": ["plate"]
+      },
+      {
+        "id": "final-door",
+        "x": 5500,
+        "requires": ["tank", "torch-1", "torch-2", "crossing", "plate", "wall"]
+      }
+    ],
+    "objectives": [
+      {
+        "id": "tank",
+        "hint": "Agua: apunta al depósito y pulsa Poder (E) tres veces para llenarlo."
+      },
+      {
+        "id": "torch-1",
+        "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+      },
+      {
+        "id": "torch-2",
+        "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+      },
+      {
+        "id": "crossing",
+        "hint": "Recoge Aire. Salta desde el borde y mantén Salto para planear hasta el otro lado."
+      },
+      {
+        "id": "plate",
+        "hint": "Recoge Tierra. Camina contra el bloque para encajarlo en la placa."
+      },
+      {
+        "id": "wall",
+        "hint": "Con Tierra, acércate a la pared agrietada y pulsa Poder (E)."
+      }
+    ]
+  }
+}

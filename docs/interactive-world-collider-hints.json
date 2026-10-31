@@ -1,0 +1,78 @@
+{
+  "note": "Optional local-pixel starting points, not a collision implementation. Tune to the game. Rectangles are [x,y,width,height]. Circles are [cx,cy,radius].",
+  "objects": {
+    "mechanical_elevator": {
+      "oneWay": [64, 230, 896, 28]
+    },
+    "wind_fan": {
+      "solid": [32, 342, 400, 130]
+    },
+    "rotating_gear": {
+      "circle": [128, 128, 106]
+    },
+    "interactive_lever": {
+      "solid": [48, 190, 160, 50],
+      "sensor": [64, 48, 128, 192]
+    },
+    "lava": {
+      "hazard": [0, 80, 256, 176]
+    },
+    "deep_water": {
+      "liquid": [0, 80, 256, 176]
+    },
+    "wind_tunnel": {
+      "forceZone": [64, 128, 896, 256]
+    },
+    "energy_barrier": {
+      "active": [139, 96, 234, 330]
+    },
+    "waterwheel": {
+      "circle": [256, 256, 198]
+    },
+    "steam_boiler": {
+      "solid": [104, 220, 304, 260]
+    },
+    "retractable_bridge": {
+      "oneWayFullyExtended": [176, 290, 808, 20],
+      "animatedWidth": [0, 84, 284, 524, 724, 808]
+    },
+    "stone_wall": {
+      "intact": [72, 96, 368, 384],
+      "broken": []
+    },
+    "disappearing_platform": {
+      "oneWayVisible": [40, 300, 432, 24],
+      "hidden": []
+    },
+    "timed_door": {
+      "closed": [174, 155, 167, 288],
+      "open": []
+    },
+    "steam_vent": {
+      "solid": [48, 202, 160, 38],
+      "activeHazard": [95, 64, 66, 138]
+    },
+    "watered_plant": {
+      "fullyGrownOneWay": [
+        [70, 316, 142, 12],
+        [285, 224, 139, 12],
+        [90, 113, 142, 12]
+      ],
+      "seed": []
+    },
+    "floating_wooden_block": {
+      "solid": [106, 94, 300, 296]
+    },
+    "wind_mill": {
+      "solid": [160, 300, 192, 180]
+    },
+    "fire_switch": {
+      "solid": [56, 152, 144, 88],
+      "fireSensor": [94, 73, 68, 67]
+    },
+    "elemental_bounce_pad": {
+      "oneWay": [64, 248, 384, 20],
+      "frameTopY": [248, 268, 288, 266, 212, 232, 252, 248]
+    }
+  }
+}

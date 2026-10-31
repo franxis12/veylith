@@ -1,0 +1,88 @@
+{
+  "technicalChecks": {
+    "layers": {
+      "background": {
+        "width": 1728,
+        "height": 648,
+        "hasAlpha": false
+      },
+      "static_world": {
+        "width": 1728,
+        "height": 648,
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "foreground": {
+        "width": 1728,
+        "height": 648,
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255
+      }
+    },
+    "alignedCanvas": true,
+    "sharedTopLeftOrigin": true,
+    "oneSectionNoSeams": true,
+    "textureSizeWithin2048x1024": true,
+    "previewDurationSeconds": 4,
+    "renderedPreviewFrames": 48,
+    "encodedGIFFrames": 32,
+    "encodedWebPFrames": 32,
+    "allManifestPathsResolve": true
+  },
+  "visualReview": "Master and corrected extraction reviewed: six masses and five bottom gaps; no text, character, plate, rod or door observed in corrected extraction.",
+  "geometryStatus": "approximate_visual_match",
+  "unresolved": [
+    "Illustrated reconstruction, not pixel-perfect blueprint tracing.",
+    "No device performance test."
+  ],
+  "geometryBottomGapChecks": [
+    {
+      "blueprintGapX": [
+        334,
+        400
+      ],
+      "bottomOpenFraction": 0.576,
+      "longestClearRun": 38,
+      "openPassageObserved": true
+    },
+    {
+      "blueprintGapX": [
+        586,
+        728
+      ],
+      "bottomOpenFraction": 0.873,
+      "longestClearRun": 124,
+      "openPassageObserved": true
+    },
+    {
+      "blueprintGapX": [
+        800,
+        980
+      ],
+      "bottomOpenFraction": 0.85,
+      "longestClearRun": 153,
+      "openPassageObserved": true
+    },
+    {
+      "blueprintGapX": [
+        1164,
+        1350
+      ],
+      "bottomOpenFraction": 1,
+      "longestClearRun": 186,
+      "openPassageObserved": true
+    },
+    {
+      "blueprintGapX": [
+        1423,
+        1506
+      ],
+      "bottomOpenFraction": 0.807,
+      "longestClearRun": 67,
+      "openPassageObserved": true
+    }
+  ],
+  "geometryCheckScope": "These samples verify open bottom passages only, not exact platform registration or traversability. Visual geometry remains approximate."
+}

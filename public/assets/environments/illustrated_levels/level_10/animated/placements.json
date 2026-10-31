@@ -1,0 +1,101 @@
+{
+  "sharedLibrary": "../_shared/ancient_forest_v1/animation_library.json",
+  "instances": [
+    {
+      "id": "canopy_vine",
+      "animation": "hanging_vine",
+      "x": 145,
+      "y": 65,
+      "width": 46,
+      "height": 92,
+      "depth": 30,
+      "opacity": 0.85,
+      "phase": 0,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.359375,
+        "y": 0.359375
+      }
+    },
+    {
+      "id": "left_leaves",
+      "animation": "moving_leaves",
+      "x": 260,
+      "y": 150,
+      "width": 85,
+      "height": 85,
+      "depth": 30,
+      "opacity": 0.65,
+      "phase": 0,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.6640625,
+        "y": 0.6640625
+      }
+    },
+    {
+      "id": "right_leaves",
+      "animation": "moving_leaves",
+      "x": 1430,
+      "y": 95,
+      "width": 64,
+      "height": 64,
+      "depth": 30,
+      "opacity": 0.5,
+      "phase": 4,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "id": "ground_mist",
+      "animation": "mist",
+      "x": 620,
+      "y": 525,
+      "width": 420,
+      "height": 105,
+      "depth": 5,
+      "opacity": 0.18,
+      "phase": 1,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1.640625,
+        "y": 1.09375
+      }
+    },
+    {
+      "id": "forest_motes",
+      "animation": "magical_particles",
+      "x": 1075,
+      "y": 120,
+      "width": 100,
+      "height": 100,
+      "depth": 30,
+      "opacity": 0.25,
+      "phase": 3,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.78125,
+        "y": 0.78125
+      }
+    }
+  ],
+  "pathBase": "level folder containing level_art_manifest.json"
+}

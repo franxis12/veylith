@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "id": "forest-3",
+  "name": "El engaño de la plataforma",
+  "theme": "ancient-forest",
+  "width": 4000,
+  "height": 3000,
+  "fallLimit": 2920,
+  "background": {
+    "sky": true,
+    "forest": false,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 55000,
+    "twoStarsMs": 140000
+  },
+  "puzzle": {
+    "brief": "El camino aparente oculta una cámara.",
+    "hints": [
+      "Una plataforma ausente puede revelar espacio útil.",
+      "Detente y observa qué ocurre después de apoyar el peso.",
+      "El suelo aparente es también el techo de la cámara. Mira qué protege su entrada."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 256,
+      "y": 2312,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "west-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": -216,
+      "y": 2496,
+      "width": 1024,
+      "height": 576,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 896,
+        "height": 550
+      }
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 352,
+      "y": 2160,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "stone-column-segment",
+      "asset": "environment:stone_column_segment",
+      "x": 16,
+      "y": 1944,
+      "width": 128,
+      "height": 552,
+      "rotation": 0,
+      "visible": true,
+      "layer": -10,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 96,
+        "height": 496
+      },
+      "type": "decoration"
+    },
+    {
+      "id": "stone-bridge-center",
+      "asset": "environment:stone_bridge_center",
+      "x": -224,
+      "y": 1904,
+      "width": 384,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 10,
+        "y": 32,
+        "width": 364,
+        "height": 16
+      },
+      "type": "platform"
+    },
+    {
+      "id": "stone-interior",
+      "asset": "environment:stone_interior",
+      "x": -200,
+      "y": 1968,
+      "width": 280,
+      "height": 616,
+      "rotation": 0,
+      "visible": true,
+      "layer": -11,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "type": "decoration"
+    },
+    {
+      "id": "glowing-rune-a",
+      "asset": "environment:glowing_rune_a",
+      "x": -48,
+      "y": 1832,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "type": "decoration"
+    },
+    {
+      "id": "beam-emitter",
+      "asset": "world:beam_emitter",
+      "x": 72,
+      "y": 1928,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64,
+        "enabled": false
+      },
+      "kind": "beam_emitter",
+      "effect": {
+        "x": 31,
+        "y": 31,
+        "width": 2,
+        "height": 2,
+        "enabled": true
+      },
+      "hint": "El centro de la zona de efecto es el origen del haz. Sin cuerpo sólido ni daño.",
+      "behavior": {
+        "kind": "beamEmitter",
+        "direction": "right",
+        "range": 2400,
+        "maxBounces": 12,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "type": "world"
+    },
+    {
+      "id": "deep-water",
+      "asset": "world:deep_water",
+      "x": 792,
+      "y": 2608,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 80,
+        "width": 256,
+        "height": 176
+      },
+      "kind": "deep_water",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 256,
+        "height": 176
+      },
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "hint": "Solo Agua cruza el lago.",
+      "type": "world"
+    },
+    {
+      "id": "floating-wooden-block",
+      "asset": "world:floating_wooden_block",
+      "x": 800,
+      "y": 2480,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 53,
+        "y": 47,
+        "width": 150,
+        "height": 148
+      },
+      "kind": "floating_wooden_block",
+      "effect": {
+        "enabled": false,
+        "x": 53,
+        "y": 47,
+        "width": 150,
+        "height": 148
+      },
+      "behavior": {
+        "kind": "float",
+        "draft": 0.25,
+        "riseSpeed": 160,
+        "currentSpeed": 0
+      },
+      "state": "idle",
+      "hint": "Cae en seco, flota en agua profunda y transporta al jugador. Corriente horizontal configurable.",
+      "type": "world"
+    }
+  ],
+  "cameraZoom": 0.5
+}

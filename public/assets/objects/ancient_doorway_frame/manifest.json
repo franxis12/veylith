@@ -1,0 +1,58 @@
+{
+  "name": "VEYLITH — Ancient doorway frame with recessed stone wall",
+  "version": 1,
+  "image": "ancient_doorway_frame.png",
+  "dimensions": {
+    "width": 1280,
+    "height": 1344
+  },
+  "alpha": "RGBA, straight alpha, transparent exterior; opaque masonry including doorway interior",
+  "colorSpace": "sRGB",
+  "hasFloor": false,
+  "hasOpaqueBackWall": true,
+  "renderOrder": [
+    "level background",
+    "ancient_doorway_frame.png",
+    "existing magical seal clipped to alignment/seal_clip_mask.png"
+  ],
+  "doorwayBaselineY": 1234,
+  "doorwayAnchor": {
+    "x": 700,
+    "y": 1234,
+    "normalized": {
+      "x": 0.546875,
+      "y": 0.9181547619047619
+    }
+  },
+  "sealPlacement": {
+    "left": 560,
+    "top": 676,
+    "width": 280,
+    "height": 560,
+    "uniformScale": 0.546875,
+    "sourceDimensions": {
+      "width": 512,
+      "height": 1024
+    },
+    "sourceFolder": "../magical_seal/",
+    "anchorInFrame": {
+      "x": 700,
+      "y": 1236
+    },
+    "clipMask": "alignment/seal_clip_mask.png",
+    "note": "The visual mask only clips seal rendering; it is not a collider. At the same uniform frame scale, multiply all placement coordinates and sizes by that scale."
+  },
+  "previewOnly": [
+    "preview/frame_with_seal.png",
+    "preview/frame_with_seal_lifecycle.webp",
+    "preview/frame_with_seal_lifecycle.gif",
+    "preview/frame_on_checkerboard.png",
+    "preview/seal_on_checkerboard.png"
+  ],
+  "notes": [
+    "Main sprite contains the recessed wall and no baked-in magic.",
+    "No ground, platform, step, threshold or grass floor is included. Roof ivy and side roots remain.",
+    "Generated reconstruction of the supplied screenshot, not a pixel-exact extraction.",
+    "No game code or collision definitions. Existing seal frames remain unmodified."
+  ]
+}

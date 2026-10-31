@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:," />
+    <title>Illustrated physics verification</title>
+    <style>
+      html,
+      body,
+      #game {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #052c35;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <script type="module">
+      import Phaser from 'phaser';
+      import { createGameConfig } from '../src/game/core/GameConfig.ts';
+      import { ActionState } from '../src/game/systems/input/ActionState.ts';
+      import { LevelProgress } from '../src/game/levels/LevelProgress.ts';
+      import { RunSession } from '../src/game/session/RunSession.ts';
+      let game, actions, run, attempts;
+      window.illustratedTest = {
+        async start(doc) {
+          if (game) {
+            game.destroy(true);
+            await new Promise((r) =>
+              requestAnimationFrame(() => requestAnimationFrame(r)),
+            );
+          }
+          actions = new ActionState();
+          run = new RunSession();
+          attempts = 0;
+          await new Promise((resolve, reject) => {
+            game = new Phaser.Game(
+              createGameConfig(
+                document.getElementById('game'),
+                () => {
+                  attempts++;
+                  resolve();
+                },
+                1,
+                {
+                  document: doc,
+                  input: actions,
+                  progress: new LevelProgress(),
+                  run,
+                  onError: reject,
+                },
+              ),
+            );
+          });
+        },
+        input(type, phase = 'pressed') {
+          actions.dispatch({ type, phase }, 'illustrated-test');
+        },
+        retry() {
+          run.retry();
+          actions.reset();
+          this.input('restart_level');
+        },
+        pause() {
+          game.scene.pause('MainScene');
+        },
+        resume() {
+          game.scene.resume('MainScene');
+        },
+        read() {
+          const scene = game.scene.getScene('MainScene'),
+            p = scene.player.body,
+            puzzle = scene.forestPuzzle;
+          return {
+            x: p.center.x,
+            feet: p.bottom,
+            grounded: p.blocked.down || p.touching.down,
+            vx: p.velocity.x,
+            vy: p.velocity.y,
+            element: scene.player.element,
+            attempts,
+            run: run.getSnapshot(),
+            document: puzzle.layout.document,
+            plate: puzzle.state.isSolved('plate'),
+            blocks: puzzle.heavyBlocks.map((b) => ({
+              x: b.body.center.x,
+              feet: b.body.bottom,
+              width: b.body.width,
+              height: b.body.height,
+            })),
+            boxes: [...puzzle.bodies]
+              .filter(
+                ([id]) =>
+                  puzzle.layout.document.objects.find((o) => o.id === id)
+                    ?.type === 'boxCollider',
+              )
+              .map(([id, r]) => ({
+                id,
+                x: r.body.x,
+                y: r.body.y,
+                width: r.body.width,
+                height: r.body.height,
+                enabled: r.body.enable,
+              })),
+            art: scene.children.list
+              .filter((o) => o.texture?.key?.startsWith('illustrated:'))
+              .map((o) => ({
+                name: o.name,
+                x: o.x,
+                y: o.y,
+                width: o.displayWidth,
+                height: o.displayHeight,
+                depth: o.depth,
+                alpha: o.alpha,
+                frame: o.frame.name,
+                playing: o.anims?.isPlaying ?? false,
+                key: o.texture.key,
+              })),
+            textures: game.textures
+              .getTextureKeys()
+              .filter((k) => k.startsWith('illustrated:')),
+            objects: scene.children.length,
+            listeners: scene.physics.world.listenerCount('worldstep'),
+          };
+        },
+      };
+    </script>
+  </body>
+</html>

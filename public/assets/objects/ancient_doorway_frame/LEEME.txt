@@ -1,0 +1,16 @@
+MARCO DE PUERTA — VEYLITH
+
+Importa ancient_doorway_frame.png (1280 × 1344).
+El exterior es transparente. El hueco contiene una pared de piedra opaca.
+No incluye suelo, escalón ni plataforma.
+
+Coloca la animación existente del sello encima del marco:
+- Coordenadas locales de su esquina superior izquierda: x=560, y=676.
+- Tamaño: 280 × 560 (escala uniforme 0,546875 respecto a los fotogramas 512 × 1024).
+- Usa alignment/seal_clip_mask.png para contener el efecto dentro de la abertura.
+- La máscara usa el mismo lienzo 1280 × 1344; es una máscara visual, no un collider.
+- Al escalar el marco, escala también estas coordenadas y tamaños.
+
+Las vistas de preview sirven solo para comprobar el montaje. La animación original no se ha modificado.
+El PNG principal no lleva magia incorporada.
+Se trata de una reconstrucción ilustrada de la referencia.

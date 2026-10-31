@@ -1,0 +1,322 @@
+{
+  "version": 1,
+  "id": "forest-10",
+  "name": "El mecanismo dormido",
+  "theme": "ancient-forest",
+  "width": 2304,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 65000,
+    "twoStarsMs": 160000
+  },
+  "puzzle": {
+    "brief": "Prepara el recorrido antes de despertar el reloj.",
+    "hints": [
+      "El reloj no prepara el camino por ti.",
+      "La piedra bloquea una ruta que será necesaria en ambos sentidos.",
+      "Separa la preparación sin prisa del viaje temporizado; hay un mando de retorno al otro lado."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 769,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 52.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["plate", "far-seal"]
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2304,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 2304,
+        "height": 500
+      }
+    },
+    {
+      "id": "exit-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 260,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["plate", "far-seal"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "cargo",
+      "type": "block",
+      "asset": "block",
+      "x": 1080,
+      "y": 594,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 56
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 500,
+      "y": 610,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "La piedra fija un contacto al quedar apoyada."
+    },
+    {
+      "id": "prepared-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1250,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["plate"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "clock-door",
+      "type": "world",
+      "asset": "world:timed_door",
+      "x": 1500,
+      "y": 0,
+      "width": 264,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 100,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "kind": "timed_door",
+      "behavior": {
+        "kind": "timedDoor",
+        "openMs": 6000,
+        "warningMs": 1500,
+        "initiallyOpen": false,
+        "retrigger": "restart",
+        "requires": [],
+        "autostart": false
+      },
+      "state": "closed",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 264,
+        "height": 650
+      }
+    },
+    {
+      "id": "clock-start",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 902,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": ["clock-door"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "far-seal",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 1832,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": ["clock-door"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "clock-cue",
+      "type": "label",
+      "asset": null,
+      "x": 820,
+      "y": 290,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "Preparación · Reloj · Regreso"
+    },
+    {
+      "id": "bridge-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 650,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

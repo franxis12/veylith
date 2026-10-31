@@ -1,0 +1,156 @@
+.reflector-prompt {
+  position: absolute;
+  bottom: max(86px, calc(env(safe-area-inset-bottom) + 76px));
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: calc(100% - 32px);
+  margin: 0;
+  padding: 7px 14px;
+  border-radius: 10px;
+  background: #062d35e8;
+  color: #fff0bc;
+  text-align: center;
+  pointer-events: none;
+  font-size: 14px;
+}
+.reflector-controls {
+  position: absolute;
+  left: max(16px, env(safe-area-inset-left));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 4;
+  width: min(340px, calc(100% - 204px));
+  max-height: calc(100% - 88px);
+  overflow: auto;
+  padding: 12px;
+  border: 1px solid #b5a46b;
+  border-radius: 16px;
+  background: #062d35f2;
+  color: #fff0bc;
+  box-shadow: 0 4px 16px #0005;
+}
+.reflector-controls header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.reflector-control-body {
+  display: grid;
+  grid-template-columns: 128px minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+.reflector-dial {
+  position: relative;
+  width: 128px;
+  height: 128px;
+  border: 2px solid #8a9f91;
+  border-radius: 50%;
+  background: #103c45;
+  touch-action: none;
+  user-select: none;
+  cursor: crosshair;
+}
+.reflector-dial:focus-visible {
+  outline: 3px solid #fff1b3;
+  outline-offset: 3px;
+}
+.reflector-axis {
+  position: absolute;
+  inset: 12%;
+  border: 1px dashed #75867a;
+  border-radius: 50%;
+}
+.reflector-axis::before,
+.reflector-axis::after {
+  content: '';
+  position: absolute;
+  background: #78918d55;
+}
+.reflector-axis::before {
+  top: 50%;
+  left: -14%;
+  width: 128%;
+  height: 1px;
+}
+.reflector-axis::after {
+  left: 50%;
+  top: -14%;
+  height: 128%;
+  width: 1px;
+}
+.reflector-needle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 42%;
+  height: 3px;
+  transform-origin: 0 50%;
+  transform: translateY(-50%) rotate(var(--mirror-angle));
+  background: #ffe4a0;
+  pointer-events: none;
+}
+.reflector-needle > span {
+  position: absolute;
+  right: -6px;
+  top: -6px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #fff2b6;
+  border-radius: 50%;
+  background: #53caca;
+}
+.reflector-help output {
+  font-size: 20px;
+  font-variant-numeric: tabular-nums;
+}
+.reflector-help p {
+  font-size: 12px;
+  line-height: 1.4;
+  margin: 6px 0;
+}
+.reflector-help small {
+  font-size: 11px;
+  color: #c9d6cf;
+}
+@media (max-height: 500px) {
+  .reflector-controls {
+    padding: 8px;
+    width: min(320px, calc(100% - 204px));
+    left: max(12px, env(safe-area-inset-left));
+    bottom: max(8px, env(safe-area-inset-bottom));
+  }
+  .reflector-control-body {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .reflector-dial {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Keep the held Action button mounted and at the same position throughout aiming. */
+.gameplay-controls[data-reflector-active='true'] .movement-controls,
+.gameplay-controls[data-reflector-active='true'] [data-action='jump'] {
+  visibility: hidden;
+}
+@media (max-width: 500px) {
+  .reflector-controls {
+    left: 12px;
+    right: 12px;
+    bottom: max(100px, calc(env(safe-area-inset-bottom) + 90px));
+    width: auto;
+    max-height: calc(100% - 188px);
+  }
+  .reflector-control-body {
+    grid-template-columns: 100px minmax(0, 1fr);
+    gap: 12px;
+  }
+  .reflector-dial {
+    width: 100px;
+    height: 100px;
+  }
+}

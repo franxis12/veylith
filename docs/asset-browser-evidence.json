@@ -1,0 +1,4943 @@
+{
+  "schemaVersion": 1,
+  "sourceFingerprint": "b4fd7e502b257eba5c14693cfeecad9376f4b337e40cb1971f2640415abe338d",
+  "passed": true,
+  "method": "Phaser camera intersection plus visible parent chain; DOM visibility plus CSS frame sampling. No loading/registry presence counted as rendered.",
+  "reports": [
+    {
+      "path": "/Users/francismartinez/Documents/Codex/2026-10-21/referenced-chatgpt-conversation-this-is-an-4/work/stage-one-smoke/results.json",
+      "checks": [
+        "Door opens by input, pauses its clock, expires, waits for player clearance, closes and resets.",
+        "Contact platform drops its rider after the delay, returns after hidden interval and resets.",
+        "Bounce launches the real player upward and resets; element stays Earth.",
+        "Floating block falls into water, reaches its draft and carries Earth with the current, without a water retry.",
+        "Active barrier blocks real movement; switch off removes collision and restart restores it.",
+        "Activate / deactivate / toggle switches command two mechanism IDs using normal input.",
+        "Wrong element is ignored; a real Fire gem pickup and projectile activate the configured switch.",
+        "Invalid optional sheets use original static fallback art while door timing and collision remain functional."
+      ]
+    },
+    {
+      "path": "/Users/francismartinez/Documents/Codex/2026-10-21/referenced-chatgpt-conversation-this-is-an-4/work/stage-one-editor/results.json",
+      "checks": [
+        "All six functional palette entries expose their gameplay parameters and ID links.",
+        "Explicit save and reopen preserve every parameter and connection in JSON v1.",
+        "Playtest mounts, pauses, resumes, resizes, restarts and unmounts without modifying the draft or campaign save."
+      ]
+    },
+    {
+      "path": "/Users/francismartinez/Documents/Codex/2026-10-21/referenced-chatgpt-conversation-this-is-an-4/work/world-regression/results.json",
+      "checks": [
+        "Lever input activates elevator; the real player rides upward",
+        "Restart restores lift and lever state",
+        "Horizontal fan blocks Water, Fire and Air; Earth moves against it",
+        "Matching elements traverse liquid surfaces; wrong elements restart the attempt",
+        "Actual Water shots activate the wheel; Fire cannot",
+        "Boiler receives Water, then Fire after an actual gem pickup; no manual transformation",
+        "Earth timed strike destroys wall after configured hits and removes collision",
+        "Lever extends and retracts bridge; collision follows completed extension"
+      ]
+    },
+    {
+      "path": "/Users/francismartinez/Documents/Codex/2026-10-21/referenced-chatgpt-conversation-this-is-an-4/work/asset-current/results.json",
+      "checks": [
+        "Actual menu/options/levels/HUD/pause/resume/restart/mobile landscape/unmount",
+        "Real portal completion opens RunHud reward animation; every CSS frame sampled",
+        "Lever drives door opening/closing and fan starting/stopping through real ability input",
+        "World coin spin and pickup burst; pickup does not mint saved currency",
+        "Actual Water/Fire projectiles activate tank water loop and torch flame",
+        "Heating plays without activating steam prematurely; real gem replacement and Water hit enable steam",
+        "Four gem colors spawn, idle and collect; each transforms immediately, with independent VFX",
+        "Representative full wheel loop, elemental projectiles, jumps, Fire double jump, Air glide and Earth landing",
+        "Pause freezes scene; repeated restart keeps textures, object count and physics listeners bounded"
+      ],
+      "resources": [
+        {
+          "textures": 92,
+          "objects": 9,
+          "worldstepListeners": 1,
+          "textureMiB": 323.71875
+        },
+        {
+          "textures": 92,
+          "objects": 9,
+          "worldstepListeners": 1,
+          "textureMiB": 323.71875
+        },
+        {
+          "textures": 92,
+          "objects": 9,
+          "worldstepListeners": 1,
+          "textureMiB": 323.71875
+        },
+        {
+          "textures": 92,
+          "objects": 9,
+          "worldstepListeners": 1,
+          "textureMiB": 323.71875
+        }
+      ]
+    },
+    {
+      "path": "/Users/francismartinez/Documents/Codex/2026-10-21/referenced-chatgpt-conversation-this-is-an-4/work/campaign-final/results.json",
+      "levels": [
+        {
+          "id": "forest-1",
+          "level": "forest-1",
+          "elapsedMs": 18152.5,
+          "bestTimeMs": 18152.5,
+          "stars": 3,
+          "earnedCoins": 105,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "7b9a8710fc4eef88cd0776038641c22bf0004f9edb9bab039a1cf441e064021a",
+          "route": "forest-1",
+          "trace": [
+            {
+              "step": ["s", 512],
+              "x": 580.1666666666661,
+              "feet": 720,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["s", 768],
+              "x": 833.3333333333351,
+              "feet": 680,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["p", 1712],
+              "x": 1911.8333333333262,
+              "feet": 680,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["s", 2304],
+              "x": 2369.166666666666,
+              "feet": 640,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["s", 2560],
+              "x": 2626.4166666666756,
+              "feet": 600,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["s", 2816],
+              "x": 2883.666666666685,
+              "feet": 560,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["w", "grove-wall", 3330],
+              "x": 3259.3333333333658,
+              "feet": 560,
+              "plate": true,
+              "signals": ["grove-wall"]
+            },
+            {
+              "step": ["end", 3850],
+              "x": 3786.0833333333853,
+              "feet": 560,
+              "plate": true,
+              "signals": ["grove-wall"]
+            }
+          ]
+        },
+        {
+          "id": "forest-2",
+          "level": "forest-2",
+          "elapsedMs": 23297.599999904633,
+          "bestTimeMs": 23297.599999904633,
+          "stars": 3,
+          "earnedCoins": 105,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "d3a25da270ec2a37f596881fd7b950eff75bab19bffb86320aa02a14d9121773",
+          "route": "forest-2",
+          "trace": [
+            {
+              "step": ["w", "rim-wall", 680],
+              "x": 612.833333333333,
+              "feet": 560,
+              "plate": false,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["dropplate", 1840],
+              "x": 2039.3333333333262,
+              "feet": 800,
+              "plate": true,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["s", 2304],
+              "x": 2370.083333333335,
+              "feet": 760,
+              "plate": true,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["s", 2560],
+              "x": 2627.3333333333444,
+              "feet": 720,
+              "plate": true,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["s", 2816],
+              "x": 2884.583333333354,
+              "feet": 680,
+              "plate": true,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["s", 3072],
+              "x": 3137.75000000003,
+              "feet": 640,
+              "plate": true,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["s", 3328],
+              "x": 3395.0000000000396,
+              "feet": 600,
+              "plate": true,
+              "signals": ["rim-wall"]
+            },
+            {
+              "step": ["w", "root-wall", 3950],
+              "x": 3880.9166666667243,
+              "feet": 600,
+              "plate": true,
+              "signals": ["rim-wall", "root-wall"]
+            },
+            {
+              "step": ["end", 4380],
+              "x": 4321.916666666722,
+              "feet": 600,
+              "plate": true,
+              "signals": ["rim-wall", "root-wall"]
+            }
+          ]
+        },
+        {
+          "id": "forest-6",
+          "level": "forest-6",
+          "elapsedMs": 19502.60000014305,
+          "bestTimeMs": 19502.60000014305,
+          "stars": 3,
+          "earnedCoins": 100,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "26d35ba0bb8136da07159ea594f12d7ec88d87560bccda12c6e811de65c76a3c",
+          "route": "forest-6",
+          "trace": [
+            {
+              "step": ["s", 512],
+              "x": 580.1666666666661,
+              "feet": 720,
+              "plate": false,
+              "signals": ["headwind"]
+            },
+            {
+              "step": ["s", 768],
+              "x": 833.3333333333351,
+              "feet": 680,
+              "plate": false,
+              "signals": ["headwind"]
+            },
+            {
+              "step": ["s", 1024],
+              "x": 1090.5833333333374,
+              "feet": 640,
+              "plate": false,
+              "signals": ["headwind"]
+            },
+            {
+              "step": ["l", "wind-lever", 1550],
+              "x": 1556.0833333333287,
+              "feet": 640,
+              "plate": false,
+              "signals": ["wind-lever", "first-bridge", "headwind"]
+            },
+            {
+              "step": ["w", "wind-wall", 2690],
+              "x": 2621.833333333338,
+              "feet": 640,
+              "plate": false,
+              "signals": [
+                "wind-lever",
+                "first-bridge",
+                "headwind",
+                "wind-wall",
+                "second-bridge"
+              ]
+            },
+            {
+              "step": ["end", 4360],
+              "x": 4300.083333333384,
+              "feet": 640,
+              "plate": false,
+              "signals": [
+                "wind-lever",
+                "first-bridge",
+                "headwind",
+                "wind-wall",
+                "second-bridge"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "forest-7",
+          "level": "forest-7",
+          "elapsedMs": 19365.599999904633,
+          "bestTimeMs": 19365.599999904633,
+          "stars": 3,
+          "earnedCoins": 100,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "4b9cbad45dd2f2dc9e112e9b3d6677ad26c1aeb411d983b0860b21fe959dc1e1",
+          "route": "forest-7",
+          "trace": [
+            {
+              "step": ["s", 512],
+              "x": 580.1666666666661,
+              "feet": 700,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["s", 768],
+              "x": 833.3333333333351,
+              "feet": 660,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["l", "island-lever", 860],
+              "x": 866.000000000002,
+              "feet": 660,
+              "plate": false,
+              "signals": ["island-lever", "near-bridge"]
+            },
+            {
+              "step": ["w", "island-wall", 1770],
+              "x": 1703.083333333326,
+              "feet": 660,
+              "plate": false,
+              "signals": [
+                "island-lever",
+                "near-bridge",
+                "island-wall",
+                "far-bridge"
+              ]
+            },
+            {
+              "step": ["m", 2760],
+              "x": 2760.6666666666765,
+              "feet": 660,
+              "plate": false,
+              "signals": [
+                "island-lever",
+                "near-bridge",
+                "island-wall",
+                "far-bridge"
+              ]
+            },
+            {
+              "step": ["j", 2980],
+              "x": 2981.1666666666847,
+              "feet": 660,
+              "plate": false,
+              "signals": [
+                "island-lever",
+                "near-bridge",
+                "island-wall",
+                "far-bridge"
+              ]
+            },
+            {
+              "step": ["m", 3110],
+              "x": 3111.833333333356,
+              "feet": 660,
+              "plate": false,
+              "signals": [
+                "island-lever",
+                "near-bridge",
+                "island-wall",
+                "far-bridge"
+              ]
+            },
+            {
+              "step": ["j", 3330],
+              "x": 3332.3333333333644,
+              "feet": 660,
+              "plate": false,
+              "signals": [
+                "island-lever",
+                "near-bridge",
+                "island-wall",
+                "far-bridge"
+              ]
+            },
+            {
+              "step": ["end", 4350],
+              "x": 4287.833333333385,
+              "feet": 660,
+              "plate": false,
+              "signals": [
+                "island-lever",
+                "near-bridge",
+                "island-wall",
+                "far-bridge"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "forest-8",
+          "level": "forest-8",
+          "elapsedMs": 26489.5,
+          "bestTimeMs": 26489.5,
+          "stars": 3,
+          "earnedCoins": 105,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "1b83b91909a151348fa433ffdbd0a1cbd37e50e2ed48fb910a325055ed876360",
+          "route": "forest-8",
+          "trace": [
+            {
+              "step": ["l", "lift-lever", 820],
+              "x": 825.1666666666683,
+              "feet": 760,
+              "plate": false,
+              "signals": ["lift-lever", "lift"]
+            },
+            {
+              "step": ["v", "lift", 1024, 1408, 480],
+              "x": 1494.8333333333298,
+              "feet": 480,
+              "plate": false,
+              "signals": ["lift-lever", "lift"]
+            },
+            {
+              "step": ["w", "high-wall", 1820],
+              "x": 1752.083333333325,
+              "feet": 480,
+              "plate": false,
+              "signals": ["lift-lever", "lift", "high-wall", "ruin-bridge"]
+            },
+            {
+              "step": ["s", 3200],
+              "x": 3267.0000000000286,
+              "feet": 440,
+              "plate": false,
+              "signals": ["lift-lever", "lift", "high-wall", "ruin-bridge"]
+            },
+            {
+              "step": ["s", 3456],
+              "x": 3524.250000000038,
+              "feet": 400,
+              "plate": false,
+              "signals": ["lift-lever", "lift", "high-wall", "ruin-bridge"]
+            },
+            {
+              "step": ["s", 3712],
+              "x": 3777.4166666667143,
+              "feet": 360,
+              "plate": false,
+              "signals": ["lift-lever", "lift", "high-wall", "ruin-bridge"]
+            },
+            {
+              "step": ["end", 4360],
+              "x": 4296.000000000051,
+              "feet": 360,
+              "plate": false,
+              "signals": ["lift-lever", "lift", "high-wall", "ruin-bridge"]
+            }
+          ]
+        },
+        {
+          "id": "forest-9",
+          "level": "forest-9",
+          "elapsedMs": 30328.10000014305,
+          "bestTimeMs": 30328.10000014305,
+          "stars": 3,
+          "earnedCoins": 100,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "0e5b4d08f238786903ab08bac1c97c07b2ea4a81eb24d03060cd77a9eb3759ba",
+          "route": "forest-9",
+          "trace": [
+            {
+              "step": ["s", 512],
+              "x": 580.1666666666661,
+              "feet": 760,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["s", 768],
+              "x": 833.3333333333351,
+              "feet": 720,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["w", "engine-wall", 1200],
+              "x": 1131.41666666667,
+              "feet": 720,
+              "plate": false,
+              "signals": ["engine-wall"]
+            },
+            {
+              "step": ["l", "engine-lever", 1570],
+              "x": 1576.499999999995,
+              "feet": 720,
+              "plate": false,
+              "signals": ["engine-wall", "engine-lever", "lift"]
+            },
+            {
+              "step": ["v", "lift", 1792, 2176, 440],
+              "x": 2262.4999999999914,
+              "feet": 440,
+              "plate": false,
+              "signals": ["engine-wall", "engine-lever", "lift"]
+            },
+            {
+              "step": ["p", 2992],
+              "x": 3191.8333333333476,
+              "feet": 440,
+              "plate": true,
+              "signals": [
+                "engine-wall",
+                "engine-lever",
+                "lift",
+                "workshop-bridge"
+              ]
+            },
+            {
+              "step": ["end", 4860],
+              "x": 4796.583333333336,
+              "feet": 440,
+              "plate": true,
+              "signals": [
+                "engine-wall",
+                "engine-lever",
+                "lift",
+                "workshop-bridge"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "forest-10",
+          "level": "forest-10",
+          "elapsedMs": 21359.700000047684,
+          "bestTimeMs": 21359.700000047684,
+          "stars": 3,
+          "earnedCoins": 105,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "d7ba6835a0dc63131ed724dd5e1fab8a94abc979b5af98e60f1bfbe8c0308796",
+          "route": "forest-10",
+          "trace": [
+            {
+              "step": ["l", "route-lever", 800],
+              "x": 804.7500000000015,
+              "feet": 680,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["m", 1000],
+              "x": 1000.7500000000033,
+              "feet": 680,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 1120],
+              "x": 1188.5833333333355,
+              "feet": 640,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 1248],
+              "x": 1315.1666666666665,
+              "feet": 600,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 1376],
+              "x": 1441.7499999999975,
+              "feet": 560,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 1504],
+              "x": 1572.4166666666617,
+              "feet": 520,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 1712],
+              "x": 1780.6666666666579,
+              "feet": 480,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 1840],
+              "x": 1907.2499999999889,
+              "feet": 440,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["c", 2100],
+              "x": 2107.333333333319,
+              "feet": 440,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["m", 2260],
+              "x": 2262.4999999999914,
+              "feet": 441.05555555555554,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["m", 2600],
+              "x": 2601.4166666666706,
+              "feet": 680,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 3072],
+              "x": 3140.4166666666906,
+              "feet": 640,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 3328],
+              "x": 3393.5833333333667,
+              "feet": 600,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["s", 3584],
+              "x": 3654.9166666667097,
+              "feet": 560,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge"]
+            },
+            {
+              "step": ["w", "exit-wall", 4020],
+              "x": 3953.000000000054,
+              "feet": 560,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge", "exit-wall"]
+            },
+            {
+              "step": ["end", 4360],
+              "x": 4296.000000000051,
+              "feet": 560,
+              "plate": false,
+              "signals": ["route-lever", "main-bridge", "exit-wall"]
+            }
+          ]
+        },
+        {
+          "id": "forest-3",
+          "level": "forest-3",
+          "elapsedMs": 39051.39999985695,
+          "bestTimeMs": 39051.39999985695,
+          "stars": 3,
+          "earnedCoins": 100,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "ded1dc96a3cea4216b904fc26f495e87578689ee1e352e57cae298e1b1aba9f7",
+          "route": "forest-3",
+          "trace": [
+            {
+              "step": ["l", "ferry-lever", 560],
+              "x": 567.916666666666,
+              "feet": 720,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry"]
+            },
+            {
+              "step": ["f", "ferry", 768, 1888, 720],
+              "x": 1974.5833333333258,
+              "feet": 720,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry"]
+            },
+            {
+              "step": ["s", 2400],
+              "x": 2468.6666666666706,
+              "feet": 680,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry"]
+            },
+            {
+              "step": ["s", 2656],
+              "x": 2721.8333333333467,
+              "feet": 640,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry"]
+            },
+            {
+              "step": ["s", 2912],
+              "x": 2979.083333333356,
+              "feet": 600,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry"]
+            },
+            {
+              "step": ["s", 3168],
+              "x": 3236.3333333333658,
+              "feet": 560,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry"]
+            },
+            {
+              "step": ["w", "cliff-wall", 3650],
+              "x": 3579.3333333333785,
+              "feet": 560,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry", "cliff-wall", "cliff-bridge"]
+            },
+            {
+              "step": ["end", 4620],
+              "x": 4555.250000000037,
+              "feet": 560,
+              "plate": false,
+              "signals": ["ferry-lever", "ferry", "cliff-wall", "cliff-bridge"]
+            }
+          ]
+        },
+        {
+          "id": "forest-4",
+          "level": "forest-4",
+          "elapsedMs": 24646.900000095367,
+          "bestTimeMs": 24646.900000095367,
+          "stars": 3,
+          "earnedCoins": 105,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "bb3533a13b8adc3d050384d0beea13ee234225ce5d6ed7479be4a5f1b50d44b3",
+          "route": "forest-4",
+          "trace": [
+            {
+              "step": ["s", 256],
+              "x": 322.9166666666669,
+              "feet": 600,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["s", 512],
+              "x": 580.1666666666661,
+              "feet": 560,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["m", 1857],
+              "x": 1858.2499999999898,
+              "feet": 582.25,
+              "plate": false,
+              "signals": []
+            },
+            {
+              "step": ["leftplate", 1296],
+              "x": 1479.5,
+              "feet": 800,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["m", 1510],
+              "x": 1512.166666666666,
+              "feet": 800,
+              "plate": true,
+              "signals": ["weight-bridge"]
+            },
+            {
+              "step": ["s", 2560],
+              "x": 2626.9166666666747,
+              "feet": 760,
+              "plate": true,
+              "signals": ["weight-bridge"]
+            },
+            {
+              "step": ["s", 2816],
+              "x": 2884.1666666666843,
+              "feet": 720,
+              "plate": true,
+              "signals": ["weight-bridge"]
+            },
+            {
+              "step": ["s", 3072],
+              "x": 3137.3333333333603,
+              "feet": 680,
+              "plate": true,
+              "signals": ["weight-bridge"]
+            },
+            {
+              "step": ["s", 3328],
+              "x": 3394.58333333337,
+              "feet": 640,
+              "plate": true,
+              "signals": ["weight-bridge"]
+            },
+            {
+              "step": ["w", "weight-wall", 4330],
+              "x": 4260.250000000057,
+              "feet": 640,
+              "plate": true,
+              "signals": ["weight-bridge", "weight-wall"]
+            },
+            {
+              "step": ["end", 4620],
+              "x": 4558.3333333333685,
+              "feet": 640,
+              "plate": true,
+              "signals": ["weight-bridge", "weight-wall"]
+            }
+          ]
+        },
+        {
+          "id": "forest-5",
+          "level": "forest-5",
+          "elapsedMs": 39028.300000190735,
+          "bestTimeMs": 39028.300000190735,
+          "stars": 3,
+          "earnedCoins": 150,
+          "newRecord": true,
+          "attempts": 1,
+          "element": "earth",
+          "documentSha256": "ac47412734998b054a97aaae4f61a43a0f854b146739e9ee838ac4648530f99b",
+          "route": "forest-5",
+          "trace": [
+            {
+              "step": ["dropplate", 1584],
+              "x": 1784.3333333333262,
+              "feet": 760,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["s", 2048],
+              "x": 2115.0833333333208,
+              "feet": 720,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["s", 2304],
+              "x": 2376.416666666664,
+              "feet": 680,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["s", 2560],
+              "x": 2625.5000000000064,
+              "feet": 640,
+              "plate": true,
+              "signals": []
+            },
+            {
+              "step": ["w", "engine-seal", 2860],
+              "x": 2792.9166666666792,
+              "feet": 640,
+              "plate": true,
+              "signals": ["engine-seal"]
+            },
+            {
+              "step": ["l", "sanctuary-lever", 3130],
+              "x": 3135.916666666692,
+              "feet": 640,
+              "plate": true,
+              "signals": ["engine-seal", "sanctuary-lever", "sanctuary-lift"]
+            },
+            {
+              "step": ["v", "sanctuary-lift", 3328, 3712, 360],
+              "x": 3797.4166666667165,
+              "feet": 360,
+              "plate": true,
+              "signals": ["engine-seal", "sanctuary-lever", "sanctuary-lift"]
+            },
+            {
+              "step": ["w", "last-seal", 4120],
+              "x": 4050.5833333333926,
+              "feet": 360,
+              "plate": true,
+              "signals": [
+                "engine-seal",
+                "sanctuary-lever",
+                "sanctuary-lift",
+                "last-seal",
+                "sanctuary-bridge"
+              ]
+            },
+            {
+              "step": ["end", 6130],
+              "x": 6071.833333333253,
+              "feet": 360,
+              "plate": true,
+              "signals": [
+                "engine-seal",
+                "sanctuary-lever",
+                "sanctuary-lift",
+                "last-seal",
+                "sanctuary-bridge"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1463
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 17909
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closed.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 206
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_frame.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 716
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1203
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 1021
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_spritesheet.png",
+      "animation": "world-animation:door_opening",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 68
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_spritesheet.png",
+      "animation": "world-animation:fire_switch_igniting",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 130
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 797
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_open.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 361
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_spritesheet.png",
+      "animation": "world-animation:fire_switch_active",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 362
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_spritesheet.png",
+      "animation": "world-animation:door_warning",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 54
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 434
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 434
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_spritesheet.png",
+      "animation": "world-animation:door_closing",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 27
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_solid.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 236
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 171
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 93
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_spritesheet.png",
+      "animation": "world-animation:platform_disappearing",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 62
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_hidden.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 102
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_spritesheet.png",
+      "animation": "world-animation:platform_appearing",
+      "frames": ["0"],
+      "samples": 2
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 39
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 80
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_spritesheet.png",
+      "animation": "world-animation:bounce_launch",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 41
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 29
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 436
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_top_body_tile.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 589
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_spritesheet.png",
+      "animation": "world-animation:water_surface",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 589
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_spritesheet.png",
+      "animation": "world-animation:water_bubbles",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 589
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 589
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_spritesheet.png",
+      "animation": "world-animation:wooden_block_wake",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 534
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_spritesheet.png",
+      "animation": "world-animation:barrier_active",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 294
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_posts.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 593
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_spritesheet.png",
+      "animation": "world-animation:barrier_deactivate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 62
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_spritesheet.png",
+      "animation": "world-animation:barrier_activate",
+      "frames": ["0", "1"],
+      "samples": 9
+    },
+    {
+      "path": "assets/characters/water/idle/water_idle_spritesheet.png",
+      "animation": "water:idle",
+      "frames": ["0", "1"],
+      "samples": 62
+    },
+    {
+      "path": "assets/items/gems/fire/spawn/fire_gem_spawn_spritesheet.png",
+      "animation": "gem:fire:spawn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 69
+    },
+    {
+      "path": "assets/characters/water/attack/water_attack_spritesheet.png",
+      "animation": "water:attack",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31
+    },
+    {
+      "path": "assets/vfx/water/projectile/water_projectile_spritesheet.png",
+      "animation": "effect:waterProjectile",
+      "frames": ["0", "1", "2"],
+      "samples": 13
+    },
+    {
+      "path": "assets/vfx/water/impact/water_impact_spritesheet.png",
+      "animation": "effect:waterImpact",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 22
+    },
+    {
+      "path": "assets/items/gems/fire/idle/fire_gem_idle_spritesheet.png",
+      "animation": "gem:fire:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6"],
+      "samples": 41
+    },
+    {
+      "path": "assets/characters/water/run/water_run_spritesheet.png",
+      "animation": "water:run",
+      "frames": ["0", "1", "2"],
+      "samples": 14
+    },
+    {
+      "path": "assets/characters/fire/idle/fire_idle_spritesheet.png",
+      "animation": "fire:idle",
+      "frames": ["0", "1"],
+      "samples": 26
+    },
+    {
+      "path": "assets/items/gems/fire/collect/fire_gem_collect_spritesheet.png",
+      "animation": "gem:fire:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 23
+    },
+    {
+      "path": "assets/effects/transformations/fire/fire_transform_spritesheet.png",
+      "animation": "transform:fire",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 31
+    },
+    {
+      "path": "assets/characters/fire/run/fire_run_spritesheet.png",
+      "animation": "fire:run",
+      "frames": ["0"],
+      "samples": 4
+    },
+    {
+      "path": "assets/characters/fire/attack/fire_attack_spritesheet.png",
+      "animation": "fire:attack",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 29
+    },
+    {
+      "path": "assets/vfx/fire/projectile/fire_projectile_spritesheet.png",
+      "animation": "effect:fireProjectile",
+      "frames": ["0"],
+      "samples": 5
+    },
+    {
+      "path": "assets/vfx/fire/impact/fire_impact_spritesheet.png",
+      "animation": "effect:fireImpact",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 27
+    },
+    {
+      "path": "assets/vfx/fire/burning_loop/fire_burning_loop_spritesheet.png",
+      "animation": "effect:fireBurn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 32
+    },
+    {
+      "path": "assets/characters/water/fall/water_fall_spritesheet.png",
+      "animation": "water:fall",
+      "frames": ["0"],
+      "samples": 3
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/preview.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 212
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/preview.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 54
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1408
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 11164
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 490
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 162
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 53
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 286
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 106
+    },
+    {
+      "path": "assets/characters/water/idle/water_idle_spritesheet.png",
+      "animation": "water:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 410
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "animation": "world-animation:elevator_activated",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 62
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "animation": "world-animation:elevator_gears",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 78
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 87
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_spritesheet.png",
+      "animation": "world-animation:fan_starting",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 116
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 185
+    },
+    {
+      "path": "assets/characters/water/run/water_run_spritesheet.png",
+      "animation": "water:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 164
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_spritesheet.png",
+      "animation": "world-animation:fan_blades",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 69
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "10", "11"],
+      "samples": 88
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 88
+    },
+    {
+      "path": "assets/characters/fire/idle/fire_idle_spritesheet.png",
+      "animation": "fire:idle",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 119
+    },
+    {
+      "path": "assets/characters/fire/run/fire_run_spritesheet.png",
+      "animation": "fire:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 146
+    },
+    {
+      "path": "assets/characters/air/idle/air_idle_spritesheet.png",
+      "animation": "air:idle",
+      "frames": ["0", "1", "2"],
+      "samples": 23
+    },
+    {
+      "path": "assets/characters/air/run/air_run_spritesheet.png",
+      "animation": "air:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 55
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2"],
+      "samples": 132
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 105
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_top_body_tile.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 168
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_spritesheet.png",
+      "animation": "world-animation:lava_surface",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 168
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_spritesheet.png",
+      "animation": "world-animation:fire_particles",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 168
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0"],
+      "samples": 2
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_top_body_tile.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 160
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_spritesheet.png",
+      "animation": "world-animation:water_surface",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 160
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_spritesheet.png",
+      "animation": "world-animation:water_bubbles",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 160
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_spritesheet.png",
+      "animation": "world-animation:water_splash",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 205
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 176
+    },
+    {
+      "path": "assets/characters/fire/attack/fire_attack_spritesheet.png",
+      "animation": "fire:attack",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 62
+    },
+    {
+      "path": "assets/vfx/fire/projectile/fire_projectile_spritesheet.png",
+      "animation": "effect:fireProjectile",
+      "frames": ["0", "1"],
+      "samples": 16
+    },
+    {
+      "path": "assets/vfx/fire/impact/fire_impact_spritesheet.png",
+      "animation": "effect:fireImpact",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 58
+    },
+    {
+      "path": "assets/vfx/fire/burning_loop/fire_burning_loop_spritesheet.png",
+      "animation": "effect:fireBurn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 64
+    },
+    {
+      "path": "assets/characters/water/attack/water_attack_spritesheet.png",
+      "animation": "water:attack",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 124
+    },
+    {
+      "path": "assets/vfx/water/projectile/water_projectile_spritesheet.png",
+      "animation": "effect:waterProjectile",
+      "frames": ["0", "1", "2"],
+      "samples": 46
+    },
+    {
+      "path": "assets/vfx/water/impact/water_impact_spritesheet.png",
+      "animation": "effect:waterImpact",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 88
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_spritesheet.png",
+      "animation": "world-animation:waterwheel_spinning",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 29
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_body.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 146
+    },
+    {
+      "path": "assets/items/gems/fire/spawn/fire_gem_spawn_spritesheet.png",
+      "animation": "gem:fire:spawn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 21
+    },
+    {
+      "path": "assets/items/gems/fire/idle/fire_gem_idle_spritesheet.png",
+      "animation": "gem:fire:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 58
+    },
+    {
+      "path": "assets/items/gems/fire/collect/fire_gem_collect_spritesheet.png",
+      "animation": "gem:fire:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 23
+    },
+    {
+      "path": "assets/effects/transformations/fire/fire_transform_spritesheet.png",
+      "animation": "transform:fire",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 31
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 37
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_spritesheet.png",
+      "animation": "world-animation:boiler_steam",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 37
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 38
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 80
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_spritesheet.png",
+      "animation": "world-animation:wall_cracking",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 61
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 70
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 7
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 60
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 124
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 24
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 16
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_spritesheet.png",
+      "animation": "world-animation:lever_deactivate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 24
+    },
+    {
+      "path": "assets/ui/backgrounds/main_menu_background.png",
+      "context": "main menu"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "main menu"
+    },
+    { "path": "assets/ui/icons/icon_settings.png", "context": "main menu" },
+    { "path": "assets/ui/hud/hud_coin_icon.png", "context": "main menu" },
+    { "path": "assets/ui/logo/veylith_logo.png", "context": "main menu" },
+    {
+      "path": "assets/ui/buttons/button_primary_normal.png",
+      "context": "main menu"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "main menu"
+    },
+    {
+      "path": "assets/ui/logo/elemental_crystal_arrangement.png",
+      "context": "main menu"
+    },
+    {
+      "path": "assets/ui/backgrounds/main_menu_background.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/icons/icon_settings.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/hud/hud_coin_icon.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/logo/veylith_logo.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/buttons/button_primary_normal.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/buttons/button_primary_pressed.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/logo/elemental_crystal_arrangement.png",
+      "context": "pressed play button"
+    },
+    {
+      "path": "assets/ui/backgrounds/main_menu_background.png",
+      "context": "options"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "options"
+    },
+    { "path": "assets/ui/icons/icon_settings.png", "context": "options" },
+    { "path": "assets/ui/hud/hud_coin_icon.png", "context": "options" },
+    { "path": "assets/ui/logo/veylith_logo.png", "context": "options" },
+    {
+      "path": "assets/ui/buttons/button_primary_normal.png",
+      "context": "options"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "options"
+    },
+    {
+      "path": "assets/ui/logo/elemental_crystal_arrangement.png",
+      "context": "options"
+    },
+    { "path": "assets/ui/panels/settings_panel.png", "context": "options" },
+    {
+      "path": "assets/ui/buttons/button_close_normal.png",
+      "context": "options"
+    },
+    { "path": "assets/ui/icons/icon_audio.png", "context": "options" },
+    {
+      "path": "assets/ui/backgrounds/level_map_background.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/buttons/button_main_menu_normal.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/icons/icon_settings.png",
+      "context": "level selection"
+    },
+    { "path": "assets/ui/hud/hud_coin_icon.png", "context": "level selection" },
+    {
+      "path": "assets/ui/level-select/level_node_current.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/star_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    {
+      "path": "assets/ui/level-select/level_node_empty.png",
+      "context": "level selection"
+    },
+    { "path": "assets/ui/hud/hud_move_left.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/hud_move_right.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/hud_ability.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/hud_jump.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/timer_hud_frame.png", "context": "run HUD" },
+    { "path": "assets/ui/icons/icon_stopwatch.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/hud_coin_icon.png", "context": "run HUD" },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "run HUD"
+    },
+    { "path": "assets/ui/icons/icon_settings.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/hud_restart.png", "context": "run HUD" },
+    { "path": "assets/ui/hud/hud_pause.png", "context": "run HUD" },
+    {
+      "path": "assets/ui/hud/current_element_indicator_frame.png",
+      "context": "run HUD"
+    },
+    { "path": "assets/ui/panels/pause_panel.png", "context": "pause" },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "pause"
+    },
+    { "path": "assets/ui/icons/icon_settings.png", "context": "pause" },
+    {
+      "path": "assets/ui/buttons/button_primary_normal.png",
+      "context": "pause"
+    },
+    { "path": "assets/ui/icons/icon_resume.png", "context": "pause" },
+    { "path": "assets/ui/buttons/button_retry_normal.png", "context": "pause" },
+    {
+      "path": "assets/ui/buttons/button_level_selection_normal.png",
+      "context": "pause"
+    },
+    {
+      "path": "assets/ui/buttons/button_main_menu_normal.png",
+      "context": "pause"
+    },
+    {
+      "path": "assets/ui/hud/hud_move_left.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/hud/hud_move_right.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/hud/hud_ability.png",
+      "context": "mobile landscape HUD"
+    },
+    { "path": "assets/ui/hud/hud_jump.png", "context": "mobile landscape HUD" },
+    {
+      "path": "assets/ui/hud/timer_hud_frame.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/icons/icon_stopwatch.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/hud/hud_coin_icon.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/buttons/button_secondary_normal.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/icons/icon_settings.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/hud/hud_restart.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/hud/hud_pause.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/hud/current_element_indicator_frame.png",
+      "context": "mobile landscape HUD"
+    },
+    {
+      "path": "assets/ui/panels/level_completed_panel.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/effects/victory_glow.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_unlock/star_unlock_spritesheet.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_unlock/star_unlock_spritesheet.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_unlock/star_unlock_spritesheet.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/icons/icon_best_time.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/victory/new_record_ribbon.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/effects/time_record_celebration/time_record_celebration_spritesheet.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/rewards/coin_reward_display_frame.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/effects/coin_reward_sparkle/coin_reward_sparkle_spritesheet.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_next_level_normal.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_retry_normal.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_level_selection_normal.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_main_menu_normal.png",
+      "context": "real portal completion rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_unlock/star_unlock_spritesheet.png",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "animation": "css-reward",
+      "context": "real portal completion"
+    },
+    {
+      "path": "assets/ui/effects/time_record_celebration/time_record_celebration_spritesheet.png",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "animation": "css-reward",
+      "context": "real portal completion"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "animation": "css-reward",
+      "context": "real portal completion"
+    },
+    {
+      "path": "assets/ui/effects/coin_reward_sparkle/coin_reward_sparkle_spritesheet.png",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "animation": "css-reward",
+      "context": "real portal completion"
+    },
+    {
+      "path": "assets/ui/panels/level_completed_panel.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_filled.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_filled.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/victory/star_filled.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/icons/icon_best_time.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/victory/new_record_ribbon.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/rewards/coin_reward_display_frame.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/rewards/golden_elemental_coin.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_next_level_normal.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_retry_normal.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_level_selection_normal.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/ui/buttons/button_main_menu_normal.png",
+      "context": "settled rewards"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3182,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 33184,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 621,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 800,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 829,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 365,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 175,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 76,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_closed.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 23,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 76,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 175,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+      "animation": "forest-anim:door",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 98,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_spritesheet.png",
+      "animation": "world-animation:fan_starting",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 37,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_spritesheet.png",
+      "animation": "world-animation:fan_blades",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 37,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_open.png",
+      "animation": "forest-anim:door",
+      "frames": ["__BASE"],
+      "samples": 19,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_spritesheet.png",
+      "animation": "world-animation:lever_deactivate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_spritesheet.png",
+      "animation": "world-animation:fan_stopping",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_closed.png",
+      "animation": "forest-anim:door",
+      "frames": ["__BASE"],
+      "samples": 35,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 108,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/ui/effects/coin_collect_sparkle/coin_collect_sparkle_spritesheet.png",
+      "animation": "coin:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/water_tank_empty.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 127,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/water/idle/water_idle_spritesheet.png",
+      "animation": "water:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 506,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/water/attack/water_attack_spritesheet.png",
+      "animation": "water:attack",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 186,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/water/projectile/water_projectile_spritesheet.png",
+      "animation": "effect:waterProjectile",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 142,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_spritesheet.png",
+      "animation": "forest-anim:water",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 92,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/water/impact/water_impact_spritesheet.png",
+      "animation": "effect:waterImpact",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 110,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/torch_unlit.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 37,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/fire/idle/fire_idle_spritesheet.png",
+      "animation": "fire:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 416,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/fire/attack/fire_attack_spritesheet.png",
+      "animation": "fire:attack",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 124,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/fire/projectile/fire_projectile_spritesheet.png",
+      "animation": "effect:fireProjectile",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 124,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/torch_lit_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 92,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_spritesheet.png",
+      "animation": "forest-anim:torch",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 92,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/fire/impact/fire_impact_spritesheet.png",
+      "animation": "effect:fireImpact",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 90,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/fire/burning_loop/fire_burning_loop_spritesheet.png",
+      "animation": "effect:fireBurn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 108,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_body.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 267,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/water/spawn/water_gem_spawn_spritesheet.png",
+      "animation": "gem:water:spawn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 42,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/water/idle/water_gem_idle_spritesheet.png",
+      "animation": "gem:water:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 237,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_spritesheet.png",
+      "animation": "world-animation:boiler_heating",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 163,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/fire/run/fire_run_spritesheet.png",
+      "animation": "fire:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6"],
+      "samples": 53,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/water/collect/water_gem_collect_spritesheet.png",
+      "animation": "gem:water:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 46,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/effects/transformations/water/water_transform_spritesheet.png",
+      "animation": "transform:water",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 62,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 69,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_spritesheet.png",
+      "animation": "world-animation:boiler_steam",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 69,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/fire/spawn/fire_gem_spawn_spritesheet.png",
+      "animation": "gem:fire:spawn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 21,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/air/spawn/air_gem_spawn_spritesheet.png",
+      "animation": "gem:air:spawn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 21,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/earth/spawn/earth_gem_spawn_spritesheet.png",
+      "animation": "gem:earth:spawn",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 21,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/fire/idle/fire_gem_idle_spritesheet.png",
+      "animation": "gem:fire:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 133,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/air/idle/air_gem_idle_spritesheet.png",
+      "animation": "gem:air:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 169,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/earth/idle/earth_gem_idle_spritesheet.png",
+      "animation": "gem:earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 205,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/water/run/water_run_spritesheet.png",
+      "animation": "water:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6"],
+      "samples": 35,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/fire/collect/fire_gem_collect_spritesheet.png",
+      "animation": "gem:fire:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 23,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/effects/transformations/fire/fire_transform_spritesheet.png",
+      "animation": "transform:fire",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/air/idle/air_idle_spritesheet.png",
+      "animation": "air:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 199,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/air/collect/air_gem_collect_spritesheet.png",
+      "animation": "gem:air:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 23,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/effects/transformations/air/air_transform_spritesheet.png",
+      "animation": "transform:air",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/air/run/air_run_spritesheet.png",
+      "animation": "air:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6"],
+      "samples": 35,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/items/gems/earth/collect/earth_gem_collect_spritesheet.png",
+      "animation": "gem:earth:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 23,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/effects/transformations/earth/earth_transform_spritesheet.png",
+      "animation": "transform:earth",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 214,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 113,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_spritesheet.png",
+      "animation": "world-animation:waterwheel_spinning",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 101,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/water/jump/water_jump_spritesheet.png",
+      "animation": "water:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 38,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/water/fall/water_fall_spritesheet.png",
+      "animation": "water:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 36,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/fire/jump/fire_jump_spritesheet.png",
+      "animation": "fire:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 49,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/fire/fall/fire_fall_spritesheet.png",
+      "animation": "fire:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 79,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/fire/double_jump/fire_double_jump_spritesheet.png",
+      "animation": "fire:double_jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 35,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/fire/double_jump/fire_double_jump_vfx_spritesheet.png",
+      "animation": "effect:fireJump",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 30,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/air/glide_vfx/air_glide_wind_vfx_spritesheet.png",
+      "animation": "effect:airWind",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 116,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/air/jump/air_jump_spritesheet.png",
+      "animation": "air:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 92,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/air/fall/air_fall_spritesheet.png",
+      "animation": "air:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 45,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/air/glide_loop/air_glide_loop_spritesheet.png",
+      "animation": "air:glide_loop",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 105,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 24,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1"],
+      "samples": 15,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "real gameplay input in editor-compatible fixtures"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3399,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4341,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3409,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1840,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1640,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2338,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1058,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/heavy_block.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 654,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 87,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 564,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 168,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2"],
+      "samples": 78,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 215,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 264,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_closed.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 196,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/push_start/earth_push_start_spritesheet.png",
+      "animation": "earth:push_start",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 50,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/push_loop/earth_push_loop_spritesheet.png",
+      "animation": "earth:push_loop",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 75,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/push_end/earth_push_end_spritesheet.png",
+      "animation": "earth:push_end",
+      "frames": ["0", "1", "2"],
+      "samples": 38,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 657,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_activated.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 102,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+      "animation": "forest-anim:door",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 49,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_open.png",
+      "animation": "forest-anim:door",
+      "frames": ["__BASE"],
+      "samples": 226,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 194,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 201,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/ui/effects/coin_collect_sparkle/coin_collect_sparkle_spritesheet.png",
+      "animation": "coin:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 297,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 193,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 156,
+      "context": "forest-1"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3195,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 5745,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3656,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1721,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4644,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1967,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1233,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1247,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/heavy_block.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 850,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 138,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 356,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 583,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 80,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 74,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 70,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 433,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/push_start/earth_push_start_spritesheet.png",
+      "animation": "earth:push_start",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 50,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/push_loop/earth_push_loop_spritesheet.png",
+      "animation": "earth:push_loop",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 251,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/push_end/earth_push_end_spritesheet.png",
+      "animation": "earth:push_end",
+      "frames": ["0", "1", "2"],
+      "samples": 38,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 107,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 252,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 247,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_closed.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 208,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_activated.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 57,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+      "animation": "forest-anim:door",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 49,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 168,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_open.png",
+      "animation": "forest-anim:door",
+      "frames": ["__BASE"],
+      "samples": 203,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 194,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/ui/effects/coin_collect_sparkle/coin_collect_sparkle_spritesheet.png",
+      "animation": "coin:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 318,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 186,
+      "context": "forest-2"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2523,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4513,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2316,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 636,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 463,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1384,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 122,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 924,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 72,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1"],
+      "samples": 30,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 93,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 112,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 405,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 220,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 307,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1222,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 100,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 154,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 815,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 400,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 204,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_spritesheet.png",
+      "animation": "world-animation:fan_blades",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 450,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 450,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 598,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 170,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 236,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 236,
+      "context": "forest-6"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3015,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2993,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2755,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 236,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 236,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 990,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 116,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 383,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 199,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 359,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1149,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 874,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 96,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1"],
+      "samples": 50,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 124,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 100,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 153,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 690,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 202,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 36,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 169,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 326,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 233,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 233,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 191,
+      "context": "forest-7"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2913,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 7130,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2881,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1645,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1351,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 542,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 789,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 187,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 995,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 187,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 874,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 6211,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 9677,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "animation": "world-animation:elevator_activated",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 571,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "animation": "world-animation:elevator_gears",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 777,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 324,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1"],
+      "samples": 49,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 155,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4891,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 262,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 665,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 96,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 50,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 169,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 353,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 194,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 229,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 229,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/ui/effects/coin_collect_sparkle/coin_collect_sparkle_spritesheet.png",
+      "animation": "coin:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34,
+      "context": "forest-8"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3566,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 9067,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3432,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4360,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2897,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 11175,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1879,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 563,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 278,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 830,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 120,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2"],
+      "samples": 67,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 186,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 883,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 286,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1447,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1011,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 222,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 36,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 526,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/heavy_block.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1096,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "animation": "world-animation:elevator_activated",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 566,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "animation": "world-animation:elevator_gears",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 758,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 408,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/push_start/earth_push_start_spritesheet.png",
+      "animation": "earth:push_start",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 25,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/push_loop/earth_push_loop_spritesheet.png",
+      "animation": "earth:push_loop",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 168,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 414,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 33,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 543,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/characters/earth/push_end/earth_push_end_spritesheet.png",
+      "animation": "earth:push_end",
+      "frames": ["0", "1", "2"],
+      "samples": 19,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_activated.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 203,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 50,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 460,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 230,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 230,
+      "context": "forest-9"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2255,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4671,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2484,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/platforms/floating_platform_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3373,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 928,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1087,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 135,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 399,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 184,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 185,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 855,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 744,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 50,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 184,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 620,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 240,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 133,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 337,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 255,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/platforms/floating_platform_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 447,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/ui/effects/coin_collect_sparkle/coin_collect_sparkle_spritesheet.png",
+      "animation": "coin:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1513,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1292,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1247,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 200,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 297,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 149,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 112,
+      "context": "forest-10"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3287,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 6225,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3948,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1540,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1203,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 1400,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1156,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 126,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1680,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 126,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 697,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "animation": "world-animation:elevator_activated",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 999,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "animation": "world-animation:elevator_gears",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 1523,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 144,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1"],
+      "samples": 70,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 183,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2102,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1800,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 327,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1487,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 202,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 149,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 461,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 50,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 276,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 262,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 232,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 232,
+      "context": "forest-3"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2484,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2705,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 915,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 787,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/platforms/floating_platform_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 269,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/platforms/floating_platform_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4189,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 869,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1094,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 83,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 992,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 144,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 89,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 217,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/heavy_block.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 578,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/platforms/floating_platform_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 639,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 194,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_closed.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 319,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/ui/effects/coin_collect_sparkle/coin_collect_sparkle_spritesheet.png",
+      "animation": "coin:collect",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 34,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4393,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 179,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/push_start/earth_push_start_spritesheet.png",
+      "animation": "earth:push_start",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 50,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/push_loop/earth_push_loop_spritesheet.png",
+      "animation": "earth:push_loop",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 56,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/push_end/earth_push_end_spritesheet.png",
+      "animation": "earth:push_end",
+      "frames": ["0", "1", "2"],
+      "samples": 38,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_activated.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 102,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+      "animation": "forest-anim:door",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 49,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_open.png",
+      "animation": "forest-anim:door",
+      "frames": ["__BASE"],
+      "samples": 290,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 549,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 549,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 202,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 303,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 40,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 141,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 37,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 35,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 104,
+      "context": "forest-4"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_left.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4150,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_center.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 10617,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_top_right.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 3943,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_left_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 4766,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/solid_underground.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 21553,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/terrain/ground_right_edge.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2999,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/bush_fern.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 2832,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/decorations/ancient_column.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1618,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/heavy_block.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 692,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/idle/earth_idle_spritesheet.png",
+      "animation": "earth:idle",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 639,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/ui/rewards/coin_spin/coin_spin_spritesheet.png",
+      "animation": "coin:spin",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 1683,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/run/earth_run_spritesheet.png",
+      "animation": "earth:run",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 1078,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/push_start/earth_push_start_spritesheet.png",
+      "animation": "earth:push_start",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 50,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/push_loop/earth_push_loop_spritesheet.png",
+      "animation": "earth:push_loop",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 177,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/push_end/earth_push_end_spritesheet.png",
+      "animation": "earth:push_end",
+      "frames": ["0", "1", "2"],
+      "samples": 38,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_closed.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 226,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/fall/earth_fall_spritesheet.png",
+      "animation": "earth:fall",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 106,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 150,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "animation": "effect:earthLand",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 245,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/pressure_plate_activated.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 56,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+      "animation": "forest-anim:door",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 49,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/jump/earth_jump_spritesheet.png",
+      "animation": "earth:jump",
+      "frames": ["0", "1", "2", "3", "4"],
+      "samples": 144,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/mechanical_door_open.png",
+      "animation": "forest-anim:door",
+      "frames": ["__BASE"],
+      "samples": 225,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 533,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 895,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 291,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 1099,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 231,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/characters/earth/smash/earth_smash_spritesheet.png",
+      "animation": "earth:smash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 120,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "animation": "world-animation:wall_breaking",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 74,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "animation": "effect:earthSmash",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 105,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 702,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "animation": "world-animation:lever_activate",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "animation": "world-animation:elevator_activated",
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 31,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 573,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "animation": "world-animation:elevator_gears",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7"],
+      "samples": 837,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 133,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 691,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_spritesheet.png",
+      "animation": "world-animation:wall_cracking",
+      "frames": ["0", "1", "2", "3"],
+      "samples": 57,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "animation": null,
+      "frames": ["0", "1", "2", "3", "4", "5"],
+      "samples": 50,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 508,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+      "animation": "forest-anim:portal",
+      "frames": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+      "samples": 231,
+      "context": "forest-5"
+    },
+    {
+      "path": "assets/environments/ancient_forest/interactive/portal_inactive.png",
+      "animation": null,
+      "frames": ["__BASE"],
+      "samples": 231,
+      "context": "forest-5"
+    }
+  ]
+}

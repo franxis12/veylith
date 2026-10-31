@@ -1,0 +1,62 @@
+{
+  "animations": [
+    {
+      "id": "waterfall",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "water_surface",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 0,
+      "horizontalSeamPixelDifferences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "hanging_vine",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "moving_leaves",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "mist",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "magical_particles",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    }
+  ]
+}

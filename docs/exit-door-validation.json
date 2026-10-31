@@ -1,0 +1,1352 @@
+{
+  "date": "2026-10-31T23:43:20.119622+00:00",
+  "scope": "New shared exit, presentation and editor lifecycle. Only forest-2 has a fresh campaign victory; editor checks on ten levels are not victory proofs.",
+  "browser": {
+    "presentation": {
+      "passed": true,
+      "tests": [
+        "idle",
+        "pan",
+        "zoom",
+        "break",
+        "return",
+        "clock-freeze",
+        "physics-freeze",
+        "relock",
+        "pause-resume",
+        "resize",
+        "restart-mid-reveal",
+        "victory",
+        "overlap-victory-waits",
+        "initially-open",
+        "remount"
+      ],
+      "errors": [],
+      "samples": [
+        {
+          "active": true,
+          "camera": {
+            "x": 635.3327818230946,
+            "y": 370.10088756136577,
+            "zoom": 1.0073461000446298
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:idle",
+                "frame": 2,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 733.013373346667,
+            "y": 409.8646349786343,
+            "zoom": 1.0362651890753705
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:idle",
+                "frame": 2,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1080,
+            "y": 456.25,
+            "zoom": 1.0699999999999998
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:idle",
+                "frame": 3,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1426.3466266800003,
+            "y": 502.5498094693751,
+            "zoom": 1.1036725887049998
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:idle",
+                "frame": 3,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1481.4426229508197,
+            "y": 538.2407407407408,
+            "zoom": 1.1296296296296295
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:idle",
+                "frame": 4,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.4391880869832,
+            "y": 552.0609154548843,
+            "zoom": 1.1396806657853702
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:idle",
+                "frame": 5,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:break",
+                "frame": 0,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:break",
+                "frame": 1,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:break",
+                "frame": 6,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:break",
+                "frame": 7,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:break",
+                "frame": 8,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": true,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": true,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1486.5964912280701,
+            "y": 552.5,
+            "zoom": 1.14
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1485.9859124566124,
+            "y": 550.7970494059259,
+            "zoom": 1.138761490477037
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1477.7751190423057,
+            "y": 528.2507934800001,
+            "zoom": 1.12236421344
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 1316.163453826666,
+            "y": 487.8204617094675,
+            "zoom": 1.0929603357887037
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 960.9679249066673,
+            "y": 440.33772607259266,
+            "zoom": 1.0584274371437037
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 631.9902182400006,
+            "y": 396.3598034800001,
+            "zoom": 1.02644349344
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        },
+        {
+          "active": true,
+          "camera": {
+            "x": 636.9302828233793,
+            "y": 366.6268808874074,
+            "zoom": 1.0048195497362964
+          },
+          "physicsPaused": true,
+          "run": {
+            "phase": "playing",
+            "elapsedMs": 101,
+            "element": "earth",
+            "result": null
+          },
+          "exits": [
+            {
+              "id": "exit",
+              "ready": true,
+              "frameTexture": "exit:frame",
+              "art": {
+                "x": -156.75,
+                "y": -234.69642857142856,
+                "scaleX": 0.3482142857142857,
+                "scaleY": 0.3482142857142857
+              },
+              "seal": {
+                "visible": false,
+                "animation": "exit:seal:break",
+                "frame": 9,
+                "playing": false,
+                "x": 38.25,
+                "y": 0.6964285714285836,
+                "scaleX": 0.1904296875,
+                "scaleY": 0.1904296875
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "campaign": {
+      "passed": true,
+      "results": [
+        {
+          "id": "forest-2",
+          "passed": true,
+          "victory": {
+            "level": "forest-2",
+            "elapsedMs": 15407.099999904633,
+            "bestTimeMs": 15407.099999904633,
+            "stars": 3,
+            "earnedCoins": 107,
+            "newRecord": true
+          },
+          "attempts": 1,
+          "element": "earth",
+          "collectedCoinValue": 7,
+          "nextRememberedLevel": "forest-6",
+          "artNodes": 8,
+          "animatedInstances": 5,
+          "restartVerified": true,
+          "restartMs": 388,
+          "elapsedMs": 15407.099999904633,
+          "sha256": "8ac2c09b449b2cecfe594e4f439016f383300b7f115d00c73ab25bb28d39afdc",
+          "trace": [
+            {
+              "step": ["m", 195],
+              "x": 199.00000000000009,
+              "feet": 787.5,
+              "block": {
+                "x": 291.25,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 150,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 292.5],
+              "x": 299.4333333333337,
+              "feet": 652.5,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 532.5],
+              "x": 536.2666666666659,
+              "feet": 502.5,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 750],
+              "x": 756.7666666666678,
+              "feet": 352.5,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["m", 945],
+              "x": 948.6833333333362,
+              "feet": 414.58333333333326,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["push", "west-plate", "right"],
+              "x": 1139.6000000000001,
+              "feet": 495,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 1365],
+              "x": 1372.3499999999958,
+              "feet": 495,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 1530],
+              "x": 1535.6833333333261,
+              "feet": 360,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["m", 1590],
+              "x": 1592.8499999999917,
+              "feet": 360,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 1830],
+              "x": 1834.4333333333295,
+              "feet": 360,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["push", "east-plate", "left"],
+              "x": 1665.4,
+              "feet": 360,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["m", 1860],
+              "x": 1861.3999999999965,
+              "feet": 360,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 2085],
+              "x": 2090.0666666666584,
+              "feet": 627,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["j", 2265],
+              "x": 2269.6000000000045,
+              "feet": 477,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["m", 2430],
+              "x": 2437.0166666666773,
+              "feet": 477,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            },
+            {
+              "step": ["end"],
+              "x": 2441.100000000011,
+              "feet": 477,
+              "block": {
+                "x": 293.75,
+                "top": 652.5,
+                "bottom": 787.5,
+                "width": 112.5,
+                "height": 135,
+                "vx": 0,
+                "vy": 0,
+                "grounded": true
+              },
+              "signals": []
+            }
+          ]
+        }
+      ],
+      "errors": []
+    },
+    "editor": {
+      "passed": true,
+      "results": [
+        {
+          "id": "forest-1",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-2",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-6",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-7",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-8",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-9",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-10",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-3",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-4",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        },
+        {
+          "id": "forest-5",
+          "passed": true,
+          "roundTrip": true,
+          "playtest": true,
+          "restart": true,
+          "resize": true,
+          "oneCanvas": true,
+          "campaignSaveUnchanged": true
+        }
+      ],
+      "errors": []
+    }
+  },
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed; existing large bundle advisory",
+    "format": "passed",
+    "assetAudit": {
+      "files": 1838,
+      "errors": []
+    },
+    "illustratedAudit": "passed; eleven registered scenes",
+    "unitTests": {
+      "passed": 574,
+      "failed": 3,
+      "total": 577,
+      "remainingFailures": [
+        "forest-1 geometry predates this integration",
+        "historical browser witness source hashes are stale",
+        "forest-1 historical solution document differs from current edits"
+      ]
+    }
+  },
+  "preservation": {
+    "doorPackageFilesUnchanged": 79,
+    "levelDocumentsSemanticallyUnchanged": 23,
+    "restoredOriginalIllustrationFiles": 285,
+    "realSavesWritten": false,
+    "backup": "docs/level-archive/before-exit-door-2026-10-31"
+  },
+  "sourceHashes": {
+    "src/app/config.ts": "68846f633a5887e1b817106d844159be19374fb10047d3fd147244197f817548",
+    "src/components/ui/assets.ts": "7ab166c45087c00796a4f96ab31421b7072be03329c1856c58c0a164b91d6591",
+    "src/components/ui/formatTime.ts": "e28877f006820a27168caec195b5da76de5d1c5fbf47747b775af42d3472ef1a",
+    "src/editor/EditorScene.ts": "9a9083dc0341a0e7cc9e0ed88d396a059640196195f7aea17dd608c04b4715f1",
+    "src/editor/api.ts": "d4a9eb1c6423a7b4790b8d7b612026ecf2a0db554b19c55768ad759153e8b0cb",
+    "src/editor/environmentResize.ts": "bd436aa362332ca8e480421837fa592650d9d1eed84ee9c39be0b7e8f74d6d5a",
+    "src/editor/geometry.ts": "1a9a80104c0cdb342d17a16cd382deb59d589a648e49c71595716bb79cbc4ca8",
+    "src/editor/library.ts": "3180765889b03c8388bc3c10c94a9b262cdc473fd09d75ed089ece9df87c710c",
+    "src/editor/model.ts": "22b13d45d995634b962d903ed2ea89d403d8fce4679199bfcf816cb581e08690",
+    "src/game/assets/advancedArt.ts": "3110efcb180a41329bac6a169eb165933f9a771354858946b2d22cc691669cc1",
+    "src/game/assets/characterSheets.ts": "f501d23e07375916556bde2f97c276649aa28e25261c6b22bd3011546b37c5bd",
+    "src/game/assets/coinAsset.ts": "902fec42a89699d1ec33bd6d6f70abdd04fb4f77cd9c56b9bd5306f27aad0a7e",
+    "src/game/assets/effectSheets.ts": "205b11cfcf4dabd12585b9e00b3e7ab16a90e8079de78b1cf9505c4bdda9c0fb",
+    "src/game/assets/environmentAssets.ts": "896c805f51c1861594becc8b0d32c5b8ef2eeb51ea6e4cbffa5912d113c3f009",
+    "src/game/assets/environmentCatalog.ts": "e2d01994ccea15d1a3d234ddb03da855de55a20f5a3165a41f59eb91e134cabb",
+    "src/game/assets/exitAssets.ts": "c3edac0d99da89da8833528837a418ff34e5fb2407c579fe476e47d785295d6d",
+    "src/game/assets/forestAnimations.ts": "7a4657bf380608e5daaa3303e5cc2dbb4a05872c820ca2948b0daeb87e51bff7",
+    "src/game/assets/forestAssets.ts": "45fdfd1adc922cfc518ba123a755c3570a3353412845184cad32daf4bd97c81a",
+    "src/game/assets/gemSheets.ts": "b07d1dc3ed84fa3f551bb8574f0f171eb3566e21d29794920a5f1c9e1c34256d",
+    "src/game/assets/illustratedAssets.ts": "93fb2e97ebd822e2f2af48a18d7190fda97f6bd003a80bc40a5856b0ec998dea",
+    "src/game/assets/illustratedCatalog.ts": "1ebfba759d49e926a8ebd4aa9c291b817a993fff7b3a94ce2534c34c5013030c",
+    "src/game/assets/loadCharacterAssets.ts": "4c36bfa51c022fb9deb0627b2cf87413af859761f34d4e7f789d21fdb0bd2ac9",
+    "src/game/assets/optionalSheet.ts": "563b2e5cd3078de3181f027422034e64f0d5e7612c47b502ceea38b42f6462c7",
+    "src/game/assets/worldAssets.ts": "1467fb90b57b596575940552447444785aee7f49ac61dd09523582c8d3f2f5b9",
+    "src/game/config/elements.ts": "caa5aa24931f8c5d6d57372ec09c117a9fe87e9301b9e8bdf8ab8f3390578268",
+    "src/game/config/settings.ts": "f4b79edc27078b3e10397c9d4820f0d1d5997f0a16a32ac43481ca5580783658",
+    "src/game/core/Game.ts": "8ea96533c06a8cc88308092545adbd4982f1a5fae025b225aaab92de57b40015",
+    "src/game/core/GameConfig.ts": "141feb8bb8575261b97bcd0eae67b88b82020c7a7410b40fe1fc8d055a053f1a",
+    "src/game/core/GameOptions.ts": "0e0258fa5c5433225e780be2ee48d5ae473f5f578d4b150e3738029413918e53",
+    "src/game/core/WorldCamera.ts": "a8cdd87f519dc6e37d6fd03f647ae0fa4da85d59fc4ab774b53ec02008d792a3",
+    "src/game/dev/CharacterPreviewScene.ts": "44ab463bb94aef1380dbf574270208cb5cab7936893f7a44acb3a59e6b364de3",
+    "src/game/dev/createPreviewSession.ts": "e10fa73f3af65707112eb1d534f47df164c2e713412960380e0dc0404542fa93",
+    "src/game/dev/elementPreviewKeyboard.ts": "f183d5b78da0f7e8a81fa195d0a500486a6cbd7c6b43d6c6255c65c7d36e2685",
+    "src/game/dev/previewBridge.ts": "42dc993a2b11450ae6b6e5b3470eae165d69294b455483ec2cd37bf5890f9a23",
+    "src/game/entities/player/PlayablePlayer.ts": "aba47f2328b15d3131b86f577c7e1beb0bca66b03a249acb757e34c48af86f05",
+    "src/game/entities/player/Player.ts": "093fe2c3bfc26242d856efbf518919074cee899606dc7ce96fa3cfae6aa02113",
+    "src/game/entities/player/PlayerMotor.ts": "64253345f7b5446acc6922f14bb0b38fd3875dfb6ef6dd903dde9cd8912d6c9e",
+    "src/game/entities/player/PlayerPowers.ts": "65eb70e578c5099fd2844f86ab580f1cb7266005db140fe3742b5ed137cfb0b9",
+    "src/game/entities/player/PushAnimationState.ts": "195ea0347752f1f6d358e705d22389b6dc04405a9b6182d1ef23bb4e5c25a713",
+    "src/game/levels/LevelProgress.ts": "067fe1735313bd9800936236df9e8f4b36e3be979a5a1725cdc60877ac783194",
+    "src/game/levels/ancientForest/AncientForest.ts": "188a6ea13f71d2fae296b82c48c4f70e52ea5f32481c158cda4a5c63ce0e99a9",
+    "src/game/levels/ancientForest/ForestAnimatedProps.ts": "c4976a627bb78b88c794024d92fe9dee12cfbeb8f578b85a9f031fd0b3b54b6a",
+    "src/game/levels/ancientForest/ForestBackdrop.ts": "24bb826077fab099f298153fcb76db678a651fdc346df3310d13aada0d1989bc",
+    "src/game/levels/ancientForest/ForestState.ts": "bfdd0c08aaede52d724f01f035c3a015cc493bc8b04f50d3fba0f8868e144e17",
+    "src/game/levels/ancientForest/ForestTerrain.ts": "1846fa49a5d2377419df0fa93ae63849903e6fb7744338a502e7570e15888baf",
+    "src/game/levels/ancientForest/layout.ts": "0424654fd22d463beee9aa3afa4c9c933fe901f2f122c1fea9508bde51182de2",
+    "src/game/levels/campaignOrder.ts": "3f86b96a707363f5dfc7cdfb94ee3cdbc562bf7a6b9840f177bd512f949cd84c",
+    "src/game/levels/catalog.ts": "f5f7944024fea5c09ed1d8f969ead71b939f1273ab958ced9478f35a3052fb73",
+    "src/game/levels/earthValidation.ts": "bdc57b76a38beb39762de2ac9cbb8bd732eb57f647216bc0620ad2342c8e1486",
+    "src/game/levels/firstPuzzle/FirstPuzzle.ts": "df2313fff9a2ae86d7895c1dcbc9353aef0154624f76c8a7f6aaccc0d6d1c815",
+    "src/game/levels/firstPuzzle/FirstPuzzleState.ts": "60d7a1d310220c8d9221799102e8abb80735def00433f2bc50667eb57d73bd78",
+    "src/game/levels/firstPuzzle/layout.ts": "5bd111e4186ce7a1f178c57273047dd7c62c757ad5dcec78cb1f380de8831478",
+    "src/game/levels/forestPuzzles/BlockStackTransport.ts": "eec6994fe6a90b9ea5265e821e807a70f9f7ba78c4d556006a7261a6dca664de",
+    "src/game/levels/forestPuzzles/ForestPuzzle.ts": "800e05abc1846e5b7612aac0d5f2fadc073cc9adf212dc17a2bf6c5af66616e8",
+    "src/game/levels/forestPuzzles/ForestPuzzleState.ts": "058bc07a81a08f1e2a860bfb64598fa91e9f4f37ea752036bfc7ed53dfb775f6",
+    "src/game/levels/forestPuzzles/HeavyBlock.ts": "a7d24971d46392730fe4aba1838c76d545da55a035467ca9232cda59c4feb0ae",
+    "src/game/levels/forestPuzzles/heavyBlockRules.ts": "23359253f680048c0c152a73b3951f33ca760b604d3ebba4310999539d6c0859",
+    "src/game/levels/forestPuzzles/layouts.ts": "17b6aea7b9a80925a91a29f51c60c81e3c87d6e68d467090c8b2699cee8f0557",
+    "src/game/levels/gems.ts": "e4b0ca705ac133ac392c6c9024991396c85daeebaa94bc4afa625a50df73cf83",
+    "src/game/levels/levelSelection.ts": "f30fea789021de2deb9f3add698c1f1ef93d0d99768f8a432eebde1fce4a2615",
+    "src/game/levels/schema/animateObject.ts": "2968a6b11d048cf1e8e0e9d8ff0965b4a3a635e3d481b528bb6fddf14c8c56f0",
+    "src/game/levels/schema/compile.ts": "5511fefbf471f93e8e4a3dffe1eec7dacf9544ee3c952b0e9a49f4444720bec6",
+    "src/game/levels/schema/playerCollision.ts": "3fa7699bf902b1b40f6ee8adcc623a87ab886f0ee33a0647f02de37f62e77b3d",
+    "src/game/levels/schema/renderEnvironment.ts": "1c90bea9afb5ce99d4b9f76e154115bf6d167cc34c3d5db4d83951febffd0dd8",
+    "src/game/levels/schema/renderExit.ts": "dbcb2d6cc739e7060059dbe78abdf30c2200290cbc2e6044c6ed060f4c7eff30",
+    "src/game/levels/schema/renderIllustration.ts": "dd5c5ca63f0a0edb03eda933d4436a685ffa2019f482a35c1377c468b3beffe2",
+    "src/game/levels/schema/renderObject.ts": "1f0313c666ff059bda174e5c39ee6ca41851f4eeb3bc67d2e26c3be1e47e4a0a",
+    "src/game/levels/schema/types.ts": "2a79eb7c5e7f418f0a200c484491d9fa17d8e892f476cbab194b427632bc0eb1",
+    "src/game/levels/schema/validate.ts": "4a2eb1f35ad8b173388fdf5a8531912d3d68d67f3eed750c18f772fd0bb09e30",
+    "src/game/levels/schema/validateIllustration.ts": "f289e94b9467fed95ed97417a109204089a2b1fff956bd887fc580a728a8553f",
+    "src/game/levels/testLevel.ts": "7042b9c287775aebd4318ef227575413b7bee73ec6562b0d59808486412ef494",
+    "src/game/scenes/BootScene.ts": "71f750bf028dbe11cefb1f8bde5aa27f88911ec93df5ec4f8d8eb7bb2cee7f5e",
+    "src/game/scenes/MainScene.ts": "f88a5edcc23577539455d8e98904b73c0adc509eebdb51050557f6e7c40f2189",
+    "src/game/session/RunSession.ts": "87ce04be26f3110b2acde57865e7a9eaf351c6fb96031a4af77b97f59204f044",
+    "src/game/systems/animation/PlayerAnimationController.ts": "90904b438958d8ef30876c9f80cc6cc8bc5e8b626fc8fb2e8030a064a2e6111a",
+    "src/game/systems/animation/alignment.ts": "b3228752c4acd8e9110b98b151b3a765983e7bf60e309481768e94a1185e0568",
+    "src/game/systems/animation/animationRegistry.ts": "e8275569efe375fcf705ec8dc65935b42e13c03955c547f8aceac4ec0ca2f1c5",
+    "src/game/systems/audio/MovementAudio.ts": "a99cb069ae8dbc1bb7f4f0c976d491f594103237f000b43ae3e1762f2c3e7095",
+    "src/game/systems/audio/SceneSound.ts": "5644ba0b306ea06fbbadb7bad618afa1602b2daee94a93b40871cff44543d18b",
+    "src/game/systems/audio/WorldAudio.ts": "82f3c2615400d8ee04bfb5c6887a14e399c37b53be4225a420f3e7e0187edbea",
+    "src/game/systems/audio/propSounds.ts": "a8ef70d1190f88f3df96f8d6d9c2edbb645446ab08d1abcd13a702d798df9613",
+    "src/game/systems/coins/CoinEffects.ts": "6713054200356ace6af43b3fdbd2d1c8e7cbecb73f971f24665efc12ca143154",
+    "src/game/systems/coins/CoinState.ts": "9a9a4d99f15f23bea073f7c5e9f114948ebe47659394e80a88d3cf40e805a9af",
+    "src/game/systems/exit/ExitReveal.ts": "3ae8cc5b260e3d803b62c5024da6c87b0a98cd2f83dad9901e5b5e2b53eba115",
+    "src/game/systems/gems/GemState.ts": "4377aedbb22ae6fb1fec57a54cd7af5e35f9f9b5e0647f5faaea994da43083d1",
+    "src/game/systems/gems/GemSystem.ts": "9ae421e51b62bddeb0ecb1dbdb44d567957e5408a72a552285f114c36959a812",
+    "src/game/systems/gems/TransformationEffect.ts": "3b3965d8818fa26e33c69dd7b48f8f92c167e86530b76d854aefaade89695161",
+    "src/game/systems/input/ActionState.ts": "c5a101a633d402a87faa48dde91403914e9a1fc5492f3ee8bd830867f1e5654c",
+    "src/game/systems/input/TouchGestures.ts": "ca81c6a9ac4a3e7ecf9069fd6b667294a83373adcde877a07e11a7e5a7114d6f",
+    "src/game/systems/input/actions.ts": "1e28b0df410609eea1351ff9eceb971fa737c35722941441457a9d3f746eb77b",
+    "src/game/systems/input/gameplayKeyboard.ts": "97bd7b6646243aa841b9036d599394533a2538a494776d754b84395348044daf",
+    "src/game/systems/powers/PowerEffects.ts": "7f264a4f20bbecd4d0ebb66a9f91ac31423e5caba98ff5fa4def6b186958b67b",
+    "src/game/systems/powers/breakableStrikeHit.ts": "513e8904e586a4806e9ea305f9d0480931feef87fc0796928d152a3ca8be2311",
+    "src/game/systems/powers/projectileCollision.ts": "4b0bf914a0d0b3a1838f202f038719dd84857d0c73c125766367d453d2e6da35",
+    "src/game/systems/world/AdvancedOptics.ts": "0a80e77cd91df1f9bd50cfa91b298fbdf9c58fe1cb8aa9fbd375988dcc5fe399",
+    "src/game/systems/world/AdvancedPhysics.ts": "2ad66781b3286c5e10676dcc738a6515b7cc94ca0b26b7466af18320befb4435",
+    "src/game/systems/world/DirectionalGates.ts": "3cae4e60e8280f7317be7c00e8f697db213e07c862e6d23d2ff2f3f103284e61",
+    "src/game/systems/world/PlatformMotion.ts": "f6d84352f80146881e070002d9574427ac5227f65ebfe00a4e51fa1680087eb2",
+    "src/game/systems/world/PulleyMotion.ts": "a4742c7f2845c78ca57a04ce215af9e63fbe405ad95238cfc54c9b94294d85bb",
+    "src/game/systems/world/ReflectorInteraction.ts": "36febf424d0a483504c4f7c68ad5dd45a80f2b46e5edbb64a5c1cb6be3134f91",
+    "src/game/systems/world/StageOnePhysics.ts": "fc304d458af19044197a712c089caefac54b05cc8aad8fe40dd8646a098a75c6",
+    "src/game/systems/world/StageOneVisuals.ts": "661eda684598f56b44430a6e5078dfd8df313dd2b4f9222092a80b3cdda9455f",
+    "src/game/systems/world/SurfaceTransport.ts": "5791391c4c2b8a77bd65465e79946d96afecbbff23aa68a96ceacf7f1aa8c2d0",
+    "src/game/systems/world/WindMotion.ts": "affbce677f92679b09fdc7fb95d08db5cf4d4dc074b4c5d434cfffb3b37c70eb",
+    "src/game/systems/world/WorldState.ts": "fdcabe72c47f18ea8037ece8518f0f04449384f9e30e410b0813cec06be9d685",
+    "src/game/systems/world/WorldSystem.ts": "93f07c8367eb505d3b8b3075d767e3d25d4c874a7fd532abd37765d5e560b394",
+    "src/game/systems/world/advancedPresets.ts": "ed7a626a1de7fdff395d4433aafcee205df37d82ad94f72fcacdf5014357a5d2",
+    "src/game/systems/world/advancedRules.ts": "100a0ad0fef1cec2c749455d922b522bfac0be4acbba36e1a34d96daa1cf80df",
+    "src/game/systems/world/advancedTypes.ts": "3e0a9ec0688ae22e3c021cee359b2e92c40fc66bece6810c0d0a351df1cd948d",
+    "src/game/systems/world/mechanismCollision.ts": "cbd571f098e4a83beb20888599da96da185939c9d20858acc08db1553e862439",
+    "src/game/systems/world/mechanismPhysics.ts": "edbb00d9c53bd6a1534b4dc2f1ce2205611f1c40aa114646088a1af8e08c2bce",
+    "src/game/systems/world/presets.ts": "d523f493c8d7b8e27af42e8cd550bcbbba59d806c2abdea9ece17290ecf1a83b",
+    "src/game/systems/world/reflectorAngles.ts": "b16f657504575110863db7f658edbe71e20645b12dd3cb3eff7102a29fe91ea2",
+    "src/game/systems/world/types.ts": "44f0f97c2a97590f989888ec14607b8734c6d8727fe7f4552f87e211421c2b65",
+    "src/game/systems/world/validateAdvanced.ts": "d6e77176ad67535e288d52d21463a8f6df65c37a1ea4f97cdd4fd50f46f6fd27",
+    "src/game/systems/world/validateWorld.ts": "f06e64f1fe1d8ade60f47040c858f2008583bc372ecd1fda275143e3252211e0",
+    "src/game/types/character.ts": "8f6578283990141cc4105a9db87da7234243eb1424cedb6e6167a8a254fc82c2",
+    "src/services/audio/AudioEngine.ts": "bdbc946291107cf21c3ea03aebb78ee336c0c0578ae11d3b0fc54b9421f872a9",
+    "src/services/audio/AudioScope.ts": "8faf8ec1fb23dc62f8e5478703223e183373830f867641189cc1490b70fcd0ad",
+    "src/services/audio/catalog.ts": "a93092cc802033173cfc14d5ef6222fe33acd47c2dd38a1b29288db53bad4854",
+    "src/services/audio/gameAudio.ts": "0168deb192ebdc12fd6bbe46b8ab79cdb29ba0e120c3b767a4bc3a665b940b8e",
+    "src/services/audio/preferences.ts": "2938416bbae27b12a89aabfdfd594303721a9a5b7d1dabaffb825fbf0a636be2",
+    "src/services/audio/runAudio.ts": "42d2558270ef1de1481ddb374c617393714d42de20f1592143d752c7597f3efa",
+    "src/services/i18n/earthLevelText.ts": "dc4a759da5fb4a79d03d12ef0403ef196baea1a87b995367345b9741b43ca192",
+    "src/services/i18n/illustratedLevelText.ts": "1c88132ef5aa7df6dc657ebebf64130c679be6624ff7729e29fc2c1b4bd8c3d2",
+    "src/services/i18n/levelText.ts": "7b741899458a19512635ff73b6f6b4d12cdecdfbd300fa784b1fdef368087f33",
+    "src/services/i18n/localizeGameText.ts": "409a46171d28e1eb0bad9f594be51156de5075d1c2de9f361c782a32273bc934",
+    "src/services/i18n/messages.ts": "c3fec0fbd31a7e8aea6800551b396b94c780cf5379624f15699f0ef03d2ad236",
+    "src/services/i18n/translate.ts": "63a87e2addc5fa23c1a0ff6e5bc1ffb37077f9ff1593b51c5f0022419634e670",
+    "src/services/i18n/useTranslation.ts": "55dba5b9da4df87e4a3e6f38497c99f3d86d0446ce69db330f3ce03355f7fdff",
+    "src/services/lifecycle/observeAppActivity.ts": "cfdd085b84b7c63cad0b66f759a30062026af7b0c189ca5ee497c3a0b4b24229",
+    "src/services/progress/progress.ts": "40bf576eb88b0728357b3c7edf66e7fb4bbaa9672842ae7ea31a7e45ac62afc1",
+    "src/stores/appStore.ts": "9c2898e99dca67a332bd2d38129f1760f2a9a67e53ca4c1e18afea9a7a3a66ba",
+    "src/stores/preferencesStore.ts": "c4195fc1214d161614e94d41d4d20c71dd5d7d4c1c616a33d7105381d4a0a276",
+    "src/stores/progressStore.ts": "d540c4da4bbca8fa02ab555f15d6256a00fff12ecf31be4498d996711e46cd48",
+    "src/editor/EditorCanvas.tsx": "02f688738e114c9e7f59f76b008c5155b3bab233bb2016084c34420e42bc5c98",
+    "scripts/exit-door-smoke.js": "262c3850e0dec24569e3c6dd9f322c2d202a4fedb85db0d1806f2e816a0b0959",
+    "scripts/browser-harness.html": "752cc43fe9d6b4479ace86a3ab0265e24222fca64ff607e9cc0c27e7ea551532",
+    "scripts/illustrated-campaign-editor-smoke.js": "7255d063731acc2e04369c5458196bb0c5b7fdedf17bc43c97c4efbb65db3248",
+    "scripts/illustrated-campaign-smoke.js": "deb92d726da24a55372269743050cea303c3b72cb6de4b082a0af2a1ed62f686",
+    "scripts/illustrated-routes.json": "2117a4a0031816ace9009ac48451ebac6c46a4c4d246f40b5dc37e4edfce4aeb"
+  }
+}

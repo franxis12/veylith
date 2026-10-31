@@ -1,0 +1,1557 @@
+{
+  "assets": [
+    {
+      "id": "ancient_stone_left",
+      "path": "assets/environments/platforms/ancient_stone/ancient_stone_left.png",
+      "manifest": "public/assets/environments/platforms/ancient_stone/manifest.json",
+      "sha256": "7939b7551d3a6a9df47cd9bfe38829ee8c2a5ecb8aee7bc4a8b787fcbf0aebea",
+      "manifestSha256": "e9babb3c015f1dbc7a8e28dc9b22a0b3a6b7259ea49063595c0a038024977944",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 18, 128, 82]
+    },
+    {
+      "id": "ancient_stone_center",
+      "path": "assets/environments/platforms/ancient_stone/ancient_stone_center.png",
+      "manifest": "public/assets/environments/platforms/ancient_stone/manifest.json",
+      "sha256": "e968f942fe7f1fcb0fe6692f1ec670007a709707d083eff97e100c869e999b7a",
+      "manifestSha256": "e9babb3c015f1dbc7a8e28dc9b22a0b3a6b7259ea49063595c0a038024977944",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 20, 128, 77]
+    },
+    {
+      "id": "ancient_stone_right",
+      "path": "assets/environments/platforms/ancient_stone/ancient_stone_right.png",
+      "manifest": "public/assets/environments/platforms/ancient_stone/manifest.json",
+      "sha256": "de0722913e0f0148678b7686d456b6ca7ca58a60b153af525030c457cac096dd",
+      "manifestSha256": "e9babb3c015f1dbc7a8e28dc9b22a0b3a6b7259ea49063595c0a038024977944",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 18, 120, 82]
+    },
+    {
+      "id": "ancient_stone_support",
+      "path": "assets/environments/platforms/ancient_stone/ancient_stone_support.png",
+      "manifest": "public/assets/environments/platforms/ancient_stone/manifest.json",
+      "sha256": "4d3b623d7e6163bc5c53e0e8619f605c9758a92da82728910683de3a161b5ee5",
+      "manifestSha256": "e9babb3c015f1dbc7a8e28dc9b22a0b3a6b7259ea49063595c0a038024977944",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [34, 0, 94, 128]
+    },
+    {
+      "id": "ceremonial_stone_left",
+      "path": "assets/environments/platforms/ceremonial_stone/ceremonial_stone_left.png",
+      "manifest": "public/assets/environments/platforms/ceremonial_stone/manifest.json",
+      "sha256": "86d7671012d9a230af999acb7ef7dd0c4f1b81d37f92a2215e548246bc6a6c80",
+      "manifestSha256": "2642ed19b60eeff4bda2e8d6589b5d26aaa15e8b8a1befcff40b7ebe3ffa0dd6",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 19, 128, 81]
+    },
+    {
+      "id": "ceremonial_stone_center",
+      "path": "assets/environments/platforms/ceremonial_stone/ceremonial_stone_center.png",
+      "manifest": "public/assets/environments/platforms/ceremonial_stone/manifest.json",
+      "sha256": "c0d8e858ceb5650c8e16494656098d058a472d19960e22863ea53e0eb7f25529",
+      "manifestSha256": "2642ed19b60eeff4bda2e8d6589b5d26aaa15e8b8a1befcff40b7ebe3ffa0dd6",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 25, 128, 80]
+    },
+    {
+      "id": "ceremonial_stone_right",
+      "path": "assets/environments/platforms/ceremonial_stone/ceremonial_stone_right.png",
+      "manifest": "public/assets/environments/platforms/ceremonial_stone/manifest.json",
+      "sha256": "1b14aec140c175ee09e213e93e79233d409ea2b961177278c46ec4c24fda2fc7",
+      "manifestSha256": "2642ed19b60eeff4bda2e8d6589b5d26aaa15e8b8a1befcff40b7ebe3ffa0dd6",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 19, 120, 81]
+    },
+    {
+      "id": "crystal_left",
+      "path": "assets/environments/platforms/crystal/crystal_left.png",
+      "manifest": "public/assets/environments/platforms/crystal/manifest.json",
+      "sha256": "2cccee35ec67dce7e74e32c0699b0c34e238f8cb4d7b43d3ee415267f8d03a9b",
+      "manifestSha256": "c6c075477a0f2782dd858508037d38c02bf93bfeddf1770bb168c3f2038fcf2b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 24, 128, 93]
+    },
+    {
+      "id": "crystal_center",
+      "path": "assets/environments/platforms/crystal/crystal_center.png",
+      "manifest": "public/assets/environments/platforms/crystal/manifest.json",
+      "sha256": "a6109eabfb4e7aa751618efec6f59e41c0e70558c23949e683e92a9ffc2f7287",
+      "manifestSha256": "c6c075477a0f2782dd858508037d38c02bf93bfeddf1770bb168c3f2038fcf2b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 26, 128, 94]
+    },
+    {
+      "id": "crystal_right",
+      "path": "assets/environments/platforms/crystal/crystal_right.png",
+      "manifest": "public/assets/environments/platforms/crystal/manifest.json",
+      "sha256": "0814af8507913e99a3ca76ca550be6dffa25963b0a5ce15fa8700a770dec9da3",
+      "manifestSha256": "c6c075477a0f2782dd858508037d38c02bf93bfeddf1770bb168c3f2038fcf2b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 24, 120, 94]
+    },
+    {
+      "id": "crystal_glow",
+      "path": "assets/environments/platforms/crystal/crystal_glow.png",
+      "manifest": "public/assets/environments/platforms/crystal/manifest.json",
+      "sha256": "4121ec82e402145daef32c30decc25c397a9dd6d4c0bf6c978a821232c7f896e",
+      "manifestSha256": "c6c075477a0f2782dd858508037d38c02bf93bfeddf1770bb168c3f2038fcf2b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 21, 128, 75]
+    },
+    {
+      "id": "crystal_glow_left",
+      "path": "assets/environments/platforms/crystal/crystal_glow_left.png",
+      "manifest": "public/assets/environments/platforms/crystal/manifest.json",
+      "sha256": "409077327d0d47f6f4b0b73e4527663c7df139c4db5b8e6714a1ee3dcb3334b8",
+      "manifestSha256": "c6c075477a0f2782dd858508037d38c02bf93bfeddf1770bb168c3f2038fcf2b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [9, 21, 128, 75]
+    },
+    {
+      "id": "crystal_glow_right",
+      "path": "assets/environments/platforms/crystal/crystal_glow_right.png",
+      "manifest": "public/assets/environments/platforms/crystal/manifest.json",
+      "sha256": "a3adee5b96cae392d614a2d3b903bbe4bd49d0a92dc08109c956ad1cd3eb0483",
+      "manifestSha256": "c6c075477a0f2782dd858508037d38c02bf93bfeddf1770bb168c3f2038fcf2b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 21, 119, 75]
+    },
+    {
+      "id": "grass_earth_left",
+      "path": "assets/environments/platforms/grass_earth/grass_earth_left.png",
+      "manifest": "public/assets/environments/platforms/grass_earth/manifest.json",
+      "sha256": "ed41b2c95e70b1840d27019ac2ad5c3d843c16d840eda357e9abb4faaf3afeed",
+      "manifestSha256": "a36715329b42201a8bc821ab675634662580309da43062178f74e3c53b68c23e",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 18, 128, 90]
+    },
+    {
+      "id": "grass_earth_center",
+      "path": "assets/environments/platforms/grass_earth/grass_earth_center.png",
+      "manifest": "public/assets/environments/platforms/grass_earth/manifest.json",
+      "sha256": "55ff9529a957d20bdb273ab03f22c568fa0648027d45a6a54d763bbf2a5d2843",
+      "manifestSha256": "a36715329b42201a8bc821ab675634662580309da43062178f74e3c53b68c23e",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 21, 128, 90]
+    },
+    {
+      "id": "grass_earth_right",
+      "path": "assets/environments/platforms/grass_earth/grass_earth_right.png",
+      "manifest": "public/assets/environments/platforms/grass_earth/manifest.json",
+      "sha256": "abdc73e0cbafa72ced9add5bd22c62f17c9773ad7b41d289a4c0fdc5cdd32e5a",
+      "manifestSha256": "a36715329b42201a8bc821ab675634662580309da43062178f74e3c53b68c23e",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 18, 120, 90]
+    },
+    {
+      "id": "metal_left",
+      "path": "assets/environments/platforms/metal/metal_left.png",
+      "manifest": "public/assets/environments/platforms/metal/manifest.json",
+      "sha256": "ad2d35f6d0e04b5243d4b91d3b3d615a29544b77c20f35f27cb16042b7dd14a2",
+      "manifestSha256": "b8ba285a8afa1a4469696353a41c9f78f3d4e690e44a32aa4ed6ce6b8b0cbe85",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 24, 128, 74]
+    },
+    {
+      "id": "metal_center",
+      "path": "assets/environments/platforms/metal/metal_center.png",
+      "manifest": "public/assets/environments/platforms/metal/manifest.json",
+      "sha256": "4b47c8fbc3488812fae4f0cdd6e954d6017bb64fc5b77fff66d1c6357d115aa1",
+      "manifestSha256": "b8ba285a8afa1a4469696353a41c9f78f3d4e690e44a32aa4ed6ce6b8b0cbe85",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 27, 128, 72]
+    },
+    {
+      "id": "metal_right",
+      "path": "assets/environments/platforms/metal/metal_right.png",
+      "manifest": "public/assets/environments/platforms/metal/manifest.json",
+      "sha256": "c8c51af5c86b32a0a0837fe26cf0691b0cf1769a77a10e7b7551451b484f69d9",
+      "manifestSha256": "b8ba285a8afa1a4469696353a41c9f78f3d4e690e44a32aa4ed6ce6b8b0cbe85",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 24, 120, 74]
+    },
+    {
+      "id": "mushroom_left",
+      "path": "assets/environments/platforms/mushroom/mushroom_left.png",
+      "manifest": "public/assets/environments/platforms/mushroom/manifest.json",
+      "sha256": "51400e8301143eb97b3eecfa2a63e47f2afa5608bc9e9cc6c9591ce217567bf3",
+      "manifestSha256": "ff1758f76f95e02fc291ccdae44be9dc92fbc7a1987fb2075dc5d0cb4b027015",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 22, 128, 84]
+    },
+    {
+      "id": "mushroom_center",
+      "path": "assets/environments/platforms/mushroom/mushroom_center.png",
+      "manifest": "public/assets/environments/platforms/mushroom/manifest.json",
+      "sha256": "04b475aa2b87bce5fe589a6be72f20c57c58bb8aee00cddf3953c3577023d509",
+      "manifestSha256": "ff1758f76f95e02fc291ccdae44be9dc92fbc7a1987fb2075dc5d0cb4b027015",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 27, 128, 83]
+    },
+    {
+      "id": "mushroom_right",
+      "path": "assets/environments/platforms/mushroom/mushroom_right.png",
+      "manifest": "public/assets/environments/platforms/mushroom/manifest.json",
+      "sha256": "2253d271c5207bfcfb65b528b374cdc691f125230c2e5d4d4e785e32f8c332f7",
+      "manifestSha256": "ff1758f76f95e02fc291ccdae44be9dc92fbc7a1987fb2075dc5d0cb4b027015",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 22, 120, 84]
+    },
+    {
+      "id": "mushroom_stem",
+      "path": "assets/environments/platforms/mushroom/mushroom_stem.png",
+      "manifest": "public/assets/environments/platforms/mushroom/manifest.json",
+      "sha256": "89d5f76725b87c2f1e95f399817a25b1a1f74170f1b0bf5a3e1d4b5427274ec2",
+      "manifestSha256": "ff1758f76f95e02fc291ccdae44be9dc92fbc7a1987fb2075dc5d0cb4b027015",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [41, 0, 87, 128]
+    },
+    {
+      "id": "mushroom_stem_base",
+      "path": "assets/environments/platforms/mushroom/mushroom_stem_base.png",
+      "manifest": "public/assets/environments/platforms/mushroom/manifest.json",
+      "sha256": "dc8ce2156f2d40fb8594c1b2ea8ef4d86d172beb9ff906dbd60251ef044b0e10",
+      "manifestSha256": "ff1758f76f95e02fc291ccdae44be9dc92fbc7a1987fb2075dc5d0cb4b027015",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [29, 74, 99, 120]
+    },
+    {
+      "id": "stairs_left",
+      "path": "assets/environments/platforms/stairs/stairs_left.png",
+      "manifest": "public/assets/environments/platforms/stairs/manifest.json",
+      "sha256": "0467227ab933d866d0f9f9864ade1cec98338b755ac49b2dce78e3e728f57699",
+      "manifestSha256": "ebba4ee2a4b0ef8dccc9df571264105a8038b476244316c656de6c341748a36a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 20, 128, 68]
+    },
+    {
+      "id": "stairs_center",
+      "path": "assets/environments/platforms/stairs/stairs_center.png",
+      "manifest": "public/assets/environments/platforms/stairs/manifest.json",
+      "sha256": "d23e443ce60b6f25c7a2efada53d6437b5ad8d84390ed508284c81860efe2bf0",
+      "manifestSha256": "ebba4ee2a4b0ef8dccc9df571264105a8038b476244316c656de6c341748a36a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 20, 128, 68]
+    },
+    {
+      "id": "stairs_right",
+      "path": "assets/environments/platforms/stairs/stairs_right.png",
+      "manifest": "public/assets/environments/platforms/stairs/manifest.json",
+      "sha256": "78a383a7931910a488308b1681ef054ed5f004c408f41a79ba0dced108444dc1",
+      "manifestSha256": "ebba4ee2a4b0ef8dccc9df571264105a8038b476244316c656de6c341748a36a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 20, 120, 68]
+    },
+    {
+      "id": "stairs_riser",
+      "path": "assets/environments/platforms/stairs/stairs_riser.png",
+      "manifest": "public/assets/environments/platforms/stairs/manifest.json",
+      "sha256": "f73fe10207290dcf62818c5a7ac9e22aabd9e1ed42162c710c64056f611c8c1e",
+      "manifestSha256": "ebba4ee2a4b0ef8dccc9df571264105a8038b476244316c656de6c341748a36a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "stone_bridge_left",
+      "path": "assets/environments/platforms/stone_bridge/stone_bridge_left.png",
+      "manifest": "public/assets/environments/platforms/stone_bridge/manifest.json",
+      "sha256": "e2d03480aa10393de9af9accb960fdb3080e4fc12c98f5075cfe4c615f1820cd",
+      "manifestSha256": "0a69b1ac90d0dd569bea7c8209276356e419cc3be8ce921a95d81ecaf638b331",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 19, 128, 75]
+    },
+    {
+      "id": "stone_bridge_center",
+      "path": "assets/environments/platforms/stone_bridge/stone_bridge_center.png",
+      "manifest": "public/assets/environments/platforms/stone_bridge/manifest.json",
+      "sha256": "59d0d7e7c73478277b9e1b82650ea379c10c724967890a315f343284d4daf594",
+      "manifestSha256": "0a69b1ac90d0dd569bea7c8209276356e419cc3be8ce921a95d81ecaf638b331",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 19, 128, 75]
+    },
+    {
+      "id": "stone_bridge_right",
+      "path": "assets/environments/platforms/stone_bridge/stone_bridge_right.png",
+      "manifest": "public/assets/environments/platforms/stone_bridge/manifest.json",
+      "sha256": "07e0cbd7e26c2a81344f4457cb97ae73dba7ae906aeef48cbd646bdfa09b690e",
+      "manifestSha256": "0a69b1ac90d0dd569bea7c8209276356e419cc3be8ce921a95d81ecaf638b331",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 19, 120, 75]
+    },
+    {
+      "id": "stone_bridge_arch",
+      "path": "assets/environments/platforms/stone_bridge/stone_bridge_arch.png",
+      "manifest": "public/assets/environments/platforms/stone_bridge/manifest.json",
+      "sha256": "183747d5a7e390a316ec347d36f6290f4a621442029cd2b84ed2e1c4e5d943d6",
+      "manifestSha256": "0a69b1ac90d0dd569bea7c8209276356e419cc3be8ce921a95d81ecaf638b331",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [4, 8, 124, 74]
+    },
+    {
+      "id": "suspended_left",
+      "path": "assets/environments/platforms/suspended/suspended_left.png",
+      "manifest": "public/assets/environments/platforms/suspended/manifest.json",
+      "sha256": "5815cc5052ffc9ebdede74392dcfe21fb95702a8bce98b310ff3f1b60a21756d",
+      "manifestSha256": "9b6aaa00334fdeb8fcbd166b73fe8b3d188b5c2703c65f6953a4f45208c3012a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 26, 128, 74]
+    },
+    {
+      "id": "suspended_center",
+      "path": "assets/environments/platforms/suspended/suspended_center.png",
+      "manifest": "public/assets/environments/platforms/suspended/manifest.json",
+      "sha256": "87a22d471f35c889b842f0a60f03780d23cfbc0a5517aa6e78d5810f5374c814",
+      "manifestSha256": "9b6aaa00334fdeb8fcbd166b73fe8b3d188b5c2703c65f6953a4f45208c3012a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 27, 128, 69]
+    },
+    {
+      "id": "suspended_right",
+      "path": "assets/environments/platforms/suspended/suspended_right.png",
+      "manifest": "public/assets/environments/platforms/suspended/manifest.json",
+      "sha256": "5181f8e9ed02ab28bd83922897f3ffd9b68afe9c09bdcd8328c39e5b2089f8f2",
+      "manifestSha256": "9b6aaa00334fdeb8fcbd166b73fe8b3d188b5c2703c65f6953a4f45208c3012a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 26, 120, 74]
+    },
+    {
+      "id": "suspended_chain",
+      "path": "assets/environments/platforms/suspended/suspended_chain.png",
+      "manifest": "public/assets/environments/platforms/suspended/manifest.json",
+      "sha256": "dda76031ab23602934f1cc22d0a647d25ebdcda757d8126f407ad49e1620effe",
+      "manifestSha256": "9b6aaa00334fdeb8fcbd166b73fe8b3d188b5c2703c65f6953a4f45208c3012a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [53, 0, 75, 128]
+    },
+    {
+      "id": "suspended_rope",
+      "path": "assets/environments/platforms/suspended/suspended_rope.png",
+      "manifest": "public/assets/environments/platforms/suspended/manifest.json",
+      "sha256": "cfce06546addd6c67efb5a00da5681aa0512ae03b9ff7284553fd086b372dfc5",
+      "manifestSha256": "9b6aaa00334fdeb8fcbd166b73fe8b3d188b5c2703c65f6953a4f45208c3012a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [57, 0, 71, 128]
+    },
+    {
+      "id": "suspended_attachment",
+      "path": "assets/environments/platforms/suspended/suspended_attachment.png",
+      "manifest": "public/assets/environments/platforms/suspended/manifest.json",
+      "sha256": "aaaf23b7ff6b72c961e57849af3d5d67e4c79b756cd3c6adf63ba658e83c95a1",
+      "manifestSha256": "9b6aaa00334fdeb8fcbd166b73fe8b3d188b5c2703c65f6953a4f45208c3012a",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [47, 16, 81, 80]
+    },
+    {
+      "id": "tree_branch_left",
+      "path": "assets/environments/platforms/tree_branch/tree_branch_left.png",
+      "manifest": "public/assets/environments/platforms/tree_branch/manifest.json",
+      "sha256": "44f321237a915a857f96980878e51cdfdaca568c769476572ecbdc1520fb76ad",
+      "manifestSha256": "340bbbb96087757b1392d74843de6605ed353660e2dadc06c24a6a5fa43cb978",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 23, 128, 87]
+    },
+    {
+      "id": "tree_branch_center",
+      "path": "assets/environments/platforms/tree_branch/tree_branch_center.png",
+      "manifest": "public/assets/environments/platforms/tree_branch/manifest.json",
+      "sha256": "23411cea50c4a8e94e5f6544d0d13af2e43d97fc37c6a86805bdfc7747dbcf65",
+      "manifestSha256": "340bbbb96087757b1392d74843de6605ed353660e2dadc06c24a6a5fa43cb978",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 25, 128, 87]
+    },
+    {
+      "id": "tree_branch_right",
+      "path": "assets/environments/platforms/tree_branch/tree_branch_right.png",
+      "manifest": "public/assets/environments/platforms/tree_branch/manifest.json",
+      "sha256": "c49d7310b6f22afb269eac5d6e9fc9f152bd4226b7fc55a222bc443e5ffab26d",
+      "manifestSha256": "340bbbb96087757b1392d74843de6605ed353660e2dadc06c24a6a5fa43cb978",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 24, 120, 87]
+    },
+    {
+      "id": "tree_branch_junction",
+      "path": "assets/environments/platforms/tree_branch/tree_branch_junction.png",
+      "manifest": "public/assets/environments/platforms/tree_branch/manifest.json",
+      "sha256": "481392d3a9c1c7b40a0ccdd53656f677d2a4e6b07adb00c508414ba3d66f03dc",
+      "manifestSha256": "340bbbb96087757b1392d74843de6605ed353660e2dadc06c24a6a5fa43cb978",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [4, 12, 124, 72]
+    },
+    {
+      "id": "tree_branch_support",
+      "path": "assets/environments/platforms/tree_branch/tree_branch_support.png",
+      "manifest": "public/assets/environments/platforms/tree_branch/manifest.json",
+      "sha256": "e3931a9169a2741702b3a69b377512b787d0dc6e02316f1147503e6c4fe6c57d",
+      "manifestSha256": "340bbbb96087757b1392d74843de6605ed353660e2dadc06c24a6a5fa43cb978",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [38, 0, 90, 128]
+    },
+    {
+      "id": "weathered_stone_left",
+      "path": "assets/environments/platforms/weathered_stone/weathered_stone_left.png",
+      "manifest": "public/assets/environments/platforms/weathered_stone/manifest.json",
+      "sha256": "fdab63cc6b82c0f34b3d4fe80571736946d0a3e6c113690d1aacac7fa09ad2c5",
+      "manifestSha256": "e28f4b1f4c9932300d8c82a626c197540b4ff8e02806b78e7494fd2bcad0e44b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 18, 128, 80]
+    },
+    {
+      "id": "weathered_stone_center",
+      "path": "assets/environments/platforms/weathered_stone/weathered_stone_center.png",
+      "manifest": "public/assets/environments/platforms/weathered_stone/manifest.json",
+      "sha256": "e5e263374d920307e24c7bae5ba562043b3d9697ff19af0c37503f0c3aa700e1",
+      "manifestSha256": "e28f4b1f4c9932300d8c82a626c197540b4ff8e02806b78e7494fd2bcad0e44b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 25, 128, 73]
+    },
+    {
+      "id": "weathered_stone_right",
+      "path": "assets/environments/platforms/weathered_stone/weathered_stone_right.png",
+      "manifest": "public/assets/environments/platforms/weathered_stone/manifest.json",
+      "sha256": "ae589edd5705f0f7087fd652423df70de18d0a8476235ff9ec208eeeb27de914",
+      "manifestSha256": "e28f4b1f4c9932300d8c82a626c197540b4ff8e02806b78e7494fd2bcad0e44b",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 18, 120, 80]
+    },
+    {
+      "id": "wood_left",
+      "path": "assets/environments/platforms/wood/wood_left.png",
+      "manifest": "public/assets/environments/platforms/wood/manifest.json",
+      "sha256": "64e9638ab770c99f3836cf129754fe33d604fff8d7d0f8f862e1bdcaa2c5f2e3",
+      "manifestSha256": "cc9d9291c8153208f6015ff57bd1507891b2debc9c0dfc7fea9f1e93f94a4c52",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [8, 27, 128, 69]
+    },
+    {
+      "id": "wood_center",
+      "path": "assets/environments/platforms/wood/wood_center.png",
+      "manifest": "public/assets/environments/platforms/wood/manifest.json",
+      "sha256": "f4179e4aaef70e0a1984919b08899fe547d3444512442c5029bb51eb2743583b",
+      "manifestSha256": "cc9d9291c8153208f6015ff57bd1507891b2debc9c0dfc7fea9f1e93f94a4c52",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 27, 128, 68]
+    },
+    {
+      "id": "wood_right",
+      "path": "assets/environments/platforms/wood/wood_right.png",
+      "manifest": "public/assets/environments/platforms/wood/manifest.json",
+      "sha256": "cc328282499fd9ad63575e9eff2526508014b19ed785bf04ac0c7256184f815f",
+      "manifestSha256": "cc9d9291c8153208f6015ff57bd1507891b2debc9c0dfc7fea9f1e93f94a4c52",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 27, 120, 69]
+    },
+    {
+      "id": "wood_support",
+      "path": "assets/environments/platforms/wood/wood_support.png",
+      "manifest": "public/assets/environments/platforms/wood/manifest.json",
+      "sha256": "ce09351e6546419edd492d95a7000f7f52db78976fe751ddf0a2fcb52972dd46",
+      "manifestSha256": "cc9d9291c8153208f6015ff57bd1507891b2debc9c0dfc7fea9f1e93f94a4c52",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [46, 0, 82, 128]
+    },
+    {
+      "id": "ruined_wall_a",
+      "path": "assets/environments/ancient_forest/architecture/ruined_wall_a.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "1e23cb1695ef58dc76b07332a5f527bf992889a1a91cae025e3c2cf3195df5b1",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 219, 480, 496]
+    },
+    {
+      "id": "ruined_wall_b",
+      "path": "assets/environments/ancient_forest/architecture/ruined_wall_b.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "40dcee9a52a48123041e73d8b9a09b605bf95e404a8d0b800f749123f8a7c560",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 343, 480, 496]
+    },
+    {
+      "id": "ruined_archway",
+      "path": "assets/environments/ancient_forest/architecture/ruined_archway.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "6120cb4d72966faadecc65b546eee3c6ca65dca6240d5f012cc844cb71e69c21",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [279, 48, 745, 496]
+    },
+    {
+      "id": "stone_stairs",
+      "path": "assets/environments/ancient_forest/architecture/stone_stairs.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "1fc437d2d0ad945cdeaf6af10e34eaad6e64b6167a1cd500ca8247a2661340a8",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 293, 480, 496]
+    },
+    {
+      "id": "collapsed_column",
+      "path": "assets/environments/ancient_forest/architecture/collapsed_column.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "6c171622971090feeb65a295bfa4fbfb01f24097de8aaed05bc8528fe737bd58",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 188, 992, 496]
+    },
+    {
+      "id": "temple_entrance",
+      "path": "assets/environments/ancient_forest/architecture/temple_entrance.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "2ea41a4e8aaa4f9fa908490a62f6800f9c9b866b48d37d61b768b5273a32ef7d",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [146, 48, 878, 496]
+    },
+    {
+      "id": "carved_ornament_a",
+      "path": "assets/environments/ancient_forest/architecture/carved_ornament_a.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "821dd8bf04573f509a71b60ead8674eef6be41c2051db9ce119b2bec07e215be",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 32, 238, 240]
+    },
+    {
+      "id": "carved_ornament_b",
+      "path": "assets/environments/ancient_forest/architecture/carved_ornament_b.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "4784553d99d69edc3b518beb47510f64c5790614e78157ad030c9d7d9a3bc5bc",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [59, 32, 198, 240]
+    },
+    {
+      "id": "decorative_bridge",
+      "path": "assets/environments/ancient_forest/architecture/decorative_bridge.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "7987e927c846d0bd28eefd06d471e32268d15dd0096fbf22cc2e22777f8fff8c",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 217, 992, 496]
+    },
+    {
+      "id": "stone_foundation_ruin",
+      "path": "assets/environments/ancient_forest/architecture/stone_foundation_ruin.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "d5e532e7a9103eb76d7fd4d6940f9bb8d574c14202da99da0a839015ab6e9fb3",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 257, 992, 496]
+    },
+    {
+      "id": "cracked_masonry",
+      "path": "assets/environments/ancient_forest/architecture/cracked_masonry.png",
+      "manifest": "public/assets/environments/ancient_forest/architecture/manifest.json",
+      "sha256": "d7b77d04e501e2b1c1ae8dc6638ad35a9a19b16f587bbf651b462ef0f8224b20",
+      "manifestSha256": "12a8303ca66ea30615a16bf80bd6e7c2f701cf5273748fff218d5b5ca8dbf487",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "distant_ruins",
+      "path": "assets/environments/ancient_forest/background_overlays/distant_ruins.png",
+      "manifest": "public/assets/environments/ancient_forest/background_overlays/manifest.json",
+      "sha256": "384406f558137b963364dec4bf5ce4815af39c10c0f6978d38b46dbb3fbcf87f",
+      "manifestSha256": "e2cbb930fe7d264f74a3193ea8e18480aa39f25d003730351213fb107b697844",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [145, 48, 879, 496]
+    },
+    {
+      "id": "tree_trunk_a",
+      "path": "assets/environments/ancient_forest/background_overlays/tree_trunk_a.png",
+      "manifest": "public/assets/environments/ancient_forest/background_overlays/manifest.json",
+      "sha256": "00b0deeff9016c9fc61db74eed9c4da8fb836335d5c387e806f4a791cad00810",
+      "manifestSha256": "e2cbb930fe7d264f74a3193ea8e18480aa39f25d003730351213fb107b697844",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [54, 48, 459, 496]
+    },
+    {
+      "id": "tree_trunk_b",
+      "path": "assets/environments/ancient_forest/background_overlays/tree_trunk_b.png",
+      "manifest": "public/assets/environments/ancient_forest/background_overlays/manifest.json",
+      "sha256": "44bfbde6e428badcc4fb5b1481299cc9f9324ee000619f8964e41863455e67a1",
+      "manifestSha256": "e2cbb930fe7d264f74a3193ea8e18480aa39f25d003730351213fb107b697844",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [112, 48, 401, 496]
+    },
+    {
+      "id": "background_roots",
+      "path": "assets/environments/ancient_forest/background_overlays/background_roots.png",
+      "manifest": "public/assets/environments/ancient_forest/background_overlays/manifest.json",
+      "sha256": "a22ab3cb5625b65b4110b6a26426f92e819e50186a73aa6f3d509fd860fb601e",
+      "manifestSha256": "e2cbb930fe7d264f74a3193ea8e18480aa39f25d003730351213fb107b697844",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 279, 992, 496]
+    },
+    {
+      "id": "background_vines",
+      "path": "assets/environments/ancient_forest/background_overlays/background_vines.png",
+      "manifest": "public/assets/environments/ancient_forest/background_overlays/manifest.json",
+      "sha256": "ef56608e9e0ae9a4295cc9f3d780af04bd8eeb317fab42feee270ba83b238ddd",
+      "manifestSha256": "e2cbb930fe7d264f74a3193ea8e18480aa39f25d003730351213fb107b697844",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [88, 24, 424, 488]
+    },
+    {
+      "id": "foreground_bushes",
+      "path": "assets/environments/ancient_forest/foreground/foreground_bushes.png",
+      "manifest": "public/assets/environments/ancient_forest/foreground/manifest.json",
+      "sha256": "17c235a5a5918972cae31f775c967974d8b6f0dd0a63e3319d9f691e1d2ff51a",
+      "manifestSha256": "d74637ed532fc57cfb23762a71299fa56c792d1c93eff25a5f022d72d1c100d5",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 161, 992, 496]
+    },
+    {
+      "id": "hanging_leaves",
+      "path": "assets/environments/ancient_forest/foreground/hanging_leaves.png",
+      "manifest": "public/assets/environments/ancient_forest/foreground/manifest.json",
+      "sha256": "dda6d2f40816048e5658b0095649b0d781b487172839f2a1aa8911740fa774c0",
+      "manifestSha256": "d74637ed532fc57cfb23762a71299fa56c792d1c93eff25a5f022d72d1c100d5",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [25, 24, 1000, 488]
+    },
+    {
+      "id": "dark_foliage_silhouette",
+      "path": "assets/environments/ancient_forest/foreground/dark_foliage_silhouette.png",
+      "manifest": "public/assets/environments/ancient_forest/foreground/manifest.json",
+      "sha256": "e34ccbdf705724fbb547fabda0d5e33411f82bcc3a1e76543a0901cf259b3e08",
+      "manifestSha256": "d74637ed532fc57cfb23762a71299fa56c792d1c93eff25a5f022d72d1c100d5",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 178, 992, 496]
+    },
+    {
+      "id": "rock_silhouette",
+      "path": "assets/environments/ancient_forest/foreground/rock_silhouette.png",
+      "manifest": "public/assets/environments/ancient_forest/foreground/manifest.json",
+      "sha256": "ac83d0d3a576d5fd568f3e785a0bdcbec109423064c19a460f8c51ac358f2754",
+      "manifestSha256": "d74637ed532fc57cfb23762a71299fa56c792d1c93eff25a5f022d72d1c100d5",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [32, 134, 992, 496]
+    },
+    {
+      "id": "glowing_rune_a",
+      "path": "assets/environments/ancient_forest/magical_supports/glowing_rune_a.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "a7121f775833019fb9a313e810a58cdf2f12344ee41cf98db348dca7bdf38419",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [48, 32, 208, 224]
+    },
+    {
+      "id": "glowing_rune_b",
+      "path": "assets/environments/ancient_forest/magical_supports/glowing_rune_b.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "7b13571f65e5a7c15f155042f7d88313fe598185d89a3c18a462ecda78373fe8",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [42, 32, 214, 224]
+    },
+    {
+      "id": "floating_stone_a",
+      "path": "assets/environments/ancient_forest/magical_supports/floating_stone_a.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "64c33085319ec244668bc494aa6e49c99aff221c10795115b9e4e99bf6ef1e37",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [61, 32, 196, 224]
+    },
+    {
+      "id": "floating_stone_b",
+      "path": "assets/environments/ancient_forest/magical_supports/floating_stone_b.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "09f5c297b1f8828c5b0bca4ba976605f513f802bae3bd99069ba7e869fc2ddc6",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [32, 71, 224, 186]
+    },
+    {
+      "id": "energy_trail_a",
+      "path": "assets/environments/ancient_forest/magical_supports/energy_trail_a.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "42f6d3fd5e6adecf91387c064d40124b2b8a3c4f0f351c53c7efae60874225f0",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [66, 32, 190, 224]
+    },
+    {
+      "id": "energy_trail_b",
+      "path": "assets/environments/ancient_forest/magical_supports/energy_trail_b.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "b50c51ae76f9603db5bda0f3497d2eed6d13f8b77a55f9cd04117753be9adbde",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [82, 32, 175, 224]
+    },
+    {
+      "id": "suspension_ring_water",
+      "path": "assets/environments/ancient_forest/magical_supports/suspension_ring_water.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "6bab849dfbeb9462e161355d219237b31fc22559ca2e0863936e870d5b48df91",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [36, 201, 476, 312]
+    },
+    {
+      "id": "suspension_ring_fire",
+      "path": "assets/environments/ancient_forest/magical_supports/suspension_ring_fire.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "00d388441aa958272972a7bbd418e215a7e28ddb54726133600c866bc0dd504a",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [36, 204, 476, 308]
+    },
+    {
+      "id": "suspension_ring_air",
+      "path": "assets/environments/ancient_forest/magical_supports/suspension_ring_air.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "6b46a61717c1b26b3a2f46e3da6c39bbee01de578189d7e3d1f6b1c188560613",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [36, 208, 476, 305]
+    },
+    {
+      "id": "suspension_ring_earth",
+      "path": "assets/environments/ancient_forest/magical_supports/suspension_ring_earth.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "cfd82e67f0a9b83c28de3b2e18b3233b382fbd9199c7895b346e8df70046eb23",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [36, 199, 476, 314]
+    },
+    {
+      "id": "levitation_particles_a",
+      "path": "assets/environments/ancient_forest/magical_supports/levitation_particles_a.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "b025fdac797f5fd0526a7499225e86e09471e9c5689fde88b91f12d86384d964",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [104, 32, 152, 224]
+    },
+    {
+      "id": "levitation_particles_b",
+      "path": "assets/environments/ancient_forest/magical_supports/levitation_particles_b.png",
+      "manifest": "public/assets/environments/ancient_forest/magical_supports/manifest.json",
+      "sha256": "45051d4e916b463a868d6b56c20b1bbd58269bab8774c124e2a695b16c62d777",
+      "manifestSha256": "4b40cd1824eff3abe6a1df070febfc2bfa2692c673308e2bcf25ae160334fd67",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [32, 103, 224, 154]
+    },
+    {
+      "id": "stone_column_base",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_column_base.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "c468a66274eccedcd0877bf8356f8c2cb8d5646f4617e4ca6cbe5e0b986472fd",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [48, 183, 208, 240]
+    },
+    {
+      "id": "stone_column_capital",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_column_capital.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "9851696593a314286332f6177a5e2d5ab04ccd685257b05434fdb3d0c3bc0b00",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [48, 32, 208, 100]
+    },
+    {
+      "id": "broken_pillar_a",
+      "path": "assets/environments/ancient_forest/structural_supports/broken_pillar_a.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "7941ee9bca102cf8bffde444f2e08643bbcac8825d6a1b9c16894d39516127d5",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [109, 48, 403, 496]
+    },
+    {
+      "id": "broken_pillar_b",
+      "path": "assets/environments/ancient_forest/structural_supports/broken_pillar_b.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "c4bf391292ffce34514a175c698608c205dc13ea424d0a865ce8b53de4e521e4",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [149, 48, 364, 496]
+    },
+    {
+      "id": "wood_brace_rising_right",
+      "path": "assets/environments/ancient_forest/structural_supports/wood_brace_rising_right.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "f577288822e0c9c01182d3305a0dc563c4e53fea9be29ec59f488b43850633e4",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 67, 480, 496]
+    },
+    {
+      "id": "wood_brace_rising_left",
+      "path": "assets/environments/ancient_forest/structural_supports/wood_brace_rising_left.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "34c5e08cd3ce1b8c0c917dc9b2586a9881d12851213839a7f08b3e389b468c82",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 81, 480, 496]
+    },
+    {
+      "id": "scaffold_joint",
+      "path": "assets/environments/ancient_forest/structural_supports/scaffold_joint.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "84071d7cce8c25abf5b11e17e56c7113ee84039479cd8a9400bd765d43c9ad7a",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [80, 82, 176, 175]
+    },
+    {
+      "id": "stone_arch",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_arch.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "cfbace1733da933e692c688e5e147ad8061b176e31b2e7e927e2e2a844e332a8",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 1024,
+      "height": 512,
+      "alphaBounds": [71, 48, 954, 496]
+    },
+    {
+      "id": "stone_column_segment",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_column_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "0b276f5d57548d6d56f5f82a4356a0ccb0ee2575c4de642355f5001a44f375d4",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [32, 0, 96, 128]
+    },
+    {
+      "id": "wood_post_segment",
+      "path": "assets/environments/ancient_forest/structural_supports/wood_post_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "c72dff27e1ef2f70bce340135441690d78211a05b87cc27e6f30509820687ac1",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [44, 0, 84, 128]
+    },
+    {
+      "id": "wood_beam_segment",
+      "path": "assets/environments/ancient_forest/structural_supports/wood_beam_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "4eadafc5ac9748500e2525edb746eea78e4612717b83d6229ed27483e0df938c",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 44, 128, 84]
+    },
+    {
+      "id": "stone_foundation_segment",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_foundation_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "8e13790eb603d85ae62215e79d057e8ae83c02826312152b3f9508580db47205",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 28, 128, 100]
+    },
+    {
+      "id": "chain_segment",
+      "path": "assets/environments/ancient_forest/structural_supports/chain_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "17f173c3f0014d6efee1a3954f67237a336cc71b7af0e98c6d0761496839619a",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [50, 0, 78, 128]
+    },
+    {
+      "id": "rope_segment",
+      "path": "assets/environments/ancient_forest/structural_supports/rope_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "cb27826a20703b6a01d4f4760b33dfb597c7452f0bcc7f7b5329015120a24844",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [55, 0, 73, 128]
+    },
+    {
+      "id": "stone_column_short",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_column_short.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "05b74f030ea20ec93eb2afe201c5081dfe8a6e80c4037ef589237b3871c67705",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [176, 280, 336, 496]
+    },
+    {
+      "id": "stone_column_medium",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_column_medium.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "d2f71124795741c79f9372246fbef697ea429b500436b3d55b5f8df7f1986553",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [176, 152, 336, 496]
+    },
+    {
+      "id": "stone_column_tall",
+      "path": "assets/environments/ancient_forest/structural_supports/stone_column_tall.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "e8fc630ddcd0fcfaae733fc5d5791f704f927895aa8b56c30f6025248b1e1ae1",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [176, 24, 336, 496]
+    },
+    {
+      "id": "scaffolding_bay",
+      "path": "assets/environments/ancient_forest/structural_supports/scaffolding_bay.png",
+      "manifest": "public/assets/environments/ancient_forest/structural_supports/manifest.json",
+      "sha256": "a3a8bc7de5615f570a3052c9cdb7079fb4629a1038b8a41f3c37fb79a20b3a12",
+      "manifestSha256": "821ac64111e48fc13b0c9a6aa4404ff0a33dd6fa00f4848d748cd5814bcc012f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [64, 28, 448, 432]
+    },
+    {
+      "id": "slope_rising_right",
+      "path": "assets/environments/ancient_forest/terrain_expansion/slope_rising_right.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "ff0c7ef3ad0e90704cadd83dc879dddeff28e199200ed7f00b246ffd6b6ed667",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 268, 480, 496]
+    },
+    {
+      "id": "slope_rising_left",
+      "path": "assets/environments/ancient_forest/terrain_expansion/slope_rising_left.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "175e197fc8916f4c961afb5303c229a06e24ea4a3003c7dbcd2b9726d720645b",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [32, 223, 480, 496]
+    },
+    {
+      "id": "broken_ground_a",
+      "path": "assets/environments/ancient_forest/terrain_expansion/broken_ground_a.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "8a536c5b22afafa44c3d6960e5562ca65dbfee847dfcd571c7ff089190726cde",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [16, 172, 240, 240]
+    },
+    {
+      "id": "broken_ground_b",
+      "path": "assets/environments/ancient_forest/terrain_expansion/broken_ground_b.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "22b6be0802094358840ed67b72fb10d84f5114a850dc552f55fee471437b5d75",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [16, 153, 240, 240]
+    },
+    {
+      "id": "dirt_interior",
+      "path": "assets/environments/ancient_forest/terrain_expansion/dirt_interior.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "b1ff77af61af6faeaa7f2325175fe2e43b5bdcb6c003a44fe0d0d9fd46c919ec",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "stone_interior",
+      "path": "assets/environments/ancient_forest/terrain_expansion/stone_interior.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "bf643b749adadbd67142511114ea40a22c3a724d779841f4ac61d2468fe1316d",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "underground_stone",
+      "path": "assets/environments/ancient_forest/terrain_expansion/underground_stone.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "67506f83802cdd5b20a22f20485c812af6da6858fe542252f3341bab7ede351a",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "grass_rim_a",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_rim_a.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "79ac22a9334c3c126549c96da6a8c81f7921349db1022454eff64d1620edb6b9",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 4, 128, 32]
+    },
+    {
+      "id": "grass_rim_b",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_rim_b.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "632364b446b0e2cd856f85b91af07e4257ad9e9b2c8ebed4dd771c2a2aadf06e",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 4, 128, 32]
+    },
+    {
+      "id": "grass_top_a",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_top_a.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "e98171cfd589564410a72389b91e395ada40bcd4ebcf7031c67404e5720bec2d",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 4, 128, 128]
+    },
+    {
+      "id": "grass_top_b",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_top_b.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "546d51718c68566b044e093a0b68a3f03a6f0e6c1082bbdc98e67b1885753283",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 4, 128, 128]
+    },
+    {
+      "id": "grass_stone_top",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_stone_top.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "27b9f0692350385dbe88e0223d6e2c968729fb66e3889bce09179f4fa31fb9e3",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 4, 128, 128]
+    },
+    {
+      "id": "dirt_edge_left",
+      "path": "assets/environments/ancient_forest/terrain_expansion/dirt_edge_left.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "c9dcb73ff70b0526fa3e9da470b6fc8a592f4be4cc281de828f868d7a990ae60",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [12, 0, 128, 128]
+    },
+    {
+      "id": "grass_corner_left",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_corner_left.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "688f1985f733455c1bbbf8fdc87e04cd48bee7281d1bde4843349da76366808a",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [12, 4, 128, 128]
+    },
+    {
+      "id": "bottom_corner_left",
+      "path": "assets/environments/ancient_forest/terrain_expansion/bottom_corner_left.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "fafe6c60e92e8797ccaaf63c63e3141dc2e80bf7483807387c0748a4d3bc842f",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [12, 0, 128, 115]
+    },
+    {
+      "id": "inner_corner_left",
+      "path": "assets/environments/ancient_forest/terrain_expansion/inner_corner_left.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "6410d75a126e8a58d3d833713bdcc6f7a1fcefde48f248eafc67b98b5874cc5c",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "dirt_edge_right",
+      "path": "assets/environments/ancient_forest/terrain_expansion/dirt_edge_right.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "8d75762b409480125aa1dbe3a09333e76220f9b6360b5a1e61e8db710c48e26d",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 116, 128]
+    },
+    {
+      "id": "grass_corner_right",
+      "path": "assets/environments/ancient_forest/terrain_expansion/grass_corner_right.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "bd61663f1e988f664335d73af958654f99581bba34e58baeb7fe40358a98ddc8",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 5, 116, 128]
+    },
+    {
+      "id": "bottom_corner_right",
+      "path": "assets/environments/ancient_forest/terrain_expansion/bottom_corner_right.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "6c04ec9ae9b9a06e7c8caef71c8884db446462d9a4be7b14036d2f67e48a4bb7",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 116, 115]
+    },
+    {
+      "id": "inner_corner_right",
+      "path": "assets/environments/ancient_forest/terrain_expansion/inner_corner_right.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "09829db31e5a80b48f185f6e77c28a33cc9312f567cee9432b496eb786762ca4",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "dirt_bottom_edge",
+      "path": "assets/environments/ancient_forest/terrain_expansion/dirt_bottom_edge.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "102a991e096d35a681d62ed3fc3c46196e593dd01d2011172969f01f5af2db4c",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 115]
+    },
+    {
+      "id": "dirt_to_stone",
+      "path": "assets/environments/ancient_forest/terrain_expansion/dirt_to_stone.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "5a78077cee7c3e8bafd42cddc65e5bd4aba620ab90331cfcb2a40402cc2a9271",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "stone_to_dirt",
+      "path": "assets/environments/ancient_forest/terrain_expansion/stone_to_dirt.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "035fb13104659a1f57cf8a86370c580aa5a6212469939fc9ebdfd0e2775fdf4d",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 0, 128, 128]
+    },
+    {
+      "id": "cliff_wall_overlay",
+      "path": "assets/environments/ancient_forest/terrain_expansion/cliff_wall_overlay.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "7f4c5cf2fdc9b6f8b853a93e1f55e35339ef0d5293d22da0662b82776875511d",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [34, 0, 128, 128]
+    },
+    {
+      "id": "mossy_ledge_segment",
+      "path": "assets/environments/ancient_forest/terrain_expansion/mossy_ledge_segment.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "219a40307e8894e168b9de86c1270d17186152f7ba53ce7b860e96dc0d2f027c",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [0, 24, 128, 92]
+    },
+    {
+      "id": "exposed_roots_a",
+      "path": "assets/environments/ancient_forest/terrain_expansion/exposed_roots_a.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "8c264ec2427ce5891a51400bc6f5b47256f5eda15dca4526fc848379854ac30d",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [4, 16, 124, 83]
+    },
+    {
+      "id": "exposed_roots_b",
+      "path": "assets/environments/ancient_forest/terrain_expansion/exposed_roots_b.png",
+      "manifest": "public/assets/environments/ancient_forest/terrain_expansion/manifest.json",
+      "sha256": "a1bc51e2742601762868a8678088b9a0868867a0540ade27dc31f0533a8b83e2",
+      "manifestSha256": "ac583eb93907271c83ae312bc47eac3309b3dd4e05e58beff17d7e8a8f8e6a11",
+      "width": 128,
+      "height": 128,
+      "alphaBounds": [4, 16, 124, 69]
+    },
+    {
+      "id": "rock_small_a",
+      "path": "assets/environments/ancient_forest/vegetation/rock_small_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "04ded77a0b188da162860515215440d3a688aaf3b0ab344f2e96f5c4cd6a60c8",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [76, 175, 181, 240]
+    },
+    {
+      "id": "rock_small_b",
+      "path": "assets/environments/ancient_forest/vegetation/rock_small_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "2d67fff382a7c19ae0539d2aabbee7a1b09659711c1f777db7241e3ca28e66c2",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [81, 164, 175, 240]
+    },
+    {
+      "id": "rock_medium_a",
+      "path": "assets/environments/ancient_forest/vegetation/rock_medium_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "c483b0a45d74a8a105a599b49afa34a1ee1b490fc4d3f64293a282962df3946f",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 109, 238, 240]
+    },
+    {
+      "id": "rock_medium_b",
+      "path": "assets/environments/ancient_forest/vegetation/rock_medium_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "ca84747b5784dd67aff9c81a55aba4e7b16606920340e656251dd5bdbd902dd4",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [36, 70, 220, 240]
+    },
+    {
+      "id": "rock_large_a",
+      "path": "assets/environments/ancient_forest/vegetation/rock_large_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "1884a41ecc22ad4a68486fa992e67a650af5a3ba11adc18bffb81b8bbe7dde30",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [41, 261, 471, 496]
+    },
+    {
+      "id": "rock_large_b",
+      "path": "assets/environments/ancient_forest/vegetation/rock_large_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "e35bf843b26521901e5d06120307b395b8af57368829b966c6ce14dcd54be6c8",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [102, 166, 411, 496]
+    },
+    {
+      "id": "fern_a",
+      "path": "assets/environments/ancient_forest/vegetation/fern_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "b7d66d5ba57789b21475c89456fe9e3e085ff32d40b860f2a9cf8aec7d47e365",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [33, 139, 223, 240]
+    },
+    {
+      "id": "fern_b",
+      "path": "assets/environments/ancient_forest/vegetation/fern_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "02394cb4320be4062360fee88190fb7670c208df41e11d569ab0ef239bf88837",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [33, 84, 223, 240]
+    },
+    {
+      "id": "bush_a",
+      "path": "assets/environments/ancient_forest/vegetation/bush_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "8cc991959649f049264badb10d7f631cbd2234613877dbc7edff5618506f4a10",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 135, 238, 240]
+    },
+    {
+      "id": "bush_b",
+      "path": "assets/environments/ancient_forest/vegetation/bush_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "7c9755ed42309bc8927de08a1baea84f624e3c524cd299ac9253f7c30e1a1e89",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 117, 238, 240]
+    },
+    {
+      "id": "grass_cluster_a",
+      "path": "assets/environments/ancient_forest/vegetation/grass_cluster_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "2a4d8622716befa6e4d93d10e0492de795bcd4ce090da7cea0c71de5c4c2b5e4",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [68, 164, 188, 240]
+    },
+    {
+      "id": "grass_cluster_b",
+      "path": "assets/environments/ancient_forest/vegetation/grass_cluster_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "08ac4ac5f68faeadb319eacf1030af3062cae2ef20a93aa92529a8b712199d0f",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [53, 65, 203, 240]
+    },
+    {
+      "id": "flowers_a",
+      "path": "assets/environments/ancient_forest/vegetation/flowers_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "c1fee5f546dda5b0881e924a9d032578fbb51e2cfe19f694bf251f2fa2ec496e",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [63, 119, 193, 240]
+    },
+    {
+      "id": "flowers_b",
+      "path": "assets/environments/ancient_forest/vegetation/flowers_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "0fc70b8e7b5e3e24e51dc44cdec719292599c3911933a7905e9f3a19f421ef18",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [63, 139, 193, 240]
+    },
+    {
+      "id": "mushrooms_a",
+      "path": "assets/environments/ancient_forest/vegetation/mushrooms_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "611568a90d8d9fabff9b8f928ad6aaab3f7357db492f10d067d038ba863c682c",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [58, 110, 198, 240]
+    },
+    {
+      "id": "mushrooms_b",
+      "path": "assets/environments/ancient_forest/vegetation/mushrooms_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "d2bf480a4f32e8dca99b337a6a1ce28deba6d571f5a37af2789ebbca2f7c0d84",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [58, 141, 198, 240]
+    },
+    {
+      "id": "hanging_vines_a",
+      "path": "assets/environments/ancient_forest/vegetation/hanging_vines_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "420ce6ff9ec12b8ad904d83336e15407e4439cf077c3a0fd07177773d075f22f",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [182, 24, 331, 488]
+    },
+    {
+      "id": "hanging_vines_b",
+      "path": "assets/environments/ancient_forest/vegetation/hanging_vines_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "08db18555142066205e79c8983dc39b475a745e837bc65dbe1d970ecefd698b6",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 512,
+      "height": 512,
+      "alphaBounds": [183, 24, 330, 488]
+    },
+    {
+      "id": "tree_roots_a",
+      "path": "assets/environments/ancient_forest/vegetation/tree_roots_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "22ca976c4d06584f4e9bcbb2275622a40fd71d4181adb75b6eed77500f301de4",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 118, 238, 240]
+    },
+    {
+      "id": "tree_roots_b",
+      "path": "assets/environments/ancient_forest/vegetation/tree_roots_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "f344140dc368962acb9f59a6a11b12fa1a73a6cc1f541d262c1469961fd6cac0",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 142, 238, 240]
+    },
+    {
+      "id": "fallen_branch_a",
+      "path": "assets/environments/ancient_forest/vegetation/fallen_branch_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "e2a7ed0b81f1189945ab21febf7b3366f1b82a0d7cfb11ab51dc8077820855ad",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 161, 238, 240]
+    },
+    {
+      "id": "fallen_branch_b",
+      "path": "assets/environments/ancient_forest/vegetation/fallen_branch_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "9cde78e6e80a68bb978bcb8e16558ae4efdcc19cd22a1b025e421dc819c4fdec",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 132, 238, 240]
+    },
+    {
+      "id": "moss_patch_a",
+      "path": "assets/environments/ancient_forest/vegetation/moss_patch_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "bb353acd7670349eb5f55201563b6ad9f2d280953541981acdc507e1b62bcb32",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [28, 143, 228, 240]
+    },
+    {
+      "id": "moss_patch_b",
+      "path": "assets/environments/ancient_forest/vegetation/moss_patch_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "a67aa0257dc9c0d68ec8983819da3ff28b96686b20315c57a75291650366d6a5",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [28, 156, 228, 240]
+    },
+    {
+      "id": "small_log_a",
+      "path": "assets/environments/ancient_forest/vegetation/small_log_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "3aa5f82fd0d9318e95efd4e5f4b0ab82cf596e15c2fd15fdf17f3274c35fb5c0",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 169, 238, 240]
+    },
+    {
+      "id": "small_log_b",
+      "path": "assets/environments/ancient_forest/vegetation/small_log_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "291a90d575678247693955e7c0e1b0bb6052427657be9c2cc730986e30ffafab",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [18, 162, 238, 240]
+    },
+    {
+      "id": "stone_fragments_a",
+      "path": "assets/environments/ancient_forest/vegetation/stone_fragments_a.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "336607059b839a174169296ba7e4059e0df9e8765227e4eeecb64737df1d5c49",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [38, 150, 218, 240]
+    },
+    {
+      "id": "stone_fragments_b",
+      "path": "assets/environments/ancient_forest/vegetation/stone_fragments_b.png",
+      "manifest": "public/assets/environments/ancient_forest/vegetation/manifest.json",
+      "sha256": "bfa49b9800f8242e7dad8c4dd3bd30951364643357f29a6b94999f8bc7f80730",
+      "manifestSha256": "19bc636e0ae944ac272085a5afd474140b4a6ba22ce838dbcd0a4d3551912b0f",
+      "width": 256,
+      "height": 256,
+      "alphaBounds": [40, 150, 216, 240]
+    }
+  ],
+  "pngCount": 155,
+  "platformFamilies": 12,
+  "decodedBytes": 65798144
+}

@@ -1,0 +1,33 @@
+{
+  "id": "elemental_bounce_pad",
+  "label": "Plataforma de rebote",
+  "category": "platforms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    448
+  ],
+  "notes": "Top collider follows the moving plate. Spring lengths vary while their lower endpoints stay fixed.",
+  "states": {
+    "idle": {
+      "layers": [
+        "assets/objects/platforms/elemental_bounce_pad/bounce_idle.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_base.png"
+      ]
+    },
+    "bounce_launch": {
+      "animation": "bounce_launch"
+    }
+  },
+  "components": [
+    "assets/objects/platforms/elemental_bounce_pad/bounce_base.png",
+    "assets/objects/platforms/elemental_bounce_pad/bounce_idle.png"
+  ],
+  "directory": "assets/objects/platforms/elemental_bounce_pad",
+  "defaultBack": [],
+  "defaultFront": [
+    "assets/objects/platforms/elemental_bounce_pad/bounce_base.png"
+  ],
+  "thumbnail": "assets/objects/platforms/elemental_bounce_pad/preview.png"
+}

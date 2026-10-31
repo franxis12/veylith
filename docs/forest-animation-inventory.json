@@ -1,0 +1,266 @@
+[
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_01.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "46b47de70abd1ba14250f02c94705f5f852c7e3ae5358213e111e652621f23e1"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_02.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "0b88f6ced84d2d6b3ff0948101f79a61a516f26ebfc3266dd50444edf2ad9413"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_03.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "afccf3471d9a3801cfc14b84e145b66a90b81eba3862dc77f3347a474b67da88"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_04.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "ed64b26e89c06a37d362e61781478a2275794793c7ef67199fb09f69acaad03b"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_05.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "01019ef2378e552077533ee015340bb5630197486a5f2ef6e6650372f6005e23"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_06.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "efe495d7c6074b965a49dced5bcd523584ea8dd55a5d5a348d83181d90d99021"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_07.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "44824922f39802377e410eef75331ad5f100ee7e24cdddffaf2b38a175711ca3"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_08.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "f5094a6ce8df0b00955be1da37a9d8c92c3146de8394e06d5787a4a7dd3de03a"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+    "width": 2048,
+    "height": 1536,
+    "sha256": "18073868c89692872c36f6b6ad29302deec338e105133087cd766d93055a7ba7"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_01.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "f5094a6ce8df0b00955be1da37a9d8c92c3146de8394e06d5787a4a7dd3de03a"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_02.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "44824922f39802377e410eef75331ad5f100ee7e24cdddffaf2b38a175711ca3"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_03.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "efe495d7c6074b965a49dced5bcd523584ea8dd55a5d5a348d83181d90d99021"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_04.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "01019ef2378e552077533ee015340bb5630197486a5f2ef6e6650372f6005e23"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_05.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "ed64b26e89c06a37d362e61781478a2275794793c7ef67199fb09f69acaad03b"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_06.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "afccf3471d9a3801cfc14b84e145b66a90b81eba3862dc77f3347a474b67da88"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_07.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "0b88f6ced84d2d6b3ff0948101f79a61a516f26ebfc3266dd50444edf2ad9413"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_08.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "46b47de70abd1ba14250f02c94705f5f852c7e3ae5358213e111e652621f23e1"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_spritesheet.png",
+    "width": 2048,
+    "height": 1536,
+    "sha256": "d48f80229409f0cef898ac55b5980c2e45ec26fd882c8ae5d559f5dd77baae2a"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_01.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "6144a3100365812960d5d1efe51a48c3a7910a40515d61d3a1ba3c2938f05d9f"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_02.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "bcf2819090b87d733d30e31cab4fb70940512c6f3a79815a667635d4c30ea8da"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_03.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "9e3d33f249f014430de876b9841993cf35478f5dcfe79920b55e28a6ea49344a"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_04.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "5958467a719a9a3128f20bf740e988223168b8e815f4998de44ef564157ec6ac"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_05.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "ac059d81a6d1098b8be087c99e70ce336541ea488b31a88079ff8d99bb631a1b"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_06.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "8106265071ab0d42575a247db3938fe9c959586967c2869ac2826bcb700c96ed"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_07.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "c7dbb77f63d119b3c000683e5213972113952cfe0bc2ac34ed1b2bf929f54cc6"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_08.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "719e5a1b9e5628c1608b6310275f24313b3dbbf23680d8b47dfbf0077bc70f51"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_09.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "8674cc138850b64ed1f49d7e44a678eb0b7500e539ba1f614e695a35ddf4bf83"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_10.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "dc2c53cb5b7636adf00346ba1ff876eada2cea58223577bd5618107932ecd9bb"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_11.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "99b27b77662ebd7b4a7a72de9893148efd2acdcb32a5a8daf4dc3ee152bbf46e"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_12.png",
+    "width": 512,
+    "height": 768,
+    "sha256": "896036099f43187b7c758ed1ec1e3bff99731b910f89f7938fbde7eb68b0238e"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+    "width": 2048,
+    "height": 2304,
+    "sha256": "cf4f311d615a26dd1432ac3fc836fe86325635d4e8538ea8aba8feb1f61f2395"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_01.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "a1bf87993291e7ac68c98874ce10f16456b50a0608e24a33316d348539d21c89"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_02.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "421ef0396d860caf2934fc200a0c1dc97899fed44e27dccbecc0fcdd3ebdd312"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_03.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "dc061b53e475eb9f8a42894627f77bf924f90b7b6cc92911b1f526911f04d8a6"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_04.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "32d8f6389bf777d3087eec1a928e4c703782ea851ee4fcfa06fc6c219da17d1c"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_05.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "a229fec9688f6085faa0c2303af259acb0cff46476d325085ac7f6f69cb145af"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_06.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "067b25742b8213f7de46f3f2ef3f9ed528744aa1ce62e517f593b6d919005dad"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_07.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "b453977bf2849dcb3690f632bcdfa7414093eb91aee7022645ef8baacda9245f"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_08.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "06dde4496ff08a74c854256a5094d023406eb0cbd2ee0d932c37cf336e0b8f3c"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_09.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "38edbc660d60b99aa15b1523eb3751385d9c9bdc395fb5e5167da6109c2c9dc7"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_10.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "6ddfaae6314502af31ded0c7cb29527c4ab4b84eab124dd540207955d65689a9"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_11.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "f3597c11de5d0c5c2be6513dc66adbd76840910a8210421aea614c4d9657fc3d"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_12.png",
+    "width": 512,
+    "height": 512,
+    "sha256": "cf9af5ddc6caa99d86c1aaac37015be333a28b2e7ec7c5fcff53868d4b322d90"
+  },
+  {
+    "path": "assets/environments/ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_spritesheet.png",
+    "width": 2048,
+    "height": 1536,
+    "sha256": "b615a973d6a3bd5923afc7e1a9f11e6ccbd578de5ff9920c7c500ada75a75267"
+  }
+]

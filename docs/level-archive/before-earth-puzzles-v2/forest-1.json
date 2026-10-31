@@ -1,0 +1,520 @@
+{
+  "version": 1,
+  "id": "forest-1",
+  "name": "El primer despertar",
+  "theme": "ancient-forest",
+  "width": 4096,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 40000,
+    "twoStarsMs": 80000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 586,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "glade",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 760,
+      "width": 512,
+      "height": 640,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 640
+      }
+    },
+    {
+      "id": "roots-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 512,
+      "y": 720,
+      "width": 256,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 680
+      }
+    },
+    {
+      "id": "roots-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 768,
+      "y": 680,
+      "width": 256,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 720
+      }
+    },
+    {
+      "id": "heavy-block",
+      "type": "block",
+      "asset": "block",
+      "x": 1224.0,
+      "y": 494.0,
+      "width": 192,
+      "height": 186,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 6,
+        "width": 192,
+        "height": 180
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 1592,
+      "y": 768,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Camina contra el bloque hasta encajarlo en la placa."
+    },
+    {
+      "id": "plate-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1930,
+      "y": 404,
+      "width": 180,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 50,
+        "y": 0,
+        "width": 80,
+        "height": 276
+      },
+      "initiallyOpen": false,
+      "requires": ["plate"]
+    },
+    {
+      "id": "sanctuary-steps-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2304,
+      "y": 640,
+      "width": 256,
+      "height": 760,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 760
+      }
+    },
+    {
+      "id": "sanctuary-steps-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2560,
+      "y": 600,
+      "width": 256,
+      "height": 800,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 800
+      }
+    },
+    {
+      "id": "sanctuary-steps-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2816,
+      "y": 560,
+      "width": 256,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 840
+      }
+    },
+    {
+      "id": "sealed-grove",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3072,
+      "y": 560,
+      "width": 1024,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 840
+      }
+    },
+    {
+      "id": "grove-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 3316,
+      "y": 285,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "first-hop",
+      "type": "coin",
+      "asset": "coin",
+      "x": 2840,
+      "y": 330,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 3722.5,
+      "y": 284,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["plate", "grove-wall"]
+    },
+    {
+      "id": "welcome",
+      "type": "label",
+      "asset": null,
+      "x": 120,
+      "y": 430,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "TIERRA\nSalta las raíces. Empuja la piedra."
+    },
+    {
+      "id": "block-help",
+      "type": "label",
+      "asset": null,
+      "x": 1260,
+      "y": 410,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "Empuja hasta la placa hundida.\nEl bloque encajado sirve de escalón."
+    },
+    {
+      "id": "wall-help",
+      "type": "label",
+      "asset": null,
+      "x": 3100,
+      "y": 270,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "Poder rompe la piedra agrietada."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 699.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-4",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1069,
+      "y": 619.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-4",
+      "type": "decoration",
+      "asset": "column",
+      "x": 2154,
+      "y": 320,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-11",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 3117,
+      "y": 499.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-11",
+      "type": "decoration",
+      "asset": "column",
+      "x": 3946,
+      "y": 200,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "weighing-court",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1024,
+      "y": 680,
+      "width": 512,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 720
+      }
+    },
+    {
+      "id": "plate-recess",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1536,
+      "y": 808,
+      "width": 384,
+      "height": 592,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 592
+      }
+    },
+    {
+      "id": "plate-far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1856,
+      "y": 680,
+      "width": 512,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 448,
+        "height": 720
+      }
+    }
+  ]
+}

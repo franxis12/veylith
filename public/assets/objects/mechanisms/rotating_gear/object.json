@@ -1,0 +1,27 @@
+{
+  "id": "rotating_gear",
+  "label": "Engranaje",
+  "category": "mechanisms",
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    128,
+    128
+  ],
+  "notes": "",
+  "states": {
+    "idle": {
+      "layers": [
+        "assets/objects/mechanisms/rotating_gear/gear_idle.png"
+      ]
+    },
+    "gear_rotating": {
+      "animation": "gear_rotating"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/rotating_gear/gear_idle.png"
+  ],
+  "directory": "assets/objects/mechanisms/rotating_gear",
+  "thumbnail": "assets/objects/mechanisms/rotating_gear/preview.png"
+}

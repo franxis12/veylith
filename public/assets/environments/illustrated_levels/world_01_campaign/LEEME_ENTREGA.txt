@@ -1,0 +1,15 @@
+VEYLITH — WORLD 01: ANCIENT FOREST
+
+Diez entornos ilustrados exportados. Cada nivel: fondo PNG, mundo estático PNG con alpha real, primer plano PNG con alpha real, manifiesto, posiciones de efectos, comparación con blueprint, composición y previews GIF/WebP de 4 segundos.
+Lienzo común: 1728 x 648, origen arriba a la izquierda. Una sección por nivel, inferior a 2048 x 1024; sin uniones entre secciones.
+Biblioteca común: 6 animaciones, 48 fotogramas PNG y 6 spritesheets. Agua superficial preparada para repetición horizontal.
+Nivel 02 nuevo: level_02/blueprint_v2/; los archivos anteriores se han conservado.
+Nivel 05: la pieza superior es ambigua. La versión principal la excluye como móvil; la capa opcional y su vista alternativa permiten tratarla como plataforma fija.
+
+VALIDACIÓN
+Todas las rutas de los manifiestos resuelven. Capas alineadas por lienzo/origen. Alpha real comprobada. Previews animadas comprobadas y duración 4 s. Fotogramas y spritesheets comparados por píxel. Huecos inferiores muestreados y revisados visualmente.
+La reconstrucción geométrica es aproximada: persisten diferencias de alturas y contornos respecto al blueprint. No se afirma una reconstrucción exacta ni se ha probado el rendimiento en iPhone.
+No faltan archivos requeridos. Queda pendiente la elección de interpretación del Nivel 05 y la configuración manual de colisiones/mecanismos en el editor.
+
+No se incluye código de juego ni colliders. Los archivos de preview no deben cargarse como capas: duplicarían los efectos animados.
+Arte generado con image_gen integrado. Prompts y procedencia en GENERATION_PROMPTS.json de cada nivel y biblioteca compartida.

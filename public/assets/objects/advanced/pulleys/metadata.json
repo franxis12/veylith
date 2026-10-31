@@ -1,0 +1,245 @@
+{
+  "id": "pulleys",
+  "label": "Poleas y contrapesos",
+  "directory": "assets/objects/advanced/pulleys",
+  "components": [
+    {
+      "id": "pulley_housing",
+      "path": "assets/objects/advanced/pulleys/static/pulley_housing.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        64
+      ],
+      "origin": [
+        0.5,
+        0.125
+      ],
+      "note": "Wheel center [256,211]; housing drawn in front of wheel."
+    },
+    {
+      "id": "pulley_wheel",
+      "path": "assets/objects/advanced/pulleys/static/pulley_wheel.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        64
+      ],
+      "origin": [
+        0.5,
+        0.125
+      ],
+      "note": ""
+    },
+    {
+      "id": "rope_vertical_tile",
+      "path": "assets/objects/advanced/pulleys/static/rope_vertical_tile.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        0
+      ],
+      "origin": [
+        0.5,
+        0
+      ],
+      "note": "20 px rope. Repeat on y every 256 px; transparent to either side. Each tile contains 16 registered braid periods.",
+      "tile": {
+        "axis": "y",
+        "stride": 256
+      }
+    },
+    {
+      "id": "counterweight",
+      "path": "assets/objects/advanced/pulleys/static/counterweight.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        88
+      ],
+      "origin": [
+        0.5,
+        0.171875
+      ],
+      "note": "Attachment eye at [256,88]. Translation controlled externally."
+    },
+    {
+      "id": "counterweight_active_glow",
+      "path": "assets/objects/advanced/pulleys/static/counterweight_active_glow.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        88
+      ],
+      "origin": [
+        0.5,
+        0.171875
+      ],
+      "note": ""
+    },
+    {
+      "id": "movable_platform",
+      "path": "assets/objects/advanced/pulleys/static/movable_platform.png",
+      "width": 1024,
+      "height": 512,
+      "anchor": [
+        512,
+        300
+      ],
+      "origin": [
+        0.5,
+        0.5859375
+      ],
+      "note": "Platform is independent. Suspension eyes approximately [282,288] and [742,288]. Top deck at y=300."
+    },
+    {
+      "id": "lower_mechanical_stop",
+      "path": "assets/objects/advanced/pulleys/static/lower_mechanical_stop.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        112
+      ],
+      "origin": [
+        0.5,
+        0.4375
+      ],
+      "note": "Contact pad faces upward."
+    },
+    {
+      "id": "upper_mechanical_stop",
+      "path": "assets/objects/advanced/pulleys/static/upper_mechanical_stop.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        144
+      ],
+      "origin": [
+        0.5,
+        0.5625
+      ],
+      "note": "Contact pad faces downward."
+    }
+  ],
+  "animations": [
+    {
+      "id": "pulley_rotation",
+      "family": "pulleys",
+      "frames": [
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_01.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_02.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_03.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_04.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_05.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_06.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_07.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/pulleys/spritesheets/pulley_rotation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [
+        256,
+        64
+      ],
+      "origin": [
+        0.5,
+        0.125
+      ],
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/advanced/pulleys/static/pulley_housing.png"
+      ],
+      "note": "45 degrees per frame, no duplicate terminal frame. Independent rotor; axle [256,211].",
+      "next": null,
+      "preview": "assets/objects/advanced/pulleys/previews/pulley_rotation.gif"
+    },
+    {
+      "id": "counterweight_activation",
+      "family": "pulleys",
+      "frames": [
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_01.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_02.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_03.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_04.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_05.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/pulleys/spritesheets/counterweight_activation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        256,
+        88
+      ],
+      "origin": [
+        0.5,
+        0.171875
+      ],
+      "backLayers": [
+        "assets/objects/advanced/pulleys/static/counterweight.png"
+      ],
+      "frontLayers": [],
+      "note": "Rune illumination overlay; counterweight position remains fixed.",
+      "next": "counterweight_active_glow",
+      "preview": "assets/objects/advanced/pulleys/previews/counterweight_activation.gif"
+    },
+    {
+      "id": "mechanical_impact",
+      "family": "pulleys",
+      "frames": [
+        "assets/objects/advanced/pulleys/frames/mechanical_impact_01.png",
+        "assets/objects/advanced/pulleys/frames/mechanical_impact_02.png",
+        "assets/objects/advanced/pulleys/frames/mechanical_impact_03.png",
+        "assets/objects/advanced/pulleys/frames/mechanical_impact_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/pulleys/spritesheets/mechanical_impact_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 16,
+      "repeat": 0,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Independent contact effect. Anchor at impact center; final frame fully transparent.",
+      "next": null,
+      "preview": "assets/objects/advanced/pulleys/previews/mechanical_impact.gif"
+    }
+  ],
+  "assemblyNotes": [
+    "Platform, counterweight, fixed housing, wheel and rope are independent sprites. Position and rope length are external to this asset pack.",
+    "Housing and wheel use anchor [256,64]. Wheel axle [256,211]. Rope tangencies approximately [170,211] and [342,211]."
+  ],
+  "thumbnail": "assets/objects/advanced/pulleys/preview.png",
+  "overviewPreview": "assets/objects/advanced/pulleys/previews/family_overview.gif"
+}

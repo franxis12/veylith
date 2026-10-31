@@ -1,0 +1,1026 @@
+[
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "10af2f345832213bc3690166b591e6921e419cb24c076f07f90753862b8649fd"
+  },
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d2f1beb7ba9ef799ecebf471022b54c934df882b401eee9f0d7d772898df577e"
+  },
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "3c8308fe74ffbe4ebfb9ffcb3177d28fa91642f8998be537b47fec47d784bb0e"
+  },
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "77b19f8d57106f56fbb9f45b517a72084335d1e268193209f1a28c785d8a66ae"
+  },
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "42a7360a979ce1f75df32ce6bbffb41a39854d550136d86091b94ffe9b8bfb2f"
+  },
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/air/collect/air_gem_collect_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b256beea76a565eac5ebf00ec0c9a5b574fdbbd5fdee78529650edd7e925c976"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "10af2f345832213bc3690166b591e6921e419cb24c076f07f90753862b8649fd"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d11ddb6128490ea1088a46b43eec1431acbee789b21ad00a97bbf586bf01184d"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "0f19628372c1e198ccf3fba041bb398def79c67d63269f8030e7b09158d8825a"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "837dcb808256c60c974b6e15cdc7d6633489e36fab54e2333671d4934f638f34"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "366186318d7c96fca7b5b99b723a32922f14c939ea954d53548b4d4051d92fa7"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "43b809f3aee8d7020f7210a27066597dc9bf31cf2329daa483c43811bbd62735"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_07.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "91c6054cb261efdfc646ac241591ebd8faadf71c2c646c716689cbf3d4d4e6b8"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_08.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d3960fa45423cc1cec1031abdccec77bb4f2d92ab63d5678cd74d8957fb79c9f"
+  },
+  {
+    "path": "assets/items/gems/air/idle/air_gem_idle_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "887e4383277d37cf4d8c7e2c04ca5b4c761d08371a8f10cf8349a06d5ff74325"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "0938ee1d842dd179bbff9ce149627f64c839c00cd17b18160294ba0456a13d3d"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "e04d07b386f762f510e84e9d2884af0455dd58767a5bec407dc34066203ff5e0"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "462f80dc521693079eda93d097c84d58bf85b0deebfad34d587e97c9b99da60d"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "525ad5be9a7e41bc20fa6f919ab4383ce08656829200210f7db06154f54cf233"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "10af2f345832213bc3690166b591e6921e419cb24c076f07f90753862b8649fd"
+  },
+  {
+    "path": "assets/items/gems/air/spawn/air_gem_spawn_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "5d3bf0e2d2ce752b87eb8c4a4630d6d83a6557d07d8d5be62c026d5340c49ebb"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4f636bc5d046c17f5fece4ed3c64fd0396d6ec1555e93165885548c5d896fb6d"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "e373763998963aaa3708701570bc42582884dad5bf580c1468a220cb9a377abe"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "063cb10b2aaeabf93b4fff96b6f262de081f72e5074aff1ae6b7d6503e003714"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "45fb053bcbe6bdd7cbc3ffe791bd302c7ade862b848ed67efe102e143592fbd9"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "aaca531e5b80eed61a97749d9c05397c1192d28973b75c7173f84fc6627eb4c5"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/earth/collect/earth_gem_collect_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "1275f6036b55a092641d8a7ef2b243f4478826b0a0910dbc6afa9adff26aba0f"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4f636bc5d046c17f5fece4ed3c64fd0396d6ec1555e93165885548c5d896fb6d"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "bc350dc668dfcbe8900bc1365bfc0bb38fb649c42cc535fccae561044814b4ef"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "a6cbaaa9fbeeb2f570191b10b504e518b4acbd10218f0a522b5b1f92c60cbf3e"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "18a4ae7edbd8bbfb03ab8815e17b321289d84e161ea30db6640b4a2f65fbf54a"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "02307f3d2186bd4a653ea7b1edda6bd117210f4baf0f52ad672ce96f478de206"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "6d10af0da2856fb87f2a5329d066532fd40ba13d36e9f0fedd938026e2873f83"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_07.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "c1f5fb3358395f56cba9b49898962276ced166ae4130c086f55d9c9228989045"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_08.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "411c02f3c212e01883c0dc933ba63a1adbacf2897e8502264f0bb5b1ee1a3660"
+  },
+  {
+    "path": "assets/items/gems/earth/idle/earth_gem_idle_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "371014e958ed3c80a6abd1f258eb813719de06c4ef133e060f353d8352f765bd"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "00b2250072c482f89609824aced795b6db3dad618204bfe65845d1137ab8b16d"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "47af673d44aa8e43d3421a9415661d547b2125d779fe3575c7bba8fdd34feeae"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "2efd8386e9c315042c562324c70532d881d465b3b1822513a2f648b66088e270"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "7d3d62a767e6e882b2b848e6919b05545a6b392f0ed9f08e7ddae7a2e83de935"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4f636bc5d046c17f5fece4ed3c64fd0396d6ec1555e93165885548c5d896fb6d"
+  },
+  {
+    "path": "assets/items/gems/earth/spawn/earth_gem_spawn_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "507611eee03c574613d2bce221d17588c21a7b356d4bc382bfc2254b78d8cc00"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "371961c33fb9f0ab73cb0d560d322f3cc1b0e633495a6ef405940e4e316cc06d"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "9ffa8966129a3ff370a85e0cb3341a11f6e563769caa785b1668a97b2ca200d7"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4dfc7419b4c5a5584de5002d42c9272f12a25cbb8b5d209591bfdb6382601174"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "8fe9df2c471fdae24059e9594ead1a83d92c67dbb6cfa07705b8d210083de36a"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33e06b8fc05e3dbef777193c88f2204ed7a66eb63591bf050d804ef84477ea1b"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/fire/collect/fire_gem_collect_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "5c0af4aec132d49a8e058cab14feca5f60df0e171d937cadb96aa37abd548112"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "371961c33fb9f0ab73cb0d560d322f3cc1b0e633495a6ef405940e4e316cc06d"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d54d04a3c4a1563e2bebb9f23fa3b84882afbcb30f77ef1231ff744613f81578"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "df381e49c074c2b457578268cc8d631302e2cd4281651f704a309a6d79166941"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "6a7a0f1e5c06b2e3e22c3c559ef2b7bb6893021a367904d2bcb4c67aa66634b2"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "f84b98cb5f6d5974f91a7b6f040fd48a6e9b0bd0894e6a6b7ee4782fe9c6a99b"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "ecb79a057976a6d5ad65db71c2140e492a64d7175430c7adcf10ebc584f86425"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_07.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d07c9a745b4b04b4d832f9134ac6188eb1b5884e2e2f4189d73b01505c8a458a"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_08.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "e436877b0f6e68df6ed6d097d2e1cce810845bb1f723d00576dd2e284cff98f9"
+  },
+  {
+    "path": "assets/items/gems/fire/idle/fire_gem_idle_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "da0255a7ea63c3d8e7e35e1b72212e145651d8ad741a86e2bdee447214e89259"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "03ea8b69445952c9c46591f324fda746bbc544939f2e92c0ffe0fcaada765269"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "385e84a11bfa85717a2db3ec7c66cac2635c2920db20818644a00e9683bd7520"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "5ca3494f4d598af297f1a325ef5237658af3eb61f07d6695ccb48877b26bc6b4"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "3402e552f555a532da5fdbbf67f6b832290259a5d19287830a7fba4dfe89ba3c"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "371961c33fb9f0ab73cb0d560d322f3cc1b0e633495a6ef405940e4e316cc06d"
+  },
+  {
+    "path": "assets/items/gems/fire/spawn/fire_gem_spawn_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "cda31cd180031e2f044a25151c1b08f63c675933e60df6a95fffd5c455dec710"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "c9063f8d885632e8c3f29d34355465a19025ad6ecef9cf91901269919cc9d426"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "91d67162e341c6d68d90aba3b659ad1e94933be730c52fd7a8d29c6c4b2e6a32"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "a51285d30fe2f97c9163efa5eca0d874375af36cd04ea544430c6cde335e91cc"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "6e584c23986c53c585f77424ccdc94a760967e6b08a02258e00f08681a7c2346"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "826443e6122b6cbda7ac18707408ba15b61988cbc75ea61a3947f389c6be74e4"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/water/collect/water_gem_collect_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "8cbeb4e0d0d2aaaf61ff22a7224d1c59e154a77f37f82ec2990b6936010eb607"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "c9063f8d885632e8c3f29d34355465a19025ad6ecef9cf91901269919cc9d426"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4c82192cd83a18e0621437f6781ac286b6bc2129c097aaa88f23b0aea5cfd702"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "e7cf1b9c3af2f33265760fb0de30ed88820f3170ca83c6efe82b31c385f2ce21"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "9465c6ec0f937cb02a1f6a02fd60eb411c134df0ea5541ffbea4b2f4af0105ba"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "963fc394cf839c02e7d62e2f4b4da2ff5b60811a242b063245424f01058abd0b"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "be13aac0d29a464ab9d53cf6e22a561ab7c48115ac04054003247102cd267002"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_07.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "12cbc0fa01321e3d483695206b5b18b3ce017c0de66a8e4a4499118940c62399"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_08.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "aa916c1a79ae5e0e084e05dcd135472e93774d28ce3f7178ddf3b37ef0699fc1"
+  },
+  {
+    "path": "assets/items/gems/water/idle/water_gem_idle_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "119bf87ba54ed860fc949c17acf37a4f18446aee522290b1e72be6d6c44105d0"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_01.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_02.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "e0470360d2aa13a210b9cd9cef8a738724c388e7e2e2a343cd93744787d020bc"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_03.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "a7d2fbcd3ddc7214eb578be687ce91f7b20839a7770a4ae1eb545f4a1b5f773f"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_04.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "20daff988da6d804dbc05a1edc015e39da212534f2a2986f21dec4c2f5a00311"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_05.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "ef8c117e58e4070208ba0258b8d7bf9c1f814ef574a25e48605e3f46f7964af2"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_06.png",
+    "width": 256,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "c9063f8d885632e8c3f29d34355465a19025ad6ecef9cf91901269919cc9d426"
+  },
+  {
+    "path": "assets/items/gems/water/spawn/water_gem_spawn_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "a25e3c83d3d81c0f3177ce85966cff5fef2d6a95cec9b91dec6eb4d6921271a2"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_01.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "1afd1d2e9c97847d124352ede8c1eca9ff0909cd0e6d6a41fe9b0c1ed51c152d"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_02.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "86ef03f5575d89948a3ca071333313b4f0526e34466e8cb670939487843cb5f1"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_03.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "f25326d436170d78dc4c06d04cee04d1efd38bd9d915825730424bf21a0342f1"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_04.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "da82b6f047a8c5aab431dcc876e8ed822e4e037036ff8a2ade46ad9487ba87bb"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_05.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "278bd95131ef72cae02a7922d74c5589b092533acbb241cf8315e985ee28c0b0"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_06.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "3a3c3aa21b1bacc862f032d3afd56ea16fa82a73d293072d81f6cabd2ca6d8e7"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_07.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "022e956654d60deb3557e5e6e8ca42f72093ebd00e99be17927e9bcfd2d551f3"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_08.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b097a021925cdba9065dfe68c6d01ccc74162f96787bd35b8a4fbc747b3ff5d6"
+  },
+  {
+    "path": "assets/effects/transformations/air/air_transform_spritesheet.png",
+    "width": 4096,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "7307d8b6c822b8004232b17470c26f46cb2093e11948f3e02092cf09585798b0"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_01.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "ef5dab296b9cce0d82c1c2686b0299f4b94d0d4667536c0a53351f1b6db35118"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_02.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "c0b664675ef17499f2554951f52ec5519aa14afadabcd07a9299c6b3a629cf14"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_03.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "64ffcbc3462243b33087a7e2a7729d5f5ca17d138b3897492de341e993c3187f"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_04.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "a7cbfb97dff064868c3ff65cfa7ebc2331960a0a656da28ee9f6ac69e42fda88"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_05.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4a2612589e1bf9d6cb9679cea8176d52b9dea725db02a58a8ad3fcd5d1aabd3d"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_06.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "faa6c548223e88d06ecb82762511294e4a560342ff2651fb616297b0a81f43da"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_07.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "c9443d6f787efbea7643e824ca2fa1bde8c9bd43c0aa41f20e2199c37bc9535f"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_08.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b097a021925cdba9065dfe68c6d01ccc74162f96787bd35b8a4fbc747b3ff5d6"
+  },
+  {
+    "path": "assets/effects/transformations/earth/earth_transform_spritesheet.png",
+    "width": 4096,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b7d60af70eb7d7d7402a77f3298d0c0f0ff40a21c03209f77ee076fbe5570fad"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_01.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "7ce3fe4ac387e52bf31a7d8a0d20160ad87a0672fb273df9d84db0946e17860f"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_02.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d9b7181e2cf231a474768fbbf9b8e3515d53c0e8405e6c1651c0a03407e2b594"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_03.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "341a108944a46304294d9cd0ae4d826aeb700c8a9bddeddd9ae78dc69e89db0a"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_04.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "1f847c093f96dd45eacb24da19f931db9a0e20be89be24c3c0cd9fcd462b4108"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_05.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "4c63ac5821b1518eceff3cd6b74fbe1d964e82cc8fe892b526c12f791c3986e1"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_06.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "862cad6c4c8eb281ea2d7cabb5321ae279df7464ece4c1ff4c97bdf12f4bfd9f"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_07.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "8dc35c8e806593e58e71624caea90fa897bb36c03b36c0e5178f7b6328d854b7"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_08.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b097a021925cdba9065dfe68c6d01ccc74162f96787bd35b8a4fbc747b3ff5d6"
+  },
+  {
+    "path": "assets/effects/transformations/fire/fire_transform_spritesheet.png",
+    "width": 4096,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "0c0e15129a75cf96eb89c1866252d91615586427cbf47508bc5375423a208f45"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_01.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "2904544bac4c6da3cbd8f74a4db07f799ae0ee87263ab7de86c94259841e1b00"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_02.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "61f6cc94de5003f05d9f81e6fa74eed041396ce02854efb0b002dfd6f0fadd7b"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_03.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "05fe6776911cee5aa690f1dd436d9220a4fdc534f98b621e7458b990ef024f1d"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_04.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "462099eab4e153f4ba4306b92089c8b80b81df381435cdb9d5377f814a06b54f"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_05.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "1beb51867a9a383367077951477e1ab96aee662c8c33e84eced27c11eb3db239"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_06.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "d7e7c71fec9544bdc478897c15e0467ae8b7b6c2e1b7b4466c204199f1f1e583"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_07.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b74590fb13bdd7413ce604d00279aad2ce801c51683016d1e3d3dc252a6bd310"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_08.png",
+    "width": 512,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "b097a021925cdba9065dfe68c6d01ccc74162f96787bd35b8a4fbc747b3ff5d6"
+  },
+  {
+    "path": "assets/effects/transformations/water/water_transform_spritesheet.png",
+    "width": 4096,
+    "height": 512,
+    "bitDepth": 8,
+    "colorType": 6,
+    "sha256": "06c1a3b585a99046028ab39f34e5588790179c8b4d60219ba7a0a8a9e2f4cbe6"
+  }
+]

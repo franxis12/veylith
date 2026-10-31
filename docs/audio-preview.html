@@ -1,0 +1,2198 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Veylith · Sonidos del bosque</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        color: #f2f0de;
+        background: #101d19;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: radial-gradient(
+          ellipse at 85% 0%,
+          #2b4938 0,
+          transparent 52%
+        );
+      }
+      main {
+        max-width: 1160px;
+        margin: auto;
+        padding: 44px 24px 56px;
+      }
+      .brand {
+        width: 220px;
+        max-width: 65vw;
+        margin-bottom: 30px;
+      }
+      .kicker,
+      .eyebrow {
+        font-size: 11px;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: #b6c49e;
+      }
+      .kicker {
+        color: #dabd70;
+        font-weight: 700;
+      }
+      h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(36px, 6vw, 64px);
+        line-height: 1.06;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+        margin: 12px 0 20px;
+      }
+      .intro {
+        color: #b8c5bb;
+        max-width: 650px;
+        line-height: 1.65;
+      }
+      .toolbar {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px 0;
+        margin: 24px 0;
+        border-top: 1px solid #35463b;
+        border-bottom: 1px solid #35463b;
+      }
+      .toolbar label {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+      }
+      .toolbar small {
+        margin-left: auto;
+        color: #b8c5bb;
+      }
+      input {
+        accent-color: #dbc078;
+      }
+      button {
+        padding: 12px 18px;
+        background: #dac075;
+        color: #14221b;
+        border: 0;
+        border-radius: 7px;
+        font-weight: 700;
+        cursor: pointer;
+        min-height: 44px;
+      }
+      button:focus-visible,
+      a:focus-visible,
+      input:focus-visible {
+        outline: 3px solid #f5dc91;
+        outline-offset: 4px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+      }
+      .sound {
+        background: #1b2c24;
+        border: 1px solid #3b4b3c;
+        border-radius: 12px;
+        padding: 22px;
+        min-width: 0;
+      }
+      .eyebrow {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .eyebrow span {
+        font-size: 9px;
+        color: #ddc783;
+        letter-spacing: 0.08em;
+      }
+      h2 {
+        font-family: Georgia, serif;
+        font-size: 25px;
+        font-weight: 400;
+        margin: 18px 0 10px;
+      }
+      .sound p {
+        font-size: 13px;
+        color: #afc1b5;
+        line-height: 1.5;
+        min-height: 40px;
+        margin: 0 0 18px;
+      }
+      audio {
+        width: 100%;
+        height: 40px;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        font-size: 11px;
+        color: #afc1b5;
+      }
+      a {
+        color: #dfc680;
+        text-decoration: none;
+        padding: 8px 0;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .repeat {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        color: #c5d0bd;
+        margin-top: 12px;
+        min-height: 30px;
+      }
+      .note {
+        font-size: 12px;
+        line-height: 1.7;
+        color: #a6b7ac;
+        margin-top: 30px;
+      }
+      #status {
+        font-size: 13px;
+        color: #e1cc96;
+        min-height: 20px;
+        margin: 0 0 20px;
+      }
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+      @media (max-width: 580px) {
+        main {
+          padding: 28px 16px;
+        }
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        .toolbar small {
+          margin-left: 0;
+        }
+        .brand {
+          width: 175px;
+        }
+      }
+      .library-nav {
+        display: flex;
+        gap: 24px;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #35463b;
+        padding: 0 0 16px;
+      }
+      .group-title {
+        font-size: 32px;
+        margin: 36px 0 20px;
+        scroll-margin-top: 24px;
+      }
+      .sequence {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        padding: 24px;
+        border: 1px solid #88794b;
+        background: #293827;
+        border-radius: 12px;
+        margin-bottom: 20px;
+      }
+      .sequence strong {
+        font-family: Georgia, serif;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      .sequence p {
+        color: #b8c5bb;
+        font-size: 13px;
+        line-height: 1.6;
+        margin-bottom: 0;
+      }
+      .sequence audio {
+        width: min(380px, 100%);
+        flex-shrink: 0;
+      }
+      @media (max-width: 720px) {
+        .sequence {
+          display: block;
+        }
+        .sequence audio {
+          margin-top: 20px;
+        }
+      }
+      [hidden] {
+        display: none !important;
+      }
+      .sound {
+        scroll-margin-top: 24px;
+      }
+      .search-label {
+        display: block;
+        margin: 24px 0 10px;
+        color: #d8c587;
+      }
+      #search {
+        width: 100%;
+        font: inherit;
+        color: #f2f0de;
+        background: #1b2c24;
+        border: 1px solid #4b5c48;
+        border-radius: 8px;
+        padding: 14px;
+      }
+      #search-count {
+        margin: 10px 0 20px;
+      }
+      .sound-group {
+        margin-bottom: 34px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img
+        class="brand"
+        src="../public/assets/ui/logo/veylith_logo.png"
+        data-path="/assets/ui/logo/veylith_logo.png"
+        alt="Veylith"
+      />
+      <div class="kicker">Biblioteca sonora · integrada al juego</div>
+      <h1>La voz del bosque.</h1>
+      <p class="intro">
+        74 sonidos de fantasía natural y mágica conectados al juego, la interfaz
+        y los resultados. Los decorativos acompañan sus estados visuales
+        actuales.
+      </p>
+      <div class="toolbar">
+        <button id="stop" type="button">Detener todo</button
+        ><label
+          >Volumen
+          <input
+            id="volume"
+            type="range"
+            min="0"
+            max="1"
+            value="0.55"
+            step="0.01"
+            aria-label="Volumen de la biblioteca" /></label
+        ><small>74 sonidos · 15 bucles · WAV</small>
+      </div>
+      <p id="status" role="status">Selecciona un sonido para escucharlo.</p>
+      <label class="search-label" for="search">Buscar un sonido</label
+      ><input
+        id="search"
+        type="search"
+        placeholder="Agua, planta, puente, victoria…"
+      />
+      <p id="search-count" class="note" role="status">74 sonidos disponibles</p>
+      <nav class="library-nav" aria-label="Categorías">
+        <a href="#movement">Movimiento</a
+        ><a href="#elements">Poderes e impactos</a
+        ><a href="#world">Mundo, puzles y recolectables</a
+        ><a href="#future">Decorativos</a><a href="#ui">Interfaz</a
+        ><a href="#victory">Victoria y recompensas</a
+        ><a href="audio-audit.html">Cobertura ↗</a>
+      </nav>
+      <section class="sound-group" aria-labelledby="movement">
+        <h2 id="movement" class="group-title">Movimiento</h2>
+        <div class="grid">
+          <article id="sound-earth_jump" class="sound" data-id="earth_jump">
+            <div class="eyebrow">Movimiento<span>EFECTO</span></div>
+            <h2>Salto de Tierra</h2>
+            <p>Inicio de salto de Tierra</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/earth_jump.wav"
+              data-path="/assets/audio/veylith-natural-v1/earth_jump.wav"
+              aria-label="Salto de Tierra"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/earth_jump.wav"
+                data-path="/assets/audio/veylith-natural-v1/earth_jump.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-earth_land" class="sound" data-id="earth_land">
+            <div class="eyebrow">Movimiento<span>EFECTO</span></div>
+            <h2>Aterrizaje de Tierra</h2>
+            <p>Contacto con suelo tras caída</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/earth_land.wav"
+              data-path="/assets/audio/veylith-natural-v1/earth_land.wav"
+              aria-label="Aterrizaje de Tierra"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/earth_land.wav"
+                data-path="/assets/audio/veylith-natural-v1/earth_land.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-earth_step" class="sound" data-id="earth_step">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Paso de Tierra</h2>
+            <p>
+              Desplazamiento real sobre una superficie; Tierra en toda la
+              campaña.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/earth_step.wav"
+              data-path="/assets/audio/veylith-natural-v1/earth_step.wav"
+              aria-label="Paso de Tierra"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/earth_step.wav"
+                data-path="/assets/audio/veylith-natural-v1/earth_step.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-water_step" class="sound" data-id="water_step">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Paso de Agua</h2>
+            <p>
+              Desplazamiento real sobre una superficie; Tierra en toda la
+              campaña.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/water_step.wav"
+              data-path="/assets/audio/veylith-natural-v1/water_step.wav"
+              aria-label="Paso de Agua"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/water_step.wav"
+                data-path="/assets/audio/veylith-natural-v1/water_step.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fire_step" class="sound" data-id="fire_step">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Paso de Fuego</h2>
+            <p>
+              Desplazamiento real sobre una superficie; Tierra en toda la
+              campaña.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_step.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_step.wav"
+              aria-label="Paso de Fuego"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_step.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_step.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-air_step" class="sound" data-id="air_step">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Paso de Aire</h2>
+            <p>
+              Desplazamiento real sobre una superficie; Tierra en toda la
+              campaña.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/air_step.wav"
+              data-path="/assets/audio/veylith-natural-v1/air_step.wav"
+              aria-label="Paso de Aire"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/air_step.wav"
+                data-path="/assets/audio/veylith-natural-v1/air_step.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-water_jump" class="sound" data-id="water_jump">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Salto de Agua</h2>
+            <p>Despegue de un salto aceptado de cada forma.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/water_jump.wav"
+              data-path="/assets/audio/veylith-natural-v1/water_jump.wav"
+              aria-label="Salto de Agua"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/water_jump.wav"
+                data-path="/assets/audio/veylith-natural-v1/water_jump.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-water_land" class="sound" data-id="water_land">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Aterrizaje de Agua</h2>
+            <p>Paso de estar en el aire a apoyar el cuerpo.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/water_land.wav"
+              data-path="/assets/audio/veylith-natural-v1/water_land.wav"
+              aria-label="Aterrizaje de Agua"
+            ></audio>
+            <footer>
+              <span>0.68 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/water_land.wav"
+                data-path="/assets/audio/veylith-natural-v1/water_land.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fire_jump" class="sound" data-id="fire_jump">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Salto de Fuego</h2>
+            <p>Despegue de un salto aceptado de cada forma.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_jump.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_jump.wav"
+              aria-label="Salto de Fuego"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_jump.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_jump.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fire_land" class="sound" data-id="fire_land">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Aterrizaje de Fuego</h2>
+            <p>Paso de estar en el aire a apoyar el cuerpo.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_land.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_land.wav"
+              aria-label="Aterrizaje de Fuego"
+            ></audio>
+            <footer>
+              <span>0.68 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_land.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_land.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-air_jump" class="sound" data-id="air_jump">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Salto de Aire</h2>
+            <p>Despegue de un salto aceptado de cada forma.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/air_jump.wav"
+              data-path="/assets/audio/veylith-natural-v1/air_jump.wav"
+              aria-label="Salto de Aire"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/air_jump.wav"
+                data-path="/assets/audio/veylith-natural-v1/air_jump.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-air_land" class="sound" data-id="air_land">
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Aterrizaje de Aire</h2>
+            <p>Paso de estar en el aire a apoyar el cuerpo.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/air_land.wav"
+              data-path="/assets/audio/veylith-natural-v1/air_land.wav"
+              aria-label="Aterrizaje de Aire"
+            ></audio>
+            <footer>
+              <span>0.68 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/air_land.wav"
+                data-path="/assets/audio/veylith-natural-v1/air_land.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-fire_double_jump"
+            class="sound"
+            data-id="fire_double_jump"
+          >
+            <div class="eyebrow">Movimiento<span>NUEVO · EFECTO</span></div>
+            <h2>Doble salto de Fuego</h2>
+            <p>Segundo salto consumido en el aire.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_double_jump.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_double_jump.wav"
+              aria-label="Doble salto de Fuego"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_double_jump.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_double_jump.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-air_glide" class="sound" data-id="air_glide">
+            <div class="eyebrow">Movimiento<span>NUEVO · BUCLE</span></div>
+            <h2>Planeo de Aire</h2>
+            <p>Planeo real durante el descenso.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/air_glide.wav"
+              data-path="/assets/audio/veylith-natural-v1/air_glide.wav"
+              aria-label="Planeo de Aire"
+            ></audio>
+            <footer>
+              <span>2.88 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/air_glide.wav"
+                data-path="/assets/audio/veylith-natural-v1/air_glide.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+        </div>
+      </section>
+      <section class="sound-group" aria-labelledby="elements">
+        <h2 id="elements" class="group-title">Poderes e impactos</h2>
+        <div class="grid">
+          <article id="sound-earth_smash" class="sound" data-id="earth_smash">
+            <div class="eyebrow">Elementos<span>EFECTO</span></div>
+            <h2>Golpe de Tierra</h2>
+            <p>Impacto del puño de Tierra</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/earth_smash.wav"
+              data-path="/assets/audio/veylith-natural-v1/earth_smash.wav"
+              aria-label="Golpe de Tierra"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/earth_smash.wav"
+                data-path="/assets/audio/veylith-natural-v1/earth_smash.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-water_cast" class="sound" data-id="water_cast">
+            <div class="eyebrow">Elementos<span>EFECTO</span></div>
+            <h2>Poder de Agua</h2>
+            <p>Lanzamiento de proyectil de Agua</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/water_cast.wav"
+              data-path="/assets/audio/veylith-natural-v1/water_cast.wav"
+              aria-label="Poder de Agua"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/water_cast.wav"
+                data-path="/assets/audio/veylith-natural-v1/water_cast.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fire_cast" class="sound" data-id="fire_cast">
+            <div class="eyebrow">Elementos<span>EFECTO</span></div>
+            <h2>Poder de Fuego</h2>
+            <p>Lanzamiento de bola de Fuego</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_cast.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_cast.wav"
+              aria-label="Poder de Fuego"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_cast.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_cast.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-air_dash" class="sound" data-id="air_dash">
+            <div class="eyebrow">Elementos<span>EFECTO</span></div>
+            <h2>Impulso de Aire</h2>
+            <p>Inicio del impulso horizontal de Aire</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/air_dash.wav"
+              data-path="/assets/audio/veylith-natural-v1/air_dash.wav"
+              aria-label="Impulso de Aire"
+            ></audio>
+            <footer>
+              <span>0.68 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/air_dash.wav"
+                data-path="/assets/audio/veylith-natural-v1/air_dash.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-earth_swing" class="sound" data-id="earth_swing">
+            <div class="eyebrow">Elementos<span>NUEVO · EFECTO</span></div>
+            <h2>Puñetazo de Tierra al aire</h2>
+            <p>Inicio de golpe de Tierra, aunque no alcance una pared.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/earth_swing.wav"
+              data-path="/assets/audio/veylith-natural-v1/earth_swing.wav"
+              aria-label="Puñetazo de Tierra al aire"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/earth_swing.wav"
+                data-path="/assets/audio/veylith-natural-v1/earth_swing.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-earth_plunge" class="sound" data-id="earth_plunge">
+            <div class="eyebrow">Elementos<span>NUEVO · EFECTO</span></div>
+            <h2>Descenso de Tierra</h2>
+            <p>Tierra usa Poder en el aire y empieza el descenso especial.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/earth_plunge.wav"
+              data-path="/assets/audio/veylith-natural-v1/earth_plunge.wav"
+              aria-label="Descenso de Tierra"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/earth_plunge.wav"
+                data-path="/assets/audio/veylith-natural-v1/earth_plunge.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-water_impact" class="sound" data-id="water_impact">
+            <div class="eyebrow">Elementos<span>NUEVO · EFECTO</span></div>
+            <h2>Impacto de Agua</h2>
+            <p>Contacto barrido del proyectil contra un sólido o receptor.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/water_impact.wav"
+              data-path="/assets/audio/veylith-natural-v1/water_impact.wav"
+              aria-label="Impacto de Agua"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/water_impact.wav"
+                data-path="/assets/audio/veylith-natural-v1/water_impact.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fire_impact" class="sound" data-id="fire_impact">
+            <div class="eyebrow">Elementos<span>NUEVO · EFECTO</span></div>
+            <h2>Impacto de Fuego</h2>
+            <p>Contacto real de una bola de Fuego.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_impact.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_impact.wav"
+              aria-label="Impacto de Fuego"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_impact.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_impact.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-lake_entry" class="sound" data-id="lake_entry">
+            <div class="eyebrow">Elementos<span>NUEVO · EFECTO</span></div>
+            <h2>Agua profunda · Contacto</h2>
+            <p>Primer contacto del jugador con la zona de agua.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/lake_entry.wav"
+              data-path="/assets/audio/veylith-natural-v1/lake_entry.wav"
+              aria-label="Agua profunda · Contacto"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/lake_entry.wav"
+                data-path="/assets/audio/veylith-natural-v1/lake_entry.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-lava_entry" class="sound" data-id="lava_entry">
+            <div class="eyebrow">Elementos<span>NUEVO · EFECTO</span></div>
+            <h2>Lava · Contacto incompatible</h2>
+            <p>Agua, Aire o Tierra entran en la zona de lava y reinician.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/lava_entry.wav"
+              data-path="/assets/audio/veylith-natural-v1/lava_entry.wav"
+              aria-label="Lava · Contacto incompatible"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/lava_entry.wav"
+                data-path="/assets/audio/veylith-natural-v1/lava_entry.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+        </div>
+      </section>
+      <section class="sound-group" aria-labelledby="world">
+        <h2 id="world" class="group-title">Mundo, puzles y recolectables</h2>
+        <div class="grid">
+          <article id="sound-stone_push" class="sound" data-id="stone_push">
+            <div class="eyebrow">Mecanismos<span>BUCLE</span></div>
+            <h2>Bloque de piedra</h2>
+            <p>Bloque pesado desplazándose</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/stone_push.wav"
+              data-path="/assets/audio/veylith-natural-v1/stone_push.wav"
+              aria-label="Bloque de piedra"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/stone_push.wav"
+                data-path="/assets/audio/veylith-natural-v1/stone_push.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-gem_collect" class="sound" data-id="gem_collect">
+            <div class="eyebrow">Recolectables<span>EFECTO</span></div>
+            <h2>Gema y transformación</h2>
+            <p>Recogida de gema y cambio inmediato de elemento</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/gem_collect.wav"
+              data-path="/assets/audio/veylith-natural-v1/gem_collect.wav"
+              aria-label="Gema y transformación"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/gem_collect.wav"
+                data-path="/assets/audio/veylith-natural-v1/gem_collect.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-coin_collect" class="sound" data-id="coin_collect">
+            <div class="eyebrow">Recolectables<span>EFECTO</span></div>
+            <h2>Moneda elemental</h2>
+            <p>Recogida de moneda durante el intento</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/coin_collect.wav"
+              data-path="/assets/audio/veylith-natural-v1/coin_collect.wav"
+              aria-label="Moneda elemental"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/coin_collect.wav"
+                data-path="/assets/audio/veylith-natural-v1/coin_collect.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-mechanism_activate"
+            class="sound"
+            data-id="mechanism_activate"
+          >
+            <div class="eyebrow">Mecanismos<span>EFECTO</span></div>
+            <h2>Placa y palanca</h2>
+            <p>Activación de placa o cambio de palanca</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/mechanism_activate.wav"
+              data-path="/assets/audio/veylith-natural-v1/mechanism_activate.wav"
+              aria-label="Placa y palanca"
+            ></audio>
+            <footer>
+              <span>0.68 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/mechanism_activate.wav"
+                data-path="/assets/audio/veylith-natural-v1/mechanism_activate.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-stone_gate_open"
+            class="sound"
+            data-id="stone_gate_open"
+          >
+            <div class="eyebrow">Mecanismos<span>EFECTO</span></div>
+            <h2>Puerta de piedra</h2>
+            <p>Apertura de puerta o extensión de puente</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/stone_gate_open.wav"
+              data-path="/assets/audio/veylith-natural-v1/stone_gate_open.wav"
+              aria-label="Puerta de piedra"
+            ></audio>
+            <footer>
+              <span>1.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/stone_gate_open.wav"
+                data-path="/assets/audio/veylith-natural-v1/stone_gate_open.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-wall_break" class="sound" data-id="wall_break">
+            <div class="eyebrow">Mecanismos<span>EFECTO</span></div>
+            <h2>Muro que se rompe</h2>
+            <p>Destrucción de muro por contacto de Tierra</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/wall_break.wav"
+              data-path="/assets/audio/veylith-natural-v1/wall_break.wav"
+              aria-label="Muro que se rompe"
+            ></audio>
+            <footer>
+              <span>1.20 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/wall_break.wav"
+                data-path="/assets/audio/veylith-natural-v1/wall_break.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-portal_complete"
+            class="sound"
+            data-id="portal_complete"
+          >
+            <div class="eyebrow">Progreso<span>EFECTO</span></div>
+            <h2>Portal completado</h2>
+            <p>Entrada válida al portal y victoria</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/portal_complete.wav"
+              data-path="/assets/audio/veylith-natural-v1/portal_complete.wav"
+              aria-label="Portal completado"
+            ></audio>
+            <footer>
+              <span>2.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/portal_complete.wav"
+                data-path="/assets/audio/veylith-natural-v1/portal_complete.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-forest_ambience"
+            class="sound"
+            data-id="forest_ambience"
+          >
+            <div class="eyebrow">Ambiente<span>BUCLE</span></div>
+            <h2>Bosque ancestral</h2>
+            <p>Ambiente suave para Ancient Forest</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/forest_ambience.wav"
+              data-path="/assets/audio/veylith-natural-v1/forest_ambience.wav"
+              aria-label="Bosque ancestral"
+            ></audio>
+            <footer>
+              <span>7.75 s · Estéreo</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/forest_ambience.wav"
+                data-path="/assets/audio/veylith-natural-v1/forest_ambience.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article
+            id="sound-elevator_start"
+            class="sound"
+            data-id="elevator_start"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Ascensor · Arranque</h2>
+            <p>Movimiento horizontal o vertical real del ascensor.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/elevator_start.wav"
+              data-path="/assets/audio/veylith-natural-v1/elevator_start.wav"
+              aria-label="Ascensor · Arranque"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/elevator_start.wav"
+                data-path="/assets/audio/veylith-natural-v1/elevator_start.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-elevator_motion"
+            class="sound"
+            data-id="elevator_motion"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Ascensor · Movimiento</h2>
+            <p>Movimiento horizontal o vertical real del ascensor.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/elevator_motion.wav"
+              data-path="/assets/audio/veylith-natural-v1/elevator_motion.wav"
+              aria-label="Ascensor · Movimiento"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/elevator_motion.wav"
+                data-path="/assets/audio/veylith-natural-v1/elevator_motion.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article
+            id="sound-elevator_stop"
+            class="sound"
+            data-id="elevator_stop"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Ascensor · Parada</h2>
+            <p>Movimiento horizontal o vertical real del ascensor.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/elevator_stop.wav"
+              data-path="/assets/audio/veylith-natural-v1/elevator_stop.wav"
+              aria-label="Ascensor · Parada"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/elevator_stop.wav"
+                data-path="/assets/audio/veylith-natural-v1/elevator_stop.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fan_start" class="sound" data-id="fan_start">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Ventilador · Arranque</h2>
+            <p>Ventilador activo, audible por proximidad.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fan_start.wav"
+              data-path="/assets/audio/veylith-natural-v1/fan_start.wav"
+              aria-label="Ventilador · Arranque"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fan_start.wav"
+                data-path="/assets/audio/veylith-natural-v1/fan_start.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fan_motion" class="sound" data-id="fan_motion">
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Ventilador · Aspas y viento</h2>
+            <p>Ventilador activo, audible por proximidad.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fan_motion.wav"
+              data-path="/assets/audio/veylith-natural-v1/fan_motion.wav"
+              aria-label="Ventilador · Aspas y viento"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fan_motion.wav"
+                data-path="/assets/audio/veylith-natural-v1/fan_motion.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-fan_stop" class="sound" data-id="fan_stop">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Ventilador · Parada</h2>
+            <p>Ventilador activo, audible por proximidad.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fan_stop.wav"
+              data-path="/assets/audio/veylith-natural-v1/fan_stop.wav"
+              aria-label="Ventilador · Parada"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fan_stop.wav"
+                data-path="/assets/audio/veylith-natural-v1/fan_stop.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-bridge_extend"
+            class="sound"
+            data-id="bridge_extend"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Puente · Extensión</h2>
+            <p>El progreso de extensión/retracción está cambiando.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/bridge_extend.wav"
+              data-path="/assets/audio/veylith-natural-v1/bridge_extend.wav"
+              aria-label="Puente · Extensión"
+            ></audio>
+            <footer>
+              <span>2.49 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/bridge_extend.wav"
+                data-path="/assets/audio/veylith-natural-v1/bridge_extend.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article
+            id="sound-bridge_retract"
+            class="sound"
+            data-id="bridge_retract"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Puente · Retracción</h2>
+            <p>El progreso de extensión/retracción está cambiando.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/bridge_retract.wav"
+              data-path="/assets/audio/veylith-natural-v1/bridge_retract.wav"
+              aria-label="Puente · Retracción"
+            ></audio>
+            <footer>
+              <span>2.49 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/bridge_retract.wav"
+                data-path="/assets/audio/veylith-natural-v1/bridge_retract.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-bridge_latch" class="sound" data-id="bridge_latch">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Puente · Encaje</h2>
+            <p>El progreso de extensión/retracción está cambiando.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/bridge_latch.wav"
+              data-path="/assets/audio/veylith-natural-v1/bridge_latch.wav"
+              aria-label="Puente · Encaje"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/bridge_latch.wav"
+                data-path="/assets/audio/veylith-natural-v1/bridge_latch.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-lake_ambience"
+            class="sound"
+            data-id="lake_ambience"
+          >
+            <div class="eyebrow">Ambiente<span>NUEVO · BUCLE</span></div>
+            <h2>Agua profunda · Superficie</h2>
+            <p>Proximidad a una zona de agua habilitada.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/lake_ambience.wav"
+              data-path="/assets/audio/veylith-natural-v1/lake_ambience.wav"
+              aria-label="Agua profunda · Superficie"
+            ></audio>
+            <footer>
+              <span>3.88 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/lake_ambience.wav"
+                data-path="/assets/audio/veylith-natural-v1/lake_ambience.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article
+            id="sound-lava_ambience"
+            class="sound"
+            data-id="lava_ambience"
+          >
+            <div class="eyebrow">Ambiente<span>NUEVO · BUCLE</span></div>
+            <h2>Lava · Burbujeo</h2>
+            <p>Proximidad a la lava habilitada.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/lava_ambience.wav"
+              data-path="/assets/audio/veylith-natural-v1/lava_ambience.wav"
+              aria-label="Lava · Burbujeo"
+            ></audio>
+            <footer>
+              <span>3.88 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/lava_ambience.wav"
+                data-path="/assets/audio/veylith-natural-v1/lava_ambience.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article
+            id="sound-waterwheel_motion"
+            class="sound"
+            data-id="waterwheel_motion"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Rueda hidráulica · Giro</h2>
+            <p>La rueda alcanza su cuota de impactos de Agua y se activa.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/waterwheel_motion.wav"
+              data-path="/assets/audio/veylith-natural-v1/waterwheel_motion.wav"
+              aria-label="Rueda hidráulica · Giro"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/waterwheel_motion.wav"
+                data-path="/assets/audio/veylith-natural-v1/waterwheel_motion.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-boiler_water" class="sound" data-id="boiler_water">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Caldera · Carga de agua</h2>
+            <p>Impacto de Agua aceptado mientras se carga la caldera.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/boiler_water.wav"
+              data-path="/assets/audio/veylith-natural-v1/boiler_water.wav"
+              aria-label="Caldera · Carga de agua"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/boiler_water.wav"
+                data-path="/assets/audio/veylith-natural-v1/boiler_water.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-boiler_heating"
+            class="sound"
+            data-id="boiler_heating"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Caldera · Calentamiento</h2>
+            <p>Primer impacto de Fuego y estado de calor antes de completar.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/boiler_heating.wav"
+              data-path="/assets/audio/veylith-natural-v1/boiler_heating.wav"
+              aria-label="Caldera · Calentamiento"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/boiler_heating.wav"
+                data-path="/assets/audio/veylith-natural-v1/boiler_heating.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-boiler_steam" class="sound" data-id="boiler_steam">
+            <div class="eyebrow">Mecanismos<span>NUEVO · BUCLE</span></div>
+            <h2>Caldera · Vapor listo</h2>
+            <p>Se completan los impactos requeridos de Agua y Fuego.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/boiler_steam.wav"
+              data-path="/assets/audio/veylith-natural-v1/boiler_steam.wav"
+              aria-label="Caldera · Vapor listo"
+            ></audio>
+            <footer>
+              <span>2.88 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/boiler_steam.wav"
+                data-path="/assets/audio/veylith-natural-v1/boiler_steam.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-tank_fill" class="sound" data-id="tank_fill">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Depósito · Llenado</h2>
+            <p>Cada impacto válido de Agua que avanza el contador.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/tank_fill.wav"
+              data-path="/assets/audio/veylith-natural-v1/tank_fill.wav"
+              aria-label="Depósito · Llenado"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/tank_fill.wav"
+                data-path="/assets/audio/veylith-natural-v1/tank_fill.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-tank_ready" class="sound" data-id="tank_ready">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Depósito · Completo</h2>
+            <p>La cuota del depósito se alcanza por primera vez.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/tank_ready.wav"
+              data-path="/assets/audio/veylith-natural-v1/tank_ready.wav"
+              aria-label="Depósito · Completo"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/tank_ready.wav"
+                data-path="/assets/audio/veylith-natural-v1/tank_ready.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-torch_ignite" class="sound" data-id="torch_ignite">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Antorcha · Encendido</h2>
+            <p>La antorcha alcanza sus impactos de Fuego y queda encendida.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/torch_ignite.wav"
+              data-path="/assets/audio/veylith-natural-v1/torch_ignite.wav"
+              aria-label="Antorcha · Encendido"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/torch_ignite.wav"
+                data-path="/assets/audio/veylith-natural-v1/torch_ignite.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-door_close" class="sound" data-id="door_close">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Puerta de piedra · Cierre</h2>
+            <p>Una puerta abierta vuelve a quedar cerrada.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/door_close.wav"
+              data-path="/assets/audio/veylith-natural-v1/door_close.wav"
+              aria-label="Puerta de piedra · Cierre"
+            ></audio>
+            <footer>
+              <span>1.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/door_close.wav"
+                data-path="/assets/audio/veylith-natural-v1/door_close.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-timed_gate_warning"
+            class="sound"
+            data-id="timed_gate_warning"
+          >
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Puerta temporal · Aviso</h2>
+            <p>
+              Cambio de segundos restantes en el prototipo de seis segundos.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/timed_gate_warning.wav"
+              data-path="/assets/audio/veylith-natural-v1/timed_gate_warning.wav"
+              aria-label="Puerta temporal · Aviso"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/timed_gate_warning.wav"
+                data-path="/assets/audio/veylith-natural-v1/timed_gate_warning.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-exit_ready" class="sound" data-id="exit_ready">
+            <div class="eyebrow">Mecanismos<span>NUEVO · EFECTO</span></div>
+            <h2>Salida · Habilitada</h2>
+            <p>Requisitos de una salida pasan de incompletos a completos.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/exit_ready.wav"
+              data-path="/assets/audio/veylith-natural-v1/exit_ready.wav"
+              aria-label="Salida · Habilitada"
+            ></audio>
+            <footer>
+              <span>1.20 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/exit_ready.wav"
+                data-path="/assets/audio/veylith-natural-v1/exit_ready.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+        </div>
+      </section>
+      <section class="sound-group" aria-labelledby="future">
+        <h2 id="future" class="group-title">
+          Decorativos · animaciones actuales
+        </h2>
+        <p class="intro">
+          Doce efectos dedicados y piezas compartidas cubren los once
+          decorativos. El audio acompaña sus animaciones actuales; sus futuras
+          mecánicas aún no están implementadas.
+          <a href="audio-audit.html#visual"
+            >Ver qué sonido corresponde a cada objeto ↗</a
+          >
+        </p>
+        <div class="grid">
+          <article
+            id="sound-barrier_activate"
+            class="sound"
+            data-id="barrier_activate"
+          >
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Barrera · Activación</h2>
+            <p>
+              Activación, energía sostenida o desactivación visual de la
+              barrera.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/barrier_activate.wav"
+              data-path="/assets/audio/veylith-natural-v1/barrier_activate.wav"
+              aria-label="Barrera · Activación"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/barrier_activate.wav"
+                data-path="/assets/audio/veylith-natural-v1/barrier_activate.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-barrier_loop" class="sound" data-id="barrier_loop">
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · BUCLE</span>
+            </div>
+            <h2>Barrera · Energía sostenida</h2>
+            <p>
+              Activación, energía sostenida o desactivación visual de la
+              barrera.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/barrier_loop.wav"
+              data-path="/assets/audio/veylith-natural-v1/barrier_loop.wav"
+              aria-label="Barrera · Energía sostenida"
+            ></audio>
+            <footer>
+              <span>2.88 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/barrier_loop.wav"
+                data-path="/assets/audio/veylith-natural-v1/barrier_loop.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article
+            id="sound-barrier_deactivate"
+            class="sound"
+            data-id="barrier_deactivate"
+          >
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Barrera · Desactivación</h2>
+            <p>
+              Activación, energía sostenida o desactivación visual de la
+              barrera.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/barrier_deactivate.wav"
+              data-path="/assets/audio/veylith-natural-v1/barrier_deactivate.wav"
+              aria-label="Barrera · Desactivación"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/barrier_deactivate.wav"
+                data-path="/assets/audio/veylith-natural-v1/barrier_deactivate.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-platform_disappear"
+            class="sound"
+            data-id="platform_disappear"
+          >
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Plataforma · Desaparición</h2>
+            <p>Aparición o desaparición visual de la plataforma.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/platform_disappear.wav"
+              data-path="/assets/audio/veylith-natural-v1/platform_disappear.wav"
+              aria-label="Plataforma · Desaparición"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/platform_disappear.wav"
+                data-path="/assets/audio/veylith-natural-v1/platform_disappear.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-platform_appear"
+            class="sound"
+            data-id="platform_appear"
+          >
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Plataforma · Aparición</h2>
+            <p>Aparición o desaparición visual de la plataforma.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/platform_appear.wav"
+              data-path="/assets/audio/veylith-natural-v1/platform_appear.wav"
+              aria-label="Plataforma · Aparición"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/platform_appear.wav"
+                data-path="/assets/audio/veylith-natural-v1/platform_appear.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-plant_grow" class="sound" data-id="plant_grow">
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Planta · Crecimiento</h2>
+            <p>
+              Animación de crecimiento de la planta. Recibir agua sigue siendo
+              una futura mecánica.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/plant_grow.wav"
+              data-path="/assets/audio/veylith-natural-v1/plant_grow.wav"
+              aria-label="Planta · Crecimiento"
+            ></audio>
+            <footer>
+              <span>1.20 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/plant_grow.wav"
+                data-path="/assets/audio/veylith-natural-v1/plant_grow.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-wood_float" class="sound" data-id="wood_float">
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · BUCLE</span>
+            </div>
+            <h2>Madera flotante · Balanceo</h2>
+            <p>Animación de madera flotando sobre agua.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/wood_float.wav"
+              data-path="/assets/audio/veylith-natural-v1/wood_float.wav"
+              aria-label="Madera flotante · Balanceo"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/wood_float.wav"
+                data-path="/assets/audio/veylith-natural-v1/wood_float.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-wind_mill" class="sound" data-id="wind_mill">
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · BUCLE</span>
+            </div>
+            <h2>Molino · Giro de madera</h2>
+            <p>Animación de giro sostenido del molino de viento.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/wind_mill.wav"
+              data-path="/assets/audio/veylith-natural-v1/wind_mill.wav"
+              aria-label="Molino · Giro de madera"
+            ></audio>
+            <footer>
+              <span>2.13 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/wind_mill.wav"
+                data-path="/assets/audio/veylith-natural-v1/wind_mill.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+            <label class="repeat"
+              ><input type="checkbox" class="loop" /> Repetir en bucle</label
+            >
+          </article>
+          <article id="sound-bounce_pad" class="sound" data-id="bounce_pad">
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Plataforma · Rebote elemental</h2>
+            <p>
+              Animación de impulso de la plataforma. El rebote físico sigue
+              pendiente.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/bounce_pad.wav"
+              data-path="/assets/audio/veylith-natural-v1/bounce_pad.wav"
+              aria-label="Plataforma · Rebote elemental"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/bounce_pad.wav"
+                data-path="/assets/audio/veylith-natural-v1/bounce_pad.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-steam_vent_warning"
+            class="sound"
+            data-id="steam_vent_warning"
+          >
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Respiradero · Aviso de presión</h2>
+            <p>Animación de aviso de presión o cierre del respiradero.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/steam_vent_warning.wav"
+              data-path="/assets/audio/veylith-natural-v1/steam_vent_warning.wav"
+              aria-label="Respiradero · Aviso de presión"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/steam_vent_warning.wav"
+                data-path="/assets/audio/veylith-natural-v1/steam_vent_warning.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article
+            id="sound-steam_vent_stop"
+            class="sound"
+            data-id="steam_vent_stop"
+          >
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Respiradero · Cierre</h2>
+            <p>Animación de aviso de presión o cierre del respiradero.</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/steam_vent_stop.wav"
+              data-path="/assets/audio/veylith-natural-v1/steam_vent_stop.wav"
+              aria-label="Respiradero · Cierre"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/steam_vent_stop.wav"
+                data-path="/assets/audio/veylith-natural-v1/steam_vent_stop.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-fire_switch" class="sound" data-id="fire_switch">
+            <div class="eyebrow">
+              Animación decorativa<span>NUEVO · EFECTO</span>
+            </div>
+            <h2>Interruptor de Fuego · Activación</h2>
+            <p>
+              Animación de activación del interruptor. Recibir Fuego sigue
+              siendo una futura mecánica.
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/fire_switch.wav"
+              data-path="/assets/audio/veylith-natural-v1/fire_switch.wav"
+              aria-label="Interruptor de Fuego · Activación"
+            ></audio>
+            <footer>
+              <span>0.68 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/fire_switch.wav"
+                data-path="/assets/audio/veylith-natural-v1/fire_switch.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+        </div>
+      </section>
+      <section class="sound-group" aria-labelledby="ui">
+        <h2 id="ui" class="group-title">Interfaz</h2>
+        <div class="grid">
+          <article id="sound-ui_confirm" class="sound" data-id="ui_confirm">
+            <div class="eyebrow">Interfaz<span>EFECTO</span></div>
+            <h2>UI · Confirmar y elegir nivel</h2>
+            <p>Pulsación aceptada: Jugar, nivel, Siguiente o abrir selección</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/ui_confirm.wav"
+              data-path="/assets/audio/veylith-natural-v1/ui_confirm.wav"
+              aria-label="UI · Confirmar y elegir nivel"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/ui_confirm.wav"
+                data-path="/assets/audio/veylith-natural-v1/ui_confirm.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-ui_back" class="sound" data-id="ui_back">
+            <div class="eyebrow">Interfaz<span>EFECTO</span></div>
+            <h2>UI · Volver al menú</h2>
+            <p>Volver o regresar al menú principal</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/ui_back.wav"
+              data-path="/assets/audio/veylith-natural-v1/ui_back.wav"
+              aria-label="UI · Volver al menú"
+            ></audio>
+            <footer>
+              <span>0.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/ui_back.wav"
+                data-path="/assets/audio/veylith-natural-v1/ui_back.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-ui_pause" class="sound" data-id="ui_pause">
+            <div class="eyebrow">Interfaz<span>EFECTO</span></div>
+            <h2>UI · Pausar</h2>
+            <p>Pausa solicitada por botón o Escape</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/ui_pause.wav"
+              data-path="/assets/audio/veylith-natural-v1/ui_pause.wav"
+              aria-label="UI · Pausar"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/ui_pause.wav"
+                data-path="/assets/audio/veylith-natural-v1/ui_pause.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-ui_resume" class="sound" data-id="ui_resume">
+            <div class="eyebrow">Interfaz<span>EFECTO</span></div>
+            <h2>UI · Continuar</h2>
+            <p>Reanudar una partida pausada</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/ui_resume.wav"
+              data-path="/assets/audio/veylith-natural-v1/ui_resume.wav"
+              aria-label="UI · Continuar"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/ui_resume.wav"
+                data-path="/assets/audio/veylith-natural-v1/ui_resume.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-ui_restart" class="sound" data-id="ui_restart">
+            <div class="eyebrow">Interfaz<span>EFECTO</span></div>
+            <h2>UI · Reiniciar</h2>
+            <p>Reinicio solicitado o inicio de un nuevo intento</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/ui_restart.wav"
+              data-path="/assets/audio/veylith-natural-v1/ui_restart.wav"
+              aria-label="UI · Reiniciar"
+            ></audio>
+            <footer>
+              <span>0.80 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/ui_restart.wav"
+                data-path="/assets/audio/veylith-natural-v1/ui_restart.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+        </div>
+      </section>
+      <section class="sound-group" aria-labelledby="victory">
+        <h2 id="victory" class="group-title">Victoria y recompensas</h2>
+        <div class="sequence">
+          <div>
+            <strong>Escuchar una victoria completa</strong>
+            <p>
+              Ejemplo: tres estrellas, nuevo récord y monedas obtenidas. En
+              partida solo deberán sonar los logros que correspondan.
+            </p>
+          </div>
+          <audio
+            controls
+            preload="metadata"
+            src="veylith-victory-preview.wav"
+            aria-label="Muestra de victoria completa"
+          ></audio>
+        </div>
+        <div class="grid">
+          <article
+            id="sound-level_victory"
+            class="sound"
+            data-id="level_victory"
+          >
+            <div class="eyebrow">Resultados<span>EFECTO</span></div>
+            <h2>Victoria · Nivel completado</h2>
+            <p>
+              Apertura de la pantalla ¡Nivel completado!, una vez por victoria
+            </p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/level_victory.wav"
+              data-path="/assets/audio/veylith-natural-v1/level_victory.wav"
+              aria-label="Victoria · Nivel completado"
+            ></audio>
+            <footer>
+              <span>2.48 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/level_victory.wav"
+                data-path="/assets/audio/veylith-natural-v1/level_victory.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-star_award" class="sound" data-id="star_award">
+            <div class="eyebrow">Resultados<span>EFECTO</span></div>
+            <h2>Victoria · Estrella</h2>
+            <p>Aparición de una estrella ganada</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/star_award.wav"
+              data-path="/assets/audio/veylith-natural-v1/star_award.wav"
+              aria-label="Victoria · Estrella"
+            ></audio>
+            <footer>
+              <span>0.60 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/star_award.wav"
+                data-path="/assets/audio/veylith-natural-v1/star_award.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-new_record" class="sound" data-id="new_record">
+            <div class="eyebrow">Resultados<span>EFECTO</span></div>
+            <h2>Victoria · Nuevo récord</h2>
+            <p>Cuando mejoras tu mejor tiempo del nivel</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/new_record.wav"
+              data-path="/assets/audio/veylith-natural-v1/new_record.wav"
+              aria-label="Victoria · Nuevo récord"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/new_record.wav"
+                data-path="/assets/audio/veylith-natural-v1/new_record.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+          <article id="sound-reward_bank" class="sound" data-id="reward_bank">
+            <div class="eyebrow">Resultados<span>EFECTO</span></div>
+            <h2>Victoria · Monedas obtenidas</h2>
+            <p>Al conseguir monedas nuevas al finalizar el nivel</p>
+            <audio
+              controls
+              preload="metadata"
+              src="../public/assets/audio/veylith-natural-v1/reward_bank.wav"
+              data-path="/assets/audio/veylith-natural-v1/reward_bank.wav"
+              aria-label="Victoria · Monedas obtenidas"
+            ></audio>
+            <footer>
+              <span>1.00 s · Mono</span
+              ><a
+                href="../public/assets/audio/veylith-natural-v1/reward_bank.wav"
+                data-path="/assets/audio/veylith-natural-v1/reward_bank.wav"
+                download
+                >Descargar WAV ↗</a
+              >
+            </footer>
+          </article>
+        </div>
+      </section>
+      <p class="note">
+        Los 74 efectos tienen rutas de eventos en el juego. Ajusta silencio y
+        volumen desde Sonido. La mezcla física en iPhone sigue pendiente.
+        Originales MP3 conservados en
+        <a href="audio-sources/veylith-natural-v1/">audio-sources</a>.
+        <a href="audio-inventory.json">Inventario y detalles</a> ·
+        <a href="veylith-sound-demo.wav" download>Muestra del pack inicial</a>
+      </p>
+    </main>
+    <script>
+      const players = [...document.querySelectorAll('audio')];
+      const status = document.querySelector('#status');
+      const volume = document.querySelector('#volume');
+      if (location.protocol !== 'file:') {
+        document.querySelectorAll('[data-path]').forEach((element) => {
+          if (element.tagName === 'A') element.href = element.dataset.path;
+          else element.src = element.dataset.path;
+        });
+      }
+      players.forEach((player) => {
+        player.volume = Number(volume.value);
+        player.addEventListener('play', () => {
+          players.forEach((other) => {
+            if (other !== player) other.pause();
+          });
+          status.textContent =
+            'Escuchando: ' + player.getAttribute('aria-label');
+        });
+        player.addEventListener('ended', () => {
+          status.textContent = 'Selecciona otro sonido para escucharlo.';
+        });
+        player.addEventListener('error', () => {
+          status.textContent =
+            'No se pudo cargar ' + player.getAttribute('aria-label');
+        });
+      });
+      volume.addEventListener('input', () => {
+        players.forEach((player) => {
+          player.volume = Number(volume.value);
+        });
+      });
+      document.querySelector('#stop').addEventListener('click', () => {
+        players.forEach((player) => {
+          player.pause();
+          player.currentTime = 0;
+        });
+        status.textContent = 'Reproducción detenida.';
+      });
+      document.querySelectorAll('.loop').forEach((input) => {
+        input.addEventListener('change', () => {
+          input.closest('article').querySelector('audio').loop = input.checked;
+        });
+      });
+
+      const search = document.querySelector('#search');
+      const normalize = (value) =>
+        value
+          .normalize('NFD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase();
+      search.addEventListener('input', () => {
+        const query = normalize(search.value.trim());
+        let visible = 0;
+        document.querySelectorAll('.sound').forEach((card) => {
+          card.hidden = !normalize(card.textContent).includes(query);
+          if (card.hidden) card.querySelector('audio').pause();
+          else visible++;
+        });
+        document.querySelectorAll('.sound-group').forEach((group) => {
+          group.hidden = !group.querySelector('.sound:not([hidden])');
+          if (group.hidden)
+            group.querySelectorAll('audio').forEach((player) => player.pause());
+        });
+        document.querySelector('#search-count').textContent =
+          visible + ' de 74 sonidos';
+      });
+      document.querySelectorAll('.library-nav a[href^="#"]').forEach((link) => {
+        link.addEventListener('click', () => {
+          search.value = '';
+          search.dispatchEvent(new Event('input'));
+        });
+      });
+    </script>
+  </body>
+</html>

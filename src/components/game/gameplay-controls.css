@@ -1,0 +1,242 @@
+.gameplay-controls {
+  position: absolute;
+  inset: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.gameplay-controls button {
+  pointer-events: auto;
+  touch-action: none;
+  -webkit-touch-callout: none;
+  border: 1px solid #718592;
+  background: #142633dc;
+  color: #edf5f6;
+  border-radius: 12px;
+  min-width: 56px;
+  min-height: 48px;
+  padding: 10px 14px;
+  font:
+    bold 15px Arial,
+    sans-serif;
+}
+.gameplay-controls button:active {
+  background: #3d5b70;
+}
+.gameplay-controls button:focus-visible {
+  outline: 3px solid #edf5f6;
+  outline-offset: 2px;
+}
+.element-controls {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+}
+.element-controls span {
+  opacity: 0.6;
+  margin-right: 4px;
+}
+.gameplay-help {
+  text-align: center;
+  color: #b9cbd5;
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+.movement-controls,
+.ability-controls {
+  position: absolute;
+  bottom: 18px;
+  display: flex;
+  gap: 12px;
+}
+.movement-controls {
+  left: 18px;
+}
+.ability-controls {
+  right: 18px;
+}
+.movement-controls button {
+  font-size: 26px;
+}
+.movement-controls button,
+.ability-controls button {
+  min-width: 70px;
+  min-height: 62px;
+}
+@media (max-height: 500px) {
+  .element-controls {
+    gap: 6px;
+    padding: 6px;
+  }
+  .element-controls button {
+    min-height: 44px;
+    padding: 8px 12px;
+  }
+  .gameplay-help {
+    font-size: 10px;
+  }
+  .movement-controls,
+  .ability-controls {
+    bottom: 10px;
+    gap: 8px;
+  }
+  .movement-controls {
+    left: 10px;
+  }
+  .ability-controls {
+    right: 10px;
+  }
+  .movement-controls button,
+  .ability-controls button {
+    min-width: 60px;
+    min-height: 54px;
+  }
+}
+@media (orientation: portrait) {
+  .gameplay-help {
+    display: none;
+  }
+}
+
+.puzzle-hud {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 12px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.35;
+  text-shadow: 0 1px 3px #101b26;
+}
+.puzzle-hud p {
+  margin: 4px 0;
+  color: #bde1d8;
+}
+.puzzle-hud small {
+  color: #b9cbd5;
+  font-size: 11px;
+}
+.puzzle-restart {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+.puzzle-restart span {
+  opacity: 0.6;
+}
+.puzzle-complete {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: min(400px, calc(100% - 32px));
+  padding: 24px;
+  border: 1px solid #71b6bd;
+  border-radius: 16px;
+  background: #132b36f5;
+  text-align: center;
+}
+.puzzle-complete strong {
+  font-size: 26px;
+  color: #a4e3d9;
+}
+.puzzle-complete p {
+  margin: 12px 0 18px;
+}
+@media (max-height: 500px) {
+  .puzzle-hud {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+  .puzzle-hud p {
+    margin: 2px 0;
+  }
+  .puzzle-hud small {
+    font-size: 10px;
+  }
+  .puzzle-restart {
+    top: 6px;
+    right: 6px;
+  }
+  .gameplay-controls .puzzle-restart {
+    font-size: 12px;
+    min-height: 44px;
+    padding: 8px;
+  }
+}
+@media (orientation: portrait) {
+  .puzzle-restart {
+    top: auto;
+    bottom: 130px;
+    right: 50%;
+    transform: translateX(50%);
+  }
+}
+
+.powers-help {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(310px, 40%);
+  margin: 0;
+  text-align: center;
+  color: #b9cbd5;
+  font-size: 11px;
+  line-height: 1.4;
+  text-shadow: 0 1px 3px #101b26;
+}
+@media (max-width: 700px) {
+  .powers-help {
+    bottom: 76px;
+    width: 90%;
+    font-size: 10px;
+  }
+}
+
+/* HUD buttons sit above the two captured gesture zones. No scrolling or native zoom. */
+.gesture-controls {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.gesture-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  pointer-events: auto;
+  touch-action: none;
+  -webkit-touch-callout: none;
+}
+.gesture-left {
+  left: 0;
+}
+.gesture-right {
+  right: 0;
+}
+.gesture-caption {
+  position: absolute;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;
+  width: max-content;
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #082c36a6;
+  color: #e1eadb;
+  text-align: center;
+  font-size: 12px;
+  pointer-events: none;
+}
+@media (max-height: 500px) {
+  .gesture-caption {
+    font-size: 11px;
+    bottom: max(10px, env(safe-area-inset-bottom));
+  }
+}

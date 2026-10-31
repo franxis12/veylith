@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "id": "forest-6",
+  "name": "Contra el viento",
+  "theme": "ancient-forest",
+  "width": 2560,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 55000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "clearing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2560,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 2560,
+        "height": 450
+      }
+    },
+    {
+      "id": "earth",
+      "type": "gem",
+      "asset": "gem:earth",
+      "x": 298,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "earth",
+      "respawn": "restart"
+    },
+    {
+      "id": "headwind",
+      "type": "world",
+      "asset": "world:wind_fan",
+      "x": 1470,
+      "y": 394,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "wind_fan",
+      "behavior": {
+        "kind": "fan",
+        "requires": [],
+        "autostart": true,
+        "direction": -1,
+        "strength": 650
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -820,
+        "y": -394,
+        "width": 960,
+        "height": 650
+      },
+      "hint": "Tierra resiste este viento."
+    },
+    {
+      "id": "wind-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 1770,
+      "y": 32,
+      "width": 180,
+      "height": 618,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 40,
+        "y": 0,
+        "width": 100,
+        "height": 618
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 180,
+        "height": 618
+      },
+      "hint": "Recoge Tierra, atraviesa el viento y golpea el muro con Poder."
+    },
+    {
+      "id": "wind-warning",
+      "type": "label",
+      "asset": null,
+      "x": 100,
+      "y": 300,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "TIERRA → CONTRA EL VIENTO\nRecoge la gema antes del corredor."
+    },
+    {
+      "id": "wall-tip",
+      "type": "label",
+      "asset": null,
+      "x": 1600,
+      "y": 280,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "Muro agrietado: acércate\ny pulsa Poder con Tierra."
+    },
+    {
+      "id": "wind-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1360,
+      "y": 530,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2172.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["wind-wall"]
+    }
+  ]
+}

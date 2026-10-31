@@ -1,0 +1,651 @@
+{
+  "version": 1,
+  "id": "forest-4",
+  "name": "Puentes de piedra",
+  "theme": "ancient-forest",
+  "width": 2592,
+  "height": 972,
+  "fallLimit": 963,
+  "cameraZoom": 0.8,
+  "background": {
+    "sky": false,
+    "forest": false,
+    "foreground": false
+  },
+  "timer": {
+    "threeStarsMs": 60000,
+    "twoStarsMs": 130000
+  },
+  "puzzle": {
+    "brief": "Entrega el peso a la isla inferior y prepara el cruce de la compuerta.",
+    "hints": [
+      "La placa está debajo del hueco. El bloque conserva el impulso al caer.",
+      "Empujarlo desde la derecha lo lleva hacia la isla. Una vez encajado sirve de escalón de regreso.",
+      "Salta el bloque y empújalo a la izquierda hasta que caiga sobre la placa; baja, usa el bloque para volver y cruza el puente desplegado. Activa la palanca inferior, sube por la piedra y atraviesa la compuerta; puedes rearmarla desde ambos lados."
+    ]
+  },
+  "objects": [
+    {
+      "id": "illustrated-world",
+      "type": "illustration",
+      "asset": null,
+      "x": 0,
+      "y": 0,
+      "width": 2592,
+      "height": 972,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 2592,
+        "height": 972
+      },
+      "sceneId": "campaign_level_09",
+      "layers": ["background", "static_world", "foreground"],
+      "overlays": [
+        {
+          "id": "canopy_vine",
+          "animation": "hanging_vine",
+          "x": 145,
+          "y": 65,
+          "width": 46,
+          "height": 92,
+          "z": 40,
+          "opacity": 0.85,
+          "phase": 0,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "left_leaves",
+          "animation": "moving_leaves",
+          "x": 260,
+          "y": 150,
+          "width": 85,
+          "height": 85,
+          "z": 40,
+          "opacity": 0.65,
+          "phase": 0,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "right_leaves",
+          "animation": "moving_leaves",
+          "x": 1430,
+          "y": 95,
+          "width": 64,
+          "height": 64,
+          "z": 40,
+          "opacity": 0.5,
+          "phase": 4,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "ground_mist",
+          "animation": "mist",
+          "x": 620,
+          "y": 525,
+          "width": 420,
+          "height": 105,
+          "z": 5,
+          "opacity": 0.18,
+          "phase": 1,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "forest_motes",
+          "animation": "magical_particles",
+          "x": 1075,
+          "y": 120,
+          "width": 100,
+          "height": 100,
+          "z": 40,
+          "opacity": 0.25,
+          "phase": 3,
+          "fps": 4,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "start-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 0,
+      "y": 720,
+      "width": 285,
+      "height": 252,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 285,
+        "height": 252,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "west-step",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 285,
+      "y": 607.5,
+      "width": 210,
+      "height": 364.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 210,
+        "height": 364.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "stone-1",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 525,
+      "y": 555,
+      "width": 195,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 195,
+        "height": 42
+      }
+    },
+    {
+      "id": "stone-2",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 730.5,
+      "y": 555,
+      "width": 202.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 202.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "stone-3",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1083,
+      "y": 555,
+      "width": 195,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 195,
+        "height": 42
+      }
+    },
+    {
+      "id": "low-island",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 885,
+      "y": 832.5,
+      "width": 157.5,
+      "height": 139.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 157.5,
+        "height": 139.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "middle-step",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1272,
+      "y": 622.5,
+      "width": 153,
+      "height": 349.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 153,
+        "height": 349.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "middle-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1425,
+      "y": 772.5,
+      "width": 225,
+      "height": 199.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 225,
+        "height": 199.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "stone-4",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1620,
+      "y": 555,
+      "width": 262.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 262.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "stone-5",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1893,
+      "y": 555,
+      "width": 199.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 199.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "east-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 2107.5,
+      "y": 607.5,
+      "width": 210,
+      "height": 364.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 210,
+        "height": 364.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "exit-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 2317.5,
+      "y": 525,
+      "width": 274.5,
+      "height": 447,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 274.5,
+        "height": 447,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 119,
+      "y": 546,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "lower-plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 892.5,
+      "y": 814.5,
+      "width": 105,
+      "height": 18,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 16.5,
+        "width": 105,
+        "height": 1.5
+      },
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque asignado sobre esta placa."
+    },
+    {
+      "id": "falling-weight",
+      "type": "block",
+      "asset": "block",
+      "x": 1132.5,
+      "y": 420,
+      "width": 90,
+      "height": 135,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 135
+      },
+      "plateId": "lower-plate"
+    },
+    {
+      "id": "return-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 900.3267326732673,
+      "y": 501.16336633663366,
+      "width": 190.0990099009901,
+      "height": 95.04950495049505,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 32.67326732673267,
+        "y": 53.836633663366335,
+        "width": 150,
+        "height": 33
+      },
+      "kind": "retractable_bridge",
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 150,
+        "height": 33
+      },
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["lower-plate"],
+        "autostart": false,
+        "duration": 700
+      },
+      "hint": ""
+    },
+    {
+      "id": "return-step",
+      "type": "block",
+      "asset": "block",
+      "x": 1477.5,
+      "y": 675,
+      "width": 97.5,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 97.5,
+        "height": 97.5
+      },
+      "plateId": ""
+    },
+    {
+      "id": "clock-door",
+      "type": "world",
+      "asset": "world:timed_door",
+      "x": 1965,
+      "y": 285,
+      "width": 75,
+      "height": 270,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 270
+      },
+      "kind": "timed_door",
+      "state": "closed",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 270
+      },
+      "behavior": {
+        "kind": "timedDoor",
+        "requires": [],
+        "autostart": false,
+        "openMs": 18000,
+        "warningMs": 4000,
+        "initiallyOpen": false,
+        "retrigger": "restart"
+      },
+      "hint": ""
+    },
+    {
+      "id": "clock-start",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 1552.5,
+      "y": 675,
+      "width": 75,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 97.5
+      },
+      "kind": "interactive_lever",
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -37.5,
+        "y": -45,
+        "width": 150,
+        "height": 142.5
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "activate",
+        "targets": ["clock-door"]
+      },
+      "hint": "Usa Poder cerca de la palanca."
+    },
+    {
+      "id": "clock-return",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 2167.5,
+      "y": 510,
+      "width": 75,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 97.5
+      },
+      "kind": "interactive_lever",
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -37.5,
+        "y": -45,
+        "width": 150,
+        "height": 142.5
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "activate",
+        "targets": ["clock-door"]
+      },
+      "hint": "Usa Poder cerca de la palanca."
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2373,
+      "y": 330,
+      "width": 174,
+      "height": 195,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 37.5,
+        "y": 190.5,
+        "width": 99,
+        "height": 9
+      },
+      "requires": ["lower-plate", "clock-start"]
+    },
+    {
+      "id": "plate-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 615,
+      "y": 495,
+      "width": 36,
+      "height": 36,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "value": 5
+    }
+  ]
+}

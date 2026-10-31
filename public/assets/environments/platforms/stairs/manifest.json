@@ -1,0 +1,200 @@
+{
+  "family": "stairs",
+  "title": "Modular stone stairs",
+  "tile_dimensions": [
+    128,
+    128
+  ],
+  "top_surface_y": 32,
+  "anchor_recommendation": {
+    "px": [
+      0,
+      32
+    ],
+    "description": "Place all platform tiles at the same world surface Y. Tile image origin is 32 px above that surface."
+  },
+  "minimum_modules": 2,
+  "placement": {
+    "left": "x=0",
+    "center": "Repeat at x=128,256,...",
+    "right": "x=(module_count-1)*128",
+    "horizontal_stride_px": 128,
+    "spacing_px": 0,
+    "scale": 1
+  },
+  "supports_available": false,
+  "static": true,
+  "assets": [
+    {
+      "id": "stairs_left",
+      "file": "assets/environments/platforms/stairs/stairs_left.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 15,
+        "y": 32,
+        "width": 113,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_left",
+      "repeat_step_px": null,
+      "connections": {
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "stairs_master",
+      "surface_y": 32
+    },
+    {
+      "id": "stairs_center",
+      "file": "assets/environments/platforms/stairs/stairs_center.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [
+        "x"
+      ],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 128,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "repeatable_center",
+      "repeat_step_px": [
+        128,
+        0
+      ],
+      "connections": {
+        "left": [
+          0,
+          32
+        ],
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "stairs_master",
+      "surface_y": 32
+    },
+    {
+      "id": "stairs_right",
+      "file": "assets/environments/platforms/stairs/stairs_right.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 113,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_right",
+      "repeat_step_px": null,
+      "connections": {
+        "left": [
+          0,
+          32
+        ]
+      },
+      "source": "stairs_master",
+      "surface_y": 32
+    },
+    {
+      "id": "stairs_riser",
+      "file": "assets/environments/platforms/stairs/stairs_riser.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "layer": "behind_platform",
+      "repeat_axes": [
+        "x",
+        "y"
+      ],
+      "collision": null,
+      "role": "optional_riser_detail",
+      "source": "stairs_riser",
+      "repeat_step_px": [
+        128,
+        128
+      ],
+      "requires_underlay": true
+    }
+  ],
+  "surface_calibration": {
+    "surface_y": 32,
+    "source_row": 12,
+    "source_vertical_offset": 20,
+    "decorative_fringe_above_surface": true
+  },
+  "step_assembly": {
+    "module_ids": [
+      "stairs_left",
+      "stairs_center",
+      "stairs_right"
+    ],
+    "run_px": 128,
+    "rise_px": 32,
+    "up_right": {
+      "dx": 128,
+      "dy": -32
+    },
+    "up_left": {
+      "dx": 128,
+      "dy": 32
+    },
+    "description": "Each tile is one individual tread. Offset successive tiles by 32 px vertically. The same modules can form a flat landing. Optional riser detail can cover a backing fill."
+  },
+  "preview": "previews/stairs_three_widths.png",
+  "decorative_supports_available": false,
+  "optional_overlays_available": true,
+  "paths_relative_to": "pack root"
+}

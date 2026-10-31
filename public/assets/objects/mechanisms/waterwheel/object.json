@@ -1,0 +1,32 @@
+{
+  "id": "waterwheel",
+  "label": "Rueda hidráulica",
+  "category": "mechanisms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "",
+  "states": {
+    "idle": {
+      "layers": [
+        "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_idle.png"
+      ]
+    },
+    "spinning": {
+      "animation": "waterwheel_spinning"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+    "assets/objects/mechanisms/waterwheel/waterwheel_idle.png"
+  ],
+  "directory": "assets/objects/mechanisms/waterwheel",
+  "defaultBack": [
+    "assets/objects/mechanisms/waterwheel/waterwheel_support.png"
+  ],
+  "thumbnail": "assets/objects/mechanisms/waterwheel/preview.png"
+}

@@ -1,0 +1,300 @@
+{
+  "version": 1,
+  "id": "forest-4",
+  "name": "El peso de la decisión",
+  "theme": "ancient-forest",
+  "width": 2560,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 40000,
+    "twoStarsMs": 75000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "clearing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2560,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2528,
+        "height": 450
+      }
+    },
+    {
+      "id": "clearing-fern",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 52.8,
+      "y": 589.2,
+      "width": 94.4,
+      "height": 60.800000000000004,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.800000000000004
+      }
+    },
+    {
+      "id": "clearing-column",
+      "type": "decoration",
+      "asset": "column",
+      "x": 10.5,
+      "y": 290,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "earth",
+      "type": "gem",
+      "asset": "gem:earth",
+      "x": 298,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "earth",
+      "respawn": "restart"
+    },
+    {
+      "id": "heavy-block",
+      "type": "block",
+      "asset": "block",
+      "x": 618,
+      "y": 587.7142857142857,
+      "width": 64,
+      "height": 62.285714285714285,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 6.285714285714334,
+        "width": 64,
+        "height": 56
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 990,
+      "y": 624.25,
+      "width": 120,
+      "height": 25.75,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 28,
+        "y": 24.75,
+        "width": 64,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Recoge Tierra. Camina contra el bloque para encajarlo en la placa."
+    },
+    {
+      "id": "wall",
+      "type": "wall",
+      "asset": "wallIntact",
+      "x": 1580,
+      "y": 32,
+      "width": 100,
+      "height": 618,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 618
+      },
+      "hint": "Con Tierra, acércate a la pared agrietada y pulsa Poder (E)."
+    },
+    {
+      "id": "plate-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1168.3999999999999,
+      "y": 30.799999999999955,
+      "width": 403.2,
+      "height": 619.2,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 155.60000000000014,
+        "y": 1.2000000000000455,
+        "width": 92,
+        "height": 618
+      },
+      "initiallyOpen": false,
+      "requires": ["plate"]
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2192.3999999999996,
+      "y": 373.9,
+      "width": 255.20000000000002,
+      "height": 276.1,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.600000000000364,
+        "y": 273.1,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["plate", "wall"]
+    },
+    {
+      "id": "sign-0",
+      "type": "label",
+      "asset": null,
+      "x": 180,
+      "y": 380,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+    },
+    {
+      "id": "sign-1",
+      "type": "label",
+      "asset": null,
+      "x": 2120,
+      "y": 305,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "SALIDA"
+    },
+    {
+      "id": "sign-2",
+      "type": "label",
+      "asset": null,
+      "x": 850,
+      "y": 325,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "TIERRA → BLOQUE → PLACA\nAl encajar, salta sobre el bloque."
+    },
+    {
+      "id": "plate-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1160,
+      "y": 520,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

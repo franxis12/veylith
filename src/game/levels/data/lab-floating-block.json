@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "id": "lab-floating-block",
+  "name": "Laboratorio · Bloque flotante",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 384,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 495,
+      "y": 90,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "label",
+      "asset": null,
+      "x": 100,
+      "y": 95,
+      "width": 1100,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "Tierra viaja sobre el bloque, que cae y flota en agua. Corriente 100 hacia la derecha; salta a la orilla. Caer al lago reinicia."
+    },
+    {
+      "id": "deep-water",
+      "asset": "world:deep_water",
+      "x": 384,
+      "y": 570,
+      "width": 1024,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 80,
+        "width": 256,
+        "height": 176
+      },
+      "kind": "deep_water",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 1024,
+        "height": 400
+      },
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "hint": "Solo Agua cruza el lago.",
+      "type": "world"
+    },
+    {
+      "id": "floating-wooden-block",
+      "asset": "world:floating_wooden_block",
+      "x": 400,
+      "y": 300,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 53,
+        "y": 47,
+        "width": 150,
+        "height": 148
+      },
+      "kind": "floating_wooden_block",
+      "effect": {
+        "enabled": false,
+        "x": 53,
+        "y": 47,
+        "width": 150,
+        "height": 148
+      },
+      "behavior": {
+        "kind": "float",
+        "draft": 0.25,
+        "riseSpeed": 160,
+        "currentSpeed": 100
+      },
+      "state": "idle",
+      "hint": "Cae en seco, flota en agua profunda y transporta al jugador. Corriente horizontal configurable.",
+      "type": "world"
+    },
+    {
+      "id": "terrain-2",
+      "asset": "ground",
+      "x": 1408,
+      "y": 650,
+      "width": 640,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 450
+      },
+      "type": "terrain"
+    }
+  ]
+}

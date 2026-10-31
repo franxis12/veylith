@@ -1,0 +1,140 @@
+{
+  "project": "/Users/francismartinez/Projects/Elements",
+  "date": "2026-10-21",
+  "campaign": "Ancient Forest · Tierra",
+  "campaignLevels": 10,
+  "browserCompletions": 10,
+  "blocks": {
+    "visual": {
+      "width": 192,
+      "height": 186
+    },
+    "collider": {
+      "width": 192,
+      "height": 180
+    },
+    "platesRecessDepth": 128,
+    "pushAnimations": ["push_start", "push_loop", "push_end"],
+    "bothDirectionsVerified": true
+  },
+  "automatedTests": 355,
+  "testFiles": 40,
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": "passed",
+    "build": "passed",
+    "format": "passed"
+  },
+  "evidenceDirectory": "/Users/francismartinez/Documents/Codex/2026-10-21/referenced-chatgpt-conversation-this-is-an-2/outputs",
+  "browserReports": [
+    "earth-final-current/results.json",
+    "earth-direct-current/results.json",
+    "earth-reset-current/results.json",
+    "earth-ui-current/results.json",
+    "earth-editor-current/results.json"
+  ],
+  "levelHashes": {
+    "forest-1": "7b9a8710fc4eef88cd0776038641c22bf0004f9edb9bab039a1cf441e064021a",
+    "forest-2": "d3a25da270ec2a37f596881fd7b950eff75bab19bffb86320aa02a14d9121773",
+    "forest-6": "26d35ba0bb8136da07159ea594f12d7ec88d87560bccda12c6e811de65c76a3c",
+    "forest-7": "4b9cbad45dd2f2dc9e112e9b3d6677ad26c1aeb411d983b0860b21fe959dc1e1",
+    "forest-8": "1b83b91909a151348fa433ffdbd0a1cbd37e50e2ed48fb910a325055ed876360",
+    "forest-9": "0e5b4d08f238786903ab08bac1c97c07b2ea4a81eb24d03060cd77a9eb3759ba",
+    "forest-10": "d7ba6835a0dc63131ed724dd5e1fab8a94abc979b5af98e60f1bfbe8c0308796",
+    "forest-3": "ded1dc96a3cea4216b904fc26f495e87578689ee1e352e57cae298e1b1aba9f7",
+    "forest-4": "bb3533a13b8adc3d050384d0beea13ee234225ce5d6ed7479be4a5f1b50d44b3",
+    "forest-5": "ac47412734998b054a97aaae4f61a43a0f854b146739e9ee838ac4648530f99b"
+  },
+  "hashSerialization": "SHA-256 of JSON.stringify(JSON.parse(canonical JSON))",
+  "routes": [
+    {
+      "id": "forest-1",
+      "elapsedMs": 19271.10000014305,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-2",
+      "elapsedMs": 24817.5,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-6",
+      "elapsedMs": 23345.799999952316,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-7",
+      "elapsedMs": 24453.10000014305,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-8",
+      "elapsedMs": 30964.700000047684,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-9",
+      "elapsedMs": 39034.09999990463,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-10",
+      "elapsedMs": 25019.799999952316,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-3",
+      "elapsedMs": 40913.40000009537,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-4",
+      "elapsedMs": 25640.5,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    },
+    {
+      "id": "forest-5",
+      "elapsedMs": 39024.40000009537,
+      "stars": 3,
+      "attempts": 1,
+      "element": "earth"
+    }
+  ],
+  "optionalRoute": {
+    "id": "forest-10",
+    "directEarnedCoins": 100,
+    "detourEarnedCoins": 105
+  },
+  "assets": {
+    "filesChecked": 651,
+    "originalAssetsUnchanged": true,
+    "mismatches": []
+  },
+  "saves": "Level IDs, coin IDs, v1 schema and reward entitlements preserved; tests use isolated browser profiles and in-memory progress.",
+  "limitations": [
+    "No physical iPhone or iOS WebView validation",
+    "No human difficulty balancing",
+    "No physical-device memory profiling; character sheets add 15 MiB raw RGBA for existing push animations",
+    "No checkpoints; approaching a quarry block from the wrong side can require Restart",
+    "Solution witnesses do not cover every optional coin or every player error"
+  ]
+}

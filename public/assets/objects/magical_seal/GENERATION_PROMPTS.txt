@@ -1,0 +1,36 @@
+VEYLITH MAGICAL SEAL — BUILT-IN IMAGE GENERATION
+Only the supplied screenshot and its generated energy-only derivative were used.
+
+MASTER
+Use case: precise-object-edit / isolated 2D VFX asset. The supplied screenshot crop shows an EXISTING STONE ARCH. Use only the dark INNER opening as the authoritative shape. Create ONLY the translucent magical energy membrane that would fit inside that opening. DO NOT depict, redraw, extract, or include any stone, arch structure, masonry, wooden door, portal frame, floor, foliage, character, background or UI.
+Output a genuine transparent PNG, portrait canvas512x1024. Energy silhouette is a tall narrow doorway-shaped arch, NOT an ellipse: rounded flattened semicircular/elliptical top, STRAIGHT parallel vertical sides for about78% of its height, and a perfectly FLAT bottom. On the512x1024 canvas, silhouette extends from x18 to489; top apex around(253,22), arch shoulders around y235; straight sides down to y1018. Bottom center anchor(256,1024). The top is rounded like the reference's inner opening, not pointed. Transparent margins and no glow outside this silhouette.
+Art direction: beautiful hand-painted fantasy forest magic. A fragile SEMITRANSPARENT turquoise-cyan magical membrane stretched vertically across the opening, faint flowing internal currents, pale aquamarine wisps, subtle ancient non-alphabetic GOLD rune-like brush marks distributed INSIDE the membrane. Only five to seven small subdued gold sigils, abstract ornamental marks, not readable writing. A few very small internal motes. Underlying wall texture must remain visible when composited. Soft painterly light, restrained intensity. Elegant ancient forest magic. No large medallion, circle, ring, gem, central object, neon thick rim, sci-fi shield, beams, outward flames, opaque blue fill, checkerboard, shadow backdrop or background rectangle.
+This is the SEALED_IDLE reference pose. Stable full arched membrane with slight internal flow, no breaking cracks yet. No architecture anywhere in the PNG. Real alpha inside and around the effect. Only energy.
+
+IDLE
+Create a transparent 2D VFX ANIMATION KEYFRAME ATLAS from the supplied ENERGY-ONLY arched magical seal. EXACTLY 2 columns and 2 rows = FOUR equal portrait cells. Overall canvas1024x2048; each cell512x1024. Absolutely NO words, numerals, borders or gridlines. Real transparent PNG. Leave only small equal transparent margins.
+Each cell shows the SAME complete TALL ARCH-shaped magical MEMBRANE: rounded top, straight parallel vertical sides, flat bottom; NOT circular or oval. Identical placement, top, sides, bottom, scale and boundary in every cell. Keep ALL cyan energy and particles inside the arch. No exterior halo beyond the boundary. No physical frame or architecture.
+Four cyclic idle key poses, clockwise phases but READ ROW-MAJOR: phase0 quiet upward turquoise wisps, phase1 inner wisps gently curling left, phase2 gently lifting through center, phase3 curling right and returning toward phase0. Only the internal energy flows. The same delicate abstract gold rune marks stay in fixed positions, softly pulsing; don't relocate or multiply them. Same small internal particle constellation with subtle motion.
+Hand-painted Ancient Forest fantasy aesthetic identical to the reference energy. Semi-transparent cyan/turquoise fluid veils, subtle gold, restrained glow. Retain the reference design and soft cloudy texture; no dramatic lightning or ring. All FOUR cells must contain complete sealed states with energy all the way to the same flat bottom. No scene/background, opaque backing, stone, metal, doorway frame, foliage, ground, characters, text, baked checkerboard, circular medallion, gem or UI. This atlas is for seamless slow idle; no fragmentation or dissipation yet.
+
+BREAK
+Create a transparent 2D VFX ANIMATION KEYFRAME ATLAS matching the supplied tall arched magical energy membrane. EXACTLY 4 columns and 2 rows = EIGHT equal portrait cells. Overall canvas2048x2048; each cell512x1024. Read ROW-MAJOR. Real alpha. NO TEXT, frame numbers, gridlines, borders or backgrounds.
+Every cell uses the SAME tall arch envelope: rounded arched top, straight parallel sides, flat baseline, fixed identical scale and location. NEVER create a circle/oval or any door/stone/frame/architecture. All fragments and particles MUST stay within the original arch envelope. Only magical energy is shown. Turquoise-cyan semi-transparent painterly currents, fine gold ancient abstract rune-like marks. Exactly the same design as reference, restrained luminance.
+These eight keyframes are the MIDDLE phases of a seal breaking, in this exact order:
+CELL1: full intact membrane, same as reference but the gold rune marks brighten gently.
+CELL2: still full membrane, a few thin golden cracks of light appear internally.
+CELL3: internal turquoise flow destabilizes, more small light cracks, membrane remains mostly continuous.
+CELL4: fine connected magical cracks spread across the full membrane, small dark transparent gaps begin.
+CELL5: membrane separates into FLOATING SOFT FLOWING ENERGY FRAGMENTS with transparent voids, no hard glass or crystals.
+CELL6: fragments dissolve UPWARD; the bottom half of the arch becomes completely transparent, upper wisps and some particles remain.
+CELL7: most of the entire arch area is now completely transparent; only a few faint upper turquoise wisps and small gold motes remain.
+CELL8: almost entirely invisible; just three very faint tiny particles near the upper third of the original arch.
+Do not move, shift, lower or recenter the fading shapes! Keep them at their original coordinates within the identical512x1024 cell. No bright explosion outside the shape. No bottom disc or platform. No labels, lettering, symbols resembling UI, stars, architecture, screenshot, stone, black rectangle, shadow or checkerboard. Real semi-transparent alpha. Maintain artistically consistent visual transitions from cell to cell.
+
+VFX
+Create a TRANSPARENT 2D hand-painted magical VFX sprite sheet matching the supplied cyan-and-gold fantasy magical membrane. EXACTLY 2 columns and2 rows, four equal square cells, overall1024x1024. Each effect compact and centered in its own cell within generous transparent margins. There is NO doorway, arch outline, membrane, ring, circle, border, scene, floor, physical object, text, grid or labels.
+Top-left cell: a SMALL group of six delicate golden ancient abstract rune-like brushstroke particles, non-alphabetic, suspended loosely; understated gold glows.
+Top-right cell: a small group of turquoise magical sparks, tiny painterly cyan flecks and curved wisps.
+Bottom-left cell: a small seal-breaking flash: soft irregular cyan wisp crossed with two subtle gold crack-like streaks, centered, NOT a giant starburst, not a ring or beam.
+Bottom-right cell: residual magical dust: sparse tiny faint cyan and gold flecks, gently dispersing.
+Use genuinely transparent background and semi-transparent glows. Subdued magical ancient forest style, no photorealism, 3D or sci-fi. Never include any stone frame from the source environment. These are four independent localized VFX elements.

@@ -1,0 +1,2638 @@
+{
+  "notes": "Measured from original PNGs. FPS and playback are review recommendations, not embedded exporter metadata. Bounds are exclusive on right/bottom. Character footY uses alpha >= 32.",
+  "sequences": [
+    {
+      "sheet": "characters/air/fall/air_fall_spritesheet.png",
+      "sheetSize": [2048, 512],
+      "frames": [
+        {
+          "file": "characters/air/fall/air_fall_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [91, 28, 402, 374],
+          "visibleBounds": [93, 28, 400, 372],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/fall/air_fall_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [97, 28, 407, 404],
+          "visibleBounds": [99, 30, 406, 402],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/fall/air_fall_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [91, 14, 436, 413],
+          "visibleBounds": [93, 15, 434, 412],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/fall/air_fall_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [100, 4, 439, 419],
+          "visibleBounds": [100, 6, 437, 417],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "a73c48b4bbf22b93a7527c38f0013398f5c4a4af5d1db62d0c24816bc040f739",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/glide_loop/air_glide_loop_spritesheet.png",
+      "sheetSize": [3072, 512],
+      "frames": [
+        {
+          "file": "characters/air/glide_loop/air_glide_loop_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [27, 69, 468, 450],
+          "visibleBounds": [29, 69, 466, 448],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_loop/air_glide_loop_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [37, 71, 466, 446],
+          "visibleBounds": [38, 71, 464, 444],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_loop/air_glide_loop_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [36, 65, 469, 448],
+          "visibleBounds": [38, 66, 467, 446],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_loop/air_glide_loop_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [30, 69, 468, 451],
+          "visibleBounds": [31, 70, 466, 449],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_loop/air_glide_loop_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [28, 73, 468, 453],
+          "visibleBounds": [30, 74, 466, 451],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_loop/air_glide_loop_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [27, 71, 469, 452],
+          "visibleBounds": [29, 71, 467, 450],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "9e55d44a3dacdcb1d0251d6b0163436961c53b48219127a9f22d54fbffac37a1",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/glide_start/air_glide_start_spritesheet.png",
+      "sheetSize": [2048, 512],
+      "frames": [
+        {
+          "file": "characters/air/glide_start/air_glide_start_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 61, 456, 456],
+          "visibleBounds": [58, 62, 454, 455],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_start/air_glide_start_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [47, 69, 466, 461],
+          "visibleBounds": [49, 69, 464, 460],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_start/air_glide_start_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [29, 68, 470, 451],
+          "visibleBounds": [31, 69, 468, 449],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_start/air_glide_start_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [27, 69, 468, 450],
+          "visibleBounds": [29, 69, 466, 448],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "5b437f2c699ac774e01ac3c65b1e04ed3726016cd6733def5a6f9dfde2be0edd",
+      "kind": "character",
+      "recommendedFps": 10,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/glide_vfx/air_glide_wind_vfx_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [49, 130, 474, 422],
+          "visibleBounds": [57, 133, 472, 419],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 101],
+          "bounds": [50, 130, 473, 419],
+          "visibleBounds": [55, 132, 472, 410],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 43],
+          "bounds": [51, 128, 479, 419],
+          "visibleBounds": [53, 130, 472, 413],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 142],
+          "bounds": [51, 130, 471, 417],
+          "visibleBounds": [56, 132, 467, 410],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 144],
+          "bounds": [51, 128, 471, 416],
+          "visibleBounds": [55, 130, 465, 409],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 98],
+          "bounds": [49, 131, 474, 421],
+          "visibleBounds": [54, 133, 472, 418],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 96],
+          "bounds": [45, 131, 473, 416],
+          "visibleBounds": [50, 133, 470, 411],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/glide_vfx/air_glide_wind_vfx_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 127],
+          "bounds": [50, 130, 476, 421],
+          "visibleBounds": [55, 133, 473, 419],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "4ef77ca232835ceaee616a503fcac84d2b5a37fb91ba5d0238b04e9ba4125140",
+      "kind": "effect",
+      "recommendedFps": 10,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/idle/air_idle_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/air/idle/air_idle_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [77, 21, 509, 481],
+          "visibleBounds": [101, 24, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [76, 20, 509, 481],
+          "visibleBounds": [101, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [76, 19, 509, 481],
+          "visibleBounds": [101, 21, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [75, 21, 509, 481],
+          "visibleBounds": [100, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [75, 21, 509, 481],
+          "visibleBounds": [100, 23, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [75, 24, 509, 481],
+          "visibleBounds": [99, 25, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [75, 25, 509, 481],
+          "visibleBounds": [100, 26, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/idle/air_idle_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [76, 23, 509, 481],
+          "visibleBounds": [101, 25, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "e8aa2afc3cfde2336074fe0206b378e66874c27c5cb86fbc1535324d06c90f53",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/jump/air_jump_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/air/jump/air_jump_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [91, 127, 401, 481],
+          "visibleBounds": [92, 127, 399, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/jump/air_jump_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [100, 54, 392, 480],
+          "visibleBounds": [102, 54, 390, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/jump/air_jump_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [93, 42, 393, 449],
+          "visibleBounds": [95, 42, 391, 447],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/jump/air_jump_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [103, 32, 394, 426],
+          "visibleBounds": [105, 32, 392, 424],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/jump/air_jump_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [86, 30, 392, 385],
+          "visibleBounds": [87, 30, 390, 383],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "f97ee6ab14aa83df70b2cc07a1387f709682d9ca10d3162ac6570fff9e61ba9e",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/land/air_land_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/air/land/air_land_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [96, 56, 473, 480],
+          "visibleBounds": [98, 56, 471, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/land/air_land_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [111, 75, 472, 480],
+          "visibleBounds": [112, 75, 470, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/land/air_land_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [97, 90, 465, 480],
+          "visibleBounds": [99, 90, 463, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/land/air_land_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [88, 43, 441, 480],
+          "visibleBounds": [90, 44, 439, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/land/air_land_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [77, 21, 509, 481],
+          "visibleBounds": [101, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "49d90228360555250c121aabec902cb93be5e68ae0efa7b75d7d12585aedfbf7",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/air/run/air_run_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/air/run/air_run_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [52, 27, 428, 481],
+          "visibleBounds": [54, 28, 427, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [62, 48, 405, 481],
+          "visibleBounds": [63, 49, 404, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [32, 22, 419, 480],
+          "visibleBounds": [33, 23, 417, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [54, 28, 448, 452],
+          "visibleBounds": [56, 28, 446, 450],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [67, 42, 433, 481],
+          "visibleBounds": [68, 42, 431, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [67, 41, 419, 481],
+          "visibleBounds": [69, 42, 417, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [27, 27, 457, 481],
+          "visibleBounds": [28, 28, 456, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/air/run/air_run_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [41, 26, 450, 452],
+          "visibleBounds": [42, 27, 448, 450],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "df75858485767a88a593ead4b03541a73368ff5c134583be6e37fb6641193798",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/fall/earth_fall_spritesheet.png",
+      "sheetSize": [2048, 512],
+      "frames": [
+        {
+          "file": "characters/earth/fall/earth_fall_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [104, 47, 405, 432],
+          "visibleBounds": [106, 47, 404, 430],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/fall/earth_fall_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [100, 48, 405, 433],
+          "visibleBounds": [102, 48, 403, 432],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/fall/earth_fall_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [109, 50, 414, 443],
+          "visibleBounds": [111, 50, 412, 442],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/fall/earth_fall_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 53, 407, 435],
+          "visibleBounds": [100, 54, 405, 433],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "f866dda2e1fb271a5f9e1e1306d6f9a9f94eba253b248d946c7bbd0b6314ebb3",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/idle/earth_idle_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/earth/idle/earth_idle_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 19, 435, 481],
+          "visibleBounds": [87, 24, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 18, 435, 481],
+          "visibleBounds": [87, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 19, 435, 481],
+          "visibleBounds": [87, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 20, 435, 481],
+          "visibleBounds": [87, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 18, 435, 481],
+          "visibleBounds": [87, 24, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 23, 512, 481],
+          "visibleBounds": [87, 25, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 22, 435, 481],
+          "visibleBounds": [87, 26, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/idle/earth_idle_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 22, 512, 481],
+          "visibleBounds": [87, 25, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "9c38496a515113cee33c522ba45048d900547e27b970b72ea269a252dbde6ba5",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/jump/earth_jump_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/earth/jump/earth_jump_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [105, 168, 415, 480],
+          "visibleBounds": [107, 168, 414, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/jump/earth_jump_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [112, 46, 413, 481],
+          "visibleBounds": [114, 46, 412, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/jump/earth_jump_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [95, 42, 393, 417],
+          "visibleBounds": [97, 42, 391, 415],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/jump/earth_jump_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 40, 391, 422],
+          "visibleBounds": [100, 40, 389, 420],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/jump/earth_jump_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [103, 50, 390, 400],
+          "visibleBounds": [105, 50, 388, 398],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "bd3444dc6bc2623e14c82dbe795b0768aa832be527f492e1f4ad212bed58812b",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/land/earth_land_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/earth/land/earth_land_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [79, 102, 442, 479],
+          "visibleBounds": [81, 103, 440, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/land/earth_land_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [83, 131, 444, 480],
+          "visibleBounds": [84, 132, 443, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/land/earth_land_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [90, 158, 443, 480],
+          "visibleBounds": [91, 159, 441, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/land/earth_land_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [78, 79, 439, 480],
+          "visibleBounds": [79, 79, 437, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/land/earth_land_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 19, 435, 481],
+          "visibleBounds": [87, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "3a56a2265fc646ec9fa5bd933846d04cd7e8d2b5c5f132a66d718f655cd80c1f",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/push_end/earth_push_end_spritesheet.png",
+      "sheetSize": [1536, 512],
+      "frames": [
+        {
+          "file": "characters/earth/push_end/earth_push_end_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [62, 23, 459, 480],
+          "visibleBounds": [64, 24, 457, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_end/earth_push_end_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [84, 22, 442, 480],
+          "visibleBounds": [86, 23, 441, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_end/earth_push_end_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 19, 435, 481],
+          "visibleBounds": [87, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "494f4bb892b7c8d6cde9f970324d9e1eae64460ed8e5b50bcaec81d8861b6757",
+      "kind": "character",
+      "recommendedFps": 10,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/push_loop/earth_push_loop_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 22, 459, 480],
+          "visibleBounds": [70, 23, 458, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [67, 22, 460, 480],
+          "visibleBounds": [69, 23, 458, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 26, 459, 480],
+          "visibleBounds": [70, 27, 457, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 22, 459, 480],
+          "visibleBounds": [70, 22, 458, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 23, 460, 480],
+          "visibleBounds": [60, 24, 458, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 26, 459, 480],
+          "visibleBounds": [70, 26, 457, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 20, 459, 480],
+          "visibleBounds": [69, 21, 458, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_loop/earth_push_loop_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [65, 25, 460, 480],
+          "visibleBounds": [67, 26, 458, 478],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "5c7d6f34f1eb8725ee60c2ddee2ac921e7b4c28f2639bb6a2164afe378168470",
+      "kind": "character",
+      "recommendedFps": 10,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/push_start/earth_push_start_spritesheet.png",
+      "sheetSize": [2048, 512],
+      "frames": [
+        {
+          "file": "characters/earth/push_start/earth_push_start_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [84, 34, 438, 480],
+          "visibleBounds": [86, 35, 437, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_start/earth_push_start_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [56, 18, 463, 480],
+          "visibleBounds": [58, 18, 461, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_start/earth_push_start_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [43, 18, 472, 480],
+          "visibleBounds": [44, 18, 470, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/push_start/earth_push_start_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 22, 459, 480],
+          "visibleBounds": [70, 23, 458, 478],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "47ed2459d072d3a6e4f7927092d7d405e6e4257500e758c3cf39a381a69c1118",
+      "kind": "character",
+      "recommendedFps": 10,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/run/earth_run_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/earth/run/earth_run_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 35, 428, 480],
+          "visibleBounds": [68, 36, 426, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [52, 38, 418, 480],
+          "visibleBounds": [52, 39, 417, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [67, 37, 412, 481],
+          "visibleBounds": [69, 38, 410, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [47, 10, 459, 452],
+          "visibleBounds": [49, 11, 457, 450],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [76, 54, 427, 481],
+          "visibleBounds": [78, 54, 425, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [48, 40, 423, 481],
+          "visibleBounds": [50, 40, 421, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [27, 43, 458, 481],
+          "visibleBounds": [28, 44, 457, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/run/earth_run_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [27, 15, 450, 452],
+          "visibleBounds": [27, 15, 449, 450],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "b7c2737b8f9542b50f24e39549788104a1da4e0c41707551b4a0bcdea2856a73",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/earth/smash/earth_smash_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/earth/smash/earth_smash_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [79, 68, 446, 480],
+          "visibleBounds": [80, 68, 444, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [57, 56, 483, 480],
+          "visibleBounds": [58, 57, 482, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [50, 59, 485, 480],
+          "visibleBounds": [52, 60, 483, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [43, 53, 485, 480],
+          "visibleBounds": [45, 55, 483, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [44, 54, 484, 480],
+          "visibleBounds": [46, 54, 482, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [47, 53, 490, 480],
+          "visibleBounds": [48, 54, 488, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 29, 439, 480],
+          "visibleBounds": [60, 30, 437, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/earth/smash/earth_smash_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 19, 435, 481],
+          "visibleBounds": [87, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "090f8f4d42412cc3af2d8dea2c4d0df121c013f6f836884f5bc4f86fd89a9983",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/attack/fire_attack_spritesheet.png",
+      "sheetSize": [3072, 512],
+      "frames": [
+        {
+          "file": "characters/fire/attack/fire_attack_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [73, 36, 453, 480],
+          "visibleBounds": [75, 36, 451, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/attack/fire_attack_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [63, 49, 483, 480],
+          "visibleBounds": [65, 49, 482, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/attack/fire_attack_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 45, 504, 480],
+          "visibleBounds": [70, 46, 502, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/attack/fire_attack_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [57, 40, 504, 480],
+          "visibleBounds": [59, 40, 502, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/attack/fire_attack_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [70, 44, 444, 480],
+          "visibleBounds": [71, 45, 442, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/attack/fire_attack_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 21, 509, 485],
+          "visibleBounds": [104, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "cd9556a13d833ff3fdb40f072fcbf07d5a51e1d286932d0ebd7af4cca7921f71",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/double_jump/fire_double_jump_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/fire/double_jump/fire_double_jump_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [110, 76, 390, 413],
+          "visibleBounds": [112, 76, 388, 411],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/double_jump/fire_double_jump_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [86, 81, 390, 438],
+          "visibleBounds": [87, 82, 388, 436],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/double_jump/fire_double_jump_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [102, 45, 390, 471],
+          "visibleBounds": [104, 45, 388, 469],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/double_jump/fire_double_jump_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [123, 32, 399, 379],
+          "visibleBounds": [125, 32, 397, 377],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/double_jump/fire_double_jump_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 29, 403, 390],
+          "visibleBounds": [101, 30, 401, 388],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "fdbd8d6f848ce64bbd1a95eb09cfc0a13f7fd2736d743def75e3b3d1d67ada8b",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/fall/fire_fall_spritesheet.png",
+      "sheetSize": [2048, 512],
+      "frames": [
+        {
+          "file": "characters/fire/fall/fire_fall_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [84, 21, 408, 396],
+          "visibleBounds": [85, 22, 406, 394],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/fall/fire_fall_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [88, 24, 418, 420],
+          "visibleBounds": [90, 25, 416, 418],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/fall/fire_fall_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [84, 10, 419, 416],
+          "visibleBounds": [86, 11, 417, 414],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/fall/fire_fall_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [102, 6, 417, 404],
+          "visibleBounds": [104, 8, 415, 402],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "94f244e368883555e071aa551d25297ca87befd501c45397a19ad99c585eb57b",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/idle/fire_idle_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/fire/idle/fire_idle_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 21, 509, 485],
+          "visibleBounds": [104, 24, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 21, 512, 485],
+          "visibleBounds": [104, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 19, 512, 485],
+          "visibleBounds": [104, 21, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 20, 512, 485],
+          "visibleBounds": [103, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 21, 509, 485],
+          "visibleBounds": [103, 23, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 22, 512, 485],
+          "visibleBounds": [103, 25, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 23, 512, 485],
+          "visibleBounds": [103, 26, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/idle/fire_idle_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 24, 512, 485],
+          "visibleBounds": [103, 25, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "212a7b7f1c2894fd8c8d7f1af9e25929acea55329c5e717fd415995ed1325de2",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/jump/fire_jump_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/fire/jump/fire_jump_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [105, 133, 401, 481],
+          "visibleBounds": [106, 134, 399, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/jump/fire_jump_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [100, 44, 402, 481],
+          "visibleBounds": [101, 45, 400, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/jump/fire_jump_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [94, 36, 393, 459],
+          "visibleBounds": [96, 37, 391, 457],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/jump/fire_jump_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 26, 392, 423],
+          "visibleBounds": [100, 27, 390, 422],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/jump/fire_jump_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [85, 24, 397, 425],
+          "visibleBounds": [87, 25, 395, 423],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "4956b3c597806c29a636fd358258b1f815fdf315644de72256ef5e7fc821b5bb",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/land/fire_land_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/fire/land/fire_land_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [94, 93, 439, 480],
+          "visibleBounds": [96, 94, 438, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/land/fire_land_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 143, 441, 480],
+          "visibleBounds": [100, 144, 439, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/land/fire_land_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [118, 160, 469, 480],
+          "visibleBounds": [120, 161, 467, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/land/fire_land_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [85, 61, 431, 480],
+          "visibleBounds": [86, 61, 429, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/land/fire_land_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 21, 509, 485],
+          "visibleBounds": [104, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "4a97f606e47205c1e6fdb60fff5117583bd68e87f9a8e5c7eb2daa22a20781c1",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/fire/run/fire_run_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/fire/run/fire_run_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [62, 23, 416, 481],
+          "visibleBounds": [63, 24, 414, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [61, 50, 413, 480],
+          "visibleBounds": [63, 50, 411, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [65, 29, 407, 481],
+          "visibleBounds": [65, 30, 406, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [44, 13, 464, 452],
+          "visibleBounds": [46, 13, 462, 450],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [55, 38, 436, 481],
+          "visibleBounds": [57, 38, 434, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [63, 53, 412, 481],
+          "visibleBounds": [65, 53, 411, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [8, 18, 462, 480],
+          "visibleBounds": [9, 18, 460, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/fire/run/fire_run_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [56, 23, 452, 452],
+          "visibleBounds": [58, 23, 451, 451],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "9ecb55c06e6cd74d9e5da1370a970e9e41f9604a0f3fe94e45f344668bf0d3cb",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/water/attack/water_attack_spritesheet.png",
+      "sheetSize": [3072, 512],
+      "frames": [
+        {
+          "file": "characters/water/attack/water_attack_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [73, 33, 442, 480],
+          "visibleBounds": [75, 33, 440, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/attack/water_attack_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [65, 42, 511, 480],
+          "visibleBounds": [67, 43, 509, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/attack/water_attack_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [60, 47, 506, 480],
+          "visibleBounds": [62, 47, 504, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/attack/water_attack_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [57, 45, 478, 479],
+          "visibleBounds": [59, 46, 477, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/attack/water_attack_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [101, 33, 435, 480],
+          "visibleBounds": [103, 34, 433, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/attack/water_attack_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 21, 453, 481],
+          "visibleBounds": [101, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "fb86692ddb8df7b8a8c21883982109f9c5fc41cbe80fc3d341aaddd6e5eab419",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/water/fall/water_fall_spritesheet.png",
+      "sheetSize": [2048, 512],
+      "frames": [
+        {
+          "file": "characters/water/fall/water_fall_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [91, 17, 409, 415],
+          "visibleBounds": [93, 17, 407, 413],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/fall/water_fall_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [90, 20, 410, 426],
+          "visibleBounds": [91, 20, 408, 424],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/fall/water_fall_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [105, 12, 434, 419],
+          "visibleBounds": [107, 14, 432, 417],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/fall/water_fall_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [110, 9, 442, 422],
+          "visibleBounds": [111, 11, 440, 420],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "18080f1cc023c2c1e2baf69804271af3b7edb7793caa12c6dca56a214edf7704",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/water/idle/water_idle_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/water/idle/water_idle_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 21, 453, 481],
+          "visibleBounds": [101, 24, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 20, 453, 481],
+          "visibleBounds": [101, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 19, 453, 481],
+          "visibleBounds": [101, 21, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 21, 453, 481],
+          "visibleBounds": [100, 22, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 21, 453, 481],
+          "visibleBounds": [100, 23, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 24, 453, 481],
+          "visibleBounds": [100, 25, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 23, 453, 481],
+          "visibleBounds": [100, 25, 433, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/idle/water_idle_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [98, 24, 453, 481],
+          "visibleBounds": [101, 25, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "f251261ad97e2ce755399b4ebfba7db0b5ccb01ac7ed05aab0595e0dbf496cf4",
+      "kind": "character",
+      "recommendedFps": 8,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/water/jump/water_jump_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/water/jump/water_jump_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [97, 121, 406, 481],
+          "visibleBounds": [99, 121, 404, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/jump/water_jump_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [93, 55, 396, 481],
+          "visibleBounds": [95, 57, 395, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/jump/water_jump_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [89, 32, 385, 470],
+          "visibleBounds": [91, 32, 383, 468],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/jump/water_jump_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [104, 22, 397, 433],
+          "visibleBounds": [105, 22, 395, 431],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/jump/water_jump_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [83, 20, 387, 421],
+          "visibleBounds": [85, 20, 385, 420],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "868e52ecc581260d3f8ca9cc9bd6ab17d2bdac935f9026a170df970d6977df98",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/water/land/water_land_spritesheet.png",
+      "sheetSize": [2560, 512],
+      "frames": [
+        {
+          "file": "characters/water/land/water_land_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [64, 53, 467, 480],
+          "visibleBounds": [66, 54, 465, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/land/water_land_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [71, 104, 462, 480],
+          "visibleBounds": [73, 105, 460, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/land/water_land_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [74, 117, 463, 480],
+          "visibleBounds": [76, 117, 461, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/land/water_land_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [71, 24, 442, 480],
+          "visibleBounds": [73, 24, 440, 478],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/land/water_land_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [99, 21, 453, 481],
+          "visibleBounds": [101, 24, 433, 479],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "19aadc1f5d2d21b654f80e74248c0845f214ae463ffa6f83fe686673c4cbc774",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "characters/water/run/water_run_spritesheet.png",
+      "sheetSize": [4096, 512],
+      "frames": [
+        {
+          "file": "characters/water/run/water_run_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [76, 40, 402, 481],
+          "visibleBounds": [78, 40, 400, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [68, 40, 403, 481],
+          "visibleBounds": [69, 41, 402, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [69, 31, 418, 481],
+          "visibleBounds": [69, 32, 416, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [72, 20, 447, 452],
+          "visibleBounds": [74, 20, 446, 450],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [78, 22, 433, 481],
+          "visibleBounds": [79, 23, 431, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [58, 37, 410, 481],
+          "visibleBounds": [59, 38, 409, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_07.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [35, 30, 452, 481],
+          "visibleBounds": [37, 30, 450, 479],
+          "matchesSheet": true
+        },
+        {
+          "file": "characters/water/run/water_run_08.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [54, 31, 432, 451],
+          "visibleBounds": [55, 32, 430, 450],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "0e13b70d24793ed4cc085ec17ba49b56a9576c8d2375997bfa5570dea71eb101",
+      "kind": "character",
+      "recommendedFps": 12,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "vfx/earth/land_impact/earth_land_impact_spritesheet.png",
+      "sheetSize": [3072, 512],
+      "frames": [
+        {
+          "file": "vfx/earth/land_impact/earth_land_impact_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [201, 309, 311, 352],
+          "visibleBounds": [201, 309, 311, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/land_impact/earth_land_impact_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [156, 279, 356, 352],
+          "visibleBounds": [156, 279, 356, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/land_impact/earth_land_impact_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [106, 236, 406, 352],
+          "visibleBounds": [106, 236, 406, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/land_impact/earth_land_impact_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [90, 252, 423, 352],
+          "visibleBounds": [90, 252, 423, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/land_impact/earth_land_impact_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [94, 287, 419, 352],
+          "visibleBounds": [94, 287, 419, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/land_impact/earth_land_impact_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [84, 307, 429, 352],
+          "visibleBounds": [84, 307, 429, 351],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "c69fffd82ac815bc39469b46bb151cfc33b97e8d0ddcb816795e8b4ed0e2a029",
+      "kind": "effect",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "vfx/earth/landing_impact/earth_landing_impact_vfx_spritesheet.png",
+      "sheetSize": [3072, 512],
+      "frames": [
+        {
+          "file": "vfx/earth/landing_impact/earth_landing_impact_vfx_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [201, 309, 311, 352],
+          "visibleBounds": [201, 309, 311, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/landing_impact/earth_landing_impact_vfx_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [156, 279, 356, 352],
+          "visibleBounds": [156, 279, 356, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/landing_impact/earth_landing_impact_vfx_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [106, 236, 406, 352],
+          "visibleBounds": [106, 236, 406, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/landing_impact/earth_landing_impact_vfx_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [90, 252, 423, 352],
+          "visibleBounds": [90, 252, 423, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/landing_impact/earth_landing_impact_vfx_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [94, 287, 419, 352],
+          "visibleBounds": [94, 287, 419, 352],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/landing_impact/earth_landing_impact_vfx_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [84, 307, 429, 352],
+          "visibleBounds": [84, 307, 429, 351],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "c69fffd82ac815bc39469b46bb151cfc33b97e8d0ddcb816795e8b4ed0e2a029",
+      "kind": "effect",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "vfx/earth/smash_impact/earth_smash_impact_spritesheet.png",
+      "sheetSize": [2048, 256],
+      "frames": [
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_01.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [99, 99, 166, 162],
+          "visibleBounds": [101, 102, 164, 160],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_02.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [68, 68, 191, 190],
+          "visibleBounds": [70, 70, 189, 187],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_03.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [60, 54, 202, 198],
+          "visibleBounds": [61, 56, 201, 197],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_04.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [36, 39, 232, 211],
+          "visibleBounds": [36, 41, 230, 210],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_05.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [26, 31, 236, 220],
+          "visibleBounds": [28, 33, 235, 218],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_06.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [20, 25, 238, 228],
+          "visibleBounds": [21, 25, 238, 227],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_07.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [50, 128, 206, 201],
+          "visibleBounds": [55, 130, 204, 196],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/earth/smash_impact/earth_smash_impact_08.png",
+          "size": [256, 256],
+          "alphaRange": [0, 0],
+          "bounds": null,
+          "visibleBounds": null,
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "2da5e357ebffaf030ffef3517ef90423b8822df775d7f8e8bd620d0610646a67",
+      "kind": "effect",
+      "recommendedFps": 14,
+      "playback": "once",
+      "fullyTransparentFrames": [8]
+    },
+    {
+      "sheet": "vfx/fire/burning_loop/fire_burning_loop_spritesheet.png",
+      "sheetSize": [768, 128],
+      "frames": [
+        {
+          "file": "vfx/fire/burning_loop/fire_burning_loop_01.png",
+          "size": [128, 128],
+          "alphaRange": [0, 255],
+          "bounds": [41, 17, 88, 113],
+          "visibleBounds": [43, 17, 87, 112],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/burning_loop/fire_burning_loop_02.png",
+          "size": [128, 128],
+          "alphaRange": [0, 255],
+          "bounds": [41, 15, 89, 113],
+          "visibleBounds": [43, 16, 87, 111],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/burning_loop/fire_burning_loop_03.png",
+          "size": [128, 128],
+          "alphaRange": [0, 255],
+          "bounds": [41, 15, 89, 113],
+          "visibleBounds": [43, 16, 87, 111],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/burning_loop/fire_burning_loop_04.png",
+          "size": [128, 128],
+          "alphaRange": [0, 255],
+          "bounds": [41, 16, 89, 114],
+          "visibleBounds": [43, 16, 87, 112],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/burning_loop/fire_burning_loop_05.png",
+          "size": [128, 128],
+          "alphaRange": [0, 255],
+          "bounds": [41, 20, 88, 114],
+          "visibleBounds": [43, 21, 87, 112],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/burning_loop/fire_burning_loop_06.png",
+          "size": [128, 128],
+          "alphaRange": [0, 255],
+          "bounds": [41, 15, 89, 113],
+          "visibleBounds": [43, 16, 87, 111],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "29a406179804ff982170e6f3a08ecb8ad39192e052831a3c5891444e5b7fd2a4",
+      "kind": "effect",
+      "recommendedFps": 10,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "vfx/fire/double_jump/fire_double_jump_vfx_spritesheet.png",
+      "sheetSize": [3072, 512],
+      "frames": [
+        {
+          "file": "vfx/fire/double_jump/fire_double_jump_vfx_01.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [216, 120, 296, 230],
+          "visibleBounds": [216, 120, 296, 230],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/double_jump/fire_double_jump_vfx_02.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [176, 120, 337, 310],
+          "visibleBounds": [176, 120, 337, 310],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/double_jump/fire_double_jump_vfx_03.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [126, 120, 386, 357],
+          "visibleBounds": [126, 120, 385, 356],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/double_jump/fire_double_jump_vfx_04.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [106, 138, 406, 378],
+          "visibleBounds": [107, 138, 405, 378],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/double_jump/fire_double_jump_vfx_05.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [128, 165, 385, 435],
+          "visibleBounds": [130, 171, 383, 433],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/double_jump/fire_double_jump_vfx_06.png",
+          "size": [512, 512],
+          "alphaRange": [0, 255],
+          "bounds": [128, 181, 384, 450],
+          "visibleBounds": [128, 181, 384, 449],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "ed7fab662fcb2c779ec773fc0935462ba879aba332af8bea7c21568bf5ca4a07",
+      "kind": "effect",
+      "recommendedFps": 12,
+      "playback": "once",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "vfx/fire/impact/fire_impact_spritesheet.png",
+      "sheetSize": [2048, 256],
+      "frames": [
+        {
+          "file": "vfx/fire/impact/fire_impact_01.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [104, 102, 157, 156],
+          "visibleBounds": [106, 104, 155, 154],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_02.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [71, 66, 193, 189],
+          "visibleBounds": [73, 67, 191, 187],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_03.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [45, 42, 219, 213],
+          "visibleBounds": [47, 44, 217, 213],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_04.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [32, 37, 226, 217],
+          "visibleBounds": [34, 39, 224, 216],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_05.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [28, 35, 231, 220],
+          "visibleBounds": [30, 35, 229, 219],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_06.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [57, 59, 214, 204],
+          "visibleBounds": [57, 59, 214, 203],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_07.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [76, 82, 185, 178],
+          "visibleBounds": [77, 83, 184, 175],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/impact/fire_impact_08.png",
+          "size": [256, 256],
+          "alphaRange": [0, 0],
+          "bounds": null,
+          "visibleBounds": null,
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "a17441136b02def881fd1731c88cac5e5dd8c77080b65f668e16cf8708358c21",
+      "kind": "effect",
+      "recommendedFps": 16,
+      "playback": "once",
+      "fullyTransparentFrames": [8]
+    },
+    {
+      "sheet": "vfx/fire/projectile/fire_projectile_spritesheet.png",
+      "sheetSize": [1536, 128],
+      "frames": [
+        {
+          "file": "vfx/fire/projectile/fire_projectile_01.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [32, 29, 218, 99],
+          "visibleBounds": [32, 31, 216, 97],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/projectile/fire_projectile_02.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [30, 29, 218, 97],
+          "visibleBounds": [30, 31, 216, 95],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/projectile/fire_projectile_03.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [30, 27, 218, 98],
+          "visibleBounds": [30, 29, 216, 96],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/projectile/fire_projectile_04.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [29, 29, 218, 98],
+          "visibleBounds": [30, 31, 216, 96],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/projectile/fire_projectile_05.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [26, 29, 218, 98],
+          "visibleBounds": [26, 31, 216, 97],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/fire/projectile/fire_projectile_06.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [32, 29, 218, 99],
+          "visibleBounds": [32, 31, 216, 97],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "3865b81255262d276352efbb3794c020e54905e0c39524e9ca08e9a61586e298",
+      "kind": "effect",
+      "recommendedFps": 12,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    },
+    {
+      "sheet": "vfx/water/impact/water_impact_spritesheet.png",
+      "sheetSize": [1536, 256],
+      "frames": [
+        {
+          "file": "vfx/water/impact/water_impact_01.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [87, 86, 215, 195],
+          "visibleBounds": [87, 88, 213, 193],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/impact/water_impact_02.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [58, 47, 221, 218],
+          "visibleBounds": [60, 49, 219, 218],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/impact/water_impact_03.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [31, 23, 240, 235],
+          "visibleBounds": [33, 25, 238, 233],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/impact/water_impact_04.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [24, 28, 229, 236],
+          "visibleBounds": [26, 30, 228, 236],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/impact/water_impact_05.png",
+          "size": [256, 256],
+          "alphaRange": [0, 255],
+          "bounds": [75, 66, 213, 211],
+          "visibleBounds": [76, 66, 212, 211],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/impact/water_impact_06.png",
+          "size": [256, 256],
+          "alphaRange": [0, 0],
+          "bounds": null,
+          "visibleBounds": null,
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "fff2277b7712d61210e8189f8391218cc4d4e7987f9430f81989fbb66c8fc637",
+      "kind": "effect",
+      "recommendedFps": 16,
+      "playback": "once",
+      "fullyTransparentFrames": [6]
+    },
+    {
+      "sheet": "vfx/water/projectile/water_projectile_spritesheet.png",
+      "sheetSize": [1536, 128],
+      "frames": [
+        {
+          "file": "vfx/water/projectile/water_projectile_01.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [21, 35, 235, 93],
+          "visibleBounds": [23, 37, 233, 91],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/projectile/water_projectile_02.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [22, 36, 235, 94],
+          "visibleBounds": [24, 37, 233, 92],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/projectile/water_projectile_03.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [21, 35, 235, 93],
+          "visibleBounds": [23, 36, 233, 91],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/projectile/water_projectile_04.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [21, 34, 235, 93],
+          "visibleBounds": [23, 36, 233, 91],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/projectile/water_projectile_05.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [21, 34, 235, 93],
+          "visibleBounds": [23, 36, 233, 91],
+          "matchesSheet": true
+        },
+        {
+          "file": "vfx/water/projectile/water_projectile_06.png",
+          "size": [256, 128],
+          "alphaRange": [0, 255],
+          "bounds": [21, 36, 235, 93],
+          "visibleBounds": [23, 36, 233, 91],
+          "matchesSheet": true
+        }
+      ],
+      "layout": "horizontal, one row, zero margin/spacing",
+      "sha256": "1af54befe3ab30e7b5ec945741ed8a0f60336ee0a8ed513e9bae01d7b1fb7964",
+      "kind": "effect",
+      "recommendedFps": 12,
+      "playback": "loop",
+      "fullyTransparentFrames": []
+    }
+  ],
+  "filesSha256": {
+    "vfx/water/projectile/water_projectile_spritesheet.png": "1af54befe3ab30e7b5ec945741ed8a0f60336ee0a8ed513e9bae01d7b1fb7964",
+    "vfx/water/projectile/water_projectile_03.png": "32923481a945738f5ddbf9105885f50a0523ff3e54bcb5f570091d233e1404e5",
+    "vfx/water/projectile/water_projectile_02.png": "1d268643129a7666e4c43cf83d2c0917908e1d06d0f72ddc6743b331166075c6",
+    "vfx/water/projectile/water_projectile_01.png": "69b9200fb038fd4f294f995d11ac2917b4017e8224bf64c03a53b2e11c097f55",
+    "vfx/water/projectile/water_projectile_05.png": "783a35fe63956b8a735c4e0136ea6f3f22670b1f71134c4ca0e28850b448eadb",
+    "vfx/water/projectile/water_projectile_04.png": "50d330b9e9475040e0533df8554a9cb37cce364e6410a87c476cb2dc6fbab72a",
+    "vfx/water/projectile/water_projectile_06.png": "80fa4fe6b469a67fd37bc91630921c3bf1d016460e8b493e7848569745c055e2",
+    "vfx/water/impact/water_impact_spritesheet.png": "fff2277b7712d61210e8189f8391218cc4d4e7987f9430f81989fbb66c8fc637",
+    "vfx/water/impact/water_impact_03.png": "69ad1b85f857859c90fa28192a88d3e9944eed7e5ae3b88e6fce64be5cd1bb37",
+    "vfx/water/impact/water_impact_02.png": "61ffe7b957526f57eebc7cc869d24297819aee9ead6aff133f3dcf188df3585d",
+    "vfx/water/impact/water_impact_01.png": "b13ef3f509d3eecff9ef35bb57492b0c36f74899c8a0becaeffc46c540269a64",
+    "vfx/water/impact/water_impact_05.png": "a26608fc84c41fab762a33ef2c231c7a7e06101b201e99af3259f55086d67b9b",
+    "vfx/water/impact/water_impact_04.png": "4b596ba29b21fa8bd038b764caab246f70fbc0e2fda1533d19cdaabedc9a3a9e",
+    "vfx/water/impact/water_impact_06.png": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4",
+    "vfx/fire/burning_loop/fire_burning_loop_spritesheet.png": "29a406179804ff982170e6f3a08ecb8ad39192e052831a3c5891444e5b7fd2a4",
+    "vfx/fire/burning_loop/fire_burning_loop_06.png": "5683ff9547b9f77ecbcc71fe1068c2c0c4209b6259874556d7e4870880cf95d3",
+    "vfx/fire/burning_loop/fire_burning_loop_05.png": "11c73752bafb1526cf3f6f833e64695020fc6ac674d9e361ed122912e593853f",
+    "vfx/fire/burning_loop/fire_burning_loop_04.png": "0e463ca4b8b7ae1d03c4330f4ffb3016a628664ba83d5eaaf1e8681f52e114ff",
+    "vfx/fire/burning_loop/fire_burning_loop_01.png": "7442006e5c791d60d42032c0b2cc71821c4838cf9b2bf0015c68930b947be564",
+    "vfx/fire/burning_loop/fire_burning_loop_03.png": "d4f72b2c749caf89cc80021f52609d446f95402d5f168301767d3ee9f512b1c1",
+    "vfx/fire/burning_loop/fire_burning_loop_02.png": "3c6569e798c240071469ea92690b602626453b2ddf65369c3b0a464fe2d16542",
+    "vfx/fire/projectile/fire_projectile_02.png": "dfcc12035ca1abfb3472f5cd9804467fbfc56c406f73218b4d3a5ee457d393db",
+    "vfx/fire/projectile/fire_projectile_03.png": "aff7e6a81c1b07a6cdfddbcbafb5532515e3dfed826db2bf1b9a6cae638cdada",
+    "vfx/fire/projectile/fire_projectile_01.png": "823045cbc202e47940834e1660808cfa5093ccd863672a5a619b7140937c9f4f",
+    "vfx/fire/projectile/fire_projectile_04.png": "fe9d6fa477923549a593dddcbd9b4164367789a804c8cc33d0edb945892b3631",
+    "vfx/fire/projectile/fire_projectile_05.png": "9efea66d39d4eb8253e79aec9285d6dbaf2f15a70a312533424ab9df1467fcc3",
+    "vfx/fire/projectile/fire_projectile_06.png": "8c3cb01498695b2a64ffeacde1cbb92ea3e7abe7e75e7054770da07f5c56bb1e",
+    "vfx/fire/projectile/fire_projectile_spritesheet.png": "3865b81255262d276352efbb3794c020e54905e0c39524e9ca08e9a61586e298",
+    "vfx/fire/impact/fire_impact_02.png": "dd88fa3cde641d734de965d26adbbf462ffc04447868a0a0c4235c3fe180ae28",
+    "vfx/fire/impact/fire_impact_03.png": "44156d37e19abf2fd7a0ad7ceaf21ba1c750e7385fbf77fd4415ac196673d90d",
+    "vfx/fire/impact/fire_impact_01.png": "661a2e0d6013fc73c041cedbbb72a8f04473a4fa0d49c61f651d5f143a80b445",
+    "vfx/fire/impact/fire_impact_04.png": "bf3e6f6055621ff7627e36f1ae9f4e7cd95e2432c41caae540caed166bfb7f79",
+    "vfx/fire/impact/fire_impact_05.png": "82d2508fbe91df47c40ea9bca8b883938e9f25d3d043911ccd088db5d89f2673",
+    "vfx/fire/impact/fire_impact_07.png": "26f34717cf9e71a35a113fffc0d1057312d20db23b7f481a23446135cc401b9f",
+    "vfx/fire/impact/fire_impact_spritesheet.png": "a17441136b02def881fd1731c88cac5e5dd8c77080b65f668e16cf8708358c21",
+    "vfx/fire/impact/fire_impact_06.png": "61c73e8cae538e80da2c9ca0ee816c530f158bd4fee515a5c79edd301957b7f5",
+    "vfx/fire/impact/fire_impact_08.png": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4",
+    "vfx/fire/double_jump/fire_double_jump_vfx_01.png": "58f0b14a8271475304281d6b8ffe41effb7aec994e9afbe56be3f98be8c07038",
+    "vfx/fire/double_jump/fire_double_jump_vfx_03.png": "3ff25939a391a107020ac177a92ee4bb4c87c154f5cd12ad99629d7a903fd31c",
+    "vfx/fire/double_jump/fire_double_jump_vfx_02.png": "b375938520e3f4dca4644b4c4a2339bc751346ab5def932dc20eaaf168287b66",
+    "vfx/fire/double_jump/fire_double_jump_vfx_06.png": "e332d8a3257c869a8711fdb31da46ce1732603e9a215b3a2c0de82fcfa115ffe",
+    "vfx/fire/double_jump/fire_double_jump_vfx_05.png": "b899f5009d53c5f62b1924479872e7bac10529d0c2dd22f9223d2fc0192584b9",
+    "vfx/fire/double_jump/fire_double_jump_vfx_04.png": "ba0e2da17cfd3db15da3cd8533d953d8622de0ae6f42aba456e4356548275934",
+    "vfx/fire/double_jump/fire_double_jump_vfx_spritesheet.png": "ed7fab662fcb2c779ec773fc0935462ba879aba332af8bea7c21568bf5ca4a07",
+    "vfx/earth/land_impact/earth_land_impact_02.png": "e3a6d6285761d3bddb237352788c5f983ae6d810a7ef9f5ccff28b87ca618134",
+    "vfx/earth/land_impact/earth_land_impact_03.png": "d502376a45e6d57f9fda97d1e2e14b95cda9dd06e592730b1c3c257e31e13c77",
+    "vfx/earth/land_impact/earth_land_impact_01.png": "cc17a15559d0b5652f3c401502ad3c171049249b4c6d4576d9c8cc5a00d99bf5",
+    "vfx/earth/land_impact/earth_land_impact_04.png": "8a33a63a591125b95a4ed9a52286ae0c9a132052e4823e67a5d1956c6e4ee71d",
+    "vfx/earth/land_impact/earth_land_impact_spritesheet.png": "c69fffd82ac815bc39469b46bb151cfc33b97e8d0ddcb816795e8b4ed0e2a029",
+    "vfx/earth/land_impact/earth_land_impact_05.png": "183d9c061bbf247de5e1190f2010c51eb512b6e62755a658d59e0361d42e4f63",
+    "vfx/earth/land_impact/earth_land_impact_06.png": "b00346627df1ecc64870541bb6d53b3b077bb56ff76261cf035eb564dfa6004e",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_03.png": "d502376a45e6d57f9fda97d1e2e14b95cda9dd06e592730b1c3c257e31e13c77",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_02.png": "e3a6d6285761d3bddb237352788c5f983ae6d810a7ef9f5ccff28b87ca618134",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_01.png": "cc17a15559d0b5652f3c401502ad3c171049249b4c6d4576d9c8cc5a00d99bf5",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_05.png": "183d9c061bbf247de5e1190f2010c51eb512b6e62755a658d59e0361d42e4f63",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_04.png": "8a33a63a591125b95a4ed9a52286ae0c9a132052e4823e67a5d1956c6e4ee71d",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_06.png": "b00346627df1ecc64870541bb6d53b3b077bb56ff76261cf035eb564dfa6004e",
+    "vfx/earth/landing_impact/earth_landing_impact_vfx_spritesheet.png": "c69fffd82ac815bc39469b46bb151cfc33b97e8d0ddcb816795e8b4ed0e2a029",
+    "vfx/earth/smash_impact/earth_smash_impact_08.png": "33ee22458c347f6efd343ddf977a61bc596787a00ded8090fed46fea1551ecf4",
+    "vfx/earth/smash_impact/earth_smash_impact_spritesheet.png": "2da5e357ebffaf030ffef3517ef90423b8822df775d7f8e8bd620d0610646a67",
+    "vfx/earth/smash_impact/earth_smash_impact_04.png": "8c87c6984e879163ea4eff9a67fc8d1d7bc29a160aef9555f92b3cb85428e69a",
+    "vfx/earth/smash_impact/earth_smash_impact_05.png": "ba04fee4482dd25b8fbc973dd346b240abb6ad93f146d2ed1f46a679268cfa2a",
+    "vfx/earth/smash_impact/earth_smash_impact_07.png": "6a341a3dadb1d584fdcbaa740eba259949020091d6b3e8f1e47b85874c128387",
+    "vfx/earth/smash_impact/earth_smash_impact_06.png": "7ff2676f87dc8b717d6fb9641e6318258e67ee29ac0d41e689dc720718a57cd5",
+    "vfx/earth/smash_impact/earth_smash_impact_02.png": "cf56e982ffb03628a39ba317f3c1f0b91bf7b161d118702e3321a862acdcbd90",
+    "vfx/earth/smash_impact/earth_smash_impact_03.png": "34329f896e43f4cd662f565c91fc442e4bc65b7c4733f8a012357f77d83e8683",
+    "vfx/earth/smash_impact/earth_smash_impact_01.png": "b209f26ae07999127d932421342b0401a4d360f7a6fb30dcaaa06671d167e840",
+    "characters/water/land/water_land_03.png": "0b45e2e8f2e4661ea69085f46fef8b65122eae767dc4ad65d4db6d6de2c23c6e",
+    "characters/water/land/water_land_02.png": "bfd4da72b7baaca4aeeda05db0b926b50c37a858f720613810a8bd686d814354",
+    "characters/water/land/water_land_01.png": "2d3a15f9366c5218605452b7511dd8e11804b32b2a3318284a43acef5a5a3482",
+    "characters/water/land/water_land_05.png": "795b626a23e8cce839e13d54454708be169bb94051ff2b4268f4ddaa1465e737",
+    "characters/water/land/water_land_04.png": "5fad806343d83ed6addb8159cad375d07efd3bb0ee3c8290f50b222d5bf9c12c",
+    "characters/water/land/water_land_spritesheet.png": "19aadc1f5d2d21b654f80e74248c0845f214ae463ffa6f83fe686673c4cbc774",
+    "characters/water/idle/water_idle_spritesheet.png": "f251261ad97e2ce755399b4ebfba7db0b5ccb01ac7ed05aab0595e0dbf496cf4",
+    "characters/water/idle/water_idle_08.png": "6466ea0315c2f9506b95c6d32446d89052b69ed08ed9ce0844ffc33e13f342b0",
+    "characters/water/idle/water_idle_02.png": "53ef352c204bdce2df08c0fc402e7ce1eeb65b39ee00a5f5842dac4c401946cd",
+    "characters/water/idle/water_idle_03.png": "47ee3a6e90c2d4bd897af936c8faddbb6b8e978148c6351193e82bc876034376",
+    "characters/water/idle/water_idle_01.png": "795b626a23e8cce839e13d54454708be169bb94051ff2b4268f4ddaa1465e737",
+    "characters/water/idle/water_idle_04.png": "254c954044601b393eb79473d1268ea05e22ee36a7d2f4879bd73d75506df040",
+    "characters/water/idle/water_idle_05.png": "2327334b83e53a788ad0153e2639489693294709ae581aba7cf53dfd4844e258",
+    "characters/water/idle/water_idle_07.png": "fc1abc6940164d70de67954f4654c1c2867f447e91c1061ddea78c8ef5b6deb3",
+    "characters/water/idle/water_idle_06.png": "3d1270dc9148879645d8e13a1c3b44b0d6e97e231a3c1c1d6d2fd415e3201ed4",
+    "characters/water/attack/water_attack_spritesheet.png": "fb86692ddb8df7b8a8c21883982109f9c5fc41cbe80fc3d341aaddd6e5eab419",
+    "characters/water/attack/water_attack_06.png": "795b626a23e8cce839e13d54454708be169bb94051ff2b4268f4ddaa1465e737",
+    "characters/water/attack/water_attack_05.png": "0ff7c5775d29ad8c1bd6478725ff5dca1bbb5cb77abbadaca7a876cfae50e43e",
+    "characters/water/attack/water_attack_04.png": "a036e11d2120214386868fa6f95a2634fba166c671a03acc20011245d2516213",
+    "characters/water/attack/water_attack_01.png": "41aec489833971f2898aa377bb59ac5f473b4c59620a1f0b060b290501e1af72",
+    "characters/water/attack/water_attack_03.png": "e97d1f268eb3d94980b5c0d9b18f7382529241e7810769d4c40d40f27d0aefca",
+    "characters/water/attack/water_attack_02.png": "728c0f9af298278b836c4b985785b9c2612e986caf1e2e6de67d48cba6ee2dc1",
+    "characters/water/jump/water_jump_01.png": "396b60748489a571223847c8ee8497af2b5d46307a78bb2065634c770787be6a",
+    "characters/water/jump/water_jump_02.png": "51f9dc063d208a9cfa381e58a8d85cc08526f78670e204989b2a346d4a17cc68",
+    "characters/water/jump/water_jump_03.png": "efbe66c909aa8559bb7eb8417d73f4ec7067ba845d2337b1e8e9ef30794b30a5",
+    "characters/water/jump/water_jump_04.png": "fd720bf9459e80e744d17cc8d064ca44b1180df44da33b26ac040445f30e6473",
+    "characters/water/jump/water_jump_05.png": "194ccac9873a8bf19fb5b02307428c431ec2eac40c547ee660bcc2e094b5a08b",
+    "characters/water/jump/water_jump_spritesheet.png": "868e52ecc581260d3f8ca9cc9bd6ab17d2bdac935f9026a170df970d6977df98",
+    "characters/water/fall/water_fall_04.png": "f9654f8ef126e59356f129a4a64e8335510a84ed79ad01e1057a7ddaff473434",
+    "characters/water/fall/water_fall_01.png": "aa2393c6c46de06848137400c5e410c4c52f0aa704701c1a92826248982dedad",
+    "characters/water/fall/water_fall_03.png": "a8a5617095cfd237d0f09a0b7077b6c62aa5905caadaab19b9b251b1aebef8dd",
+    "characters/water/fall/water_fall_02.png": "f71ceebeed741602b4664f7f3e306756ac505ad7caa06f44bbe4a05d2f20ab06",
+    "characters/water/fall/water_fall_spritesheet.png": "18080f1cc023c2c1e2baf69804271af3b7edb7793caa12c6dca56a214edf7704",
+    "characters/water/run/water_run_01.png": "0fc1a012503c677aed5f93eb31794ed52e6265cd3599cff4694c6f27e504e1dd",
+    "characters/water/run/water_run_spritesheet.png": "0e13b70d24793ed4cc085ec17ba49b56a9576c8d2375997bfa5570dea71eb101",
+    "characters/water/run/water_run_03.png": "3b5a32852e4c6a6d86defd6b1e03d819ba22bb13fae39f0c0f95ab527a97d259",
+    "characters/water/run/water_run_02.png": "2da14d90882662102d59b6911962ae6a1280a0b5f3ac060b37503d1a38fdec61",
+    "characters/water/run/water_run_06.png": "4066227316d3041f04bacc16175f0d5b9f78825a58a2fb3796e7e7d369e76ca7",
+    "characters/water/run/water_run_07.png": "3d463ddba086344058b0948775dcd4a996a6a4b9b8e46b94fd36cadecb284de9",
+    "characters/water/run/water_run_05.png": "02cb2a4d07c3dcbc32a564caa0c7058d940b5a5ed6b5ee32d644b13671562c50",
+    "characters/water/run/water_run_04.png": "2ad64f60878d01f59fe1bb19f6932d80af2397457540b08bc2bcbb93b53d67d5",
+    "characters/water/run/water_run_08.png": "2c420109d2d0da75dd5fbc77cdf6bebdc627be80da80d512d5508de7f4415d25",
+    "characters/air/land/air_land_spritesheet.png": "49d90228360555250c121aabec902cb93be5e68ae0efa7b75d7d12585aedfbf7",
+    "characters/air/land/air_land_02.png": "2078182eb0c36242c9bbc2f280f9e159aaf7988f79c9ba9b7beaabdab3f057a1",
+    "characters/air/land/air_land_03.png": "17536cafbe19ece356b9c5135349c2c4d8598a7c208410da8d265cad01bf5df5",
+    "characters/air/land/air_land_01.png": "eb3db23b02f5cdaadf9e69d431f160d9c0c3e70379fb30c249a6e8446eb37578",
+    "characters/air/land/air_land_04.png": "1765cf195e35bac3c35581b13bc0e0aaea444aea0a9fc87fe379e0c065b0d7eb",
+    "characters/air/land/air_land_05.png": "41df574092e5f43b5edc4719a617ba58af1d2b55eb3788ff8f236dcc9f3ad65a",
+    "characters/air/idle/air_idle_03.png": "8f00f920bc7711cc2ba9d7a5c40ca3ef449776aa4918fa2a78e92bdaf1e692d5",
+    "characters/air/idle/air_idle_02.png": "23fc3f8b4fa2a512bfdf727bc840284cd199895006cfefce6a646b91e49be7fb",
+    "characters/air/idle/air_idle_01.png": "41df574092e5f43b5edc4719a617ba58af1d2b55eb3788ff8f236dcc9f3ad65a",
+    "characters/air/idle/air_idle_05.png": "b58798ab11456386931951c2a24b6626e9c5240fa8410436c32390d9087cc423",
+    "characters/air/idle/air_idle_04.png": "08054419dbf0820e5384c639ca10e4425f783792ecafc6c295a88d657ce45757",
+    "characters/air/idle/air_idle_06.png": "9ce3dd35fb3ffa0ad6939b35cad69d7c92a19a6bcb482b7794f39518379198e3",
+    "characters/air/idle/air_idle_07.png": "29b61844852ea5176815f9854cc814f6c5920e15532607394fd4ca5c44189e63",
+    "characters/air/idle/air_idle_spritesheet.png": "e8aa2afc3cfde2336074fe0206b378e66874c27c5cb86fbc1535324d06c90f53",
+    "characters/air/idle/air_idle_08.png": "a7cf39c9c54d06f143ca4c1f5567be31b3d347a86dd1faf4f2b380a67fb02296",
+    "characters/air/glide_loop/air_glide_loop_spritesheet.png": "9e55d44a3dacdcb1d0251d6b0163436961c53b48219127a9f22d54fbffac37a1",
+    "characters/air/glide_loop/air_glide_loop_01.png": "264cfef5c193180cc4fc034b55e7338233d04770f59377270eb981ab0e642022",
+    "characters/air/glide_loop/air_glide_loop_02.png": "cf6bcf073f9248e8aa98d5491ee2aef85ef60aa11baa86b185185e21b1d9270d",
+    "characters/air/glide_loop/air_glide_loop_03.png": "836104247321d3889efe9306e19da8194a0f8fc1bc805fbbc25c2513c6599bcb",
+    "characters/air/glide_loop/air_glide_loop_06.png": "940154d63278368524c06e6a1e41cb80f16e850b794dfecf16b6e4f77b45f601",
+    "characters/air/glide_loop/air_glide_loop_04.png": "0a5290fc0da1732682c2445840d9b383d4aa23502a9848e9237aa00500f329ab",
+    "characters/air/glide_loop/air_glide_loop_05.png": "f6d14b57e79c7eaed798ffced2bb8213fae8e14e59654355d39b4f6a4c400006",
+    "characters/air/glide_start/air_glide_start_04.png": "264cfef5c193180cc4fc034b55e7338233d04770f59377270eb981ab0e642022",
+    "characters/air/glide_start/air_glide_start_02.png": "448af610045114d30b503c5b029b836c20a4c75eb1cc9e5f532dbaa63424ef93",
+    "characters/air/glide_start/air_glide_start_03.png": "300e1d289a6705c2b3f6c2c165189da5bfd7a38f4c3bf564acb415e9ec1c6eb2",
+    "characters/air/glide_start/air_glide_start_01.png": "dcb1ace54c5f2d37d3231b674e8ba002a9a6c7c4bdd622f81ff09b836906cc19",
+    "characters/air/glide_start/air_glide_start_spritesheet.png": "5b437f2c699ac774e01ac3c65b1e04ed3726016cd6733def5a6f9dfde2be0edd",
+    "characters/air/jump/air_jump_spritesheet.png": "f97ee6ab14aa83df70b2cc07a1387f709682d9ca10d3162ac6570fff9e61ba9e",
+    "characters/air/jump/air_jump_01.png": "4d4267b9bc92b6d9cfa64e73e6247edc1f9befe1183155107fc2711c68cf94ac",
+    "characters/air/jump/air_jump_03.png": "29c1e042ac4dc617668fad1370bb05c8f7afa862aaa6001838dc651512fa5450",
+    "characters/air/jump/air_jump_02.png": "d564c9b81a90b9714573dde664fe106506d5fadc5e9c26b5b897b7f87afa9ebe",
+    "characters/air/jump/air_jump_05.png": "e200fbba5dc79deb1cd64ee4dab58c165c8e90ae7a200173ad8d9f07ed7058f5",
+    "characters/air/jump/air_jump_04.png": "3039f9ee05ae914b163f389f909f7ac25f00cf64c674cfb3cd4e649e192364c4",
+    "characters/air/fall/air_fall_spritesheet.png": "a73c48b4bbf22b93a7527c38f0013398f5c4a4af5d1db62d0c24816bc040f739",
+    "characters/air/fall/air_fall_04.png": "bd6a40a9e0cd1f54ab6247c1fa54c8e393eb22a24a2354afcdb3ac723e246572",
+    "characters/air/fall/air_fall_01.png": "59d0beea1797b394fbf710072b45bf2737c08bccf8626b4ba8a60930ec33f069",
+    "characters/air/fall/air_fall_02.png": "b5ad4a3c58a57b0ca2f586df0908ef5ed8861ae9f67cc2a06e5729de4783c843",
+    "characters/air/fall/air_fall_03.png": "21ebf6525a4f7c2067e19925a6e0ff09038a2bdd180750e20970712081242b79",
+    "characters/air/run/air_run_spritesheet.png": "df75858485767a88a593ead4b03541a73368ff5c134583be6e37fb6641193798",
+    "characters/air/run/air_run_08.png": "d05c009aec0f27b6fa4b19ccdde98ef0794b21de1ca2515954d602ea7148da1d",
+    "characters/air/run/air_run_01.png": "8ca9dc80a76909966b8d9b08e244c538227139c51a7c2beeeb97bff0b05e1a40",
+    "characters/air/run/air_run_02.png": "acb3739884948b10efdf2b1c7bf7c8c0abfa7a543e2db8560d45fd9666f1a26e",
+    "characters/air/run/air_run_03.png": "4e1fdb1dff5f0fbeae8b049716e94d20668864bade0bcd66aa390ec960d6f081",
+    "characters/air/run/air_run_07.png": "829f32270d2c63d8d2f32b7ae5bfd42f1677c4db8c152a766f5a50da6dfaf4a6",
+    "characters/air/run/air_run_06.png": "2c8ae20417ee580c3276b7f1ef1f9c9883025ac7eb36a384790de24cea1e7cb2",
+    "characters/air/run/air_run_04.png": "2d89de935311da89a512f0983512dea71515c457807467f789987893070f29bf",
+    "characters/air/run/air_run_05.png": "f0812f48f141d6f2485c183ac8662a85cca7fb23eb83676be0f575d18657e32b",
+    "characters/air/glide_vfx/air_glide_wind_vfx_07.png": "d1d828e9173c0adb4b0bcfcf965e088bbe10aa90b5baba0174456f7c7dd958e9",
+    "characters/air/glide_vfx/air_glide_wind_vfx_06.png": "66b9c0dec9d7e89a473c8f435a2a15236e107a7837b5cde3265e71d12a410a1f",
+    "characters/air/glide_vfx/air_glide_wind_vfx_04.png": "ded3b46539485edac762e8244901fec557fe16106b9aa9bda3b50d0f8bb9a48c",
+    "characters/air/glide_vfx/air_glide_wind_vfx_05.png": "80f9dfe39e08b6641e1e0177b8e8775d804175a1bba4320b7bc47f52ab2ee83b",
+    "characters/air/glide_vfx/air_glide_wind_vfx_01.png": "03ffac3747f266d6bdf56a0da2bc06ba05e49c2e2b085542ec7638bf170855b6",
+    "characters/air/glide_vfx/air_glide_wind_vfx_02.png": "d457bc82ec3d83cd467e23c4700a61585329f6311ac18f2036638363157ab57f",
+    "characters/air/glide_vfx/air_glide_wind_vfx_03.png": "0d5e9bc3774c1e9af10a55cddb58ec4e5c5963e422ceb47255ca370b71b33f48",
+    "characters/air/glide_vfx/air_glide_wind_vfx_08.png": "fdee317edadbb7490bc9c88b77d4bc6bd32162971e613008f326ad2669148abb",
+    "characters/air/glide_vfx/air_glide_wind_vfx_spritesheet.png": "4ef77ca232835ceaee616a503fcac84d2b5a37fb91ba5d0238b04e9ba4125140",
+    "characters/fire/land/fire_land_05.png": "f5f157f1506025478d44880605e683340720c37e4b1a2f3a9d962932de34b1d4",
+    "characters/fire/land/fire_land_04.png": "3e914e60bda8ee7fd4c0d3c299079261c95a2ea8775843dbe2a30c28a465d89a",
+    "characters/fire/land/fire_land_03.png": "72e2f855e28f020d241d33b605d375c6b0cf7212813508006609be4a6cdd60ce",
+    "characters/fire/land/fire_land_02.png": "562494069e110725802c553c063fe3ab2f23d9758b4c86986a4ba61339c837e3",
+    "characters/fire/land/fire_land_01.png": "29de357037e18e1026782d2c2e8b7a4dfb282c125aad5961d02f25218f5d0ab6",
+    "characters/fire/land/fire_land_spritesheet.png": "4a97f606e47205c1e6fdb60fff5117583bd68e87f9a8e5c7eb2daa22a20781c1",
+    "characters/fire/idle/fire_idle_spritesheet.png": "212a7b7f1c2894fd8c8d7f1af9e25929acea55329c5e717fd415995ed1325de2",
+    "characters/fire/idle/fire_idle_08.png": "ea60dd0f08f4445e52fa41e27438803a85f1e852e4e09c5d31939f50be3b27a9",
+    "characters/fire/idle/fire_idle_04.png": "fd407c5c8e0c588c373c30ce7563c130728b7f1f0e351123e33a0c87fe4a63fb",
+    "characters/fire/idle/fire_idle_05.png": "2ecc8e0616a1cc3dcbcedd2c252598b903a031acce849d335b52943313317dae",
+    "characters/fire/idle/fire_idle_07.png": "901895bc102533a9ef12452e5d3f9062dbdd53215c2806ecba98d35825606ba1",
+    "characters/fire/idle/fire_idle_06.png": "5e5e8c535581f3ed885cc299a45cf829aaba62436b702df0cf44eee26a7c21e6",
+    "characters/fire/idle/fire_idle_02.png": "3d872a315ee9f1baeabb3a6cee131f81e7056d04c0c0ca7ee9a5e9a34500c8de",
+    "characters/fire/idle/fire_idle_03.png": "f6490dae3cefea28781ea3988effcd4b7cf165942853e562983e5752e5459cca",
+    "characters/fire/idle/fire_idle_01.png": "f5f157f1506025478d44880605e683340720c37e4b1a2f3a9d962932de34b1d4",
+    "characters/fire/attack/fire_attack_06.png": "f5f157f1506025478d44880605e683340720c37e4b1a2f3a9d962932de34b1d4",
+    "characters/fire/attack/fire_attack_spritesheet.png": "cd9556a13d833ff3fdb40f072fcbf07d5a51e1d286932d0ebd7af4cca7921f71",
+    "characters/fire/attack/fire_attack_04.png": "883d1fa911cb44e8d91614d536cc2fe2d26bc8365e3190956365d47a9bc23a4d",
+    "characters/fire/attack/fire_attack_05.png": "88facc502a3beedc7f3ba993e8ec11ac13b2e0f0f4e2277acc86413c7eb00981",
+    "characters/fire/attack/fire_attack_01.png": "1eabc2eccbaa33f01831233a5f536d389c9055df3fd8f3ed70d16146606f603a",
+    "characters/fire/attack/fire_attack_02.png": "480897b6f68ae48f0133157745e094509dc31dc05a71a29383643517f78f66ea",
+    "characters/fire/attack/fire_attack_03.png": "e4a3f7bb465546c8756bb61169f4f16cc465f6fde38478eebf628b9ad9c7e1bd",
+    "characters/fire/jump/fire_jump_04.png": "fef95aa892286d5d6cafd69eabd2060d271e6f0eebd4423f1fd53f8f62ce1940",
+    "characters/fire/jump/fire_jump_05.png": "fc3819326cbc25c76f9055b66a460895e90a080901050259ec3c0ae7b41c8556",
+    "characters/fire/jump/fire_jump_01.png": "a4a00d6c484d738ad0f73e89f1201582357fd206c74e469c083432ce16bdf1e8",
+    "characters/fire/jump/fire_jump_02.png": "4667d0c90690b7bbf9a2921af94fe2a1835dbfa45423cd98bf388ef98be77909",
+    "characters/fire/jump/fire_jump_03.png": "19b080524d454152d1a607c0d25ea7da5a86aa072ca763d932432fbd803b06f0",
+    "characters/fire/jump/fire_jump_spritesheet.png": "4956b3c597806c29a636fd358258b1f815fdf315644de72256ef5e7fc821b5bb",
+    "characters/fire/fall/fire_fall_01.png": "b16b43079da0ef8578932ef2934118743dfc20bddfc83cd9bcda2ed0a0fde94a",
+    "characters/fire/fall/fire_fall_03.png": "7f3fcefdaeb4434acc408cb9b49b2d988001c27eb54108a4938a6d5e2f65fed4",
+    "characters/fire/fall/fire_fall_02.png": "e01c0a7c8283396ee6d11663ba0c006b5866e633c79aa4dc46a0f54312b5daaa",
+    "characters/fire/fall/fire_fall_04.png": "76a6b775e14da180e40b7047153674421627367863dd497d13b3d458d90d8b5c",
+    "characters/fire/fall/fire_fall_spritesheet.png": "94f244e368883555e071aa551d25297ca87befd501c45397a19ad99c585eb57b",
+    "characters/fire/run/fire_run_01.png": "22a6261ac55b8bd270ce5fa61bba26f0befd63370bc325a90a2b5fc6623d4fab",
+    "characters/fire/run/fire_run_03.png": "e1d840e6a6f465703ce660db57844b6df5c539ece08be06515916b5f1fee95a6",
+    "characters/fire/run/fire_run_02.png": "4bda0a0948c5f93b34474bd09ff16dd2e9a5943174359bed7855202b6fcc8fda",
+    "characters/fire/run/fire_run_06.png": "59990349a86b09a585190a000a1a048349c33cda69f6328ea579257e2462e08e",
+    "characters/fire/run/fire_run_07.png": "24074efaaebebd65c296432c1ed6980cb7bd50a8c64f793137044aedb6c2c700",
+    "characters/fire/run/fire_run_05.png": "e47d99b87cd80bf521c4d3540260cac6d2f24c74edfc92349241d4b77b685218",
+    "characters/fire/run/fire_run_04.png": "764c5013bb3a89268b49e7bb8774f938e340e64255c1e7390ee6b6e8aa755637",
+    "characters/fire/run/fire_run_08.png": "25496887e124c5fdb0a8c2c55e0b50a9b325fd05c8f236226f9058f20232dc8e",
+    "characters/fire/run/fire_run_spritesheet.png": "9ecb55c06e6cd74d9e5da1370a970e9e41f9604a0f3fe94e45f344668bf0d3cb",
+    "characters/fire/double_jump/fire_double_jump_spritesheet.png": "fdbd8d6f848ce64bbd1a95eb09cfc0a13f7fd2736d743def75e3b3d1d67ada8b",
+    "characters/fire/double_jump/fire_double_jump_01.png": "72a0af4a992d72c84e459a7f94d3275f42efcfa60e6eb630e903b873677c9e4a",
+    "characters/fire/double_jump/fire_double_jump_03.png": "a31f28906e40d9f23e5ccee223dff0e0a4a2884232e47b3ea8d710a6ed8c51eb",
+    "characters/fire/double_jump/fire_double_jump_02.png": "4bc644c5d32cae69e8caa9e53654eecd1a29c2459e08ae413493dca86d5dc97d",
+    "characters/fire/double_jump/fire_double_jump_05.png": "25ac2eb398867ee819f1482130d5f807565643ea02af01c83bc207a78fac10e5",
+    "characters/fire/double_jump/fire_double_jump_04.png": "fdcfd9a6ebfbb429f33226200dce575abc781696d27c231ed9c2a0518e2141f6",
+    "characters/earth/land/earth_land_04.png": "7a88263609535e23c6edb85f556266df4f337c87e580b78a4ced685da66ff139",
+    "characters/earth/land/earth_land_05.png": "c454e6fad997dd01a94a6fb52c5e272aa8db3b0c87427dad6aa516be496e3837",
+    "characters/earth/land/earth_land_01.png": "e1c153cff784f0dc3dfa6d18cfcbbcdb0f82016412de6e59c0479a72f89d1821",
+    "characters/earth/land/earth_land_02.png": "5806b1edf7b0ed08566c2c5a666854187b3433985bdd1dde1263345e96fc6a72",
+    "characters/earth/land/earth_land_03.png": "a66db1e2a3b3eb368675d000a47dcc84717f2503059eb42b694ffc0b75b39fde",
+    "characters/earth/land/earth_land_spritesheet.png": "3a56a2265fc646ec9fa5bd933846d04cd7e8d2b5c5f132a66d718f655cd80c1f",
+    "characters/earth/idle/earth_idle_08.png": "daca315a032bdce14041b5995f613926e8048db6cda5a214318959fa8fa972fd",
+    "characters/earth/idle/earth_idle_06.png": "b278b383acfce30cf08c17b6119eb3e910f6bad9e873bb71ecbf3a995ecdbd6e",
+    "characters/earth/idle/earth_idle_07.png": "dc665464c5dbd0de90089d52c5841223481fd6632ecc45277680d016315bed91",
+    "characters/earth/idle/earth_idle_spritesheet.png": "9c38496a515113cee33c522ba45048d900547e27b970b72ea269a252dbde6ba5",
+    "characters/earth/idle/earth_idle_05.png": "cd9523bb82f7cce5fb155d0935cccb873005d2d169e1de6faa9156398d0a5c35",
+    "characters/earth/idle/earth_idle_04.png": "77f5450372fffb4eb163bb3e161c7d6f0d0ff55e23df005af64f09a5162a4023",
+    "characters/earth/idle/earth_idle_01.png": "c454e6fad997dd01a94a6fb52c5e272aa8db3b0c87427dad6aa516be496e3837",
+    "characters/earth/idle/earth_idle_03.png": "5575f112736dcc7bda4e3d5f23c3345516572f765a595c8868dcdada354817ec",
+    "characters/earth/idle/earth_idle_02.png": "aa8d3008a3863919dee26a8b11b9c4f5357ab2081e9f287cbdc7b7a31bf69041",
+    "characters/earth/push_start/earth_push_start_spritesheet.png": "47ed2459d072d3a6e4f7927092d7d405e6e4257500e758c3cf39a381a69c1118",
+    "characters/earth/push_start/earth_push_start_04.png": "55a2460c8b17180f202a0207a89b58b837c64786112cc81ef0b0202cf96fbd72",
+    "characters/earth/push_start/earth_push_start_03.png": "625a93b0e17ab1639bfd20e5ba6e0dd61dc7f07be485eba3c041780397b72d3b",
+    "characters/earth/push_start/earth_push_start_02.png": "4d2a4c5cf0c5cb61b2f2784c6a5d12259b5a10ab7825ee0840d2671ca83ab9fe",
+    "characters/earth/push_start/earth_push_start_01.png": "ddb0904448bff0f59e8f339bfa0a6e6e9aa780a98d0a5086dcb7e54e0a38b509",
+    "characters/earth/push_loop/earth_push_loop_01.png": "55a2460c8b17180f202a0207a89b58b837c64786112cc81ef0b0202cf96fbd72",
+    "characters/earth/push_loop/earth_push_loop_03.png": "249c816d6b1b132e308099516f1c3b7aa63cf92ef68670ff22778f26427c3a8f",
+    "characters/earth/push_loop/earth_push_loop_02.png": "f294fb46c422dde80c0b8a93668a82bc90c03c6e959247f00ebfe4a40759c72d",
+    "characters/earth/push_loop/earth_push_loop_06.png": "cc3dd652334135f9438a1db7b817303cba0091440463bc5795f9448111a205fd",
+    "characters/earth/push_loop/earth_push_loop_07.png": "82882595fd5c71eb0f5acd80feedc6285debda349d8727f490b4ddc490e4442d",
+    "characters/earth/push_loop/earth_push_loop_05.png": "70a990729ee217bceb566c8e85f5d8ef830cce47828cfed62a62a2465d754170",
+    "characters/earth/push_loop/earth_push_loop_04.png": "8e2cb7bdb2e4a201e33ff70c38f64b2113bc66d65a6cfd130ce4fb156739d950",
+    "characters/earth/push_loop/earth_push_loop_spritesheet.png": "5c7d6f34f1eb8725ee60c2ddee2ac921e7b4c28f2639bb6a2164afe378168470",
+    "characters/earth/push_loop/earth_push_loop_08.png": "e41293808182f7b9c98a37ea5f9f2d079bdc2021444da817a995203cb9b44941",
+    "characters/earth/jump/earth_jump_spritesheet.png": "bd3444dc6bc2623e14c82dbe795b0768aa832be527f492e1f4ad212bed58812b",
+    "characters/earth/jump/earth_jump_05.png": "27948259ddee04017a58faee53eba1c8da220950d376040755d77b53e8a83edc",
+    "characters/earth/jump/earth_jump_04.png": "1ed491ad3a9c4418686d48a50d24c468457fdfdcea2d55718dff49a33f166e2a",
+    "characters/earth/jump/earth_jump_03.png": "bd665720221ad2d71b447d6708849b22d007da162a9061b7a2bcbe1239d90378",
+    "characters/earth/jump/earth_jump_02.png": "54c8f414a2f067484d5375cc59ac7fba196b1cd6d5fa6f358b3ea7481664d1d7",
+    "characters/earth/jump/earth_jump_01.png": "d0c978aa1c2c37377d4a71b7d0e9a11a7e7b2d44eec9b1d9f27ec40013cd39f1",
+    "characters/earth/smash/earth_smash_01.png": "b8ab9e6b0201045f978eff754fc28ac7ec65c287518080f61b8b2d58f18469f6",
+    "characters/earth/smash/earth_smash_03.png": "427171714db8f90ce5f0806c5294fc4f03386c56d983342566a74db2e49b33da",
+    "characters/earth/smash/earth_smash_02.png": "ce36a1b665dd1ca247a38267c86360eabcb3057542ccedab5ed9e5f301976522",
+    "characters/earth/smash/earth_smash_06.png": "02b2682568e30042e5b74a72be0c93cf1dbfadcad2730948c5fcd8cb9fc2d788",
+    "characters/earth/smash/earth_smash_07.png": "5fd93bdf4e722dec9e11329efeddb0d14260bf06095d6eb8c9fdda1d4e6ff92a",
+    "characters/earth/smash/earth_smash_05.png": "c547148b271a729a95861acb412e50aa775688d1094ad3c8f5499e0f8f71ea5c",
+    "characters/earth/smash/earth_smash_04.png": "797fa0a635b322703702358ed8dbd8d6cd2eaaf30fd917a833072a8720cf45d3",
+    "characters/earth/smash/earth_smash_08.png": "c454e6fad997dd01a94a6fb52c5e272aa8db3b0c87427dad6aa516be496e3837",
+    "characters/earth/smash/earth_smash_spritesheet.png": "090f8f4d42412cc3af2d8dea2c4d0df121c013f6f836884f5bc4f86fd89a9983",
+    "characters/earth/fall/earth_fall_02.png": "831ad3746ab3a3a27b9435f4b0c869abc78be9839e2e9b3caaa3d80331e4a81e",
+    "characters/earth/fall/earth_fall_03.png": "951a608439347530cc1b55074fef355f1d656491408d961be0b82b6942b360e4",
+    "characters/earth/fall/earth_fall_spritesheet.png": "f866dda2e1fb271a5f9e1e1306d6f9a9f94eba253b248d946c7bbd0b6314ebb3",
+    "characters/earth/fall/earth_fall_01.png": "e6ab05472adaec5a7283075996bb66ac394d0f57d08617f26b855e45e4f4f655",
+    "characters/earth/fall/earth_fall_04.png": "6574d216e84947d582203f837fa65097cf3def1e46d7fed9a732335b257450ae",
+    "characters/earth/push_end/earth_push_end_spritesheet.png": "494f4bb892b7c8d6cde9f970324d9e1eae64460ed8e5b50bcaec81d8861b6757",
+    "characters/earth/push_end/earth_push_end_02.png": "0cd439fc3832652d1b30168e6a1ba038cd1d1bd9d02aa7fd10499d16a2ee44db",
+    "characters/earth/push_end/earth_push_end_03.png": "c454e6fad997dd01a94a6fb52c5e272aa8db3b0c87427dad6aa516be496e3837",
+    "characters/earth/push_end/earth_push_end_01.png": "cc6da45edfca36c1c15d6acc1894ffebf5e66bd7bcc32a8bb2efb8baf08c317b",
+    "characters/earth/run/earth_run_08.png": "7a371da70fe30b08a079e5866c9e463d7826a5aae5fa04faa7973aac627a78ef",
+    "characters/earth/run/earth_run_spritesheet.png": "b7c2737b8f9542b50f24e39549788104a1da4e0c41707551b4a0bcdea2856a73",
+    "characters/earth/run/earth_run_01.png": "1de0f3ce022fbb53d4c84bf1e8b1cae07fe7738b0922f3c26c21920d10a1e207",
+    "characters/earth/run/earth_run_03.png": "e051abc355231684cc23c0cb8993776184ab42c5e49d47243ca6328c6aedb844",
+    "characters/earth/run/earth_run_02.png": "71f607024f1730d692378781a93c89f6460003514b3c1fa58ab6a4cd969e6be0",
+    "characters/earth/run/earth_run_06.png": "fa4746c4be9870507ac2ec0811e885e0dc87ceaedd130f838b285d7f5d027297",
+    "characters/earth/run/earth_run_07.png": "df52c68f635551cb30934a193156cbcdac5377e9dc8d26ab9fd756c4715a263f",
+    "characters/earth/run/earth_run_05.png": "127a4ff720231c21ae337dec77f1ea4f00aaef10bed3afa1433442e59ae2c8b2",
+    "characters/earth/run/earth_run_04.png": "4a191251f89a2d9c6170c58523e6717497283347535dbc2f0462ed6b98847b52"
+  }
+}

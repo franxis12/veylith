@@ -1,0 +1,508 @@
+{
+  "id": "conveyors",
+  "label": "Cintas transportadoras",
+  "directory": "assets/objects/advanced/conveyors",
+  "components": [
+    {
+      "id": "conveyor_center_segment",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_center_segment.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "note": "Repeat every 256 px horizontally, top at y=80. Belt layer covers y=80..104.",
+      "tile": {
+        "axis": "x",
+        "stride": 256
+      }
+    },
+    {
+      "id": "conveyor_left_end_cap",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_left_end_cap.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        256,
+        80
+      ],
+      "origin": [
+        1,
+        0.3125
+      ],
+      "note": "Connect right canvas edge to center tile x=0; roller mount [67,145]."
+    },
+    {
+      "id": "conveyor_right_end_cap",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_right_end_cap.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "note": "Connect left canvas edge after last center tile; roller mount [184,148]."
+    },
+    {
+      "id": "conveyor_support",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_support.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        28
+      ],
+      "origin": [
+        0.5,
+        0.109375
+      ],
+      "note": "Support top attaches underneath rail at y=192."
+    },
+    {
+      "id": "conveyor_direction_right",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_direction_right.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "note": ""
+    },
+    {
+      "id": "conveyor_direction_left",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_direction_left.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "note": ""
+    },
+    {
+      "id": "conveyor_control_switch",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_control_switch.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        228
+      ],
+      "origin": [
+        0.5,
+        0.890625
+      ],
+      "note": ""
+    },
+    {
+      "id": "conveyor_belt_idle",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_belt_idle.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "note": "Separate tread layer. Repeat on a 256 px grid.",
+      "tile": {
+        "axis": "x",
+        "stride": 256
+      }
+    },
+    {
+      "id": "conveyor_roller_idle",
+      "path": "assets/objects/advanced/conveyors/static/conveyor_roller_idle.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "note": "Reusable hub for either end cap; mount at the local roller point listed on the end cap."
+    }
+  ],
+  "animations": [
+    {
+      "id": "conveyor_belt_moving_right",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_moving_right_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Belt advances right 8 px per frame.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_moving_right.gif",
+      "phasePixels": [
+        14,
+        22,
+        30,
+        38,
+        46,
+        54,
+        62,
+        70
+      ],
+      "companionAnimation": "conveyor_roller_moving_right"
+    },
+    {
+      "id": "conveyor_roller_moving_right",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_moving_right_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_moving_right. Reuse at both end-cap mounts.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_moving_right.gif",
+      "phasePixels": [
+        14,
+        22,
+        30,
+        38,
+        46,
+        54,
+        62,
+        70
+      ]
+    },
+    {
+      "id": "conveyor_belt_moving_left",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_moving_left_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Belt advances left 8 px per frame.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_moving_left.gif",
+      "phasePixels": [
+        -14,
+        -22,
+        -30,
+        -38,
+        -46,
+        -54,
+        -62,
+        -70
+      ],
+      "companionAnimation": "conveyor_roller_moving_left"
+    },
+    {
+      "id": "conveyor_roller_moving_left",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_moving_left_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_moving_left. Reuse at both end-cap mounts.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_moving_left.gif",
+      "phasePixels": [
+        -14,
+        -22,
+        -30,
+        -38,
+        -46,
+        -54,
+        -62,
+        -70
+      ]
+    },
+    {
+      "id": "conveyor_belt_starting",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_starting_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Starts from idle phase 0; accelerates into moving-right frame 1.",
+      "next": "conveyor_belt_moving_right",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_starting.gif",
+      "phasePixels": [
+        0,
+        1,
+        3,
+        6
+      ],
+      "companionAnimation": "conveyor_roller_starting"
+    },
+    {
+      "id": "conveyor_roller_starting",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_starting_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_starting. Reuse at both end-cap mounts.",
+      "next": "conveyor_roller_moving_right",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_starting.gif",
+      "phasePixels": [
+        0,
+        1,
+        3,
+        6
+      ]
+    },
+    {
+      "id": "conveyor_belt_stopping",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_stopping_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        0,
+        80
+      ],
+      "origin": [
+        0,
+        0.3125
+      ],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Trigger after moving-right frame 5 (phase 46). Decelerates 8,6,3,1 px and ends exactly at idle phase 0.",
+      "next": "conveyor_belt_idle",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_stopping.gif",
+      "phasePixels": [
+        54,
+        60,
+        63,
+        64
+      ],
+      "companionAnimation": "conveyor_roller_stopping"
+    },
+    {
+      "id": "conveyor_roller_stopping",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_stopping_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_stopping. Reuse at both end-cap mounts.",
+      "next": "conveyor_roller_idle",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_stopping.gif",
+      "phasePixels": [
+        54,
+        60,
+        63,
+        64
+      ]
+    }
+  ],
+  "assemblyNotes": [
+    "Left cap → N center tiles → right cap. All modules use the same y and 256 px canvas stride. Caps have an outer margin; only their inward edge joins the rail.",
+    "Stationary chassis and moving tread are separate. Two companion hubs reuse the same roller animation. Mount centers: left [67,145], right [184,148].",
+    "Starting and stopping are rightward one-shots. Stop after moving-right frame 5 to reach the idle tread exactly. Leftward loop is supplied separately.",
+    "The belt is periodic after 64 px; center canvases span four tread periods. Render tiles unscaled on the same pixel grid for seam-free joins."
+  ],
+  "thumbnail": "assets/objects/advanced/conveyors/preview.png",
+  "overviewPreview": "assets/objects/advanced/conveyors/previews/family_overview.gif"
+}

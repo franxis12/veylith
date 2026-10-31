@@ -1,0 +1,435 @@
+{
+  "version": 1,
+  "id": "forest-3",
+  "name": "El camino del aire",
+  "theme": "ancient-forest",
+  "width": 2944,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 196,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "upper-clearing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 370,
+      "width": 768,
+      "height": 730,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 736,
+        "height": 730
+      }
+    },
+    {
+      "id": "upper-clearing-fern",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 52.8,
+      "y": 309.2,
+      "width": 94.4,
+      "height": 60.800000000000004,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.800000000000004
+      }
+    },
+    {
+      "id": "upper-clearing-column",
+      "type": "decoration",
+      "asset": "column",
+      "x": 10.5,
+      "y": 10,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "launch",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 768,
+      "y": 650,
+      "width": 512,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 480,
+        "height": 450
+      }
+    },
+    {
+      "id": "launch-fern",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 820.8,
+      "y": 589.2,
+      "width": 94.4,
+      "height": 60.800000000000004,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.800000000000004
+      }
+    },
+    {
+      "id": "launch-column",
+      "type": "decoration",
+      "asset": "column",
+      "x": 778.5,
+      "y": 290,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "landing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2048,
+      "y": 650,
+      "width": 896,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 864,
+        "height": 450
+      }
+    },
+    {
+      "id": "landing-fern",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 2100.8,
+      "y": 589.2,
+      "width": 94.4,
+      "height": 60.800000000000004,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.800000000000004
+      }
+    },
+    {
+      "id": "landing-column",
+      "type": "decoration",
+      "asset": "column",
+      "x": 2058.5,
+      "y": 290,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "earth-decoy",
+      "type": "gem",
+      "asset": "gem:earth",
+      "x": 348,
+      "y": 48,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "earth",
+      "respawn": "restart"
+    },
+    {
+      "id": "air",
+      "type": "gem",
+      "asset": "gem:air",
+      "x": 948,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "air",
+      "respawn": "restart"
+    },
+    {
+      "id": "crossing",
+      "type": "crossing",
+      "asset": null,
+      "x": 1264,
+      "y": 0,
+      "width": 800,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 800,
+        "height": 650
+      },
+      "landingY": 650,
+      "hint": "Recoge Aire. Salta desde el borde y mantén Salto para planear hasta el otro lado."
+    },
+    {
+      "id": "wind-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 2238.4,
+      "y": 30.799999999999955,
+      "width": 403.2,
+      "height": 619.2,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 155.5999999999999,
+        "y": 1.2000000000000455,
+        "width": 92,
+        "height": 618
+      },
+      "initiallyOpen": false,
+      "requires": ["crossing"]
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2572.3999999999996,
+      "y": 373.9,
+      "width": 255.20000000000002,
+      "height": 276.1,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.600000000000364,
+        "y": 273.1,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["crossing"]
+    },
+    {
+      "id": "sign-0",
+      "type": "label",
+      "asset": null,
+      "x": 180,
+      "y": 100,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+    },
+    {
+      "id": "sign-1",
+      "type": "label",
+      "asset": null,
+      "x": 2500,
+      "y": 305,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "SALIDA"
+    },
+    {
+      "id": "sign-2",
+      "type": "label",
+      "asset": null,
+      "x": 924,
+      "y": 295,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "AIRE →\nSalta cerca del borde\ny mantén Salto"
+    },
+    {
+      "id": "sign-3",
+      "type": "label",
+      "asset": null,
+      "x": 220,
+      "y": 5,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "¿Más peso para cruzar?"
+    },
+    {
+      "id": "sign-4",
+      "type": "label",
+      "asset": null,
+      "x": 800,
+      "y": 350,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "La bajada no tiene retorno.\nRecoge Aire antes del abismo."
+    },
+    {
+      "id": "landing-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 2190,
+      "y": 530,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

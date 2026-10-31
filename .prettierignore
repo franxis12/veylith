@@ -1,0 +1,14 @@
+node_modules
+dist
+coverage
+package-lock.json
+ios
+public/assets
+
+# Byte-preserved source designs and their hash manifest
+docs/level-archive/before-earth-puzzles-v2
+
+docs/level-archive/before-illustrated-campaign-2026-10-26
+
+# Byte-preserved snapshot before the new exit presentation
+docs/level-archive/before-exit-door-2026-10-31

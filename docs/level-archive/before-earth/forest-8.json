@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "id": "forest-8",
+  "name": "El salto imposible",
+  "theme": "ancient-forest",
+  "width": 2304,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 55000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "lower-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 768,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 450
+      }
+    },
+    {
+      "id": "high-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 768,
+      "y": 370,
+      "width": 512,
+      "height": 730,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 730
+      }
+    },
+    {
+      "id": "exit-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1792,
+      "y": 370,
+      "width": 512,
+      "height": 730,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 730
+      }
+    },
+    {
+      "id": "fire",
+      "type": "gem",
+      "asset": "gem:fire",
+      "x": 298,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "fire",
+      "respawn": "restart"
+    },
+    {
+      "id": "hot-crossing",
+      "type": "world",
+      "asset": "world:lava",
+      "x": 1280,
+      "y": 290,
+      "width": 512,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 256
+      },
+      "kind": "lava",
+      "behavior": {
+        "kind": "heat"
+      },
+      "state": "surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 512,
+        "height": 730
+      },
+      "hint": "Fuego camina sobre la lava."
+    },
+    {
+      "id": "double-jump-tip",
+      "type": "label",
+      "asset": null,
+      "x": 120,
+      "y": 270,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "FUEGO: pulsa Salto, suelta y vuelve a pulsar\ncerca del punto más alto. El borde está a 280 px."
+    },
+    {
+      "id": "heat-tip",
+      "type": "label",
+      "asset": null,
+      "x": 820,
+      "y": 100,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "Solo Fuego cruza la lava.\nConserva tu forma hasta la antorcha."
+    },
+    {
+      "id": "double-jump-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1000,
+      "y": 255,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "high-torch",
+      "type": "torch",
+      "asset": "torch",
+      "x": 1950,
+      "y": 175.12,
+      "width": 58.379999999999995,
+      "height": 194.88,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": -0.6000000000000227,
+        "y": -5.1200000000000045,
+        "width": 60,
+        "height": 200
+      },
+      "hits": 1,
+      "hint": "Usa el doble salto, cruza la lava y enciende la antorcha final."
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2042.5,
+      "y": 94,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["high-torch"]
+    }
+  ]
+}

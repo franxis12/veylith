@@ -1,0 +1,42 @@
+{
+  "id": "interactive_lever",
+  "label": "Palanca",
+  "category": "mechanisms",
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    128,
+    240
+  ],
+  "notes": "Handle pivot [128,178].",
+  "states": {
+    "off": {
+      "layers": [
+        "assets/objects/mechanisms/interactive_lever/lever_base.png",
+        "assets/objects/mechanisms/interactive_lever/lever_off.png"
+      ]
+    },
+    "on": {
+      "layers": [
+        "assets/objects/mechanisms/interactive_lever/lever_base.png",
+        "assets/objects/mechanisms/interactive_lever/lever_on.png"
+      ]
+    },
+    "lever_activate": {
+      "animation": "lever_activate"
+    },
+    "lever_deactivate": {
+      "animation": "lever_deactivate"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/interactive_lever/lever_base.png",
+    "assets/objects/mechanisms/interactive_lever/lever_off.png",
+    "assets/objects/mechanisms/interactive_lever/lever_on.png"
+  ],
+  "directory": "assets/objects/mechanisms/interactive_lever",
+  "defaultBack": [
+    "assets/objects/mechanisms/interactive_lever/lever_base.png"
+  ],
+  "thumbnail": "assets/objects/mechanisms/interactive_lever/preview.png"
+}

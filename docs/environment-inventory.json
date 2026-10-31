@@ -1,0 +1,983 @@
+[
+  {
+    "path": "ancient_forest/backgrounds/layer_01_sky_mountains.png",
+    "width": 2048,
+    "height": 1024,
+    "alphaExtrema": [255, 255],
+    "bounds": [0, 0, 2048, 1024],
+    "sha256": "0b19880c42b1650cc5a68c2acff4eceb203955fa8a08bed87684f72b6bfe4d48",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/backgrounds/layer_02_forest_ruins.png",
+    "width": 2048,
+    "height": 1024,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 87, 2048, 938],
+    "sha256": "1e93a37a51ff929662c21678676000dfcd8d5fca2a0eafd04de2bf3daa8d5dc8",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/backgrounds/layer_03_foreground.png",
+    "width": 2048,
+    "height": 1024,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 698, 2048, 1024],
+    "sha256": "73363b452ee57a3bba958dc3a88c80d2bd30ecc481c4af4ea1822428f059ab64",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/ancient_column.png",
+    "width": 256,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [29, 32, 227, 752],
+    "sha256": "496ec2ce2262bc8c2f6f1a6cdd724d67c2970464c0b802ddfb89abebebeb983c",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/broken_pillar.png",
+    "width": 256,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 67, 240, 496],
+    "sha256": "daf5d431da3227e8a9b0bb951ce73ac4078eb0a3b286e0ee4a2b3df52acb7bde",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/bush_fern.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [10, 88, 246, 240],
+    "sha256": "9397f58684009104394f6955a1ef8c0d6f9d7b9116c59cca43f4a52fcf56b0a7",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/bush_round.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [10, 125, 246, 240],
+    "sha256": "f059cdd614cc892e954da720437d17db3e42160f098ab9188f8d387d968ffb9d",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/decorations/flowers_blue.png",
+    "width": 128,
+    "height": 192,
+    "alphaExtrema": [0, 255],
+    "bounds": [6, 61, 122, 176],
+    "sha256": "2117c5ff0d56e57fc34dd69905bfd489f2d49b98943f92107ee9896a4e2c3ef5",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/grass_cluster_short.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [6, 53, 122, 112],
+    "sha256": "1609883786a84f9a773ed34a2c1389c44ea964f65dd95174920ece40e3ce9384",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/grass_cluster_tall.png",
+    "width": 128,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [6, 126, 122, 240],
+    "sha256": "9715bf44c413417074f089112e4ac2b4a8103df04667f39aee87e1cc2bb760ef",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/decorations/hanging_vines.png",
+    "width": 256,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 159, 240, 752],
+    "sha256": "3e39141de9fdff520bdaf411cfb73a802afbb601c27b727cf50e90d07a17cc24",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/decorations/mushrooms_amber.png",
+    "width": 128,
+    "height": 160,
+    "alphaExtrema": [0, 255],
+    "bounds": [6, 17, 122, 144],
+    "sha256": "ecb68119bf135ea1a255324dd5ea58bbbec8203d08efab0b9bd9ca7f1ff7431d",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/decorations/small_rocks.png",
+    "width": 192,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [10, 15, 182, 112],
+    "sha256": "b33bbaec56b0d0a0856499b0371cda9caf163579322a7ba3b1caabc9e2f08b6c",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/decorations/tree_roots.png",
+    "width": 512,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 84, 496, 240],
+    "sha256": "0de791bf08d9d06be2dd56cfb3b70ce84d28372802c0bad42053113502fc613a",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_01.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "f5094a6ce8df0b00955be1da37a9d8c92c3146de8394e06d5787a4a7dd3de03a",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_02.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "44824922f39802377e410eef75331ad5f100ee7e24cdddffaf2b38a175711ca3",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_03.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "efe495d7c6074b965a49dced5bcd523584ea8dd55a5d5a348d83181d90d99021",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_04.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "01019ef2378e552077533ee015340bb5630197486a5f2ef6e6650372f6005e23",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_05.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "ed64b26e89c06a37d362e61781478a2275794793c7ef67199fb09f69acaad03b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_06.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "afccf3471d9a3801cfc14b84e145b66a90b81eba3862dc77f3347a474b67da88",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_07.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "0b88f6ced84d2d6b3ff0948101f79a61a516f26ebfc3266dd50444edf2ad9413",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_08.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "46b47de70abd1ba14250f02c94705f5f852c7e3ae5358213e111e652621f23e1",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_close/mechanical_door_close_spritesheet.png",
+    "width": 2048,
+    "height": 1536,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 2016, 1512],
+    "sha256": "d48f80229409f0cef898ac55b5980c2e45ec26fd882c8ae5d559f5dd77baae2a",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_01.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "46b47de70abd1ba14250f02c94705f5f852c7e3ae5358213e111e652621f23e1",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_02.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "0b88f6ced84d2d6b3ff0948101f79a61a516f26ebfc3266dd50444edf2ad9413",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_03.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "afccf3471d9a3801cfc14b84e145b66a90b81eba3862dc77f3347a474b67da88",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_04.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "ed64b26e89c06a37d362e61781478a2275794793c7ef67199fb09f69acaad03b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_05.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "01019ef2378e552077533ee015340bb5630197486a5f2ef6e6650372f6005e23",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_06.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "efe495d7c6074b965a49dced5bcd523584ea8dd55a5d5a348d83181d90d99021",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_07.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "44824922f39802377e410eef75331ad5f100ee7e24cdddffaf2b38a175711ca3",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_08.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "f5094a6ce8df0b00955be1da37a9d8c92c3146de8394e06d5787a4a7dd3de03a",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/mechanical_door_open/mechanical_door_open_spritesheet.png",
+    "width": 2048,
+    "height": 1536,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 2016, 1512],
+    "sha256": "18073868c89692872c36f6b6ad29302deec338e105133087cd766d93055a7ba7",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_01.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 343, 352, 641],
+    "sha256": "6144a3100365812960d5d1efe51a48c3a7910a40515d61d3a1ba3c2938f05d9f",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_02.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "bcf2819090b87d733d30e31cab4fb70940512c6f3a79815a667635d4c30ea8da",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_03.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "9e3d33f249f014430de876b9841993cf35478f5dcfe79920b55e28a6ea49344a",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_04.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "5958467a719a9a3128f20bf740e988223168b8e815f4998de44ef564157ec6ac",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_05.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "ac059d81a6d1098b8be087c99e70ce336541ea488b31a88079ff8d99bb631a1b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_06.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "8106265071ab0d42575a247db3938fe9c959586967c2869ac2826bcb700c96ed",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_07.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "c7dbb77f63d119b3c000683e5213972113952cfe0bc2ac34ed1b2bf929f54cc6",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_08.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "719e5a1b9e5628c1608b6310275f24313b3dbbf23680d8b47dfbf0077bc70f51",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_09.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "8674cc138850b64ed1f49d7e44a678eb0b7500e539ba1f614e695a35ddf4bf83",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_10.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "dc2c53cb5b7636adf00346ba1ff876eada2cea58223577bd5618107932ecd9bb",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_11.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "99b27b77662ebd7b4a7a72de9893148efd2acdcb32a5a8daf4dc3ee152bbf46e",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_12.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 352, 641],
+    "sha256": "896036099f43187b7c758ed1ec1e3bff99731b910f89f7938fbde7eb68b0238e",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/portal_energy_loop/portal_energy_loop_spritesheet.png",
+    "width": 2048,
+    "height": 2304,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 342, 1888, 2177],
+    "sha256": "cf4f311d615a26dd1432ac3fc836fe86325635d4e8538ea8aba8feb1f61f2395",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_01.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [69, 16, 187, 240],
+    "sha256": "ae5c442c68ec0b84e85f943d5521ccc79f0d5f788d55064ffa59bf74d68d680b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_02.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [67, 16, 189, 240],
+    "sha256": "78cf8f994b99ca722fd8b02381ab1e305f42274a3e6d7f5e7e328e652fadacfa",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_03.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [67, 16, 189, 240],
+    "sha256": "c32859292c50fbe8aeb21954593879beca28e43629d0195de3ea8728f2bfdcec",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_04.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 254],
+    "bounds": [63, 16, 193, 240],
+    "sha256": "413d22539611393b2e21ef821977cca9e78e03e97e30f44284db7898aa9c81e3",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_05.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [63, 16, 193, 240],
+    "sha256": "55abf87c3c9ef56bc2111cc42e4fbccb06fbde13caee7269f8928a56b54806cd",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_06.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 254],
+    "bounds": [61, 16, 194, 240],
+    "sha256": "072a5bb31362e78c2867d2a0e518152e08170eafd94d4dd3290dac8ef3715e6e",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_07.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [61, 16, 194, 240],
+    "sha256": "0bb6bee8155233c40d22f1e48f98af6e6211aeeb98eea1b670e73910c4a80de4",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_08.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 254],
+    "bounds": [61, 16, 194, 240],
+    "sha256": "55e10f030ebb77d25f8478bf0b8e0ced4c5bc4691ad30c43b88d9bccaa68a47b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_09.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [67, 16, 188, 240],
+    "sha256": "1384cbabc16dc3cf31df8ba7acca8c67d1a173e61801fb994e21237af95e1e97",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_10.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 254],
+    "bounds": [65, 16, 190, 240],
+    "sha256": "21314f490099b98f2e419a086fb1b8410f6ffcbfdbfad7a823d93694e2526f92",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_11.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 253],
+    "bounds": [65, 16, 190, 240],
+    "sha256": "aee6b5cbd73ed443107fcec8a8686e0f79f80ab17b33db456a193e847a574658",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_12.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 254],
+    "bounds": [65, 16, 190, 240],
+    "sha256": "756f43f6feab39c2ca6c193f24d2bb68051a4e8dffa5a0e27bd8140a6522a9ea",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/torch_flame_loop/torch_flame_loop_spritesheet.png",
+    "width": 1024,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [63, 16, 962, 752],
+    "sha256": "d02234274cdcee54538dd1eec1c1c6e2259f82171c33e9069db59ddce81c9081",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_01.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "a1bf87993291e7ac68c98874ce10f16456b50a0608e24a33316d348539d21c89",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_02.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "421ef0396d860caf2934fc200a0c1dc97899fed44e27dccbecc0fcdd3ebdd312",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_03.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "dc061b53e475eb9f8a42894627f77bf924f90b7b6cc92911b1f526911f04d8a6",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_04.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "32d8f6389bf777d3087eec1a928e4c703782ea851ee4fcfa06fc6c219da17d1c",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_05.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "a229fec9688f6085faa0c2303af259acb0cff46476d325085ac7f6f69cb145af",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_06.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "067b25742b8213f7de46f3f2ef3f9ed528744aa1ce62e517f593b6d919005dad",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_07.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "b453977bf2849dcb3690f632bcdfa7414093eb91aee7022645ef8baacda9245f",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_08.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "06dde4496ff08a74c854256a5094d023406eb0cbd2ee0d932c37cf336e0b8f3c",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_09.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "38edbc660d60b99aa15b1523eb3751385d9c9bdc395fb5e5167da6109c2c9dc7",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_10.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "6ddfaae6314502af31ded0c7cb29527c4ab4b84eab124dd540207955d65689a9",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_11.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "f3597c11de5d0c5c2be6513dc66adbd76840910a8210421aea614c4d9657fc3d",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_12.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "cf9af5ddc6caa99d86c1aaac37015be333a28b2e7ec7c5fcff53868d4b322d90",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/animations/water_fill_loop/water_fill_loop_spritesheet.png",
+    "width": 2048,
+    "height": 1536,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 1908, 1424],
+    "sha256": "b615a973d6a3bd5923afc7e1a9f11e6ccbd578de5ff9920c7c500ada75a75267",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/cracked_wall_broken.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [36, 241, 476, 496],
+    "sha256": "7dad70e728a760a927ada9d57b43377c897516c1876c5f28a50c4741859bb16b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/cracked_wall_intact.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [68, 32, 444, 496],
+    "sha256": "2abdf4e06b456e207f4f67736f264613f0b31e4464c95ca6ce668358a9fb95eb",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/heavy_block.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 22, 240, 240],
+    "sha256": "1b63f318fe80d9bf6011537e4cabcd293e6cdf6244ec6448a4e5a60303b3fda2",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/mechanical_door_closed.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "46b47de70abd1ba14250f02c94705f5f852c7e3ae5358213e111e652621f23e1",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/mechanical_door_open.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [32, 56, 480, 744],
+    "sha256": "f5094a6ce8df0b00955be1da37a9d8c92c3146de8394e06d5787a4a7dd3de03a",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/portal_active.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [24, 242, 488, 744],
+    "sha256": "437d3697731af12202754a9f5108a620152acf627b90828c824706a078ec285f",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/portal_energy.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [156, 353, 352, 640],
+    "sha256": "8fe6e293d8ecbb75c6046e2706f3f3884d403f9a4a7472ce2d1804dbd60b2d30",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/portal_inactive.png",
+    "width": 512,
+    "height": 768,
+    "alphaExtrema": [0, 255],
+    "bounds": [24, 242, 488, 744],
+    "sha256": "3e1e572d652c3bdd107386f066a337594550271aae7e1206175f134f86db17eb",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/pressure_plate_activated.png",
+    "width": 512,
+    "height": 192,
+    "alphaExtrema": [0, 255],
+    "bounds": [17, 82, 495, 176],
+    "sha256": "c4a886be37e31494758300413336d1d8bf2ea146ea9c4902339ef877e6c10693",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/pressure_plate_inactive.png",
+    "width": 512,
+    "height": 192,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 73, 496, 176],
+    "sha256": "30b21c0271a724b14acb031ab57ca616f74589cff2f6cc2bed3f6a47e7e3e557",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/torch_flame.png",
+    "width": 256,
+    "height": 256,
+    "alphaExtrema": [0, 255],
+    "bounds": [69, 16, 187, 240],
+    "sha256": "ae5c442c68ec0b84e85f943d5521ccc79f0d5f788d55064ffa59bf74d68d680b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/torch_lit_base.png",
+    "width": 256,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [58, 32, 197, 496],
+    "sha256": "d3a804ab0029d577ba0057f5407378b473758f0bdb3dea41bc2f874752f14dbd",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/torch_unlit.png",
+    "width": 256,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [58, 32, 197, 496],
+    "sha256": "fa45fa3644b513f1610d28e8294a475a40f9befcec3e5bc67f4ef3f61e5f60fb",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/water_fill.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 199],
+    "bounds": [128, 136, 372, 400],
+    "sha256": "a1bf87993291e7ac68c98874ce10f16456b50a0608e24a33316d348539d21c89",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/water_tank_empty.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [24, 42, 488, 496],
+    "sha256": "d625781a4acf89e8a39f313fa99c5bb146d5a09a5c87b5eba5bcaf6b2de0f28c",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/interactive/water_tank_full.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [24, 42, 488, 496],
+    "sha256": "61306408cba30c80c81b6ad55af632be2a68d4b37f38398a3ea3af7314fd2494",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/water_tank_glass.png",
+    "width": 512,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [86, 163, 426, 496],
+    "sha256": "da0f771ea5a4d974f2622b0cb6dd22e6430dd76c09fdc861c968568ea12aaddf",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/interactive/wind_current.png",
+    "width": 256,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [44, 24, 211, 496],
+    "sha256": "ca8ebc2996a4a18d555ce98412112d9f3307933ab3a347bd98c7f66f8ce12994",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/platforms/floating_platform_center.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 8, 128, 88],
+    "sha256": "dacf448738ec5ebd1a09ca4f83ec89ef0690d18601207d9f7261d7a81539806d",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/platforms/floating_platform_left.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 8, 128, 88],
+    "sha256": "2b52a4a5e4b33b96f514b1df9e77c028626af2fa61cc98635f6463ad67b38ea5",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/platforms/floating_platform_right.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 8, 112, 88],
+    "sha256": "7295247610b4a1958f284bb9fa21a91585aeb7524a54f310846d93a5d3b9cb6f",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/ancient_forest_tilesheet.png",
+    "width": 640,
+    "height": 512,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 640, 512],
+    "sha256": "55ea191586d1bfe1d1f21874ff3091c5f99a801c1f1c8a59b9221da3d71cbb42",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/cracked_stone.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [255, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "7bff29d2bd0d6b561e36100c9fb1fd14ea8e311c39282a054f40920eff6139bd",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/decorative_stone.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [255, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "a51dae5f22dd68d29b2525b6001f93ea5668c75a04decd898a91980a2568b13b",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/ground_bottom_center.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 128, 112],
+    "sha256": "3749c6fb7f92b2a4363e57a8662060733fcce2535fb49191bd34048324df99b6",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/ground_bottom_left.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 0, 128, 112],
+    "sha256": "5fc191bb55255b9687024ce29c1878630e89f1b006a99302624921886cabf5d3",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/ground_bottom_right.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 112, 112],
+    "sha256": "3cbb1e10cf7442379d82df9d06c73a9c90646ec82d1bd232994c5761b9b2688e",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/ground_center.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 8, 128, 128],
+    "sha256": "ef91cb149fa23b0cba84474bd77bb036f5b94b672e26211654e42288771bbcca",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/ground_left_edge.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 0, 128, 128],
+    "sha256": "5bd4b97c95beca50e48f01224ebe3f312549964374c9fa4cf18224b9f55b896e",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/ground_right_edge.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 112, 128],
+    "sha256": "9faa9e8981eea23b9831e854f18f8812166e754e2d2bde05778fbf17e3c1b34f",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/ground_top_left.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 8, 128, 128],
+    "sha256": "0b77a88fa04f3f89d0df648eb000c2566e89609645e24686e8c780edb43946a5",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/ground_top_right.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 8, 112, 128],
+    "sha256": "2cdd0d2d578c3bd70434bc9db4d8dc7db66986fea88dc735721ab52ef917d045",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/inner_corner_bottom_left.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "99e8c19bb52dc6c88b91244f7cc7522acbb1c6cfff0f43eba0b31170deac4b31",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/inner_corner_bottom_right.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "e8f211d144303d21b0f986d8e16b6a674e868a243e6dc9c0359e7610c49deaf6",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/inner_corner_top_left.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "e14b05b9af1330385c767dd52f883e80a141460d1769394abce738930e1068ce",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/inner_corner_top_right.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "5b617634ff4d50cda4bca3eb52b0188e82fc3af5ef04a738be20cca5f4e08641",
+    "used": false
+  },
+  {
+    "path": "ancient_forest/terrain/solid_underground.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [255, 255],
+    "bounds": [0, 0, 128, 128],
+    "sha256": "4f779d83edd33f91c4b4b76b834db6c3a545d9ce9cce017bbdb01fe1b456f8ab",
+    "used": true
+  },
+  {
+    "path": "ancient_forest/terrain/vertical_wall.png",
+    "width": 128,
+    "height": 128,
+    "alphaExtrema": [0, 255],
+    "bounds": [16, 0, 112, 128],
+    "sha256": "445af02ec0a7dbcabc6f23581b5a84167a2bb554a281479d06c2a9ff5233e12d",
+    "used": false
+  }
+]

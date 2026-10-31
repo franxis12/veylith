@@ -1,0 +1,219 @@
+{
+  "format": "veylith-world-art-catalog",
+  "world": "WORLD 01 — ANCIENT FOREST",
+  "coordinateConvention": {
+    "origin": "top-left",
+    "x": "right",
+    "y": "down"
+  },
+  "pathBase": "public/assets/environments/illustrated_levels",
+  "nominalCanvas": {
+    "width": 1728,
+    "height": 648
+  },
+  "sectionCountPerLevel": 1,
+  "source": "Mundo 1_ Bosque antiguo — Blueprint de niveles.png",
+  "styleReference": "Existing approved Level 02 composite",
+  "generationMode": "built-in image_gen",
+  "levels": [
+    {
+      "id": "level_01",
+      "name": "La puerta sellada",
+      "manifest": "level_01/level_art_manifest.json",
+      "preview": "level_01/preview/composite.png",
+      "animation": "level_01/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_02",
+      "name": "Dos pesos, una salida",
+      "manifest": "level_02/blueprint_v2/level_art_manifest.json",
+      "preview": "level_02/blueprint_v2/preview/composite.png",
+      "animation": "level_02/blueprint_v2/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_03",
+      "name": "Elevación cruzada",
+      "manifest": "level_03/level_art_manifest.json",
+      "preview": "level_03/preview/composite.png",
+      "animation": "level_03/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_04",
+      "name": "Reflejo de la tierra",
+      "manifest": "level_04/level_art_manifest.json",
+      "preview": "level_04/preview/composite.png",
+      "animation": "level_04/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_05",
+      "name": "Corriente natural",
+      "manifest": "level_05/level_art_manifest.json",
+      "preview": "level_05/preview/composite.png",
+      "animation": "level_05/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": "level_05/preview/composite_fixed_platform_variant.png"
+    },
+    {
+      "id": "level_06",
+      "name": "Equilibrio elemental",
+      "manifest": "level_06/level_art_manifest.json",
+      "preview": "level_06/preview/composite.png",
+      "animation": "level_06/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_07",
+      "name": "Ruta alternativa",
+      "manifest": "level_07/level_art_manifest.json",
+      "preview": "level_07/preview/composite.png",
+      "animation": "level_07/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_08",
+      "name": "Ascenso en cadena",
+      "manifest": "level_08/level_art_manifest.json",
+      "preview": "level_08/preview/composite.png",
+      "animation": "level_08/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_09",
+      "name": "Puentes de piedra",
+      "manifest": "level_09/level_art_manifest.json",
+      "preview": "level_09/preview/composite.png",
+      "animation": "level_09/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    },
+    {
+      "id": "level_10",
+      "name": "La prueba final",
+      "manifest": "level_10/level_art_manifest.json",
+      "preview": "level_10/preview/composite.png",
+      "animation": "level_10/preview/animated_preview.webp",
+      "canvas": {
+        "width": 1728,
+        "height": 648,
+        "origin": "top-left",
+        "xDirection": "right",
+        "yDirection": "down",
+        "units": "pixels",
+        "colorSpace": "sRGB",
+        "alpha": "straight"
+      },
+      "geometryStatus": "illustrated_approximation",
+      "optionalVariant": null
+    }
+  ],
+  "sharedLibrary": "_shared/ancient_forest_v1/animation_library.json",
+  "existingLevel02Preserved": "New version lives in level_02/blueprint_v2.",
+  "missingRequiredFiles": [],
+  "limitations": [
+    "Painted reconstruction preserves the interpreted arrangement, not verified pixel-perfect placement. Surface heights/contours still differ from the diagram.",
+    "Level 05 ambiguous upper slab: default treats it as moving; optional fixed layer and alternate preview included.",
+    "No colliders, gameplay code or interactive objects included.",
+    "No iPhone device performance test."
+  ]
+}

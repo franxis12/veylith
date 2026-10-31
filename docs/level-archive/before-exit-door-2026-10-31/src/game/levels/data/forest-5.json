@@ -1,0 +1,839 @@
+{
+  "version": 1,
+  "id": "forest-5",
+  "name": "La prueba final",
+  "theme": "ancient-forest",
+  "width": 2592,
+  "height": 972,
+  "fallLimit": 963,
+  "cameraZoom": 0.8,
+  "background": {
+    "sky": false,
+    "forest": false,
+    "foreground": false
+  },
+  "timer": {
+    "threeStarsMs": 60000,
+    "twoStarsMs": 140000
+  },
+  "puzzle": {
+    "brief": "Combina el golpe, el peso, el sello inferior y el ascensor para abrir el santuario.",
+    "hints": [
+      "La piedra agrietada, la placa elevada y el sello inferior forman un solo circuito.",
+      "El bloque de arriba se empuja a la izquierda. Después hay que abandonar la ruta alta para visitar la columna central.",
+      "Rompe el muro, sube, salta el peso y llévalo a su placa. Cruza el puente y baja a activar el sello; comprueba que la barrera se apague. Sube al ascensor central, activa su palanca y cruza los últimos estantes."
+    ]
+  },
+  "objects": [
+    {
+      "id": "illustrated-world",
+      "type": "illustration",
+      "asset": null,
+      "x": 0,
+      "y": 0,
+      "width": 2592,
+      "height": 972,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 2592,
+        "height": 972
+      },
+      "sceneId": "campaign_level_10",
+      "layers": ["background", "static_world", "foreground"],
+      "overlays": [
+        {
+          "id": "canopy_vine",
+          "animation": "hanging_vine",
+          "x": 145,
+          "y": 65,
+          "width": 46,
+          "height": 92,
+          "z": 40,
+          "opacity": 0.85,
+          "phase": 0,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "left_leaves",
+          "animation": "moving_leaves",
+          "x": 260,
+          "y": 150,
+          "width": 85,
+          "height": 85,
+          "z": 40,
+          "opacity": 0.65,
+          "phase": 0,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "right_leaves",
+          "animation": "moving_leaves",
+          "x": 1430,
+          "y": 95,
+          "width": 64,
+          "height": 64,
+          "z": 40,
+          "opacity": 0.5,
+          "phase": 4,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "ground_mist",
+          "animation": "mist",
+          "x": 620,
+          "y": 525,
+          "width": 420,
+          "height": 105,
+          "z": 5,
+          "opacity": 0.18,
+          "phase": 1,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "forest_motes",
+          "animation": "magical_particles",
+          "x": 1075,
+          "y": 120,
+          "width": 100,
+          "height": 100,
+          "z": 40,
+          "opacity": 0.25,
+          "phase": 3,
+          "fps": 4,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "start-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 0,
+      "y": 802.5,
+      "width": 322.5,
+      "height": 169.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 322.5,
+        "height": 169.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "west-step",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 322.5,
+      "y": 735,
+      "width": 145.5,
+      "height": 237,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 145.5,
+        "height": 237,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "west-cap",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 495,
+      "y": 502.5,
+      "width": 247.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 247.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "west-pier",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 555,
+      "y": 562.5,
+      "width": 135,
+      "height": 409.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 135,
+        "height": 409.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "west-foot",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 690,
+      "y": 867,
+      "width": 180,
+      "height": 105,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 180,
+        "height": 105,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "high-west-shelf",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 870,
+      "y": 472.5,
+      "width": 195,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 195,
+        "height": 42
+      }
+    },
+    {
+      "id": "middle-pier",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1057.5,
+      "y": 720,
+      "width": 180,
+      "height": 252,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 180,
+        "height": 252,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "middle-shelf",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1237.5,
+      "y": 645,
+      "width": 187.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 187.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "middle-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1425,
+      "y": 817.5,
+      "width": 97.5,
+      "height": 154.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 97.5,
+        "height": 154.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "middle-step",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1522.5,
+      "y": 772.5,
+      "width": 75,
+      "height": 199.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 199.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "middle-terrace",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1597.5,
+      "y": 712.5,
+      "width": 150,
+      "height": 259.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 150,
+        "height": 259.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "high-east-shelf",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1672.5,
+      "y": 472.5,
+      "width": 190.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 190.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "east-low-shelf",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1807.5,
+      "y": 817.5,
+      "width": 225,
+      "height": 37.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 225,
+        "height": 37.5
+      }
+    },
+    {
+      "id": "east-pier",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1972.5,
+      "y": 660,
+      "width": 187.5,
+      "height": 312,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 187.5,
+        "height": 312,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "upper-east-shelf",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1972.5,
+      "y": 427.5,
+      "width": 300,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 300,
+        "height": 42
+      }
+    },
+    {
+      "id": "exit-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 2220,
+      "y": 472.5,
+      "width": 372,
+      "height": 499.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 372,
+        "height": 499.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 119,
+      "y": 628.5,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "root-wall",
+      "type": "wall",
+      "asset": "wallIntact",
+      "x": 240,
+      "y": 585,
+      "width": 67.5,
+      "height": 217.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 67.5,
+        "height": 217.5
+      },
+      "hint": "Rompe la piedra agrietada con Poder de Tierra."
+    },
+    {
+      "id": "entry-step",
+      "type": "block",
+      "asset": "block",
+      "x": 352.5,
+      "y": 645,
+      "width": 97.5,
+      "height": 90,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 97.5,
+        "height": 90
+      },
+      "plateId": ""
+    },
+    {
+      "id": "upper-plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 517.5,
+      "y": 484.5,
+      "width": 82.5,
+      "height": 18,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 16.5,
+        "width": 82.5,
+        "height": 1.5
+      },
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque asignado sobre esta placa."
+    },
+    {
+      "id": "upper-weight",
+      "type": "block",
+      "asset": "block",
+      "x": 630,
+      "y": 360,
+      "width": 67.5,
+      "height": 142.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 67.5,
+        "height": 142.5
+      },
+      "plateId": "upper-plate"
+    },
+    {
+      "id": "relay-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 714.7277227722773,
+      "y": 456.73886138613864,
+      "width": 161.58415841584159,
+      "height": 80.79207920792079,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 27.77227722772277,
+        "y": 45.761138613861384,
+        "width": 127.5,
+        "height": 33
+      },
+      "kind": "retractable_bridge",
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 127.5,
+        "height": 33
+      },
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["upper-plate"],
+        "autostart": false,
+        "duration": 700
+      },
+      "hint": ""
+    },
+    {
+      "id": "lower-seal",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 1132.5,
+      "y": 622.5,
+      "width": 75,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 97.5
+      },
+      "kind": "interactive_lever",
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -37.5,
+        "y": -45,
+        "width": 150,
+        "height": 142.5
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "toggle",
+        "targets": ["final-barrier"]
+      },
+      "hint": "Usa Poder cerca de la palanca."
+    },
+    {
+      "id": "final-barrier",
+      "type": "world",
+      "asset": "world:energy_barrier",
+      "x": 2070,
+      "y": 135,
+      "width": 52.5,
+      "height": 292.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 52.5,
+        "height": 292.5
+      },
+      "kind": "energy_barrier",
+      "state": "barrier_active",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 52.5,
+        "height": 292.5
+      },
+      "behavior": {
+        "kind": "barrier",
+        "requires": [],
+        "autostart": true
+      },
+      "hint": ""
+    },
+    {
+      "id": "final-lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 1434.642857142857,
+      "y": 730.7477678571429,
+      "width": 85.71428571428571,
+      "height": 42.857142857142854,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 5.357142857142857,
+        "y": 19.252232142857142,
+        "width": 75,
+        "height": 39
+      },
+      "kind": "mechanical_elevator",
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 39
+      },
+      "behavior": {
+        "kind": "elevator",
+        "travelX": 0,
+        "travelY": -277.5,
+        "speed": 130,
+        "mode": "controlled",
+        "requires": ["root-wall", "upper-plate", "lower-seal", "lift-call"],
+        "autostart": false
+      },
+      "hint": ""
+    },
+    {
+      "id": "lift-call",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 1440,
+      "y": 652.5,
+      "width": 75,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 97.5
+      },
+      "kind": "interactive_lever",
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -37.5,
+        "y": -45,
+        "width": 150,
+        "height": 142.5
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "activate",
+        "targets": []
+      },
+      "hint": "Usa Poder cerca de la palanca."
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2343,
+      "y": 277.5,
+      "width": 174,
+      "height": 195,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 37.5,
+        "y": 190.5,
+        "width": 99,
+        "height": 9
+      },
+      "requires": ["root-wall", "upper-plate", "lower-seal", "lift-call"]
+    },
+    {
+      "id": "sanctuary-water",
+      "type": "coin",
+      "asset": "coin",
+      "x": 937.5,
+      "y": 412.5,
+      "width": 36,
+      "height": 36,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "value": 5
+    },
+    {
+      "id": "sanctuary-air",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1110,
+      "y": 660,
+      "width": 36,
+      "height": 36,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "value": 5
+    },
+    {
+      "id": "sanctuary-earth",
+      "type": "coin",
+      "asset": "coin",
+      "x": 2100,
+      "y": 367.5,
+      "width": 36,
+      "height": 36,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "value": 5
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "family": "mushroom",
+  "title": "Giant mushroom",
+  "tile_dimensions": [
+    128,
+    128
+  ],
+  "top_surface_y": 32,
+  "anchor_recommendation": {
+    "px": [
+      0,
+      32
+    ],
+    "description": "Place all platform tiles at the same world surface Y. Tile image origin is 32 px above that surface."
+  },
+  "minimum_modules": 2,
+  "placement": {
+    "left": "x=0",
+    "center": "Repeat at x=128,256,...",
+    "right": "x=(module_count-1)*128",
+    "horizontal_stride_px": 128,
+    "spacing_px": 0,
+    "scale": 1
+  },
+  "supports_available": true,
+  "static": true,
+  "assets": [
+    {
+      "id": "mushroom_left",
+      "file": "assets/environments/platforms/mushroom/mushroom_left.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 15,
+        "y": 32,
+        "width": 113,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_left",
+      "repeat_step_px": null,
+      "connections": {
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "mushroom_master",
+      "surface_y": 32
+    },
+    {
+      "id": "mushroom_center",
+      "file": "assets/environments/platforms/mushroom/mushroom_center.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [
+        "x"
+      ],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 128,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "repeatable_center",
+      "repeat_step_px": [
+        128,
+        0
+      ],
+      "connections": {
+        "left": [
+          0,
+          32
+        ],
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "mushroom_master",
+      "surface_y": 32
+    },
+    {
+      "id": "mushroom_right",
+      "file": "assets/environments/platforms/mushroom/mushroom_right.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 113,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_right",
+      "repeat_step_px": null,
+      "connections": {
+        "left": [
+          0,
+          32
+        ]
+      },
+      "source": "mushroom_master",
+      "surface_y": 32
+    },
+    {
+      "id": "mushroom_stem",
+      "file": "assets/environments/platforms/mushroom/mushroom_stem.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        64,
+        0
+      ],
+      "anchor_normalized": [
+        0.5,
+        0
+      ],
+      "layer": "behind_platform",
+      "repeat_axes": [
+        "y"
+      ],
+      "collision": null,
+      "role": "decorative_support",
+      "source": "mushroom_stem",
+      "repeat_step_px": [
+        0,
+        128
+      ],
+      "connections": {
+        "top": [
+          64,
+          0
+        ],
+        "bottom": [
+          64,
+          128
+        ]
+      }
+    },
+    {
+      "id": "mushroom_stem_base",
+      "file": "assets/environments/platforms/mushroom/mushroom_stem_base.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        64,
+        120
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "layer": "behind_platform",
+      "repeat_axes": [],
+      "collision": null,
+      "role": "support_foot",
+      "source": "mushroom_stem_base"
+    }
+  ],
+  "surface_calibration": {
+    "surface_y": 32,
+    "source_row": 10,
+    "source_vertical_offset": 22,
+    "decorative_fringe_above_surface": true
+  },
+  "preview": "previews/mushroom_three_widths.png",
+  "decorative_supports_available": true,
+  "optional_overlays_available": false,
+  "paths_relative_to": "pack root"
+}

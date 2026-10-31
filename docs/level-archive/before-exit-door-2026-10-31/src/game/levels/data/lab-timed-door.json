@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "id": "lab-timed-door",
+  "name": "Laboratorio · Puerta temporizada",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "label",
+      "asset": null,
+      "x": 100,
+      "y": 95,
+      "width": 1100,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "Pulsa Poder junto al interruptor. La puerta abre 3.5 s. R reinicia. Una nueva activación rearma el tiempo."
+    },
+    {
+      "id": "timed-door",
+      "asset": "world:timed_door",
+      "x": 500,
+      "y": 207,
+      "width": 512,
+      "height": 512,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 174,
+        "y": 155,
+        "width": 167,
+        "height": 288
+      },
+      "kind": "timed_door",
+      "effect": {
+        "enabled": false,
+        "x": 87,
+        "y": 77.5,
+        "width": 83.5,
+        "height": 144
+      },
+      "behavior": {
+        "kind": "timedDoor",
+        "requires": [],
+        "autostart": false,
+        "openMs": 3500,
+        "warningMs": 900,
+        "initiallyOpen": false,
+        "retrigger": "restart"
+      },
+      "state": "closed",
+      "hint": "Abre por tiempo al recibir activación. Espera a que el hueco quede libre para cerrar.",
+      "type": "world"
+    },
+    {
+      "id": "open-door",
+      "asset": "world:fire_switch",
+      "x": 160,
+      "y": 522,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 28,
+        "y": 76,
+        "width": 72,
+        "height": 44
+      },
+      "kind": "fire_switch",
+      "effect": {
+        "enabled": true,
+        "x": -45,
+        "y": -40,
+        "width": 218,
+        "height": 168
+      },
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": ["timed-door"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Envía activar, desactivar o alternar a los IDs elegidos; también emite su propia señal.",
+      "type": "world"
+    }
+  ]
+}

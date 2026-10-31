@@ -1,0 +1,17 @@
+{
+  "width": 1280,
+  "height": 1344,
+  "exteriorTransparentPixels": 488299,
+  "opaquePixels": 1211259,
+  "sampledBackWallAlpha": {
+    "min": 255,
+    "max": 255
+  },
+  "entireClipArea": {
+    "pixels": 123361,
+    "minBackWallAlpha": 137
+  },
+  "originalSealFramesUnchanged": true,
+  "noFloor": true,
+  "review": "Visual comparison performed against the supplied screenshot; architecture is a reconstruction, not verified pixel-perfect."
+}

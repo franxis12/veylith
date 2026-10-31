@@ -1,0 +1,583 @@
+{
+  "version": 1,
+  "id": "forest-8",
+  "name": "Corriente natural",
+  "theme": "ancient-forest",
+  "width": 2592,
+  "height": 972,
+  "fallLimit": 963,
+  "cameraZoom": 0.8,
+  "background": {
+    "sky": false,
+    "forest": false,
+    "foreground": false
+  },
+  "timer": {
+    "threeStarsMs": 45000,
+    "twoStarsMs": 100000
+  },
+  "puzzle": {
+    "brief": "Conecta la cinta y deja que el peso viaje hacia su placa.",
+    "hints": [
+      "Hay un control detrás del punto de inicio. El bloque debe viajar hacia la izquierda.",
+      "El puente de entrada y la alimentación de la cinta comparten el control izquierdo. El mando de la isla completa el circuito.",
+      "Vuelve a la izquierda y activa la palanca; cruza el puente, salta el bloque y activa el mando de la isla. Espera a que la cinta entregue el peso antes de cruzar."
+    ]
+  },
+  "objects": [
+    {
+      "id": "illustrated-world",
+      "type": "illustration",
+      "asset": null,
+      "x": 0,
+      "y": 0,
+      "width": 2592,
+      "height": 972,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 2592,
+        "height": 972
+      },
+      "sceneId": "campaign_level_05",
+      "layers": ["background", "static_world", "foreground"],
+      "overlays": [
+        {
+          "id": "canopy_vine",
+          "animation": "hanging_vine",
+          "x": 145,
+          "y": 65,
+          "width": 46,
+          "height": 92,
+          "z": 40,
+          "opacity": 0.85,
+          "phase": 0,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "left_leaves",
+          "animation": "moving_leaves",
+          "x": 260,
+          "y": 150,
+          "width": 85,
+          "height": 85,
+          "z": 40,
+          "opacity": 0.65,
+          "phase": 0,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "right_leaves",
+          "animation": "moving_leaves",
+          "x": 1430,
+          "y": 95,
+          "width": 64,
+          "height": 64,
+          "z": 40,
+          "opacity": 0.5,
+          "phase": 4,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "ground_mist",
+          "animation": "mist",
+          "x": 620,
+          "y": 525,
+          "width": 420,
+          "height": 105,
+          "z": 5,
+          "opacity": 0.18,
+          "phase": 1,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "forest_motes",
+          "animation": "magical_particles",
+          "x": 1075,
+          "y": 120,
+          "width": 100,
+          "height": 100,
+          "z": 40,
+          "opacity": 0.25,
+          "phase": 3,
+          "fps": 4,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "start-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 0,
+      "y": 780,
+      "width": 480,
+      "height": 192,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 480,
+        "height": 192,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "raised-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 480,
+      "y": 645,
+      "width": 270,
+      "height": 327,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 270,
+        "height": 327,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "center-cap",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1057.5,
+      "y": 592.5,
+      "width": 435,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 435,
+        "height": 42
+      }
+    },
+    {
+      "id": "center-pier",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1192.5,
+      "y": 652.5,
+      "width": 127.5,
+      "height": 319.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 127.5,
+        "height": 319.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "east-cap",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1717.5,
+      "y": 652.5,
+      "width": 367.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 367.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "east-pier",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1882.5,
+      "y": 712.5,
+      "width": 112.5,
+      "height": 259.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 112.5,
+        "height": 259.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "east-step",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1995,
+      "y": 772.5,
+      "width": 217.5,
+      "height": 199.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 217.5,
+        "height": 199.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "exit-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 2212.5,
+      "y": 510,
+      "width": 379.5,
+      "height": 462,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 379.5,
+        "height": 462,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 284,
+      "y": 606,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "return-control",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 75,
+      "y": 682.5,
+      "width": 75,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 97.5
+      },
+      "kind": "interactive_lever",
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -37.5,
+        "y": -45,
+        "width": 150,
+        "height": 142.5
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "activate",
+        "targets": []
+      },
+      "hint": "Usa Poder cerca de la palanca."
+    },
+    {
+      "id": "entry-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 683.019801980198,
+      "y": 534.634900990099,
+      "width": 389.7029702970297,
+      "height": 194.85148514851485,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 66.98019801980197,
+        "y": 110.36509900990099,
+        "width": 307.5,
+        "height": 33
+      },
+      "kind": "retractable_bridge",
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 307.5,
+        "height": 33
+      },
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["return-control"],
+        "autostart": false,
+        "duration": 700
+      },
+      "hint": ""
+    },
+    {
+      "id": "belt-control",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 1410,
+      "y": 495,
+      "width": 75,
+      "height": 97.5,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 97.5
+      },
+      "kind": "interactive_lever",
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": -37.5,
+        "y": -45,
+        "width": 150,
+        "height": 142.5
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "activate",
+        "targets": []
+      },
+      "hint": "Usa Poder cerca de la palanca."
+    },
+    {
+      "id": "delivery-belt",
+      "type": "world",
+      "asset": "world:conveyor",
+      "x": 1072.987012987013,
+      "y": 554.1233766233767,
+      "width": 374.025974025974,
+      "height": 74.8051948051948,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 7.012987012987013,
+        "y": 23.376623376623375,
+        "width": 360,
+        "height": 30
+      },
+      "kind": "conveyor",
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 360,
+        "height": 30
+      },
+      "behavior": {
+        "kind": "conveyor",
+        "direction": -1,
+        "speed": 100,
+        "segments": 4,
+        "requires": ["return-control", "belt-control"],
+        "autostart": false
+      },
+      "hint": ""
+    },
+    {
+      "id": "cargo",
+      "type": "block",
+      "asset": "block",
+      "x": 1252.5,
+      "y": 442.5,
+      "width": 97.5,
+      "height": 135,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 97.5,
+        "height": 135
+      },
+      "plateId": "cargo-plate"
+    },
+    {
+      "id": "cargo-plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 1095,
+      "y": 559.5,
+      "width": 97.5,
+      "height": 18,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 18,
+        "width": 97.5,
+        "height": 1.5
+      },
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque asignado sobre esta placa."
+    },
+    {
+      "id": "exit-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 1443.490099009901,
+      "y": 534.2450495049504,
+      "width": 285.1485148514852,
+      "height": 142.5742574257426,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 49.00990099009901,
+        "y": 80.75495049504951,
+        "width": 225,
+        "height": 33
+      },
+      "kind": "retractable_bridge",
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 225,
+        "height": 33
+      },
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["cargo-plate"],
+        "autostart": false,
+        "duration": 700
+      },
+      "hint": ""
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2358,
+      "y": 315,
+      "width": 174,
+      "height": 195,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 37.5,
+        "y": 190.5,
+        "width": 99,
+        "height": 9
+      },
+      "requires": ["cargo-plate", "return-control"]
+    },
+    {
+      "id": "double-jump-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 570,
+      "y": 585,
+      "width": 36,
+      "height": 36,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "value": 5
+    }
+  ]
+}

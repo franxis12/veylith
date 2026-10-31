@@ -1,0 +1,315 @@
+{
+  "pack": "Veylith — Ancient Forest Environment Expansion",
+  "version": "1.0",
+  "source_art": "85 individually generated assets; modular variants assembled from the new art",
+  "perspective": "orthographic side elevation",
+  "lighting": "upper-left",
+  "units": "pixels",
+  "tile_grid": 128,
+  "layer_order_back_to_front": [
+    "background",
+    "behind_gameplay",
+    "behind_platforms",
+    "terrain_detail",
+    "world_decoration",
+    "behind_platforms_effects",
+    "foreground"
+  ],
+  "integration": {
+    "existing_assets_modified": false,
+    "terrain_detail_underlay": "Interior tiles contain genuine alpha cracks. Put existing terrain backing behind them; edge and corner overlays mask the front artwork only.",
+    "tile_repeat": "Repeat on the listed axis at step_px. Do not auto-trim sprites.",
+    "static_magic": "Runes, rings, trails and particles are independent static overlays.",
+    "scale": "Assets are authored in pixel space; place at 1× before applying a common world scale."
+  },
+  "assets": [
+    {
+      "id": "glowing_rune_a",
+      "file": "assets/environments/ancient_forest/magical_supports/glowing_rune_a.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "glowing_rune_a",
+      "description": "One isolated luminous turquoise ancient geometric rune seal, abstract symmetrical diamond and curved stone-like line segments, clean magical symbol, gentle alpha glow. No letters, readable words, circle backdrop, platform or character. Flat side elevation."
+    },
+    {
+      "id": "glowing_rune_b",
+      "file": "assets/environments/ancient_forest/magical_supports/glowing_rune_b.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "glowing_rune_b",
+      "description": "One isolated warm golden-green ancient geometric rune seal, abstract interlocking triangle and leaf-shaped curves, fine luminous lines with gentle transparent glow. Distinct shape from a diamond seal. No text or object."
+    },
+    {
+      "id": "floating_stone_a",
+      "file": "assets/environments/ancient_forest/magical_supports/floating_stone_a.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "floating_stone_a",
+      "description": "One small floating angular grey stone fragment with cyan engraved geometric rune and soft cyan glow in one crack. Mossy corner and pale stone facets, fully isolated, no platform, orbit ring or particles outside."
+    },
+    {
+      "id": "floating_stone_b",
+      "file": "assets/environments/ancient_forest/magical_supports/floating_stone_b.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "floating_stone_b",
+      "description": "One small floating ancient rectangular carved stone fragment with emerald glowing geometric inlay and ochre mineral vein. Different silhouette from an angular crystal. Full isolated stone, no other objects."
+    },
+    {
+      "id": "energy_trail_a",
+      "file": "assets/environments/ancient_forest/magical_supports/energy_trail_a.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "energy_trail_a",
+      "description": "One thin upward curving turquoise magical suspension energy ribbon, gentle spiral S shape with translucent tapering ends and tiny nearby glints. No emitter or platform. Entire effect fits with ample transparent margin."
+    },
+    {
+      "id": "energy_trail_b",
+      "file": "assets/environments/ancient_forest/magical_supports/energy_trail_b.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "energy_trail_b",
+      "description": "One thin golden-green magical suspension energy ribbon, two softly entwining streams rising in a narrow arc, tapered alpha edges and tiny bright glints. No objects, full isolated effect."
+    },
+    {
+      "id": "suspension_ring_water",
+      "file": "assets/environments/ancient_forest/magical_supports/suspension_ring_water.png",
+      "category": "magical_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        256
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        256
+      ],
+      "role": "isolated_sprite",
+      "source": "suspension_ring_water",
+      "description": "One independent cyan and deep blue magical suspension ring viewed from SIDE ELEVATION as a shallow horizontal luminous ellipse, fine ancient geometric marks along the rim, small discontinuities in energy line, gentle transparent halo. Very thin inner energy lines, center completely transparent. No platform, rocks, character or ground. Entire ring visible."
+    },
+    {
+      "id": "suspension_ring_fire",
+      "file": "assets/environments/ancient_forest/magical_supports/suspension_ring_fire.png",
+      "category": "magical_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        256
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        256
+      ],
+      "role": "isolated_sprite",
+      "source": "suspension_ring_fire",
+      "description": "One independent amber and soft orange magical suspension ring viewed from SIDE ELEVATION as a shallow horizontal luminous ellipse, fine ancient geometric marks along the rim, small discontinuities in energy line, gentle transparent halo. Very thin inner energy lines, center completely transparent. No platform, rocks, character or ground. Entire ring visible."
+    },
+    {
+      "id": "suspension_ring_air",
+      "file": "assets/environments/ancient_forest/magical_supports/suspension_ring_air.png",
+      "category": "magical_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        256
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        256
+      ],
+      "role": "isolated_sprite",
+      "source": "suspension_ring_air",
+      "description": "One independent pale turquoise and white magical suspension ring viewed from SIDE ELEVATION as a shallow horizontal luminous ellipse, fine ancient geometric marks along the rim, small discontinuities in energy line, gentle transparent halo. Very thin inner energy lines, center completely transparent. No platform, rocks, character or ground. Entire ring visible."
+    },
+    {
+      "id": "suspension_ring_earth",
+      "file": "assets/environments/ancient_forest/magical_supports/suspension_ring_earth.png",
+      "category": "magical_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        256
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        256
+      ],
+      "role": "isolated_sprite",
+      "source": "suspension_ring_earth",
+      "description": "One independent emerald and muted gold magical suspension ring viewed from SIDE ELEVATION as a shallow horizontal luminous ellipse, fine ancient geometric marks along the rim, small discontinuities in energy line, gentle transparent halo. Very thin inner energy lines, center completely transparent. No platform, rocks, character or ground. Entire ring visible."
+    },
+    {
+      "id": "levitation_particles_a",
+      "file": "assets/environments/ancient_forest/magical_supports/levitation_particles_a.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "levitation_particles_a",
+      "description": "One sparse small group of cyan and ivory levitation motes: tiny diamonds, round glowing points and very short upward streaks, arranged as a narrow vertical loose stream. Delicate alpha fades, full effect centered with ample margin. No objects, no big glow cloud."
+    },
+    {
+      "id": "levitation_particles_b",
+      "file": "assets/environments/ancient_forest/magical_supports/levitation_particles_b.png",
+      "category": "magical_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms_effects",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "levitation_particles_b",
+      "description": "One sparse small group of emerald and muted golden levitation motes: tiny irregular polygon flecks, spark points and short drifting streaks, broad low arc distribution. Full effect isolated, translucent edges, no objects or large aura."
+    }
+  ]
+}

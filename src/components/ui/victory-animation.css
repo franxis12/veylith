@@ -1,0 +1,113 @@
+.sprite-animation {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  flex: 0 0 auto;
+}
+.sprite-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+.sprite-fallback > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.sprite-animation > .sprite-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% * var(--sprite-frames));
+  height: 100%;
+  max-width: none;
+  visibility: hidden;
+}
+.sprite-ready > .sprite-strip {
+  visibility: visible;
+  animation: ui-sprite var(--sprite-duration) steps(var(--sprite-steps), end)
+    var(--sprite-delay) 1 backwards;
+}
+.sprite-ready > .sprite-fallback {
+  visibility: hidden;
+}
+@keyframes ui-sprite {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(var(--sprite-end));
+  }
+}
+.victory-celebration {
+  position: relative;
+  isolation: isolate;
+}
+.victory-glow {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  pointer-events: none;
+  animation: victory-bloom 1400ms ease-out both;
+}
+@keyframes victory-bloom {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.45);
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.25);
+  }
+}
+.record-status {
+  position: relative;
+}
+.record-sparkle {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  left: calc(50% - 55px);
+  top: calc(50% - 55px);
+}
+.reward-chip .reward-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.reward-content .reward-coin {
+  width: 30px;
+  height: 30px;
+}
+.reward-chip .reward-sparkle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: calc(50% - 50px);
+  top: calc(50% - 50px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .sprite-ready > .sprite-strip {
+    display: none;
+    animation: none;
+  }
+  .sprite-ready > .sprite-fallback {
+    visibility: visible;
+  }
+  .victory-glow {
+    display: none;
+    animation: none;
+  }
+}

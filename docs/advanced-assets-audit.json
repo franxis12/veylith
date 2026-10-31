@@ -1,0 +1,418 @@
+[
+  {
+    "path": "assets/objects/advanced/reflectors/static/reflector_base.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "4385a78803e5d2850ae6e10fe4fa71ad4487a95592225e3b216b1a0104a19659"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/mirror_nw.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "95ddb71e4da573521f179003516ec57b789b4e669a59ae41297f0a694b82f729"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/mirror_ne.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "7a03d9f699f35cef6c80a8e723e5fe143174fa7bd8ca4a2b5ddb301bb5a99b72"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/mirror_se.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "238778e1990db37890933497b1f8cc961813d6959422ba67d8c91f61c131a656"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/mirror_sw.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "d33f14e1fa15cf20917dccad2a490662b56bafc3d2a0159cf75d4407f73dc83f"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/reflective_surface.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "95ddb71e4da573521f179003516ec57b789b4e669a59ae41297f0a694b82f729"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/light_beam_horizontal_tile.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "aaaf761cc8b3938c2dc5e96b2ab771509950ac3f45a563ce9ae6b842f79c61c2"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/light_beam_vertical_tile.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "b2db32192b40f6b7e8c0e10c6129761614ec8b83bb33edbae8f3499f41591f2d"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/light_receptor_inactive.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "3a4991bc232c6df97284b05ca4df6c49398addeeca7b4e2edb4fc0b2af180a91"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/receptor_glow_active.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "8b8f34843fbb4dcbc5b607a95aab69da350adce974449fcbb6ed1de305cf1be6"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/static/light_receptor_activated.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "a8a52e30411e92d5f239b2178b92507c2e3c75eec90996eae162803a9b1fe2dd"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/spritesheets/mirror_rotation_spritesheet.png",
+    "width": 3072,
+    "height": 512,
+    "frames": 6,
+    "fps": 12,
+    "sha256": "64e2b46bed0b87cb7e95d30c3bf85f13c1cab72a0f5eb705fbc3c229719d740e"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/spritesheets/light_reflection_impact_spritesheet.png",
+    "width": 1536,
+    "height": 256,
+    "frames": 6,
+    "fps": 16,
+    "sha256": "174d869b64d7d330372dbf99e0d0edd3b18d54d8b1dd40bd3c306b3aa96d9e9c"
+  },
+  {
+    "path": "assets/objects/advanced/reflectors/spritesheets/receptor_activation_spritesheet.png",
+    "width": 3072,
+    "height": 512,
+    "frames": 6,
+    "fps": 12,
+    "sha256": "2ea4e6c1fa9ba05720d3e7da29f88d196770f1130b556b02a3e62a5ead4103ca"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/pulley_housing.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "0460e92f1786f02f3c5df027bf8c8208db832afb0c6f69656c78a8e6f1dd31d1"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/pulley_wheel.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "3909a09714a51dbc738b1800af58564d13db94cc89e01854678e8d199f206cb3"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/rope_vertical_tile.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "4fc8a241aa5fecc6d07c0bb269c4f76f3f2943d04c91d9ae92d79b68903bad30"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/counterweight.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "db7188e349acde5147212f4f7ab2602eb8bf98a1dc0a5067eb23866467f5d202"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/counterweight_active_glow.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "5c9ed904a7b49c41b51310b7863830f91a729b013853bf4cba945d33661f5630"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/movable_platform.png",
+    "width": 1024,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "ae27daec30e4d0190576b835e688fc65b66aa19a90ddf9d93bb77ea1ef9de434"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/lower_mechanical_stop.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "7b1d96cd29260c9c027f57c070012515ba6c03b45b4eb26efd49b58eff7fd53d"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/static/upper_mechanical_stop.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "e35efaa8b4c3b9145c86bdfca3d2f94ec28dbecb10450bcd52ee89409c748e2a"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/spritesheets/pulley_rotation_spritesheet.png",
+    "width": 4096,
+    "height": 512,
+    "frames": 8,
+    "fps": 12,
+    "sha256": "c6196863f905ff3c927e61d9d1b6fee443f8dbcc2eea120f81e98f092db84d6a"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/spritesheets/counterweight_activation_spritesheet.png",
+    "width": 3072,
+    "height": 512,
+    "frames": 6,
+    "fps": 12,
+    "sha256": "d106ba10056b5b86d42f398721e189c5351174d8a9ca7d9b24ba396542a4a88b"
+  },
+  {
+    "path": "assets/objects/advanced/pulleys/spritesheets/mechanical_impact_spritesheet.png",
+    "width": 1024,
+    "height": 256,
+    "frames": 4,
+    "fps": 16,
+    "sha256": "47fa3295fb06bf056a1b7ba9de9aceff7e3774c743a3009eae47d0b82d36d0ab"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_center_segment.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "a7543e97e61f29a669974b6f67b48505b474335d779a424952a72dbe9d417cb2"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_left_end_cap.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "e06695028787c4284b5ffb2de581c3e8c46480c170a25b5feab83c22486b30a1"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_right_end_cap.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "5bf067829f090834e9057f4220d240a23e6f956080fffcc2260fa82fa7f562f5"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_support.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "9c2a1609905ae1245b1e3f7780e66f0208397820574bd8265e1c2aa75687d87f"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_direction_right.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "4d06cda806014a0f1fe3e798b4c9cee29eb94b95b3028f73e85a55e731967581"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_direction_left.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "ba9d6b95c1e168f44cc71062bb44293d066ff7f53e7a64ca53b66271da4b2098"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_control_switch.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "716a693d7460fe67ed27a1a686e257bf85ed36d8a45e70319fc028d29d8bf045"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_belt_idle.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "b597b8e0b6cc6d4148068e4e0da14a285126837c656082c0919dd8a44519342c"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/static/conveyor_roller_idle.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "77787fcff43df001a623ceaaa58cdea37bde8a9d40f530fb5b1931cee967a6f0"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_moving_right_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "frames": 8,
+    "fps": 12,
+    "sha256": "1d37eb438c09d922496708012c89ce26e6ea938c79f2b092418d5328bdcd0c26"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_moving_right_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "frames": 8,
+    "fps": 12,
+    "sha256": "0e0eb24f819868a2a81688c154572893b2c5ce1a86d0a6d0c2bac685d2356b05"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_moving_left_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "frames": 8,
+    "fps": 12,
+    "sha256": "5d262fcc83342ab230997ac0833a58ea01b07c05542fbc97ec20d75848d85773"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_moving_left_spritesheet.png",
+    "width": 2048,
+    "height": 256,
+    "frames": 8,
+    "fps": 12,
+    "sha256": "ddd03177d6fcd2407e0230b642c9e45c0187f8e15440b1e19317a47593aa64ca"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_starting_spritesheet.png",
+    "width": 1024,
+    "height": 256,
+    "frames": 4,
+    "fps": 12,
+    "sha256": "c6823352f0a504184f004b114c669ef9dd5b0338a5ff1d28cd9db2109ca8bd67"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_starting_spritesheet.png",
+    "width": 1024,
+    "height": 256,
+    "frames": 4,
+    "fps": 12,
+    "sha256": "1afd2896409e8e53f8128518ee26d6fbbe8db19f9e0e59e74d56b4492bc2ee51"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_stopping_spritesheet.png",
+    "width": 1024,
+    "height": 256,
+    "frames": 4,
+    "fps": 12,
+    "sha256": "65b8b0f7d59983ee3c7f2f6db32dff79e01d53d28af9d9b60875603a0266c821"
+  },
+  {
+    "path": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_stopping_spritesheet.png",
+    "width": 1024,
+    "height": 256,
+    "frames": 4,
+    "fps": 12,
+    "sha256": "ea4d77335f4ed31811afa77297789a58e258e9b93b5534c2df4808dbf74d0b59"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_frame.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "566d1e0d98a2981cb63e0a19e68173333c1ddb24e91cf96781a05e8eaf06e64b"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_panel.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "f20d1da338f603bd69c471680a293938f5960427e26f35dd2e27fa48019bd38b"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_direction_right.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "1f64bcb30060b69b653b2ac356775c01999e1bf51cea463918fc157c583db249"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_panel_closed.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "d8dcc94b32964288b3c825e2ef7f6e95cdd3d53104b387e4157fa40aefa54fb0"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_panel_open.png",
+    "width": 512,
+    "height": 512,
+    "frames": 0,
+    "fps": null,
+    "sha256": "2624d891b0a9299a7e57de2097e018ce30a46b232923eb0c9a67bb6292f40ee8"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_locked_indicator.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "281984cc9ecb80fcf16c330937e98f725552637bd7ab3b006d4359d2c9eb893a"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/static/gate_unlocked_indicator.png",
+    "width": 256,
+    "height": 256,
+    "frames": 0,
+    "fps": null,
+    "sha256": "42fda6cd4f22e1d6dee61c77f64f1cae1ef3f40c6c64efae2f129d1120a1a0a8"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/spritesheets/gate_open_spritesheet.png",
+    "width": 3072,
+    "height": 512,
+    "frames": 6,
+    "fps": 12,
+    "sha256": "361eaa0095b045236f9ab2abdf63b19d7e848f833c654bd39d90be82be3311c2"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/spritesheets/gate_close_spritesheet.png",
+    "width": 3072,
+    "height": 512,
+    "frames": 6,
+    "fps": 12,
+    "sha256": "53a1f94cc905a3afcfb23cdd16417d658e8835f188c694f7f0028ba817302a4a"
+  },
+  {
+    "path": "assets/objects/advanced/directional_gates/spritesheets/gate_unlock_spritesheet.png",
+    "width": 1024,
+    "height": 256,
+    "frames": 4,
+    "fps": 12,
+    "sha256": "973186883560a47974d4ddc644ef5f2be4efa69c639bde6124e3631ceac92d49"
+  }
+]

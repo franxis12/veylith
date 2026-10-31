@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "id": "lab-lever-return",
+  "name": "Laboratorio · Palancas de ida y regreso",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 384,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 352,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 529,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 74,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "lift",
+      "asset": "world:mechanical_elevator",
+      "x": 400,
+      "y": 535,
+      "width": 512,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 32,
+        "y": 115,
+        "width": 448,
+        "height": 14
+      },
+      "kind": "mechanical_elevator",
+      "effect": {
+        "enabled": false,
+        "x": 32,
+        "y": 115,
+        "width": 448,
+        "height": 14
+      },
+      "behavior": {
+        "kind": "elevator",
+        "requires": [],
+        "autostart": false,
+        "travelX": 0,
+        "travelY": -300,
+        "speed": 160,
+        "mode": "controlled"
+      },
+      "state": "idle",
+      "hint": "La señal activa lo lleva al destino; al apagarla regresa al inicio. Configura el recorrido en el inspector.",
+      "type": "world"
+    },
+    {
+      "id": "go",
+      "asset": "world:interactive_lever",
+      "x": 520,
+      "y": 520,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 24,
+        "y": 95,
+        "width": 80,
+        "height": 25
+      },
+      "kind": "interactive_lever",
+      "effect": {
+        "enabled": true,
+        "x": -45,
+        "y": -40,
+        "width": 218,
+        "height": 168
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "activate",
+        "targets": ["lift"]
+      },
+      "state": "off",
+      "hint": "Pulsa Poder junto a la palanca para alternarla.",
+      "type": "world"
+    },
+    {
+      "id": "back",
+      "asset": "world:interactive_lever",
+      "x": 520,
+      "y": 220,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 24,
+        "y": 95,
+        "width": 80,
+        "height": 25
+      },
+      "kind": "interactive_lever",
+      "effect": {
+        "enabled": true,
+        "x": -45,
+        "y": -40,
+        "width": 218,
+        "height": 168
+      },
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false,
+        "action": "deactivate",
+        "targets": ["lift"]
+      },
+      "state": "off",
+      "hint": "Pulsa Poder junto a la palanca para alternarla.",
+      "type": "world"
+    },
+    {
+      "id": "upper-bank",
+      "asset": "ground",
+      "x": 896,
+      "y": 350,
+      "width": 1152,
+      "height": 750,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 1120,
+        "height": 750
+      },
+      "type": "terrain"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "timed_door",
+  "label": "Puerta temporizada",
+  "category": "mechanisms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "Opening collider [174,155,167,288]. Gate is clipped at the lintel; hidden gate pixels are not discarded source art.",
+  "states": {
+    "closed": {
+      "layers": [
+        "assets/objects/mechanisms/timed_door/door_closed.png",
+        "assets/objects/mechanisms/timed_door/door_frame.png"
+      ]
+    },
+    "open": {
+      "layers": [
+        "assets/objects/mechanisms/timed_door/door_open.png",
+        "assets/objects/mechanisms/timed_door/door_frame.png"
+      ]
+    },
+    "door_opening": {
+      "animation": "door_opening"
+    },
+    "door_closing": {
+      "animation": "door_closing"
+    },
+    "door_warning": {
+      "animation": "door_warning"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/timed_door/door_frame.png",
+    "assets/objects/mechanisms/timed_door/door_closed.png",
+    "assets/objects/mechanisms/timed_door/door_open.png"
+  ],
+  "directory": "assets/objects/mechanisms/timed_door",
+  "defaultBack": [],
+  "defaultFront": [
+    "assets/objects/mechanisms/timed_door/door_frame.png"
+  ],
+  "thumbnail": "assets/objects/mechanisms/timed_door/preview.png"
+}

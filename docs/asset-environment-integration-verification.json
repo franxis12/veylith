@@ -1,0 +1,90 @@
+{
+  "scope": "155 supplied environment PNGs, 12 modular platform families, editor and isolated playtest",
+  "originalFilesVerified": 1531,
+  "originalFilesChanged": [],
+  "canonicalLevelFilesChanged": [],
+  "browser": {
+    "passed": true,
+    "decoded": 155,
+    "checks": [
+      "Browser decodes all 155 original PNGs at their measured sizes.",
+      "Scale control shrinks platforms and fills, enlarges chain links, preserves colliders, and supports undo/redo followed by modular extension.",
+      "Search, click and drag placement, full-canvas dimensions, default layers, independent colliders and explicit platform fitting.",
+      "Explicit JSON v1 save/reopen preserves all objects, platform families, proportional art, extended chain, tiled terrain and independent colliders.",
+      "Real StrictMode editor/playtest mount, resize, pause, restart and teardown leave one canvas and preserve campaign storage.",
+      "Real renderer uses 50% platforms, chains, fills and unique art and 200% beam modules; partial repeats crop without distortion.",
+      "Earth lands on the supplied platform surface, crosses module seams, reaches the exit and restarts without accumulating textures."
+    ],
+    "errors": []
+  },
+  "checks": {
+    "typecheck": "passed (also included in build)",
+    "lint": "passed",
+    "build": "passed; existing Phaser chunk size advisory",
+    "productionEditorExclusion": "passed",
+    "targetedTests": "80 passed across environmentScaling, environmentAssets, levelEditor and BootScene",
+    "fullSuite": {
+      "passed": 502,
+      "failed": 10,
+      "total": 512,
+      "unrelatedFailures": [
+        {
+          "file": "src/tests/campaignIntegrity.test.ts",
+          "cases": 2,
+          "detail": "forest-1 has custom non-Earth layout/support and coin IDs differing from the archived campaign."
+        },
+        {
+          "file": "src/tests/campaignIntegrity.test.ts",
+          "cases": 5,
+          "detail": "forest-2 no longer has the archived locked exit, coin entitlement, block and channel geometry expected by campaign tests."
+        },
+        {
+          "file": "src/tests/heavyBlock.test.ts",
+          "cases": 2,
+          "detail": "Both tests expect a block in the current forest-2 document; that object is absent."
+        },
+        {
+          "file": "src/tests/localization.test.ts",
+          "cases": 1,
+          "detail": "The existing forest-1 puzzle brief has no English translation."
+        }
+      ]
+    },
+    "format": {
+      "changedFiles": "passed",
+      "repository": "Existing src/game/levels/data/forest-1.json is not Prettier-formatted; preserved byte-for-byte."
+    },
+    "expansionAudit": "155 PNG dimensions, alpha bounds, source hashes and 19 manifests verified; all generated data current",
+    "fullAssetAudit": {
+      "status": "3 unrelated advanced sprite layout errors",
+      "files": [
+        "assets/objects/advanced/pulleys/spritesheets/mechanical_impact_spritesheet.png",
+        "assets/objects/advanced/reflectors/spritesheets/light_reflection_impact_spritesheet.png",
+        "assets/objects/advanced/reflectors/spritesheets/mirror_rotation_spritesheet.png"
+      ],
+      "detail": "These original advanced sheets and their consumers were not modified. The global browser evidence fingerprint is stale; this report records only the expansion checks."
+    }
+  },
+  "limits": [
+    "No physical iPhone profiling or native build; no native changes.",
+    "Decorative slopes, stairs, magic and supports do not add new gameplay."
+  ],
+  "resizing": {
+    "platforms": "Uniform end caps, repeated center and cropped final module.",
+    "chainsRopesAndPosts": "Extend vertically; dragging preserves thickness.",
+    "beams": "Extend horizontally; dragging preserves thickness.",
+    "terrainFills": "Repeat tiles in both directions at the chosen scale (default 1).",
+    "uniqueArtwork": "Preserve original aspect ratio.",
+    "collision": "Visual resizing leaves independent colliders unchanged.",
+    "compatibility": "Older stretched documents render uniformly without rewriting their saved dimensions.",
+    "budgets": "4096 pieces per environment object; combined terrain/environment budget of 8192 per level."
+  },
+  "scaling": {
+    "control": "Escala visual (%) uniformly scales the whole object, preserving its top-left position and module count.",
+    "extension": "Subsequent width/height edits and drag extension retain the chosen module size; platform drag snaps to scaled modules.",
+    "persistence": "Only two-axis environment fills need optional tileScale in JSON v1; other scales derive from dimensions. Old documents keep their appearance.",
+    "collision": "Scaling leaves independent colliders unchanged; platform fitting remains explicit and undoable.",
+    "validation": "Finite positive fill scales only; scaled cells respect the same 4096/8192 budgets. Fractional scales do not add phantom cells.",
+    "verification": "All 167 palette entries round-trip at 10%, 25%, 50%, 150% and 200%; tested undo/redo, duplicate, save/reopen and real playtest."
+  }
+}

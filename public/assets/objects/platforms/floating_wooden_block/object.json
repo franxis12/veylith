@@ -1,0 +1,30 @@
+{
+  "id": "floating_wooden_block",
+  "label": "Bloque flotante",
+  "category": "platforms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    390
+  ],
+  "notes": "Visual buoyancy only. Physics and world translation remain game-controlled.",
+  "states": {
+    "idle": {
+      "layers": [
+        "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png"
+      ]
+    },
+    "wooden_block_floating": {
+      "animation": "wooden_block_floating"
+    },
+    "wooden_block_wake": {
+      "animation": "wooden_block_wake"
+    }
+  },
+  "components": [
+    "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png"
+  ],
+  "directory": "assets/objects/platforms/floating_wooden_block",
+  "thumbnail": "assets/objects/platforms/floating_wooden_block/preview.png"
+}

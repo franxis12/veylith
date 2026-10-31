@@ -1,0 +1,634 @@
+{
+  "version": 1,
+  "id": "forest-10",
+  "name": "El puente engañoso",
+  "theme": "ancient-forest",
+  "width": 4608,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 55000,
+    "twoStarsMs": 110000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 506,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "fork-court",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 680,
+      "width": 1024,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 720
+      }
+    },
+    {
+      "id": "route-lever",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 736,
+      "y": 560,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "kind": "interactive_lever",
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": 8,
+        "y": -54,
+        "width": 112,
+        "height": 174
+      },
+      "hint": "La palanca del cauce abre el camino al santuario."
+    },
+    {
+      "id": "main-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 745.1881188118812,
+      "y": 535,
+      "width": 1622.1782178217823,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 278.81188118811883,
+        "y": 145,
+        "width": 1280,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["route-lever"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 1622.1782178217823,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2304,
+      "y": 680,
+      "width": 768,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 720
+      }
+    },
+    {
+      "id": "ruin-steps-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3072,
+      "y": 640,
+      "width": 256,
+      "height": 760,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 760
+      }
+    },
+    {
+      "id": "ruin-steps-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3328,
+      "y": 600,
+      "width": 256,
+      "height": 800,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 800
+      }
+    },
+    {
+      "id": "ruin-steps-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3584,
+      "y": 560,
+      "width": 256,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 840
+      }
+    },
+    {
+      "id": "exit-ruins",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3840,
+      "y": 560,
+      "width": 768,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 840
+      }
+    },
+    {
+      "id": "exit-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 4006,
+      "y": 285,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 4232.5,
+      "y": 284,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["route-lever", "exit-wall"]
+    },
+    {
+      "id": "fork-lake",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 1024,
+      "y": 880,
+      "width": 1280,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 1280,
+        "height": 360
+      },
+      "hint": "Tierra se hunde. Cruza por las plataformas."
+    },
+    {
+      "id": "main-sign",
+      "type": "label",
+      "asset": null,
+      "x": 630,
+      "y": 390,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "Santuario →\nMirador: desvío opcional"
+    },
+    {
+      "id": "bridge-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 2080,
+      "y": 210,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "lookout-step-1",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1120,
+      "y": 640,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout-step-2",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1248,
+      "y": 600,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout-step-3",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1376,
+      "y": 560,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout-step-4",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1504,
+      "y": 520,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout-step-5",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1712,
+      "y": 480,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout-step-6",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1840,
+      "y": 440,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1968,
+      "y": 440,
+      "width": 256,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -4,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 20
+      }
+    },
+    {
+      "id": "lookout-sign",
+      "type": "label",
+      "asset": null,
+      "x": 1780,
+      "y": 140,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "Mirador\nRegresa al puente inferior."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 619.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-1",
+      "type": "decoration",
+      "asset": "column",
+      "x": 874,
+      "y": 320,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-4",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 2349,
+      "y": 619.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-4",
+      "type": "decoration",
+      "asset": "column",
+      "x": 2922,
+      "y": 320,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-8",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 3885,
+      "y": 499.20000000000005,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-8",
+      "type": "decoration",
+      "asset": "column",
+      "x": 4458,
+      "y": 200,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fork-choice",
+      "type": "label",
+      "asset": null,
+      "x": 1350,
+      "y": 250,
+      "width": 340,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 340,
+        "height": 60
+      },
+      "text": "Salta hacia el mirador ↗\nO baja al puente →"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "fire_switch",
+  "label": "Interruptor de fuego",
+  "category": "elemental",
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    128,
+    240
+  ],
+  "notes": "",
+  "states": {
+    "unlit": {
+      "layers": [
+        "assets/objects/elemental/fire_switch/fire_switch_base.png"
+      ]
+    },
+    "active": {
+      "animation": "fire_switch_active"
+    },
+    "igniting": {
+      "animation": "fire_switch_igniting"
+    },
+    "extinguishing": {
+      "animation": "fire_switch_extinguishing"
+    }
+  },
+  "components": [
+    "assets/objects/elemental/fire_switch/fire_switch_base.png"
+  ],
+  "directory": "assets/objects/elemental/fire_switch",
+  "defaultBack": [
+    "assets/objects/elemental/fire_switch/fire_switch_base.png"
+  ],
+  "thumbnail": "assets/objects/elemental/fire_switch/preview.png"
+}

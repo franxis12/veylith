@@ -1,0 +1,636 @@
+{
+  "pack": "Veylith — Ancient Forest Environment Expansion",
+  "version": "1.0",
+  "source_art": "85 individually generated assets; modular variants assembled from the new art",
+  "perspective": "orthographic side elevation",
+  "lighting": "upper-left",
+  "units": "pixels",
+  "tile_grid": 128,
+  "layer_order_back_to_front": [
+    "background",
+    "behind_gameplay",
+    "behind_platforms",
+    "terrain_detail",
+    "world_decoration",
+    "behind_platforms_effects",
+    "foreground"
+  ],
+  "integration": {
+    "existing_assets_modified": false,
+    "terrain_detail_underlay": "Interior tiles contain genuine alpha cracks. Put existing terrain backing behind them; edge and corner overlays mask the front artwork only.",
+    "tile_repeat": "Repeat on the listed axis at step_px. Do not auto-trim sprites.",
+    "static_magic": "Runes, rings, trails and particles are independent static overlays.",
+    "scale": "Assets are authored in pixel space; place at 1× before applying a common world scale."
+  },
+  "assets": [
+    {
+      "id": "stone_column_base",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_column_base.png",
+      "category": "structural_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_column_base",
+      "description": "Only a short wide plinth BASE for a modular ancient stone column. Square stepped mossy stone foot, flat narrow centered top socket, frontal side-elevation, width about twice shaft socket width. No shaft, no pillar, no background. Entire isolated base with margins.",
+      "connections": {
+        "shaft_socket": [
+          128,
+          193
+        ]
+      }
+    },
+    {
+      "id": "stone_column_capital",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_column_capital.png",
+      "category": "structural_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        100
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.390625
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        100
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_column_capital",
+      "description": "Only a CAPITAL cap for a modular ancient stone column. Flat wide horizontal stone abacus and compact tapered neck below, carved spiral geometric ornament, sparse moss, bronze corner pins. Clear central neck width half total width. No shaft or base. Side elevation, whole isolated cap.",
+      "connections": {
+        "shaft_socket": [
+          128,
+          100
+        ],
+        "support_top": [
+          128,
+          32
+        ]
+      }
+    },
+    {
+      "id": "broken_pillar_a",
+      "file": "assets/environments/ancient_forest/structural_supports/broken_pillar_a.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "broken_pillar_a",
+      "description": "One broken upright ancient square stone pillar, waist-high stub with jagged slanted fractured top, carved geometric runes, small moss patches, stout stepped base. Flat side elevation, no rubble pile beside it, no scene. Full isolated silhouette."
+    },
+    {
+      "id": "broken_pillar_b",
+      "file": "assets/environments/ancient_forest/structural_supports/broken_pillar_b.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "broken_pillar_b",
+      "description": "One broken ancient column variation: taller narrow shaft with exposed chipped front, uneven horizontal top fracture, a short root wrapping its lower section, worn bronze band, square foot. Full isolated side elevation, distinct from a squat stub."
+    },
+    {
+      "id": "wood_brace_rising_right",
+      "file": "assets/environments/ancient_forest/structural_supports/wood_brace_rising_right.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "wood_brace_rising_right",
+      "description": "One complete diagonal wooden structural brace rising from bottom-left to top-right, straight rectangular weathered timber, cut square ends with small bronze fastening plates. Side elevation, upper-left light, transparent around entire brace. No support frame or architecture."
+    },
+    {
+      "id": "wood_brace_rising_left",
+      "file": "assets/environments/ancient_forest/structural_supports/wood_brace_rising_left.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "wood_brace_rising_left",
+      "description": "One complete diagonal wooden structural brace rising from bottom-right to top-left, straight rectangular weathered timber, cut square ends and small bronze fastening plates. Side elevation, upper-left light, whole isolated brace. No support frame or architecture."
+    },
+    {
+      "id": "scaffold_joint",
+      "file": "assets/environments/ancient_forest/structural_supports/scaffold_joint.png",
+      "category": "structural_supports",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        128
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.5
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        128
+      ],
+      "role": "isolated_sprite",
+      "source": "scaffold_joint",
+      "description": "One small bronze and wood scaffold CROSS JOINT: centered square bronze connection plate with four rivets and short timber sockets extending up, down, left and right, all equal thickness. Flat frontal side elevation, no full scaffold or scenery, isolated.",
+      "connections": {
+        "joint_center": [
+          128,
+          128
+        ]
+      }
+    },
+    {
+      "id": "stone_arch",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_arch.png",
+      "category": "structural_supports",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_arch",
+      "description": "One intact ancient stone support arch, WIDE shallow bridge-like curve, two square stone feet, thick interlocking mossy grey stone voussoirs, a small central geometric keystone. Empty truly transparent opening, entire arch isolated. Side elevation, no road deck or landscape."
+    },
+    {
+      "id": "stone_column_segment",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_column_segment.png",
+      "category": "structural_supports",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        64,
+        0
+      ],
+      "anchor_normalized": [
+        0.5,
+        0
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        64,
+        0
+      ],
+      "role": "repeatable_support_segment",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connections": {
+        "top": [
+          64,
+          0
+        ],
+        "bottom": [
+          64,
+          128
+        ]
+      },
+      "source": "stone_column_shaft_source"
+    },
+    {
+      "id": "wood_post_segment",
+      "file": "assets/environments/ancient_forest/structural_supports/wood_post_segment.png",
+      "category": "structural_supports",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        64,
+        0
+      ],
+      "anchor_normalized": [
+        0.5,
+        0
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        64,
+        0
+      ],
+      "role": "repeatable_support_segment",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connections": {
+        "top": [
+          64,
+          0
+        ],
+        "bottom": [
+          64,
+          128
+        ]
+      },
+      "source": "wood_post_source"
+    },
+    {
+      "id": "wood_beam_segment",
+      "file": "assets/environments/ancient_forest/structural_supports/wood_beam_segment.png",
+      "category": "structural_supports",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        64
+      ],
+      "anchor_normalized": [
+        0,
+        0.5
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        64
+      ],
+      "role": "repeatable_support_segment",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connections": {
+        "left": [
+          0,
+          64
+        ],
+        "right": [
+          128,
+          64
+        ]
+      },
+      "source": "wood_beam_source"
+    },
+    {
+      "id": "stone_foundation_segment",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_foundation_segment.png",
+      "category": "structural_supports",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        64
+      ],
+      "anchor_normalized": [
+        0,
+        0.5
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        64
+      ],
+      "role": "repeatable_support_segment",
+      "repeat": {
+        "axes": [
+          "x"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connections": {
+        "left": [
+          0,
+          64
+        ],
+        "right": [
+          128,
+          64
+        ]
+      },
+      "source": "stone_foundation_source"
+    },
+    {
+      "id": "chain_segment",
+      "file": "assets/environments/ancient_forest/structural_supports/chain_segment.png",
+      "category": "structural_supports",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        64,
+        0
+      ],
+      "anchor_normalized": [
+        0.5,
+        0
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        64,
+        0
+      ],
+      "role": "repeatable_support_segment",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connections": {
+        "top": [
+          64,
+          0
+        ],
+        "bottom": [
+          64,
+          128
+        ]
+      },
+      "source": "chain_source"
+    },
+    {
+      "id": "rope_segment",
+      "file": "assets/environments/ancient_forest/structural_supports/rope_segment.png",
+      "category": "structural_supports",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        64,
+        0
+      ],
+      "anchor_normalized": [
+        0.5,
+        0
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        64,
+        0
+      ],
+      "role": "repeatable_support_segment",
+      "repeat": {
+        "axes": [
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "connections": {
+        "top": [
+          64,
+          0
+        ],
+        "bottom": [
+          64,
+          128
+        ]
+      },
+      "source": "rope_source"
+    },
+    {
+      "id": "stone_column_short",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_column_short.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "assembled_support",
+      "connections": {
+        "support_top": [
+          256,
+          284
+        ],
+        "ground": [
+          256,
+          496
+        ]
+      },
+      "components": [
+        "stone_column_base",
+        "stone_column_segment",
+        "stone_column_capital"
+      ],
+      "shaft_width_px": 64
+    },
+    {
+      "id": "stone_column_medium",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_column_medium.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "assembled_support",
+      "connections": {
+        "support_top": [
+          256,
+          156
+        ],
+        "ground": [
+          256,
+          496
+        ]
+      },
+      "components": [
+        "stone_column_base",
+        "stone_column_segment",
+        "stone_column_capital"
+      ],
+      "shaft_width_px": 64
+    },
+    {
+      "id": "stone_column_tall",
+      "file": "assets/environments/ancient_forest/structural_supports/stone_column_tall.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "assembled_support",
+      "connections": {
+        "support_top": [
+          256,
+          28
+        ],
+        "ground": [
+          256,
+          496
+        ]
+      },
+      "components": [
+        "stone_column_base",
+        "stone_column_segment",
+        "stone_column_capital"
+      ],
+      "shaft_width_px": 64
+    },
+    {
+      "id": "scaffolding_bay",
+      "file": "assets/environments/ancient_forest/structural_supports/scaffolding_bay.png",
+      "category": "structural_supports",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        432
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.84375
+      ],
+      "intended_layer": "behind_platforms",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        432
+      ],
+      "role": "assembled_support",
+      "components": [
+        "wood_post_segment",
+        "wood_beam_segment",
+        "wood_brace_rising_right",
+        "scaffold_joint"
+      ],
+      "usage": "An isolated bay. Extend with separate post/beam segments; overlay joints at intersections."
+    }
+  ]
+}

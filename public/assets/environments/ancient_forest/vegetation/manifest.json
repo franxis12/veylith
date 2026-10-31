@@ -1,0 +1,699 @@
+{
+  "pack": "Veylith — Ancient Forest Environment Expansion",
+  "version": "1.0",
+  "source_art": "85 individually generated assets; modular variants assembled from the new art",
+  "perspective": "orthographic side elevation",
+  "lighting": "upper-left",
+  "units": "pixels",
+  "tile_grid": 128,
+  "layer_order_back_to_front": [
+    "background",
+    "behind_gameplay",
+    "behind_platforms",
+    "terrain_detail",
+    "world_decoration",
+    "behind_platforms_effects",
+    "foreground"
+  ],
+  "integration": {
+    "existing_assets_modified": false,
+    "terrain_detail_underlay": "Interior tiles contain genuine alpha cracks. Put existing terrain backing behind them; edge and corner overlays mask the front artwork only.",
+    "tile_repeat": "Repeat on the listed axis at step_px. Do not auto-trim sprites.",
+    "static_magic": "Runes, rings, trails and particles are independent static overlays.",
+    "scale": "Assets are authored in pixel space; place at 1× before applying a common world scale."
+  },
+  "assets": [
+    {
+      "id": "rock_small_a",
+      "file": "assets/environments/ancient_forest/vegetation/rock_small_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "rock_small_a",
+      "description": "one small rounded grey-green pebble cluster of three stones, tiny moss tuft. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "rock_small_b",
+      "file": "assets/environments/ancient_forest/vegetation/rock_small_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "rock_small_b",
+      "description": "one small angular slate stone with two chips at its foot and an ochre vein. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "rock_medium_a",
+      "file": "assets/environments/ancient_forest/vegetation/rock_medium_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "rock_medium_a",
+      "description": "one medium broad grey boulder, sloping left face, deep crack and sparse moss. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "rock_medium_b",
+      "file": "assets/environments/ancient_forest/vegetation/rock_medium_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "rock_medium_b",
+      "description": "one medium upright faceted rock, triangular silhouette and moss at right base. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "rock_large_a",
+      "file": "assets/environments/ancient_forest/vegetation/rock_large_a.png",
+      "category": "vegetation",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "rock_large_a",
+      "description": "one large low ancient forest boulder, broad weathered layered rock, moss crest and a single root over one side. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "rock_large_b",
+      "file": "assets/environments/ancient_forest/vegetation/rock_large_b.png",
+      "category": "vegetation",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "rock_large_b",
+      "description": "one large tall asymmetrical craggy boulder with diagonal fracture, olive-grey facets and small fern growing in crevice. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "fern_a",
+      "file": "assets/environments/ancient_forest/vegetation/fern_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "fern_a",
+      "description": "one compact spreading fern, many delicate arched pinnate green fronds from one root crown. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "fern_b",
+      "file": "assets/environments/ancient_forest/vegetation/fern_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "fern_b",
+      "description": "one tall asymmetric fern with three upright curled new fronds and five outward feathery leaves. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "bush_a",
+      "file": "assets/environments/ancient_forest/vegetation/bush_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "bush_a",
+      "description": "one low rounded dense forest bush, broad oval layered leaves, deep green shadow masses and warm lime tips. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "bush_b",
+      "file": "assets/environments/ancient_forest/vegetation/bush_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "bush_b",
+      "description": "one spreading asymmetrical wild shrub with pointed small leaves and a few tiny blue berries, distinctly varied branching. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "grass_cluster_a",
+      "file": "assets/environments/ancient_forest/vegetation/grass_cluster_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "grass_cluster_a",
+      "description": "one short dense grass tuft with thin springy blades leaning slightly left, dark green roots. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "grass_cluster_b",
+      "file": "assets/environments/ancient_forest/vegetation/grass_cluster_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "grass_cluster_b",
+      "description": "one tall sparse bunch of reed-like grass with curved blades and two soft pale seed heads. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "flowers_a",
+      "file": "assets/environments/ancient_forest/vegetation/flowers_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "flowers_a",
+      "description": "one small cluster of three pale turquoise wildflowers with narrow green leaves and stems, all planted on same baseline. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "flowers_b",
+      "file": "assets/environments/ancient_forest/vegetation/flowers_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "flowers_b",
+      "description": "one small cluster of five ivory and golden wildflowers with rounded petals and broad low leaves. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "mushrooms_a",
+      "file": "assets/environments/ancient_forest/vegetation/mushrooms_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "mushrooms_a",
+      "description": "one cluster of three amber-capped forest mushrooms with cream stalks, different heights, faint pale spots. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "mushrooms_b",
+      "file": "assets/environments/ancient_forest/vegetation/mushrooms_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "mushrooms_b",
+      "description": "one cluster of two broad red-brown shelf-shaped mushrooms and one tiny ochre cap, thick pale stems. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "hanging_vines_a",
+      "file": "assets/environments/ancient_forest/vegetation/hanging_vines_a.png",
+      "category": "vegetation",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        24
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.046875
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        24
+      ],
+      "role": "isolated_sprite",
+      "source": "hanging_vines_a",
+      "description": "one long hanging vine with small heart-shaped leaves, gentle S curve, visible whole strand with top attachment curl. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "hanging_vines_b",
+      "file": "assets/environments/ancient_forest/vegetation/hanging_vines_b.png",
+      "category": "vegetation",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        24
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.046875
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        24
+      ],
+      "role": "isolated_sprite",
+      "source": "hanging_vines_b",
+      "description": "one hanging pair of thin intertwining woody vines with sparse pointed leaves and one curled tip, entire length visible. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "tree_roots_a",
+      "file": "assets/environments/ancient_forest/vegetation/tree_roots_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "tree_roots_a",
+      "description": "one exposed spreading tree-root cluster, thick gnarled central root and three tapering offshoots, side elevation, no trunk. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "tree_roots_b",
+      "file": "assets/environments/ancient_forest/vegetation/tree_roots_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "tree_roots_b",
+      "description": "one exposed ancient root arch looping over a small empty gap, twisted wood with thin dangling offshoots, no tree trunk. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "fallen_branch_a",
+      "file": "assets/environments/ancient_forest/vegetation/fallen_branch_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "fallen_branch_a",
+      "description": "one fallen forked dry brown branch, lying horizontally, a few tiny moss flecks, full ends visible. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "fallen_branch_b",
+      "file": "assets/environments/ancient_forest/vegetation/fallen_branch_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "fallen_branch_b",
+      "description": "one crooked snapped woodland branch with a Y-shaped fork and a small patch of pale lichen, lying horizontally. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "moss_patch_a",
+      "file": "assets/environments/ancient_forest/vegetation/moss_patch_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "moss_patch_a",
+      "description": "one irregular flat soft moss cushion overlay, clustered emerald and yellow-green velvety lobes, no soil or rocks. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "moss_patch_b",
+      "file": "assets/environments/ancient_forest/vegetation/moss_patch_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "moss_patch_b",
+      "description": "one long wispy moss drape overlay with hanging tapering green tendrils and tiny rounded leaf tufts, no host rock. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "small_log_a",
+      "file": "assets/environments/ancient_forest/vegetation/small_log_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "small_log_a",
+      "description": "one short fallen log lying horizontally, visible pale cut ring at left end, rough dark bark, moss on top. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "small_log_b",
+      "file": "assets/environments/ancient_forest/vegetation/small_log_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "small_log_b",
+      "description": "one short hollow rotten log lying horizontally, jagged open end at right, fungus freckles and a thin root underneath. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "stone_fragments_a",
+      "file": "assets/environments/ancient_forest/vegetation/stone_fragments_a.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_fragments_a",
+      "description": "one small grouped pile of five ancient carved stone fragments, angular broken pieces, faint moss, same ground baseline. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    },
+    {
+      "id": "stone_fragments_b",
+      "file": "assets/environments/ancient_forest/vegetation/stone_fragments_b.png",
+      "category": "vegetation",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "world_decoration",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_fragments_b",
+      "description": "one low scatter of three chipped masonry blocks with one small bronze pin and worn geometric carving. Entire natural decoration isolated, no grass floor, cast shadow or scenery. Keep every part within generous transparent margins."
+    }
+  ]
+}

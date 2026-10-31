@@ -1,0 +1,338 @@
+{
+  "id": "reflectors",
+  "label": "Reflectores de luz",
+  "directory": "assets/objects/advanced/reflectors",
+  "components": [
+    {
+      "id": "reflector_base",
+      "path": "assets/objects/advanced/reflectors/static/reflector_base.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Mirror axle registration [256,268]. Draw the head above this base."
+    },
+    {
+      "id": "mirror_nw",
+      "path": "assets/objects/advanced/reflectors/static/mirror_nw.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Head only. Pivot [256,268]. Reflective face normal [-0.7071,-0.7071]. Bronze pointer marks this normal.",
+      "mirror": {
+        "angleClockwise": 0,
+        "normal": [
+          -0.7071,
+          -0.7071
+        ],
+        "pivot": [
+          256,
+          268
+        ]
+      }
+    },
+    {
+      "id": "mirror_ne",
+      "path": "assets/objects/advanced/reflectors/static/mirror_ne.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Head only. Pivot [256,268]. Reflective face normal [0.7071,-0.7071]. Bronze pointer marks this normal.",
+      "mirror": {
+        "angleClockwise": 90,
+        "normal": [
+          0.7071,
+          -0.7071
+        ],
+        "pivot": [
+          256,
+          268
+        ]
+      }
+    },
+    {
+      "id": "mirror_se",
+      "path": "assets/objects/advanced/reflectors/static/mirror_se.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Head only. Pivot [256,268]. Reflective face normal [0.7071,0.7071]. Bronze pointer marks this normal.",
+      "mirror": {
+        "angleClockwise": 180,
+        "normal": [
+          0.7071,
+          0.7071
+        ],
+        "pivot": [
+          256,
+          268
+        ]
+      }
+    },
+    {
+      "id": "mirror_sw",
+      "path": "assets/objects/advanced/reflectors/static/mirror_sw.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Head only. Pivot [256,268]. Reflective face normal [-0.7071,0.7071]. Bronze pointer marks this normal.",
+      "mirror": {
+        "angleClockwise": 270,
+        "normal": [
+          -0.7071,
+          0.7071
+        ],
+        "pivot": [
+          256,
+          268
+        ]
+      }
+    },
+    {
+      "id": "reflective_surface",
+      "path": "assets/objects/advanced/reflectors/static/reflective_surface.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Canonical separate reflective head, same pixels as mirror_nw."
+    },
+    {
+      "id": "light_beam_horizontal_tile",
+      "path": "assets/objects/advanced/reflectors/static/light_beam_horizontal_tile.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        0,
+        128
+      ],
+      "origin": [
+        0,
+        0.5
+      ],
+      "note": "Repeat at x increments of 256. No endpoint cap or reflector included.",
+      "tile": {
+        "axis": "x",
+        "stride": 256
+      }
+    },
+    {
+      "id": "light_beam_vertical_tile",
+      "path": "assets/objects/advanced/reflectors/static/light_beam_vertical_tile.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        0
+      ],
+      "origin": [
+        0.5,
+        0
+      ],
+      "note": "Repeat at y increments of 256.",
+      "tile": {
+        "axis": "y",
+        "stride": 256
+      }
+    },
+    {
+      "id": "light_receptor_inactive",
+      "path": "assets/objects/advanced/reflectors/static/light_receptor_inactive.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": ""
+    },
+    {
+      "id": "receptor_glow_active",
+      "path": "assets/objects/advanced/reflectors/static/receptor_glow_active.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": ""
+    },
+    {
+      "id": "light_receptor_activated",
+      "path": "assets/objects/advanced/reflectors/static/light_receptor_activated.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Convenient static assembled active state; do not add another glow over it."
+    }
+  ],
+  "animations": [
+    {
+      "id": "mirror_rotation",
+      "family": "reflectors",
+      "frames": [
+        "assets/objects/advanced/reflectors/frames/mirror_rotation_01.png",
+        "assets/objects/advanced/reflectors/frames/mirror_rotation_02.png",
+        "assets/objects/advanced/reflectors/frames/mirror_rotation_03.png",
+        "assets/objects/advanced/reflectors/frames/mirror_rotation_04.png",
+        "assets/objects/advanced/reflectors/frames/mirror_rotation_05.png",
+        "assets/objects/advanced/reflectors/frames/mirror_rotation_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/reflectors/spritesheets/mirror_rotation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "backLayers": [
+        "assets/objects/advanced/reflectors/static/reflector_base.png"
+      ],
+      "frontLayers": [],
+      "note": "Quarter-turn NW to NE, clockwise 0..90 degrees. Six frames including exact endpoints. Other static directions are supplied separately.",
+      "next": "mirror_ne",
+      "preview": "assets/objects/advanced/reflectors/previews/mirror_rotation.gif"
+    },
+    {
+      "id": "light_reflection_impact",
+      "family": "reflectors",
+      "frames": [
+        "assets/objects/advanced/reflectors/frames/light_reflection_impact_01.png",
+        "assets/objects/advanced/reflectors/frames/light_reflection_impact_02.png",
+        "assets/objects/advanced/reflectors/frames/light_reflection_impact_03.png",
+        "assets/objects/advanced/reflectors/frames/light_reflection_impact_04.png",
+        "assets/objects/advanced/reflectors/frames/light_reflection_impact_05.png",
+        "assets/objects/advanced/reflectors/frames/light_reflection_impact_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/reflectors/spritesheets/light_reflection_impact_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 16,
+      "repeat": 0,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Independent reflection flash. Frame 6 fully transparent.",
+      "next": null,
+      "preview": "assets/objects/advanced/reflectors/previews/light_reflection_impact.gif"
+    },
+    {
+      "id": "receptor_activation",
+      "family": "reflectors",
+      "frames": [
+        "assets/objects/advanced/reflectors/frames/receptor_activation_01.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_02.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_03.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_04.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_05.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/reflectors/spritesheets/receptor_activation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "backLayers": [
+        "assets/objects/advanced/reflectors/static/light_receptor_inactive.png"
+      ],
+      "frontLayers": [],
+      "note": "Emission overlay only. Keep inactive receptor underneath. Frame 6 matches receptor_glow_active.",
+      "next": "light_receptor_activated",
+      "preview": "assets/objects/advanced/reflectors/previews/receptor_activation.gif"
+    }
+  ],
+  "assemblyNotes": [
+    "Base and mirror share a 512×512 canvas and anchor [256,480]. Receptor is a separate object. Beams and reflection flash use their own attachment points.",
+    "Mirror direction names refer to the reflective normal, not the long diagonal of its plate. The supplied turn is the NW→NE quarter-turn."
+  ],
+  "thumbnail": "assets/objects/advanced/reflectors/preview.png",
+  "overviewPreview": "assets/objects/advanced/reflectors/previews/family_overview.gif"
+}

@@ -1,0 +1,1196 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Veylith · Auditoría de sonidos</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        color: #eeeede;
+        background: #101d19;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      main {
+        max-width: 1140px;
+        padding: 42px 24px 70px;
+        margin: auto;
+      }
+      a {
+        color: #e1c67e;
+      }
+      h1,
+      h2 {
+        font-family: Georgia, serif;
+        font-weight: 400;
+      }
+      h1 {
+        font-size: clamp(36px, 6vw, 60px);
+        margin: 18px 0;
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        font-size: 30px;
+        margin-top: 44px;
+      }
+      p,
+      li {
+        line-height: 1.65;
+        color: #c0cdbf;
+      }
+      .kicker {
+        color: #e1c67e;
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 0.13em;
+      }
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        margin: 28px 0;
+      }
+      .metric {
+        padding: 22px;
+        background: #1c2e24;
+        border: 1px solid #3b4f3b;
+        border-radius: 10px;
+      }
+      .metric strong {
+        display: block;
+        color: #e4c477;
+        font:
+          36px Georgia,
+          serif;
+      }
+      .metric span {
+        font-size: 13px;
+        color: #b6c8b8;
+      }
+      .callout {
+        border-left: 3px solid #dac17e;
+        padding: 12px 22px;
+        background: #253423;
+      }
+      .callout p {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        gap: 22px;
+        flex-wrap: wrap;
+        margin: 24px 0;
+        font-size: 14px;
+      }
+      .table-wrap {
+        overflow: auto;
+        border: 1px solid #384b3d;
+        border-radius: 10px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 16px 18px;
+        border-bottom: 1px solid #35463a;
+      }
+      th {
+        color: #d8c385;
+        background: #1c2e24;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+      td strong {
+        color: #f3efde;
+      }
+      td small {
+        display: block;
+        color: #94af9d;
+        margin-top: 5px;
+      }
+      .detail td {
+        font-size: 12px;
+        color: #aebfac;
+        background: #16271e;
+        padding-top: 0;
+      }
+      .tag {
+        white-space: nowrap;
+        font-size: 11px;
+        padding: 5px 8px;
+        border-radius: 20px;
+        background: #263b2e;
+        color: #bfd6c1;
+      }
+      .tag.alta {
+        background: #66582d;
+        color: #fff1c0;
+      }
+      .tag.acabado {
+        background: #29363d;
+        color: #becbd1;
+      }
+      ul {
+        padding-left: 22px;
+      }
+      li {
+        margin: 12px 0;
+        font-size: 14px;
+      }
+      details {
+        padding: 18px 22px;
+        background: #1c2d23;
+        border: 1px solid #3b4f3b;
+        border-radius: 10px;
+        margin: 18px 0;
+      }
+      summary {
+        cursor: pointer;
+        font-weight: 650;
+        color: #eadba8;
+      }
+      footer {
+        margin-top: 38px;
+        font-size: 12px;
+        color: #9fb3a3;
+      }
+      .scope {
+        font-size: 13px;
+        color: #aebfac;
+      }
+      @media (max-width: 650px) {
+        main {
+          padding: 26px 16px;
+        }
+        .metrics {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .table-wrap table {
+          min-width: 760px;
+        }
+        h2 {
+          font-size: 26px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="kicker">Veylith · Audio integrado · Octubre de 2026</div>
+      <h1>El bosque ya tiene sonido.</h1>
+      <p>
+        Los 74 efectos están conectados al juego, la interfaz y los resultados.
+        Las 26 familias tienen rutas de eventos y los once decorativos acompañan
+        sus animaciones actuales.
+      </p>
+      <div class="metrics">
+        <div class="metric">
+          <strong>74</strong><span>sonidos preparados</span>
+        </div>
+        <div class="metric">
+          <strong>74</strong><span>con rutas de eventos</span>
+        </div>
+        <div class="metric">
+          <strong>26 / 26</strong><span>familias con recursos</span>
+        </div>
+        <div class="metric">
+          <strong>11 / 11</strong><span>decorativos con audio visual</span>
+        </div>
+      </div>
+      <div class="callout">
+        <p>
+          <strong>Integración realizada.</strong> Movimiento, poderes, puzles,
+          mecanismos, menús y victoria tienen sonido. Usa Sonido para ajustar
+          volumen o silenciar. Los decorativos conservan sus mecánicas
+          pendientes.
+        </p>
+      </div>
+      <nav>
+        <a href="#objects">Interactivos</a><a href="#missing">26 familias</a
+        ><a href="#visual">Decorativos</a><a href="#reuse">Reutilización</a
+        ><a href="audio-preview.html">Escuchar biblioteca ↗</a>
+      </nav>
+      <p class="scope">
+        39 efectos cubren las familias auditadas; 12 efectos dedicados y piezas
+        compartidas cubren los decorativos. Esta ampliación usó 76 créditos. Los
+        23 WAV y MP3 anteriores se conservaron intactos.
+      </p>
+      <h2 id="objects">Los nueve objetos funcionales</h2>
+      <p>
+        La auditoría original registró cuatro ascensores, diez puentes, ocho
+        zonas de agua y un ventilador. Rueda hidráulica, caldera y lava están
+        disponibles en el editor.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Objeto</th>
+              <th>Instancias en la auditoría</th>
+              <th>Sonidos preparados</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Ascensor mecánico</strong></td>
+              <td>4</td>
+              <td>
+                <a href="audio-preview.html#sound-elevator_start"
+                  >Ascensor · Arranque</a
+                ><br /><a href="audio-preview.html#sound-elevator_motion"
+                  >Ascensor · Movimiento</a
+                ><br /><a href="audio-preview.html#sound-elevator_stop"
+                  >Ascensor · Parada</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Ventilador horizontal</strong></td>
+              <td>1</td>
+              <td>
+                <a href="audio-preview.html#sound-fan_start"
+                  >Ventilador · Arranque</a
+                ><br /><a href="audio-preview.html#sound-fan_motion"
+                  >Ventilador · Aspas y viento</a
+                ><br /><a href="audio-preview.html#sound-fan_stop"
+                  >Ventilador · Parada</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Palanca</strong></td>
+              <td>7</td>
+              <td>
+                <a href="audio-preview.html#sound-mechanism_activate"
+                  >Placa y palanca</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Lava modular</strong></td>
+              <td>0</td>
+              <td>
+                <a href="audio-preview.html#sound-lava_ambience"
+                  >Lava · Burbujeo</a
+                ><br /><a href="audio-preview.html#sound-lava_entry"
+                  >Lava · Contacto incompatible</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Agua profunda</strong></td>
+              <td>8</td>
+              <td>
+                <a href="audio-preview.html#sound-lake_ambience"
+                  >Agua profunda · Superficie</a
+                ><br /><a href="audio-preview.html#sound-lake_entry"
+                  >Agua profunda · Contacto</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Rueda hidráulica</strong></td>
+              <td>0</td>
+              <td>
+                <a href="audio-preview.html#sound-water_impact"
+                  >Impacto de Agua</a
+                ><br /><a href="audio-preview.html#sound-waterwheel_motion"
+                  >Rueda hidráulica · Giro</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Caldera elemental</strong></td>
+              <td>0</td>
+              <td>
+                <a href="audio-preview.html#sound-boiler_water"
+                  >Caldera · Carga de agua</a
+                ><br /><a href="audio-preview.html#sound-boiler_heating"
+                  >Caldera · Calentamiento</a
+                ><br /><a href="audio-preview.html#sound-boiler_steam"
+                  >Caldera · Vapor listo</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Puente retráctil</strong></td>
+              <td>10</td>
+              <td>
+                <a href="audio-preview.html#sound-bridge_extend"
+                  >Puente · Extensión</a
+                ><br /><a href="audio-preview.html#sound-bridge_retract"
+                  >Puente · Retracción</a
+                ><br /><a href="audio-preview.html#sound-bridge_latch"
+                  >Puente · Encaje</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Muro destructible</strong></td>
+              <td>12</td>
+              <td>
+                <a href="audio-preview.html#sound-earth_smash"
+                  >Golpe de Tierra</a
+                ><br /><a href="audio-preview.html#sound-wall_break"
+                  >Muro que se rompe</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="missing">Las 26 familias conectadas</h2>
+      <p>Los eventos siguen estas reglas de reproducción, contacto y estado.</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Familia</th>
+              <th>Cuándo debería sonar</th>
+              <th>Escuchar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Pasos de los cuatro elementos</strong
+                ><small>Movimiento</small>
+              </td>
+              <td>
+                Desplazamiento real sobre una superficie; Tierra en toda la
+                campaña.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-earth_step">Paso de Tierra</a
+                ><br /><a href="audio-preview.html#sound-water_step"
+                  >Paso de Agua</a
+                ><br /><a href="audio-preview.html#sound-fire_step"
+                  >Paso de Fuego</a
+                ><br /><a href="audio-preview.html#sound-air_step"
+                  >Paso de Aire</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Comenzar por Tierra y una base ligera; variar textura por
+                elemento. El esquema no contiene un material acústico: no asumir
+                que el dibujo determina el sonido. No disparar por mantener una
+                tecla contra una pared.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Saltos de Agua, Fuego y Aire</strong
+                ><small>Movimiento</small>
+              </td>
+              <td>Despegue de un salto aceptado de cada forma.</td>
+              <td>
+                <a href="audio-preview.html#sound-water_jump">Salto de Agua</a
+                ><br /><a href="audio-preview.html#sound-fire_jump"
+                  >Salto de Fuego</a
+                ><br /><a href="audio-preview.html#sound-air_jump"
+                  >Salto de Aire</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Un evento al despegar; no repetir por mantener pulsado. La
+                animación jump no es un evento nuevo en cada frame.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Aterrizajes de Agua, Fuego y Aire</strong
+                ><small>Movimiento</small>
+              </td>
+              <td>Paso de estar en el aire a apoyar el cuerpo.</td>
+              <td>
+                <a href="audio-preview.html#sound-water_land"
+                  >Aterrizaje de Agua</a
+                ><br /><a href="audio-preview.html#sound-fire_land"
+                  >Aterrizaje de Fuego</a
+                ><br /><a href="audio-preview.html#sound-air_land"
+                  >Aterrizaje de Aire</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Variar intensidad con caída real; deduplicar con aterrizaje en
+                agua o impactos especiales.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Doble salto de Fuego</strong><small>Fuego</small></td>
+              <td>Segundo salto consumido en el aire.</td>
+              <td>
+                <a href="audio-preview.html#sound-fire_double_jump"
+                  >Doble salto de Fuego</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Usar el indicador doubleJumped; cambiar de forma no repone el
+                salto.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Planeo sostenido de Aire</strong><small>Aire</small>
+              </td>
+              <td>Planeo real durante el descenso.</td>
+              <td>
+                <a href="audio-preview.html#sound-air_glide">Planeo de Aire</a>
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Un solo bucle; detener al soltar, tocar suelo, transformarse,
+                pausar o reiniciar. No reproducirlo una vez por frame.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Barrido del puño de Tierra sin impacto</strong
+                ><small>Tierra</small>
+              </td>
+              <td>Inicio de golpe de Tierra, aunque no alcance una pared.</td>
+              <td>
+                <a href="audio-preview.html#sound-earth_swing"
+                  >Puñetazo de Tierra al aire</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Separar movimiento del golpe de contacto válido; no sonar a
+                pared rota al golpear el aire. En el estado actual se comprueban
+                solo contactos rompibles.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Inicio y descenso del golpe en picado</strong
+                ><small>Tierra</small>
+              </td>
+              <td>
+                Tierra usa Poder en el aire y empieza el descenso especial.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-earth_plunge"
+                  >Descenso de Tierra</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Cancelar al cambiar de forma o finalizar; evitar duplicar
+                impacto fuerte y aterrizaje.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Impacto de proyectil de Agua</strong><small>Agua</small>
+              </td>
+              <td>
+                Contacto barrido del proyectil contra un sólido o receptor.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-water_impact"
+                  >Impacto de Agua</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Sonar en contacto, incluido el tramo de la boca de disparo. No
+                sonar como impacto al caducar sin chocar.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Impacto de bola de Fuego</strong><small>Fuego</small>
+              </td>
+              <td>Contacto real de una bola de Fuego.</td>
+              <td>
+                <a href="audio-preview.html#sound-fire_impact"
+                  >Impacto de Fuego</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                La llama residual dura 600 ms y es visual; este sonido no
+                representa daño ni enemigos.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Ascensor: motor, engranajes y desplazamiento</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Movimiento horizontal o vertical real del ascensor.</td>
+              <td>
+                <a href="audio-preview.html#sound-elevator_start"
+                  >Ascensor · Arranque</a
+                ><br /><a href="audio-preview.html#sound-elevator_motion"
+                  >Ascensor · Movimiento</a
+                ><br /><a href="audio-preview.html#sound-elevator_stop"
+                  >Ascensor · Parada</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Usar cambio de posición, no solo active o animación de
+                engranajes. Puede estar activo y detenido por obstáculo o final
+                de recorrido; no emitir impactos falsos de aplastamiento.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Ventilador: aspas y corriente de viento</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Ventilador activo, audible por proximidad.</td>
+              <td>
+                <a href="audio-preview.html#sound-fan_start"
+                  >Ventilador · Arranque</a
+                ><br /><a href="audio-preview.html#sound-fan_motion"
+                  >Ventilador · Aspas y viento</a
+                ><br /><a href="audio-preview.html#sound-fan_stop"
+                  >Ventilador · Parada</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Tierra resiste el empuje pero debe poder oír el ventilador. No
+                iniciar otro bucle por cada contacto del jugador.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Puente: extensión y retracción</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>El progreso de extensión/retracción está cambiando.</td>
+              <td>
+                <a href="audio-preview.html#sound-bridge_extend"
+                  >Puente · Extensión</a
+                ><br /><a href="audio-preview.html#sound-bridge_retract"
+                  >Puente · Retracción</a
+                ><br /><a href="audio-preview.html#sound-bridge_latch"
+                  >Puente · Encaje</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Las duraciones son configurables y puede invertirse la marcha.
+                Detener al llegar a cada extremo; reutilizar un cierre mecánico
+                para el encaje.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Agua profunda: superficie y oleaje</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Proximidad a una zona de agua habilitada.</td>
+              <td>
+                <a href="audio-preview.html#sound-lake_ambience"
+                  >Agua profunda · Superficie</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                La forma Agua cruza una superficie fija; no existen natación,
+                inmersión ni flotabilidad. Acotar instancias y atenuar con
+                distancia.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Contacto o caída al agua</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Primer contacto del jugador con la zona de agua.</td>
+              <td>
+                <a href="audio-preview.html#sound-lake_entry"
+                  >Agua profunda · Contacto</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Elemento incompatible reinicia inmediatamente. Emitir una sola
+                señal y coordinarla con el reinicio; Agua puede cruzar sin
+                fracaso.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Lava: burbujeo y calor</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Proximidad a la lava habilitada.</td>
+              <td>
+                <a href="audio-preview.html#sound-lava_ambience"
+                  >Lava · Burbujeo</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Fuego camina sobre su superficie; no hay salud, daño gradual ni
+                extinción por Agua implementada, aunque el arte tenga estados de
+                extinción.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Contacto incompatible con lava</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>
+                Agua, Aire o Tierra entran en la zona de lava y reinician.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-lava_entry"
+                  >Lava · Contacto incompatible</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                No reproducir el aviso de fracaso para Fuego ni añadir gritos,
+                daño o muerte persistente.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Rueda hidráulica en marcha</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>
+                La rueda alcanza su cuota de impactos de Agua y se activa.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-waterwheel_motion"
+                  >Rueda hidráulica · Giro</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Antes de completar, usar el impacto de Agua; después, un solo
+                bucle hasta reiniciar. Fuego no la activa.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Caldera: carga de agua</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Impacto de Agua aceptado mientras se carga la caldera.</td>
+              <td>
+                <a href="audio-preview.html#sound-boiler_water"
+                  >Caldera · Carga de agua</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Reutiliza el impacto de Agua con una capa metálica; evitar sumar
+                varios sonidos de llenado por el mismo contacto.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Caldera: calentamiento</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>
+                Primer impacto de Fuego y estado de calor antes de completar.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-boiler_heating"
+                  >Caldera · Calentamiento</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                No confundir calor parcial con vapor listo: requiere ambas
+                cuotas. El estado de calentamiento permanece hasta la siguiente
+                transición.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Caldera: presión y vapor</strong
+                ><small>Objetos interactivos</small>
+              </td>
+              <td>Se completan los impactos requeridos de Agua y Fuego.</td>
+              <td>
+                <a href="audio-preview.html#sound-boiler_steam"
+                  >Caldera · Vapor listo</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Sustituir el hervor por vapor; no mantener ambos bucles a pleno
+                volumen. El vapor no causa daño.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Depósito: avance de llenado</strong
+                ><small>Puzzles</small>
+              </td>
+              <td>Cada impacto válido de Agua que avanza el contador.</td>
+              <td>
+                <a href="audio-preview.html#sound-tank_fill"
+                  >Depósito · Llenado</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                La lógica avanza por impactos, no hay simulación continua de
+                caudal. Fuego no avanza el contador.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Depósito lleno</strong><small>Puzzles</small></td>
+              <td>La cuota del depósito se alcanza por primera vez.</td>
+              <td>
+                <a href="audio-preview.html#sound-tank_ready"
+                  >Depósito · Completo</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Una vez por intento; distinguir el último impacto de los
+                anteriores. No añadir otra fanfarria si la puerta ya confirma
+                claramente el resultado.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Antorcha: encendido</strong><small>Puzzles</small>
+              </td>
+              <td>
+                La antorcha alcanza sus impactos de Fuego y queda encendida.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-torch_ignite"
+                  >Antorcha · Encendido</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Una vez por antorcha; no reencender al recibir más proyectiles
+                tras resolverse.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Cierre de puertas</strong><small>Puzzles</small></td>
+              <td>Una puerta abierta vuelve a quedar cerrada.</td>
+              <td>
+                <a href="audio-preview.html#sound-door_close"
+                  >Puerta de piedra · Cierre</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                En la puerta original con temporizador, sonar cuando el collider
+                realmente cierra, no al expirar si el jugador todavía la ocupa.
+                En puertas por señales puede cerrar al apagar una palanca.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Aviso del cierre de La puerta del viento</strong
+                ><small>Puzzles</small>
+              </td>
+              <td>
+                Cambio de segundos restantes en el prototipo de seis segundos.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-timed_gate_warning"
+                  >Puerta temporal · Aviso</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Solo en este mecanismo implementado; no introducir un cronómetro
+                de derrota en la campaña. La puerta temporizada del pack es
+                visual y distinta.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <strong>Portal habilitado al resolver requisitos</strong
+                ><small>Puzzles</small>
+              </td>
+              <td>
+                Requisitos de una salida pasan de incompletos a completos.
+              </td>
+              <td>
+                <a href="audio-preview.html#sound-exit_ready"
+                  >Salida · Habilitada</a
+                >
+              </td>
+            </tr>
+            <tr class="detail">
+              <td colspan="3">
+                Una vez en el cambio real, no al reaplicar alpha ni al entrar al
+                nivel con salida ya habilitada. Puede reutilizarse una
+                confirmación suave como primera integración.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="visual">Once decorativos con audio de animación</h2>
+      <p>
+        Los objetos siguen siendo visuales y pueden tener colisión estática. Los
+        sonidos acompañan las animaciones elegidas para cada objeto. Los
+        contactos y reacciones descritos como futuros siguen pendientes de
+        implementar.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Objeto</th>
+              <th>Estados y efectos</th>
+              <th>Uso previsto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Engranaje</strong></td>
+              <td>
+                giro:
+                <a href="audio-preview.html#sound-elevator_motion"
+                  >Ascensor · Movimiento</a
+                >
+              </td>
+              <td>
+                Reutiliza el bucle de engranajes del ascensor; ajustar nivel y
+                velocidad al movimiento futuro.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Túnel de viento</strong></td>
+              <td>
+                corriente:
+                <a href="audio-preview.html#sound-air_glide">Planeo de Aire</a>
+              </td>
+              <td>
+                Reutiliza el aire sostenido del planeo, con atenuación local.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Barrera mágica</strong></td>
+              <td>
+                activación:
+                <a href="audio-preview.html#sound-barrier_activate"
+                  >Barrera · Activación</a
+                ><br />activa:
+                <a href="audio-preview.html#sound-barrier_loop"
+                  >Barrera · Energía sostenida</a
+                ><br />desactivación:
+                <a href="audio-preview.html#sound-barrier_deactivate"
+                  >Barrera · Desactivación</a
+                >
+              </td>
+              <td>
+                Tres piezas dedicadas; el bucle solo mientras la barrera esté
+                activa.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Plataforma evanescente</strong></td>
+              <td>
+                desaparición:
+                <a href="audio-preview.html#sound-platform_disappear"
+                  >Plataforma · Desaparición</a
+                ><br />aparición:
+                <a href="audio-preview.html#sound-platform_appear"
+                  >Plataforma · Aparición</a
+                >
+              </td>
+              <td>
+                Dos transiciones dedicadas; sincronizar con el futuro cambio
+                real de colisión.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Puerta temporizada</strong></td>
+              <td>
+                apertura:
+                <a href="audio-preview.html#sound-stone_gate_open"
+                  >Puerta de piedra</a
+                ><br />aviso:
+                <a href="audio-preview.html#sound-timed_gate_warning"
+                  >Puerta temporal · Aviso</a
+                ><br />cierre:
+                <a href="audio-preview.html#sound-door_close"
+                  >Puerta de piedra · Cierre</a
+                >
+              </td>
+              <td>
+                Reutiliza puerta y pulso temporal. El temporizador del pack
+                sigue sin implementar.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Salida de vapor</strong></td>
+              <td>
+                aviso:
+                <a href="audio-preview.html#sound-steam_vent_warning"
+                  >Respiradero · Aviso de presión</a
+                ><br />vapor:
+                <a href="audio-preview.html#sound-boiler_steam"
+                  >Caldera · Vapor listo</a
+                ><br />cierre:
+                <a href="audio-preview.html#sound-steam_vent_stop"
+                  >Respiradero · Cierre</a
+                >
+              </td>
+              <td>
+                Aviso y cierre dedicados; comparte el bucle de vapor con la
+                caldera.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Planta regada</strong></td>
+              <td>
+                agua recibida:
+                <a href="audio-preview.html#sound-water_impact"
+                  >Impacto de Agua</a
+                ><br />crecimiento:
+                <a href="audio-preview.html#sound-plant_grow"
+                  >Planta · Crecimiento</a
+                >
+              </td>
+              <td>Impacto de Agua compartido y crecimiento dedicado.</td>
+            </tr>
+            <tr>
+              <td><strong>Bloque flotante de madera</strong></td>
+              <td>
+                balanceo:
+                <a href="audio-preview.html#sound-wood_float"
+                  >Madera flotante · Balanceo</a
+                ><br />contacto con agua:
+                <a href="audio-preview.html#sound-lake_entry"
+                  >Agua profunda · Contacto</a
+                >
+              </td>
+              <td>
+                Bucle dedicado de madera y agua; el chapoteo de entrada es
+                compartido.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Molino de viento</strong></td>
+              <td>
+                giro:
+                <a href="audio-preview.html#sound-wind_mill"
+                  >Molino · Giro de madera</a
+                >
+              </td>
+              <td>Bucle dedicado de eje, engranajes y aspas de madera.</td>
+            </tr>
+            <tr>
+              <td><strong>Interruptor de Fuego</strong></td>
+              <td>
+                activación:
+                <a href="audio-preview.html#sound-fire_switch"
+                  >Interruptor de Fuego · Activación</a
+                ><br />desactivación:
+                <a href="audio-preview.html#sound-mechanism_activate"
+                  >Placa y palanca</a
+                >
+              </td>
+              <td>
+                Activación dedicada; la desactivación puede usar el encaje
+                mecánico existente.
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Plataforma de rebote</strong></td>
+              <td>
+                impulso:
+                <a href="audio-preview.html#sound-bounce_pad"
+                  >Plataforma · Rebote elemental</a
+                >
+              </td>
+              <td>
+                Un efecto dedicado al impulso; no añade la mecánica de rebote.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 id="reuse">Sonidos existentes que se aprovechan</h2>
+      <ul>
+        <li>
+          <strong>Salto de Tierra:</strong> Un salto aceptado, sin repetir por
+          tecla mantenida.
+        </li>
+        <li>
+          <strong>Aterrizaje fuerte de Tierra y bloque pesado:</strong>
+          Reutilización propuesta para bloque, con intensidad por velocidad de
+          contacto; falta observar el aterrizaje del bloque.
+        </li>
+        <li>
+          <strong>Contacto del puño con muro:</strong> Solo contacto válido; no
+          reproducir este impacto por cada pulsación sin objetivo.
+        </li>
+        <li>
+          <strong>Impactos parciales y rotura final de muro:</strong> No
+          reproducir rotura en cada golpe de un muro que necesita varios.
+        </li>
+        <li>
+          <strong>Arrastre del bloque:</strong> Bucle mientras se desplaza
+          apoyado; no solo mientras se ve push_loop o se intenta empujar.
+        </li>
+        <li>
+          <strong>Placa, palanca y encaje mecánico:</strong> Reutilización
+          válida como base; una transición real, no cada frame.
+        </li>
+        <li>
+          <strong>Apertura de puerta:</strong> stone_gate_open conserva la
+          apertura; door_close ya ofrece el cierre separado.
+        </li>
+        <li>
+          <strong>Gemas y transformación genérica:</strong> Ya cubre el cambio
+          inmediato; cuatro identidades elementales serían una mejora, no cuatro
+          mecánicas ausentes.
+        </li>
+        <li>
+          <strong>Moneda recogida:</strong> Una vez por moneda/intento, sin
+          otorgar saldo; en playtest solo feedback local.
+        </li>
+        <li>
+          <strong>Portal y victoria:</strong> Son alternativas o capas que hay
+          que mezclar; no dos celebraciones a pleno volumen al mismo evento.
+        </li>
+        <li>
+          <strong
+            >Reinicio por caída, bloque perdido o zona incompatible:</strong
+          >
+          Puede reutilizarse; coordinar con salpicadura/siseo y no añadir otra
+          pantalla de derrota.
+        </li>
+        <li>
+          <strong>Menús, pausa, continuación y resultados:</strong> Hay eventos
+          conectados. No sonido por hover/actualización, ni premios al navegar
+          por las tarjetas.
+        </li>
+      </ul>
+      <h2>Cómo funciona en el juego</h2>
+      <ul>
+        <li>
+          <strong>Carga y desbloqueo:</strong> un contexto de audio compartido,
+          activado con el primer gesto. Los archivos se cargan según la escena y
+          bajo demanda.
+        </li>
+        <li>
+          <strong>Sonido:</strong> silencio y volumen disponibles en menús,
+          partida, pausa, resultados y playtest. Las preferencias se conservan.
+        </li>
+        <li>
+          <strong>Pausa y salida:</strong> los sonidos del mundo se detienen; la
+          interfaz sigue disponible. Salir o reiniciar cancela sonidos
+          anteriores.
+        </li>
+        <li>
+          <strong>Proximidad:</strong> los objetos cercanos se oyen más. Los
+          bucles y las voces simultáneas tienen límites.
+        </li>
+        <li>
+          <strong>Resultados:</strong> victoria una vez; solo estrellas ganadas,
+          récord real y recompensa positiva. El playtest usa el portal sin
+          recompensas persistentes.
+        </li>
+        <li>
+          <strong>Decorativos:</strong> sonido de sus estados visuales
+          existentes. No se añaden colisiones, daño ni interacciones futuras.
+        </li>
+        <li>
+          <strong>Pendiente:</strong> escucha y mezcla final en un iPhone
+          físico.
+        </li>
+      </ul>
+      <details>
+        <summary>Acabado y decisiones opcionales</summary>
+        <ul>
+          <li>
+            <strong>Transformaciones:</strong> Cuatro capas de identidad para
+            Agua/Fuego/Aire/Tierra sobre gem_collect.
+          </li>
+          <li>
+            <strong>Variación de pisadas:</strong> Dos o tres variaciones por
+            familia para reducir repetición; no es un número fijado de archivos.
+          </li>
+          <li>
+            <strong>Fuego persistente:</strong> Crepitar de antorchas encendidas
+            y cola corta del residuo de 600 ms.
+          </li>
+          <li>
+            <strong>Ambiente mágico:</strong> Zumbido cercano de portal o gemas;
+            no emitir uno global por cada objeto.
+          </li>
+          <li>
+            <strong>Música:</strong> Tema de menú y exploración, si se elige una
+            dirección musical.
+          </li>
+          <li>
+            <strong>Editor:</strong> Guardar, cancelar y errores podrían
+            reutilizar UI; mantener silencio al arrastrar/seleccionar y por
+            defecto en el laboratorio.
+          </li>
+        </ul>
+      </details>
+      <footer>
+        WAV a 44.1 kHz / 16 bits, originales MP3 y trazabilidad conservados. La
+        revisión técnica de archivos no sustituye la escucha y mezcla en partida
+        o iPhone.
+        <a href="audio-coverage-audit.json"
+          >Informe con referencias y evidencia</a
+        >.
+      </footer>
+    </main>
+  </body>
+</html>

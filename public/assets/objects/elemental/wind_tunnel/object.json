@@ -1,0 +1,27 @@
+{
+  "id": "wind_tunnel",
+  "label": "Túnel de viento",
+  "category": "elemental",
+  "width": 1024,
+  "height": 512,
+  "anchor": [
+    512,
+    256
+  ],
+  "notes": "Wind direction left to right; no gameplay geometry.",
+  "states": {
+    "flow": {
+      "animation": "wind_tunnel_flow"
+    },
+    "off": {
+      "layers": [
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_off.png"
+      ]
+    }
+  },
+  "components": [
+    "assets/objects/elemental/wind_tunnel/wind_tunnel_off.png"
+  ],
+  "directory": "assets/objects/elemental/wind_tunnel",
+  "thumbnail": "assets/objects/elemental/wind_tunnel/preview.png"
+}

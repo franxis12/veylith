@@ -1,0 +1,19 @@
+WORLD 01 — ANCIENT FOREST
+Master style: existing approved level_02/preview/composite.png. Hand-painted 2D side elevation, mossy ancient masonry, natural stone, warm narrow grass caps, small ferns, deep turquoise forest atmosphere, warm soft sunlight. New geometry comes only from the assigned blueprint panel.
+Logical canvas: 1728 x 648. Uniform 3:1 scale from blueprint pixels, 18-pixel left margin. Panel bottom aligned to canvas bottom; additional sky above. No geometry stretched. One section per level fits the recommended 2048 x 1024 limit.
+Green masses = permanent stone/earth terrain. Beige horizontal bars = fixed platforms unless explicitly part of a moving mechanism; vertical rods, hanging guides, dashed objects and activation plates = excluded interactive objects. Red spikes = excluded gameplay hazard; their gaps remain open. Cyan/purple dashed spaces remain empty. Exit outline becomes decorative empty stone arch, without a door or seal.
+All art layers use top-left origin; X right, Y down. Derive each level from its master composite. Layer ordering: background 0, rear environmental effects 5, static world 10, foliage 20, front effects 30.
+Source panels: 01 top-left; 02 top-right; 03 second-left; 04 second-right; 05 middle-left; 06 middle-right; 07 fourth-left; 08 fourth-right; 09 bottom-left; 10 bottom-right.
+01: start ledge; spike gap; narrow central pier with long horizontal cap and small upper step; high right terrace with upper cap, low basin, exit ledge; short isolated right shelf.
+02: low start; two separate narrow supports and central high route; upper fixed cap at right of mechanism; low small middle island; shallow lower steps; tall exit plateau. Remove rods, plates and block markers.
+03: start and three isolated masses; narrow first pier with lower step; two elevated shelves; central low island beneath empty lift zone; stepped exit right. Every pit stays open.
+04: stepped left bank; low center island; tall third pier; right wall with overhanging shelf; four main horizontal fixed caps. Remove vertical reflector mechanism.
+05: raised start bank; open gap; thin center pier; upper isolated fixed slab; short final pier and stepped exit. Wind arrows are not scenery.
+06: two broad terraced masses separated by one deep pit; central raised small fixed slab; tall exit at right. Two block zones and both mechanisms remain clear.
+07: start; narrow spike pit; irregular central terraced island; three elevated slabs and right bridge crossing open gap; tall exit. Preserve small space between start island and central mass.
+08: high left step; two deep pits around low central island; five fixed shelves; rising right exit terrace. Dashed lift zones remain empty, guide wires and pole removed.
+09: separated first bank, small low island, middle island, final bank; five floating stone bridge slabs with individually open gaps, including tiny gap between first two. No bottom floor.
+10: low stepped start, narrow first high column and lower right foot; low central column; stepped second bank; slim tall penultimate column; high exit. Multiple fixed shelves remain, every dashed interactive zone stays empty. Beige horizontal bars retained as fixed according to legend; vertical shafts and guides removed. Dense gaps require special review.
+No characters, text, arrows, grids, UI, gems, coins, moving mechanisms, doors, seals, hazards or collider outlines. Static plates contain no moving water or large swaying vine duplicates. Reuse previously generated environmental effects from approved Level 02 in a shared library without modifying originals.
+
+Final interpretation note: Level 05 upper arrow-marked slab is omitted in the default art as moving. A separate optional fixed-platform overlay and preview provide the alternative beige-legend interpretation. Level 01 and 09 received an additional registration refinement; exact blueprint registration is still not guaranteed.

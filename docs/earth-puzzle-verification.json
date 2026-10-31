@@ -1,0 +1,3073 @@
+{
+  "status": "passed",
+  "revision": "earth-puzzles-v2-water-height-jump",
+  "verifiedAt": "2026-10-23T01:15:56.621Z",
+  "project": "/Users/francismartinez/Projects/Elements",
+  "scope": "Rediseño de los diez niveles canónicos de Tierra y salto de Tierra elevado a la altura de Agua por petición del usuario. No se creó el nivel 11.",
+  "compatibility": {
+    "schemaVersion": 1,
+    "progressVersion": 1,
+    "levelIdsAndOrderPreserved": true,
+    "coinIdsAndValuesPreserved": true,
+    "starEntitlementsPreserved": true,
+    "previousBestTimesRetained": true,
+    "previousDesignArchive": "docs/level-archive/before-earth-puzzles-v2",
+    "archivedHashesVerified": true
+  },
+  "checks": {
+    "typecheck": "passed",
+    "lint": "passed",
+    "tests": {
+      "passed": 468,
+      "files": 49
+    },
+    "build": "passed",
+    "format": "passed",
+    "browserSolutionLevels": 10,
+    "browserNaiveAttemptsRejected": 20,
+    "restarts": 10,
+    "editor": {
+      "passed": true,
+      "checks": [
+        "Ten canonical documents opened in the real editor; clues match persisted JSON.",
+        "Hints edit/save/reopen, progressive reveal, pause/resume/restart/resize and playtest isolation passed.",
+        "Public HUD and quick restart work at desktop and mobile landscape sizes; no horizontal overflow."
+      ],
+      "errors": []
+    },
+    "consoleErrors": []
+  },
+  "jump": {
+    "previousEarthImpulse": 355,
+    "earthAndWaterImpulse": 560,
+    "ascentGravity": 900,
+    "earthDescentGravity": 2000,
+    "measuredPixels": {
+      "earth": 169.5833333333323,
+      "water": 169.5833333333323
+    },
+    "method": "Isolated editor-document copies; stationary normal jump input on flat terrain, Earth and Water. No campaign document or save changed.",
+    "unitIntegrationRatesHz": [30, 60, 120],
+    "level2ChannelWidth": 384,
+    "level2BlockWidth": 512,
+    "measurement": {
+      "passed": true,
+      "method": "Isolated editor-document copies; stationary normal jump input on flat terrain, Earth and Water. No campaign document or save changed.",
+      "results": [
+        {
+          "element": "earth",
+          "height": 169.5833333333323,
+          "samples": [
+            {
+              "ms": 0,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 10.599999904632568,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 27.59999990463257,
+              "feet": 640.9166666666667,
+              "grounded": false
+            },
+            {
+              "ms": 44.299999952316284,
+              "feet": 632.0833333333335,
+              "grounded": false
+            },
+            {
+              "ms": 60.5,
+              "feet": 623.5000000000002,
+              "grounded": false
+            },
+            {
+              "ms": 76.89999985694885,
+              "feet": 615.166666666667,
+              "grounded": false
+            },
+            {
+              "ms": 94.39999985694885,
+              "feet": 607.0833333333337,
+              "grounded": false
+            },
+            {
+              "ms": 110.39999985694885,
+              "feet": 599.2500000000005,
+              "grounded": false
+            },
+            {
+              "ms": 127.39999985694885,
+              "feet": 591.6666666666672,
+              "grounded": false
+            },
+            {
+              "ms": 143.70000004768372,
+              "feet": 584.3333333333338,
+              "grounded": false
+            },
+            {
+              "ms": 160.20000004768372,
+              "feet": 577.2500000000005,
+              "grounded": false
+            },
+            {
+              "ms": 176.79999995231628,
+              "feet": 570.4166666666672,
+              "grounded": false
+            },
+            {
+              "ms": 193.5,
+              "feet": 563.8333333333339,
+              "grounded": false
+            },
+            {
+              "ms": 210,
+              "feet": 557.5000000000006,
+              "grounded": false
+            },
+            {
+              "ms": 226.59999990463257,
+              "feet": 551.4166666666672,
+              "grounded": false
+            },
+            {
+              "ms": 243.29999995231628,
+              "feet": 545.5833333333339,
+              "grounded": false
+            },
+            {
+              "ms": 259.89999985694885,
+              "feet": 540.0000000000007,
+              "grounded": false
+            },
+            {
+              "ms": 276.7999999523163,
+              "feet": 534.6666666666673,
+              "grounded": false
+            },
+            {
+              "ms": 293.5,
+              "feet": 529.5833333333339,
+              "grounded": false
+            },
+            {
+              "ms": 310,
+              "feet": 524.7500000000007,
+              "grounded": false
+            },
+            {
+              "ms": 326.7999999523163,
+              "feet": 520.1666666666674,
+              "grounded": false
+            },
+            {
+              "ms": 343.2999999523163,
+              "feet": 515.833333333334,
+              "grounded": false
+            },
+            {
+              "ms": 360,
+              "feet": 511.75000000000074,
+              "grounded": false
+            },
+            {
+              "ms": 376.89999985694885,
+              "feet": 507.9166666666674,
+              "grounded": false
+            },
+            {
+              "ms": 393.5,
+              "feet": 504.3333333333341,
+              "grounded": false
+            },
+            {
+              "ms": 410,
+              "feet": 501.0000000000008,
+              "grounded": false
+            },
+            {
+              "ms": 426.89999985694885,
+              "feet": 497.9166666666675,
+              "grounded": false
+            },
+            {
+              "ms": 443.5,
+              "feet": 495.08333333333417,
+              "grounded": false
+            },
+            {
+              "ms": 460.09999990463257,
+              "feet": 492.50000000000085,
+              "grounded": false
+            },
+            {
+              "ms": 476.7999999523163,
+              "feet": 490.16666666666754,
+              "grounded": false
+            },
+            {
+              "ms": 493.5,
+              "feet": 488.0833333333342,
+              "grounded": false
+            },
+            {
+              "ms": 510.2999999523163,
+              "feet": 486.2500000000009,
+              "grounded": false
+            },
+            {
+              "ms": 529.8999998569489,
+              "feet": 484.6666666666676,
+              "grounded": false
+            },
+            {
+              "ms": 543.5,
+              "feet": 483.3333333333343,
+              "grounded": false
+            },
+            {
+              "ms": 560.3999998569489,
+              "feet": 482.25000000000097,
+              "grounded": false
+            },
+            {
+              "ms": 576.8999998569489,
+              "feet": 481.41666666666765,
+              "grounded": false
+            },
+            {
+              "ms": 593.3999998569489,
+              "feet": 480.83333333333434,
+              "grounded": false
+            },
+            {
+              "ms": 610,
+              "feet": 480.500000000001,
+              "grounded": false
+            },
+            {
+              "ms": 626.5999999046326,
+              "feet": 480.4166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 643.5999999046326,
+              "feet": 480.5833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 659.8999998569489,
+              "feet": 481.3055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 676.8999998569489,
+              "feet": 482.5833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 693.3999998569489,
+              "feet": 484.4166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 710.2000000476837,
+              "feet": 486.8055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 726.5999999046326,
+              "feet": 489.7500000000011,
+              "grounded": false
+            },
+            {
+              "ms": 743.5999999046326,
+              "feet": 493.2500000000011,
+              "grounded": false
+            },
+            {
+              "ms": 760.0999999046326,
+              "feet": 497.3055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 776.8999998569489,
+              "feet": 501.9166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 793.2000000476837,
+              "feet": 507.0833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 810,
+              "feet": 512.8055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 826.7000000476837,
+              "feet": 519.0833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 843.3999998569489,
+              "feet": 525.9166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 860.2000000476837,
+              "feet": 533.3055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 876.7000000476837,
+              "feet": 541.2500000000011,
+              "grounded": false
+            },
+            {
+              "ms": 893.5,
+              "feet": 549.7500000000011,
+              "grounded": false
+            },
+            {
+              "ms": 910.2999999523163,
+              "feet": 558.8055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 926.5999999046326,
+              "feet": 568.4166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 943.2000000476837,
+              "feet": 578.5833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 960.2000000476837,
+              "feet": 589.3055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 976.5999999046326,
+              "feet": 600.5833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 993.3999998569489,
+              "feet": 612.4166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 1010.2000000476837,
+              "feet": 624.8055555555566,
+              "grounded": false
+            },
+            {
+              "ms": 1026.5999999046326,
+              "feet": 637.750000000001,
+              "grounded": false
+            },
+            {
+              "ms": 1044.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1060.2000000476837,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1076.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1094.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1110.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1127.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1143.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1160.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1177,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1193.2999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1209.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1226.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1243.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1260.3999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1276.7999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1293.2999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1310.2000000476837,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1326.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1343.3999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1360.7000000476837,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1377,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1393.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1410.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1427.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1443.5999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1459.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1476.7000000476837,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1493.2000000476837,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1510.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1526.7999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1543.2999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1560.5999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1576.7999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1593.0999999046326,
+              "feet": 650,
+              "grounded": true
+            }
+          ]
+        },
+        {
+          "element": "water",
+          "height": 169.5833333333323,
+          "samples": [
+            {
+              "ms": 0,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 4,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 22.09999990463257,
+              "feet": 640.9166666666667,
+              "grounded": false
+            },
+            {
+              "ms": 38,
+              "feet": 632.0833333333335,
+              "grounded": false
+            },
+            {
+              "ms": 54.89999985694885,
+              "feet": 623.5000000000002,
+              "grounded": false
+            },
+            {
+              "ms": 72,
+              "feet": 615.166666666667,
+              "grounded": false
+            },
+            {
+              "ms": 87.89999985694885,
+              "feet": 607.0833333333337,
+              "grounded": false
+            },
+            {
+              "ms": 103.89999985694885,
+              "feet": 599.2500000000005,
+              "grounded": false
+            },
+            {
+              "ms": 121.59999990463257,
+              "feet": 591.6666666666672,
+              "grounded": false
+            },
+            {
+              "ms": 138.5,
+              "feet": 584.3333333333338,
+              "grounded": false
+            },
+            {
+              "ms": 155,
+              "feet": 577.2500000000005,
+              "grounded": false
+            },
+            {
+              "ms": 170.19999980926514,
+              "feet": 570.4166666666672,
+              "grounded": false
+            },
+            {
+              "ms": 187.09999990463257,
+              "feet": 563.8333333333339,
+              "grounded": false
+            },
+            {
+              "ms": 204.89999985694885,
+              "feet": 557.5000000000006,
+              "grounded": false
+            },
+            {
+              "ms": 220.79999995231628,
+              "feet": 551.4166666666672,
+              "grounded": false
+            },
+            {
+              "ms": 238.5,
+              "feet": 545.5833333333339,
+              "grounded": false
+            },
+            {
+              "ms": 253.69999980926514,
+              "feet": 540.0000000000007,
+              "grounded": false
+            },
+            {
+              "ms": 269.69999980926514,
+              "feet": 534.6666666666673,
+              "grounded": false
+            },
+            {
+              "ms": 288.19999980926514,
+              "feet": 529.5833333333339,
+              "grounded": false
+            },
+            {
+              "ms": 303.59999990463257,
+              "feet": 524.7500000000007,
+              "grounded": false
+            },
+            {
+              "ms": 319.69999980926514,
+              "feet": 520.1666666666674,
+              "grounded": false
+            },
+            {
+              "ms": 338.19999980926514,
+              "feet": 515.833333333334,
+              "grounded": false
+            },
+            {
+              "ms": 354.59999990463257,
+              "feet": 511.75000000000074,
+              "grounded": false
+            },
+            {
+              "ms": 370.2999999523163,
+              "feet": 507.9166666666674,
+              "grounded": false
+            },
+            {
+              "ms": 388.19999980926514,
+              "feet": 504.3333333333341,
+              "grounded": false
+            },
+            {
+              "ms": 404.89999985694885,
+              "feet": 501.0000000000008,
+              "grounded": false
+            },
+            {
+              "ms": 419.7999999523163,
+              "feet": 497.9166666666675,
+              "grounded": false
+            },
+            {
+              "ms": 439,
+              "feet": 495.08333333333417,
+              "grounded": false
+            },
+            {
+              "ms": 453.09999990463257,
+              "feet": 492.50000000000085,
+              "grounded": false
+            },
+            {
+              "ms": 471.59999990463257,
+              "feet": 490.16666666666754,
+              "grounded": false
+            },
+            {
+              "ms": 487.69999980926514,
+              "feet": 488.0833333333342,
+              "grounded": false
+            },
+            {
+              "ms": 503,
+              "feet": 486.2500000000009,
+              "grounded": false
+            },
+            {
+              "ms": 521.6999998092651,
+              "feet": 484.6666666666676,
+              "grounded": false
+            },
+            {
+              "ms": 536.8999998569489,
+              "feet": 483.3333333333343,
+              "grounded": false
+            },
+            {
+              "ms": 555,
+              "feet": 482.25000000000097,
+              "grounded": false
+            },
+            {
+              "ms": 570.3999998569489,
+              "feet": 481.41666666666765,
+              "grounded": false
+            },
+            {
+              "ms": 586.2999999523163,
+              "feet": 480.83333333333434,
+              "grounded": false
+            },
+            {
+              "ms": 604.7999999523163,
+              "feet": 480.500000000001,
+              "grounded": false
+            },
+            {
+              "ms": 620.8999998569489,
+              "feet": 480.4166666666677,
+              "grounded": false
+            },
+            {
+              "ms": 638.3999998569489,
+              "feet": 480.5833333333344,
+              "grounded": false
+            },
+            {
+              "ms": 653.2999999523163,
+              "feet": 481.0000000000011,
+              "grounded": false
+            },
+            {
+              "ms": 671.5999999046326,
+              "feet": 481.66666666666777,
+              "grounded": false
+            },
+            {
+              "ms": 688.1999998092651,
+              "feet": 482.58333333333445,
+              "grounded": false
+            },
+            {
+              "ms": 704.2999999523163,
+              "feet": 483.75000000000114,
+              "grounded": false
+            },
+            {
+              "ms": 720,
+              "feet": 485.1666666666678,
+              "grounded": false
+            },
+            {
+              "ms": 736.2999999523163,
+              "feet": 486.8333333333345,
+              "grounded": false
+            },
+            {
+              "ms": 753.0999999046326,
+              "feet": 488.7500000000012,
+              "grounded": false
+            },
+            {
+              "ms": 770.2999999523163,
+              "feet": 490.9166666666679,
+              "grounded": false
+            },
+            {
+              "ms": 788.1999998092651,
+              "feet": 493.33333333333456,
+              "grounded": false
+            },
+            {
+              "ms": 804.7999999523163,
+              "feet": 496.00000000000125,
+              "grounded": false
+            },
+            {
+              "ms": 819.5999999046326,
+              "feet": 498.91666666666794,
+              "grounded": false
+            },
+            {
+              "ms": 836.5999999046326,
+              "feet": 502.0833333333346,
+              "grounded": false
+            },
+            {
+              "ms": 853.2999999523163,
+              "feet": 505.5000000000013,
+              "grounded": false
+            },
+            {
+              "ms": 871.5,
+              "feet": 509.166666666668,
+              "grounded": false
+            },
+            {
+              "ms": 887.7999999523163,
+              "feet": 513.0833333333346,
+              "grounded": false
+            },
+            {
+              "ms": 903.8999998569489,
+              "feet": 517.2500000000014,
+              "grounded": false
+            },
+            {
+              "ms": 919.7999999523163,
+              "feet": 521.6666666666681,
+              "grounded": false
+            },
+            {
+              "ms": 938.1999998092651,
+              "feet": 526.3333333333347,
+              "grounded": false
+            },
+            {
+              "ms": 953.8999998569489,
+              "feet": 531.2500000000014,
+              "grounded": false
+            },
+            {
+              "ms": 971,
+              "feet": 536.4166666666681,
+              "grounded": false
+            },
+            {
+              "ms": 987.0999999046326,
+              "feet": 541.8333333333348,
+              "grounded": false
+            },
+            {
+              "ms": 1003.5,
+              "feet": 547.5000000000015,
+              "grounded": false
+            },
+            {
+              "ms": 1021.1999998092651,
+              "feet": 553.4166666666681,
+              "grounded": false
+            },
+            {
+              "ms": 1036.7999999523163,
+              "feet": 559.5833333333348,
+              "grounded": false
+            },
+            {
+              "ms": 1053.5,
+              "feet": 566.0000000000016,
+              "grounded": false
+            },
+            {
+              "ms": 1071.5,
+              "feet": 572.6666666666682,
+              "grounded": false
+            },
+            {
+              "ms": 1087.5999999046326,
+              "feet": 579.5833333333348,
+              "grounded": false
+            },
+            {
+              "ms": 1104.2999999523163,
+              "feet": 586.7500000000016,
+              "grounded": false
+            },
+            {
+              "ms": 1120.5,
+              "feet": 594.1666666666683,
+              "grounded": false
+            },
+            {
+              "ms": 1136.5,
+              "feet": 601.833333333335,
+              "grounded": false
+            },
+            {
+              "ms": 1154.5999999046326,
+              "feet": 609.7500000000016,
+              "grounded": false
+            },
+            {
+              "ms": 1169.6999998092651,
+              "feet": 617.9166666666683,
+              "grounded": false
+            },
+            {
+              "ms": 1188.1999998092651,
+              "feet": 626.3333333333351,
+              "grounded": false
+            },
+            {
+              "ms": 1203.6999998092651,
+              "feet": 635.0000000000018,
+              "grounded": false
+            },
+            {
+              "ms": 1221.3999998569489,
+              "feet": 643.9166666666686,
+              "grounded": false
+            },
+            {
+              "ms": 1237.5999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1253,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1269.6999998092651,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1288,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1303.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1319.7999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1338.0999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1354,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1371.1999998092651,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1386.7999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1403.3999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1421.1999998092651,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1437.7999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1454.8999998569489,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1470.2999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1486.2999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1504.2999999523163,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1520.5999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1536.5999999046326,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1554.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1570.5,
+              "feet": 650,
+              "grounded": true
+            },
+            {
+              "ms": 1588.0999999046326,
+              "feet": 650,
+              "grounded": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "methodology": {
+    "solution": "Reproducción con Chrome y Phaser reales mediante acciones normales. Sin teletransporte, alteración de señales ni reinicios inesperados. El documento cargado se compara exactamente con el JSON canónico y se registra su hash.",
+    "unitTests": "Validación de conexiones y objetos, omisión individual de señales de salida, grafo de superficies, corredores de movimiento, estados, temporizadores, pistas, serialización, copias archivadas, saves y pagos únicos. Las pruebas del contrato de salida que inyectan señales NO se usan como prueba espacial.",
+    "naiveStrategies": "Derecha continua; derecha con salto y Poder repetidos. Máximo 25 s o corte tras 4 s sin avance. Son dos políticas acotadas, no búsqueda exhaustiva.",
+    "editor": "Apertura de los diez mapas, edición/guardado/reapertura de una pista en copia temporal, playtest aislado, revelado gradual, pausa, reinicio y cambio de tamaño. HUD revisado en 1280×720 y 932×430.",
+    "time": "Los tiempos de solución son reproducciones con conocimiento previo; no miden dificultad humana."
+  },
+  "limitations": [
+    "No participaron jugadores nuevos; objetivos humanos y criterios de dificultad por nivel en docs/earth-level-design.md.",
+    "Las dos estrategias ingenuas no descartan todos los atajos posibles.",
+    "El grafo de superficies es una comprobación parcial: no demuestra orden de señales, altura libre ni temporización.",
+    "No se compiló iOS ni se midió rendimiento/memoria en iPhone físico.",
+    "Los récords anteriores se conservan por compatibilidad aunque corresponden a otros diseños.",
+    "La compilación web mantiene la advertencia de tamaño del paquete de Phaser."
+  ],
+  "reproduction": {
+    "url": "http://127.0.0.1:5187/editor",
+    "steps": "Abrir → elegir ID de la tabla → Probar. Flechas/A-D, Espacio, E/Shift y R/↻. Pistas opcionales en el HUD.",
+    "scripts": [
+      "scripts/earth-campaign-smoke.js",
+      "scripts/earth-puzzle-negative-smoke.js",
+      "scripts/earth-puzzle-editor-smoke.js"
+    ],
+    "externalRequirements": "Playwright externo indicado por PLAYWRIGHT_MODULE y Chrome. No se añadieron dependencias.",
+    "jsonChanges": "Reiniciar Vite tras cambios externos a los JSON; el guardado desde el editor ya invalida su módulo."
+  },
+  "sourceSha256": {
+    "src/game/entities/player/PlayerMotor.ts": "4aaa08450847face01f16e3e4fe9f993659f2a56cfd30a1391bed388c9794cc1",
+    "src/game/levels/earthValidation.ts": "8517933a4f2ad2d6c59c33d9c80b691bb647fc9e6de4e48457c47a4245aae1b1",
+    "scripts/earth-routes.json": "6dff2261d3d69af174275e399a9a93cbb8bdfbeb8cbd32ba421a440893281e2a",
+    "scripts/earth-puzzle-smoke.js": "9bb6cfcfbac3ce107aef7e812926b7f26de3aeecbb9b6dbc8a7af41d13b4fabc",
+    "scripts/earth-puzzle-negative-smoke.js": "01b57da5b34360734db5a0f7fd28becfffecd068e65d016c7261c2b83be032de",
+    "scripts/earth-puzzle-editor-smoke.js": "28b73c833c5b9e6a3cf656beaea8bcee652f217ccbcd93fda543b29b7c0ad72b"
+  },
+  "levels": [
+    {
+      "number": 1,
+      "id": "forest-1",
+      "title": "La puerta sellada",
+      "documentSha256": "62f32917bd74b9337f9bbd3011c27cb1c46e2bff273c2ba9bb7f0702f890605f",
+      "fileSha256": "609bfca83462f7fe4d1043df608da1a468b44e38bc39ce688c014b51f547b169",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 35000,
+        "twoStarsMs": 90000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-1",
+        "passed": true,
+        "elapsedMs": 11148.5,
+        "sha256": "62f32917bd74b9337f9bbd3011c27cb1c46e2bff273c2ba9bb7f0702f890605f",
+        "trace": [
+          {
+            "step": ["m", 980],
+            "x": 981.7500000000026,
+            "feet": 650,
+            "block": null,
+            "signals": []
+          },
+          {
+            "step": ["cast"],
+            "x": 985.833333333336,
+            "feet": 650,
+            "block": null,
+            "signals": ["outer-seal"]
+          },
+          {
+            "step": ["m", 1660],
+            "x": 1663.6666666666592,
+            "feet": 650,
+            "block": null,
+            "signals": ["outer-seal"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1667.7499999999925,
+            "feet": 650,
+            "block": null,
+            "signals": ["outer-seal", "inner-seal"]
+          },
+          {
+            "step": ["m", 230],
+            "x": 226.33333333333326,
+            "feet": 650,
+            "block": null,
+            "signals": ["outer-seal", "inner-seal"]
+          },
+          {
+            "step": ["end"],
+            "x": 222.24999999999991,
+            "feet": 650,
+            "block": null,
+            "signals": ["outer-seal", "inner-seal"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 6381.299999952316,
+          "maxX": 1269,
+          "x": 1269,
+          "feet": 650,
+          "iterations": 154,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 6470.5,
+          "maxX": 1265.541666666667,
+          "x": 1269,
+          "feet": 640.9166666666667,
+          "iterations": 156,
+          "attempts": 2,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 2,
+      "id": "forest-2",
+      "title": "Dos pesos, una salida",
+      "documentSha256": "c3425f8463ffe1abc0bbff58cdbba1c8d101d37eeb805a2cae1d292bd2bce4d5",
+      "fileSha256": "f1680f301cd53243b3bc8dc6866b4e5298fcb356c6411cae17b2ae4f7d5ae446",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 50000,
+        "twoStarsMs": 120000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-2",
+        "passed": true,
+        "elapsedMs": 11936,
+        "sha256": "c3425f8463ffe1abc0bbff58cdbba1c8d101d37eeb805a2cae1d292bd2bce4d5",
+        "trace": [
+          {
+            "step": ["m", 850],
+            "x": 851.5,
+            "feet": 650,
+            "block": {
+              "x": 1138.5,
+              "top": 594,
+              "bottom": 650,
+              "width": 512,
+              "height": 56,
+              "vx": 150,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": []
+          },
+          {
+            "step": ["j", 950],
+            "x": 956.0833333333343,
+            "feet": 594,
+            "block": {
+              "x": 1141,
+              "top": 594,
+              "bottom": 650,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": []
+          },
+          {
+            "step": ["m", 1480],
+            "x": 1482.8333333333278,
+            "feet": 650,
+            "block": {
+              "x": 1141,
+              "top": 594,
+              "bottom": 650,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": []
+          },
+          {
+            "step": ["cast"],
+            "x": 1486.916666666661,
+            "feet": 650,
+            "block": {
+              "x": 1141,
+              "top": 594,
+              "bottom": 650,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["far-seal", "return-bridge"]
+          },
+          {
+            "step": ["ride", "return-bridge", 0.99],
+            "x": 1486.916666666661,
+            "feet": 650,
+            "block": {
+              "x": 1141,
+              "top": 594,
+              "bottom": 650,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["far-seal", "return-bridge"]
+          },
+          {
+            "step": ["push", "plate", "left"],
+            "x": 1013,
+            "feet": 650,
+            "block": {
+              "x": 726,
+              "top": 593,
+              "bottom": 649,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["far-seal", "return-bridge"]
+          },
+          {
+            "step": ["j", 900],
+            "x": 894.5833333333322,
+            "feet": 593,
+            "block": {
+              "x": 726,
+              "top": 593,
+              "bottom": 649,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["far-seal", "return-bridge"]
+          },
+          {
+            "step": ["m", 230],
+            "x": 228.9999999999968,
+            "feet": 650,
+            "block": {
+              "x": 726,
+              "top": 593,
+              "bottom": 649,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["far-seal", "return-bridge"]
+          },
+          {
+            "step": ["end"],
+            "x": 224.91666666666345,
+            "feet": 650,
+            "block": {
+              "x": 726,
+              "top": 593,
+              "bottom": 649,
+              "width": 512,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["far-seal", "return-bridge"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 7509.399999856949,
+          "maxX": 1313,
+          "x": 1313,
+          "feet": 1000,
+          "iterations": 181,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 9848.5,
+          "maxX": 2017,
+          "x": 2017,
+          "feet": 650,
+          "iterations": 237,
+          "attempts": 2,
+          "signals": [],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 3,
+      "id": "forest-6",
+      "title": "El reflejo perdido",
+      "documentSha256": "bddc75ca2e10bcecf6a7f54af047ac875dfe3101938adc134a1a8bcfaeed1056",
+      "fileSha256": "31ec32eae08f8a650bd4290a403f3e3e64b539d151be0e9c32d3d7628f520574",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 50000,
+        "twoStarsMs": 120000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-6",
+        "passed": true,
+        "elapsedMs": 9080.599999904633,
+        "sha256": "bddc75ca2e10bcecf6a7f54af047ac875dfe3101938adc134a1a8bcfaeed1056",
+        "trace": [
+          {
+            "step": ["m", 995],
+            "x": 997.0833333333366,
+            "feet": 650,
+            "block": null,
+            "signals": ["beam"]
+          },
+          {
+            "step": ["j", 1120],
+            "x": 1127.4166666666665,
+            "feet": 594,
+            "block": null,
+            "signals": ["beam"]
+          },
+          {
+            "step": ["j", 1285],
+            "x": 1290.7499999999968,
+            "feet": 650,
+            "block": null,
+            "signals": ["beam"]
+          },
+          {
+            "step": ["push", "receiver", "left"],
+            "x": 967,
+            "feet": 650,
+            "block": null,
+            "signals": ["beam", "receiver"]
+          },
+          {
+            "step": ["j", 790],
+            "x": 783.2499999999983,
+            "feet": 594,
+            "block": null,
+            "signals": ["beam", "receiver"]
+          },
+          {
+            "step": ["m", 230],
+            "x": 227.91666666666399,
+            "feet": 650,
+            "block": null,
+            "signals": ["beam", "receiver"]
+          },
+          {
+            "step": ["end"],
+            "x": 227.91666666666399,
+            "feet": 650,
+            "block": null,
+            "signals": ["beam", "receiver"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 12174.099999904633,
+          "maxX": 2017,
+          "x": 1234,
+          "feet": 650,
+          "iterations": 293,
+          "attempts": 2,
+          "signals": ["beam"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 10017.5,
+          "maxX": 2017,
+          "x": 2017,
+          "feet": 556.4166666666677,
+          "iterations": 241,
+          "attempts": 3,
+          "signals": ["beam"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 4,
+      "id": "forest-7",
+      "title": "La ruta invertida",
+      "documentSha256": "8b4fc2acad21e3169456c51cd9b0df3224eb534571cd7c962ae99c218384b184",
+      "fileSha256": "b1f0c3a8d0786dd6f5df95445cec7a03a14c23ed5ec3bb9f4be59ad8402ef368",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 55000,
+        "twoStarsMs": 130000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-7",
+        "passed": true,
+        "elapsedMs": 17735.400000095367,
+        "sha256": "8b4fc2acad21e3169456c51cd9b0df3224eb534571cd7c962ae99c218384b184",
+        "trace": [
+          {
+            "step": ["m", 1830],
+            "x": 1826.9166666666677,
+            "feet": 650,
+            "block": {
+              "x": 1476.333333333337,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["west-belt", "east-belt"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1822.8333333333344,
+            "feet": 650,
+            "block": {
+              "x": 1480.0000000000036,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["west-belt", "brake"]
+          },
+          {
+            "step": ["m", 1700],
+            "x": 1696.2500000000034,
+            "feet": 650,
+            "block": {
+              "x": 1480.0000000000036,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["west-belt", "brake"]
+          },
+          {
+            "step": ["push", "plate", "left"],
+            "x": 530.4999999999993,
+            "feet": 650,
+            "block": {
+              "x": 435.4999999999994,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["west-belt", "brake"]
+          },
+          {
+            "step": ["j", 500],
+            "x": 493.7499999999997,
+            "feet": 593,
+            "block": {
+              "x": 435.4999999999994,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["west-belt", "brake"]
+          },
+          {
+            "step": ["m", 2200],
+            "x": 2201.749999999984,
+            "feet": 650,
+            "block": {
+              "x": 435.4999999999994,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["west-belt", "brake"]
+          },
+          {
+            "step": ["end"],
+            "x": 2205.8333333333176,
+            "feet": 650,
+            "block": {
+              "x": 435.4999999999994,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["west-belt", "brake"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 4834.5,
+          "maxX": 2069,
+          "x": 2069,
+          "feet": 650,
+          "iterations": 117,
+          "attempts": 1,
+          "signals": ["west-belt", "east-belt"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 4920.299999952316,
+          "maxX": 2069,
+          "x": 2069,
+          "feet": 545.5833333333339,
+          "iterations": 119,
+          "attempts": 2,
+          "signals": ["west-belt", "brake"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 5,
+      "id": "forest-8",
+      "title": "El contrapeso",
+      "documentSha256": "c213e8649691742a54aceaeb04154fc1e11d25305bca9775939d7069a61ac382",
+      "fileSha256": "4147e0ab84b778d40056f3e3b6316e277d29b8f478749f2634afd6369824bc30",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 60000,
+        "twoStarsMs": 150000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-8",
+        "passed": true,
+        "elapsedMs": 11384.299999952316,
+        "sha256": "c213e8649691742a54aceaeb04154fc1e11d25305bca9775939d7069a61ac382",
+        "trace": [
+          {
+            "step": ["m", 1854],
+            "x": 1852.9166666666695,
+            "feet": 650,
+            "block": {
+              "x": 1750,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": -150,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["balance"]
+          },
+          {
+            "step": ["m", 1554],
+            "x": 1552.5,
+            "feet": 603.25,
+            "block": {
+              "x": 1457.5,
+              "top": 547.25,
+              "bottom": 603.25,
+              "width": 128,
+              "height": 56,
+              "vx": -150,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["balance", "weight"]
+          },
+          {
+            "step": ["ride", "balance", 0.98],
+            "x": 1550,
+            "feet": 375.1666666666673,
+            "block": {
+              "x": 1455,
+              "top": 319.1666666666673,
+              "bottom": 375.1666666666673,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["balance", "weight"]
+          },
+          {
+            "step": ["push", "plate", "left"],
+            "x": 1085,
+            "feet": 370,
+            "block": {
+              "x": 990,
+              "top": 313,
+              "bottom": 369,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["balance", "weight"]
+          },
+          {
+            "step": ["j", 990],
+            "x": 982.916666666666,
+            "feet": 313,
+            "block": {
+              "x": 990,
+              "top": 313,
+              "bottom": 369,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["balance", "weight"]
+          },
+          {
+            "step": ["j", 860],
+            "x": 852.2499999999981,
+            "feet": 370,
+            "block": {
+              "x": 990,
+              "top": 313,
+              "bottom": 369,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["balance", "weight"]
+          },
+          {
+            "step": ["m", 700],
+            "x": 697.08333333333,
+            "feet": 370,
+            "block": {
+              "x": 990,
+              "top": 313,
+              "bottom": 369,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["balance", "weight"]
+          },
+          {
+            "step": ["end"],
+            "x": 697.08333333333,
+            "feet": 370,
+            "block": {
+              "x": 990,
+              "top": 313,
+              "bottom": 369,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["balance", "weight"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 5156.099999904633,
+          "maxX": 2273,
+          "x": 2273,
+          "feet": 650,
+          "iterations": 124,
+          "attempts": 1,
+          "signals": ["balance"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 5137.299999952316,
+          "maxX": 2273,
+          "x": 2273,
+          "feet": 650,
+          "iterations": 124,
+          "attempts": 2,
+          "signals": ["balance"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 6,
+      "id": "forest-9",
+      "title": "El camino sin retorno",
+      "documentSha256": "3a615871cf767c69822b72fae0c2f01cbe5b508df84d35f89f2680d507d80678",
+      "fileSha256": "03848881a0cf7abaa6e6be2b45e9cf76ba82092bf7532e32e49f033bc968da5f",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 75000,
+        "twoStarsMs": 180000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-9",
+        "passed": true,
+        "elapsedMs": 22440.699999809265,
+        "sha256": "3a615871cf767c69822b72fae0c2f01cbe5b508df84d35f89f2680d507d80678",
+        "trace": [
+          {
+            "step": ["m", 1980],
+            "x": 1986.6666666666536,
+            "feet": 650,
+            "block": null,
+            "signals": ["outbound"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1986.6666666666536,
+            "feet": 650,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["m", 1840],
+            "x": 1835.583333333323,
+            "feet": 650,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["bottom", "return-lift", 0.04],
+            "x": 1835.583333333323,
+            "feet": 650,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["j", 1740],
+            "x": 1733.4999999999916,
+            "feet": 546.6666666666667,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["ride", "return-lift", 0.98],
+            "x": 1733.4999999999916,
+            "feet": 355.00000000000074,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["m", 1580],
+            "x": 1578.3333333333278,
+            "feet": 408.33333333333314,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["j", 1480],
+            "x": 1473.083333333335,
+            "feet": 350,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["m", 980],
+            "x": 974.9166666666748,
+            "feet": 350,
+            "block": null,
+            "signals": ["outbound", "inbound", "far-seal", "return-lift"]
+          },
+          {
+            "step": ["cast"],
+            "x": 974.9166666666748,
+            "feet": 350,
+            "block": null,
+            "signals": [
+              "outbound",
+              "inbound",
+              "far-seal",
+              "return-seal",
+              "return-lift"
+            ]
+          },
+          {
+            "step": ["m", 830],
+            "x": 827.9166666666734,
+            "feet": 377.5,
+            "block": null,
+            "signals": [
+              "outbound",
+              "inbound",
+              "far-seal",
+              "return-seal",
+              "return-lift"
+            ]
+          },
+          {
+            "step": ["feet", 640],
+            "x": 823.8333333333401,
+            "feet": 650,
+            "block": null,
+            "signals": [
+              "outbound",
+              "inbound",
+              "far-seal",
+              "return-seal",
+              "return-lift"
+            ]
+          },
+          {
+            "step": ["m", 230],
+            "x": 227.66666666667217,
+            "feet": 650,
+            "block": null,
+            "signals": [
+              "outbound",
+              "inbound",
+              "far-seal",
+              "return-seal",
+              "return-lift"
+            ]
+          },
+          {
+            "step": ["end"],
+            "x": 219.50000000000549,
+            "feet": 650,
+            "block": null,
+            "signals": [
+              "outbound",
+              "inbound",
+              "far-seal",
+              "return-seal",
+              "return-lift"
+            ]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 12611.599999904633,
+          "maxX": 2785,
+          "x": 2785,
+          "feet": 650,
+          "iterations": 303,
+          "attempts": 1,
+          "signals": ["outbound"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 12961.900000095367,
+          "maxX": 2784.958333333338,
+          "x": 2785,
+          "feet": 612.5000000000011,
+          "iterations": 312,
+          "attempts": 2,
+          "signals": ["outbound", "inbound", "far-seal", "return-lift"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 7,
+      "id": "forest-10",
+      "title": "El mecanismo dormido",
+      "documentSha256": "80c26c4b5e57cf58d10ff30ecd0c7a317b67d87650d7e53fb5aa0503cf686e41",
+      "fileSha256": "e2c5649a511c5a8f6bc7c7da55c20b7189c3d39f8c4a34ccffa5f05f7dd865b9",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 65000,
+        "twoStarsMs": 160000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-10",
+        "passed": true,
+        "elapsedMs": 20024.299999952316,
+        "sha256": "80c26c4b5e57cf58d10ff30ecd0c7a317b67d87650d7e53fb5aa0503cf686e41",
+        "trace": [
+          {
+            "step": ["m", 1040],
+            "x": 1040.9166666666692,
+            "feet": 650,
+            "block": {
+              "x": 1144,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 150,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": []
+          },
+          {
+            "step": ["j", 1140],
+            "x": 1145.416666666665,
+            "feet": 594,
+            "block": {
+              "x": 1146.5,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": []
+          },
+          {
+            "step": ["j", 1250],
+            "x": 1255.6666666666629,
+            "feet": 650,
+            "block": {
+              "x": 1146.5,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": []
+          },
+          {
+            "step": ["push", "plate", "left"],
+            "x": 809,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": []
+          },
+          {
+            "step": ["m", 950],
+            "x": 951.916666666668,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": []
+          },
+          {
+            "step": ["cast"],
+            "x": 956.0000000000014,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-door", "clock-start"]
+          },
+          {
+            "step": ["m", 1880],
+            "x": 1886.9999999999877,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-door", "clock-start"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1886.9999999999877,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-door", "clock-start", "far-seal"]
+          },
+          {
+            "step": ["m", 820],
+            "x": 813.0833333333335,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-door", "clock-start", "far-seal"]
+          },
+          {
+            "step": ["j", 735],
+            "x": 727.3333333333326,
+            "feet": 593,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-door", "clock-start", "far-seal"]
+          },
+          {
+            "step": ["j", 600],
+            "x": 592.5833333333313,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-start", "far-seal"]
+          },
+          {
+            "step": ["m", 230],
+            "x": 229.16666666666535,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-start", "far-seal"]
+          },
+          {
+            "step": ["end"],
+            "x": 225.083333333332,
+            "feet": 650,
+            "block": {
+              "x": 714,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["clock-start", "far-seal"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 6125.299999952316,
+          "maxX": 1211,
+          "x": 1211,
+          "feet": 650,
+          "iterations": 147,
+          "attempts": 1,
+          "signals": [],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 6315.099999904633,
+          "maxX": 1338.9999999999982,
+          "x": 1339,
+          "feet": 650,
+          "iterations": 152,
+          "attempts": 2,
+          "signals": ["clock-door", "clock-start"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 8,
+      "id": "forest-3",
+      "title": "El engaño de la plataforma",
+      "documentSha256": "82d8b07bab56539e7d887211590bb19b1536f333fe3758f384c759d1f544bde0",
+      "fileSha256": "558327e07bf4eea8cf7bfe801d0cc57e6a6e19c75fa9c2f38a6ccd68cea6a9d4",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 55000,
+        "twoStarsMs": 140000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-3",
+        "passed": true,
+        "elapsedMs": 5252.299999952316,
+        "sha256": "82d8b07bab56539e7d887211590bb19b1536f333fe3758f384c759d1f544bde0",
+        "trace": [
+          {
+            "step": ["m", 1000],
+            "x": 1003.8333333333369,
+            "feet": 650,
+            "block": null,
+            "signals": ["veil"]
+          },
+          {
+            "step": ["feet", 890],
+            "x": 1007.9166666666703,
+            "feet": 900,
+            "block": null,
+            "signals": ["veil"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1007.9166666666703,
+            "feet": 900,
+            "block": null,
+            "signals": ["veil", "below-seal"]
+          },
+          {
+            "step": ["m", 1200],
+            "x": 1203.9166666666686,
+            "feet": 900,
+            "block": null,
+            "signals": ["veil", "below-seal"]
+          },
+          {
+            "step": ["end"],
+            "x": 1203.9166666666686,
+            "feet": 900,
+            "block": null,
+            "signals": ["veil", "below-seal"]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 9790.700000047684,
+          "maxX": 2017,
+          "x": 2017,
+          "feet": 650,
+          "iterations": 236,
+          "attempts": 1,
+          "signals": ["veil"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 10091.300000190735,
+          "maxX": 2014.4583333333237,
+          "x": 2017,
+          "feet": 577.2500000000005,
+          "iterations": 243,
+          "attempts": 2,
+          "signals": ["veil"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 9,
+      "id": "forest-4",
+      "title": "La cámara de las decisiones",
+      "documentSha256": "c85b679bfaa70c94c360d4bfe37abd20f66aac2baabb7500ffbe31dcaea9186b",
+      "fileSha256": "76c2fbfff742225c468c806d8873530b275c90b93473d8adab808d594e456c1c",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 75000,
+        "twoStarsMs": 180000
+      },
+      "starCoinEntitlement": [30, 60, 100],
+      "optionalCoinValue": 5,
+      "solution": {
+        "id": "forest-4",
+        "passed": true,
+        "elapsedMs": 21955.599999904633,
+        "sha256": "c85b679bfaa70c94c360d4bfe37abd20f66aac2baabb7500ffbe31dcaea9186b",
+        "trace": [
+          {
+            "step": ["m", 1930],
+            "x": 1930.0833333333205,
+            "feet": 650,
+            "block": null,
+            "signals": ["west-barrier"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1934.1666666666538,
+            "feet": 650,
+            "block": null,
+            "signals": ["west-barrier", "east-seal"]
+          },
+          {
+            "step": ["m", 1190],
+            "x": 1186.9166666666677,
+            "feet": 650,
+            "block": null,
+            "signals": ["west-barrier", "east-seal"]
+          },
+          {
+            "step": ["cast"],
+            "x": 1182.8333333333344,
+            "feet": 650,
+            "block": null,
+            "signals": ["east-barrier", "selector", "east-seal"]
+          },
+          {
+            "step": ["m", 1150],
+            "x": 1146.083333333335,
+            "feet": 650,
+            "block": null,
+            "signals": ["east-barrier", "selector", "east-seal"]
+          },
+          {
+            "step": ["j", 1050],
+            "x": 1043.0833333333344,
+            "feet": 620,
+            "block": null,
+            "signals": ["east-barrier", "selector", "east-seal"]
+          },
+          {
+            "step": ["m", 400],
+            "x": 397.9166666666638,
+            "feet": 650,
+            "block": null,
+            "signals": ["east-barrier", "selector", "east-seal"]
+          },
+          {
+            "step": ["cast"],
+            "x": 393.8333333333305,
+            "feet": 650,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["m", 810],
+            "x": 814.4166666666653,
+            "feet": 650,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["bottom", "judgment-lift", 0.04],
+            "x": 814.4166666666653,
+            "feet": 650,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["j", 950],
+            "x": 957.8333333333346,
+            "feet": 538.3333333333333,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["m", 1060],
+            "x": 1064.0000000000025,
+            "feet": 491.66666666666674,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["ride", "judgment-lift", 0.98],
+            "x": 1068.0833333333358,
+            "feet": 304.99999999999915,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["j", 1190],
+            "x": 1194.6666666666667,
+            "feet": 300,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["m", 1340],
+            "x": 1341.666666666664,
+            "feet": 300,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          },
+          {
+            "step": ["end"],
+            "x": 1341.666666666664,
+            "feet": 300,
+            "block": null,
+            "signals": [
+              "east-barrier",
+              "selector",
+              "west-seal",
+              "east-seal",
+              "judgment-lift"
+            ]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 9303.400000095367,
+          "maxX": 2529,
+          "x": 2529,
+          "feet": 650,
+          "iterations": 224,
+          "attempts": 1,
+          "signals": ["west-barrier"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 5663.599999904633,
+          "maxX": 1619,
+          "x": 1619,
+          "feet": 650,
+          "iterations": 137,
+          "attempts": 2,
+          "signals": ["east-barrier", "selector"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    },
+    {
+      "number": 10,
+      "id": "forest-5",
+      "title": "El santuario de piedra",
+      "documentSha256": "b197af822ffaa2d7f9923f3762060a29c6e037e5d0e9025a8bb2d88e6a6cbe4d",
+      "fileSha256": "aedbf2b008d8270f884abc4ae25f41ddeca6b0a2a471f015f6983cd0f3928c4e",
+      "initialElement": "earth",
+      "gems": 0,
+      "optionalHints": 3,
+      "starThresholdsMs": {
+        "threeStarsMs": 120000,
+        "twoStarsMs": 300000
+      },
+      "starCoinEntitlement": [50, 100, 150],
+      "optionalCoinValue": 15,
+      "solution": {
+        "id": "forest-5",
+        "passed": true,
+        "elapsedMs": 49834.10000014305,
+        "sha256": "b197af822ffaa2d7f9923f3762060a29c6e037e5d0e9025a8bb2d88e6a6cbe4d",
+        "trace": [
+          {
+            "step": ["m", 1040],
+            "x": 1043.4166666666706,
+            "feet": 650,
+            "block": {
+              "x": 2964.9999999999814,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "east-belt"]
+          },
+          {
+            "step": ["j", 1170],
+            "x": 1177.4166666666645,
+            "feet": 594,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "east-belt"]
+          },
+          {
+            "step": ["j", 1340],
+            "x": 1344.833333333328,
+            "feet": 650,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "east-belt"]
+          },
+          {
+            "step": ["push", "receiver", "left"],
+            "x": 1049.5,
+            "feet": 650,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "east-belt"]
+          },
+          {
+            "step": ["m", 1500],
+            "x": 1500.2499999999918,
+            "feet": 650,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "east-belt"]
+          },
+          {
+            "step": ["m", 2280],
+            "x": 2280.166666666655,
+            "feet": 650,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "east-belt"]
+          },
+          {
+            "step": ["j", 2400],
+            "x": 2409.833333333326,
+            "feet": 650,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "east-belt"]
+          },
+          {
+            "step": ["m", 2890],
+            "x": 2897.6666666666592,
+            "feet": 650,
+            "block": {
+              "x": 2997.99999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 150,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "east-belt"]
+          },
+          {
+            "step": ["j", 3000],
+            "x": 3007.583333333317,
+            "feet": 594,
+            "block": {
+              "x": 3000.49999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "east-belt"]
+          },
+          {
+            "step": ["cast"],
+            "x": 3007.583333333317,
+            "feet": 594,
+            "block": {
+              "x": 3000.49999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "brake"]
+          },
+          {
+            "step": ["j", 3110],
+            "x": 3117.833333333321,
+            "feet": 650,
+            "block": {
+              "x": 3000.49999999998,
+              "top": 594,
+              "bottom": 650,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "brake"]
+          },
+          {
+            "step": ["push", "plate", "left"],
+            "x": 1859.999999999978,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": true
+            },
+            "signals": ["beam", "receiver", "west-belt", "brake"]
+          },
+          {
+            "step": ["m", 2850],
+            "x": 2853.416666666664,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": ["beam", "receiver", "west-belt", "brake"]
+          },
+          {
+            "step": ["cast"],
+            "x": 2857.4999999999973,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-door",
+              "clock-start"
+            ]
+          },
+          {
+            "step": ["m", 3460],
+            "x": 3461.833333333353,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-door",
+              "clock-start"
+            ]
+          },
+          {
+            "step": ["cast"],
+            "x": 3465.9166666666865,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-door",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["m", 1880],
+            "x": 1867.5833333333044,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-door",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["j", 1760],
+            "x": 1753.8333333333132,
+            "feet": 593,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["j", 1600],
+            "x": 1594.5833333333162,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["m", 1060],
+            "x": 1055.5833333333262,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["j", 970],
+            "x": 965.333333333332,
+            "feet": 594.25,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["j", 800],
+            "x": 793.8333333333304,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["m", 230],
+            "x": 222.1666666666628,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          },
+          {
+            "step": ["end"],
+            "x": 218.08333333332945,
+            "feet": 650,
+            "block": {
+              "x": 1764.999999999978,
+              "top": 593,
+              "bottom": 649,
+              "width": 128,
+              "height": 56,
+              "vx": 0,
+              "vy": 0,
+              "grounded": false
+            },
+            "signals": [
+              "beam",
+              "receiver",
+              "west-belt",
+              "brake",
+              "clock-start",
+              "final-seal"
+            ]
+          }
+        ]
+      },
+      "naiveStrategies": [
+        {
+          "policy": "walk-right",
+          "won": false,
+          "durationMs": 14429.600000143051,
+          "maxX": 2725.833333333316,
+          "x": 2726.99999999998,
+          "feet": 650,
+          "iterations": 347,
+          "attempts": 1,
+          "signals": ["beam", "east-belt"],
+          "plate": false
+        },
+        {
+          "policy": "right-jump-power",
+          "won": false,
+          "durationMs": 13873.700000047684,
+          "maxX": 3129,
+          "x": 3129,
+          "feet": 492.50000000000085,
+          "iterations": 333,
+          "attempts": 2,
+          "signals": ["beam", "east-belt", "clock-door", "clock-start"],
+          "plate": false
+        }
+      ],
+      "restartPassed": true,
+      "editorOpenPassed": true
+    }
+  ]
+}

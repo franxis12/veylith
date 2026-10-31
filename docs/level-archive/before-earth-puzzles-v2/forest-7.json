@@ -1,0 +1,515 @@
+{
+  "version": 1,
+  "id": "forest-7",
+  "name": "Las islas del lago",
+  "theme": "ancient-forest",
+  "width": 4608,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 45000,
+    "twoStarsMs": 90000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 566,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "near-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 740,
+      "width": 512,
+      "height": 660,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 660
+      }
+    },
+    {
+      "id": "bank-steps-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 512,
+      "y": 700,
+      "width": 256,
+      "height": 700,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 700
+      }
+    },
+    {
+      "id": "bank-steps-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 768,
+      "y": 660,
+      "width": 256,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 740
+      }
+    },
+    {
+      "id": "island-lever",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 796,
+      "y": 540,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "kind": "interactive_lever",
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": 8,
+        "y": -54,
+        "width": 112,
+        "height": 174
+      },
+      "hint": "Activa la palanca de la orilla y espera el puente."
+    },
+    {
+      "id": "near-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 912.4752475247525,
+      "y": 515,
+      "width": 648.8712871287129,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 111.52475247524752,
+        "y": 145,
+        "width": 512,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["island-lever"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 648.8712871287129,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "ruined-island",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1536,
+      "y": 660,
+      "width": 512,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 740
+      }
+    },
+    {
+      "id": "island-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 1756,
+      "y": 385,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "far-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 1936.4752475247524,
+      "y": 515,
+      "width": 648.8712871287129,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 111.52475247524752,
+        "y": 145,
+        "width": 512,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["island-wall"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 648.8712871287129,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "stone-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2560,
+      "y": 660,
+      "width": 256,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 740
+      }
+    },
+    {
+      "id": "stone-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2912,
+      "y": 660,
+      "width": 256,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 740
+      }
+    },
+    {
+      "id": "stone-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3264,
+      "y": 660,
+      "width": 256,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 740
+      }
+    },
+    {
+      "id": "far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3520,
+      "y": 660,
+      "width": 1024,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 740
+      }
+    },
+    {
+      "id": "edge-fill",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 4480,
+      "y": 660,
+      "width": 128,
+      "height": 740,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 740
+      }
+    },
+    {
+      "id": "lake",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 1024,
+      "y": 820,
+      "width": 2496,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 2496,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 2496,
+        "height": 500
+      },
+      "hint": "Tierra se hunde. Cruza por las plataformas."
+    },
+    {
+      "id": "lake-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 3040,
+      "y": 430,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 4222.5,
+      "y": 384,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["island-lever", "island-wall"]
+    },
+    {
+      "id": "lake-warning",
+      "type": "label",
+      "asset": null,
+      "x": 600,
+      "y": 370,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "Tierra se hunde en el lago.\nUsa los puentes y las islas."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 679.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-6",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1581,
+      "y": 599.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-12",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 3565,
+      "y": 599.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-12",
+      "type": "decoration",
+      "asset": "column",
+      "x": 4394,
+      "y": 300,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    }
+  ]
+}

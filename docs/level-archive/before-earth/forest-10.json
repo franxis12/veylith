@@ -1,0 +1,268 @@
+{
+  "version": 1,
+  "id": "forest-10",
+  "name": "El puente engañoso",
+  "theme": "ancient-forest",
+  "width": 2688,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 35000,
+    "twoStarsMs": 65000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "near-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 1024,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 450
+      }
+    },
+    {
+      "id": "far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1920,
+      "y": 650,
+      "width": 768,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 450
+      }
+    },
+    {
+      "id": "fire-decoy",
+      "type": "gem",
+      "asset": "gem:fire",
+      "x": 298,
+      "y": 328,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "fire",
+      "respawn": "restart"
+    },
+    {
+      "id": "water-reserve",
+      "type": "gem",
+      "asset": "gem:water",
+      "x": 808,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "water",
+      "respawn": "restart"
+    },
+    {
+      "id": "bridge-wheel",
+      "type": "world",
+      "asset": "world:waterwheel",
+      "x": 620,
+      "y": 410,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "waterwheel",
+      "behavior": {
+        "kind": "waterwheel",
+        "hits": 3
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 240
+      },
+      "hint": "La rueda necesita Agua ×3. Si recogiste Fuego, busca la gema de Agua junto al borde."
+    },
+    {
+      "id": "bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 827,
+      "y": 505,
+      "width": 1135,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 197,
+        "y": 145,
+        "width": 896,
+        "height": 12
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["bridge-wheel"],
+        "autostart": false,
+        "duration": 900
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 1135,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "decoy-warning",
+      "type": "label",
+      "asset": null,
+      "x": 50,
+      "y": 130,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "Esa gema de Fuego es opcional.\nLa rueda se activa con AGUA, no con Fuego."
+    },
+    {
+      "id": "reserve-tip",
+      "type": "label",
+      "asset": null,
+      "x": 700,
+      "y": 300,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "Agua de reserva →\nSi cambiaste, vuelve a disparar a la rueda.\nEspera el puente antes de cruzar."
+    },
+    {
+      "id": "bridge-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1460,
+      "y": 530,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2282.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["bridge-wheel"]
+    }
+  ]
+}

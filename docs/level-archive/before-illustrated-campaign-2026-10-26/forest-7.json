@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "id": "forest-7",
+  "name": "La ruta invertida",
+  "theme": "ancient-forest",
+  "width": 2560,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 55000,
+    "twoStarsMs": 130000
+  },
+  "puzzle": {
+    "brief": "La placa está a contracorriente.",
+    "hints": [
+      "La salida depende de una carga que viaja hacia el lado equivocado.",
+      "Las dos cintas conservan su dirección aunque las detengas.",
+      "Prueba qué tramo controla el interruptor y dónde puede tomar el relevo el otro."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 1849,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2122.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["plate"]
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2560,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 2560,
+        "height": 500
+      }
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 220,
+      "y": 610,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "La piedra fija un contacto al quedar apoyada."
+    },
+    {
+      "id": "cargo",
+      "type": "block",
+      "asset": "block",
+      "x": 1240,
+      "y": 594,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 56
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "west-belt",
+      "type": "world",
+      "asset": "world:conveyor",
+      "x": 388,
+      "y": 610,
+      "width": 640,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 12,
+        "y": 40,
+        "width": 616,
+        "height": 56
+      },
+      "kind": "conveyor",
+      "behavior": {
+        "kind": "conveyor",
+        "direction": -1,
+        "speed": 140,
+        "segments": 3,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 128
+      }
+    },
+    {
+      "id": "east-belt",
+      "type": "world",
+      "asset": "world:conveyor",
+      "x": 1004,
+      "y": 610,
+      "width": 640,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 12,
+        "y": 40,
+        "width": 616,
+        "height": 56
+      },
+      "kind": "conveyor",
+      "behavior": {
+        "kind": "conveyor",
+        "direction": 1,
+        "speed": 220,
+        "segments": 3,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 128
+      }
+    },
+    {
+      "id": "brake",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 1782,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "toggle",
+        "trigger": "interact",
+        "targets": ["east-belt"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "exit-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1980,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["plate"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "direction-cue",
+      "type": "label",
+      "asset": null,
+      "x": 720,
+      "y": 250,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "←     |     →\nTransporte de carga"
+    },
+    {
+      "id": "exit-cue",
+      "type": "label",
+      "asset": null,
+      "x": 2070,
+      "y": 300,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "SALIDA →"
+    },
+    {
+      "id": "lake-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1730,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

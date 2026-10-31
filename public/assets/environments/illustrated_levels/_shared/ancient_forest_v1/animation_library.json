@@ -1,0 +1,639 @@
+{
+  "world": "WORLD 01 — ANCIENT FOREST",
+  "provenance": "Generated environmental animations reused from approved Level 02. Original assets unchanged. New shared water_surface frames mechanically mirrored into horizontally repeatable tiles; other shared frames retained.",
+  "animations": {
+    "waterfall": {
+      "frameCount": 8,
+      "frameWidth": 160,
+      "frameHeight": 192,
+      "fps": 12,
+      "durationSeconds": 0.6666666666666666,
+      "loop": true,
+      "atlas": "waterfall/waterfall_sheet.png",
+      "atlasWidth": 640,
+      "atlasHeight": 384,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "waterfall/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 1,
+          "file": "waterfall/frames/frame_01.png",
+          "atlasRect": {
+            "x": 160,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 2,
+          "file": "waterfall/frames/frame_02.png",
+          "atlasRect": {
+            "x": 320,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 3,
+          "file": "waterfall/frames/frame_03.png",
+          "atlasRect": {
+            "x": 480,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 4,
+          "file": "waterfall/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 5,
+          "file": "waterfall/frames/frame_05.png",
+          "atlasRect": {
+            "x": 160,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 6,
+          "file": "waterfall/frames/frame_06.png",
+          "atlasRect": {
+            "x": 320,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 7,
+          "file": "waterfall/frames/frame_07.png",
+          "atlasRect": {
+            "x": 480,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        }
+      ]
+    },
+    "water_surface": {
+      "frameCount": 8,
+      "frameWidth": 256,
+      "frameHeight": 96,
+      "fps": 8,
+      "durationSeconds": 1,
+      "loop": true,
+      "atlas": "water_surface/water_surface_sheet.png",
+      "atlasWidth": 1024,
+      "atlasHeight": 192,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "water_surface/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 1,
+          "file": "water_surface/frames/frame_01.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 2,
+          "file": "water_surface/frames/frame_02.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 3,
+          "file": "water_surface/frames/frame_03.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 4,
+          "file": "water_surface/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 5,
+          "file": "water_surface/frames/frame_05.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 6,
+          "file": "water_surface/frames/frame_06.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 7,
+          "file": "water_surface/frames/frame_07.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        }
+      ],
+      "horizontalRepeat": {
+        "supported": true,
+        "method": "Central 128-pixel strip followed by its horizontal mirror; identical outer RGBA columns in every frame.",
+        "frameWidth": 256
+      }
+    },
+    "hanging_vine": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 256,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "hanging_vine/hanging_vine_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 512,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "hanging_vine/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "hanging_vine/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "hanging_vine/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "hanging_vine/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "hanging_vine/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "hanging_vine/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "hanging_vine/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "hanging_vine/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        }
+      ]
+    },
+    "moving_leaves": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "fps": 6,
+      "durationSeconds": 1.3333333333333333,
+      "loop": true,
+      "atlas": "moving_leaves/moving_leaves_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 256,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "moving_leaves/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 1,
+          "file": "moving_leaves/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 2,
+          "file": "moving_leaves/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 3,
+          "file": "moving_leaves/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 4,
+          "file": "moving_leaves/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 5,
+          "file": "moving_leaves/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 6,
+          "file": "moving_leaves/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 7,
+          "file": "moving_leaves/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        }
+      ]
+    },
+    "mist": {
+      "frameCount": 8,
+      "frameWidth": 256,
+      "frameHeight": 96,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "mist/mist_sheet.png",
+      "atlasWidth": 1024,
+      "atlasHeight": 192,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "mist/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "mist/frames/frame_01.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "mist/frames/frame_02.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "mist/frames/frame_03.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "mist/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "mist/frames/frame_05.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "mist/frames/frame_06.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "mist/frames/frame_07.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        }
+      ]
+    },
+    "magical_particles": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "magical_particles/magical_particles_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 256,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "magical_particles/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "magical_particles/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "magical_particles/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "magical_particles/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "magical_particles/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "magical_particles/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "magical_particles/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "magical_particles/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        }
+      ]
+    }
+  },
+  "particleTextures": {
+    "mist": "mist/frames/frame_00.png",
+    "magicalMotes": "magical_particles/frames/frame_00.png"
+  }
+}

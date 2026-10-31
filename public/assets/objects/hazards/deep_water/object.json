@@ -1,0 +1,35 @@
+{
+  "id": "deep_water",
+  "label": "Agua profunda",
+  "category": "hazards",
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    0,
+    80
+  ],
+  "notes": "Tile on a 256 px grid. Surface line y=80. Full body tile repeats in both axes. Top body and surface repeat horizontally. Material tiles intentionally fill their rectangular canvas; water has translucent fill.",
+  "states": {
+    "water_surface": {
+      "animation": "water_surface"
+    },
+    "surface_loop": {
+      "animation": "water_surface"
+    },
+    "water_bubbles": {
+      "animation": "water_bubbles"
+    },
+    "water_splash": {
+      "animation": "water_splash"
+    }
+  },
+  "components": [
+    "assets/objects/hazards/deep_water/water_body_tile.png",
+    "assets/objects/hazards/deep_water/water_top_body_tile.png"
+  ],
+  "directory": "assets/objects/hazards/deep_water",
+  "defaultBack": [
+    "assets/objects/hazards/deep_water/water_top_body_tile.png"
+  ],
+  "thumbnail": "assets/objects/hazards/deep_water/preview.png"
+}

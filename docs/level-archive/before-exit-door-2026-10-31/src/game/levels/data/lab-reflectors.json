@@ -1,0 +1,224 @@
+{
+  "version": 1,
+  "id": "lab-reflectors",
+  "name": "Laboratorio · Reflectores",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": ["receiver"]
+    },
+    {
+      "id": "instructions",
+      "asset": null,
+      "x": 70,
+      "y": 65,
+      "width": 1100,
+      "height": 90,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "Tierra: empuja el espejo a la derecha hasta iluminar el receptor elevado. El receptor abre la puerta. R reinicia."
+    },
+    {
+      "id": "beam",
+      "asset": "world:beam_emitter",
+      "x": 220,
+      "y": 512,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64,
+        "enabled": false
+      },
+      "kind": "beam_emitter",
+      "effect": {
+        "x": 31,
+        "y": 31,
+        "width": 2,
+        "height": 2,
+        "enabled": true
+      },
+      "hint": "El centro de la zona de efecto es el origen del haz. Sin cuerpo sólido ni daño.",
+      "behavior": {
+        "kind": "beamEmitter",
+        "direction": "right",
+        "range": 2400,
+        "maxBounces": 12,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "type": "world"
+    },
+    {
+      "id": "mirror",
+      "asset": "world:reflector",
+      "x": 450,
+      "y": 410,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 40,
+        "y": 170,
+        "width": 176,
+        "height": 70,
+        "enabled": true
+      },
+      "kind": "reflector",
+      "effect": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256,
+        "enabled": false
+      },
+      "hint": "Tierra empuja la base. La orientación indica la cara reflectante; el reverso absorbe la luz.",
+      "behavior": {
+        "kind": "reflector",
+        "orientation": "nw",
+        "pushable": true
+      },
+      "state": "idle",
+      "type": "world"
+    },
+    {
+      "id": "receiver",
+      "asset": "world:light_receiver",
+      "x": 760,
+      "y": 200,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256,
+        "enabled": false
+      },
+      "kind": "light_receiver",
+      "effect": {
+        "x": 88,
+        "y": 80,
+        "width": 80,
+        "height": 80,
+        "enabled": true
+      },
+      "hint": "Recibe el haz en el rectángulo violeta y emite su ID a puertas, salidas y mecanismos.",
+      "behavior": {
+        "kind": "receiver",
+        "latch": true
+      },
+      "state": "idle",
+      "type": "world"
+    },
+    {
+      "id": "light-door",
+      "asset": "doorClosed",
+      "x": 1150,
+      "y": 32,
+      "width": 403,
+      "height": 618,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 155.5,
+        "y": 0,
+        "width": 92,
+        "height": 618
+      },
+      "type": "door",
+      "initiallyOpen": false,
+      "requires": ["receiver"]
+    }
+  ]
+}

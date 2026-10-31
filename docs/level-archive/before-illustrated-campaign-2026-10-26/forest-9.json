@@ -1,0 +1,387 @@
+{
+  "version": 1,
+  "id": "forest-9",
+  "name": "El camino sin retorno",
+  "theme": "ancient-forest",
+  "width": 2816,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 75000,
+    "twoStarsMs": 180000
+  },
+  "puzzle": {
+    "brief": "Entrar y regresar son problemas distintos.",
+    "hints": [
+      "Las flechas indican entradas, no salidas universales.",
+      "Desde la cámara derecha se ve otra altura por la que regresar.",
+      "El sello inferior alimenta el paso superior; observa la plataforma y la flecha de vuelta."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 649,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 52.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["far-seal", "return-seal"]
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 1536,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1540,
+        "height": 500
+      }
+    },
+    {
+      "id": "exit-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 260,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["far-seal", "return-seal"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "return-bridge",
+      "type": "platform",
+      "asset": "platform",
+      "x": 896,
+      "y": 350,
+      "width": 640,
+      "height": 32,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 32
+      }
+    },
+    {
+      "id": "outbound",
+      "type": "world",
+      "asset": "world:directional_gate",
+      "x": 1040,
+      "y": 302,
+      "width": 192,
+      "height": 428,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 60,
+        "y": 80,
+        "width": 64,
+        "height": 268
+      },
+      "kind": "directional_gate",
+      "behavior": {
+        "kind": "directionalGate",
+        "direction": 1,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 428
+      }
+    },
+    {
+      "id": "inbound",
+      "type": "world",
+      "asset": "world:directional_gate",
+      "x": 1190,
+      "y": -80,
+      "width": 192,
+      "height": 510,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 60,
+        "y": 80,
+        "width": 64,
+        "height": 350
+      },
+      "kind": "directional_gate",
+      "behavior": {
+        "kind": "directionalGate",
+        "direction": -1,
+        "requires": ["far-seal"],
+        "autostart": false
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 192,
+        "height": 510
+      }
+    },
+    {
+      "id": "far-seal",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 1932,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": [],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "return-seal",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 932,
+      "y": 222,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": [],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "arrow-cue",
+      "type": "label",
+      "asset": null,
+      "x": 700,
+      "y": 80,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "SALIDA ◀\nUna ruta para cada sentido"
+    },
+    {
+      "id": "lift-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 530,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "return-lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 1508,
+      "y": 535,
+      "width": 320,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 32,
+        "y": 115,
+        "width": 256,
+        "height": 24
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "travelX": 0,
+        "travelY": -300,
+        "speed": 100,
+        "mode": "pingpong",
+        "requires": ["far-seal"],
+        "autostart": false
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 256
+      }
+    },
+    {
+      "id": "east-floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1796,
+      "y": 650,
+      "width": 1024,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1020,
+        "height": 500
+      }
+    },
+    {
+      "id": "lift-pit",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1540,
+      "y": 1000,
+      "width": 256,
+      "height": 200,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 200
+      }
+    }
+  ]
+}

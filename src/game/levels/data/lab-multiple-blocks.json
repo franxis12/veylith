@@ -1,0 +1,289 @@
+{
+  "version": 1,
+  "id": "lab-multiple-blocks",
+  "name": "Laboratorio · Varios bloques",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 50000,
+    "twoStarsMs": 100000
+  },
+  "puzzle": {
+    "brief": "Dos placas abren el paso. Una tercera piedra permite subir.",
+    "hints": [
+      "Cada placa tiene su propio bloque.",
+      "Uno de los bloques se empuja desde el otro lado.",
+      "La última piedra no tiene placa: acércala al borde elevado y úsala de escalón."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 2048,
+        "height": 500
+      }
+    },
+    {
+      "id": "cargo-a",
+      "type": "block",
+      "asset": "block",
+      "x": 310,
+      "y": 554,
+      "width": 96,
+      "height": 96,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 96
+      },
+      "plateId": "plate-a"
+    },
+    {
+      "id": "cargo-b",
+      "type": "block",
+      "asset": "block",
+      "x": 1040,
+      "y": 554,
+      "width": 96,
+      "height": 96,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 96
+      },
+      "plateId": "plate-b"
+    },
+    {
+      "id": "step-block",
+      "type": "block",
+      "asset": "block",
+      "x": 1430,
+      "y": 530,
+      "width": 128,
+      "height": 120,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 120
+      },
+      "plateId": ""
+    },
+    {
+      "id": "plate-a",
+      "type": "plate",
+      "asset": "plate",
+      "x": 500,
+      "y": 610,
+      "width": 160,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 39,
+        "width": 128,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque asociado en esta placa."
+    },
+    {
+      "id": "plate-b",
+      "type": "plate",
+      "asset": "plate",
+      "x": 790,
+      "y": 610,
+      "width": 160,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 39,
+        "width": 128,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque asociado en esta placa."
+    },
+    {
+      "id": "both-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1160,
+      "y": 0,
+      "width": 200,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 80,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "initiallyOpen": false,
+      "requires": ["plate-a", "plate-b"]
+    },
+    {
+      "id": "upper-floor",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1664,
+      "y": 410,
+      "width": 384,
+      "height": 64,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 32
+      }
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 1712.5,
+      "y": 134,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["plate-a", "plate-b"]
+    },
+    {
+      "id": "push-a",
+      "type": "label",
+      "asset": null,
+      "x": 360,
+      "y": 420,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "1 →"
+    },
+    {
+      "id": "push-b",
+      "type": "label",
+      "asset": null,
+      "x": 960,
+      "y": 420,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "← 2"
+    },
+    {
+      "id": "stairs",
+      "type": "label",
+      "asset": null,
+      "x": 1370,
+      "y": 300,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "3 · Usa la piedra como escalón"
+    }
+  ]
+}

@@ -1,0 +1,2639 @@
+{
+  "source": "/Users/francismartinez/Projects/Assets for game/veylith_interactive_world/delivery",
+  "objects": 20,
+  "sheetsVerifiedAgainstFrames": 41,
+  "files": [
+    {
+      "path": "assets/objects/destructibles/stone_wall/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "69b2b900ce6c5468f7866735b5f8344f3bcf736a12f423b7e5169197b6c116bd"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "69b2b900ce6c5468f7866735b5f8344f3bcf736a12f423b7e5169197b6c116bd"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2d0d219950efcb6fad1c6e9a47ff27968712793e44c81fdd1207dcdc22efe9b0"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "99202ce5a0466ce3d34158e12677994728a341ebf595997bdc435086f2c4d3d8"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4b87f87135050bbe7d3a6d5092e7d7ced678f30a6c4b39655dd549e0c352ad84"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "7922c75ca0d7253a79f9a8ee778f46f36f3d1dda02892cef5da63ba2852ec85a"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "82da4befe8899468170209efda34274614322da6d9611f6e3161eef590459e55"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a8f5f8ba7fac1d0e71698a38e1cac7c75dbfd8e369b1754a35e58767e804beed"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_broken.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "82da4befe8899468170209efda34274614322da6d9611f6e3161eef590459e55"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8e975341e903e5cafed99645d0aff46ee07ed3cf294c3fa61f6e63c2274a4448"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "96619c8325d53e9ab06aaaae17b4480d13120f66299f0a5c8451b47ffc0e87bb"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d3d19c86ff6c2f48b4cd01cea4f806060f71942a278fdb14b398999034f76629"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "69b2b900ce6c5468f7866735b5f8344f3bcf736a12f423b7e5169197b6c116bd"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_cracking_spritesheet.png",
+      "width": 2048,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "f9b2efe534b64207667435ee182366e0c97201d1d15e523bdd3a8b5589ef04eb"
+    },
+    {
+      "path": "assets/objects/destructibles/stone_wall/wall_intact.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8e975341e903e5cafed99645d0aff46ee07ed3cf294c3fa61f6e63c2274a4448"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "69a35dfac8c9cf052ddfbeabb2da13a554f80a6bc81d3ea8fb1e6fa0ad11b305"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d940db62ecc488da9758835c9e1606b280b8de28e8c8960c402865edbb9d646a"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e8b037c909c2d35bd9abee5a785831943c3fa70f7dde2bfe1d486356878b6484"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "16aad4c465487013e2a7e564aa8df30882176ef67c41bdebbe2aa0c88ec04f63"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "99176ab3fad2c299b0cc2bb201146718ac73ffc32c83648541cfc40787717ffb"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0292d4de1a537cd8f4c3ecde35c38ca7fe130278e4deb4a833aeed1ab08025e5"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_activate_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "dc251fad6b915232cf07ded765f6bdae58bd5f0ce80e336be689547692b2cd29"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0292d4de1a537cd8f4c3ecde35c38ca7fe130278e4deb4a833aeed1ab08025e5"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0d5838dba3e9c59693aadf57507efef0f4f8a9ee9b64147008975a8cab4e82a5"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e71389a64aa605f94b2b00135ad21a9aea78cfed6f9250c747b41b13dd70eb95"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9cd3fad5a0fb8f4bafff6554558ea93a67b2d3fcc070f71dc931531e7364089a"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0b8389bdbca6b59c6851808aabd1baa387ac7fa1f9572b4ff656f2ae6002c0d5"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "cf30f003e8ecca41a65a63813c7247cd9792cf67980cb8e87bd52c5b2d8b0373"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "955f1c07503017da552ffc7bd44ca9b9b157b005d3753c9722ed872576d36070"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8d7aedfd33b2f24a6a205b6e43348d5d2c053dae9b88c8f15db9ac3630e143e3"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_active_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e6af1bcb87c94b2e0e5d210b0e12b2e9c096f0951ddbc6787bb1fc7b13f6c295"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0292d4de1a537cd8f4c3ecde35c38ca7fe130278e4deb4a833aeed1ab08025e5"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "99176ab3fad2c299b0cc2bb201146718ac73ffc32c83648541cfc40787717ffb"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "16aad4c465487013e2a7e564aa8df30882176ef67c41bdebbe2aa0c88ec04f63"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e8b037c909c2d35bd9abee5a785831943c3fa70f7dde2bfe1d486356878b6484"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d940db62ecc488da9758835c9e1606b280b8de28e8c8960c402865edbb9d646a"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "69a35dfac8c9cf052ddfbeabb2da13a554f80a6bc81d3ea8fb1e6fa0ad11b305"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_deactivate_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0d0ee731d27e1e2d829b9eb52abe3caa1b6fbdca7f0f02f5958530854e9f7340"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/barrier_posts.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "53957ff35be573cb90b5e8fc0f55073602ca63d9034774cb13754035ac3fe5ed"
+    },
+    {
+      "path": "assets/objects/elemental/energy_barrier/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b5cb9d20ac55dd2c1c01c766f79d798d0959c925d0d742a3b0a06b6e7cbfa027"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2328fab390711610d27bef43c6bbdb33d5c7db48513b6692596c54b656a375da"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "9478d4b8af3d0cefd3170fd45bc6dc119bb82e65e88407f59fd3809fe7440c7d"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "a896d70d949735088817af24975b6cb36801b6e801fa9445aee7105e5b227f5b"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "46b6ec053d8c52eb01a805dab2c3d57c5ebc135a3255044a3a8f16e71ebf17c9"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "3003446fe431827f3bb0abfd0de26429b93cc7bec192b6a947c6409e248044d7"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "eeb3d613ee87ebd89d2fc5fff7eec380cf87ca9967ad02d314fc4470aae96899"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2e1ff25ef2b4da38df11cb2ec39ab787e4b8d6227b6b43fd753ee950a7a7ebf5"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "7184e846217afe04841c0f0a85ce43feb1b0efe899cc399761d67818bc13947c"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_active_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "bdd4566093d4e325c555cdead76ac1b0395595bde0da7f05a70d12bc912cb8d6"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_base.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "06bd384d1633e91a6c852ec007f2ae1e9581da2af609711c42799d5fc251e67f"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2328fab390711610d27bef43c6bbdb33d5c7db48513b6692596c54b656a375da"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "448af68cb7fdc682682586ed52a684a3a13fe05a0fdc61ca5a5e77cd3d99410c"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "fc36effd17e13600bdfd249b6940f18050f3f5bde33d9133f501e731d3ce5cb9"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ce8c052da3ad617dd3e927061767216b1cefeb1dc2e0d42a4fb881aa680b85b6"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "d4ba8d2fef2c0c41ce71420fa92892319174ddc2c621b543d7ec7d2577d71411"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2ffa25bdbdffc040162a889170605817551743e34e7e03cbb75a8bc44ea6ccf5"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_spritesheet.png",
+      "width": 1536,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "52de0960dfbbda71b98a613256208846d57b2fd559a64e7c51628a3a20de2f34"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2ffa25bdbdffc040162a889170605817551743e34e7e03cbb75a8bc44ea6ccf5"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "d4ba8d2fef2c0c41ce71420fa92892319174ddc2c621b543d7ec7d2577d71411"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ce8c052da3ad617dd3e927061767216b1cefeb1dc2e0d42a4fb881aa680b85b6"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "fc36effd17e13600bdfd249b6940f18050f3f5bde33d9133f501e731d3ce5cb9"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "448af68cb7fdc682682586ed52a684a3a13fe05a0fdc61ca5a5e77cd3d99410c"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2328fab390711610d27bef43c6bbdb33d5c7db48513b6692596c54b656a375da"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/fire_switch_igniting_spritesheet.png",
+      "width": 1536,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "26facd6063237426a9d9e859c1ccf5430275adaabbc78e93c86882a8e5e86492"
+    },
+    {
+      "path": "assets/objects/elemental/fire_switch/preview.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0c45ee38549133a3876fd049a3895e0ccf3536da35f2416dc522a712bb712be1"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_fully_grown.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "70d3e48b3a6da6df436f20e1afcfe034e152cc081d16d1930e253ac3f0e117c0"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9082be96d44d48b4b70a528888491bc9a44128edf616ad64c227e67185ade482"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8734c81877424c79eafde43390db6fcb7210cd336b5880b9258ce2ded91bf47f"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "7c9934101c2d286fe07953febfa476e41e5edb912ab45db0fb4287cdee0c3697"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0efd8c1e16b56e4b99ff09e57c5c10a461020e70c8da8c2d46d8269030c4d66e"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "bdcb4ae5769000b53d837a33a8324f0921ae2e3b0c2f266442406d2d58112781"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "70d3e48b3a6da6df436f20e1afcfe034e152cc081d16d1930e253ac3f0e117c0"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_growing_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4bde9aceecb35af6805af288552d040a1bbb68c258617d12176d9ba10fa90a93"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/plant_seed.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9082be96d44d48b4b70a528888491bc9a44128edf616ad64c227e67185ade482"
+    },
+    {
+      "path": "assets/objects/elemental/watered_plant/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "70d3e48b3a6da6df436f20e1afcfe034e152cc081d16d1930e253ac3f0e117c0"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/preview.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2bf92e25d6b2c5d76dac83b738d63038cfb92babb096d8d50007d54929b283ae"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_01.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2bf92e25d6b2c5d76dac83b738d63038cfb92babb096d8d50007d54929b283ae"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_02.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3dffc7521afbc3708513443c433910ef438e04decc09a8ef1ae4e5f46c6d3a46"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_03.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b125d602674f3a410a3fa61607dc791c3c941fd424e44f8fa1c20fdde56f8706"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_04.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a58f9f77ff1ab49e2f0d20100d5fc597ad93a7e3e2316c186ab54852fe3b3a52"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_05.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0f088377d2c0be74f192b9c17e61c027caf1fa17572b0b82c5e1565967ea4409"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_06.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9d09d85863099136344c0e810b9c7e076bffa89b8d14b86fcf4aeb9585b0e298"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_07.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1e4246932727e9e77496602f8e29151213a6af74a48300dd68775c79626b3df2"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_08.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "c665ca9f44ed0161b9d56f7068041543c229f96161ddab727dd0548807066d68"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_spritesheet.png",
+      "width": 8192,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d366095226b481cbc6b4bbaa884734cbf6d361f75dea07a7d2b315fcbd410a39"
+    },
+    {
+      "path": "assets/objects/elemental/wind_tunnel/wind_tunnel_off.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "79fccd13b6b13c0ec2f0ffdc8a6ab49090967049a27d830a10920ab549d05cdf"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/preview.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "aeee22b72c2ccd234452e326de20fac2d438c672e1b31777df261d9f8dc7c9a1"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_body_tile.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "caeb027abbb61ac901f27a97beae20b7b8ca61f81de3736b4e65cfd61c7b234e"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "40a8b54ee68f1ef9f11cb30460293a9d6ba8d46e7307901d0623b61fc76a987d"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2718cb6ce7d6361323b1360be2c0a0856146b377c1d5c2cb0991bd6a9c4d24a1"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "778b45ca5c0cb85fb7969a01f38b34bca68ffb5b6a6d9bad207e2fd2c8ededf9"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "bd192bed2e57536048b9ff00c8f6d37783f418d40565a0f9c31d330641a0e9de"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "f233c72bce191ded44201edba32c1bba879e77059be75c2b4eaeb660e1a74ec0"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "5549e489fb5cf6f389f857871d66dc35509d8444d008b1c58c18abd118fda1c7"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "d5cbe6897f9616ff6663d40f222784fc85538683404d3654eb58c211e8e6c36a"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "6900a1d22bb551cb06e2a7ff2abd37bb98c94bf180c5b13bd774c75b54f0ed96"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_bubbles_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "86aff76354bf2161c40c41e08ab61dd791f7b987d85e851d373dc5e950dc1eff"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "f5acdab1c3907542b16c9862dd0e06448def5efb7a6bacc2c1ca43307eeeedf0"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "6e222931dabcdbb6228fd9debb7899fe2aebd0ac50e7fdbc543c23b528025b5b"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "510fcc6b87f7d9da65852ffd8acbfaf67804407cab993a99f71c95982b9b1b12"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "1ea6895e56358e021ee109ddb40176bbcf0e43a319d2369322d52fdab1ac60c1"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "35e96d28bc7bc228a1fb0da0f3a5362d457ab778851e8090f783abdbb761fee6"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "760c5d35576cf9eb41bdbeb717806be71e0f881635d91e9019c7756d026a3015"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_splash_spritesheet.png",
+      "width": 1536,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "c65fefc5f2268e9ca4d5e3958366b045d915851f07a72a598587811a231c6220"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "9abf34cca964e9e112ddef5c2440a52cf6a0177697f76172dc0bbd3f0691e8ef"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "1d8ad7c73873537fff2a1bb298e2c2816480307f47abb3f0857aceb72981045e"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "845505be6bfea4091538f4348017900e3f7c825435570650945718a53258055f"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "5df559e4b73419d6709b93c7f375e68d703db2079f24eed2516617ac0ad68c75"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8b4b01dd28d14a234e91d280149ef6c8ab82282dfdca002d2fc39d01b0438f47"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "e559ea4773de60556f1e55f2447096fd23d2d9320295552586b2b7b404ac4c43"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "dcac1e3d0d4d9cc6c7ebb8ff151bef6054890f22b001322efad9008fbb42995a"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "f0f13d184016e0bcd6d4922eb112327ca1573fc49b14f82acee51ff252ea7c53"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_surface_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ee1b0d0dfb1d7770c883df5c5f4b5f3c9b6352289b04088e00d8ba4df20ae9a5"
+    },
+    {
+      "path": "assets/objects/hazards/deep_water/water_top_body_tile.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "4a7f479ba4b214f5d6a9dc45265df7786fadd235e86ee8a21480c44c03418840"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "198bb2a2f5c84f659bde0b1190aecad0732333feb35486e04a355a03ba4b338c"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "da4c3338f4f46978cd3f864f8ae243ee1b652b573dfe0573db6da54bd3035b93"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "f7cf76ca7b7c1cc14ecd6ee98d7299d9a0f4fe1e375e265484ae7de0d059c4c4"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "c46f30c380cd3328a86f0210d81a0175014c028a234f291dcbb245e6673720d7"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "9d9364ed98abf5e355334ef25f9de709cbc90a3c897f695106a37cdd0c42756f"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2207aa76a28c63cad2a43391de7cb70384ed5d92d85fac8afbf86b3dca48d8b6"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "6d0eb4f91e5e4fb83425306a4d1f0ec50608e7339fb8855572129a1d6e5d4fdb"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "e7268dafaa6ea695b37c9e4a178b2ca92a38229a4d2c91ef248eaed51e0abd78"
+    },
+    {
+      "path": "assets/objects/hazards/lava/fire_particles_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0d0b46ec08c014709d11eea37dcac380951855d5024e0546dad4421e8784ac86"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_body_tile.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "bb1814b42235ac8edb96dac8c586794e93eb7ab3072898cce5099e793a9222d6"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_cooled_body_tile.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "051d325d447ca2f5dc2747403e1a10ce4803dee2018417854fb587d2f14d49c5"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguished.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "e4b6abc42700e2ed7ec651f99164fe29c8548acdf99abb19b762a74a1bf009ee"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0f73766d31fb94a68c183d82bc9056f1c93b87a279faf630aca1840024f74775"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "44e0f3d691b2d453802cd83ceb2b15513f778c00a50136d0494f6859c3d48bf2"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "48e7010d3347675aee4096165225b9f383c7fd799b1f8f4d22b374d29b388e19"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "75d8aeaecfe0bf0a3ab153450baac51a24333956584f3c298d2e58b9c5ec707f"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "a20b1f00a75ac7186cff3eca928e69db7e8ee9d6d01494a4f0d13f8793ce630e"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "187b77c065c660d649cab9c35b740aa239fe172f8d192351d4f5fabbc928d7a9"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_extinguishing_spritesheet.png",
+      "width": 1536,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "7e39bfab3969a107815a0185dafb033661f2e8b6a9a28a96d6bb6cdba143a658"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "7d79aefd2559e329330e894b2baecdbe8652081b9e7451167bec6a4e46698b0a"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "b95f70bd9348af17852e4d159b7594246f648cb9eb0787c999ee4493079b256a"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "313e5d3c46c7873e9804ce04ab629805ac45bb3266efde9a958243549e6da6f0"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8e31d79b5fce863bcc3c397e74d52c1cdb7c52fd56b4037b58bcb61e6e4cae5c"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "548db36a0901e808641a7894c31990495b3f399ea03814d08b8ce17f152cdd7f"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "547f797f3480a5878306f9a2305a72f53c06b3012eb620e31ba292a26f66a1d1"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "e8d75ac106404f7f312115ffdbb1b535e18f8b35cee542448a34668f9adee7c3"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "b43e003582bfdd84c20992cf8c847786b6ec5fe85733312b10f8528c4cb7c6ae"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_surface_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "37bb995162381faa8b4d1cc311b55af41cb259000d8a0a55bcc7a9fd3a35a9b1"
+    },
+    {
+      "path": "assets/objects/hazards/lava/lava_top_body_tile.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ae9a26aba4aa43cc100e5ae4d76a770081402a0affc1cb7c1d207dee615e5112"
+    },
+    {
+      "path": "assets/objects/hazards/lava/preview.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0f73766d31fb94a68c183d82bc9056f1c93b87a279faf630aca1840024f74775"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/preview.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "f00f8326e898b32e13f6dd26432cdfc043cab96f12c7202062411bb05227609a"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "58cd82356dfbedf80c62689619a8c1e05b4f00e12ba32aae79568a6d58884ab5"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "6443b609ed6b7287a7f884cf654f74b380d4bc1bf12143cb5d96e1d9ef69a6b1"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "262aaa495cd45a922fdbaead10125dc4e9f80359c2638bee5e05485017401d30"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "5f5d0634c8aa10d90954fa2bc7d3da30d96d2ffc827237ed31bbe06a93e4373a"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "83fda4d2760cb05a5aebd2640fc0db5d7a79bcfed6d42812a96d3a5d2533c003"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "65216e6c2591a0d000f4867d70a0db75e7f2ce441f5203a631e0ffdefbc8c260"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "880d82452342d7d0e45adee9ad8f62f57bb23b417055434ea765031b1538be66"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8a880957b67675961e83e93cc7f8fdef80f48716760ed397aeb97bc5263c6943"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_active_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "21691f7bfceb5f7debd946da9f53d3fc811f4fe4ba3388fd152edcf173a5d94e"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_base.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "18850402c459ec1b5e85ce606c56abc689b8b4fb8e8e5e1f6f854bef560a5cd6"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_stopping_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "58cd82356dfbedf80c62689619a8c1e05b4f00e12ba32aae79568a6d58884ab5"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_stopping_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ecc75b6b93f77e3c9ab9b04ff1e3a6a6d457d4b359ca72b225f0f1d7e52be835"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_stopping_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "1e629bcab5bb051748d0377d7ce976b34af0b68e0a21d332f068d907751d31cf"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_stopping_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "2f00d5f6580f3a8a0e40144ec93aab042e8a60830f2efa0f6c37b76abcf20364"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_stopping_spritesheet.png",
+      "width": 1024,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "54fe33c779455cc99f1e33d98bc5f8380f98aa1915de338d15ad23677dd6431c"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_warning_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8b0e12fae9418f725458c82d56aedae41771dd70a5dd3188ae2e82bdb5b5d706"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_warning_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "143d10d3cd56937631370ccdf9ac30029db26ce9f3f9f2ced3da45fd84bfc502"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_warning_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "05379e83bcd7b9e0a7bff05f4d6aa823b1a185d353313eedcb137f3dc5a69621"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_warning_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "9a8eeb87a6b618d251c68a2eb4cfdcfff89c51c587c6e3896eb9e7044ae9b78a"
+    },
+    {
+      "path": "assets/objects/hazards/steam_vent/steam_vent_warning_spritesheet.png",
+      "width": 1024,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "c761de8d1e1ec9665ad58f1daa7f74aa5b908f72c8abd73a3b3b2a9a6f7f2da4"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "d4ab2c2cab5aa0d47495b47b7e84f0ae6a9b801cbcebc41b1d68a042f84a5f9c"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "a5b042a3be53450ec7786a86c64640b329cb6f8e4b65e35c0cc1d3083f4d81c1"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ee665daa58d7f7a3d2eadc923863b2b64676a1ca3990e55590c081fd61bc663d"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8f25a58c7b65d67f7eba4ba0c5803ec83840f30334e27d0ada74c1bf9cbc9e25"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ab28b3a272e0b9386ec00c9df232bc069b0389cfef4bf4dd57553be0f48a86ef"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "fbd3d0ae761da3593260992e04e2c034a208ae097f97484cb5bb7f20858698bc"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "width": 1536,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "57860106c01b004550b75468c8292f811cd3d04e654855dd1c76b26ca329f721"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_base.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "3d30c3102d8a6458354fd557f1aa4567534bd894e9162eba073236842650da63"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "fbd3d0ae761da3593260992e04e2c034a208ae097f97484cb5bb7f20858698bc"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ab28b3a272e0b9386ec00c9df232bc069b0389cfef4bf4dd57553be0f48a86ef"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "8f25a58c7b65d67f7eba4ba0c5803ec83840f30334e27d0ada74c1bf9cbc9e25"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "ee665daa58d7f7a3d2eadc923863b2b64676a1ca3990e55590c081fd61bc663d"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "a5b042a3be53450ec7786a86c64640b329cb6f8e4b65e35c0cc1d3083f4d81c1"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "d4ab2c2cab5aa0d47495b47b7e84f0ae6a9b801cbcebc41b1d68a042f84a5f9c"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_deactivate_spritesheet.png",
+      "width": 1536,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "e3a376266b4400cf9e47305945e3ec824d3041dba71c62fbb6f4d3c0a01f3450"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_off.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "d4ab2c2cab5aa0d47495b47b7e84f0ae6a9b801cbcebc41b1d68a042f84a5f9c"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/lever_on.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "fbd3d0ae761da3593260992e04e2c034a208ae097f97484cb5bb7f20858698bc"
+    },
+    {
+      "path": "assets/objects/mechanisms/interactive_lever/preview.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "a44177b53b8e21d7090eb59d220b8312effab55483672d2d1baf850ff2c86284"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_idle.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "87c21db98d9e1f8c5ffd59825ee63c9a8e021391d92e25640ceec2a467f9c8f3"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_01.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "87c21db98d9e1f8c5ffd59825ee63c9a8e021391d92e25640ceec2a467f9c8f3"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_02.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "85de051367371b66f8ed3f6363617d94f9fb32cb6485689f62aaefb7ce8fb791"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_03.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "eeed36fe745a54b5ec2229cf073fafbce3f9915ab9e543daf565cb36792d80fe"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_04.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0d6332701cdb60082a0cf705a345df478dde5abe93ffa401f4a82182e3c9983c"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_05.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "15fde2fb1a788c0bcb7161dd183c123f0ce9b84c60e0a6cee8372b32ddb78b08"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_06.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "0daa86ef603252a476e7cdad32bf189462190e22c49961f5439f87b52596244b"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_07.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "9d4077e9c3fc48e416bca361b4d43c2e7a33f17e1dc01539fb313ca3e4977c19"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_08.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "4febc83c742259d11d2a870ee21afe1ba43a7d522decfbb6c3137cba88106b52"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/gear_rotating_spritesheet.png",
+      "width": 2048,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "be346b39c7a5671c301669e3eaed0e185592651503a31767f4d1a3b1f7c8bbef"
+    },
+    {
+      "path": "assets/objects/mechanisms/rotating_gear/preview.png",
+      "width": 256,
+      "height": 256,
+      "mode": "RGBA",
+      "sha256": "87c21db98d9e1f8c5ffd59825ee63c9a8e021391d92e25640ceec2a467f9c8f3"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_body.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "63d5d84cb5b21a13902a5dd110a3728420a1e4ccf7ee65e469ec17e2f0447f6c"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3eb1d100cb169bef9c8becc82cec84914594e2b42c463185cb4f65dafe664faf"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "380db7d4e7a0d6c5058411e85b3313aeee3ef63e823cd5552aec3bbf7de1ad88"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d1a3d9463301db689b0c5a346967b1e928d249596e19c14657c56f081d1d0c3b"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "897ea1edc2b5637a68562eea275fff9f37abe526535a731c58afd5236d85ff4e"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4f0d5df80b1bc1faec58ada82921904b8c7d68e15a988cd509c0e0013c2dac56"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "f32541bf7d9104dc1ec26340845cb35ae4b7b606257edbebb8660d80b57bd016"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3eb1d100cb169bef9c8becc82cec84914594e2b42c463185cb4f65dafe664faf"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_heating_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9946838526aa51f9c679cde367e2cec0c55522da915d836f05711081c8420e8c"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "602ca46c87265e969618b5e049f0b2af69ae93479812eeee099b944335494a6c"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e817b6407662ffba10052fc3e0f81d32844034a655d86150a75531289521c09f"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "57ebef23be00c4e798a3e1fa07961153245fe76bc1a2e7669856d04418cf5d17"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8fbfeb83a22cf611e1ea558026a5c0c826556ed5f910adeebc0db6eb2d8da304"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e4ad081df0383c473cbbc549173f761fc293a46f6b369df4d953b70d5d981086"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "166f80fa71b97da640e253f2ee06be3e16b3ce2053b3362dd155241015ba76ea"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b28f16e6407ee94a87bce634531f1e001d0128c5a558081baf0f67d114b6cdbc"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "26f81c04468f73855b36ad5161b5af8edcf9d97e359e7ccd870836c4e9007fbc"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/boiler_steam_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b997b6576942830fd54c110fc25d287a2b9edc80f08009ca758c06c2100e1cbe"
+    },
+    {
+      "path": "assets/objects/mechanisms/steam_boiler/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "962138e5f1562cf976dcaab0f819e7cbdc3ecd8c6e1ecdebbc074e99e2f6cb6f"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closed.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "c219cf4076b27d7da8aa89ee700f7aac4d6fc2633cdd5064bfd7d3e13fcffe67"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d1bb8e1bda2eae1f72708428a367c57c8ba86fad8dfc921e038885cdeb994eb0"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8dc6b1a34e7081a7d4a0267525fd82993e118d19c3f3a1aebab82fe67354fd95"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "111bb4ea30e7deaa0b30480d98cd88c03ab095dc9697c877ccb97639c607a92d"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fea051bc0ecf4ac9d7d6ee009a4d8b9ae9e1b3cb92b3c6f1e9b3891047299bdc"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "39ebe17fbe058cb5565c3fc41920892c7f4ff11828b633a44c09a8ef21476b88"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "c219cf4076b27d7da8aa89ee700f7aac4d6fc2633cdd5064bfd7d3e13fcffe67"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_closing_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0b2e11dbfa508e5e71ba1398b03e96faf355962fe7f9435e813720335bcec5d4"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_frame.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fc9f56576316de0de39409dacd3150a7fd970449ff73b854e48ceb877f031744"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_open.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d1bb8e1bda2eae1f72708428a367c57c8ba86fad8dfc921e038885cdeb994eb0"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "c219cf4076b27d7da8aa89ee700f7aac4d6fc2633cdd5064bfd7d3e13fcffe67"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "39ebe17fbe058cb5565c3fc41920892c7f4ff11828b633a44c09a8ef21476b88"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fea051bc0ecf4ac9d7d6ee009a4d8b9ae9e1b3cb92b3c6f1e9b3891047299bdc"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "111bb4ea30e7deaa0b30480d98cd88c03ab095dc9697c877ccb97639c607a92d"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8dc6b1a34e7081a7d4a0267525fd82993e118d19c3f3a1aebab82fe67354fd95"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d1bb8e1bda2eae1f72708428a367c57c8ba86fad8dfc921e038885cdeb994eb0"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_opening_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "58eaa4d0a47f1efe026752522c206abb13d393a1eaea1712f886d4517108a66d"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "72b577fe936960c3f6ef19907bca098346461a4367afdd0baf0f28cf97bbc05b"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6ee9b3c505fa58f615a5d21d0031493df65f5647e088264452695d75fd1778c1"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8ed19b3979582f6c32f2c8d7d0a7202617999cc05efaa0c416915229bb874cd3"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8e8de2646e988aa91e273281f5ef63f0606da4241cce58f86690a6c8710b644a"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "05a57b565136930ab06b0cbf055b2e3e6d60b521ac0f6c33e612aacfd4ba84a9"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "7a8c955986b06669968b8114c228901fc1410885c75346b15364e9e31b42edc6"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "998f83b48b7a5eb0997934fae56fc78a7eea7ebf6640e199a1c2f862dd20cd08"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "20ff6155aa1f35d731102255e89e43ce90a6a724a84ae73bca55fe208aa8f33c"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/door_warning_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "29e2a8b5fa2a38cab18dd0ca98611dd05d933b46109644e5ae7afca28458729a"
+    },
+    {
+      "path": "assets/objects/mechanisms/timed_door/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "118f33e14a61c9de159b0236159f5b04a75c493fe7d37d47845fba291de707aa"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6b5bd5abb7caab4934593e6d018532131a872343b9bf5b6f495a56b3eba8413f"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_idle.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "58c67aae8974d64e07e7a9dd797524c7c535fbe4f766c0578e3476943929bf26"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "58c67aae8974d64e07e7a9dd797524c7c535fbe4f766c0578e3476943929bf26"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "f1d59b6add5ac5b1aba3012706a1a0916badc69ac390efc154bae867041878b1"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4c24197773a20d130217dfef73522cc27277803de767cd532abf3dca6f0c5efb"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "5a00b2e8ef7af7c631a0482371057af9dbaf9399b4388091a83c74e38e1b81b5"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fe7d55209b3005c741544f16a2893b2ac07a7b96e85258615cdd84a8d1ec1ad4"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fd153d95ab313be1c3bb3120260d2039488e8df17d91cdb55320ebfe581bedc8"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "743a4fe31bd72cd19f38a9135452f1dfc54ec52a0bc28365658f610ecba6175d"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4d22ae2bdef297dfcccea5fe3b38d1cc14abf014cc24864738224d8e008fe747"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "54f4e20a1d0b2375a39876833df9fc5840df30255e90b06087e94dcda6db2ed0"
+    },
+    {
+      "path": "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "ca119baa59d5fe3bc56dfa5abe8b02ec89cdca17697c4fb61a5712f3927b326f"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_base.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8167fa5b1687a71952d1ae79d1296757432db2c959971c8e86ef55f1d53b4844"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0ea28deeb927b079104fa97152a8af836dbc27a8386eb60bead1233ee98a2c13"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b52c63ba11f8807b29bd6469f05aa77b92c9e9db2a46acad125eee4207beb19f"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6282f9ea351522b21ddabac272cd7996658327486f5e6f1f2795d0cc92075637"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "94770b2102f8caa4702208e62fdeffed22e1104dddf09f340cc4da759ff4c5a7"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a985246a7d153d095b7e8f1fbcec618959c3229ffb2ddeffb92a0851ef2d919b"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4f4230ed02a441d05d6b6b500d19b76b992e1f02941e8f9efee76c1969cdac92"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "301bd477616061d53f0fd29e9ad28825810046afe0cf27ca4a4d01af1dc89eea"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0d139661bb6e97ab31cd5edf3c5ddd89f7150a0e901641298cc290068322c68a"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_blades_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "014258a77d607fedc2e04dbdaf0842c669b9ba104eb58064eb6a2752c5f8db04"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_off.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6282f9ea351522b21ddabac272cd7996658327486f5e6f1f2795d0cc92075637"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6282f9ea351522b21ddabac272cd7996658327486f5e6f1f2795d0cc92075637"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "517b8ecf61093fcc2cc4bdf10369b383e7ed136b4df28193149679c6b509076e"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d66e3c7e2343b44240c8b1415f76ea2e419c0365acc7f3bd30b4b740ab4fbff8"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "523f472835ca0d21626fabd63a57ae08fc15e79088971ddde7dcbfb4a33aa479"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "cd89948551ee83e329e87d24e127fe68a3a3f36c90425cc3042149e4f2460ff2"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "56e52e92e1821d72859e077696801cfb621ce6c8d9aea54f9f8c9ebeef795826"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_starting_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "ad187a3d06f6fe31ab3cc11495682d93cc7189cf7c184544ecf6be0b150bb30b"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0ea28deeb927b079104fa97152a8af836dbc27a8386eb60bead1233ee98a2c13"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "380bbc9cbfc07b8b4f04691de23b8087fd8573fd7d25927496cd1e3036f7317a"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9cc6ae09cf77b297300c61923fdaf1b3d7d63687bf4c9022f8a7d1fd423a0a8a"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b83be8e2de364b1abc1043a81d1f6db816dd109bf9efbfb698258fd0ba905d80"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "326967357ae4c587d65471d263ade74a82ebf3915146668330e5256796ec2a5a"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6282f9ea351522b21ddabac272cd7996658327486f5e6f1f2795d0cc92075637"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/fan_stopping_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fd42f8addc3e8766bf9c4e7db6bc429c1c86199ce1bb8c3f8ce4ff52063abee0"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_fan/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "16ee169feccf8c62ff457cb6bff424c2cadc169660836b3f678012518e473865"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_base.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "560b6610bede95d776eb0f622c7227d1c6faf9a5bf994441b5373f46654670ef"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_idle.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a660e0a207615cd289764d772205642a0e0cf00cc8cdb7481da85bc582871cb5"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a660e0a207615cd289764d772205642a0e0cf00cc8cdb7481da85bc582871cb5"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "ad2e0a7e75069838c2f93a27c0cf188234dea5d8cb82ee9b644f050430839df9"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fc5c196196c54ba9623385f11adf17024fd22d078f45303e27ee067dc23a3683"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "b9a597c5d420252ed27c7738bbcb7f1fcfef0fdc4b172b0ac55acbe861bb0292"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1261c549cce22d2a3b9bdee4b6e82c52b25ab09f72a2fd85f9b95c4b88f0589e"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "dfb048661e221b674a6e6cdc57d15bbb4d2e3f182436d274870f86e2d6ed7502"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9e58fef70a7c5c90dfe507a625bd396207c772956c898d67efacdb98750c968c"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a13b9c961009ce127eae50ab32c0b2ad4f43a01cc060a4ddb3d7c7f3e77be966"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/mill_spinning_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "338d14002e2e55041fc8c1aa32ecfc6456acfb04293287a1fbf49ce99935893c"
+    },
+    {
+      "path": "assets/objects/mechanisms/wind_mill/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3f5d024ad57651bf20c70ec827d57c74e7559969c6ce3daa02d35630323c8011"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "92535121d59df6d09574979c766869597fc858f2352dd5a9e5c3509d83427d4d"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3b6c840d996500665e6e437705334abbb5d73145b04001ff916a98ae5cdb4806"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "80d06cfa534efe3f01e8229d030eafeac279d895c9795685d75b5104c5115bf0"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "bc542e99aa4698ae08eedb4a63d50840899c37f45214793e4d8b1ef185bbc0f2"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "67ec8f27238b0fd2c9b6a16a4898a64e0208f2ece1fac282cbd532db18a30ead"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1dda5746c9063780e5f17710fda39d6dd9c254bc13bb15339c8405d68d95da54"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_appearing_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "52648080f684f77f0f3ab325aa8cbb05da9479d27d3b2064f293191e28438b37"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1dda5746c9063780e5f17710fda39d6dd9c254bc13bb15339c8405d68d95da54"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "67ec8f27238b0fd2c9b6a16a4898a64e0208f2ece1fac282cbd532db18a30ead"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "bc542e99aa4698ae08eedb4a63d50840899c37f45214793e4d8b1ef185bbc0f2"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "80d06cfa534efe3f01e8229d030eafeac279d895c9795685d75b5104c5115bf0"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3b6c840d996500665e6e437705334abbb5d73145b04001ff916a98ae5cdb4806"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "92535121d59df6d09574979c766869597fc858f2352dd5a9e5c3509d83427d4d"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_disappearing_spritesheet.png",
+      "width": 3072,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "17ebc9f7e001a2ac8009dfc72296ec48897b24729d41d7f4ee383be76addb4e6"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_hidden.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e0dd38983e37065632a27466d9a016686604894c00b41a1b02f0195a87b9f35b"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/platform_solid.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1dda5746c9063780e5f17710fda39d6dd9c254bc13bb15339c8405d68d95da54"
+    },
+    {
+      "path": "assets/objects/platforms/disappearing_platform/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1dda5746c9063780e5f17710fda39d6dd9c254bc13bb15339c8405d68d95da54"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_base.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fb8c2edb9add68e094a3e08aedb0f6b0dcd5b0ff28ca6ae819293ce4915a6e2c"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_idle.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4e011e437d61bcddaa219a6b135645ca2f65a59056f488169103b3e3b312b9c2"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4e011e437d61bcddaa219a6b135645ca2f65a59056f488169103b3e3b312b9c2"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fa5f68340e382994792aa3ed33908e84cd9f726abef5eeb34ac9593ad123aff9"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a405e160e7c5b14e691ef1089747b14b689a013e3b0fb060cfb7f8a30df34ad5"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "92f45d00ce44958ac7812e4faae45f54b153d3c54d44d1e70d25ef35513a33ea"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e6e27c0d4a171d02cefc8b02394246ae03447324236e7d507de137603641ed47"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "f29f46d33585d59ff2ba7910ac447686213f5e43e7fcf3ce5a77312a33f2a7a5"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9c4060d067bfdf54a3129e4ee21ae499cb1614edbfabc49495b078008c0fd964"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4e011e437d61bcddaa219a6b135645ca2f65a59056f488169103b3e3b312b9c2"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "edee83f75efdcd889d0667342cad584f133fa8b8de8916f47ac039abdfab7b4a"
+    },
+    {
+      "path": "assets/objects/platforms/elemental_bounce_pad/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6cb75815957f3d001893d91e3e41a398650a38705032f374b95f2b559449cec2"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/preview.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "858c3f07535765cdec122f58137d31603b1d141d41f5307315eb07e54753e436"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "fe3f6d0bad11c48fb92637610347684805d79814e01cd84fa69178d8258ca748"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8e6fe2ca842bd13eb5ce565041574df89b214c34b061b5b3d5082f52a7022189"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4550fe9948e4ee6c6d373540d9da326b03a38cba15cf76f6f857bd2ceda1bd03"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9e572d542f0bc90b5bd158f62b6fed08727d520c6a7bd4a0b3672e041de179fc"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "471fb3df29c93762580e052d1b9e2cbdb8d911d3ac9855abe07931a3fe3c776a"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d27f670b471cddc036fe4362af34385ffd42974d2b7843b1c83176c23671276c"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "60bf52469add3fa1ca199142fc1dd9f63807cc72deca6aa53afb4d16ae05d311"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "deca0deed471281e6020a82b6597ff00886e1ffec13b52859ad2a980eb2d2dc4"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9d5885620a283b465cb4f122bb660eb7c189c823088ef375db85311df70138d1"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6204e2ae7eca9177a3b291aa9fd19cf679ac9d485cb518d5d950389e49d37fb7"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_01.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6617130f537ebdfae6772465a430ea4681bfe5ec1d46fedeb302ac6713e056fe"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_02.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "adce15a3b05953096feba873ea5ae7170a9f8658488bd457175854d70ebcca55"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_03.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "29a4b59b814ba10eb7b8a97e14cad2ad75b5cc03305568590d396e6f650eb184"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_04.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4195ad0ab9478fc7b30dbe923c58981ce94336033b3b3e88bf140a82463308e1"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_05.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "67bfe9fec8b15db67051a356b64ae1bae11a054b0fe2908c3c7575ea3ef8b592"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_06.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a2efa034110e124513c46070d903c2e1a95a92001061e3034f270f33ac2c5cdb"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_07.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d04952b7f97febbfa21db8e88f96a691e771c2fa8affda8beac6b5987bc46af8"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_08.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "703a34f1d6c4632328124d276c690544d3dcf2b7b3774dd05682ade90a191824"
+    },
+    {
+      "path": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_spritesheet.png",
+      "width": 4096,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4c48dcb573153d606ad00dd012f5037dccbec352fa9116f501ed6745deaed2b2"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_01.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4a73aabfa3ecea7929a0f9f7c2a19e698d1f81e5e1b86a1716fa0f14b17d01f1"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_02.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2886c9ee3e8d40ca6a3523b3bf05d23a8a548577d1d4814c626132e40c382881"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_03.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "24d17117c34975d947c584fa7d941223b2170d04bcaaee0e6cc0286b74f44571"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_04.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "5a5688d7ef9304b3ad9961c9c41aa97b3f967da4e3422e59553fa4cbb2f10ff5"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_05.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "dd381680243d699bf9c46b7eb80d78d55b901e47572d983dedf668d854e34a49"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_06.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0fb8a6464edf0e3ca9f8b1ff1375c9bd5d9a0b27df027747765abd4d361ba101"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "width": 6144,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a2db890e7bcdf080e8bba1b8af3f2c8a6edf6930711dbe6ff139a7b9469f661f"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_01.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "0fb8a6464edf0e3ca9f8b1ff1375c9bd5d9a0b27df027747765abd4d361ba101"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_02.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "7bdeccc783d352750e40323702ae14e42bc852833c1c52332274d59d894e18f8"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_03.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "09010583f25919d71ac6a3b5c418539dff711792a327094816091b46b812334f"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_04.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a56473a1ceb79ffb08875f7087e5d5b4afb818501de397cb8fbb28329ff26c92"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_05.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "d3d4522cddd8cdf825569d085d403bc0f9cac9d4690ff9b6ce0bfb26bcd132c2"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_06.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9567fde176c4126e6d7eb54a8c96c044a8985b11570dc21d79a4465e072b71bd"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_07.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4e0b074bb15476b5a9f808485217748b12995e8d3c460c8268a50640a915e2b0"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_08.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "ff43d2f2fbde2f473e9a015599b2da94771aee5e5b4bfd55025e1bd66fdfab3d"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4a73aabfa3ecea7929a0f9f7c2a19e698d1f81e5e1b86a1716fa0f14b17d01f1"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "width": 8192,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "a73016d44d05f8e6e5d5c1cb13b4e6a62f120403e6445e7ea56af3e2c85db304"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "e55e1bd6a08f11db97a0f1a668566be95605eb329074a8c02c9512d4403432b7"
+    },
+    {
+      "path": "assets/objects/platforms/mechanical_elevator/preview.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "8152dfd352c344e4722f0c926c107d524a9309eb97f7edb900d5e8a210e69d3e"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2f4f97d28c2c9e88dd1282cade4457396369fdda6048669c1b5831b85a09c24a"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_01.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4bd186a8df8869dd63e16abc52762876dfc760b8833aaf4f018fe85dc66be2ba"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_02.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1bae08c514bd250b8cc2c9a0a31381856a958b6543f0c2be68ff5d659e1be620"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_03.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "f0d67fc4076ba7d5a80d0cd7c145f723e9125a28eeda3f7a0dfd0bbcc846df42"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_04.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "c90581269cd3bc41f7c7357b5ea52a21b48f1364ed7840cd7b2e5a3ec12a9970"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_05.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "558e149d25586e5532fd8584eee9da4f27fc12b7383cb21ca0a208c2b678df7c"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_06.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2f4f97d28c2c9e88dd1282cade4457396369fdda6048669c1b5831b85a09c24a"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "width": 6144,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "3359cbbbf317d3b8d1cfd2e88d463a537748426f288da6ec75923dc9f355e5c5"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "781472d7bf964151e0f3a18b937cb3b878d6664981cd49bac3cfd89506a3a328"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4bd186a8df8869dd63e16abc52762876dfc760b8833aaf4f018fe85dc66be2ba"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_01.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "2f4f97d28c2c9e88dd1282cade4457396369fdda6048669c1b5831b85a09c24a"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_02.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "558e149d25586e5532fd8584eee9da4f27fc12b7383cb21ca0a208c2b678df7c"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_03.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "c90581269cd3bc41f7c7357b5ea52a21b48f1364ed7840cd7b2e5a3ec12a9970"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_04.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "f0d67fc4076ba7d5a80d0cd7c145f723e9125a28eeda3f7a0dfd0bbcc846df42"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_05.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "1bae08c514bd250b8cc2c9a0a31381856a958b6543f0c2be68ff5d659e1be620"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_06.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "4bd186a8df8869dd63e16abc52762876dfc760b8833aaf4f018fe85dc66be2ba"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/bridge_retracting_spritesheet.png",
+      "width": 6144,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "9dd748428aef18e0db17af5e39f03c91b13db424e0f8a76eb3ca1579b280ad1d"
+    },
+    {
+      "path": "assets/objects/platforms/retractable_bridge/preview.png",
+      "width": 1024,
+      "height": 512,
+      "mode": "RGBA",
+      "sha256": "6caf175dac42c086b791bce9f2a327cc7c7e0c50ef26b617ed12534dab33d3db"
+    }
+  ]
+}

@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="data:," />
+    <title>Veylith physics smoke test</title>
+    <style>
+      html,
+      body,
+      #game {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: #052c35;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <script type="module">
+      import Phaser from 'phaser';
+      import { createGameConfig } from '../src/game/core/GameConfig.ts';
+      import { ActionState } from '../src/game/systems/input/ActionState.ts';
+      import { LevelProgress } from '../src/game/levels/LevelProgress.ts';
+      import { RunSession } from '../src/game/session/RunSession.ts';
+      import {
+        completeLevel,
+        emptyProgress,
+      } from '../src/services/progress/progress.ts';
+      import { CHARACTER_ANIMATIONS } from '../src/game/systems/animation/animationRegistry.ts';
+      import { GEM_SHEETS } from '../src/game/assets/gemSheets.ts';
+      import {
+        EFFECT_SHEETS,
+        TRANSFORMATION_SHEETS,
+        effectKey,
+        transformationKey,
+      } from '../src/game/assets/effectSheets.ts';
+      import {
+        FOREST_ASSETS,
+        forestTexture,
+      } from '../src/game/assets/forestAssets.ts';
+      import { ENVIRONMENT_ASSETS } from '../src/game/assets/environmentCatalog.ts';
+      import {
+        FOREST_ANIMATION_SHEETS,
+        forestAnimationKey,
+        PORTAL_FRAME,
+      } from '../src/game/assets/forestAnimations.ts';
+      import {
+        COIN_ASSET,
+        COIN_SHEETS,
+        coinAnimation,
+      } from '../src/game/assets/coinAsset.ts';
+      const texturePaths = new Map([
+        ...CHARACTER_ANIMATIONS.map((a) => [a.texture, a.path]),
+        ...GEM_SHEETS.map((a) => [a.key, a.path]),
+        ...Object.entries(EFFECT_SHEETS).map(([id, a]) => [
+          effectKey(id),
+          a.path,
+        ]),
+        ...Object.entries(TRANSFORMATION_SHEETS).map(([id, a]) => [
+          transformationKey(id),
+          a.path,
+        ]),
+        ...Object.entries(FOREST_ASSETS).map(([id, a]) => [
+          forestTexture(id),
+          a.path,
+        ]),
+        ...Object.entries(ENVIRONMENT_ASSETS).map(([id, a]) => [
+          `environment:${id}`,
+          a.path,
+        ]),
+        ...Object.entries(FOREST_ANIMATION_SHEETS).map(([id, a]) => [
+          forestAnimationKey(id),
+          a.path,
+        ]),
+        ...Object.entries(COIN_SHEETS).map(([id, a]) => [
+          coinAnimation(id),
+          a.path,
+        ]),
+        [COIN_ASSET.key, COIN_ASSET.path],
+        [PORTAL_FRAME.key, PORTAL_FRAME.path],
+      ]);
+      let game,
+        actions,
+        progress,
+        run,
+        attempts = 0,
+        saved = emptyProgress();
+      const audit = new Map();
+      function sampleAssets() {
+        const scene = game?.scene.getScene('MainScene');
+        if (!scene?.sys.isActive()) return;
+        const camera = scene.cameras.main.worldView;
+        const walk = (object, visible = true) => {
+          visible = visible && object.visible !== false && object.alpha !== 0;
+          if (
+            visible &&
+            object.texture?.source?.[0]?.image?.src &&
+            object.getBounds
+          ) {
+            const box = object.getBounds();
+            if (
+              box.right >= camera.left &&
+              box.left <= camera.right &&
+              box.bottom >= camera.top &&
+              box.top <= camera.bottom
+            ) {
+              const path =
+                texturePaths.get(object.texture.key) ??
+                (object.texture.key.startsWith('world:')
+                  ? object.texture.key.slice(6)
+                  : '');
+              if (path.startsWith('assets/')) {
+                const key = `${path}|${object.anims?.currentAnim?.key ?? 'static'}`;
+                let entry = audit.get(key);
+                if (!entry) {
+                  entry = {
+                    path,
+                    animation: object.anims?.currentAnim?.key ?? null,
+                    frames: new Set(),
+                    samples: 0,
+                  };
+                  audit.set(key, entry);
+                }
+                entry.frames.add(String(object.frame?.name ?? '__BASE'));
+                entry.samples++;
+              }
+            }
+          }
+          for (const child of object.list ?? []) walk(child, visible);
+        };
+        scene.children.list.forEach((object) => walk(object));
+      }
+      window.smoke = {
+        ready() {
+          return !!game?.scene.getScene('MainScene')?.player;
+        },
+        exitPresentation() {
+          const scene = game.scene.getScene('MainScene');
+          const camera = scene.cameras.main;
+          return {
+            active: scene.forestPuzzle?.revealingExit ?? false,
+            camera: {
+              x: camera.midPoint.x,
+              y: camera.midPoint.y,
+              zoom: camera.zoom,
+            },
+            physicsPaused: scene.physics.world.isPaused,
+            run: run.getSnapshot(),
+            exits: scene.forestPuzzle.layout.document.objects
+              .filter((o) => o.type === 'exit')
+              .map((o) => {
+                const view = scene.forestPuzzle.views.get(o.id),
+                  seal = view.getByName('seal'),
+                  art = view.getByName('art');
+                return {
+                  id: o.id,
+                  ready: o.requires.every((id) =>
+                    scene.forestPuzzle.state.isSolved(id),
+                  ),
+                  frameTexture: art.texture.key,
+                  art: {
+                    x: art.x,
+                    y: art.y,
+                    scaleX: art.scaleX,
+                    scaleY: art.scaleY,
+                  },
+                  seal: {
+                    visible: seal.visible,
+                    animation: seal.anims.currentAnim?.key,
+                    frame: seal.frame.name,
+                    playing: seal.anims.isPlaying,
+                    x: seal.x,
+                    y: seal.y,
+                    scaleX: seal.scaleX,
+                    scaleY: seal.scaleY,
+                  },
+                };
+              }),
+          };
+        },
+        resize(width, height) {
+          game.scale.resize(width, height);
+        },
+        async mountReflectorControls() {
+          const React = await import('react');
+          const { createRoot } = await import('react-dom/client');
+          const { WorldControls } =
+            await import('../src/components/game/WorldControls.tsx');
+          await import('../src/components/ui/ui.css');
+          const host = document.createElement('div');
+          document.body.append(host);
+          createRoot(host).render(
+            React.createElement(
+              React.StrictMode,
+              null,
+              React.createElement(WorldControls, { actions, progress }),
+            ),
+          );
+        },
+        async mountHud() {
+          const React = await import('react');
+          const { createRoot } = await import('react-dom/client');
+          const { RunHud } = await import('../src/components/game/RunHud.tsx');
+          await import('../src/components/ui/ui.css');
+          const host = document.createElement('div');
+          document.body.append(host);
+          host.style.color = 'white';
+          const root = createRoot(host);
+          root.render(
+            React.createElement(RunHud, {
+              run,
+              progress,
+              level: 'forest-1',
+              onRestart: () => window.smoke.retry(),
+              onMenu: () => root.unmount(),
+              onLevels: () => root.unmount(),
+              onNext: () => root.unmount(),
+            }),
+          );
+        },
+        assetEvidence() {
+          return [...audit.values()].map((e) => ({
+            ...e,
+            frames: [...e.frames].sort((a, b) => Number(a) - Number(b)),
+          }));
+        },
+        async pulleyDiagnostics() {
+          const { supportedPassengers } =
+            await import('../src/game/systems/world/mechanismPhysics.ts');
+          const { movementBlocked, shifted } =
+            await import('../src/game/systems/world/advancedRules.ts');
+          const scene = game.scene.getScene('MainScene'),
+            p = scene.forestPuzzle;
+          const actors = [
+            scene.player.body,
+            ...p.solids
+              .filter((s) => s.body?.moves && s.body.enable)
+              .map((s) => s.body),
+          ];
+          return p.world.state.objects
+            .filter((o) => o.behavior.kind === 'pulley')
+            .map((o) => {
+              const a = p.world.bodies.get(o.id).body,
+                c = p.world.bodies.get(o.behavior.counterweightId).body;
+              const ra = supportedPassengers(a, actors),
+                rc = supportedPassengers(c, actors);
+              const solids = p.solids.filter(
+                (s) =>
+                  s.body.enable &&
+                  s.body !== a &&
+                  s.body !== c &&
+                  !ra.includes(s.body) &&
+                  !rc.includes(s.body),
+              );
+              const dy = Math.sign(o.behavior.travelY) * 1;
+              return {
+                id: o.id,
+                riders: ra.map((b) => b.gameObject.name),
+                counterRiders: rc.map((b) => b.gameObject.name),
+                collisions: [
+                  { id: o.id, b: a, dy },
+                  { id: o.behavior.counterweightId, b: c, dy: -dy },
+                  ...ra.map((b) => ({ id: b.gameObject.name, b, dy })),
+                  ...rc.map((b) => ({ id: b.gameObject.name, b, dy: -dy })),
+                ].map(({ id, b, dy }) => ({
+                  id,
+                  blocked: solids
+                    .filter((s) =>
+                      movementBlocked(b, shifted(b, 0, dy), [s.body]),
+                    )
+                    .map((s) => s.name),
+                })),
+              };
+            });
+        },
+        pause() {
+          game.scene.pause('MainScene');
+        },
+        resume() {
+          game.scene.resume('MainScene');
+        },
+        resources() {
+          const scene = game.scene.getScene('MainScene');
+          return {
+            textures: game.textures.getTextureKeys().length,
+            objects: scene.children.length,
+            worldstepListeners: scene.physics.world.listenerCount('worldstep'),
+            textureMiB: game.textures.getTextureKeys().reduce((sum, key) => {
+              const image = game.textures.get(key).getSourceImage();
+              return sum + (image.width * image.height * 4) / 1024 ** 2;
+            }, 0),
+          };
+        },
+        illustratedArt() {
+          const scene = game.scene.getScene('MainScene');
+          return {
+            art: scene.children.list
+              .filter((o) => o.texture?.key?.startsWith('illustrated:'))
+              .map((o) => ({
+                name: o.name,
+                x: o.x,
+                y: o.y,
+                width: o.displayWidth,
+                height: o.displayHeight,
+                depth: o.depth,
+                alpha: o.alpha,
+                frame: o.frame.name,
+                playing: o.anims?.isPlaying ?? false,
+                key: o.texture.key,
+              })),
+            textures: game.textures
+              .getTextureKeys()
+              .filter((k) => k.startsWith('illustrated:')),
+            listeners: scene.physics.world.listenerCount('worldstep'),
+          };
+        },
+        savedProgress() {
+          return structuredClone(saved);
+        },
+        environmentArt() {
+          const puzzle = game.scene.getScene('MainScene').forestPuzzle;
+          return puzzle.layout.document.objects
+            .filter((o) => o.asset?.startsWith('environment:'))
+            .map((o) => ({
+              id: o.id,
+              asset: o.asset,
+              images: puzzle.views.get(o.id).list.map((image) => ({
+                texture: image.texture?.key,
+                x: image.x,
+                y: image.y,
+                scaleX: image.scaleX,
+                scaleY: image.scaleY,
+                cropped: image.isCropped,
+              })),
+            }));
+        },
+        async start(level, levelDocument) {
+          if (game) {
+            game.destroy(true);
+            await new Promise((resolve) =>
+              requestAnimationFrame(() => requestAnimationFrame(resolve)),
+            );
+          }
+          // Isolated test entry emulates an existing remembered v1 selection.
+          saved = { ...saved, lastLevel: level };
+          actions = new ActionState();
+          progress = new LevelProgress();
+          attempts = 0;
+          run = new RunSession((ms, coinIds) => {
+            const result = completeLevel(saved, level, ms, coinIds);
+            saved = result.progress;
+            return result.result;
+          });
+          await new Promise((resolve, reject) => {
+            game = new Phaser.Game(
+              createGameConfig(
+                document.getElementById('game'),
+                () => {
+                  attempts++;
+                  const scene = game.scene.getScene('MainScene');
+                  scene.events.off('postupdate', sampleAssets);
+                  scene.events.on('postupdate', sampleAssets);
+                  resolve();
+                },
+                1,
+                {
+                  level,
+                  document: levelDocument,
+                  input: actions,
+                  progress,
+                  run,
+                  onError: reject,
+                },
+              ),
+            );
+          });
+        },
+        document() {
+          return structuredClone(
+            game.scene.getScene('MainScene').forestPuzzle.layout.document,
+          );
+        },
+        retry() {
+          run.retry();
+          actions.reset();
+          actions.dispatch(
+            { type: 'restart_level', phase: 'pressed' },
+            'smoke',
+          );
+        },
+        input(type, phase = 'pressed') {
+          actions.dispatch({ type, phase }, 'smoke');
+        },
+        traceBlocks(durationMs) {
+          const world = game.scene.getScene('MainScene').physics.world;
+          return new Promise((resolve) => {
+            const samples = [];
+            let elapsed = 0;
+            const sample = (dt) => {
+              elapsed += dt * 1000;
+              samples.push({ ms: elapsed, blocks: window.smoke.read().blocks });
+              if (elapsed >= durationMs) {
+                world.off('worldstep', sample);
+                resolve(samples);
+              }
+            };
+            world.on('worldstep', sample);
+          });
+        },
+        trace(durationMs) {
+          const scene = game.scene.getScene('MainScene');
+          return new Promise((resolve) => {
+            const samples = [];
+            let elapsed = 0;
+            const sample = (_time, delta) => {
+              elapsed += delta;
+              const r = window.smoke.read();
+              samples.push({
+                ms: elapsed,
+                x: r.x,
+                vx: r.vx,
+                cameraX: r.camera.x,
+              });
+              if (elapsed >= durationMs) {
+                scene.events.off('postupdate', sample);
+                resolve(samples);
+              }
+            };
+            scene.events.on('postupdate', sample);
+          });
+        },
+        read() {
+          const scene = game.scene.getScene('MainScene');
+          const body = scene.player.body;
+          return {
+            timing: {
+              delta: game.loop.delta,
+              rawDelta: game.loop.rawDelta,
+              fps: game.loop.actualFps,
+              cooldown: game.loop._coolDown,
+              wall: performance.now(),
+            },
+            world: scene.forestPuzzle.world.state.objects.map((o) => ({
+              id: o.id,
+              kind: o.kind,
+              ...scene.forestPuzzle.world.state.get(o.id),
+              body: (() => {
+                const b = scene.forestPuzzle.world.bodies.get(o.id).body;
+                return {
+                  x: b.x,
+                  y: b.y,
+                  width: b.width,
+                  height: b.height,
+                  enable: b.enable,
+                };
+              })(),
+            })),
+            beams: structuredClone(
+              scene.forestPuzzle.world.advanced.optics.beams,
+            ),
+            beamSprites:
+              scene.forestPuzzle.world.advanced.optics.view.list.length,
+            playerSize: {
+              width: body.width,
+              height: body.height,
+              scale: scene.player.visual.sprite.scaleX,
+              scaleY: scene.player.visual.sprite.scaleY,
+              visualX: scene.player.visual.sprite.x,
+              visualFeet: scene.player.visual.sprite.y,
+            },
+            x: body.center.x,
+            vx: body.velocity.x,
+            feet: body.bottom,
+            vy: body.velocity.y,
+            headContact: body.blocked.up || body.touching.up,
+            camera: {
+              x: scene.cameras.main.scrollX,
+              y: scene.cameras.main.scrollY,
+              height: scene.cameras.main.displayHeight,
+            },
+            grounded: body.blocked.down || body.touching.down,
+            element: scene.player.element,
+            animation: scene.player.animation,
+            animationFrame:
+              scene.player.visual.sprite.anims.currentFrame?.index,
+            snapshot: progress.getSnapshot(),
+            run: run.getSnapshot(),
+            attempts,
+            coins: saved.coins,
+            blocks: scene.forestPuzzle.heavyBlocks.map((block) => {
+              const b = block.body;
+              return {
+                id: block.collider.name,
+                x: b.center.x,
+                left: b.left,
+                right: b.right,
+                top: b.top,
+                bottom: b.bottom,
+                width: b.width,
+                height: b.height,
+                vx: b.velocity.x,
+                vy: b.velocity.y,
+                grounded: b.blocked.down || b.touching.down,
+                docked: scene.forestPuzzle.state.isBlockDocked(
+                  block.collider.name,
+                ),
+              };
+            }),
+            plates: scene.forestPuzzle.layout.document.objects
+              .filter((o) => o.type === 'plate')
+              .map((o) => ({
+                id: o.id,
+                solved: scene.forestPuzzle.state.isSolved(o.id),
+                texture: scene.forestPuzzle.views.get(o.id)?.getByName('art')
+                  ?.texture?.key,
+              })),
+            blockX: scene.forestPuzzle.heavyBlocks[0]?.body.center.x ?? 0,
+            plateSolved: scene.forestPuzzle.layout.blocks[0]
+              ? scene.forestPuzzle.state.isSolved(
+                  scene.forestPuzzle.layout.blocks[0].plateId,
+                )
+              : false,
+            block: scene.forestPuzzle.heavyBlocks[0]
+              ? (() => {
+                  const b = scene.forestPuzzle.heavyBlocks[0].body;
+                  return {
+                    x: b.center.x,
+                    top: b.top,
+                    bottom: b.bottom,
+                    width: b.width,
+                    height: b.height,
+                    vx: b.velocity.x,
+                    vy: b.velocity.y,
+                    grounded: b.blocked.down || b.touching.down,
+                  };
+                })()
+              : null,
+          };
+        },
+      };
+    </script>
+  </body>
+</html>

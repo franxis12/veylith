@@ -1,0 +1,70 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #edf5f6;
+  background: var(--game-background, #101b26);
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+.app-shell {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  height: 100dvh;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  overflow: hidden;
+}
+
+.game-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+.game-container canvas {
+  display: block;
+}
+
+.app-status,
+.orientation-notice {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.app-status {
+  top: 45%;
+}
+.orientation-notice {
+  display: none;
+}
+
+@media (orientation: portrait) {
+  .orientation-notice {
+    display: block;
+    bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+    color: #8fc6bf;
+  }
+}

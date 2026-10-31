@@ -1,0 +1,36 @@
+{
+  "id": "stone_wall",
+  "label": "Muro destructible",
+  "category": "destructibles",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "",
+  "states": {
+    "intact": {
+      "layers": [
+        "assets/objects/destructibles/stone_wall/wall_intact.png"
+      ]
+    },
+    "wall_cracking": {
+      "animation": "wall_cracking"
+    },
+    "wall_breaking": {
+      "animation": "wall_breaking"
+    },
+    "broken": {
+      "layers": [
+        "assets/objects/destructibles/stone_wall/wall_broken.png"
+      ]
+    }
+  },
+  "components": [
+    "assets/objects/destructibles/stone_wall/wall_intact.png",
+    "assets/objects/destructibles/stone_wall/wall_broken.png"
+  ],
+  "directory": "assets/objects/destructibles/stone_wall",
+  "thumbnail": "assets/objects/destructibles/stone_wall/preview.png"
+}

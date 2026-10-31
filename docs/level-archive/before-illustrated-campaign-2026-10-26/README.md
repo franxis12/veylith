@@ -1,0 +1,1 @@
+Snapshot before illustrated campaign integration. Original canonical and editor laboratory documents, original route proofs, catalog and campaign order preserved. User progress storage and original PNGs are not changed.

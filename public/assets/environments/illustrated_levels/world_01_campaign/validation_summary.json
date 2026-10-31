@@ -1,0 +1,398 @@
+{
+  "levels": [
+    {
+      "level": "level_01",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            364,
+            556
+          ],
+          "bottomOpenFraction": 0.583,
+          "longestClearRun": 112,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            648,
+            1122
+          ],
+          "bottomOpenFraction": 0.54,
+          "longestClearRun": 256,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_02",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            222,
+            380
+          ],
+          "bottomOpenFraction": 0.88,
+          "longestClearRun": 139,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            444,
+            580
+          ],
+          "bottomOpenFraction": 0.882,
+          "longestClearRun": 120,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_03",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            267,
+            500
+          ],
+          "bottomOpenFraction": 0.918,
+          "longestClearRun": 214,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            696,
+            983
+          ],
+          "bottomOpenFraction": 0.889,
+          "longestClearRun": 254,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1120,
+            1288
+          ],
+          "bottomOpenFraction": 0.923,
+          "longestClearRun": 154,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_04",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            358,
+            657
+          ],
+          "bottomOpenFraction": 0.853,
+          "longestClearRun": 255,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            822,
+            930
+          ],
+          "bottomOpenFraction": 0.769,
+          "longestClearRun": 83,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1127,
+            1365
+          ],
+          "bottomOpenFraction": 0.933,
+          "longestClearRun": 222,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_05",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            507,
+            800
+          ],
+          "bottomOpenFraction": 0.956,
+          "longestClearRun": 280,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            873,
+            1271
+          ],
+          "bottomOpenFraction": 0.907,
+          "longestClearRun": 361,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_06",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            705,
+            912
+          ],
+          "bottomOpenFraction": 0.932,
+          "longestClearRun": 193,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_07",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            282,
+            471
+          ],
+          "bottomOpenFraction": 0.852,
+          "longestClearRun": 161,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1200,
+            1400
+          ],
+          "bottomOpenFraction": 0.945,
+          "longestClearRun": 189,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_08",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            418,
+            727
+          ],
+          "bottomOpenFraction": 0.955,
+          "longestClearRun": 295,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1089,
+            1275
+          ],
+          "bottomOpenFraction": 1,
+          "longestClearRun": 186,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_09",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            328,
+            606
+          ],
+          "bottomOpenFraction": 0.831,
+          "longestClearRun": 231,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            696,
+            841
+          ],
+          "bottomOpenFraction": 0.876,
+          "longestClearRun": 127,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1082,
+            1411
+          ],
+          "bottomOpenFraction": 0.888,
+          "longestClearRun": 292,
+          "openPassageObserved": true
+        }
+      ]
+    },
+    {
+      "level": "level_10",
+      "manifestPathsValid": true,
+      "realAlpha": true,
+      "canvasAligned": true,
+      "previewDurationMs": 4000,
+      "allSampledBottomGapsOpen": true,
+      "gapCheck": [
+        {
+          "blueprintGapX": [
+            334,
+            400
+          ],
+          "bottomOpenFraction": 0.576,
+          "longestClearRun": 38,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            586,
+            728
+          ],
+          "bottomOpenFraction": 0.873,
+          "longestClearRun": 124,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            800,
+            980
+          ],
+          "bottomOpenFraction": 0.85,
+          "longestClearRun": 153,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1164,
+            1350
+          ],
+          "bottomOpenFraction": 1,
+          "longestClearRun": 186,
+          "openPassageObserved": true
+        },
+        {
+          "blueprintGapX": [
+            1423,
+            1506
+          ],
+          "bottomOpenFraction": 0.807,
+          "longestClearRun": 67,
+          "openPassageObserved": true
+        }
+      ]
+    }
+  ],
+  "sharedAnimations": [
+    {
+      "id": "waterfall",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "water_surface",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 0,
+      "horizontalSeamPixelDifferences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "hanging_vine",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "moving_leaves",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "mist",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    },
+    {
+      "id": "magical_particles",
+      "frameCount": 8,
+      "uniqueFrames": 8,
+      "realAlpha": true,
+      "atlasPixelMaxDifference": 1,
+      "loop": "Configured forward/repeat; temporal seam is an artistic loop, not mathematically proven."
+    }
+  ],
+  "technicalResult": "passed",
+  "geometryResult": "qualitative arrangement and sampled open gaps checked; exact positions not verified",
+  "missingFiles": [],
+  "devicePerformanceTested": false,
+  "existingLevel02ArchiveComparison": {
+    "unchangedFiles": 79,
+    "changedFiles": [],
+    "missingFiles": []
+  }
+}

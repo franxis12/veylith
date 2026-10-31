@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "id": "forest-5",
+  "name": "El santuario de piedra",
+  "theme": "ancient-forest",
+  "width": 3584,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 120000,
+    "twoStarsMs": 300000
+  },
+  "puzzle": {
+    "brief": "Luz, carga y tiempo custodian el último sello de Tierra.",
+    "hints": [
+      "La salida exige tres señales que pertenecen a sistemas distintos.",
+      "La luz alimenta el transporte útil; la otra cinta puede oponerse.",
+      "Prepara una carga estable antes del viaje del reloj y conserva la alineación al regresar."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 649,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 52.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["receiver", "plate", "final-seal"]
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 3584,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 3584,
+        "height": 500
+      }
+    },
+    {
+      "id": "exit-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 260,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["receiver", "plate", "final-seal"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "mirror",
+      "type": "world",
+      "asset": "world:reflector",
+      "x": 1050,
+      "y": 410,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 40,
+        "y": 184,
+        "width": 176,
+        "height": 56
+      },
+      "kind": "reflector",
+      "behavior": {
+        "kind": "reflector",
+        "orientation": "ne",
+        "pushable": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "id": "beam",
+      "type": "world",
+      "asset": "world:beam_emitter",
+      "x": 1478,
+      "y": 512,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "kind": "beam_emitter",
+      "behavior": {
+        "kind": "beamEmitter",
+        "direction": "left",
+        "range": 2800,
+        "maxBounces": 8,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 31,
+        "y": 31,
+        "width": 2,
+        "height": 2
+      }
+    },
+    {
+      "id": "receiver",
+      "type": "world",
+      "asset": "world:light_receiver",
+      "x": 772,
+      "y": 180,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "light_receiver",
+      "behavior": {
+        "kind": "receiver",
+        "latch": false
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 96,
+        "y": 88,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 1550,
+      "y": 610,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "La piedra fija un contacto al quedar apoyada."
+    },
+    {
+      "id": "cargo",
+      "type": "block",
+      "asset": "block",
+      "x": 2450,
+      "y": 594,
+      "width": 128,
+      "height": 56,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 56
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "west-belt",
+      "type": "world",
+      "asset": "world:conveyor",
+      "x": 1688,
+      "y": 610,
+      "width": 640,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 12,
+        "y": 40,
+        "width": 616,
+        "height": 56
+      },
+      "kind": "conveyor",
+      "behavior": {
+        "kind": "conveyor",
+        "direction": -1,
+        "speed": 140,
+        "segments": 3,
+        "requires": ["receiver"],
+        "autostart": false
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 128
+      }
+    },
+    {
+      "id": "east-belt",
+      "type": "world",
+      "asset": "world:conveyor",
+      "x": 2304,
+      "y": 610,
+      "width": 640,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 12,
+        "y": 40,
+        "width": 616,
+        "height": 56
+      },
+      "kind": "conveyor",
+      "behavior": {
+        "kind": "conveyor",
+        "direction": 1,
+        "speed": 220,
+        "segments": 3,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 128
+      }
+    },
+    {
+      "id": "brake",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 2982,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "toggle",
+        "trigger": "interact",
+        "targets": ["east-belt"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "prepared-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 3040,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["plate"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "clock-door",
+      "type": "world",
+      "asset": "world:timed_door",
+      "x": 3170,
+      "y": 0,
+      "width": 264,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 100,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "kind": "timed_door",
+      "behavior": {
+        "kind": "timedDoor",
+        "openMs": 6500,
+        "warningMs": 1500,
+        "initiallyOpen": false,
+        "retrigger": "restart",
+        "requires": [],
+        "autostart": false
+      },
+      "state": "closed",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 264,
+        "height": 650
+      }
+    },
+    {
+      "id": "clock-start",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 2802,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": ["clock-door"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "final-seal",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 3412,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": ["clock-door"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "sanctuary-cue",
+      "type": "label",
+      "asset": null,
+      "x": 510,
+      "y": 60,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "SANTUARIO DE TIERRA\nLuz · Carga · Tiempo"
+    },
+    {
+      "id": "clock-cue",
+      "type": "label",
+      "asset": null,
+      "x": 2720,
+      "y": 300,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "El último sello espera detrás del reloj"
+    },
+    {
+      "id": "sanctuary-water",
+      "type": "coin",
+      "asset": "coin",
+      "x": 530,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "sanctuary-air",
+      "type": "coin",
+      "asset": "coin",
+      "x": 460,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "sanctuary-earth",
+      "type": "coin",
+      "asset": "coin",
+      "x": 390,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

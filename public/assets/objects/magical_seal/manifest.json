@@ -1,0 +1,538 @@
+{
+  "name": "Veylith — Ancient Archway Magical Seal",
+  "version": 1,
+  "type": "2D VFX asset pack",
+  "frameDimensions": {
+    "width": 512,
+    "height": 1024
+  },
+  "aspectRatio": {
+    "width": 1,
+    "height": 2,
+    "decimal": 0.5
+  },
+  "colorSpace": "sRGB",
+  "alpha": "straight / unassociated",
+  "blendMode": "normal source-over",
+  "anchor": {
+    "name": "bottom-center",
+    "normalized": {
+      "x": 0.5,
+      "y": 1
+    },
+    "pixels": {
+      "x": 256,
+      "y": 1024
+    }
+  },
+  "geometry": {
+    "mask": "vfx/arch_clip_mask.png",
+    "shape": "Rounded elliptical arch top, parallel vertical sides, flat bottom",
+    "sameMaskForEveryFrame": true,
+    "maskSvgPath": "M 17.777778 231.111111 C 17.777778 115.25 123.24 21.333333 253.333333 21.333333 C 383.43 21.333333 488.888889 115.25 488.888889 231.111111 L 488.888889 1020 L 17.777778 1020 Z",
+    "maskSupportRule": "Idle support is identical in all frames. Break and Activate may have empty regions, but never paint outside this fixed envelope."
+  },
+  "placement": {
+    "referenceFile": "Screenshot 2026-10-25 at 18.57.56.png",
+    "referenceSize": {
+      "width": 968,
+      "height": 1096
+    },
+    "topLeft": {
+      "x": 374,
+      "y": 520
+    },
+    "drawSize": {
+      "width": 288,
+      "height": 576
+    },
+    "uniformScale": 0.5625,
+    "anchorInReference": {
+      "x": 518,
+      "y": 1096
+    },
+    "visibleFlatBaseY": 1093.75,
+    "rotationDegrees": 0,
+    "note": "The screenshot crops the floor. The visible lower edge is the provisional baseline; confirm the final floor height in the Level Editor. No claim of verified floor contact below the crop."
+  },
+  "animations": {
+    "SEALED_IDLE": {
+      "folder": "idle",
+      "frameCount": 8,
+      "frameDimensions": {
+        "width": 512,
+        "height": 1024
+      },
+      "fps": 6,
+      "loop": true,
+      "durationSeconds": 1.3333333333333333,
+      "playOnce": false,
+      "holdLastFrame": false,
+      "spritesheet": "seal_idle_spritesheet.png",
+      "sheetDimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 1,
+          "file": "idle/frames/frame_01.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 2,
+          "file": "idle/frames/frame_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 3,
+          "file": "idle/frames/frame_03.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 4,
+          "file": "idle/frames/frame_04.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 5,
+          "file": "idle/frames/frame_05.png",
+          "rect": {
+            "x": 0,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 6,
+          "file": "idle/frames/frame_06.png",
+          "rect": {
+            "x": 512,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 7,
+          "file": "idle/frames/frame_07.png",
+          "rect": {
+            "x": 1024,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 8,
+          "file": "idle/frames/frame_08.png",
+          "rect": {
+            "x": 1536,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    "SEAL_BREAK": {
+      "folder": "break",
+      "frameCount": 10,
+      "frameDimensions": {
+        "width": 512,
+        "height": 1024
+      },
+      "fps": 10,
+      "loop": false,
+      "durationSeconds": 1,
+      "playOnce": true,
+      "holdLastFrame": true,
+      "spritesheet": "seal_break_spritesheet.png",
+      "sheetDimensions": {
+        "width": 2560,
+        "height": 2048
+      },
+      "columns": 5,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 1,
+          "file": "break/frames/frame_01.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 2,
+          "file": "break/frames/frame_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 3,
+          "file": "break/frames/frame_03.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 4,
+          "file": "break/frames/frame_04.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 5,
+          "file": "break/frames/frame_05.png",
+          "rect": {
+            "x": 2048,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 6,
+          "file": "break/frames/frame_06.png",
+          "rect": {
+            "x": 0,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 7,
+          "file": "break/frames/frame_07.png",
+          "rect": {
+            "x": 512,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 8,
+          "file": "break/frames/frame_08.png",
+          "rect": {
+            "x": 1024,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 9,
+          "file": "break/frames/frame_09.png",
+          "rect": {
+            "x": 1536,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 10,
+          "file": "break/frames/frame_10.png",
+          "rect": {
+            "x": 2048,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        }
+      ]
+    },
+    "SEAL_ACTIVATE": {
+      "folder": "activate",
+      "frameCount": 8,
+      "frameDimensions": {
+        "width": 512,
+        "height": 1024
+      },
+      "fps": 8,
+      "loop": false,
+      "durationSeconds": 1,
+      "playOnce": true,
+      "holdLastFrame": true,
+      "spritesheet": "seal_activate_spritesheet.png",
+      "sheetDimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 1,
+          "file": "activate/frames/frame_01.png",
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 2,
+          "file": "activate/frames/frame_02.png",
+          "rect": {
+            "x": 512,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 3,
+          "file": "activate/frames/frame_03.png",
+          "rect": {
+            "x": 1024,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 4,
+          "file": "activate/frames/frame_04.png",
+          "rect": {
+            "x": 1536,
+            "y": 0,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 5,
+          "file": "activate/frames/frame_05.png",
+          "rect": {
+            "x": 0,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 6,
+          "file": "activate/frames/frame_06.png",
+          "rect": {
+            "x": 512,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 7,
+          "file": "activate/frames/frame_07.png",
+          "rect": {
+            "x": 1024,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        },
+        {
+          "index": 8,
+          "file": "activate/frames/frame_08.png",
+          "rect": {
+            "x": 1536,
+            "y": 1024,
+            "width": 512,
+            "height": 1024
+          }
+        }
+      ]
+    }
+  },
+  "optionalEffects": {
+    "golden_rune_particles": {
+      "frameDimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": false,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "sheet": "vfx/golden_rune_particles/golden_rune_particles_sheet.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": [
+        "vfx/golden_rune_particles/frames/frame_01.png",
+        "vfx/golden_rune_particles/frames/frame_02.png",
+        "vfx/golden_rune_particles/frames/frame_03.png",
+        "vfx/golden_rune_particles/frames/frame_04.png"
+      ],
+      "suggestedLocalCenter": {
+        "x": 256,
+        "y": 470
+      },
+      "suggestedScale": 0.6,
+      "note": "Independent optional pulse/fade sprite; not baked into the seal. Place wholly within the opening when strict containment is required."
+    },
+    "turquoise_sparks": {
+      "frameDimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": false,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "sheet": "vfx/turquoise_sparks/turquoise_sparks_sheet.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": [
+        "vfx/turquoise_sparks/frames/frame_01.png",
+        "vfx/turquoise_sparks/frames/frame_02.png",
+        "vfx/turquoise_sparks/frames/frame_03.png",
+        "vfx/turquoise_sparks/frames/frame_04.png"
+      ],
+      "suggestedLocalCenter": {
+        "x": 256,
+        "y": 470
+      },
+      "suggestedScale": 0.6,
+      "note": "Independent optional pulse/fade sprite; not baked into the seal. Place wholly within the opening when strict containment is required."
+    },
+    "seal_breaking_flash": {
+      "frameDimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": false,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "sheet": "vfx/seal_breaking_flash/seal_breaking_flash_sheet.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": [
+        "vfx/seal_breaking_flash/frames/frame_01.png",
+        "vfx/seal_breaking_flash/frames/frame_02.png",
+        "vfx/seal_breaking_flash/frames/frame_03.png",
+        "vfx/seal_breaking_flash/frames/frame_04.png"
+      ],
+      "suggestedLocalCenter": {
+        "x": 256,
+        "y": 470
+      },
+      "suggestedScale": 1,
+      "note": "Independent optional pulse/fade sprite; not baked into the seal. Place wholly within the opening when strict containment is required."
+    },
+    "residual_magical_dust": {
+      "frameDimensions": {
+        "width": 128,
+        "height": 128
+      },
+      "frameCount": 4,
+      "fps": 12,
+      "loop": false,
+      "anchor": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "sheet": "vfx/residual_magical_dust/residual_magical_dust_sheet.png",
+      "columns": 4,
+      "rows": 1,
+      "frames": [
+        "vfx/residual_magical_dust/frames/frame_01.png",
+        "vfx/residual_magical_dust/frames/frame_02.png",
+        "vfx/residual_magical_dust/frames/frame_03.png",
+        "vfx/residual_magical_dust/frames/frame_04.png"
+      ],
+      "suggestedLocalCenter": {
+        "x": 256,
+        "y": 380
+      },
+      "suggestedScale": 0.6,
+      "note": "Independent optional pulse/fade sprite; not baked into the seal. Place wholly within the opening when strict containment is required."
+    }
+  },
+  "transitions": {
+    "breakBeginsWithIdleFrame": 1,
+    "breakEnds": "RGBA all zero",
+    "activateBegins": "RGBA all zero",
+    "activateEndsWithIdleFrame": 1,
+    "activateSourceBreakFrames": [
+      10,
+      9,
+      8,
+      7,
+      6,
+      4,
+      2,
+      1
+    ],
+    "recommendedIdleEntryFrame": 1
+  },
+  "previews": {
+    "idle": "preview/idle.webp",
+    "break": "preview/break.webp",
+    "activate": "preview/activate.webp",
+    "overlayStill": "preview/seal_in_original_archway.png",
+    "overlayIdle": "preview/idle_in_archway.gif",
+    "overlayBreak": "preview/break_in_archway.gif",
+    "overlayActivate": "preview/activate_in_archway.gif",
+    "allStates": "preview/seal_lifecycle_in_archway.gif"
+  },
+  "workflow": {
+    "art": "Built-in image generation; only the supplied archway and its generated magical seal were visual inputs.",
+    "registration": "Generated arched energy plates were registered to a single reference-derived matte. Fading break frames use the original full-cell registration, never individual shrinking bounds.",
+    "idle": "Three consistent generated interior poses, cyclic eased premultiplied-alpha in-betweens, eight output frames. The unused fourth generated key had drifting rune placement.",
+    "activate": "Reverse selection of the same break states to guarantee an exact Idle handoff.",
+    "architecture": "Absent from game sprites. Original screenshot appears only in validation previews.",
+    "code": "No gameplay code or collision definitions."
+  }
+}

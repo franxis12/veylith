@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "id": "forest-9",
+  "name": "La máquina dormida",
+  "theme": "ancient-forest",
+  "width": 5120,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 55000,
+    "twoStarsMs": 110000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 626,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "machine-entry",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 800,
+      "width": 512,
+      "height": 600,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 600
+      }
+    },
+    {
+      "id": "engine-steps-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 512,
+      "y": 760,
+      "width": 256,
+      "height": 640,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 640
+      }
+    },
+    {
+      "id": "engine-steps-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 768,
+      "y": 720,
+      "width": 256,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 680
+      }
+    },
+    {
+      "id": "engine-room",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1024,
+      "y": 720,
+      "width": 768,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 680
+      }
+    },
+    {
+      "id": "engine-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 1186,
+      "y": 445,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "engine-lever",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 1506,
+      "y": 600,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "kind": "interactive_lever",
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": 8,
+        "y": -54,
+        "width": 112,
+        "height": 174
+      },
+      "hint": "Rompe el sello y acciona la palanca: ambos alimentan el ascensor."
+    },
+    {
+      "id": "lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 1766.857142857143,
+      "y": 645,
+      "width": 402.2857142857143,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 25.142857142857142,
+        "y": 115,
+        "width": 352,
+        "height": 14
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "requires": ["engine-wall", "engine-lever"],
+        "autostart": false,
+        "travelX": 0,
+        "travelY": -320,
+        "speed": 95,
+        "mode": "pingpong"
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 402.2857142857143,
+        "height": 256
+      },
+      "hint": "El ascensor vuelve: espera en el borde y sube cuando llegue."
+    },
+    {
+      "id": "heavy-block",
+      "type": "block",
+      "asset": "block",
+      "x": 2334.0,
+      "y": 254.0,
+      "width": 192,
+      "height": 186,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 6,
+        "width": 192,
+        "height": 180
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 2872,
+      "y": 528,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Arriba, encaja el bloque para extender el puente del taller."
+    },
+    {
+      "id": "workshop-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 3600.4752475247524,
+      "y": 295,
+      "width": 648.8712871287129,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 111.52475247524752,
+        "y": 145,
+        "width": 512,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["plate"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 648.8712871287129,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "machine-exit",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 4224,
+      "y": 440,
+      "width": 896,
+      "height": 960,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 896,
+        "height": 960
+      }
+    },
+    {
+      "id": "lift-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 3290,
+      "y": 210,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 4732.5,
+      "y": 164,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["engine-wall", "engine-lever", "plate"]
+    },
+    {
+      "id": "machine-pool",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 1792,
+      "y": 960,
+      "width": 2432,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 2432,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 2432,
+        "height": 360
+      },
+      "hint": "Tierra se hunde. Cruza por las plataformas."
+    },
+    {
+      "id": "workshop-sign",
+      "type": "label",
+      "asset": null,
+      "x": 2540,
+      "y": 140,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "El contrapeso abre el paso.\nEmpuja el bloque hacia la placa."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 739.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-4",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1069,
+      "y": 659.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-4",
+      "type": "decoration",
+      "asset": "column",
+      "x": 1642,
+      "y": 360,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-8",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 2221,
+      "y": 379.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-8",
+      "type": "decoration",
+      "asset": "column",
+      "x": 3562,
+      "y": 80,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-12",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 4269,
+      "y": 379.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-12",
+      "type": "decoration",
+      "asset": "column",
+      "x": 4970,
+      "y": 80,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "upper-workshop",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2176,
+      "y": 440,
+      "width": 640,
+      "height": 960,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 960
+      }
+    },
+    {
+      "id": "plate-recess",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2816,
+      "y": 568,
+      "width": 384,
+      "height": 832,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 832
+      }
+    },
+    {
+      "id": "plate-far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3136,
+      "y": 440,
+      "width": 640,
+      "height": 960,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 576,
+        "height": 960
+      }
+    }
+  ]
+}

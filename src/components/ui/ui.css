@@ -1,0 +1,728 @@
+:root {
+  --gold: #e9cb83;
+  --ink: #062d35;
+}
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+button:focus-visible {
+  outline: 3px solid #fff1b3;
+  outline-offset: 3px;
+}
+button:disabled {
+  cursor: default;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.menu-screen {
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
+  overflow: auto;
+  padding: max(16px, env(safe-area-inset-top))
+    max(24px, env(safe-area-inset-right)) max(16px, env(safe-area-inset-bottom))
+    max(24px, env(safe-area-inset-left));
+  background: #07343a;
+}
+.screen-background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.menu-screen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(#021d2730, #021d27a8);
+  z-index: -1;
+  pointer-events: none;
+}
+.main-menu {
+  display: grid;
+  place-items: center;
+}
+.menu-content {
+  width: min(580px, 90vw);
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+}
+.menu-content h1 {
+  margin: 0;
+  width: min(100%, 520px);
+  font:
+    bold 64px Georgia,
+    serif;
+  color: var(--gold);
+}
+.menu-content h1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 24vh;
+  object-fit: contain;
+}
+.menu-subtitle {
+  margin: 0 0 12px;
+  letter-spacing: 0.12em;
+  text-shadow: 0 2px 5px #000;
+}
+.menu-actions {
+  display: grid;
+  width: 250px;
+  gap: 8px;
+}
+.menu-caption {
+  margin: 4px 0 0;
+  color: #e5eddb;
+  font-size: 13px;
+  text-shadow: 0 2px 3px #000;
+}
+.menu-crystals {
+  width: 170px;
+  height: auto;
+  max-height: 9vh;
+  object-fit: contain;
+}
+.menu-wallet {
+  position: absolute;
+  top: max(20px, env(safe-area-inset-top));
+  right: max(28px, env(safe-area-inset-right));
+  background: #04242cbb;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+.art-button {
+  position: relative;
+  isolation: isolate;
+  border: 0;
+  color: #fff6d6;
+  min-height: 48px;
+  min-width: 48px;
+  background: transparent;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 14px;
+  padding: 12px 22px;
+  font:
+    bold 16px Arial,
+    sans-serif;
+  cursor: pointer;
+  touch-action: manipulation;
+  text-shadow: 0 2px 3px #000;
+}
+.button-skin {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  object-fit: fill;
+  pointer-events: none;
+}
+.button-label {
+  position: relative;
+  z-index: 1;
+}
+.skin-pressed,
+.skin-disabled {
+  opacity: 0;
+}
+.art-button:not(:disabled):active .skin-pressed,
+.art-button[data-held='true']:not(:disabled) .skin-pressed {
+  opacity: 1;
+}
+.art-button:disabled .skin-disabled {
+  opacity: 1;
+}
+.art-button:disabled .skin-normal,
+.art-button:disabled .skin-pressed {
+  opacity: 0;
+}
+.coins {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  color: #ffeab1;
+  white-space: nowrap;
+}
+.coins img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+.screen-header h1 {
+  font:
+    bold 32px Georgia,
+    serif;
+  color: #fff0c9;
+  text-shadow: 0 2px 8px #000;
+  margin: 8px 0;
+}
+.screen-header .art-button {
+  min-width: 130px;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  color: var(--gold);
+  font-size: 30px;
+}
+.stars > .star-slot {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+.run-hud {
+  position: absolute;
+  inset: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px)
+    env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  pointer-events: none;
+}
+.run-topbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+}
+.run-topbar button {
+  pointer-events: auto;
+}
+.run-level {
+  display: grid;
+  gap: 3px;
+  margin-right: auto;
+  text-shadow: 0 2px 4px #000;
+  font-size: 14px;
+}
+.run-level small {
+  font-size: 11px;
+  color: #e3e8d9;
+}
+.timer-chip {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 140px;
+  height: 46px;
+  border-radius: 12px;
+  background: #14343bdd;
+}
+.timer-chip > img,
+.reward-chip > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.timer-chip time {
+  position: relative;
+  font-variant-numeric: tabular-nums;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff0bc;
+}
+.round-button {
+  width: 48px;
+  height: 48px;
+  min-height: 48px;
+  padding: 0;
+  border-radius: 50%;
+}
+.round-button .button-label {
+  z-index: -1;
+  font-size: 26px;
+}
+.element-indicator {
+  position: absolute;
+  left: 16px;
+  top: 74px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #08333cd9;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+.element-indicator img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.element-indicator span {
+  position: relative;
+  text-shadow: 0 2px 4px #000;
+}
+.element-water {
+  color: #85d9ff;
+}
+.element-fire {
+  color: #ffc19b;
+}
+.element-air {
+  color: #ceffef;
+}
+.element-earth {
+  color: #b8e094;
+}
+.gate-status {
+  position: absolute;
+  left: 50%;
+  top: 65px;
+  transform: translateX(-50%);
+  margin: 0;
+  background: #052c35de;
+  border-radius: 12px;
+  padding: 6px 16px;
+  font-size: 12px;
+}
+.gameplay-controls .touch-button {
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  width: 70px;
+  height: 70px;
+  min-height: 60px;
+  min-width: 60px;
+  background: transparent;
+}
+.touch-fallback {
+  font-size: 14px;
+  position: relative;
+}
+.gameplay-controls .touch-button:active {
+  background: transparent;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: #00141eb8;
+  display: grid;
+  place-items: center;
+  padding: max(12px, env(safe-area-inset-top))
+    max(18px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom))
+    max(18px, env(safe-area-inset-left));
+}
+.run-dialog {
+  position: relative;
+  width: min(540px, 100%);
+  max-height: 100%;
+  border-radius: 24px;
+  background: #063b45;
+  overflow: auto;
+  outline: none;
+}
+.panel-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.dialog-content {
+  position: relative;
+  padding: 38px 42px;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+.dialog-content h2 {
+  font:
+    bold 30px Georgia,
+    serif;
+  color: #ffdf98;
+  margin: 0;
+}
+.dialog-level {
+  color: #d6e2d7;
+  font-size: 13px;
+  margin: 0;
+}
+.dialog-content .stars > .star-slot {
+  width: 52px;
+  height: 52px;
+}
+.result-times {
+  display: flex;
+  gap: 40px;
+  font-size: 12px;
+}
+.result-times span {
+  display: grid;
+  gap: 3px;
+}
+.result-times strong {
+  font-variant-numeric: tabular-nums;
+  font-size: 20px;
+}
+.record-status {
+  color: #ffe2a2;
+  font-size: 13px;
+  margin: 0;
+  min-height: 15px;
+}
+.reward-chip {
+  position: relative;
+  width: 200px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+}
+.reward-chip span {
+  position: relative;
+  font-weight: bold;
+  color: #ffe5a2;
+}
+.reward-note {
+  font-size: 11px;
+  color: #d0dfd5;
+  margin: 0;
+}
+.dialog-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+  margin-top: 8px;
+}
+.dialog-actions .art-button {
+  font-size: 14px;
+  padding: 10px 12px;
+}
+.pause-time {
+  margin: 16px 0;
+  font-variant-numeric: tabular-nums;
+}
+/* The pause PNG already supplies its frame and opaque interior.
+   Scroll only inside its inner rim, keeping the artwork fixed and uncovered. */
+.run-dialog.run-dialog--paused {
+  width: min(600px, 100%);
+  height: min(450px, 100%);
+  background: transparent;
+  border-radius: 0;
+  overflow: hidden;
+}
+.run-dialog--paused .dialog-content {
+  position: absolute;
+  inset: 12% 11%;
+  padding: 6px;
+  grid-template-columns: minmax(0, 1fr);
+  align-content: safe center;
+  gap: 6px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.run-dialog--paused .dialog-content > * {
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.run-dialog--paused .dialog-actions {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 4px;
+  gap: 6px;
+}
+.run-dialog--paused .art-button {
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.run-dialog--paused .pause-time {
+  margin: 4px 0;
+}
+@media (max-height: 500px) {
+  .run-dialog--paused .dialog-content {
+    padding: 4px 6px;
+    gap: 2px;
+  }
+  .run-dialog--paused .pause-time {
+    margin: 0;
+  }
+  .run-dialog--paused .dialog-actions {
+    margin-top: 0;
+    gap: 4px;
+  }
+}
+.loading-screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #092b36ed;
+  padding: 24px;
+  text-align: center;
+}
+.loading-screen p {
+  max-width: 600px;
+  overflow-wrap: anywhere;
+}
+.storage-notice {
+  position: absolute;
+  bottom: max(4px, env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 90%;
+  background: #492f16ed;
+  color: #fff0cc;
+  border-radius: 8px;
+  padding: 6px 12px;
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+  pointer-events: none;
+}
+@media (max-height: 500px) {
+  .menu-content {
+    gap: 5px;
+  }
+  .menu-content h1 img {
+    max-height: 25vh;
+  }
+  .menu-subtitle {
+    margin: 0 0 6px;
+    font-size: 13px;
+  }
+  .menu-actions {
+    width: 230px;
+    gap: 5px;
+  }
+  .menu-crystals {
+    max-height: 8vh;
+  }
+  .menu-caption {
+    font-size: 11px;
+  }
+  .screen-header h1 {
+    font-size: 26px;
+  }
+  .run-topbar {
+    padding: 6px 8px;
+    gap: 6px;
+  }
+  .run-level {
+    font-size: 11px;
+    max-width: 190px;
+  }
+  .timer-chip {
+    width: 105px;
+    height: 44px;
+  }
+  .timer-chip time {
+    font-size: 16px;
+  }
+  .run-topbar .coins {
+    font-size: 12px;
+  }
+  .run-topbar .coins img {
+    width: 23px;
+    height: 23px;
+  }
+  .element-indicator {
+    top: 62px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+    font-size: 10px;
+  }
+  .run-dialog {
+    width: min(560px, 100%);
+  }
+  .dialog-content {
+    padding: 38px 46px;
+    gap: 2px;
+  }
+  .dialog-content h2 {
+    font-size: 22px;
+  }
+  .dialog-content .stars > .star-slot {
+    width: 32px;
+    height: 32px;
+  }
+  .result-times strong {
+    font-size: 16px;
+  }
+  .reward-chip {
+    height: 32px;
+  }
+  .dialog-actions {
+    margin-top: 2px;
+    gap: 4px;
+  }
+  .dialog-actions .art-button {
+    min-height: 44px;
+  }
+  .gameplay-controls .touch-button {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (orientation: portrait) {
+  .screen-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .run-level {
+    max-width: 95px;
+  }
+  .run-topbar .coins {
+    display: none;
+  }
+  .orientation-notice {
+    z-index: 5;
+    background: #061f2de8;
+    font-size: 12px;
+  }
+}
+
+.forest-objective {
+  max-width: min(650px, 74vw);
+  text-align: center;
+}
+
+.star-slot {
+  display: inline-block;
+  position: relative;
+  flex: 0 0 auto;
+}
+.star-slot > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ui-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+.timer-chip time {
+  display: flex;
+  align-items: center;
+}
+.record-ribbon {
+  position: absolute;
+  inset: -6px -18px;
+  width: calc(100% + 36px);
+  height: calc(100% + 12px);
+  z-index: -1;
+}
+.record-status {
+  isolation: isolate;
+  margin: 8px 0;
+}
+.options-dialog {
+  position: relative;
+  isolation: isolate;
+  border: 0;
+  padding: 32px;
+}
+.options-dialog > .panel-art {
+  z-index: -1;
+}
+.options-button.art-button,
+.options-dialog .art-button {
+  border: 0;
+  background: transparent;
+}
+.options-button .button-label {
+  font-size: inherit;
+}
+
+/* Keep dynamic labels inside the supplied panel's decorative frame. */
+.dialog-content {
+  padding-top: 64px;
+  padding-bottom: 58px;
+}
+.result-times > span {
+  position: relative;
+}
+.result-times .ui-icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -20px;
+  top: 0;
+}
+.options-backdrop {
+  overflow: auto;
+  align-items: safe center;
+}
+.options-dialog {
+  max-height: none;
+  overflow: visible;
+  padding: 72px 60px;
+}
+@media (max-height: 500px) {
+  .dialog-content {
+    padding-top: 48px;
+    padding-bottom: 46px;
+  }
+  .options-dialog {
+    padding: 60px 48px;
+  }
+}
+
+.puzzle-hints {
+  pointer-events: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.puzzle-hints button {
+  min-height: 44px;
+  padding: 8px 14px;
+  color: #f6e9ca;
+  background: #273e37;
+  border: 1px solid #ac9861;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.puzzle-hint-panel {
+  width: 100%;
+  max-width: 580px;
+  max-height: 180px;
+  overflow: auto;
+  padding: 10px;
+  background: #122a24f2;
+  color: #fff6df;
+  border-radius: 10px;
+}
+.puzzle-hint-panel ol {
+  padding-left: 22px;
+  margin: 4px 0;
+}
+.puzzle-hint-panel li {
+  margin-bottom: 7px;
+}

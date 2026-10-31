@@ -1,0 +1,36 @@
+{
+  "id": "disappearing_platform",
+  "label": "Plataforma evanescente",
+  "category": "platforms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    300
+  ],
+  "notes": "",
+  "states": {
+    "solid": {
+      "layers": [
+        "assets/objects/platforms/disappearing_platform/platform_solid.png"
+      ]
+    },
+    "hidden": {
+      "layers": [
+        "assets/objects/platforms/disappearing_platform/platform_hidden.png"
+      ]
+    },
+    "platform_disappearing": {
+      "animation": "platform_disappearing"
+    },
+    "platform_appearing": {
+      "animation": "platform_appearing"
+    }
+  },
+  "components": [
+    "assets/objects/platforms/disappearing_platform/platform_solid.png",
+    "assets/objects/platforms/disappearing_platform/platform_hidden.png"
+  ],
+  "directory": "assets/objects/platforms/disappearing_platform",
+  "thumbnail": "assets/objects/platforms/disappearing_platform/preview.png"
+}

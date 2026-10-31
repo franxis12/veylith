@@ -1,0 +1,35 @@
+{
+  "id": "mechanical_elevator",
+  "label": "Ascensor mecánico",
+  "category": "platforms",
+  "width": 1024,
+  "height": 512,
+  "anchor": [
+    512,
+    230
+  ],
+  "notes": "Translate the complete object in world space. The platform collision top is y=230.",
+  "states": {
+    "idle": {
+      "layers": [
+        "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png"
+      ]
+    },
+    "elevator_gears": {
+      "animation": "elevator_gears"
+    },
+    "elevator_activated": {
+      "animation": "elevator_activated"
+    }
+  },
+  "components": [
+    "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+    "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png"
+  ],
+  "directory": "assets/objects/platforms/mechanical_elevator",
+  "defaultBack": [
+    "assets/objects/platforms/mechanical_elevator/elevator_platform.png"
+  ],
+  "thumbnail": "assets/objects/platforms/mechanical_elevator/preview.png"
+}

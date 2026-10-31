@@ -1,0 +1,158 @@
+.options-button,
+.options-dialog button,
+.options-dialog select {
+  min-height: 44px;
+  border: 1px solid #79948d;
+  border-radius: 9px;
+  background: #123d42;
+  color: #fff6dc;
+  padding: 8px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+.options-button {
+  pointer-events: auto;
+  white-space: nowrap;
+  font-size: 14px;
+}
+.options-button span {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.options-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: max(12px, env(safe-area-inset-top))
+    max(16px, env(safe-area-inset-right)) max(12px, env(safe-area-inset-bottom))
+    max(16px, env(safe-area-inset-left));
+  background: #021a25d9;
+}
+.options-dialog {
+  width: min(720px, 100%);
+  max-height: 100%;
+  overflow: auto;
+  overscroll-behavior: contain;
+  border: 1px solid #b7aa72;
+  border-radius: 16px;
+  background: #0c2d35;
+  padding: 20px;
+  box-shadow: 0 12px 50px #0008;
+}
+.options-dialog header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.options-dialog h2 {
+  margin: 0;
+  color: #ffe0a1;
+  font:
+    bold 28px Georgia,
+    serif;
+}
+.options-dialog h3 {
+  margin: 0 0 12px;
+  color: #f4dc9b;
+}
+.options-dialog h4 {
+  margin: 18px 0 8px;
+}
+.options-dialog .options-close {
+  font-size: 26px;
+  width: 44px;
+  padding: 0;
+}
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+.options-grid section {
+  border: 1px solid #45636a;
+  border-radius: 10px;
+  padding: 16px;
+}
+.options-grid .controls-options {
+  grid-column: 1 / -1;
+}
+.options-dialog label {
+  display: grid;
+  gap: 8px;
+}
+.options-dialog select {
+  width: 100%;
+}
+.volume-label {
+  margin-top: 12px;
+  grid-template-columns: 1fr auto;
+}
+.volume-label input {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  accent-color: #e9cb83;
+}
+.gesture-guide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+.gesture-guide strong {
+  color: #c7e9d8;
+}
+.options-dialog p,
+.keyboard-guide {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.options-dialog p {
+  margin: 6px 0 0;
+}
+.glide-guide {
+  grid-column: 1 / -1;
+  color: #b7cbd1;
+}
+.keyboard-guide {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 20px;
+  padding-left: 18px;
+  margin-bottom: 0;
+}
+.menu-wallet {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+@media (max-height: 500px) {
+  .options-dialog {
+    padding: 12px 18px;
+  }
+  .options-grid {
+    gap: 12px;
+  }
+  .options-grid section {
+    padding: 12px;
+  }
+  .options-dialog h2 {
+    font-size: 23px;
+  }
+  .options-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .options-grid,
+  .gesture-guide,
+  .keyboard-guide {
+    grid-template-columns: 1fr;
+  }
+}

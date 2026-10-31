@@ -1,0 +1,499 @@
+{
+  "version": 1,
+  "id": "forest-9",
+  "name": "Equilibrio elemental",
+  "theme": "ancient-forest",
+  "width": 2592,
+  "height": 972,
+  "fallLimit": 963,
+  "cameraZoom": 0.8,
+  "background": {
+    "sky": false,
+    "forest": false,
+    "foreground": false
+  },
+  "timer": {
+    "threeStarsMs": 55000,
+    "twoStarsMs": 120000
+  },
+  "puzzle": {
+    "brief": "Alimenta la polea y carga los dos pesos para elevar el contrapeso.",
+    "hints": [
+      "La placa da energía, pero la polea también necesita suficiente peso.",
+      "Una piedra no basta para mantener elevado el contrapeso mientras tú lo pisas. La pila puede moverse empujando su base.",
+      "Salta el primer bloque y empújalo a su placa izquierda. Luego empuja la pila completa sobre la polea del hueco; retrocede para dejar bajar la carga y usa el contrapeso elevado como escalón al arco."
+    ]
+  },
+  "objects": [
+    {
+      "id": "illustrated-world",
+      "type": "illustration",
+      "asset": null,
+      "x": 0,
+      "y": 0,
+      "width": 2592,
+      "height": 972,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 2592,
+        "height": 972
+      },
+      "sceneId": "campaign_level_06",
+      "layers": ["background", "static_world", "foreground"],
+      "overlays": [
+        {
+          "id": "canopy_vine",
+          "animation": "hanging_vine",
+          "x": 145,
+          "y": 65,
+          "width": 46,
+          "height": 92,
+          "z": 40,
+          "opacity": 0.85,
+          "phase": 0,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "left_leaves",
+          "animation": "moving_leaves",
+          "x": 260,
+          "y": 150,
+          "width": 85,
+          "height": 85,
+          "z": 40,
+          "opacity": 0.65,
+          "phase": 0,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "right_leaves",
+          "animation": "moving_leaves",
+          "x": 1430,
+          "y": 95,
+          "width": 64,
+          "height": 64,
+          "z": 40,
+          "opacity": 0.5,
+          "phase": 4,
+          "fps": 6,
+          "visible": true
+        },
+        {
+          "id": "ground_mist",
+          "animation": "mist",
+          "x": 620,
+          "y": 525,
+          "width": 420,
+          "height": 105,
+          "z": 5,
+          "opacity": 0.18,
+          "phase": 1,
+          "fps": 4,
+          "visible": true
+        },
+        {
+          "id": "forest_motes",
+          "animation": "magical_particles",
+          "x": 1075,
+          "y": 120,
+          "width": 100,
+          "height": 100,
+          "z": 40,
+          "opacity": 0.25,
+          "phase": 3,
+          "fps": 4,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "id": "start-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 0,
+      "y": 750,
+      "width": 337.5,
+      "height": 222,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 337.5,
+        "height": 222,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "west-hollow",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 337.5,
+      "y": 840,
+      "width": 225,
+      "height": 132,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 225,
+        "height": 132,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "west-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 562.5,
+      "y": 705,
+      "width": 514.5,
+      "height": 267,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 514.5,
+        "height": 267,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "middle-shelf",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1147.5,
+      "y": 577.5,
+      "width": 274.5,
+      "height": 42,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 274.5,
+        "height": 42
+      }
+    },
+    {
+      "id": "east-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1425,
+      "y": 705,
+      "width": 502.5,
+      "height": 267,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 502.5,
+        "height": 267,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "east-hollow",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 1927.5,
+      "y": 832.5,
+      "width": 322.5,
+      "height": 139.5,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 322.5,
+        "height": 139.5,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "exit-bank",
+      "type": "boxCollider",
+      "asset": null,
+      "x": 2250,
+      "y": 525,
+      "width": 342,
+      "height": 447,
+      "rotation": 0,
+      "visible": false,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 342,
+        "height": 447,
+        "playerCollision": {
+          "top": true,
+          "bottom": true,
+          "left": true,
+          "right": true
+        }
+      }
+    },
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 119,
+      "y": 576,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "power-plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 600,
+      "y": 687,
+      "width": 97.5,
+      "height": 18,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 16.5,
+        "width": 97.5,
+        "height": 1.5
+      },
+      "requiredWeight": 1,
+      "hint": "Encaja el bloque asignado sobre esta placa."
+    },
+    {
+      "id": "power-weight",
+      "type": "block",
+      "asset": "block",
+      "x": 750,
+      "y": 555,
+      "width": 97.5,
+      "height": 150,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 97.5,
+        "height": 150
+      },
+      "plateId": "power-plate"
+    },
+    {
+      "id": "lower-weight",
+      "type": "block",
+      "asset": "block",
+      "x": 975,
+      "y": 525,
+      "width": 48,
+      "height": 180,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 180
+      },
+      "plateId": ""
+    },
+    {
+      "id": "upper-weight",
+      "type": "block",
+      "asset": "block",
+      "x": 975,
+      "y": 420,
+      "width": 48,
+      "height": 105,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 48,
+        "height": 105
+      },
+      "plateId": ""
+    },
+    {
+      "id": "balance",
+      "type": "world",
+      "asset": "world:pulley_platform",
+      "x": 1076.0176991150443,
+      "y": 685.0884955752213,
+      "width": 67.96460176991151,
+      "height": 33.982300884955755,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 3.9823008849557526,
+        "y": 19.911504424778762,
+        "width": 60,
+        "height": 24
+      },
+      "kind": "pulley_platform",
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 60,
+        "height": 24
+      },
+      "behavior": {
+        "kind": "pulley",
+        "counterweightId": "counterweight",
+        "travelY": 225,
+        "speed": 100,
+        "mode": "weight",
+        "threshold": 1,
+        "requires": ["power-plate"],
+        "autostart": false
+      },
+      "hint": ""
+    },
+    {
+      "id": "counterweight",
+      "type": "world",
+      "asset": "world:pulley_counterweight",
+      "x": 2003.25,
+      "y": 753.1875,
+      "width": 156,
+      "height": 156,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 29.25,
+        "y": 26.8125,
+        "width": 97.5,
+        "height": 37.5
+      },
+      "kind": "pulley_counterweight",
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 97.5,
+        "height": 37.5
+      },
+      "behavior": {
+        "kind": "pulleyWeight",
+        "mass": 3
+      },
+      "hint": ""
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2343,
+      "y": 330,
+      "width": 174,
+      "height": 195,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 37.5,
+        "y": 190.5,
+        "width": 99,
+        "height": 9
+      },
+      "requires": ["power-plate"]
+    },
+    {
+      "id": "lift-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1230,
+      "y": 517.5,
+      "width": 36,
+      "height": 36,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36
+      },
+      "value": 5
+    }
+  ]
+}

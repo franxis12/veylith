@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "id": "lab-energy-barrier",
+  "name": "Laboratorio · Barrera de energía",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "label",
+      "asset": null,
+      "x": 100,
+      "y": 95,
+      "width": 1100,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "Poder alterna la barrera. Activa bloquea al jugador y proyectiles. Desactivada permite pasar. No causa daño."
+    },
+    {
+      "id": "energy-barrier",
+      "asset": "world:energy_barrier",
+      "x": 600,
+      "y": 224,
+      "width": 512,
+      "height": 512,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 139,
+        "y": 96,
+        "width": 234,
+        "height": 330
+      },
+      "kind": "energy_barrier",
+      "effect": {
+        "enabled": false,
+        "x": 69.5,
+        "y": 48,
+        "width": 117,
+        "height": 165
+      },
+      "behavior": {
+        "kind": "barrier",
+        "requires": [],
+        "autostart": true
+      },
+      "state": "barrier_active",
+      "hint": "La señal activa su colisión. Espera a que el hueco quede libre para materializarse.",
+      "type": "world"
+    },
+    {
+      "id": "barrier-switch",
+      "asset": "world:fire_switch",
+      "x": 160,
+      "y": 522,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 28,
+        "y": 76,
+        "width": 72,
+        "height": 44
+      },
+      "kind": "fire_switch",
+      "effect": {
+        "enabled": true,
+        "x": -45,
+        "y": -40,
+        "width": 218,
+        "height": 168
+      },
+      "behavior": {
+        "kind": "switch",
+        "action": "toggle",
+        "trigger": "interact",
+        "targets": ["energy-barrier"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Envía activar, desactivar o alternar a los IDs elegidos; también emite su propia señal.",
+      "type": "world"
+    }
+  ]
+}

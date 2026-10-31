@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "id": "forest-2",
+  "name": "La cantera hundida",
+  "theme": "ancient-forest",
+  "width": 4608,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 45000,
+    "twoStarsMs": 90000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 386,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "quarry-rim",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 560,
+      "width": 1024,
+      "height": 840,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 840
+      }
+    },
+    {
+      "id": "rim-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 666,
+      "y": 285,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "heavy-block",
+      "type": "block",
+      "asset": "block",
+      "x": 804.0,
+      "y": 374.0,
+      "width": 192,
+      "height": 186,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 6,
+        "width": 192,
+        "height": 180
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 1720,
+      "y": 888,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Empuja el bloque por el borde. Baja tras él y llévalo a la placa."
+    },
+    {
+      "id": "quarry-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 2020,
+      "y": 524,
+      "width": 180,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 50,
+        "y": 0,
+        "width": 80,
+        "height": 276
+      },
+      "initiallyOpen": false,
+      "requires": ["plate"]
+    },
+    {
+      "id": "return-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2304,
+      "y": 760,
+      "width": 256,
+      "height": 640,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 640
+      }
+    },
+    {
+      "id": "return-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2560,
+      "y": 720,
+      "width": 256,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 680
+      }
+    },
+    {
+      "id": "return-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2816,
+      "y": 680,
+      "width": 256,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 720
+      }
+    },
+    {
+      "id": "return-4",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3072,
+      "y": 640,
+      "width": 256,
+      "height": 760,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 760
+      }
+    },
+    {
+      "id": "return-5",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3328,
+      "y": 600,
+      "width": 256,
+      "height": 800,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 800
+      }
+    },
+    {
+      "id": "quarry-exit",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3584,
+      "y": 600,
+      "width": 1024,
+      "height": 800,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 800
+      }
+    },
+    {
+      "id": "root-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 3936,
+      "y": 325,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "torch-bonus",
+      "type": "coin",
+      "asset": "coin",
+      "x": 3380,
+      "y": 370,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 4252.5,
+      "y": 324,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["rim-wall", "plate", "root-wall"]
+    },
+    {
+      "id": "drop-help",
+      "type": "label",
+      "asset": null,
+      "x": 840,
+      "y": 250,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "La piedra debe bajar contigo.\nLa placa está en la cantera."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 499.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-1",
+      "type": "decoration",
+      "asset": "column",
+      "x": 874,
+      "y": 200,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-5",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1069,
+      "y": 739.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-5",
+      "type": "decoration",
+      "asset": "column",
+      "x": 2154,
+      "y": 440,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-12",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 3629,
+      "y": 539.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-12",
+      "type": "decoration",
+      "asset": "column",
+      "x": 4458,
+      "y": 240,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "quarry-basin",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1024,
+      "y": 800,
+      "width": 640,
+      "height": 600,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 600
+      }
+    },
+    {
+      "id": "plate-recess",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1664,
+      "y": 928,
+      "width": 384,
+      "height": 472,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 472
+      }
+    },
+    {
+      "id": "plate-far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1984,
+      "y": 800,
+      "width": 384,
+      "height": 600,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 600
+      }
+    }
+  ]
+}

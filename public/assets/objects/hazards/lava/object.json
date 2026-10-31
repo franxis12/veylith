@@ -1,0 +1,42 @@
+{
+  "id": "lava",
+  "label": "Lava modular",
+  "category": "hazards",
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    0,
+    80
+  ],
+  "notes": "Tile on a 256 px grid. Surface line y=80. Full body tile repeats in both axes. Top body and surface repeat horizontally. Material tiles intentionally fill their rectangular canvas; water has translucent fill.",
+  "states": {
+    "surface": {
+      "animation": "lava_surface"
+    },
+    "burning_loop": {
+      "animation": "lava_surface"
+    },
+    "fire_particles": {
+      "animation": "fire_particles"
+    },
+    "extinguished": {
+      "layers": [
+        "assets/objects/hazards/lava/lava_extinguished.png"
+      ]
+    },
+    "extinguishing": {
+      "animation": "lava_extinguishing"
+    }
+  },
+  "components": [
+    "assets/objects/hazards/lava/lava_body_tile.png",
+    "assets/objects/hazards/lava/lava_top_body_tile.png",
+    "assets/objects/hazards/lava/lava_cooled_body_tile.png",
+    "assets/objects/hazards/lava/lava_extinguished.png"
+  ],
+  "directory": "assets/objects/hazards/lava",
+  "defaultBack": [
+    "assets/objects/hazards/lava/lava_top_body_tile.png"
+  ],
+  "thumbnail": "assets/objects/hazards/lava/preview.png"
+}

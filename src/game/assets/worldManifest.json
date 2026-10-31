@@ -1,0 +1,1640 @@
+{
+  "objects": [
+    {
+      "id": "mechanical_elevator",
+      "label": "Ascensor mecánico",
+      "category": "platforms",
+      "width": 1024,
+      "height": 512,
+      "anchor": [512, 230],
+      "notes": "Translate the complete object in world space. The platform collision top is y=230.",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+            "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png"
+          ]
+        },
+        "elevator_gears": {
+          "animation": "elevator_gears"
+        },
+        "elevator_activated": {
+          "animation": "elevator_activated"
+        }
+      },
+      "components": [
+        "assets/objects/platforms/mechanical_elevator/elevator_platform.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_idle.png"
+      ],
+      "directory": "assets/objects/platforms/mechanical_elevator",
+      "defaultBack": [
+        "assets/objects/platforms/mechanical_elevator/elevator_platform.png"
+      ],
+      "thumbnail": "assets/objects/platforms/mechanical_elevator/preview.png"
+    },
+    {
+      "id": "wind_fan",
+      "label": "Ventilador horizontal",
+      "category": "mechanisms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "Blades rotate behind the casing. Wind exits to the right.",
+      "states": {
+        "off": {
+          "layers": [
+            "assets/objects/mechanisms/wind_fan/fan_off.png",
+            "assets/objects/mechanisms/wind_fan/fan_base.png"
+          ]
+        },
+        "fan_blades": {
+          "animation": "fan_blades"
+        },
+        "fan_starting": {
+          "animation": "fan_starting"
+        },
+        "fan_stopping": {
+          "animation": "fan_stopping"
+        }
+      },
+      "components": [
+        "assets/objects/mechanisms/wind_fan/fan_base.png",
+        "assets/objects/mechanisms/wind_fan/fan_off.png"
+      ],
+      "directory": "assets/objects/mechanisms/wind_fan",
+      "defaultBack": [],
+      "defaultFront": ["assets/objects/mechanisms/wind_fan/fan_base.png"],
+      "thumbnail": "assets/objects/mechanisms/wind_fan/preview.png"
+    },
+    {
+      "id": "rotating_gear",
+      "label": "Engranaje",
+      "category": "mechanisms",
+      "width": 256,
+      "height": 256,
+      "anchor": [128, 128],
+      "notes": "",
+      "states": {
+        "idle": {
+          "layers": ["assets/objects/mechanisms/rotating_gear/gear_idle.png"]
+        },
+        "gear_rotating": {
+          "animation": "gear_rotating"
+        }
+      },
+      "components": ["assets/objects/mechanisms/rotating_gear/gear_idle.png"],
+      "directory": "assets/objects/mechanisms/rotating_gear",
+      "thumbnail": "assets/objects/mechanisms/rotating_gear/preview.png"
+    },
+    {
+      "id": "interactive_lever",
+      "label": "Palanca",
+      "category": "mechanisms",
+      "width": 256,
+      "height": 256,
+      "anchor": [128, 240],
+      "notes": "Handle pivot [128,178].",
+      "states": {
+        "off": {
+          "layers": [
+            "assets/objects/mechanisms/interactive_lever/lever_base.png",
+            "assets/objects/mechanisms/interactive_lever/lever_off.png"
+          ]
+        },
+        "on": {
+          "layers": [
+            "assets/objects/mechanisms/interactive_lever/lever_base.png",
+            "assets/objects/mechanisms/interactive_lever/lever_on.png"
+          ]
+        },
+        "lever_activate": {
+          "animation": "lever_activate"
+        },
+        "lever_deactivate": {
+          "animation": "lever_deactivate"
+        }
+      },
+      "components": [
+        "assets/objects/mechanisms/interactive_lever/lever_base.png",
+        "assets/objects/mechanisms/interactive_lever/lever_off.png",
+        "assets/objects/mechanisms/interactive_lever/lever_on.png"
+      ],
+      "directory": "assets/objects/mechanisms/interactive_lever",
+      "defaultBack": [
+        "assets/objects/mechanisms/interactive_lever/lever_base.png"
+      ],
+      "thumbnail": "assets/objects/mechanisms/interactive_lever/preview.png"
+    },
+    {
+      "id": "lava",
+      "label": "Lava modular",
+      "category": "hazards",
+      "width": 256,
+      "height": 256,
+      "anchor": [0, 80],
+      "notes": "Tile on a 256 px grid. Surface line y=80. Full body tile repeats in both axes. Top body and surface repeat horizontally. Material tiles intentionally fill their rectangular canvas; water has translucent fill.",
+      "states": {
+        "surface": {
+          "animation": "lava_surface"
+        },
+        "burning_loop": {
+          "animation": "lava_surface"
+        },
+        "fire_particles": {
+          "animation": "fire_particles"
+        },
+        "extinguished": {
+          "layers": ["assets/objects/hazards/lava/lava_extinguished.png"]
+        },
+        "extinguishing": {
+          "animation": "lava_extinguishing"
+        }
+      },
+      "components": [
+        "assets/objects/hazards/lava/lava_body_tile.png",
+        "assets/objects/hazards/lava/lava_top_body_tile.png",
+        "assets/objects/hazards/lava/lava_cooled_body_tile.png",
+        "assets/objects/hazards/lava/lava_extinguished.png"
+      ],
+      "directory": "assets/objects/hazards/lava",
+      "defaultBack": ["assets/objects/hazards/lava/lava_top_body_tile.png"],
+      "thumbnail": "assets/objects/hazards/lava/preview.png"
+    },
+    {
+      "id": "deep_water",
+      "label": "Agua profunda",
+      "category": "hazards",
+      "width": 256,
+      "height": 256,
+      "anchor": [0, 80],
+      "notes": "Tile on a 256 px grid. Surface line y=80. Full body tile repeats in both axes. Top body and surface repeat horizontally. Material tiles intentionally fill their rectangular canvas; water has translucent fill.",
+      "states": {
+        "water_surface": {
+          "animation": "water_surface"
+        },
+        "surface_loop": {
+          "animation": "water_surface"
+        },
+        "water_bubbles": {
+          "animation": "water_bubbles"
+        },
+        "water_splash": {
+          "animation": "water_splash"
+        }
+      },
+      "components": [
+        "assets/objects/hazards/deep_water/water_body_tile.png",
+        "assets/objects/hazards/deep_water/water_top_body_tile.png"
+      ],
+      "directory": "assets/objects/hazards/deep_water",
+      "defaultBack": [
+        "assets/objects/hazards/deep_water/water_top_body_tile.png"
+      ],
+      "thumbnail": "assets/objects/hazards/deep_water/preview.png"
+    },
+    {
+      "id": "wind_tunnel",
+      "label": "Túnel de viento",
+      "category": "elemental",
+      "width": 1024,
+      "height": 512,
+      "anchor": [512, 256],
+      "notes": "Wind direction left to right; no gameplay geometry.",
+      "states": {
+        "flow": {
+          "animation": "wind_tunnel_flow"
+        },
+        "off": {
+          "layers": ["assets/objects/elemental/wind_tunnel/wind_tunnel_off.png"]
+        }
+      },
+      "components": [
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_off.png"
+      ],
+      "directory": "assets/objects/elemental/wind_tunnel",
+      "thumbnail": "assets/objects/elemental/wind_tunnel/preview.png"
+    },
+    {
+      "id": "energy_barrier",
+      "label": "Barrera mágica",
+      "category": "elemental",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "",
+      "states": {
+        "barrier_active": {
+          "animation": "barrier_active"
+        },
+        "barrier_activate": {
+          "animation": "barrier_activate"
+        },
+        "barrier_deactivate": {
+          "animation": "barrier_deactivate"
+        },
+        "inactive": {
+          "layers": [
+            "assets/objects/elemental/energy_barrier/barrier_posts.png"
+          ]
+        }
+      },
+      "components": [
+        "assets/objects/elemental/energy_barrier/barrier_posts.png"
+      ],
+      "directory": "assets/objects/elemental/energy_barrier",
+      "defaultBack": [],
+      "defaultFront": [
+        "assets/objects/elemental/energy_barrier/barrier_posts.png"
+      ],
+      "thumbnail": "assets/objects/elemental/energy_barrier/preview.png"
+    },
+    {
+      "id": "waterwheel",
+      "label": "Rueda hidráulica",
+      "category": "mechanisms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+            "assets/objects/mechanisms/waterwheel/waterwheel_idle.png"
+          ]
+        },
+        "spinning": {
+          "animation": "waterwheel_spinning"
+        }
+      },
+      "components": [
+        "assets/objects/mechanisms/waterwheel/waterwheel_support.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_idle.png"
+      ],
+      "directory": "assets/objects/mechanisms/waterwheel",
+      "defaultBack": [
+        "assets/objects/mechanisms/waterwheel/waterwheel_support.png"
+      ],
+      "thumbnail": "assets/objects/mechanisms/waterwheel/preview.png"
+    },
+    {
+      "id": "steam_boiler",
+      "label": "Caldera elemental",
+      "category": "mechanisms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "Steam emitter [256,204]. Heat is a separate additive-ready layer.",
+      "states": {
+        "cold": {
+          "layers": ["assets/objects/mechanisms/steam_boiler/boiler_body.png"]
+        },
+        "boiler_heating": {
+          "animation": "boiler_heating"
+        },
+        "boiler_steam": {
+          "animation": "boiler_steam"
+        }
+      },
+      "components": [
+        "assets/objects/mechanisms/steam_boiler/boiler_body.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png"
+      ],
+      "directory": "assets/objects/mechanisms/steam_boiler",
+      "defaultBack": ["assets/objects/mechanisms/steam_boiler/boiler_body.png"],
+      "thumbnail": "assets/objects/mechanisms/steam_boiler/preview.png"
+    },
+    {
+      "id": "retractable_bridge",
+      "label": "Puente retráctil",
+      "category": "platforms",
+      "width": 1024,
+      "height": 512,
+      "anchor": [176, 290],
+      "notes": "Collision deck extends from x=176 to x=984 at y=290. Clip to the revealed width; housing is drawn last.",
+      "states": {
+        "retracted": {
+          "layers": [
+            "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+            "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+          ]
+        },
+        "extended": {
+          "layers": [
+            "assets/objects/platforms/retractable_bridge/bridge_extended.png",
+            "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+          ]
+        },
+        "bridge_extending": {
+          "animation": "bridge_extending"
+        },
+        "bridge_retracting": {
+          "animation": "bridge_retracting"
+        }
+      },
+      "components": [
+        "assets/objects/platforms/retractable_bridge/bridge_housing.png",
+        "assets/objects/platforms/retractable_bridge/bridge_retracted.png",
+        "assets/objects/platforms/retractable_bridge/bridge_extended.png"
+      ],
+      "directory": "assets/objects/platforms/retractable_bridge",
+      "defaultBack": [],
+      "defaultFront": [
+        "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+      ],
+      "thumbnail": "assets/objects/platforms/retractable_bridge/preview.png"
+    },
+    {
+      "id": "stone_wall",
+      "label": "Muro destructible",
+      "category": "destructibles",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "",
+      "states": {
+        "intact": {
+          "layers": ["assets/objects/destructibles/stone_wall/wall_intact.png"]
+        },
+        "wall_cracking": {
+          "animation": "wall_cracking"
+        },
+        "wall_breaking": {
+          "animation": "wall_breaking"
+        },
+        "broken": {
+          "layers": ["assets/objects/destructibles/stone_wall/wall_broken.png"]
+        }
+      },
+      "components": [
+        "assets/objects/destructibles/stone_wall/wall_intact.png",
+        "assets/objects/destructibles/stone_wall/wall_broken.png"
+      ],
+      "directory": "assets/objects/destructibles/stone_wall",
+      "thumbnail": "assets/objects/destructibles/stone_wall/preview.png"
+    },
+    {
+      "id": "disappearing_platform",
+      "label": "Plataforma evanescente",
+      "category": "platforms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 300],
+      "notes": "",
+      "states": {
+        "solid": {
+          "layers": [
+            "assets/objects/platforms/disappearing_platform/platform_solid.png"
+          ]
+        },
+        "hidden": {
+          "layers": [
+            "assets/objects/platforms/disappearing_platform/platform_hidden.png"
+          ]
+        },
+        "platform_disappearing": {
+          "animation": "platform_disappearing"
+        },
+        "platform_appearing": {
+          "animation": "platform_appearing"
+        }
+      },
+      "components": [
+        "assets/objects/platforms/disappearing_platform/platform_solid.png",
+        "assets/objects/platforms/disappearing_platform/platform_hidden.png"
+      ],
+      "directory": "assets/objects/platforms/disappearing_platform",
+      "thumbnail": "assets/objects/platforms/disappearing_platform/preview.png"
+    },
+    {
+      "id": "timed_door",
+      "label": "Puerta temporizada",
+      "category": "mechanisms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "Opening collider [174,155,167,288]. Gate is clipped at the lintel; hidden gate pixels are not discarded source art.",
+      "states": {
+        "closed": {
+          "layers": [
+            "assets/objects/mechanisms/timed_door/door_closed.png",
+            "assets/objects/mechanisms/timed_door/door_frame.png"
+          ]
+        },
+        "open": {
+          "layers": [
+            "assets/objects/mechanisms/timed_door/door_open.png",
+            "assets/objects/mechanisms/timed_door/door_frame.png"
+          ]
+        },
+        "door_opening": {
+          "animation": "door_opening"
+        },
+        "door_closing": {
+          "animation": "door_closing"
+        },
+        "door_warning": {
+          "animation": "door_warning"
+        }
+      },
+      "components": [
+        "assets/objects/mechanisms/timed_door/door_frame.png",
+        "assets/objects/mechanisms/timed_door/door_closed.png",
+        "assets/objects/mechanisms/timed_door/door_open.png"
+      ],
+      "directory": "assets/objects/mechanisms/timed_door",
+      "defaultBack": [],
+      "defaultFront": ["assets/objects/mechanisms/timed_door/door_frame.png"],
+      "thumbnail": "assets/objects/mechanisms/timed_door/preview.png"
+    },
+    {
+      "id": "steam_vent",
+      "label": "Salida de vapor",
+      "category": "hazards",
+      "width": 256,
+      "height": 256,
+      "anchor": [128, 240],
+      "notes": "",
+      "states": {
+        "off": {
+          "layers": ["assets/objects/hazards/steam_vent/steam_vent_base.png"]
+        },
+        "active": {
+          "animation": "steam_vent_active"
+        },
+        "warning": {
+          "animation": "steam_vent_warning"
+        },
+        "stopping": {
+          "animation": "steam_vent_stopping"
+        }
+      },
+      "components": ["assets/objects/hazards/steam_vent/steam_vent_base.png"],
+      "directory": "assets/objects/hazards/steam_vent",
+      "defaultBack": ["assets/objects/hazards/steam_vent/steam_vent_base.png"],
+      "thumbnail": "assets/objects/hazards/steam_vent/preview.png"
+    },
+    {
+      "id": "watered_plant",
+      "label": "Planta regable",
+      "category": "elemental",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "Six drawn growth stages. Fully grown leaves provide three optional one-way steps; see collider hints.",
+      "states": {
+        "seed": {
+          "layers": ["assets/objects/elemental/watered_plant/plant_seed.png"]
+        },
+        "fully_grown": {
+          "layers": [
+            "assets/objects/elemental/watered_plant/plant_fully_grown.png"
+          ]
+        },
+        "plant_growing": {
+          "animation": "plant_growing"
+        }
+      },
+      "components": [
+        "assets/objects/elemental/watered_plant/plant_seed.png",
+        "assets/objects/elemental/watered_plant/plant_fully_grown.png"
+      ],
+      "directory": "assets/objects/elemental/watered_plant",
+      "thumbnail": "assets/objects/elemental/watered_plant/preview.png"
+    },
+    {
+      "id": "floating_wooden_block",
+      "label": "Bloque flotante",
+      "category": "platforms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 390],
+      "notes": "Visual buoyancy only. Physics and world translation remain game-controlled.",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png"
+          ]
+        },
+        "wooden_block_floating": {
+          "animation": "wooden_block_floating"
+        },
+        "wooden_block_wake": {
+          "animation": "wooden_block_wake"
+        }
+      },
+      "components": [
+        "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png"
+      ],
+      "directory": "assets/objects/platforms/floating_wooden_block",
+      "thumbnail": "assets/objects/platforms/floating_wooden_block/preview.png"
+    },
+    {
+      "id": "wind_mill",
+      "label": "Molino de viento",
+      "category": "mechanisms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 480],
+      "notes": "",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/mechanisms/wind_mill/mill_base.png",
+            "assets/objects/mechanisms/wind_mill/mill_idle.png"
+          ]
+        },
+        "mill_spinning": {
+          "animation": "mill_spinning"
+        }
+      },
+      "components": [
+        "assets/objects/mechanisms/wind_mill/mill_base.png",
+        "assets/objects/mechanisms/wind_mill/mill_idle.png"
+      ],
+      "directory": "assets/objects/mechanisms/wind_mill",
+      "defaultBack": ["assets/objects/mechanisms/wind_mill/mill_base.png"],
+      "thumbnail": "assets/objects/mechanisms/wind_mill/preview.png"
+    },
+    {
+      "id": "fire_switch",
+      "label": "Interruptor de fuego",
+      "category": "elemental",
+      "width": 256,
+      "height": 256,
+      "anchor": [128, 240],
+      "notes": "",
+      "states": {
+        "unlit": {
+          "layers": [
+            "assets/objects/elemental/fire_switch/fire_switch_base.png"
+          ]
+        },
+        "active": {
+          "animation": "fire_switch_active"
+        },
+        "igniting": {
+          "animation": "fire_switch_igniting"
+        },
+        "extinguishing": {
+          "animation": "fire_switch_extinguishing"
+        }
+      },
+      "components": [
+        "assets/objects/elemental/fire_switch/fire_switch_base.png"
+      ],
+      "directory": "assets/objects/elemental/fire_switch",
+      "defaultBack": [
+        "assets/objects/elemental/fire_switch/fire_switch_base.png"
+      ],
+      "thumbnail": "assets/objects/elemental/fire_switch/preview.png"
+    },
+    {
+      "id": "elemental_bounce_pad",
+      "label": "Plataforma de rebote",
+      "category": "platforms",
+      "width": 512,
+      "height": 512,
+      "anchor": [256, 448],
+      "notes": "Top collider follows the moving plate. Spring lengths vary while their lower endpoints stay fixed.",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/platforms/elemental_bounce_pad/bounce_idle.png",
+            "assets/objects/platforms/elemental_bounce_pad/bounce_base.png"
+          ]
+        },
+        "bounce_launch": {
+          "animation": "bounce_launch"
+        }
+      },
+      "components": [
+        "assets/objects/platforms/elemental_bounce_pad/bounce_base.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_idle.png"
+      ],
+      "directory": "assets/objects/platforms/elemental_bounce_pad",
+      "defaultBack": [],
+      "defaultFront": [
+        "assets/objects/platforms/elemental_bounce_pad/bounce_base.png"
+      ],
+      "thumbnail": "assets/objects/platforms/elemental_bounce_pad/preview.png"
+    }
+  ],
+  "animations": [
+    {
+      "id": "elevator_gears",
+      "object": "mechanical_elevator",
+      "frames": [
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_01.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_02.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_03.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_04.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_05.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_06.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_07.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_gears_08.png"
+      ],
+      "spritesheet": "assets/objects/platforms/mechanical_elevator/elevator_gears_spritesheet.png",
+      "frameWidth": 1024,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/elevator_gears.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/platforms/mechanical_elevator/elevator_platform.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "elevator_activated",
+      "object": "mechanical_elevator",
+      "frames": [
+        "assets/objects/platforms/mechanical_elevator/elevator_activated_01.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_activated_02.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_activated_03.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_activated_04.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_activated_05.png",
+        "assets/objects/platforms/mechanical_elevator/elevator_activated_06.png"
+      ],
+      "spritesheet": "assets/objects/platforms/mechanical_elevator/elevator_activated_spritesheet.png",
+      "frameWidth": 1024,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "elevator_gears",
+      "preview": "previews/elevator_activated.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/platforms/mechanical_elevator/elevator_platform.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "fan_blades",
+      "object": "wind_fan",
+      "frames": [
+        "assets/objects/mechanisms/wind_fan/fan_blades_01.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_02.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_03.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_04.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_05.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_06.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_07.png",
+        "assets/objects/mechanisms/wind_fan/fan_blades_08.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/wind_fan/fan_blades_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/fan_blades.gif",
+      "tile": false,
+      "note": "45 degrees per frame at 12 FPS; 3 blades avoid identical 90-degree samples. Starting ends at 205 degrees, loop starts at 270. Stop at the end of the loop cycle.",
+      "backLayers": [],
+      "frontLayers": ["assets/objects/mechanisms/wind_fan/fan_base.png"]
+    },
+    {
+      "id": "fan_starting",
+      "object": "wind_fan",
+      "frames": [
+        "assets/objects/mechanisms/wind_fan/fan_starting_01.png",
+        "assets/objects/mechanisms/wind_fan/fan_starting_02.png",
+        "assets/objects/mechanisms/wind_fan/fan_starting_03.png",
+        "assets/objects/mechanisms/wind_fan/fan_starting_04.png",
+        "assets/objects/mechanisms/wind_fan/fan_starting_05.png",
+        "assets/objects/mechanisms/wind_fan/fan_starting_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/wind_fan/fan_starting_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "fan_blades",
+      "preview": "previews/fan_starting.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": ["assets/objects/mechanisms/wind_fan/fan_base.png"]
+    },
+    {
+      "id": "fan_stopping",
+      "object": "wind_fan",
+      "frames": [
+        "assets/objects/mechanisms/wind_fan/fan_stopping_01.png",
+        "assets/objects/mechanisms/wind_fan/fan_stopping_02.png",
+        "assets/objects/mechanisms/wind_fan/fan_stopping_03.png",
+        "assets/objects/mechanisms/wind_fan/fan_stopping_04.png",
+        "assets/objects/mechanisms/wind_fan/fan_stopping_05.png",
+        "assets/objects/mechanisms/wind_fan/fan_stopping_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/wind_fan/fan_stopping_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "off",
+      "preview": "previews/fan_stopping.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": ["assets/objects/mechanisms/wind_fan/fan_base.png"]
+    },
+    {
+      "id": "gear_rotating",
+      "object": "rotating_gear",
+      "frames": [
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_01.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_02.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_03.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_04.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_05.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_06.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_07.png",
+        "assets/objects/mechanisms/rotating_gear/gear_rotating_08.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/rotating_gear/gear_rotating_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/gear_rotating.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "lever_activate",
+      "object": "interactive_lever",
+      "frames": [
+        "assets/objects/mechanisms/interactive_lever/lever_activate_01.png",
+        "assets/objects/mechanisms/interactive_lever/lever_activate_02.png",
+        "assets/objects/mechanisms/interactive_lever/lever_activate_03.png",
+        "assets/objects/mechanisms/interactive_lever/lever_activate_04.png",
+        "assets/objects/mechanisms/interactive_lever/lever_activate_05.png",
+        "assets/objects/mechanisms/interactive_lever/lever_activate_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/interactive_lever/lever_activate_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "on",
+      "preview": "previews/lever_activate.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/mechanisms/interactive_lever/lever_base.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "lever_deactivate",
+      "object": "interactive_lever",
+      "frames": [
+        "assets/objects/mechanisms/interactive_lever/lever_deactivate_01.png",
+        "assets/objects/mechanisms/interactive_lever/lever_deactivate_02.png",
+        "assets/objects/mechanisms/interactive_lever/lever_deactivate_03.png",
+        "assets/objects/mechanisms/interactive_lever/lever_deactivate_04.png",
+        "assets/objects/mechanisms/interactive_lever/lever_deactivate_05.png",
+        "assets/objects/mechanisms/interactive_lever/lever_deactivate_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/interactive_lever/lever_deactivate_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "off",
+      "preview": "previews/lever_deactivate.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/mechanisms/interactive_lever/lever_base.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "lava_surface",
+      "object": "lava",
+      "frames": [
+        "assets/objects/hazards/lava/lava_surface_01.png",
+        "assets/objects/hazards/lava/lava_surface_02.png",
+        "assets/objects/hazards/lava/lava_surface_03.png",
+        "assets/objects/hazards/lava/lava_surface_04.png",
+        "assets/objects/hazards/lava/lava_surface_05.png",
+        "assets/objects/hazards/lava/lava_surface_06.png",
+        "assets/objects/hazards/lava/lava_surface_07.png",
+        "assets/objects/hazards/lava/lava_surface_08.png"
+      ],
+      "spritesheet": "assets/objects/hazards/lava/lava_surface_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/lava_surface.gif",
+      "tile": true,
+      "note": "",
+      "backLayers": ["assets/objects/hazards/lava/lava_top_body_tile.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "fire_particles",
+      "object": "lava",
+      "frames": [
+        "assets/objects/hazards/lava/fire_particles_01.png",
+        "assets/objects/hazards/lava/fire_particles_02.png",
+        "assets/objects/hazards/lava/fire_particles_03.png",
+        "assets/objects/hazards/lava/fire_particles_04.png",
+        "assets/objects/hazards/lava/fire_particles_05.png",
+        "assets/objects/hazards/lava/fire_particles_06.png",
+        "assets/objects/hazards/lava/fire_particles_07.png",
+        "assets/objects/hazards/lava/fire_particles_08.png"
+      ],
+      "spritesheet": "assets/objects/hazards/lava/fire_particles_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/fire_particles.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": ["assets/objects/hazards/lava/lava_top_body_tile.png"],
+      "frontLayers": ["assets/objects/hazards/lava/lava_surface_01.png"]
+    },
+    {
+      "id": "lava_extinguishing",
+      "object": "lava",
+      "frames": [
+        "assets/objects/hazards/lava/lava_extinguishing_01.png",
+        "assets/objects/hazards/lava/lava_extinguishing_02.png",
+        "assets/objects/hazards/lava/lava_extinguishing_03.png",
+        "assets/objects/hazards/lava/lava_extinguishing_04.png",
+        "assets/objects/hazards/lava/lava_extinguishing_05.png",
+        "assets/objects/hazards/lava/lava_extinguishing_06.png"
+      ],
+      "spritesheet": "assets/objects/hazards/lava/lava_extinguishing_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "extinguished",
+      "preview": "previews/lava_extinguishing.gif",
+      "tile": true,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "water_surface",
+      "object": "deep_water",
+      "frames": [
+        "assets/objects/hazards/deep_water/water_surface_01.png",
+        "assets/objects/hazards/deep_water/water_surface_02.png",
+        "assets/objects/hazards/deep_water/water_surface_03.png",
+        "assets/objects/hazards/deep_water/water_surface_04.png",
+        "assets/objects/hazards/deep_water/water_surface_05.png",
+        "assets/objects/hazards/deep_water/water_surface_06.png",
+        "assets/objects/hazards/deep_water/water_surface_07.png",
+        "assets/objects/hazards/deep_water/water_surface_08.png"
+      ],
+      "spritesheet": "assets/objects/hazards/deep_water/water_surface_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/water_surface.gif",
+      "tile": true,
+      "note": "",
+      "backLayers": [
+        "assets/objects/hazards/deep_water/water_top_body_tile.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "water_bubbles",
+      "object": "deep_water",
+      "frames": [
+        "assets/objects/hazards/deep_water/water_bubbles_01.png",
+        "assets/objects/hazards/deep_water/water_bubbles_02.png",
+        "assets/objects/hazards/deep_water/water_bubbles_03.png",
+        "assets/objects/hazards/deep_water/water_bubbles_04.png",
+        "assets/objects/hazards/deep_water/water_bubbles_05.png",
+        "assets/objects/hazards/deep_water/water_bubbles_06.png",
+        "assets/objects/hazards/deep_water/water_bubbles_07.png",
+        "assets/objects/hazards/deep_water/water_bubbles_08.png"
+      ],
+      "spritesheet": "assets/objects/hazards/deep_water/water_bubbles_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/water_bubbles.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/hazards/deep_water/water_top_body_tile.png"
+      ],
+      "frontLayers": ["assets/objects/hazards/deep_water/water_surface_01.png"]
+    },
+    {
+      "id": "water_splash",
+      "object": "deep_water",
+      "frames": [
+        "assets/objects/hazards/deep_water/water_splash_01.png",
+        "assets/objects/hazards/deep_water/water_splash_02.png",
+        "assets/objects/hazards/deep_water/water_splash_03.png",
+        "assets/objects/hazards/deep_water/water_splash_04.png",
+        "assets/objects/hazards/deep_water/water_splash_05.png",
+        "assets/objects/hazards/deep_water/water_splash_06.png"
+      ],
+      "spritesheet": "assets/objects/hazards/deep_water/water_splash_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "surface_loop",
+      "preview": "previews/water_splash.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/hazards/deep_water/water_top_body_tile.png"
+      ],
+      "frontLayers": ["assets/objects/hazards/deep_water/water_surface_01.png"]
+    },
+    {
+      "id": "wind_tunnel_flow",
+      "object": "wind_tunnel",
+      "frames": [
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_01.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_02.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_03.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_04.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_05.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_06.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_07.png",
+        "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_08.png"
+      ],
+      "spritesheet": "assets/objects/elemental/wind_tunnel/wind_tunnel_flow_spritesheet.png",
+      "frameWidth": 1024,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/wind_tunnel_flow.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "barrier_active",
+      "object": "energy_barrier",
+      "frames": [
+        "assets/objects/elemental/energy_barrier/barrier_active_01.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_02.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_03.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_04.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_05.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_06.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_07.png",
+        "assets/objects/elemental/energy_barrier/barrier_active_08.png"
+      ],
+      "spritesheet": "assets/objects/elemental/energy_barrier/barrier_active_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/barrier_active.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/elemental/energy_barrier/barrier_posts.png"
+      ]
+    },
+    {
+      "id": "barrier_activate",
+      "object": "energy_barrier",
+      "frames": [
+        "assets/objects/elemental/energy_barrier/barrier_activate_01.png",
+        "assets/objects/elemental/energy_barrier/barrier_activate_02.png",
+        "assets/objects/elemental/energy_barrier/barrier_activate_03.png",
+        "assets/objects/elemental/energy_barrier/barrier_activate_04.png",
+        "assets/objects/elemental/energy_barrier/barrier_activate_05.png",
+        "assets/objects/elemental/energy_barrier/barrier_activate_06.png"
+      ],
+      "spritesheet": "assets/objects/elemental/energy_barrier/barrier_activate_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "barrier_active",
+      "preview": "previews/barrier_activate.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/elemental/energy_barrier/barrier_posts.png"
+      ]
+    },
+    {
+      "id": "barrier_deactivate",
+      "object": "energy_barrier",
+      "frames": [
+        "assets/objects/elemental/energy_barrier/barrier_deactivate_01.png",
+        "assets/objects/elemental/energy_barrier/barrier_deactivate_02.png",
+        "assets/objects/elemental/energy_barrier/barrier_deactivate_03.png",
+        "assets/objects/elemental/energy_barrier/barrier_deactivate_04.png",
+        "assets/objects/elemental/energy_barrier/barrier_deactivate_05.png",
+        "assets/objects/elemental/energy_barrier/barrier_deactivate_06.png"
+      ],
+      "spritesheet": "assets/objects/elemental/energy_barrier/barrier_deactivate_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "inactive",
+      "preview": "previews/barrier_deactivate.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/elemental/energy_barrier/barrier_posts.png"
+      ]
+    },
+    {
+      "id": "waterwheel_spinning",
+      "object": "waterwheel",
+      "frames": [
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_01.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_02.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_03.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_04.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_05.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_06.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_07.png",
+        "assets/objects/mechanisms/waterwheel/waterwheel_spinning_08.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/waterwheel/waterwheel_spinning_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/waterwheel_spinning.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/mechanisms/waterwheel/waterwheel_support.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "boiler_heating",
+      "object": "steam_boiler",
+      "frames": [
+        "assets/objects/mechanisms/steam_boiler/boiler_heating_01.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heating_02.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heating_03.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heating_04.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heating_05.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heating_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/steam_boiler/boiler_heating_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 8,
+      "repeat": 0,
+      "next": "boiler_steam",
+      "preview": "previews/boiler_heating.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": ["assets/objects/mechanisms/steam_boiler/boiler_body.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "boiler_steam",
+      "object": "steam_boiler",
+      "frames": [
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_01.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_02.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_03.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_04.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_05.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_06.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_07.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_steam_08.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/steam_boiler/boiler_steam_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/boiler_steam.gif",
+      "tile": false,
+      "note": "",
+      "extraBack": [
+        "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png"
+      ],
+      "backLayers": [
+        "assets/objects/mechanisms/steam_boiler/boiler_body.png",
+        "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "bridge_extending",
+      "object": "retractable_bridge",
+      "frames": [
+        "assets/objects/platforms/retractable_bridge/bridge_extending_01.png",
+        "assets/objects/platforms/retractable_bridge/bridge_extending_02.png",
+        "assets/objects/platforms/retractable_bridge/bridge_extending_03.png",
+        "assets/objects/platforms/retractable_bridge/bridge_extending_04.png",
+        "assets/objects/platforms/retractable_bridge/bridge_extending_05.png",
+        "assets/objects/platforms/retractable_bridge/bridge_extending_06.png"
+      ],
+      "spritesheet": "assets/objects/platforms/retractable_bridge/bridge_extending_spritesheet.png",
+      "frameWidth": 1024,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "extended",
+      "preview": "previews/bridge_extending.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+      ]
+    },
+    {
+      "id": "bridge_retracting",
+      "object": "retractable_bridge",
+      "frames": [
+        "assets/objects/platforms/retractable_bridge/bridge_retracting_01.png",
+        "assets/objects/platforms/retractable_bridge/bridge_retracting_02.png",
+        "assets/objects/platforms/retractable_bridge/bridge_retracting_03.png",
+        "assets/objects/platforms/retractable_bridge/bridge_retracting_04.png",
+        "assets/objects/platforms/retractable_bridge/bridge_retracting_05.png",
+        "assets/objects/platforms/retractable_bridge/bridge_retracting_06.png"
+      ],
+      "spritesheet": "assets/objects/platforms/retractable_bridge/bridge_retracting_spritesheet.png",
+      "frameWidth": 1024,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "retracted",
+      "preview": "previews/bridge_retracting.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/platforms/retractable_bridge/bridge_housing.png"
+      ]
+    },
+    {
+      "id": "wall_cracking",
+      "object": "stone_wall",
+      "frames": [
+        "assets/objects/destructibles/stone_wall/wall_cracking_01.png",
+        "assets/objects/destructibles/stone_wall/wall_cracking_02.png",
+        "assets/objects/destructibles/stone_wall/wall_cracking_03.png",
+        "assets/objects/destructibles/stone_wall/wall_cracking_04.png"
+      ],
+      "spritesheet": "assets/objects/destructibles/stone_wall/wall_cracking_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 8,
+      "repeat": 0,
+      "next": "wall_breaking",
+      "preview": "previews/wall_cracking.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "wall_breaking",
+      "object": "stone_wall",
+      "frames": [
+        "assets/objects/destructibles/stone_wall/wall_breaking_01.png",
+        "assets/objects/destructibles/stone_wall/wall_breaking_02.png",
+        "assets/objects/destructibles/stone_wall/wall_breaking_03.png",
+        "assets/objects/destructibles/stone_wall/wall_breaking_04.png",
+        "assets/objects/destructibles/stone_wall/wall_breaking_05.png",
+        "assets/objects/destructibles/stone_wall/wall_breaking_06.png"
+      ],
+      "spritesheet": "assets/objects/destructibles/stone_wall/wall_breaking_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 10,
+      "repeat": 0,
+      "next": "broken",
+      "preview": "previews/wall_breaking.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "platform_disappearing",
+      "object": "disappearing_platform",
+      "frames": [
+        "assets/objects/platforms/disappearing_platform/platform_disappearing_01.png",
+        "assets/objects/platforms/disappearing_platform/platform_disappearing_02.png",
+        "assets/objects/platforms/disappearing_platform/platform_disappearing_03.png",
+        "assets/objects/platforms/disappearing_platform/platform_disappearing_04.png",
+        "assets/objects/platforms/disappearing_platform/platform_disappearing_05.png",
+        "assets/objects/platforms/disappearing_platform/platform_disappearing_06.png"
+      ],
+      "spritesheet": "assets/objects/platforms/disappearing_platform/platform_disappearing_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "hidden",
+      "preview": "previews/platform_disappearing.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "platform_appearing",
+      "object": "disappearing_platform",
+      "frames": [
+        "assets/objects/platforms/disappearing_platform/platform_appearing_01.png",
+        "assets/objects/platforms/disappearing_platform/platform_appearing_02.png",
+        "assets/objects/platforms/disappearing_platform/platform_appearing_03.png",
+        "assets/objects/platforms/disappearing_platform/platform_appearing_04.png",
+        "assets/objects/platforms/disappearing_platform/platform_appearing_05.png",
+        "assets/objects/platforms/disappearing_platform/platform_appearing_06.png"
+      ],
+      "spritesheet": "assets/objects/platforms/disappearing_platform/platform_appearing_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "solid",
+      "preview": "previews/platform_appearing.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "door_opening",
+      "object": "timed_door",
+      "frames": [
+        "assets/objects/mechanisms/timed_door/door_opening_01.png",
+        "assets/objects/mechanisms/timed_door/door_opening_02.png",
+        "assets/objects/mechanisms/timed_door/door_opening_03.png",
+        "assets/objects/mechanisms/timed_door/door_opening_04.png",
+        "assets/objects/mechanisms/timed_door/door_opening_05.png",
+        "assets/objects/mechanisms/timed_door/door_opening_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/timed_door/door_opening_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "open",
+      "preview": "previews/door_opening.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": ["assets/objects/mechanisms/timed_door/door_frame.png"]
+    },
+    {
+      "id": "door_closing",
+      "object": "timed_door",
+      "frames": [
+        "assets/objects/mechanisms/timed_door/door_closing_01.png",
+        "assets/objects/mechanisms/timed_door/door_closing_02.png",
+        "assets/objects/mechanisms/timed_door/door_closing_03.png",
+        "assets/objects/mechanisms/timed_door/door_closing_04.png",
+        "assets/objects/mechanisms/timed_door/door_closing_05.png",
+        "assets/objects/mechanisms/timed_door/door_closing_06.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/timed_door/door_closing_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "closed",
+      "preview": "previews/door_closing.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": ["assets/objects/mechanisms/timed_door/door_frame.png"]
+    },
+    {
+      "id": "door_warning",
+      "object": "timed_door",
+      "frames": [
+        "assets/objects/mechanisms/timed_door/door_warning_01.png",
+        "assets/objects/mechanisms/timed_door/door_warning_02.png",
+        "assets/objects/mechanisms/timed_door/door_warning_03.png",
+        "assets/objects/mechanisms/timed_door/door_warning_04.png",
+        "assets/objects/mechanisms/timed_door/door_warning_05.png",
+        "assets/objects/mechanisms/timed_door/door_warning_06.png",
+        "assets/objects/mechanisms/timed_door/door_warning_07.png",
+        "assets/objects/mechanisms/timed_door/door_warning_08.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/timed_door/door_warning_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/door_warning.gif",
+      "tile": false,
+      "note": "Overlay while open, before closing. Game code controls timer.",
+      "backLayers": ["assets/objects/mechanisms/timed_door/door_frame.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "steam_vent_active",
+      "object": "steam_vent",
+      "frames": [
+        "assets/objects/hazards/steam_vent/steam_vent_active_01.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_02.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_03.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_04.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_05.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_06.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_07.png",
+        "assets/objects/hazards/steam_vent/steam_vent_active_08.png"
+      ],
+      "spritesheet": "assets/objects/hazards/steam_vent/steam_vent_active_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/steam_vent_active.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": ["assets/objects/hazards/steam_vent/steam_vent_base.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "steam_vent_warning",
+      "object": "steam_vent",
+      "frames": [
+        "assets/objects/hazards/steam_vent/steam_vent_warning_01.png",
+        "assets/objects/hazards/steam_vent/steam_vent_warning_02.png",
+        "assets/objects/hazards/steam_vent/steam_vent_warning_03.png",
+        "assets/objects/hazards/steam_vent/steam_vent_warning_04.png"
+      ],
+      "spritesheet": "assets/objects/hazards/steam_vent/steam_vent_warning_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "steam_vent_active",
+      "preview": "previews/steam_vent_warning.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": ["assets/objects/hazards/steam_vent/steam_vent_base.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "steam_vent_stopping",
+      "object": "steam_vent",
+      "frames": [
+        "assets/objects/hazards/steam_vent/steam_vent_stopping_01.png",
+        "assets/objects/hazards/steam_vent/steam_vent_stopping_02.png",
+        "assets/objects/hazards/steam_vent/steam_vent_stopping_03.png",
+        "assets/objects/hazards/steam_vent/steam_vent_stopping_04.png"
+      ],
+      "spritesheet": "assets/objects/hazards/steam_vent/steam_vent_stopping_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "off",
+      "preview": "previews/steam_vent_stopping.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": ["assets/objects/hazards/steam_vent/steam_vent_base.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "plant_growing",
+      "object": "watered_plant",
+      "frames": [
+        "assets/objects/elemental/watered_plant/plant_growing_01.png",
+        "assets/objects/elemental/watered_plant/plant_growing_02.png",
+        "assets/objects/elemental/watered_plant/plant_growing_03.png",
+        "assets/objects/elemental/watered_plant/plant_growing_04.png",
+        "assets/objects/elemental/watered_plant/plant_growing_05.png",
+        "assets/objects/elemental/watered_plant/plant_growing_06.png"
+      ],
+      "spritesheet": "assets/objects/elemental/watered_plant/plant_growing_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 6,
+      "repeat": 0,
+      "next": "fully_grown",
+      "preview": "previews/plant_growing.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "wooden_block_floating",
+      "object": "floating_wooden_block",
+      "frames": [
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_01.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_02.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_03.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_04.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_05.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_06.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_07.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_floating_08.png"
+      ],
+      "spritesheet": "assets/objects/platforms/floating_wooden_block/wooden_block_floating_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/wooden_block_floating.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [],
+      "frontLayers": []
+    },
+    {
+      "id": "wooden_block_wake",
+      "object": "floating_wooden_block",
+      "frames": [
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_01.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_02.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_03.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_04.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_05.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_06.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_07.png",
+        "assets/objects/platforms/floating_wooden_block/wooden_block_wake_08.png"
+      ],
+      "spritesheet": "assets/objects/platforms/floating_wooden_block/wooden_block_wake_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/wooden_block_wake.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/platforms/floating_wooden_block/wooden_block_idle.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "mill_spinning",
+      "object": "wind_mill",
+      "frames": [
+        "assets/objects/mechanisms/wind_mill/mill_spinning_01.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_02.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_03.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_04.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_05.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_06.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_07.png",
+        "assets/objects/mechanisms/wind_mill/mill_spinning_08.png"
+      ],
+      "spritesheet": "assets/objects/mechanisms/wind_mill/mill_spinning_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 8,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/mill_spinning.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": ["assets/objects/mechanisms/wind_mill/mill_base.png"],
+      "frontLayers": []
+    },
+    {
+      "id": "fire_switch_active",
+      "object": "fire_switch",
+      "frames": [
+        "assets/objects/elemental/fire_switch/fire_switch_active_01.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_02.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_03.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_04.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_05.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_06.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_07.png",
+        "assets/objects/elemental/fire_switch/fire_switch_active_08.png"
+      ],
+      "spritesheet": "assets/objects/elemental/fire_switch/fire_switch_active_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": -1,
+      "next": null,
+      "preview": "previews/fire_switch_active.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/elemental/fire_switch/fire_switch_base.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "fire_switch_igniting",
+      "object": "fire_switch",
+      "frames": [
+        "assets/objects/elemental/fire_switch/fire_switch_igniting_01.png",
+        "assets/objects/elemental/fire_switch/fire_switch_igniting_02.png",
+        "assets/objects/elemental/fire_switch/fire_switch_igniting_03.png",
+        "assets/objects/elemental/fire_switch/fire_switch_igniting_04.png",
+        "assets/objects/elemental/fire_switch/fire_switch_igniting_05.png",
+        "assets/objects/elemental/fire_switch/fire_switch_igniting_06.png"
+      ],
+      "spritesheet": "assets/objects/elemental/fire_switch/fire_switch_igniting_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "fire_switch_active",
+      "preview": "previews/fire_switch_igniting.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/elemental/fire_switch/fire_switch_base.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "fire_switch_extinguishing",
+      "object": "fire_switch",
+      "frames": [
+        "assets/objects/elemental/fire_switch/fire_switch_extinguishing_01.png",
+        "assets/objects/elemental/fire_switch/fire_switch_extinguishing_02.png",
+        "assets/objects/elemental/fire_switch/fire_switch_extinguishing_03.png",
+        "assets/objects/elemental/fire_switch/fire_switch_extinguishing_04.png",
+        "assets/objects/elemental/fire_switch/fire_switch_extinguishing_05.png",
+        "assets/objects/elemental/fire_switch/fire_switch_extinguishing_06.png"
+      ],
+      "spritesheet": "assets/objects/elemental/fire_switch/fire_switch_extinguishing_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "unlit",
+      "preview": "previews/fire_switch_extinguishing.gif",
+      "tile": false,
+      "note": "",
+      "backLayers": [
+        "assets/objects/elemental/fire_switch/fire_switch_base.png"
+      ],
+      "frontLayers": []
+    },
+    {
+      "id": "bounce_launch",
+      "object": "elemental_bounce_pad",
+      "frames": [
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_01.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_02.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_03.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_04.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_05.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_06.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_07.png",
+        "assets/objects/platforms/elemental_bounce_pad/bounce_launch_08.png"
+      ],
+      "spritesheet": "assets/objects/platforms/elemental_bounce_pad/bounce_launch_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "frameRate": 12,
+      "repeat": 0,
+      "next": "idle",
+      "preview": "previews/bounce_launch.gif",
+      "tile": false,
+      "note": "Frames 1 and 8 intentionally match idle so the one-shot settles exactly.",
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/platforms/elemental_bounce_pad/bounce_base.png"
+      ]
+    }
+  ]
+}

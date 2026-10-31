@@ -1,0 +1,190 @@
+{
+  "family": "ancient_stone",
+  "title": "Ancient mossy stone",
+  "tile_dimensions": [
+    128,
+    128
+  ],
+  "top_surface_y": 32,
+  "anchor_recommendation": {
+    "px": [
+      0,
+      32
+    ],
+    "description": "Place all platform tiles at the same world surface Y. Tile image origin is 32 px above that surface."
+  },
+  "minimum_modules": 2,
+  "placement": {
+    "left": "x=0",
+    "center": "Repeat at x=128,256,...",
+    "right": "x=(module_count-1)*128",
+    "horizontal_stride_px": 128,
+    "spacing_px": 0,
+    "scale": 1
+  },
+  "supports_available": true,
+  "static": true,
+  "assets": [
+    {
+      "id": "ancient_stone_left",
+      "file": "assets/environments/platforms/ancient_stone/ancient_stone_left.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 13,
+        "y": 32,
+        "width": 115,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_left",
+      "repeat_step_px": null,
+      "connections": {
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "ancient_stone_master",
+      "surface_y": 32
+    },
+    {
+      "id": "ancient_stone_center",
+      "file": "assets/environments/platforms/ancient_stone/ancient_stone_center.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [
+        "x"
+      ],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 128,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "repeatable_center",
+      "repeat_step_px": [
+        128,
+        0
+      ],
+      "connections": {
+        "left": [
+          0,
+          32
+        ],
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "ancient_stone_master",
+      "surface_y": 32
+    },
+    {
+      "id": "ancient_stone_right",
+      "file": "assets/environments/platforms/ancient_stone/ancient_stone_right.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 114,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_right",
+      "repeat_step_px": null,
+      "connections": {
+        "left": [
+          0,
+          32
+        ]
+      },
+      "source": "ancient_stone_master",
+      "surface_y": 32
+    },
+    {
+      "id": "ancient_stone_support",
+      "file": "assets/environments/platforms/ancient_stone/ancient_stone_support.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        64,
+        0
+      ],
+      "anchor_normalized": [
+        0.5,
+        0
+      ],
+      "layer": "behind_platform",
+      "repeat_axes": [
+        "y"
+      ],
+      "collision": null,
+      "role": "decorative_support",
+      "source": "ancient_stone_support",
+      "repeat_step_px": [
+        0,
+        128
+      ],
+      "connections": {
+        "top": [
+          64,
+          0
+        ],
+        "bottom": [
+          64,
+          128
+        ]
+      }
+    }
+  ],
+  "surface_calibration": {
+    "surface_y": 32,
+    "source_row": 14,
+    "source_vertical_offset": 18,
+    "decorative_fringe_above_surface": true
+  },
+  "preview": "previews/ancient_stone_three_widths.png",
+  "decorative_supports_available": true,
+  "optional_overlays_available": false,
+  "paths_relative_to": "pack root"
+}

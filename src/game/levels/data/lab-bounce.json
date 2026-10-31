@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "id": "lab-bounce",
+  "name": "Laboratorio · Rebote",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 590,
+      "y": 100,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "label",
+      "asset": null,
+      "x": 100,
+      "y": 95,
+      "width": 1100,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "Aterriza sobre el resorte: impulso 900. Desde un lateral no rebota. R repite la caída."
+    },
+    {
+      "id": "elemental-bounce-pad",
+      "asset": "world:elemental_bounce_pad",
+      "x": 500,
+      "y": 376,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 32,
+        "y": 124,
+        "width": 192,
+        "height": 10
+      },
+      "kind": "elemental_bounce_pad",
+      "effect": {
+        "enabled": false,
+        "x": 32,
+        "y": 124,
+        "width": 192,
+        "height": 10
+      },
+      "behavior": {
+        "kind": "bounce",
+        "requires": [],
+        "autostart": true,
+        "speed": 900,
+        "cooldownMs": 250
+      },
+      "state": "idle",
+      "hint": "Aterriza encima para recibir un impulso vertical. No cambia el elemento.",
+      "type": "world"
+    }
+  ]
+}

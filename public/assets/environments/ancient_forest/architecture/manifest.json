@@ -1,0 +1,302 @@
+{
+  "pack": "Veylith — Ancient Forest Environment Expansion",
+  "version": "1.0",
+  "source_art": "85 individually generated assets; modular variants assembled from the new art",
+  "perspective": "orthographic side elevation",
+  "lighting": "upper-left",
+  "units": "pixels",
+  "tile_grid": 128,
+  "layer_order_back_to_front": [
+    "background",
+    "behind_gameplay",
+    "behind_platforms",
+    "terrain_detail",
+    "world_decoration",
+    "behind_platforms_effects",
+    "foreground"
+  ],
+  "integration": {
+    "existing_assets_modified": false,
+    "terrain_detail_underlay": "Interior tiles contain genuine alpha cracks. Put existing terrain backing behind them; edge and corner overlays mask the front artwork only.",
+    "tile_repeat": "Repeat on the listed axis at step_px. Do not auto-trim sprites.",
+    "static_magic": "Runes, rings, trails and particles are independent static overlays.",
+    "scale": "Assets are authored in pixel space; place at 1× before applying a common world scale."
+  },
+  "assets": [
+    {
+      "id": "ruined_wall_a",
+      "file": "assets/environments/ancient_forest/architecture/ruined_wall_a.png",
+      "category": "architecture",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "ruined_wall_a",
+      "description": "One freestanding broken ancient masonry wall section, rough stepped top descending right, green moss between large grey stone blocks, a worn geometric relief. Transparent openings where stones are missing; no ground or background."
+    },
+    {
+      "id": "ruined_wall_b",
+      "file": "assets/environments/ancient_forest/architecture/ruined_wall_b.png",
+      "category": "architecture",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "ruined_wall_b",
+      "description": "One freestanding low ruined stone wall variation, jagged central breach with two uneven surviving ends, a few connected broken foundation stones, ivy only on one side. Side elevation, isolated."
+    },
+    {
+      "id": "ruined_archway",
+      "file": "assets/environments/ancient_forest/architecture/ruined_archway.png",
+      "category": "architecture",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "ruined_archway",
+      "description": "One broken ancient archway, surviving tall left pillar and shorter right pillar, missing upper-right span, hanging roots, carved central stone on remaining arch. Entire ruin visible, opening transparent. No background or floor."
+    },
+    {
+      "id": "stone_stairs",
+      "file": "assets/environments/ancient_forest/architecture/stone_stairs.png",
+      "category": "architecture",
+      "width": 512,
+      "height": 512,
+      "anchor_px": [
+        256,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        256,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_stairs",
+      "description": "One isolated decorative ancient stone staircase in SIDE ELEVATION, six broad level steps rising left-to-right, irregular mossy stones, full front-side profile. No platform or backdrop, no perspective vanishing point."
+    },
+    {
+      "id": "collapsed_column",
+      "file": "assets/environments/ancient_forest/architecture/collapsed_column.png",
+      "category": "architecture",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "collapsed_column",
+      "description": "One fallen broken ancient stone column lying horizontally, three adjacent large sections with matching carved bands, weathered chipped ends and moss. A single cohesive ruin prop on a common baseline, no scene."
+    },
+    {
+      "id": "temple_entrance",
+      "file": "assets/environments/ancient_forest/architecture/temple_entrance.png",
+      "category": "architecture",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "temple_entrance",
+      "description": "One ancient forest temple ENTRANCE façade only. Wide mossy stone doorway with two squat carved columns, a layered lintel bearing geometric ornament, small bronze trim, truly transparent open doorway. No door, interior room, steps, floor, sky, foliage backdrop or character. Entire façade isolated side elevation."
+    },
+    {
+      "id": "carved_ornament_a",
+      "file": "assets/environments/ancient_forest/architecture/carved_ornament_a.png",
+      "category": "architecture",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "carved_ornament_a",
+      "description": "One ancient square stone relief ornament, stylized fourfold spiral geometric carving inset in grey-green stone with worn bronze accent, small corner chips and moss. No text-like letters. Whole relief isolated."
+    },
+    {
+      "id": "carved_ornament_b",
+      "file": "assets/environments/ancient_forest/architecture/carved_ornament_b.png",
+      "category": "architecture",
+      "width": 256,
+      "height": 256,
+      "anchor_px": [
+        128,
+        240
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.9375
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        128,
+        240
+      ],
+      "role": "isolated_sprite",
+      "source": "carved_ornament_b",
+      "description": "One ancient elongated diamond-shaped stone ornament with an abstract leaf-and-crystal geometric relief, worn pale grey bevels and restrained bronze inset. Full isolated ornament, no letters."
+    },
+    {
+      "id": "decorative_bridge",
+      "file": "assets/environments/ancient_forest/architecture/decorative_bridge.png",
+      "category": "architecture",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "decorative_bridge",
+      "description": "One isolated ornamental forest bridge in side elevation, gently arched narrow timber deck across two short mossy stone abutments, low carved stone side parapet with open gaps and restrained bronze joints. Empty transparent below and above. No scenery, water or characters."
+    },
+    {
+      "id": "stone_foundation_ruin",
+      "file": "assets/environments/ancient_forest/architecture/stone_foundation_ruin.png",
+      "category": "architecture",
+      "width": 1024,
+      "height": 512,
+      "anchor_px": [
+        512,
+        496
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.96875
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        512,
+        496
+      ],
+      "role": "isolated_sprite",
+      "source": "stone_foundation_ruin",
+      "description": "One broad isolated ancient stone foundation ruin: three low uneven tiers of massive grey mossy blocks, flat level top bearing surface, cracked corners and small exposed roots. No building above it. Full object, wide side elevation."
+    },
+    {
+      "id": "cracked_masonry",
+      "file": "assets/environments/ancient_forest/architecture/cracked_masonry.png",
+      "category": "architecture",
+      "width": 128,
+      "height": 128,
+      "anchor_px": [
+        0,
+        0
+      ],
+      "anchor_normalized": [
+        0,
+        0
+      ],
+      "intended_layer": "behind_gameplay",
+      "alpha": "straight RGBA",
+      "anchor": [
+        0,
+        0
+      ],
+      "role": "repeatable_detail_overlay",
+      "repeat": {
+        "axes": [
+          "x",
+          "y"
+        ],
+        "step_px": [
+          128,
+          128
+        ]
+      },
+      "requires_underlay": true,
+      "usage": "Place over an existing terrain backing fill; transparent cracks expose the backing.",
+      "source": "cracked_masonry_source"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "technicalChecks": {
+    "layers": {
+      "background": {
+        "width": 1728,
+        "height": 648,
+        "hasAlpha": false
+      },
+      "static_world": {
+        "width": 1728,
+        "height": 648,
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255
+      },
+      "foreground": {
+        "width": 1728,
+        "height": 648,
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255
+      }
+    },
+    "alignedCanvas": true,
+    "sharedTopLeftOrigin": true,
+    "oneSectionNoSeams": true,
+    "textureSizeWithin2048x1024": true,
+    "previewDurationSeconds": 4,
+    "renderedPreviewFrames": 48,
+    "encodedGIFFrames": 32,
+    "encodedWebPFrames": 32,
+    "allManifestPathsResolve": true
+  },
+  "visualReview": "Master and extracted composite visually reviewed. No text, characters or interactive objects observed. Layout is approximate and not pixel-perfect verified.",
+  "geometryStatus": "approximate_visual_match",
+  "unresolved": [
+    "Illustrated reconstruction, not pixel-perfect blueprint tracing.",
+    "No device performance test."
+  ],
+  "geometryBottomGapChecks": [
+    {
+      "blueprintGapX": [
+        282,
+        471
+      ],
+      "bottomOpenFraction": 0.852,
+      "longestClearRun": 161,
+      "openPassageObserved": true
+    },
+    {
+      "blueprintGapX": [
+        1200,
+        1400
+      ],
+      "bottomOpenFraction": 0.945,
+      "longestClearRun": 189,
+      "openPassageObserved": true
+    }
+  ],
+  "geometryCheckScope": "These samples verify open bottom passages only, not exact platform registration or traversability. Visual geometry remains approximate."
+}

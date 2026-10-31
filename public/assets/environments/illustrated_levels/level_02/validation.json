@@ -1,0 +1,967 @@
+{
+  "canvas": [
+    1536,
+    576
+  ],
+  "pngCount": 73,
+  "animations": 6,
+  "totalUniqueAnimationFrames": 48,
+  "layerDimensionsMatch": true,
+  "realAlpha": true,
+  "sectionReassemblyExact": true,
+  "issues": [],
+  "assets": [
+    {
+      "file": "animated/alignment/all_effects_frame_00.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "32629479379be14d671c4cb9c74c37ee91d5477226a0da9e396a01d5b7880b4a",
+      "alpha": {
+        "transparentPixels": 850000,
+        "partialPixels": 34536,
+        "visiblePixels": 34736
+      }
+    },
+    {
+      "file": "animated/alignment/behind_world_frame_00.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "851c4923550c241c69952617024426341d9e483ee9ffb4f723ac0e16f965bb99",
+      "alpha": {
+        "transparentPixels": 856079,
+        "partialPixels": 28657,
+        "visiblePixels": 28657
+      }
+    },
+    {
+      "file": "animated/alignment/front_world_frame_00.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "5b931b09da90270f5395b499b43c1dd08817ce36a5ed92bb3ecfe9258578e612",
+      "alpha": {
+        "transparentPixels": 878543,
+        "partialPixels": 5993,
+        "visiblePixels": 6193
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_00.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "548471f9ef252e72ba937cf57dc46430441038309f9da95e118e6f8a183b9ccd",
+      "alpha": {
+        "transparentPixels": 23608,
+        "partialPixels": 9071,
+        "visiblePixels": 9160
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_01.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "a35deaf47baeaf66deea894192fc4804f55344bf83105e5e1067e109f350aec8",
+      "alpha": {
+        "transparentPixels": 23312,
+        "partialPixels": 9394,
+        "visiblePixels": 9456
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_02.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "0e6e70822596ec6e4bfdf15995e0c6368ce5653a3f73c43cb82a5ae82fb0051a",
+      "alpha": {
+        "transparentPixels": 22853,
+        "partialPixels": 9841,
+        "visiblePixels": 9915
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_03.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "02ac49d87967311313ff3cae6c79b5b2f73f32ffe5d3193029ceb2f022f1fd3f",
+      "alpha": {
+        "transparentPixels": 22884,
+        "partialPixels": 9810,
+        "visiblePixels": 9884
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_04.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "df19ca995814e35259865ac2d655bbf825b3ba4071d97508cd66997ba6979fb6",
+      "alpha": {
+        "transparentPixels": 23334,
+        "partialPixels": 9371,
+        "visiblePixels": 9434
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_05.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "979577d145e4ebc749ed8bfc1f49ad521cd06bb7aba8c8c7b792bc0057c5cba8",
+      "alpha": {
+        "transparentPixels": 23224,
+        "partialPixels": 9484,
+        "visiblePixels": 9544
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_06.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "267aeb60aa75898d57495ec5f3687d8d028572faca47f10232807a2b8eafab0c",
+      "alpha": {
+        "transparentPixels": 22597,
+        "partialPixels": 10099,
+        "visiblePixels": 10171
+      }
+    },
+    {
+      "file": "animated/hanging_vine/frames/frame_07.png",
+      "width": 128,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "854c10560226b79adbb9ba542e1df400dafef511823883e6b346f0e4ab44370d",
+      "alpha": {
+        "transparentPixels": 22460,
+        "partialPixels": 10257,
+        "visiblePixels": 10308
+      }
+    },
+    {
+      "file": "animated/hanging_vine/hanging_vine_sheet.png",
+      "width": 512,
+      "height": 512,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "284cd5f26f45921a652942eecee9ff85524f4234523a5e15dabd3ecfe5f06d15",
+      "alpha": {
+        "transparentPixels": 184272,
+        "partialPixels": 77327,
+        "visiblePixels": 77872
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_00.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "42ab3a0284c06dbd80f9229f8d14821d53b53d8c77a4dd8ca2686ae7339b9b9e",
+      "alpha": {
+        "transparentPixels": 11594,
+        "partialPixels": 4790,
+        "visiblePixels": 4790
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_01.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "e398235f2952e0683f4d67ddeded982857e098506c2a98d9d5fc6e75a1a57289",
+      "alpha": {
+        "transparentPixels": 11418,
+        "partialPixels": 4966,
+        "visiblePixels": 4966
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_02.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "43af3ce10a26045d65ece07904707ed5e9b971de8715a83e72bdf198671b5883",
+      "alpha": {
+        "transparentPixels": 11858,
+        "partialPixels": 4526,
+        "visiblePixels": 4526
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_03.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "84615f86408ce9e48de0d8130f65f32b985acb059df7f444f54be87f91da8523",
+      "alpha": {
+        "transparentPixels": 11813,
+        "partialPixels": 4571,
+        "visiblePixels": 4571
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_04.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "86ced5674eaac2a6919e5e86544365ab71b7655cb868daa360184b4c9c2eea18",
+      "alpha": {
+        "transparentPixels": 12301,
+        "partialPixels": 4083,
+        "visiblePixels": 4083
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_05.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "3ecab443976d378627d0dba4af4f6b0f06a27538c6503de5628bd8b632d48fe0",
+      "alpha": {
+        "transparentPixels": 11859,
+        "partialPixels": 4525,
+        "visiblePixels": 4525
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_06.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "4e9399513de2a74dd8e7bc9dbab1103ae7597cedc30c028312d2d73b5a3d9879",
+      "alpha": {
+        "transparentPixels": 12344,
+        "partialPixels": 4040,
+        "visiblePixels": 4040
+      }
+    },
+    {
+      "file": "animated/magical_particles/frames/frame_07.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "c1c05742cfac4b94312bb6dcfe1593261a5224810e06523120af33f93b2334d0",
+      "alpha": {
+        "transparentPixels": 12344,
+        "partialPixels": 4040,
+        "visiblePixels": 4040
+      }
+    },
+    {
+      "file": "animated/magical_particles/magical_particles_sheet.png",
+      "width": 512,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "3973148708b3e5609e519587a63b812b84c73c9e265bbbd8b7599af47e6d2624",
+      "alpha": {
+        "transparentPixels": 95531,
+        "partialPixels": 35541,
+        "visiblePixels": 35541
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_00.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "fbafb2c285853903bffde2dd2e3023b8f1c9a76dd81d5f6901383ab97f4d9f21",
+      "alpha": {
+        "transparentPixels": 9366,
+        "partialPixels": 15210,
+        "visiblePixels": 15210
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_01.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "fc9b613bde8a8ac6f2831ab226e19990de1fe6a5fe5cb1240e532b5fa9cc98e2",
+      "alpha": {
+        "transparentPixels": 10379,
+        "partialPixels": 14197,
+        "visiblePixels": 14197
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_02.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "030f1ac850b13fd7b5253ab981f79dcdd28459c4e6cf2d7f0bfe73322e0aa51a",
+      "alpha": {
+        "transparentPixels": 9079,
+        "partialPixels": 15497,
+        "visiblePixels": 15497
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_03.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "4373c35528c439b844bc6df285a4c1fdbf760a9c5204480f8f980212b541de63",
+      "alpha": {
+        "transparentPixels": 9094,
+        "partialPixels": 15482,
+        "visiblePixels": 15482
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_04.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "cdc2f6fbc8c553ce9a6f09078c5159aef0a24e30ee86f140a745776ea7188649",
+      "alpha": {
+        "transparentPixels": 7966,
+        "partialPixels": 16610,
+        "visiblePixels": 16610
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_05.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "55ae616e6369b1b3da22fec72094cf2630cedfc7de31ffa8801cade317d563fe",
+      "alpha": {
+        "transparentPixels": 8979,
+        "partialPixels": 15597,
+        "visiblePixels": 15597
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_06.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "235c172cb96f65e2a336de50979f63b21b2f54f5922296f69ad99e9172b1154c",
+      "alpha": {
+        "transparentPixels": 8393,
+        "partialPixels": 16183,
+        "visiblePixels": 16183
+      }
+    },
+    {
+      "file": "animated/mist/frames/frame_07.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "386508f323bd0566e936cb0de3937f7b634211747fa23f53147be4f2edb4d5d9",
+      "alpha": {
+        "transparentPixels": 9617,
+        "partialPixels": 14959,
+        "visiblePixels": 14959
+      }
+    },
+    {
+      "file": "animated/mist/mist_sheet.png",
+      "width": 1024,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "130b5891859f854bba96b06d57be723793340ad3192c8d25cf81ae111b617fdb",
+      "alpha": {
+        "transparentPixels": 72873,
+        "partialPixels": 123735,
+        "visiblePixels": 123735
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_00.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "7dede7f4d1c9867604df37c35b0ac05771e804628e9bc0b4f9a0ad2f81d687f0",
+      "alpha": {
+        "transparentPixels": 12834,
+        "partialPixels": 3457,
+        "visiblePixels": 3550
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_01.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "538fcb06b26cca02eb35d36f08d67d53ef0b113c27c7eecd3e9bad4a082eadef",
+      "alpha": {
+        "transparentPixels": 12713,
+        "partialPixels": 3607,
+        "visiblePixels": 3671
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_02.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "4f912b72bd39aa7514bc242b311fd153daab428820207dfbc22c92a6810ea4e2",
+      "alpha": {
+        "transparentPixels": 12897,
+        "partialPixels": 3398,
+        "visiblePixels": 3487
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_03.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "f497f3a97dea23b447d68c070419e7243a191ba3109eea0aab008203b0e2bf5d",
+      "alpha": {
+        "transparentPixels": 13003,
+        "partialPixels": 3301,
+        "visiblePixels": 3381
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_04.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "0d2c6e9116a1734b34e79b1d9c2aff0679334e91d408019625b23f691f2b3566",
+      "alpha": {
+        "transparentPixels": 12824,
+        "partialPixels": 3475,
+        "visiblePixels": 3560
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_05.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "62d54b926ae28222a4002454bb235cea10bca6109eabf093893ab937c188d912",
+      "alpha": {
+        "transparentPixels": 12799,
+        "partialPixels": 3486,
+        "visiblePixels": 3585
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_06.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "e2d6e8302f21655d733709f44c377bfd85d35472242ac499b91906252531a4f2",
+      "alpha": {
+        "transparentPixels": 12566,
+        "partialPixels": 3739,
+        "visiblePixels": 3818
+      }
+    },
+    {
+      "file": "animated/moving_leaves/frames/frame_07.png",
+      "width": 128,
+      "height": 128,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "ed6b0cacfe26807e4e5090a8384916a769b8b774b91b9c2b374a8a6117245df0",
+      "alpha": {
+        "transparentPixels": 13123,
+        "partialPixels": 3153,
+        "visiblePixels": 3261
+      }
+    },
+    {
+      "file": "animated/moving_leaves/moving_leaves_sheet.png",
+      "width": 512,
+      "height": 256,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "4773ac6d9440e615802d8f201b4d687a9096ceb33192c0ec78f5eaa09c6646bd",
+      "alpha": {
+        "transparentPixels": 102759,
+        "partialPixels": 27616,
+        "visiblePixels": 28313
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_00.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "da00bb17426813eb8cb497d357601ec2a8ce3b759820c62d2e5c8901a2f8d875",
+      "alpha": {
+        "transparentPixels": 11840,
+        "partialPixels": 12736,
+        "visiblePixels": 12736
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_01.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "ab61e24aa957e964482b677d62bf53b8bcb09a4f3ed356956be5d785e4230d5b",
+      "alpha": {
+        "transparentPixels": 10855,
+        "partialPixels": 13721,
+        "visiblePixels": 13721
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_02.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "80360fc53ce705ec9e1c0868b1e9878245f20b57945a675e36f4e2f61b0ab6a8",
+      "alpha": {
+        "transparentPixels": 10362,
+        "partialPixels": 14214,
+        "visiblePixels": 14214
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_03.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "da1769e69f2148f5f5397187e7eecbd2ce598f1eb326037c15c20400f21ea26b",
+      "alpha": {
+        "transparentPixels": 10571,
+        "partialPixels": 14005,
+        "visiblePixels": 14005
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_04.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "e9d20cf7bff55eb8c855204e05f1c486614d501d8b58af44ad113561aa474175",
+      "alpha": {
+        "transparentPixels": 10419,
+        "partialPixels": 14157,
+        "visiblePixels": 14157
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_05.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "47b614ac83412a7b6fb3e007eeabdef22d23ee8733cb2dd302407b40cd6bafd0",
+      "alpha": {
+        "transparentPixels": 10783,
+        "partialPixels": 13793,
+        "visiblePixels": 13793
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_06.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "f05be2c7df06a53710fd10453eaccc28a1d5b304dee73abd6c11f502fb1d59ab",
+      "alpha": {
+        "transparentPixels": 11375,
+        "partialPixels": 13201,
+        "visiblePixels": 13201
+      }
+    },
+    {
+      "file": "animated/water_surface/frames/frame_07.png",
+      "width": 256,
+      "height": 96,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "00897d3792216a6ab6ba592d1ac6e9ff32ce693caff5a5a95a6d6e0f7918c129",
+      "alpha": {
+        "transparentPixels": 12077,
+        "partialPixels": 12499,
+        "visiblePixels": 12499
+      }
+    },
+    {
+      "file": "animated/water_surface/water_surface_sheet.png",
+      "width": 1024,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "33f9495cf04f51134b20f8787c532d800d39618a67deffe0281089310984c515",
+      "alpha": {
+        "transparentPixels": 88282,
+        "partialPixels": 108326,
+        "visiblePixels": 108326
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_00.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "93fa5d73fc0b07d8ddcf5ee7a22e3d4446cf07075e9826f31b4b98e987ec1823",
+      "alpha": {
+        "transparentPixels": 8083,
+        "partialPixels": 22587,
+        "visiblePixels": 22637
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_01.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "316e7a75f3c196dc63e406efe1e0f29c72dad0a929ccf424eb559d66b0cfaa33",
+      "alpha": {
+        "transparentPixels": 7710,
+        "partialPixels": 22975,
+        "visiblePixels": 23010
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_02.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "ae2a1eb83e6e58005149d243ea4270763d5452ec066d7d9628a3f15dea3e6fbb",
+      "alpha": {
+        "transparentPixels": 7836,
+        "partialPixels": 22851,
+        "visiblePixels": 22884
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_03.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "f76ce3093281032e79bc080408400ba508aa76bb2ac4f200cd747969fce721b1",
+      "alpha": {
+        "transparentPixels": 7428,
+        "partialPixels": 23275,
+        "visiblePixels": 23292
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_04.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "954d1ace4b4ab570dfba445b80ca9d581d675273cfc9bf494cee2c9915517ec3",
+      "alpha": {
+        "transparentPixels": 7653,
+        "partialPixels": 23008,
+        "visiblePixels": 23067
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_05.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "96164251c596df68be083f16c03323bd3f7c6d593f21b6bb2cd062668e4b32e6",
+      "alpha": {
+        "transparentPixels": 7931,
+        "partialPixels": 22701,
+        "visiblePixels": 22789
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_06.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "7e3da3e647c731a82f7175d90b4fdcf85566e7b5141f1195aaf8fcc7039f1eab",
+      "alpha": {
+        "transparentPixels": 7460,
+        "partialPixels": 23204,
+        "visiblePixels": 23260
+      }
+    },
+    {
+      "file": "animated/waterfall/frames/frame_07.png",
+      "width": 160,
+      "height": 192,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "fd4c42d9abd11d2950780c90e09040dc68b1422ec37613d3bdc0adc0a2af5b81",
+      "alpha": {
+        "transparentPixels": 8192,
+        "partialPixels": 22448,
+        "visiblePixels": 22528
+      }
+    },
+    {
+      "file": "animated/waterfall/waterfall_sheet.png",
+      "width": 640,
+      "height": 384,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "7d48eea69981518ef036b1e65013f4c5116a37a9a14bb4c652bd505cbc2b2f2e",
+      "alpha": {
+        "transparentPixels": 62293,
+        "partialPixels": 183049,
+        "visiblePixels": 183467
+      }
+    },
+    {
+      "file": "background/background.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 3,
+      "hasAlpha": false,
+      "sha256": "0f8a2288308fae308d2afad5a3edf98ce6d0bdddc04d911eecc114d193660d32"
+    },
+    {
+      "file": "background/sections/section_00.png",
+      "width": 512,
+      "height": 576,
+      "channels": 3,
+      "hasAlpha": false,
+      "sha256": "98bc3e6c246aa7b04f44af4fc46a5802d483ddda9bcd0f6fb78df81de4f834d9"
+    },
+    {
+      "file": "background/sections/section_01.png",
+      "width": 512,
+      "height": 576,
+      "channels": 3,
+      "hasAlpha": false,
+      "sha256": "6ab603c819bcb401ab3d0888bda072af6e57a916683e7f6b5fbb938bc0fea0ea"
+    },
+    {
+      "file": "background/sections/section_02.png",
+      "width": 512,
+      "height": 576,
+      "channels": 3,
+      "hasAlpha": false,
+      "sha256": "2cd4581e31c3821685b78ac50429b0cbb7a9f64e2220859edab380dc781e5a48"
+    },
+    {
+      "file": "foreground/foreground.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "3f8c8d13291dae0dd21f3eb4561003fe108731d3c2cef6dc1127dcc02d97b283",
+      "alpha": {
+        "transparentPixels": 860702,
+        "partialPixels": 23981,
+        "visiblePixels": 24034
+      }
+    },
+    {
+      "file": "foreground/sections/section_00.png",
+      "width": 512,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "a6094d84e32a45529b67036a9419c6e3b34147e115b54110fef0988161a54499",
+      "alpha": {
+        "transparentPixels": 282942,
+        "partialPixels": 11947,
+        "visiblePixels": 11970
+      }
+    },
+    {
+      "file": "foreground/sections/section_01.png",
+      "width": 512,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "2cad7ffa4436bd0b50503c8bafb4d4bc9801f6f286b803bce9a0832a0cd49352",
+      "alpha": {
+        "transparentPixels": 294911,
+        "partialPixels": 1,
+        "visiblePixels": 1
+      }
+    },
+    {
+      "file": "foreground/sections/section_02.png",
+      "width": 512,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "8b7f5ae6d766ee7ca737be668e20ec4e86fd4b30b63e90f6c51bb12244ab47ed",
+      "alpha": {
+        "transparentPixels": 282849,
+        "partialPixels": 12033,
+        "visiblePixels": 12063
+      }
+    },
+    {
+      "file": "preview/animation_contact_sheet.png",
+      "width": 1536,
+      "height": 864,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "a99c97ae917c3983e0916bcb85588c704dbf6d4609318f9453ea65ae60a4347c",
+      "alpha": {
+        "transparentPixels": 0,
+        "partialPixels": 0,
+        "visiblePixels": 1327104
+      }
+    },
+    {
+      "file": "preview/clean_composite_native.png",
+      "width": 2048,
+      "height": 768,
+      "channels": 3,
+      "hasAlpha": false,
+      "sha256": "a51e81cda2d558fcb8f78184ecf8556d0746b5d5ab2b9d6f7313229e27589397"
+    },
+    {
+      "file": "preview/composite.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "3fadbd225c68463fb5788344607036c5cbf76de8437d892ce420fc034af5f913",
+      "alpha": {
+        "transparentPixels": 0,
+        "partialPixels": 0,
+        "visiblePixels": 884736
+      }
+    },
+    {
+      "file": "preview/static_composite.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "1a241943f14e8751a969b5bb9ebc6484a7e4d77184a74d0f3896a4fb9e808850",
+      "alpha": {
+        "transparentPixels": 0,
+        "partialPixels": 0,
+        "visiblePixels": 884736
+      }
+    },
+    {
+      "file": "static_world/sections/section_00.png",
+      "width": 512,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "26e80311cac839585788e53fc8f1cfec635383fdb2c10c83ec86cca80a94e696",
+      "alpha": {
+        "transparentPixels": 175996,
+        "partialPixels": 118218,
+        "visiblePixels": 118916
+      }
+    },
+    {
+      "file": "static_world/sections/section_01.png",
+      "width": 512,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "d3d02c9fbf8d96f8b7d0db3c60301a238b449b853a939477ac53be3ccdadf88a",
+      "alpha": {
+        "transparentPixels": 201213,
+        "partialPixels": 92660,
+        "visiblePixels": 93699
+      }
+    },
+    {
+      "file": "static_world/sections/section_02.png",
+      "width": 512,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "696de48787f2fc7130d14cf5c7e1b8ae258f438b6b30ba9b72dd1f7fd9e0b18e",
+      "alpha": {
+        "transparentPixels": 125193,
+        "partialPixels": 169259,
+        "visiblePixels": 169719
+      }
+    },
+    {
+      "file": "static_world/static_world.png",
+      "width": 1536,
+      "height": 576,
+      "channels": 4,
+      "hasAlpha": true,
+      "sha256": "d81ce8b0814072ea1d3fc4b1bb09825a1ea8b197ed858fb8f2a1f39614e9b9fc",
+      "alpha": {
+        "transparentPixels": 502402,
+        "partialPixels": 380137,
+        "visiblePixels": 382334
+      }
+    }
+  ],
+  "visualReview": {
+    "source": "Reference panorama, 1536 x 576",
+    "pixelPerfect": false,
+    "platformPlacement": "Major fixed ledges, wooden approach, supporting piers and doorway floor visually consistent with the source.",
+    "gapsAndElevations": "Start gap and lift void remain open; relative elevations preserved with small painted-edge differences.",
+    "unexpectedPaths": "No additional connecting bridge or gameplay platform observed. Wooden caps belong to retained stationary bracing.",
+    "textAndInstructionGraphics": "No visible text, numbers, arrows, UI or instruction panels in exported environment artwork.",
+    "interactiveObjects": "Character, blocks, plates, moving lift, chain, exit door/sigil, torches and spikes excluded.",
+    "waterSeparation": "Dry static composite inspected; waterfall and basin sprites occur only in animated assets / preview composites.",
+    "alignment": "Static layers and alignment PNGs all share a 1536 x 576 canvas. Sections match their source layer crops exactly.",
+    "animation": "48 distinct PNG frames across six independent sheets. Frames and sampled assembled preview inspected; exact optical-flow continuity is not claimed."
+  },
+  "previewTiming": {
+    "environment_loop.webp": {
+      "pages": 48,
+      "width": 1152,
+      "height": 432,
+      "durationMs": 4000,
+      "loop": 0
+    },
+    "environment_loop.gif": {
+      "pages": 48,
+      "width": 1152,
+      "height": 432,
+      "durationMs": 4000,
+      "loop": 0
+    }
+  }
+}

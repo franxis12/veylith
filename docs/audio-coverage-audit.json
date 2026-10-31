@@ -1,0 +1,1996 @@
+{
+  "version": 3,
+  "date": "2026-10-21",
+  "scope": "Auditoría original de diez niveles, ampliación a 74 recursos e integración de eventos en juego/UI. Los once decorativos tienen audio para sus estados visuales actuales; sus futuras mecánicas siguen pendientes.",
+  "countingRule": "74 identificadores registrados con rutas de eventos. Solo suenan los que corresponden a los elementos, objetos y estados presentes en cada escena; no se reproducen todos simultáneamente.",
+  "summary": {
+    "existingWavAssets": 74,
+    "existingOriginalMp3Assets": 74,
+    "integratedGameSounds": 74,
+    "proposedMissingFamilies": 0,
+    "priorityCounts": {
+      "alta": 7,
+      "media": 18,
+      "acabado": 1
+    },
+    "worldKinds": 20,
+    "functionalWorldKinds": 9,
+    "visualOnlyWorldKinds": 11,
+    "campaignWorldInstances": 42,
+    "campaignWorldKinds": 6,
+    "campaignLevels": 10,
+    "newGenerationCredits": 76,
+    "auditedFamilies": 26,
+    "preparedFamilies": 26,
+    "preparedFutureObjectKinds": 11,
+    "newAudioAssets": 51
+  },
+  "campaign": [
+    {
+      "id": "forest-1",
+      "name": "El primer despertar",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-1.json",
+      "sha256": "bda79c253fef72179918441534dc9269c7755c5b59631cf30024ae0102dc8045"
+    },
+    {
+      "id": "forest-2",
+      "name": "La cantera hundida",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-2.json",
+      "sha256": "66109bad7b7417c95b10fbfaf192ffe025df15bdb07e1c25c0f4a970091463be"
+    },
+    {
+      "id": "forest-3",
+      "name": "El camino de las alturas",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-3.json",
+      "sha256": "0db35197ceba772e394a2a351c67ef681274e95c5b419ac150f80bf0e6d25401"
+    },
+    {
+      "id": "forest-4",
+      "name": "El peso de la decisión",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-4.json",
+      "sha256": "8eab76823664094eaba92c53c471cde5af87afa3e257df6a17cff0f40802f039"
+    },
+    {
+      "id": "forest-5",
+      "name": "El santuario de piedra",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-5.json",
+      "sha256": "969f02b3b2d4695d8b31f2a072439caed4c59ecb5ae3ba78ef39e5250fd58fdd"
+    },
+    {
+      "id": "forest-6",
+      "name": "Contra el viento",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-6.json",
+      "sha256": "129be2e76e665166665def1f2470486122322c4a1ca70f96055fe986ea7d8fb4"
+    },
+    {
+      "id": "forest-7",
+      "name": "Las islas del lago",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-7.json",
+      "sha256": "9a0d80db58071d8f9ea8ae26ee0d81b60f0a11bd8ab8c5b1e2d7c63a4c1ce20a"
+    },
+    {
+      "id": "forest-8",
+      "name": "La escalera rota",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-8.json",
+      "sha256": "3f8ab0840a8336a95a74c43041a1ed9c594441ff386fc80a06088a3a988ffc81"
+    },
+    {
+      "id": "forest-9",
+      "name": "La máquina dormida",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-9.json",
+      "sha256": "9378e973a9ad64366fbcaba0d0ea3bff58bbc61e5e732f03a9c1129b77359ff9"
+    },
+    {
+      "id": "forest-10",
+      "name": "El puente engañoso",
+      "spawnElement": "earth",
+      "file": "src/game/levels/data/forest-10.json",
+      "sha256": "8de8b81d16c02a518a55b3a830ce75ad4f79ab82ed4f46ad2559191ad20e5603"
+    }
+  ],
+  "campaignObjectCounts": {
+    "spawn": 10,
+    "terrain": 86,
+    "block": 5,
+    "plate": 5,
+    "door": 4,
+    "stone_wall": 12,
+    "coin": 12,
+    "exit": 10,
+    "label": 15,
+    "decoration": 60,
+    "interactive_lever": 7,
+    "mechanical_elevator": 4,
+    "retractable_bridge": 10,
+    "deep_water": 8,
+    "platform": 8,
+    "wind_fan": 1
+  },
+  "worldObjects": [
+    {
+      "kind": "mechanical_elevator",
+      "name": "Ascensor mecánico",
+      "implementation": "functional",
+      "behavior": "elevator",
+      "visualStates": ["idle", "elevator_gears", "elevator_activated"],
+      "campaignInstances": 4,
+      "placements": [
+        {
+          "level": "forest-3",
+          "objectId": "ferry"
+        },
+        {
+          "level": "forest-5",
+          "objectId": "sanctuary-lift"
+        },
+        {
+          "level": "forest-8",
+          "objectId": "lift"
+        },
+        {
+          "level": "forest-9",
+          "objectId": "lift"
+        }
+      ],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "current_campaign",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Falta motor, movimiento y parada.",
+      "assets": ["elevator_start", "elevator_motion", "elevator_stop"],
+      "creationCoverage": "Preparado: Ascensor · Arranque, Ascensor · Movimiento, Ascensor · Parada. Sin integración."
+    },
+    {
+      "kind": "wind_fan",
+      "name": "Ventilador horizontal",
+      "implementation": "functional",
+      "behavior": "fan",
+      "visualStates": ["off", "fan_blades", "fan_starting", "fan_stopping"],
+      "campaignInstances": 1,
+      "placements": [
+        {
+          "level": "forest-6",
+          "objectId": "headwind"
+        }
+      ],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "current_campaign",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Faltan aspas y viento continuo.",
+      "assets": ["fan_start", "fan_motion", "fan_stop"],
+      "creationCoverage": "Preparado: Ventilador · Arranque, Ventilador · Aspas y viento, Ventilador · Parada. Sin integración."
+    },
+    {
+      "kind": "rotating_gear",
+      "name": "Engranaje",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["idle", "gear_rotating"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Crujido/giro opcional; no tiene transmisión mecánica propia.",
+      "assets": ["elevator_motion"],
+      "creationCoverage": "Audio preparado para futura mecánica. Reutiliza el bucle de engranajes del ascensor; ajustar nivel y velocidad al movimiento futuro."
+    },
+    {
+      "kind": "interactive_lever",
+      "name": "Palanca",
+      "implementation": "functional",
+      "behavior": "lever",
+      "visualStates": ["off", "on", "lever_activate", "lever_deactivate"],
+      "campaignInstances": 7,
+      "placements": [
+        {
+          "level": "forest-3",
+          "objectId": "ferry-lever"
+        },
+        {
+          "level": "forest-5",
+          "objectId": "sanctuary-lever"
+        },
+        {
+          "level": "forest-6",
+          "objectId": "wind-lever"
+        },
+        {
+          "level": "forest-7",
+          "objectId": "island-lever"
+        },
+        {
+          "level": "forest-8",
+          "objectId": "lift-lever"
+        },
+        {
+          "level": "forest-9",
+          "objectId": "engine-lever"
+        },
+        {
+          "level": "forest-10",
+          "objectId": "route-lever"
+        }
+      ],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "current_campaign",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Hay señal genérica de activación; puede cubrir encendido y apagado. No integrada.",
+      "assets": ["mechanism_activate"],
+      "creationCoverage": "Preparado: Placa y palanca. Sin integración."
+    },
+    {
+      "kind": "lava",
+      "name": "Lava modular",
+      "implementation": "functional",
+      "behavior": "heat",
+      "visualStates": [
+        "surface",
+        "burning_loop",
+        "fire_particles",
+        "extinguished",
+        "extinguishing"
+      ],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "editor_available",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Faltan burbujeo y contacto incompatible.",
+      "assets": ["lava_ambience", "lava_entry"],
+      "creationCoverage": "Preparado: Lava · Burbujeo, Lava · Contacto incompatible. Sin integración."
+    },
+    {
+      "kind": "deep_water",
+      "name": "Agua profunda",
+      "implementation": "functional",
+      "behavior": "lake",
+      "visualStates": [
+        "water_surface",
+        "surface_loop",
+        "water_bubbles",
+        "water_splash"
+      ],
+      "campaignInstances": 8,
+      "placements": [
+        {
+          "level": "forest-3",
+          "objectId": "ferry-lake"
+        },
+        {
+          "level": "forest-4",
+          "objectId": "weight-pool"
+        },
+        {
+          "level": "forest-5",
+          "objectId": "sanctuary-pool"
+        },
+        {
+          "level": "forest-6",
+          "objectId": "ravine"
+        },
+        {
+          "level": "forest-7",
+          "objectId": "lake"
+        },
+        {
+          "level": "forest-8",
+          "objectId": "deep-pool"
+        },
+        {
+          "level": "forest-9",
+          "objectId": "machine-pool"
+        },
+        {
+          "level": "forest-10",
+          "objectId": "fork-lake"
+        }
+      ],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "current_campaign",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Faltan superficie localizada y contacto con el agua.",
+      "assets": ["lake_ambience", "lake_entry"],
+      "creationCoverage": "Preparado: Agua profunda · Superficie, Agua profunda · Contacto. Sin integración."
+    },
+    {
+      "kind": "wind_tunnel",
+      "name": "Túnel de viento",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["flow", "off"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Viento ambiental opcional; no aplica fuerza como el ventilador.",
+      "assets": ["air_glide"],
+      "creationCoverage": "Audio preparado para futura mecánica. Reutiliza el aire sostenido del planeo, con atenuación local."
+    },
+    {
+      "kind": "energy_barrier",
+      "name": "Barrera mágica",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": [
+        "barrier_active",
+        "barrier_activate",
+        "barrier_deactivate",
+        "inactive"
+      ],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Zumbido y transición visual opcionales; no hay activación lógica propia.",
+      "assets": ["barrier_activate", "barrier_loop", "barrier_deactivate"],
+      "creationCoverage": "Audio preparado para futura mecánica. Tres piezas dedicadas; el bucle solo mientras la barrera esté activa."
+    },
+    {
+      "kind": "waterwheel",
+      "name": "Rueda hidráulica",
+      "implementation": "functional",
+      "behavior": "waterwheel",
+      "visualStates": ["idle", "spinning"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "editor_available",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Falta giro sostenido; el impacto de Agua también está pendiente.",
+      "assets": ["water_impact", "waterwheel_motion"],
+      "creationCoverage": "Preparado: Impacto de Agua, Rueda hidráulica · Giro. Sin integración."
+    },
+    {
+      "kind": "steam_boiler",
+      "name": "Caldera elemental",
+      "implementation": "functional",
+      "behavior": "boiler",
+      "visualStates": ["cold", "boiler_heating", "boiler_steam"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "editor_available",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Faltan carga, calentamiento y vapor.",
+      "assets": ["boiler_water", "boiler_heating", "boiler_steam"],
+      "creationCoverage": "Preparado: Caldera · Carga de agua, Caldera · Calentamiento, Caldera · Vapor listo. Sin integración."
+    },
+    {
+      "kind": "retractable_bridge",
+      "name": "Puente retráctil",
+      "implementation": "functional",
+      "behavior": "bridge",
+      "visualStates": [
+        "retracted",
+        "extended",
+        "bridge_extending",
+        "bridge_retracting"
+      ],
+      "campaignInstances": 10,
+      "placements": [
+        {
+          "level": "forest-3",
+          "objectId": "cliff-bridge"
+        },
+        {
+          "level": "forest-4",
+          "objectId": "weight-bridge"
+        },
+        {
+          "level": "forest-5",
+          "objectId": "sanctuary-bridge"
+        },
+        {
+          "level": "forest-6",
+          "objectId": "first-bridge"
+        },
+        {
+          "level": "forest-6",
+          "objectId": "second-bridge"
+        },
+        {
+          "level": "forest-7",
+          "objectId": "near-bridge"
+        },
+        {
+          "level": "forest-7",
+          "objectId": "far-bridge"
+        },
+        {
+          "level": "forest-8",
+          "objectId": "ruin-bridge"
+        },
+        {
+          "level": "forest-9",
+          "objectId": "workshop-bridge"
+        },
+        {
+          "level": "forest-10",
+          "objectId": "main-bridge"
+        }
+      ],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "current_campaign",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Apertura de puerta es parcial; faltan extensión/retracción adaptables.",
+      "assets": ["bridge_extend", "bridge_retract", "bridge_latch"],
+      "creationCoverage": "Preparado: Puente · Extensión, Puente · Retracción, Puente · Encaje. Sin integración."
+    },
+    {
+      "kind": "stone_wall",
+      "name": "Muro destructible",
+      "implementation": "functional",
+      "behavior": "breakable",
+      "visualStates": ["intact", "wall_cracking", "wall_breaking", "broken"],
+      "campaignInstances": 12,
+      "placements": [
+        {
+          "level": "forest-1",
+          "objectId": "grove-wall"
+        },
+        {
+          "level": "forest-2",
+          "objectId": "rim-wall"
+        },
+        {
+          "level": "forest-2",
+          "objectId": "root-wall"
+        },
+        {
+          "level": "forest-3",
+          "objectId": "cliff-wall"
+        },
+        {
+          "level": "forest-4",
+          "objectId": "weight-wall"
+        },
+        {
+          "level": "forest-5",
+          "objectId": "engine-seal"
+        },
+        {
+          "level": "forest-5",
+          "objectId": "last-seal"
+        },
+        {
+          "level": "forest-6",
+          "objectId": "wind-wall"
+        },
+        {
+          "level": "forest-7",
+          "objectId": "island-wall"
+        },
+        {
+          "level": "forest-8",
+          "objectId": "high-wall"
+        },
+        {
+          "level": "forest-9",
+          "objectId": "engine-wall"
+        },
+        {
+          "level": "forest-10",
+          "objectId": "exit-wall"
+        }
+      ],
+      "coverage": "Audio conectado a movimiento, contacto o transición real del mecanismo.",
+      "priority": "current_campaign",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Existen golpe y rotura. Usar golpe en impactos parciales y rotura solo en el final. No integrados.",
+      "assets": ["earth_smash", "wall_break"],
+      "creationCoverage": "Preparado: Golpe de Tierra, Muro que se rompe. Sin integración."
+    },
+    {
+      "kind": "disappearing_platform",
+      "name": "Plataforma evanescente",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": [
+        "solid",
+        "hidden",
+        "platform_disappearing",
+        "platform_appearing"
+      ],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Aparición/desaparición visual; su collider no sigue esa animación.",
+      "assets": ["platform_disappear", "platform_appear"],
+      "creationCoverage": "Audio preparado para futura mecánica. Dos transiciones dedicadas; sincronizar con el futuro cambio real de colisión."
+    },
+    {
+      "kind": "timed_door",
+      "name": "Puerta temporizada",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": [
+        "closed",
+        "open",
+        "door_opening",
+        "door_closing",
+        "door_warning"
+      ],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Apertura, aviso y cierre solo visuales; sin temporizador del pack.",
+      "assets": ["stone_gate_open", "timed_gate_warning", "door_close"],
+      "creationCoverage": "Audio preparado para futura mecánica. Reutiliza puerta y pulso temporal. El temporizador del pack sigue sin implementar."
+    },
+    {
+      "kind": "steam_vent",
+      "name": "Salida de vapor",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["off", "active", "warning", "stopping"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Vapor/aviso visuales; sin pulsos de juego ni daño.",
+      "assets": ["steam_vent_warning", "boiler_steam", "steam_vent_stop"],
+      "creationCoverage": "Audio preparado para futura mecánica. Aviso y cierre dedicados; comparte el bucle de vapor con la caldera."
+    },
+    {
+      "kind": "watered_plant",
+      "name": "Planta regable",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["seed", "fully_grown", "plant_growing"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Crecimiento visual; no recibe Agua como una planta funcional.",
+      "assets": ["water_impact", "plant_grow"],
+      "creationCoverage": "Audio preparado para futura mecánica. Impacto de Agua compartido y crecimiento dedicado."
+    },
+    {
+      "kind": "floating_wooden_block",
+      "name": "Bloque flotante",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["idle", "wooden_block_floating", "wooden_block_wake"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Balanceo/estela visuales; no existe flotación física.",
+      "assets": ["wood_float", "lake_entry"],
+      "creationCoverage": "Audio preparado para futura mecánica. Bucle dedicado de madera y agua; el chapoteo de entrada es compartido."
+    },
+    {
+      "kind": "wind_mill",
+      "name": "Molino de viento",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["idle", "mill_spinning"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Giro visual; no recibe impulsos de Aire como mecanismo.",
+      "assets": ["wind_mill"],
+      "creationCoverage": "Audio preparado para futura mecánica. Bucle dedicado de eje, engranajes y aspas de madera."
+    },
+    {
+      "kind": "fire_switch",
+      "name": "Interruptor de fuego",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["unlit", "active", "igniting", "extinguishing"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Ignición visual; no hay receptor funcional de Fuego.",
+      "assets": ["fire_switch", "mechanism_activate"],
+      "creationCoverage": "Audio preparado para futura mecánica. Activación dedicada; la desactivación puede usar el encaje mecánico existente."
+    },
+    {
+      "kind": "elemental_bounce_pad",
+      "name": "Plataforma de rebote",
+      "implementation": "visual_only_with_optional_static_collider",
+      "behavior": "prop",
+      "visualStates": ["idle", "bounce_launch"],
+      "campaignInstances": 0,
+      "placements": [],
+      "coverage": "Audio conectado a estados visuales actuales; futuras mecánicas pendientes.",
+      "priority": "deferred_visual_audio",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/types.ts",
+          "line": 57
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        }
+      ],
+      "previousCoverage": "Rebote visual; no impulsa al jugador.",
+      "assets": ["bounce_pad"],
+      "creationCoverage": "Audio preparado para futura mecánica. Un efecto dedicado al impulso; no añade la mecánica de rebote."
+    }
+  ],
+  "missingFamilies": [
+    {
+      "id": "footsteps",
+      "area": "Movimiento",
+      "label": "Pasos de los cuatro elementos",
+      "priority": "alta",
+      "format": "variantes cortas",
+      "trigger": "Desplazamiento real sobre una superficie; Tierra en toda la campaña.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Comenzar por Tierra y una base ligera; variar textura por elemento. El esquema no contiene un material acústico: no asumir que el dibujo determina el sonido. No disparar por mantener una tecla contra una pared.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerMotor.ts",
+          "line": 31
+        },
+        {
+          "path": "src/game/levels/schema/types.ts",
+          "line": 13
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay archivos de pasos.",
+      "assets": ["earth_step", "water_step", "fire_step", "air_step"],
+      "assetPaths": [
+        "/assets/audio/veylith-natural-v1/earth_step.wav",
+        "/assets/audio/veylith-natural-v1/water_step.wav",
+        "/assets/audio/veylith-natural-v1/fire_step.wav",
+        "/assets/audio/veylith-natural-v1/air_step.wav"
+      ],
+      "creationCoverage": "Preparado: Paso de Tierra, Paso de Agua, Paso de Fuego, Paso de Aire. Pendiente de integración."
+    },
+    {
+      "id": "other_jumps",
+      "area": "Movimiento",
+      "label": "Saltos de Agua, Fuego y Aire",
+      "priority": "media",
+      "format": "tres variantes",
+      "trigger": "Despegue de un salto aceptado de cada forma.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Un evento al despegar; no repetir por mantener pulsado. La animación jump no es un evento nuevo en cada frame.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerMotor.ts",
+          "line": 31
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "Solo existe earth_jump.",
+      "assets": ["water_jump", "fire_jump", "air_jump"],
+      "assetPaths": [
+        "/assets/audio/veylith-natural-v1/water_jump.wav",
+        "/assets/audio/veylith-natural-v1/fire_jump.wav",
+        "/assets/audio/veylith-natural-v1/air_jump.wav"
+      ],
+      "creationCoverage": "Preparado: Salto de Agua, Salto de Fuego, Salto de Aire. Pendiente de integración."
+    },
+    {
+      "id": "other_landings",
+      "area": "Movimiento",
+      "label": "Aterrizajes de Agua, Fuego y Aire",
+      "priority": "media",
+      "format": "base ligera y variantes",
+      "trigger": "Paso de estar en el aire a apoyar el cuerpo.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Variar intensidad con caída real; deduplicar con aterrizaje en agua o impactos especiales.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerMotor.ts",
+          "line": 31
+        },
+        {
+          "path": "src/game/entities/player/PlayablePlayer.ts",
+          "line": 109
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "Solo existe earth_land.",
+      "assets": ["water_land", "fire_land", "air_land"],
+      "assetPaths": [
+        "/assets/audio/veylith-natural-v1/water_land.wav",
+        "/assets/audio/veylith-natural-v1/fire_land.wav",
+        "/assets/audio/veylith-natural-v1/air_land.wav"
+      ],
+      "creationCoverage": "Preparado: Aterrizaje de Agua, Aterrizaje de Fuego, Aterrizaje de Aire. Pendiente de integración."
+    },
+    {
+      "id": "fire_double_jump",
+      "area": "Fuego",
+      "label": "Doble salto de Fuego",
+      "priority": "media",
+      "format": "efecto corto",
+      "trigger": "Segundo salto consumido en el aire.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Usar el indicador doubleJumped; cambiar de forma no repone el salto.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerMotor.ts",
+          "line": 31
+        },
+        {
+          "path": "src/game/systems/powers/PowerEffects.ts",
+          "line": 78
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "fire_cast describe un lanzamiento horizontal, no el impulso de salto.",
+      "assets": ["fire_double_jump"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/fire_double_jump.wav"],
+      "creationCoverage": "Preparado: Doble salto de Fuego. Pendiente de integración."
+    },
+    {
+      "id": "air_glide",
+      "area": "Aire",
+      "label": "Planeo sostenido de Aire",
+      "priority": "media",
+      "format": "bucle con entrada y salida suave",
+      "trigger": "Planeo real durante el descenso.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Un solo bucle; detener al soltar, tocar suelo, transformarse, pausar o reiniciar. No reproducirlo una vez por frame.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerMotor.ts",
+          "line": 31
+        },
+        {
+          "path": "src/game/systems/powers/PowerEffects.ts",
+          "line": 129
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "air_dash dura 0.68 s y corresponde al impulso.",
+      "assets": ["air_glide"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/air_glide.wav"],
+      "creationCoverage": "Preparado: Planeo de Aire. Pendiente de integración."
+    },
+    {
+      "id": "earth_swing",
+      "area": "Tierra",
+      "label": "Barrido del puño de Tierra sin impacto",
+      "priority": "media",
+      "format": "efecto corto",
+      "trigger": "Inicio de golpe de Tierra, aunque no alcance una pared.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Separar movimiento del golpe de contacto válido; no sonar a pared rota al golpear el aire. En el estado actual se comprueban solo contactos rompibles.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerPowers.ts",
+          "line": 63
+        },
+        {
+          "path": "src/game/systems/powers/PowerEffects.ts",
+          "line": 99
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "earth_smash describe contacto de piedra.",
+      "assets": ["earth_swing"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/earth_swing.wav"],
+      "creationCoverage": "Preparado: Puñetazo de Tierra al aire. Pendiente de integración."
+    },
+    {
+      "id": "earth_plunge",
+      "area": "Tierra",
+      "label": "Inicio y descenso del golpe en picado",
+      "priority": "media",
+      "format": "inicio y caída breve",
+      "trigger": "Tierra usa Poder en el aire y empieza el descenso especial.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Cancelar al cambiar de forma o finalizar; evitar duplicar impacto fuerte y aterrizaje.",
+      "evidence": [
+        {
+          "path": "src/game/entities/player/PlayerPowers.ts",
+          "line": 63
+        },
+        {
+          "path": "src/game/entities/player/PlayablePlayer.ts",
+          "line": 84
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "earth_land y earth_smash cubren posibles contactos, no el descenso.",
+      "assets": ["earth_plunge"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/earth_plunge.wav"],
+      "creationCoverage": "Preparado: Descenso de Tierra. Pendiente de integración."
+    },
+    {
+      "id": "water_impact",
+      "area": "Agua",
+      "label": "Impacto de proyectil de Agua",
+      "priority": "media",
+      "format": "salpicadura corta",
+      "trigger": "Contacto barrido del proyectil contra un sólido o receptor.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Sonar en contacto, incluido el tramo de la boca de disparo. No sonar como impacto al caducar sin chocar.",
+      "evidence": [
+        {
+          "path": "src/game/systems/powers/PowerEffects.ts",
+          "line": 266
+        },
+        {
+          "path": "src/game/systems/powers/PowerEffects.ts",
+          "line": 203
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "water_cast cubre el disparo y excluye el impacto.",
+      "assets": ["water_impact"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/water_impact.wav"],
+      "creationCoverage": "Preparado: Impacto de Agua. Pendiente de integración."
+    },
+    {
+      "id": "fire_impact",
+      "area": "Fuego",
+      "label": "Impacto de bola de Fuego",
+      "priority": "media",
+      "format": "explosión pequeña",
+      "trigger": "Contacto real de una bola de Fuego.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "La llama residual dura 600 ms y es visual; este sonido no representa daño ni enemigos.",
+      "evidence": [
+        {
+          "path": "src/game/systems/powers/PowerEffects.ts",
+          "line": 266
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "fire_cast excluye la explosión.",
+      "assets": ["fire_impact"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/fire_impact.wav"],
+      "creationCoverage": "Preparado: Impacto de Fuego. Pendiente de integración."
+    },
+    {
+      "id": "elevator_motion",
+      "area": "Objetos interactivos",
+      "label": "Ascensor: motor, engranajes y desplazamiento",
+      "priority": "alta",
+      "format": "bucle con entrada y parada",
+      "trigger": "Movimiento horizontal o vertical real del ascensor.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Usar cambio de posición, no solo active o animación de engranajes. Puede estar activo y detenido por obstáculo o final de recorrido; no emitir impactos falsos de aplastamiento.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 108
+        },
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 68
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay audio de motor o engranajes.",
+      "assets": ["elevator_start", "elevator_motion", "elevator_stop"],
+      "assetPaths": [
+        "/assets/audio/veylith-natural-v1/elevator_start.wav",
+        "/assets/audio/veylith-natural-v1/elevator_motion.wav",
+        "/assets/audio/veylith-natural-v1/elevator_stop.wav"
+      ],
+      "creationCoverage": "Preparado: Ascensor · Arranque, Ascensor · Movimiento, Ascensor · Parada. Pendiente de integración."
+    },
+    {
+      "id": "fan_motion",
+      "area": "Objetos interactivos",
+      "label": "Ventilador: aspas y corriente de viento",
+      "priority": "alta",
+      "format": "bucle con entrada y salida",
+      "trigger": "Ventilador activo, audible por proximidad.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Tierra resiste el empuje pero debe poder oír el ventilador. No iniciar otro bucle por cada contacto del jugador.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 158
+        },
+        {
+          "path": "src/game/systems/world/WindMotion.ts",
+          "line": 25
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "air_dash no es un ventilador sostenido; forest_ambience solo es ambiente general.",
+      "assets": ["fan_start", "fan_motion", "fan_stop"],
+      "assetPaths": [
+        "/assets/audio/veylith-natural-v1/fan_start.wav",
+        "/assets/audio/veylith-natural-v1/fan_motion.wav",
+        "/assets/audio/veylith-natural-v1/fan_stop.wav"
+      ],
+      "creationCoverage": "Preparado: Ventilador · Arranque, Ventilador · Aspas y viento, Ventilador · Parada. Pendiente de integración."
+    },
+    {
+      "id": "bridge_motion",
+      "area": "Objetos interactivos",
+      "label": "Puente: extensión y retracción",
+      "priority": "alta",
+      "format": "bucle de mecanismo o dos transiciones",
+      "trigger": "El progreso de extensión/retracción está cambiando.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Las duraciones son configurables y puede invertirse la marcha. Detener al llegar a cada extremo; reutilizar un cierre mecánico para el encaje.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 83
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 242
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "stone_gate_open es una apertura fija de 1.48 s; cobertura parcial.",
+      "assets": ["bridge_extend", "bridge_retract", "bridge_latch"],
+      "assetPaths": [
+        "/assets/audio/veylith-natural-v1/bridge_extend.wav",
+        "/assets/audio/veylith-natural-v1/bridge_retract.wav",
+        "/assets/audio/veylith-natural-v1/bridge_latch.wav"
+      ],
+      "creationCoverage": "Preparado: Puente · Extensión, Puente · Retracción, Puente · Encaje. Pendiente de integración."
+    },
+    {
+      "id": "lake_ambience",
+      "area": "Objetos interactivos",
+      "label": "Agua profunda: superficie y oleaje",
+      "priority": "alta",
+      "format": "bucle localizado",
+      "trigger": "Proximidad a una zona de agua habilitada.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "La forma Agua cruza una superficie fija; no existen natación, inmersión ni flotabilidad. Acotar instancias y atenuar con distancia.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 166
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "El arroyo distante de forest_ambience no identifica cada lago.",
+      "assets": ["lake_ambience"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/lake_ambience.wav"],
+      "creationCoverage": "Preparado: Agua profunda · Superficie. Pendiente de integración."
+    },
+    {
+      "id": "lake_entry",
+      "area": "Objetos interactivos",
+      "label": "Contacto o caída al agua",
+      "priority": "alta",
+      "format": "salpicadura de cuerpo",
+      "trigger": "Primer contacto del jugador con la zona de agua.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Elemento incompatible reinicia inmediatamente. Emitir una sola señal y coordinarla con el reinicio; Agua puede cruzar sin fracaso.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 166
+        },
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 96
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay un sonido de entrada al agua; no equivale al proyectil.",
+      "assets": ["lake_entry"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/lake_entry.wav"],
+      "creationCoverage": "Preparado: Agua profunda · Contacto. Pendiente de integración."
+    },
+    {
+      "id": "lava_ambience",
+      "area": "Objetos interactivos",
+      "label": "Lava: burbujeo y calor",
+      "priority": "media",
+      "format": "bucle localizado",
+      "trigger": "Proximidad a la lava habilitada.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Fuego camina sobre su superficie; no hay salud, daño gradual ni extinción por Agua implementada, aunque el arte tenga estados de extinción.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 166
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 225
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No existe ambiente de lava.",
+      "assets": ["lava_ambience"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/lava_ambience.wav"],
+      "creationCoverage": "Preparado: Lava · Burbujeo. Pendiente de integración."
+    },
+    {
+      "id": "lava_entry",
+      "area": "Objetos interactivos",
+      "label": "Contacto incompatible con lava",
+      "priority": "media",
+      "format": "siseo breve",
+      "trigger": "Agua, Aire o Tierra entran en la zona de lava y reinician.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "No reproducir el aviso de fracaso para Fuego ni añadir gritos, daño o muerte persistente.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 166
+        },
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 96
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "ui_restart es la señal genérica de nuevo intento.",
+      "assets": ["lava_entry"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/lava_entry.wav"],
+      "creationCoverage": "Preparado: Lava · Contacto incompatible. Pendiente de integración."
+    },
+    {
+      "id": "waterwheel_motion",
+      "area": "Objetos interactivos",
+      "label": "Rueda hidráulica en marcha",
+      "priority": "media",
+      "format": "bucle de agua y madera",
+      "trigger": "La rueda alcanza su cuota de impactos de Agua y se activa.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Antes de completar, usar el impacto de Agua; después, un solo bucle hasta reiniciar. Fuego no la activa.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 28
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 231
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay sonido de rueda girando.",
+      "assets": ["waterwheel_motion"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/waterwheel_motion.wav"],
+      "creationCoverage": "Preparado: Rueda hidráulica · Giro. Pendiente de integración."
+    },
+    {
+      "id": "boiler_water",
+      "area": "Objetos interactivos",
+      "label": "Caldera: carga de agua",
+      "priority": "media",
+      "format": "agua dentro de metal",
+      "trigger": "Impacto de Agua aceptado mientras se carga la caldera.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Puede reutilizar el futuro impacto de Agua con una capa metálica; evitar sumar varios sonidos de llenado por el mismo contacto.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 37
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 53
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "Falta una resonancia de recipiente metálico.",
+      "assets": ["boiler_water"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/boiler_water.wav"],
+      "creationCoverage": "Preparado: Caldera · Carga de agua. Pendiente de integración."
+    },
+    {
+      "id": "boiler_heating",
+      "area": "Objetos interactivos",
+      "label": "Caldera: calentamiento",
+      "priority": "media",
+      "format": "entrada y hervor controlado",
+      "trigger": "Primer impacto de Fuego y estado de calor antes de completar.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "No confundir calor parcial con vapor listo: requiere ambas cuotas. El estado de calentamiento permanece hasta la siguiente transición.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 37
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 234
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay sonido de caldera caliente.",
+      "assets": ["boiler_heating"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/boiler_heating.wav"],
+      "creationCoverage": "Preparado: Caldera · Calentamiento. Pendiente de integración."
+    },
+    {
+      "id": "boiler_steam",
+      "area": "Objetos interactivos",
+      "label": "Caldera: presión y vapor",
+      "priority": "media",
+      "format": "activación y bucle de vapor",
+      "trigger": "Se completan los impactos requeridos de Agua y Fuego.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Sustituir el hervor por vapor; no mantener ambos bucles a pleno volumen. El vapor no causa daño.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldState.ts",
+          "line": 37
+        },
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 234
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay vapor continuo.",
+      "assets": ["boiler_steam"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/boiler_steam.wav"],
+      "creationCoverage": "Preparado: Caldera · Vapor listo. Pendiente de integración."
+    },
+    {
+      "id": "tank_fill",
+      "area": "Puzzles",
+      "label": "Depósito: avance de llenado",
+      "priority": "media",
+      "format": "gorgoteo corto",
+      "trigger": "Cada impacto válido de Agua que avanza el contador.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "La lógica avanza por impactos, no hay simulación continua de caudal. Fuego no avanza el contador.",
+      "evidence": [
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzleState.ts",
+          "line": 63
+        },
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzle.ts",
+          "line": 157
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay audio de recipiente llenándose.",
+      "assets": ["tank_fill"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/tank_fill.wav"],
+      "creationCoverage": "Preparado: Depósito · Llenado. Pendiente de integración."
+    },
+    {
+      "id": "tank_ready",
+      "area": "Puzzles",
+      "label": "Depósito lleno",
+      "priority": "media",
+      "format": "resolución breve",
+      "trigger": "La cuota del depósito se alcanza por primera vez.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Una vez por intento; distinguir el último impacto de los anteriores. No añadir otra fanfarria si la puerta ya confirma claramente el resultado.",
+      "evidence": [
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzleState.ts",
+          "line": 63
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "mechanism_activate puede servir de confirmación provisional.",
+      "assets": ["tank_ready"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/tank_ready.wav"],
+      "creationCoverage": "Preparado: Depósito · Completo. Pendiente de integración."
+    },
+    {
+      "id": "torch_ignite",
+      "area": "Puzzles",
+      "label": "Antorcha: encendido",
+      "priority": "media",
+      "format": "ignición corta",
+      "trigger": "La antorcha alcanza sus impactos de Fuego y queda encendida.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Una vez por antorcha; no reencender al recibir más proyectiles tras resolverse.",
+      "evidence": [
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzleState.ts",
+          "line": 63
+        },
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzle.ts",
+          "line": 157
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "fire_cast corresponde a lanzar, no a encender la antorcha.",
+      "assets": ["torch_ignite"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/torch_ignite.wav"],
+      "creationCoverage": "Preparado: Antorcha · Encendido. Pendiente de integración."
+    },
+    {
+      "id": "door_close",
+      "area": "Puzzles",
+      "label": "Cierre de puertas",
+      "priority": "alta",
+      "format": "cierre de piedra",
+      "trigger": "Una puerta abierta vuelve a quedar cerrada.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "En la puerta original con temporizador, sonar cuando el collider realmente cierra, no al expirar si el jugador todavía la ocupa. En puertas por señales puede cerrar al apagar una palanca.",
+      "evidence": [
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzleState.ts",
+          "line": 55
+        },
+        {
+          "path": "src/game/levels/firstPuzzle/FirstPuzzle.ts",
+          "line": 83
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "Solo existe stone_gate_open.",
+      "assets": ["door_close"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/door_close.wav"],
+      "creationCoverage": "Preparado: Puerta de piedra · Cierre. Pendiente de integración."
+    },
+    {
+      "id": "timed_gate_warning",
+      "area": "Puzzles",
+      "label": "Aviso del cierre de La puerta del viento",
+      "priority": "acabado",
+      "format": "pulsos discretos",
+      "trigger": "Cambio de segundos restantes en el prototipo de seis segundos.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Solo en este mecanismo implementado; no introducir un cronómetro de derrota en la campaña. La puerta temporizada del pack es visual y distinta.",
+      "evidence": [
+        {
+          "path": "src/game/levels/firstPuzzle/FirstPuzzleState.ts",
+          "line": 23
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "No hay aviso de cuenta atrás.",
+      "assets": ["timed_gate_warning"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/timed_gate_warning.wav"],
+      "creationCoverage": "Preparado: Puerta temporal · Aviso. Pendiente de integración."
+    },
+    {
+      "id": "exit_ready",
+      "area": "Puzzles",
+      "label": "Portal habilitado al resolver requisitos",
+      "priority": "media",
+      "format": "activación mágica breve",
+      "trigger": "Requisitos de una salida pasan de incompletos a completos.",
+      "existingCoverage": "Recursos conectados a eventos reales; véase docs/audio-integration.md.",
+      "integrationRule": "Una vez en el cambio real, no al reaplicar alpha ni al entrar al nivel con salida ya habilitada. Puede reutilizarse una confirmación suave como primera integración.",
+      "evidence": [
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzle.ts",
+          "line": 208
+        },
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzleState.ts",
+          "line": 107
+        }
+      ],
+      "status": "runtime_integrated",
+      "previousCoverage": "portal_complete y level_victory son finales; gem_collect es recogida.",
+      "assets": ["exit_ready"],
+      "assetPaths": ["/assets/audio/veylith-natural-v1/exit_ready.wav"],
+      "creationCoverage": "Preparado: Salida · Habilitada. Pendiente de integración."
+    }
+  ],
+  "existingReuse": [
+    {
+      "event": "Salto de Tierra",
+      "assets": ["earth_jump"],
+      "rule": "Un salto aceptado, sin repetir por tecla mantenida."
+    },
+    {
+      "event": "Aterrizaje fuerte de Tierra y bloque pesado",
+      "assets": ["earth_land"],
+      "rule": "Reutilización propuesta para bloque, con intensidad por velocidad de contacto; falta observar el aterrizaje del bloque."
+    },
+    {
+      "event": "Contacto del puño con muro",
+      "assets": ["earth_smash"],
+      "rule": "Solo contacto válido; no reproducir este impacto por cada pulsación sin objetivo."
+    },
+    {
+      "event": "Impactos parciales y rotura final de muro",
+      "assets": ["earth_smash", "wall_break"],
+      "rule": "No reproducir rotura en cada golpe de un muro que necesita varios."
+    },
+    {
+      "event": "Arrastre del bloque",
+      "assets": ["stone_push"],
+      "rule": "Bucle mientras se desplaza apoyado; no solo mientras se ve push_loop o se intenta empujar."
+    },
+    {
+      "event": "Placa, palanca y encaje mecánico",
+      "assets": ["mechanism_activate"],
+      "rule": "Reutilización válida como base; una transición real, no cada frame."
+    },
+    {
+      "event": "Apertura de puerta",
+      "assets": ["stone_gate_open"],
+      "rule": "stone_gate_open conserva la apertura; door_close ya ofrece el cierre separado."
+    },
+    {
+      "event": "Gemas y transformación genérica",
+      "assets": ["gem_collect"],
+      "rule": "Ya cubre el cambio inmediato; cuatro identidades elementales serían una mejora, no cuatro mecánicas ausentes."
+    },
+    {
+      "event": "Moneda recogida",
+      "assets": ["coin_collect"],
+      "rule": "Una vez por moneda/intento, sin otorgar saldo; en playtest solo feedback local."
+    },
+    {
+      "event": "Portal y victoria",
+      "assets": ["portal_complete", "level_victory"],
+      "rule": "Son alternativas o capas que hay que mezclar; no dos celebraciones a pleno volumen al mismo evento."
+    },
+    {
+      "event": "Reinicio por caída, bloque perdido o zona incompatible",
+      "assets": ["ui_restart"],
+      "rule": "Puede reutilizarse; coordinar con salpicadura/siseo y no añadir otra pantalla de derrota."
+    },
+    {
+      "event": "Menús, pausa, continuación y resultados",
+      "assets": [
+        "ui_confirm",
+        "ui_back",
+        "ui_pause",
+        "ui_resume",
+        "ui_restart",
+        "level_victory",
+        "star_award",
+        "new_record",
+        "reward_bank"
+      ],
+      "rule": "Eventos conectados. No sonido por hover/actualización, ni premios al navegar por las tarjetas."
+    }
+  ],
+  "optionalEnhancements": [
+    {
+      "area": "Transformaciones",
+      "proposal": "Cuatro capas de identidad para Agua/Fuego/Aire/Tierra sobre gem_collect.",
+      "status": "optional_polish"
+    },
+    {
+      "area": "Variación de pisadas",
+      "proposal": "Dos o tres variaciones por familia para reducir repetición; no es un número fijado de archivos.",
+      "status": "optional_polish"
+    },
+    {
+      "area": "Fuego persistente",
+      "proposal": "Crepitar de antorchas encendidas y cola corta del residuo de 600 ms.",
+      "status": "optional_polish"
+    },
+    {
+      "area": "Ambiente mágico",
+      "proposal": "Zumbido cercano de portal o gemas; no emitir uno global por cada objeto.",
+      "status": "optional_polish"
+    },
+    {
+      "area": "Música",
+      "proposal": "Tema de menú y exploración, si se elige una dirección musical.",
+      "status": "separate_creative_decision"
+    },
+    {
+      "area": "Editor",
+      "proposal": "Guardar, cancelar y errores podrían reutilizar UI; mantener silencio al arrastrar/seleccionar y por defecto en el laboratorio.",
+      "status": "development_only_optional"
+    }
+  ],
+  "integrationGaps": [
+    {
+      "finding": "Falta escucha y validación física en iPhone.",
+      "required": "Comprobar mezcla, altavoces/auriculares e interrupciones de la sesión de audio en dispositivo."
+    }
+  ],
+  "scopeNotes": [
+    "La campaña actual empieza con Tierra y no contiene gemas; los otros elementos siguen implementados para originales y editor.",
+    "Rueda, caldera y lava tienen lógica funcional aunque no aparecen en estos diez mapas.",
+    "Los once props visuales pueden tener collider estático; sus animaciones no crean la mecánica que sugieren.",
+    "La cuenta atrás real del prototipo La puerta del viento no convierte en funcional a la puerta temporizada del pack.",
+    "No se requieren sonidos de enemigos, daño, tiendas, compras, checkpoints o natación: esas funciones no están implementadas en este alcance.",
+    "UI y resultados integrados; no hay sonidos por hover/render ni recompensas al navegar por tarjetas."
+  ],
+  "sources": [
+    {
+      "path": "docs/architecture.md",
+      "sha256": "abfede48f29a0d8deedf43b742829431d9fb91c10aaba7b4880b2d4fac1fd3e5"
+    },
+    {
+      "path": "docs/audio-inventory.json",
+      "sha256": "dccee5e062800b54813a0951fccb2107a0de1708fbed6b590b814bc8032a6945"
+    },
+    {
+      "path": "docs/forest-puzzles.md",
+      "sha256": "61537cd25625b37728fd681989c29b427c64e8da8db37e85db666e63f2fcab38"
+    },
+    {
+      "path": "docs/interactive-world.md",
+      "sha256": "99e2c78e2222970373dd8d36e24d12db914b41a6f0904880ecaa50c6849256ad"
+    },
+    {
+      "path": "docs/level-editor.md",
+      "sha256": "bc513e95f8317eb957becbfbe8767ba997a73d0a54f0f362ec90de48a0ef592e"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "sha256": "cd0d96535efcd806e775f06ae4a2999c354647c09c45de01794e0510a1d17090"
+    },
+    {
+      "path": "src/components/game/RunHud.tsx",
+      "sha256": "c126203bfe617eb298e7e600b11278cecd95b32354aa76f40f1e1f62fea2263d"
+    },
+    {
+      "path": "src/components/ui/Art.tsx",
+      "sha256": "336022263af351df2a6823e485bf22e413c31945c8095966f78261780e25a597"
+    },
+    {
+      "path": "src/editor/Playtest.tsx",
+      "sha256": "974939a235705327c8fd454537d55e4793ac89d68eff3a367e8e60f8626f9ec2"
+    },
+    {
+      "path": "src/editor/library.ts",
+      "sha256": "75a0c32021b094090cb9a85ca350b2b7856d44b304220561b91e91cff519c869"
+    },
+    {
+      "path": "src/game/assets/worldManifest.json",
+      "sha256": "8b018894a82d641301332753ba9795027322dd9ee44a40e2a2a98dfefdb6e795"
+    },
+    {
+      "path": "src/game/core/Game.ts",
+      "sha256": "9431d673b9c9f43ebbfb4dd3940860067054b0ffdd355174677c659a2153ad29"
+    },
+    {
+      "path": "src/game/entities/player/PlayablePlayer.ts",
+      "sha256": "ae9e395a1389b832bfc283480f53013f075836509d0e2e6d5d000402d325d259"
+    },
+    {
+      "path": "src/game/entities/player/PlayerMotor.ts",
+      "sha256": "639256dee441dd704320ec46de5c1570c9717e4199117051fee9a0fa5a15fd70"
+    },
+    {
+      "path": "src/game/entities/player/PlayerPowers.ts",
+      "sha256": "65eb70e578c5099fd2844f86ab580f1cb7266005db140fe3742b5ed137cfb0b9"
+    },
+    {
+      "path": "src/game/entities/player/PushAnimationState.ts",
+      "sha256": "195ea0347752f1f6d358e705d22389b6dc04405a9b6182d1ef23bb4e5c25a713"
+    },
+    {
+      "path": "src/game/levels/ancientForest/ForestAnimatedProps.ts",
+      "sha256": "4c6d3afe2f3a3b083b884901c41194bc3475f53350f3566e93c6d55b336dfd3c"
+    },
+    {
+      "path": "src/game/levels/campaignOrder.ts",
+      "sha256": "3f86b96a707363f5dfc7cdfb94ee3cdbc562bf7a6b9840f177bd512f949cd84c"
+    },
+    {
+      "path": "src/game/levels/firstPuzzle/FirstPuzzle.ts",
+      "sha256": "43c321969c6adad2eb51e8b8f9a89c69e472e7f3984433633454c01db18c48f2"
+    },
+    {
+      "path": "src/game/levels/firstPuzzle/FirstPuzzleState.ts",
+      "sha256": "60d7a1d310220c8d9221799102e8abb80735def00433f2bc50667eb57d73bd78"
+    },
+    {
+      "path": "src/game/levels/forestPuzzles/ForestPuzzle.ts",
+      "sha256": "36983706aabbb1c264969ebea599cd402cba4537ef8ab03b9ba4cdf6daf930b5"
+    },
+    {
+      "path": "src/game/levels/forestPuzzles/ForestPuzzleState.ts",
+      "sha256": "f58dc0b5e7bad768a20b808324fc462545667e1f0da886e0a1466d10cd3ab42d"
+    },
+    {
+      "path": "src/game/levels/forestPuzzles/HeavyBlock.ts",
+      "sha256": "0c4c14249894f2bbc73ef3cb25788e5f711585ef840de78eccdb60f8d7ffc6a9"
+    },
+    {
+      "path": "src/game/levels/schema/types.ts",
+      "sha256": "ad4d9234964a8fd6754e37f3a1b555a44a34079cfd70018e72013dfca3364538"
+    },
+    {
+      "path": "src/game/scenes/BootScene.ts",
+      "sha256": "6c0b787b5b47d3ea60e17ee21fc416d2e645326de4d3cf7a7dd09b8d6563e177"
+    },
+    {
+      "path": "src/game/scenes/MainScene.ts",
+      "sha256": "f2a11b45b455c3ad0e2466f92f7d1dff2be3c2f729384615f3232c00a4d77d6a"
+    },
+    {
+      "path": "src/game/session/RunSession.ts",
+      "sha256": "80c0280d5f95f378c7ee9ae64e006f690137194f0f17215a690a5608b5d2ec24"
+    },
+    {
+      "path": "src/game/systems/powers/PowerEffects.ts",
+      "sha256": "6497f49c93ac78748823e37801617111ecf3d7b55efefa8a8eb1fb6b48d67e1e"
+    },
+    {
+      "path": "src/game/systems/world/WindMotion.ts",
+      "sha256": "affbce677f92679b09fdc7fb95d08db5cf4d4dc074b4c5d434cfffb3b37c70eb"
+    },
+    {
+      "path": "src/game/systems/world/WorldState.ts",
+      "sha256": "b5a79d87e36f7ed9fc4cfbf463db09c9742ea9f98e56b7c2d2ae2050f4d083ee"
+    },
+    {
+      "path": "src/game/systems/world/WorldSystem.ts",
+      "sha256": "dfc93203745a8e943a6309a5a6be73778a46d6cdc2df27b971846fd6ef06c736"
+    },
+    {
+      "path": "src/game/systems/world/types.ts",
+      "sha256": "8c1ab6ded8e7d5ba33708fd95f5cf0209e24e75ba81a0b3f480c25ace637b67c"
+    },
+    {
+      "path": "src/stores/appStore.ts",
+      "sha256": "f72475548a8f85b971a1eb56a5aeb189a2e68df6d7c7647ff1a8e20cac9d5d65"
+    }
+  ],
+  "futureCoverage": [
+    {
+      "kind": "rotating_gear",
+      "name": "Engranaje",
+      "states": {
+        "giro": "elevator_motion"
+      },
+      "assets": ["elevator_motion"],
+      "rule": "Reutiliza el bucle de engranajes del ascensor; ajustar nivel y velocidad al movimiento futuro.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "wind_tunnel",
+      "name": "Túnel de viento",
+      "states": {
+        "corriente": "air_glide"
+      },
+      "assets": ["air_glide"],
+      "rule": "Reutiliza el aire sostenido del planeo, con atenuación local.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "energy_barrier",
+      "name": "Barrera mágica",
+      "states": {
+        "activación": "barrier_activate",
+        "activa": "barrier_loop",
+        "desactivación": "barrier_deactivate"
+      },
+      "assets": ["barrier_activate", "barrier_loop", "barrier_deactivate"],
+      "rule": "Tres piezas dedicadas; el bucle solo mientras la barrera esté activa.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "disappearing_platform",
+      "name": "Plataforma evanescente",
+      "states": {
+        "desaparición": "platform_disappear",
+        "aparición": "platform_appear"
+      },
+      "assets": ["platform_disappear", "platform_appear"],
+      "rule": "Dos transiciones dedicadas; sincronizar con el futuro cambio real de colisión.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "timed_door",
+      "name": "Puerta temporizada",
+      "states": {
+        "apertura": "stone_gate_open",
+        "aviso": "timed_gate_warning",
+        "cierre": "door_close"
+      },
+      "assets": ["stone_gate_open", "timed_gate_warning", "door_close"],
+      "rule": "Reutiliza puerta y pulso temporal. El temporizador del pack sigue sin implementar.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "steam_vent",
+      "name": "Salida de vapor",
+      "states": {
+        "aviso": "steam_vent_warning",
+        "vapor": "boiler_steam",
+        "cierre": "steam_vent_stop"
+      },
+      "assets": ["steam_vent_warning", "boiler_steam", "steam_vent_stop"],
+      "rule": "Aviso y cierre dedicados; comparte el bucle de vapor con la caldera.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "watered_plant",
+      "name": "Planta regada",
+      "states": {
+        "agua recibida": "water_impact",
+        "crecimiento": "plant_grow"
+      },
+      "assets": ["water_impact", "plant_grow"],
+      "rule": "Impacto de Agua compartido y crecimiento dedicado.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "floating_wooden_block",
+      "name": "Bloque flotante de madera",
+      "states": {
+        "balanceo": "wood_float",
+        "contacto con agua": "lake_entry"
+      },
+      "assets": ["wood_float", "lake_entry"],
+      "rule": "Bucle dedicado de madera y agua; el chapoteo de entrada es compartido.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "wind_mill",
+      "name": "Molino de viento",
+      "states": {
+        "giro": "wind_mill"
+      },
+      "assets": ["wind_mill"],
+      "rule": "Bucle dedicado de eje, engranajes y aspas de madera.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "fire_switch",
+      "name": "Interruptor de Fuego",
+      "states": {
+        "activación": "fire_switch",
+        "desactivación": "mechanism_activate"
+      },
+      "assets": ["fire_switch", "mechanism_activate"],
+      "rule": "Activación dedicada; la desactivación puede usar el encaje mecánico existente.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    },
+    {
+      "kind": "elemental_bounce_pad",
+      "name": "Plataforma de rebote",
+      "states": {
+        "impulso": "bounce_pad"
+      },
+      "assets": ["bounce_pad"],
+      "rule": "Un efecto dedicado al impulso; no añade la mecánica de rebote.",
+      "status": "visual_animation_integrated_mechanics_pending",
+      "runtimeMapping": "src/game/systems/audio/propSounds.ts"
+    }
+  ],
+  "campaignSnapshotNote": "Los recuentos y hashes de campaign documentan la auditoría original. Los niveles se conservaron durante la creación de sonidos; algunos archivos se editaron por separado después de esa inspección.",
+  "campaignFilesChangedSinceOriginalAudit": [
+    "forest-1",
+    "forest-2",
+    "forest-4",
+    "forest-5",
+    "forest-9"
+  ],
+  "runtimeSearchBeforeIntegration": {
+    "scope": ["src", "server"],
+    "patterns": [
+      "load.audio",
+      "sound.play",
+      "sound.add",
+      "new Audio(",
+      "AudioContext",
+      "webkitAudioContext",
+      ".mp3",
+      ".wav",
+      "assets/audio"
+    ],
+    "matches": 0,
+    "audioPreferenceOnly": ["src/app/config.ts", "src/stores/appStore.ts"],
+    "interpretation": "Hay 74 archivos preparados. La galería los reproduce; el juego y la UI todavía no los cargan ni disparan."
+  },
+  "runtimeIntegration": {
+    "catalog": "src/services/audio/catalog.ts",
+    "engine": "src/services/audio/AudioEngine.ts",
+    "world": "src/game/systems/audio/WorldAudio.ts",
+    "results": "src/services/audio/runAudio.ts",
+    "documentation": "docs/audio-integration.md",
+    "newGenerationCredits": 0,
+    "audioFilesModified": false,
+    "preferencesKey": "veylith.audio.v1",
+    "initialVolume": 0.65,
+    "maxDecodedCacheMiB": 12,
+    "maxVoices": 28,
+    "maxSameCueVoices": 3,
+    "maxLoopsPerScope": 8,
+    "deviceValidation": "pending"
+  },
+  "preIntegrationGaps": [
+    {
+      "finding": "No hay carga ni reproducción de audio en el código de la aplicación.",
+      "evidence": [
+        {
+          "path": "src/game/scenes/BootScene.ts",
+          "line": 44
+        },
+        {
+          "path": "src/game/scenes/MainScene.ts",
+          "line": 95
+        }
+      ],
+      "required": "Registro tipado y carga bajo demanda para los sonidos de cada nivel."
+    },
+    {
+      "finding": "audioEnabled es una preferencia sin consumidor de audio.",
+      "evidence": [
+        {
+          "path": "src/stores/appStore.ts",
+          "line": 11
+        },
+        {
+          "path": "src/app/App.tsx",
+          "line": 48
+        }
+      ],
+      "required": "Conectar silencio/volumen al reproductor, desbloquear audio con la interacción inicial y conservar la preferencia elegida."
+    },
+    {
+      "finding": "La pausa usa game.pause y la victoria suspende la partida.",
+      "evidence": [
+        {
+          "path": "src/game/core/Game.ts",
+          "line": 29
+        },
+        {
+          "path": "src/game/session/RunSession.ts",
+          "line": 43
+        }
+      ],
+      "required": "Pausar los bucles del mundo y permitir UI/victoria cuando el mundo está suspendido; detener al salir/reiniciar. Verificar ciclo de vida web/iPhone."
+    },
+    {
+      "finding": "Las transiciones se recalculan en cada update/sync.",
+      "evidence": [
+        {
+          "path": "src/game/systems/world/WorldSystem.ts",
+          "line": 200
+        },
+        {
+          "path": "src/game/levels/forestPuzzles/ForestPuzzle.ts",
+          "line": 152
+        }
+      ],
+      "required": "Detectar cambios y contactos una sola vez, limitar voces simultáneas y usar distancia/volumen por objeto."
+    },
+    {
+      "finding": "El playtest tiene su propia RunSession sin recompensa persistente.",
+      "evidence": [
+        {
+          "path": "src/editor/Playtest.tsx",
+          "line": 16
+        },
+        {
+          "path": "src/game/session/RunSession.ts",
+          "line": 118
+        }
+      ],
+      "required": "Aislar audio y estado de la prueba; no emitir banked rewards en el editor, ni duplicar sonidos por montajes de StrictMode."
+    },
+    {
+      "finding": "Los resultados distinguen estrellas, récord y recompensa positiva.",
+      "evidence": [
+        {
+          "path": "src/components/game/RunHud.tsx",
+          "line": 159
+        },
+        {
+          "path": "src/components/ui/Art.tsx",
+          "line": 64
+        }
+      ],
+      "required": "Respetar los resultados reales, cancelar secuencias al navegar y no repetir por render/recarga de imágenes."
+    }
+  ],
+  "verificationAtAssetCreation": {
+    "audioFilesMatchInventory": true,
+    "staticInspectionOnly": false,
+    "noNewAudioGenerated": false,
+    "noGameplayFilesEdited": true,
+    "runtimeOrDeviceTestsPerformed": false,
+    "newAudioGenerated": 51,
+    "originalAudioAssetsPreserved": 23,
+    "galleryBrowserChecksPassed": true,
+    "originalAuditWasStatic": true,
+    "regressionTestsPassed": 355
+  },
+  "sourceReferenceNote": "Las referencias de líneas y hashes en sources/evidence pertenecen a la auditoría original; la integración actual se documenta por separado.",
+  "verification": {
+    "audioFilesMatchInventory": true,
+    "registeredRuntimeSounds": 74,
+    "runtimeBrowserChecksPassed": true,
+    "regressionTestsPassed": 371,
+    "report": "docs/audio-integration-verification.json",
+    "deviceTestsPerformed": false
+  }
+}

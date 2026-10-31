@@ -1,0 +1,1668 @@
+{
+  "campaign_level_01": {
+    "title": "La puerta sellada",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_01/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_01/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_01/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_02": {
+    "title": "Dos pesos, una salida",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_02/blueprint_v2/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_02/blueprint_v2/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_02/blueprint_v2/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "level_02": {
+    "title": "Dos pesos, una salida",
+    "width": 1536,
+    "height": 576,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_02/background/background.png",
+        "width": 1536,
+        "height": 576,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_02/static_world/static_world.png",
+        "width": 1536,
+        "height": 576,
+        "x": 0,
+        "y": 0,
+        "z": 20
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_02/foreground/foreground.png",
+        "width": 1536,
+        "height": 576,
+        "x": 0,
+        "y": 0,
+        "z": 40
+      }
+    ],
+    "animations": {
+      "waterfall": {
+        "path": "assets/environments/illustrated_levels/level_02/animated/waterfall/waterfall_sheet.png",
+        "frameWidth": 160,
+        "frameHeight": 192,
+        "frameCount": 8,
+        "fps": 12,
+        "loop": true
+      },
+      "water_surface": {
+        "path": "assets/environments/illustrated_levels/level_02/animated/water_surface/water_surface_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 8,
+        "loop": true
+      },
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/level_02/animated/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/level_02/animated/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/level_02/animated/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/level_02/animated/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "distant_fall",
+        "animation": "waterfall",
+        "x": 345,
+        "y": 121,
+        "width": 38,
+        "height": 88,
+        "z": 10,
+        "opacity": 0.43,
+        "phase": 2,
+        "fps": 12,
+        "visible": true
+      },
+      {
+        "id": "upper_right_fall",
+        "animation": "waterfall",
+        "x": 1127,
+        "y": 204,
+        "width": 112,
+        "height": 138,
+        "z": 10,
+        "opacity": 0.72,
+        "phase": 0,
+        "fps": 12,
+        "visible": true
+      },
+      {
+        "id": "lower_right_fall",
+        "animation": "waterfall",
+        "x": 1069,
+        "y": 324,
+        "width": 83,
+        "height": 190,
+        "z": 10,
+        "opacity": 0.68,
+        "phase": 3,
+        "fps": 12,
+        "visible": true
+      },
+      {
+        "id": "basin_ripples",
+        "animation": "water_surface",
+        "x": 1076,
+        "y": 498,
+        "width": 96,
+        "height": 31,
+        "z": 11,
+        "opacity": 0.54,
+        "phase": 0,
+        "fps": 8,
+        "visible": true
+      },
+      {
+        "id": "cascade_mist",
+        "animation": "mist",
+        "x": 1027,
+        "y": 478,
+        "width": 166,
+        "height": 52,
+        "z": 12,
+        "opacity": 0.28,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "upper_shelf_vine",
+        "animation": "hanging_vine",
+        "x": 943,
+        "y": 257,
+        "width": 58,
+        "height": 116,
+        "z": 30,
+        "opacity": 1,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "right_ledge_vine",
+        "animation": "hanging_vine",
+        "x": 1136,
+        "y": 380,
+        "width": 42,
+        "height": 84,
+        "z": 30,
+        "opacity": 1,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "leaves_left",
+        "animation": "moving_leaves",
+        "x": 251,
+        "y": 141,
+        "width": 63,
+        "height": 63,
+        "z": 31,
+        "opacity": 0.72,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "leaves_middle",
+        "animation": "moving_leaves",
+        "x": 893,
+        "y": 381,
+        "width": 53,
+        "height": 53,
+        "z": 31,
+        "opacity": 0.6,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "motes_middle",
+        "animation": "magical_particles",
+        "x": 620,
+        "y": 392,
+        "width": 93,
+        "height": 93,
+        "z": 32,
+        "opacity": 0.45,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "motes_ruins",
+        "animation": "magical_particles",
+        "x": 1216,
+        "y": 227,
+        "width": 76,
+        "height": 76,
+        "z": 32,
+        "opacity": 0.38,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_03": {
+    "title": "Elevación cruzada",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_03/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_03/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_03/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "waterfall": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/waterfall/waterfall_sheet.png",
+        "frameWidth": 160,
+        "frameHeight": 192,
+        "frameCount": 8,
+        "fps": 12,
+        "loop": true
+      },
+      "water_surface": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/water_surface/water_surface_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 8,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "cedar_gorge_waterfall",
+        "animation": "waterfall",
+        "x": 845,
+        "y": 170,
+        "width": 88,
+        "height": 360,
+        "z": 5,
+        "opacity": 0.55,
+        "phase": 0,
+        "fps": 12,
+        "visible": true
+      },
+      {
+        "id": "gorge_basin_ripples",
+        "animation": "water_surface",
+        "x": 820,
+        "y": 504,
+        "width": 145,
+        "height": 38,
+        "z": 5,
+        "opacity": 0.35,
+        "phase": 0,
+        "fps": 8,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_04": {
+    "title": "Reflejo de la tierra",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_04/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_04/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_04/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_05": {
+    "title": "Corriente natural",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_05/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_05/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_05/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_06": {
+    "title": "Equilibrio elemental",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_06/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_06/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_06/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_07": {
+    "title": "Ruta alternativa",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_07/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_07/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_07/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_08": {
+    "title": "Ascenso en cadena",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_08/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_08/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_08/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "waterfall": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/waterfall/waterfall_sheet.png",
+        "frameWidth": 160,
+        "frameHeight": 192,
+        "frameCount": 8,
+        "fps": 12,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "sanctuary_channel_fall",
+        "animation": "waterfall",
+        "x": 1150,
+        "y": 235,
+        "width": 88,
+        "height": 375,
+        "z": 5,
+        "opacity": 0.6,
+        "phase": 2,
+        "fps": 12,
+        "visible": true
+      },
+      {
+        "id": "sanctuary_fall_mist",
+        "animation": "mist",
+        "x": 1110,
+        "y": 570,
+        "width": 170,
+        "height": 50,
+        "z": 5,
+        "opacity": 0.22,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_09": {
+    "title": "Puentes de piedra",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_09/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_09/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_09/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  },
+  "campaign_level_10": {
+    "title": "La prueba final",
+    "width": 1728,
+    "height": 648,
+    "layers": [
+      {
+        "id": "background",
+        "path": "assets/environments/illustrated_levels/level_10/background/background.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      {
+        "id": "static_world",
+        "path": "assets/environments/illustrated_levels/level_10/static_world/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 10
+      },
+      {
+        "id": "foreground",
+        "path": "assets/environments/illustrated_levels/level_10/foreground/section_01.png",
+        "width": 1728,
+        "height": 648,
+        "x": 0,
+        "y": 0,
+        "z": 30
+      }
+    ],
+    "animations": {
+      "hanging_vine": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 256,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "moving_leaves": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 6,
+        "loop": true
+      },
+      "mist": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/mist/mist_sheet.png",
+        "frameWidth": 256,
+        "frameHeight": 96,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      },
+      "magical_particles": {
+        "path": "assets/environments/illustrated_levels/_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+        "frameWidth": 128,
+        "frameHeight": 128,
+        "frameCount": 8,
+        "fps": 4,
+        "loop": true
+      }
+    },
+    "overlays": [
+      {
+        "id": "canopy_vine",
+        "animation": "hanging_vine",
+        "x": 145,
+        "y": 65,
+        "width": 46,
+        "height": 92,
+        "z": 40,
+        "opacity": 0.85,
+        "phase": 0,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "left_leaves",
+        "animation": "moving_leaves",
+        "x": 260,
+        "y": 150,
+        "width": 85,
+        "height": 85,
+        "z": 40,
+        "opacity": 0.65,
+        "phase": 0,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "right_leaves",
+        "animation": "moving_leaves",
+        "x": 1430,
+        "y": 95,
+        "width": 64,
+        "height": 64,
+        "z": 40,
+        "opacity": 0.5,
+        "phase": 4,
+        "fps": 6,
+        "visible": true
+      },
+      {
+        "id": "ground_mist",
+        "animation": "mist",
+        "x": 620,
+        "y": 525,
+        "width": 420,
+        "height": 105,
+        "z": 5,
+        "opacity": 0.18,
+        "phase": 1,
+        "fps": 4,
+        "visible": true
+      },
+      {
+        "id": "forest_motes",
+        "animation": "magical_particles",
+        "x": 1075,
+        "y": 120,
+        "width": 100,
+        "height": 100,
+        "z": 40,
+        "opacity": 0.25,
+        "phase": 3,
+        "fps": 4,
+        "visible": true
+      }
+    ],
+    "warnings": []
+  }
+}

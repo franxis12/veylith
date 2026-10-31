@@ -1,0 +1,318 @@
+{
+  "version": 1,
+  "id": "forest-1",
+  "name": "El depósito olvidado",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 25000,
+    "twoStarsMs": 50000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "clearing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1312,
+      "y": 672,
+      "width": 1024,
+      "height": 384,
+      "rotation": 0,
+      "visible": true,
+      "layer": 6,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      }
+    },
+    {
+      "id": "clearing-fern",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 52.8,
+      "y": 589.2,
+      "width": 94.4,
+      "height": 60.800000000000004,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.800000000000004
+      }
+    },
+    {
+      "id": "clearing-column",
+      "type": "decoration",
+      "asset": "column",
+      "x": 10.5,
+      "y": 290,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "sign-0",
+      "type": "label",
+      "asset": null,
+      "x": 180,
+      "y": 380,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+    },
+    {
+      "id": "sign-1",
+      "type": "label",
+      "asset": null,
+      "x": 1600,
+      "y": 305,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "SALIDA"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1504,
+      "y": 384,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": false,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "gem",
+      "asset": "gem:earth",
+      "x": 32,
+      "y": 512,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "type": "gem",
+      "element": "earth",
+      "respawn": "restart"
+    },
+    {
+      "id": "gem-2",
+      "asset": "gem:fire",
+      "x": 640,
+      "y": 384,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "type": "gem",
+      "element": "fire",
+      "respawn": "restart"
+    },
+    {
+      "id": "deep-water",
+      "asset": "world:deep_water",
+      "x": 1032,
+      "y": 600,
+      "width": 352,
+      "height": 352,
+      "rotation": 0,
+      "visible": true,
+      "layer": 5,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 80,
+        "width": 256,
+        "height": 176
+      },
+      "kind": "deep_water",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 128,
+        "width": 320,
+        "height": 224
+      },
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "hint": "Solo Agua cruza el lago.",
+      "type": "world"
+    },
+    {
+      "id": "clearing-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 32,
+      "y": 688,
+      "width": 1024,
+      "height": 384,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      }
+    },
+    {
+      "id": "waterwheel",
+      "asset": "world:waterwheel",
+      "x": 1208,
+      "y": 536,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "waterwheel",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "behavior": {
+        "kind": "waterwheel",
+        "hits": 3
+      },
+      "state": "idle",
+      "hint": "Activa la rueda con Agua.",
+      "type": "world"
+    },
+    {
+      "id": "retractable-bridge",
+      "asset": "world:retractable_bridge",
+      "x": 936,
+      "y": 456,
+      "width": 512,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 88,
+        "y": 145,
+        "width": 404,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "effect": {
+        "enabled": false,
+        "x": 88,
+        "y": 145,
+        "width": 404,
+        "height": 10
+      },
+      "behavior": {
+        "kind": "bridge",
+        "requires": [],
+        "autostart": true,
+        "duration": 600
+      },
+      "state": "retracted",
+      "hint": "Activa el puente con un mecanismo.",
+      "type": "world"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "family": "stone_bridge",
+  "title": "Ancient stone bridge",
+  "tile_dimensions": [
+    128,
+    128
+  ],
+  "top_surface_y": 32,
+  "anchor_recommendation": {
+    "px": [
+      0,
+      32
+    ],
+    "description": "Place all platform tiles at the same world surface Y. Tile image origin is 32 px above that surface."
+  },
+  "minimum_modules": 2,
+  "placement": {
+    "left": "x=0",
+    "center": "Repeat at x=128,256,...",
+    "right": "x=(module_count-1)*128",
+    "horizontal_stride_px": 128,
+    "spacing_px": 0,
+    "scale": 1
+  },
+  "supports_available": true,
+  "static": true,
+  "assets": [
+    {
+      "id": "stone_bridge_left",
+      "file": "assets/environments/platforms/stone_bridge/stone_bridge_left.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 10,
+        "y": 32,
+        "width": 118,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_left",
+      "repeat_step_px": null,
+      "connections": {
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "stone_bridge_master",
+      "surface_y": 32
+    },
+    {
+      "id": "stone_bridge_center",
+      "file": "assets/environments/platforms/stone_bridge/stone_bridge_center.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [
+        "x"
+      ],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 128,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "repeatable_center",
+      "repeat_step_px": [
+        128,
+        0
+      ],
+      "connections": {
+        "left": [
+          0,
+          32
+        ],
+        "right": [
+          128,
+          32
+        ]
+      },
+      "source": "stone_bridge_master",
+      "surface_y": 32
+    },
+    {
+      "id": "stone_bridge_right",
+      "file": "assets/environments/platforms/stone_bridge/stone_bridge_right.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        0,
+        32
+      ],
+      "anchor_normalized": [
+        0,
+        0.25
+      ],
+      "layer": "platform",
+      "repeat_axes": [],
+      "collision": {
+        "x": 0,
+        "y": 32,
+        "width": 118,
+        "height": 16,
+        "type": "suggested_solid_rectangle"
+      },
+      "role": "end_cap_right",
+      "repeat_step_px": null,
+      "connections": {
+        "left": [
+          0,
+          32
+        ]
+      },
+      "source": "stone_bridge_master",
+      "surface_y": 32
+    },
+    {
+      "id": "stone_bridge_arch",
+      "file": "assets/environments/platforms/stone_bridge/stone_bridge_arch.png",
+      "dimensions": [
+        128,
+        128
+      ],
+      "anchor_px": [
+        64,
+        8
+      ],
+      "anchor_normalized": [
+        0.5,
+        0.0625
+      ],
+      "layer": "behind_platform",
+      "repeat_axes": [],
+      "collision": null,
+      "role": "arch_support_bay",
+      "source": "stone_bridge_arch",
+      "connection_spacing_px": 120,
+      "connections": {
+        "upper_left": [
+          8,
+          8
+        ],
+        "upper_right": [
+          120,
+          8
+        ]
+      },
+      "usage": "Place under the deck; adjacent bays overlap their feet by 8 px. This is a full arch bay, not a seamless texture."
+    }
+  ],
+  "surface_calibration": {
+    "surface_y": 32,
+    "source_row": 13,
+    "source_vertical_offset": 19,
+    "decorative_fringe_above_surface": true
+  },
+  "preview": "previews/stone_bridge_three_widths.png",
+  "decorative_supports_available": true,
+  "optional_overlays_available": false,
+  "paths_relative_to": "pack root"
+}

@@ -1,0 +1,908 @@
+{
+  "format": "veylith-illustrated-environment",
+  "version": 1,
+  "level": "level_02",
+  "title": "Dos pesos, una salida",
+  "content": "Environmental artwork only; configure collision and mechanisms separately in the Level Editor.",
+  "canvas": {
+    "width": 1536,
+    "height": 576,
+    "origin": "top-left",
+    "xDirection": "right",
+    "yDirection": "down",
+    "units": "pixels",
+    "colorSpace": "sRGB",
+    "alpha": "straight / unassociated"
+  },
+  "source": {
+    "file": "Nivel 2_ Dos Pesos, Una Salida.png",
+    "originalDimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "sceneCrop": {
+      "x": 0,
+      "y": 0,
+      "width": 1536,
+      "height": 576
+    },
+    "excluded": "Lower instructional strip only; top labels were removed and inpainted.",
+    "nativeArtDimensions": {
+      "width": 2048,
+      "height": 768
+    },
+    "uniformExportScale": 0.75,
+    "aspectRatio": "8:3",
+    "pixelPerfect": false
+  },
+  "layerOrder": [
+    {
+      "id": "background",
+      "z": 0,
+      "file": "background/background.png",
+      "width": 1536,
+      "height": 576,
+      "opaque": true,
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "animated_behind",
+      "z": 10,
+      "instances": "instances with z 10–12",
+      "alignedFirstFrame": "animated/alignment/behind_world_frame_00.png",
+      "width": 1536,
+      "height": 576
+    },
+    {
+      "id": "static_world",
+      "z": 20,
+      "file": "static_world/static_world.png",
+      "width": 1536,
+      "height": 576,
+      "opaque": false,
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    {
+      "id": "animated_front",
+      "z": 30,
+      "instances": "instances with z 30–32",
+      "alignedFirstFrame": "animated/alignment/front_world_frame_00.png",
+      "width": 1536,
+      "height": 576
+    },
+    {
+      "id": "foreground",
+      "z": 40,
+      "file": "foreground/foreground.png",
+      "width": 1536,
+      "height": 576,
+      "opaque": false,
+      "position": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "animations": {
+    "waterfall": {
+      "frameCount": 8,
+      "frameWidth": 160,
+      "frameHeight": 192,
+      "fps": 12,
+      "durationSeconds": 0.6666666666666666,
+      "loop": true,
+      "atlas": "animated/waterfall/waterfall_sheet.png",
+      "atlasWidth": 640,
+      "atlasHeight": 384,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "animated/waterfall/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 1,
+          "file": "animated/waterfall/frames/frame_01.png",
+          "atlasRect": {
+            "x": 160,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 2,
+          "file": "animated/waterfall/frames/frame_02.png",
+          "atlasRect": {
+            "x": 320,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 3,
+          "file": "animated/waterfall/frames/frame_03.png",
+          "atlasRect": {
+            "x": 480,
+            "y": 0,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 4,
+          "file": "animated/waterfall/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 5,
+          "file": "animated/waterfall/frames/frame_05.png",
+          "atlasRect": {
+            "x": 160,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 6,
+          "file": "animated/waterfall/frames/frame_06.png",
+          "atlasRect": {
+            "x": 320,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        },
+        {
+          "index": 7,
+          "file": "animated/waterfall/frames/frame_07.png",
+          "atlasRect": {
+            "x": 480,
+            "y": 192,
+            "width": 160,
+            "height": 192
+          },
+          "durationMs": 83.33333333333333
+        }
+      ]
+    },
+    "water_surface": {
+      "frameCount": 8,
+      "frameWidth": 256,
+      "frameHeight": 96,
+      "fps": 8,
+      "durationSeconds": 1,
+      "loop": true,
+      "atlas": "animated/water_surface/water_surface_sheet.png",
+      "atlasWidth": 1024,
+      "atlasHeight": 192,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "animated/water_surface/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 1,
+          "file": "animated/water_surface/frames/frame_01.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 2,
+          "file": "animated/water_surface/frames/frame_02.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 3,
+          "file": "animated/water_surface/frames/frame_03.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 4,
+          "file": "animated/water_surface/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 5,
+          "file": "animated/water_surface/frames/frame_05.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 6,
+          "file": "animated/water_surface/frames/frame_06.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        },
+        {
+          "index": 7,
+          "file": "animated/water_surface/frames/frame_07.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 125
+        }
+      ]
+    },
+    "hanging_vine": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 256,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "animated/hanging_vine/hanging_vine_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 512,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "animated/hanging_vine/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "animated/hanging_vine/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "animated/hanging_vine/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "animated/hanging_vine/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "animated/hanging_vine/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "animated/hanging_vine/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "animated/hanging_vine/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "animated/hanging_vine/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        }
+      ]
+    },
+    "moving_leaves": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "fps": 6,
+      "durationSeconds": 1.3333333333333333,
+      "loop": true,
+      "atlas": "animated/moving_leaves/moving_leaves_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 256,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "animated/moving_leaves/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 1,
+          "file": "animated/moving_leaves/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 2,
+          "file": "animated/moving_leaves/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 3,
+          "file": "animated/moving_leaves/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 4,
+          "file": "animated/moving_leaves/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 5,
+          "file": "animated/moving_leaves/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 6,
+          "file": "animated/moving_leaves/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 7,
+          "file": "animated/moving_leaves/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        }
+      ]
+    },
+    "mist": {
+      "frameCount": 8,
+      "frameWidth": 256,
+      "frameHeight": 96,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "animated/mist/mist_sheet.png",
+      "atlasWidth": 1024,
+      "atlasHeight": 192,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "animated/mist/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "animated/mist/frames/frame_01.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "animated/mist/frames/frame_02.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "animated/mist/frames/frame_03.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "animated/mist/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "animated/mist/frames/frame_05.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "animated/mist/frames/frame_06.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "animated/mist/frames/frame_07.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        }
+      ]
+    },
+    "magical_particles": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "animated/magical_particles/magical_particles_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 256,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "animated/magical_particles/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "animated/magical_particles/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "animated/magical_particles/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "animated/magical_particles/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "animated/magical_particles/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "animated/magical_particles/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "animated/magical_particles/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "animated/magical_particles/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        }
+      ]
+    }
+  },
+  "instances": [
+    {
+      "id": "distant_fall",
+      "animation": "waterfall",
+      "x": 345,
+      "y": 121,
+      "width": 38,
+      "height": 88,
+      "z": 10,
+      "opacity": 0.43,
+      "phase": 2
+    },
+    {
+      "id": "upper_right_fall",
+      "animation": "waterfall",
+      "x": 1127,
+      "y": 204,
+      "width": 112,
+      "height": 138,
+      "z": 10,
+      "opacity": 0.72,
+      "phase": 0
+    },
+    {
+      "id": "lower_right_fall",
+      "animation": "waterfall",
+      "x": 1069,
+      "y": 324,
+      "width": 83,
+      "height": 190,
+      "z": 10,
+      "opacity": 0.68,
+      "phase": 3
+    },
+    {
+      "id": "basin_ripples",
+      "animation": "water_surface",
+      "x": 1076,
+      "y": 498,
+      "width": 96,
+      "height": 31,
+      "z": 11,
+      "opacity": 0.54,
+      "phase": 0
+    },
+    {
+      "id": "cascade_mist",
+      "animation": "mist",
+      "x": 1027,
+      "y": 478,
+      "width": 166,
+      "height": 52,
+      "z": 12,
+      "opacity": 0.28,
+      "phase": 0
+    },
+    {
+      "id": "upper_shelf_vine",
+      "animation": "hanging_vine",
+      "x": 943,
+      "y": 257,
+      "width": 58,
+      "height": 116,
+      "z": 30,
+      "opacity": 1,
+      "phase": 0
+    },
+    {
+      "id": "right_ledge_vine",
+      "animation": "hanging_vine",
+      "x": 1136,
+      "y": 380,
+      "width": 42,
+      "height": 84,
+      "z": 30,
+      "opacity": 1,
+      "phase": 3
+    },
+    {
+      "id": "leaves_left",
+      "animation": "moving_leaves",
+      "x": 251,
+      "y": 141,
+      "width": 63,
+      "height": 63,
+      "z": 31,
+      "opacity": 0.72,
+      "phase": 0
+    },
+    {
+      "id": "leaves_middle",
+      "animation": "moving_leaves",
+      "x": 893,
+      "y": 381,
+      "width": 53,
+      "height": 53,
+      "z": 31,
+      "opacity": 0.6,
+      "phase": 4
+    },
+    {
+      "id": "motes_middle",
+      "animation": "magical_particles",
+      "x": 620,
+      "y": 392,
+      "width": 93,
+      "height": 93,
+      "z": 32,
+      "opacity": 0.45,
+      "phase": 0
+    },
+    {
+      "id": "motes_ruins",
+      "animation": "magical_particles",
+      "x": 1216,
+      "y": 227,
+      "width": 76,
+      "height": 76,
+      "z": 32,
+      "opacity": 0.38,
+      "phase": 3
+    }
+  ],
+  "animationImport": {
+    "coordinateMeaning": "Instance x/y specify top-left of the complete frame rectangle, including transparent padding.",
+    "drawSize": "Use the width/height recorded on each instance. Water curtains have separate reference-sized display rectangles.",
+    "blend": "normal source-over",
+    "origin": "top-left",
+    "sampling": "linear",
+    "playback": "forward; repeat indefinitely",
+    "frameNumbering": "00 through 07",
+    "phase": "Frame offset added before wrapping modulo 8.",
+    "alignmentImages": "Registration aids only. Do not display these stills beneath independent animation instances.",
+    "framePadding": "2 transparent pixels on every packed frame edge; no extrusion required at 1:1."
+  },
+  "sectionExport": {
+    "optional": true,
+    "description": "Alternative to full-width layers. Use either sections or full layers, never both.",
+    "width": 512,
+    "height": 576,
+    "sections": [
+      {
+        "id": "section_00",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "background": "background/sections/section_00.png",
+        "staticWorld": "static_world/sections/section_00.png",
+        "foreground": "foreground/sections/section_00.png"
+      },
+      {
+        "id": "section_01",
+        "position": {
+          "x": 512,
+          "y": 0
+        },
+        "background": "background/sections/section_01.png",
+        "staticWorld": "static_world/sections/section_01.png",
+        "foreground": "foreground/sections/section_01.png"
+      },
+      {
+        "id": "section_02",
+        "position": {
+          "x": 1024,
+          "y": 0
+        },
+        "background": "background/sections/section_02.png",
+        "staticWorld": "static_world/sections/section_02.png",
+        "foreground": "foreground/sections/section_02.png"
+      }
+    ]
+  },
+  "previews": {
+    "composite": "preview/composite.png",
+    "dryStatic": "preview/static_composite.png",
+    "animation": "preview/environment_loop.webp",
+    "gif": "preview/environment_loop.gif",
+    "contactSheet": "preview/animation_contact_sheet.png",
+    "nativeCleanFallback": "preview/clean_composite_native.png"
+  },
+  "separation": {
+    "method": "Background reconstruction and transparent static/foreground extraction with built-in image generation. Animation sheets generated independently; then mechanically split, uniformly fit to padded cells and packed.",
+    "exactSourceSeparation": false,
+    "limitation": "This is an illustrated reconstruction. Inpainted/occluded scenery and some painted contours differ from the source; pixel-perfect reconstruction is not claimed.",
+    "waterBakedIntoStaticLayers": false,
+    "animatedVines": "Only the separate long hanging strands move. Short attached stone ivy is static.",
+    "effectsNotExplicitlyVisible": "Magical motes are a subtle optional requested effect. Disable their instances if strict reference-only atmosphere is desired.",
+    "lake": "No new lake. Water-surface effect is placed only at the lower cascade basin."
+  }
+}

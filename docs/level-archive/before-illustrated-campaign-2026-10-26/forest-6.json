@@ -1,0 +1,252 @@
+{
+  "version": 1,
+  "id": "forest-6",
+  "name": "El reflejo perdido",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 50000,
+    "twoStarsMs": 120000
+  },
+  "puzzle": {
+    "brief": "Una lente espera luz sobre el patio.",
+    "hints": [
+      "Compara la cara inclinada del espejo con el origen del haz.",
+      "La lente está a la izquierda del reflejo inicial.",
+      "El lado desde el que empujas importa; la luz debe mantenerse alineada mientras vuelves."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 619,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 52.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["receiver"]
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 2048,
+        "height": 500
+      }
+    },
+    {
+      "id": "exit-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 260,
+      "y": 0,
+      "width": 332,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 120,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "requires": ["receiver"],
+      "initiallyOpen": false
+    },
+    {
+      "id": "mirror",
+      "type": "world",
+      "asset": "world:reflector",
+      "x": 1000,
+      "y": 410,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 40,
+        "y": 184,
+        "width": 176,
+        "height": 56
+      },
+      "kind": "reflector",
+      "behavior": {
+        "kind": "reflector",
+        "orientation": "ne",
+        "pushable": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      }
+    },
+    {
+      "id": "beam",
+      "type": "world",
+      "asset": "world:beam_emitter",
+      "x": 1538,
+      "y": 512,
+      "width": 64,
+      "height": 64,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 64
+      },
+      "kind": "beam_emitter",
+      "behavior": {
+        "kind": "beamEmitter",
+        "direction": "left",
+        "range": 2800,
+        "maxBounces": 8,
+        "requires": [],
+        "autostart": true
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 31,
+        "y": 31,
+        "width": 2,
+        "height": 2
+      }
+    },
+    {
+      "id": "receiver",
+      "type": "world",
+      "asset": "world:light_receiver",
+      "x": 692,
+      "y": 180,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "light_receiver",
+      "behavior": {
+        "kind": "receiver",
+        "latch": false
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 96,
+        "y": 88,
+        "width": 64,
+        "height": 64
+      }
+    },
+    {
+      "id": "lens-cue",
+      "type": "label",
+      "asset": null,
+      "x": 590,
+      "y": 60,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "La lente y el sello\ncomparten luz"
+    },
+    {
+      "id": "wind-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 500,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

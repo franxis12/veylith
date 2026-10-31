@@ -1,0 +1,36 @@
+{
+  "id": "steam_vent",
+  "label": "Salida de vapor",
+  "category": "hazards",
+  "width": 256,
+  "height": 256,
+  "anchor": [
+    128,
+    240
+  ],
+  "notes": "",
+  "states": {
+    "off": {
+      "layers": [
+        "assets/objects/hazards/steam_vent/steam_vent_base.png"
+      ]
+    },
+    "active": {
+      "animation": "steam_vent_active"
+    },
+    "warning": {
+      "animation": "steam_vent_warning"
+    },
+    "stopping": {
+      "animation": "steam_vent_stopping"
+    }
+  },
+  "components": [
+    "assets/objects/hazards/steam_vent/steam_vent_base.png"
+  ],
+  "directory": "assets/objects/hazards/steam_vent",
+  "defaultBack": [
+    "assets/objects/hazards/steam_vent/steam_vent_base.png"
+  ],
+  "thumbnail": "assets/objects/hazards/steam_vent/preview.png"
+}

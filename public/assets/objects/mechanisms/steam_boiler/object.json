@@ -1,0 +1,34 @@
+{
+  "id": "steam_boiler",
+  "label": "Caldera elemental",
+  "category": "mechanisms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "Steam emitter [256,204]. Heat is a separate additive-ready layer.",
+  "states": {
+    "cold": {
+      "layers": [
+        "assets/objects/mechanisms/steam_boiler/boiler_body.png"
+      ]
+    },
+    "boiler_heating": {
+      "animation": "boiler_heating"
+    },
+    "boiler_steam": {
+      "animation": "boiler_steam"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/steam_boiler/boiler_body.png",
+    "assets/objects/mechanisms/steam_boiler/boiler_heat_active.png"
+  ],
+  "directory": "assets/objects/mechanisms/steam_boiler",
+  "defaultBack": [
+    "assets/objects/mechanisms/steam_boiler/boiler_body.png"
+  ],
+  "thumbnail": "assets/objects/mechanisms/steam_boiler/preview.png"
+}

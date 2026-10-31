@@ -1,0 +1,32 @@
+{
+  "id": "wind_mill",
+  "label": "Molino de viento",
+  "category": "mechanisms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "",
+  "states": {
+    "idle": {
+      "layers": [
+        "assets/objects/mechanisms/wind_mill/mill_base.png",
+        "assets/objects/mechanisms/wind_mill/mill_idle.png"
+      ]
+    },
+    "mill_spinning": {
+      "animation": "mill_spinning"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/wind_mill/mill_base.png",
+    "assets/objects/mechanisms/wind_mill/mill_idle.png"
+  ],
+  "directory": "assets/objects/mechanisms/wind_mill",
+  "defaultBack": [
+    "assets/objects/mechanisms/wind_mill/mill_base.png"
+  ],
+  "thumbnail": "assets/objects/mechanisms/wind_mill/preview.png"
+}

@@ -1,0 +1,787 @@
+{
+  "version": 1,
+  "id": "forest-5",
+  "name": "El santuario de piedra",
+  "theme": "ancient-forest",
+  "width": 6400,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 75000,
+    "twoStarsMs": 150000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 346,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "sanctuary-rim",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 520,
+      "width": 1024,
+      "height": 880,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 880
+      }
+    },
+    {
+      "id": "heavy-block",
+      "type": "block",
+      "asset": "block",
+      "x": 734.0,
+      "y": 334.0,
+      "width": 192,
+      "height": 186,
+      "rotation": 0,
+      "visible": true,
+      "layer": 0,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 6,
+        "width": 192,
+        "height": 180
+      },
+      "plateId": "plate"
+    },
+    {
+      "id": "plate",
+      "type": "plate",
+      "asset": "plate",
+      "x": 1464,
+      "y": 848,
+      "width": 240,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 24,
+        "y": 39,
+        "width": 192,
+        "height": 1
+      },
+      "requiredWeight": 1,
+      "hint": "Baja el contrapeso a la primera placa del santuario."
+    },
+    {
+      "id": "first-seal",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1840,
+      "y": 484,
+      "width": 180,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 50,
+        "y": 0,
+        "width": 80,
+        "height": 276
+      },
+      "initiallyOpen": false,
+      "requires": ["plate"]
+    },
+    {
+      "id": "sanctuary-ascent-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2048,
+      "y": 720,
+      "width": 256,
+      "height": 680,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 680
+      }
+    },
+    {
+      "id": "sanctuary-ascent-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2304,
+      "y": 680,
+      "width": 256,
+      "height": 720,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 720
+      }
+    },
+    {
+      "id": "sanctuary-ascent-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2560,
+      "y": 640,
+      "width": 256,
+      "height": 760,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 760
+      }
+    },
+    {
+      "id": "engine-altar",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2816,
+      "y": 640,
+      "width": 512,
+      "height": 760,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 760
+      }
+    },
+    {
+      "id": "engine-seal",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 2846,
+      "y": 365,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "sanctuary-lever",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 3066,
+      "y": 520,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "kind": "interactive_lever",
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": 8,
+        "y": -54,
+        "width": 112,
+        "height": 174
+      },
+      "hint": "Con el contrapeso y el sello abiertos, activa el ascensor."
+    },
+    {
+      "id": "sanctuary-lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 3302.8571428571427,
+      "y": 565,
+      "width": 402.2857142857143,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 25.142857142857142,
+        "y": 115,
+        "width": 352,
+        "height": 14
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "requires": ["plate", "engine-seal", "sanctuary-lever"],
+        "autostart": false,
+        "travelX": 0,
+        "travelY": -320,
+        "speed": 95,
+        "mode": "pingpong"
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 402.2857142857143,
+        "height": 256
+      },
+      "hint": "El ascensor vuelve: espera en el borde y sube cuando llegue."
+    },
+    {
+      "id": "high-sanctuary",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3712,
+      "y": 360,
+      "width": 1024,
+      "height": 1040,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 1040
+      }
+    },
+    {
+      "id": "last-seal",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 4106,
+      "y": 85,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 2
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "sanctuary-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 4624.475247524752,
+      "y": 215,
+      "width": 648.8712871287129,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 111.52475247524752,
+        "y": 145,
+        "width": 512,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["last-seal"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 648.8712871287129,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "final-grove",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 5248,
+      "y": 360,
+      "width": 1152,
+      "height": 1040,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1152,
+        "height": 1040
+      }
+    },
+    {
+      "id": "sanctuary-pool",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 3328,
+      "y": 940,
+      "width": 1920,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 1920,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 1920,
+        "height": 380
+      },
+      "hint": "Tierra se hunde. Cruza por las plataformas."
+    },
+    {
+      "id": "sanctuary-water",
+      "type": "coin",
+      "asset": "coin",
+      "x": 710,
+      "y": 290,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "sanctuary-air",
+      "type": "coin",
+      "asset": "coin",
+      "x": 3860,
+      "y": 130,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "sanctuary-earth",
+      "type": "coin",
+      "asset": "coin",
+      "x": 5590,
+      "y": 130,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 6002.5,
+      "y": 84,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["plate", "engine-seal", "sanctuary-lever", "last-seal"]
+    },
+    {
+      "id": "sanctuary-sign",
+      "type": "label",
+      "asset": null,
+      "x": 120,
+      "y": 200,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "El santuario de Tierra\nContrapeso · sello · ascensor"
+    },
+    {
+      "id": "last-seal-sign",
+      "type": "label",
+      "asset": null,
+      "x": 3930,
+      "y": 90,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "La última piedra resiste dos golpes."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 459.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-1",
+      "type": "decoration",
+      "asset": "column",
+      "x": 874,
+      "y": 160,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-4",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1069,
+      "y": 699.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-4",
+      "type": "decoration",
+      "asset": "column",
+      "x": 1898,
+      "y": 400,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-9",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 2861,
+      "y": 579.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-13",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 3757,
+      "y": 299.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-13",
+      "type": "decoration",
+      "asset": "column",
+      "x": 4586,
+      "y": 0,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-16",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 5293,
+      "y": 299.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-16",
+      "type": "decoration",
+      "asset": "column",
+      "x": 6250,
+      "y": 0,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "sanctuary-basin",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1024,
+      "y": 760,
+      "width": 384,
+      "height": 640,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 640
+      }
+    },
+    {
+      "id": "plate-recess",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1408,
+      "y": 888,
+      "width": 384,
+      "height": 512,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 512
+      }
+    },
+    {
+      "id": "plate-far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1728,
+      "y": 760,
+      "width": 384,
+      "height": 640,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 640
+      }
+    }
+  ]
+}

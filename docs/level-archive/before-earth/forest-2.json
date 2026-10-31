@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "id": "forest-2",
+  "name": "La llama escondida",
+  "theme": "ancient-forest",
+  "width": 2560,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 35000,
+    "twoStarsMs": 65000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "clearing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2560,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2528,
+        "height": 450
+      }
+    },
+    {
+      "id": "clearing-fern",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 52.8,
+      "y": 589.2,
+      "width": 94.4,
+      "height": 60.800000000000004,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.800000000000004
+      }
+    },
+    {
+      "id": "clearing-column",
+      "type": "decoration",
+      "asset": "column",
+      "x": 10.5,
+      "y": 290,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fire",
+      "type": "gem",
+      "asset": "gem:fire",
+      "x": 298,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "fire",
+      "respawn": "restart"
+    },
+    {
+      "id": "torch-1",
+      "type": "torch",
+      "asset": "torch",
+      "x": 670.6,
+      "y": 455.12,
+      "width": 58.379999999999995,
+      "height": 194.88,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": -0.6000000000000227,
+        "y": -5.1200000000000045,
+        "width": 60,
+        "height": 200
+      },
+      "hits": 1,
+      "hint": "Recoge Fuego y dispara Poder (E) hacia cada antorcha apagada."
+    },
+    {
+      "id": "torch-2",
+      "type": "torch",
+      "asset": "torch",
+      "x": 1320.6,
+      "y": 455.12,
+      "width": 58.379999999999995,
+      "height": 194.88,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": -0.599999999999909,
+        "y": -5.1200000000000045,
+        "width": 60,
+        "height": 200
+      },
+      "hits": 1,
+      "hint": "Falta la segunda antorcha. Las encendidas permanecen activas."
+    },
+    {
+      "id": "fire-door",
+      "type": "door",
+      "asset": "doorClosed",
+      "x": 1598.3999999999999,
+      "y": 30.799999999999955,
+      "width": 403.2,
+      "height": 619.2,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 155.60000000000014,
+        "y": 1.2000000000000455,
+        "width": 92,
+        "height": 618
+      },
+      "initiallyOpen": false,
+      "requires": ["torch-1", "torch-2"]
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2172.3999999999996,
+      "y": 373.9,
+      "width": 255.20000000000002,
+      "height": 276.1,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.600000000000364,
+        "y": 273.1,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["torch-1", "torch-2"]
+    },
+    {
+      "id": "sign-0",
+      "type": "label",
+      "asset": null,
+      "x": 180,
+      "y": 380,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "INICIO →\nGemas: reemplazo inmediato · R: reiniciar"
+    },
+    {
+      "id": "sign-1",
+      "type": "label",
+      "asset": null,
+      "x": 2100,
+      "y": 305,
+      "width": 400,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "text": "SALIDA"
+    },
+    {
+      "id": "fire-instruction",
+      "type": "label",
+      "asset": null,
+      "x": 540,
+      "y": 300,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "FUEGO → DOS ANTORCHAS\nCada gema reemplaza tu forma al tocarla."
+    },
+    {
+      "id": "torch-bonus",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1450,
+      "y": 365,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

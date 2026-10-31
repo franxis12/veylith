@@ -1,0 +1,39 @@
+{
+  "id": "wind_fan",
+  "label": "Ventilador horizontal",
+  "category": "mechanisms",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "Blades rotate behind the casing. Wind exits to the right.",
+  "states": {
+    "off": {
+      "layers": [
+        "assets/objects/mechanisms/wind_fan/fan_off.png",
+        "assets/objects/mechanisms/wind_fan/fan_base.png"
+      ]
+    },
+    "fan_blades": {
+      "animation": "fan_blades"
+    },
+    "fan_starting": {
+      "animation": "fan_starting"
+    },
+    "fan_stopping": {
+      "animation": "fan_stopping"
+    }
+  },
+  "components": [
+    "assets/objects/mechanisms/wind_fan/fan_base.png",
+    "assets/objects/mechanisms/wind_fan/fan_off.png"
+  ],
+  "directory": "assets/objects/mechanisms/wind_fan",
+  "defaultBack": [],
+  "defaultFront": [
+    "assets/objects/mechanisms/wind_fan/fan_base.png"
+  ],
+  "thumbnail": "assets/objects/mechanisms/wind_fan/preview.png"
+}

@@ -1,0 +1,643 @@
+{
+  "format": "veylith-level-environment-art",
+  "version": 2,
+  "levelId": "level_09",
+  "levelName": "Puentes de piedra",
+  "world": "WORLD 01 — ANCIENT FOREST",
+  "canvas": {
+    "width": 1728,
+    "height": 648,
+    "origin": "top-left",
+    "xDirection": "right",
+    "yDirection": "down",
+    "units": "pixels",
+    "colorSpace": "sRGB",
+    "alpha": "straight"
+  },
+  "blueprint": {
+    "source": "Mundo 1_ Bosque antiguo — Blueprint de niveles.png",
+    "panel": {
+      "left": 191,
+      "top": 759,
+      "width": 560,
+      "height": 141
+    },
+    "nominalUniformScale": 3,
+    "skyPaddingAbove": true,
+    "pixelPerfect": false,
+    "geometryNotes": "Five independent horizontal stone slabs retained, including the narrow separations in both pairs. Four terrain masses retained; extra left pillar and accidental floor under final gap removed in extraction. Tiny low island remains after hazard removal."
+  },
+  "sections": [
+    {
+      "id": "section_01",
+      "width": 1728,
+      "height": 648,
+      "worldPosition": {
+        "x": 0,
+        "y": 0
+      }
+    }
+  ],
+  "layers": [
+    {
+      "id": "background",
+      "file": "background/background.png",
+      "depth": 0,
+      "opaque": true,
+      "width": 1728,
+      "height": 648,
+      "worldPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "static_world",
+      "file": "static_world/section_01.png",
+      "depth": 10,
+      "opaque": false,
+      "width": 1728,
+      "height": 648,
+      "worldPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    },
+    {
+      "id": "foreground",
+      "file": "foreground/section_01.png",
+      "depth": 20,
+      "opaque": false,
+      "width": 1728,
+      "height": 648,
+      "worldPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1
+      }
+    }
+  ],
+  "animations": {
+    "hanging_vine": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 256,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "../_shared/ancient_forest_v1/hanging_vine/hanging_vine_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 512,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "../_shared/ancient_forest_v1/hanging_vine/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 256,
+            "width": 128,
+            "height": 256
+          },
+          "durationMs": 250
+        }
+      ]
+    },
+    "moving_leaves": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "fps": 6,
+      "durationSeconds": 1.3333333333333333,
+      "loop": true,
+      "atlas": "../_shared/ancient_forest_v1/moving_leaves/moving_leaves_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 256,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 1,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 2,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 3,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 4,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 5,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 6,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        },
+        {
+          "index": 7,
+          "file": "../_shared/ancient_forest_v1/moving_leaves/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 166.66666666666666
+        }
+      ]
+    },
+    "mist": {
+      "frameCount": 8,
+      "frameWidth": 256,
+      "frameHeight": 96,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "../_shared/ancient_forest_v1/mist/mist_sheet.png",
+      "atlasWidth": 1024,
+      "atlasHeight": 192,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_01.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_02.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_03.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 0,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_05.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_06.png",
+          "atlasRect": {
+            "x": 512,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "../_shared/ancient_forest_v1/mist/frames/frame_07.png",
+          "atlasRect": {
+            "x": 768,
+            "y": 96,
+            "width": 256,
+            "height": 96
+          },
+          "durationMs": 250
+        }
+      ]
+    },
+    "magical_particles": {
+      "frameCount": 8,
+      "frameWidth": 128,
+      "frameHeight": 128,
+      "fps": 4,
+      "durationSeconds": 2,
+      "loop": true,
+      "atlas": "../_shared/ancient_forest_v1/magical_particles/magical_particles_sheet.png",
+      "atlasWidth": 512,
+      "atlasHeight": 256,
+      "columns": 4,
+      "rows": 2,
+      "order": "row-major",
+      "frames": [
+        {
+          "index": 0,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_00.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_01.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 2,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_02.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 3,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_03.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 0,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 4,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_04.png",
+          "atlasRect": {
+            "x": 0,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 5,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_05.png",
+          "atlasRect": {
+            "x": 128,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 6,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_06.png",
+          "atlasRect": {
+            "x": 256,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        },
+        {
+          "index": 7,
+          "file": "../_shared/ancient_forest_v1/magical_particles/frames/frame_07.png",
+          "atlasRect": {
+            "x": 384,
+            "y": 128,
+            "width": 128,
+            "height": 128
+          },
+          "durationMs": 250
+        }
+      ]
+    }
+  },
+  "instances": [
+    {
+      "id": "canopy_vine",
+      "animation": "hanging_vine",
+      "x": 145,
+      "y": 65,
+      "width": 46,
+      "height": 92,
+      "depth": 30,
+      "opacity": 0.85,
+      "phase": 0,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.359375,
+        "y": 0.359375
+      }
+    },
+    {
+      "id": "left_leaves",
+      "animation": "moving_leaves",
+      "x": 260,
+      "y": 150,
+      "width": 85,
+      "height": 85,
+      "depth": 30,
+      "opacity": 0.65,
+      "phase": 0,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.6640625,
+        "y": 0.6640625
+      }
+    },
+    {
+      "id": "right_leaves",
+      "animation": "moving_leaves",
+      "x": 1430,
+      "y": 95,
+      "width": 64,
+      "height": 64,
+      "depth": 30,
+      "opacity": 0.5,
+      "phase": 4,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    {
+      "id": "ground_mist",
+      "animation": "mist",
+      "x": 620,
+      "y": 525,
+      "width": 420,
+      "height": 105,
+      "depth": 5,
+      "opacity": 0.18,
+      "phase": 1,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 1.640625,
+        "y": 1.09375
+      }
+    },
+    {
+      "id": "forest_motes",
+      "animation": "magical_particles",
+      "x": 1075,
+      "y": 120,
+      "width": 100,
+      "height": 100,
+      "depth": 30,
+      "opacity": 0.25,
+      "phase": 3,
+      "origin": {
+        "x": 0,
+        "y": 0
+      },
+      "scale": {
+        "x": 0.78125,
+        "y": 0.78125
+      }
+    }
+  ],
+  "previews": {
+    "composite": "preview/composite.png",
+    "dry": "preview/static_composite.png",
+    "gif": "preview/animated_preview.gif",
+    "webp": "preview/animated_preview.webp",
+    "comparison": "preview/geometry_comparison.png"
+  },
+  "separation": {
+    "method": "Master image followed by registered foreground extraction and background inpainting; top canopy split mechanically from the extracted art.",
+    "exactSourceSeparation": false,
+    "waterBakedIntoStaticLayers": false,
+    "staticIvy": "Small attached ivy remains static; separate hanging vine is the only swaying strand.",
+    "foregroundNote": "Canopy crop remains at its master coordinates; use all layers at the same origin and scale.",
+    "devicePerformanceTested": false
+  },
+  "excluded": [
+    "characters",
+    "interactive objects",
+    "colliders",
+    "gameplay logic"
+  ],
+  "limitations": [
+    "Illustrated reconstruction, not pixel-perfect blueprint tracing.",
+    "No device performance test."
+  ]
+}

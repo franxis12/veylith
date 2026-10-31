@@ -1,0 +1,251 @@
+{
+  "version": 1,
+  "id": "forest-9",
+  "name": "La máquina dormida",
+  "theme": "ancient-forest",
+  "width": 2304,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 45000,
+    "twoStarsMs": 85000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "water"
+    },
+    {
+      "id": "workshop",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 1024,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 450
+      }
+    },
+    {
+      "id": "upper-exit",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1408,
+      "y": 300,
+      "width": 896,
+      "height": 800,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 896,
+        "height": 800
+      }
+    },
+    {
+      "id": "fire",
+      "type": "gem",
+      "asset": "gem:fire",
+      "x": 348,
+      "y": 328,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "fire",
+      "respawn": "restart"
+    },
+    {
+      "id": "boiler",
+      "type": "world",
+      "asset": "world:steam_boiler",
+      "x": 650,
+      "y": 410,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "steam_boiler",
+      "behavior": {
+        "kind": "boiler",
+        "waterHits": 2,
+        "fireHits": 2
+      },
+      "state": "cold",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 240
+      },
+      "hint": "Primero Agua ×2 a la caldera; después salta por Fuego y dispara ×2. Si cambias antes, reinicia."
+    },
+    {
+      "id": "lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 940,
+      "y": 535,
+      "width": 512,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 84,
+        "y": 115,
+        "width": 350,
+        "height": 20
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "requires": ["boiler"],
+        "autostart": false,
+        "travelX": 0,
+        "travelY": -350,
+        "speed": 100,
+        "mode": "pingpong"
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 256
+      },
+      "hint": "La caldera activa el recorrido de ida y vuelta."
+    },
+    {
+      "id": "boiler-order",
+      "type": "label",
+      "asset": null,
+      "x": 60,
+      "y": 130,
+      "width": 520,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 520,
+        "height": 72
+      },
+      "text": "1. AGUA ×2 a la caldera (derecha).\n2. Salta por FUEGO y dispara ×2.\nCambiar antes de llenar exige reiniciar."
+    },
+    {
+      "id": "lift-tip",
+      "type": "label",
+      "asset": null,
+      "x": 900,
+      "y": 190,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "Espera el ascensor abajo.\nSúbete y salta a la derecha al llegar arriba."
+    },
+    {
+      "id": "lift-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1590,
+      "y": 180,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 1922.5,
+      "y": 24,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["boiler"]
+    }
+  ]
+}

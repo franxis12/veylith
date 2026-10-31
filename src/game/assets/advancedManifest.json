@@ -1,0 +1,752 @@
+{
+  "objects": [
+    {
+      "id": "reflector",
+      "label": "Espejo m\u00f3vil",
+      "width": 512,
+      "height": 512,
+      "thumbnail": "assets/objects/advanced/reflectors/preview.png",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/reflector_base.png"
+          ]
+        },
+        "reflector_base": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/reflector_base.png"
+          ]
+        },
+        "mirror_nw": {
+          "layers": ["assets/objects/advanced/reflectors/static/mirror_nw.png"]
+        },
+        "mirror_ne": {
+          "layers": ["assets/objects/advanced/reflectors/static/mirror_ne.png"]
+        },
+        "mirror_se": {
+          "layers": ["assets/objects/advanced/reflectors/static/mirror_se.png"]
+        },
+        "mirror_sw": {
+          "layers": ["assets/objects/advanced/reflectors/static/mirror_sw.png"]
+        }
+      }
+    },
+    {
+      "id": "beam_emitter",
+      "label": "Origen de haz",
+      "width": 256,
+      "height": 256,
+      "thumbnail": "assets/objects/advanced/reflectors/static/light_beam_horizontal_tile.png",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/light_beam_horizontal_tile.png"
+          ]
+        },
+        "light_beam_horizontal_tile": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/light_beam_horizontal_tile.png"
+          ]
+        },
+        "light_beam_vertical_tile": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/light_beam_vertical_tile.png"
+          ]
+        }
+      }
+    },
+    {
+      "id": "light_receiver",
+      "label": "Receptor de luz",
+      "width": 512,
+      "height": 512,
+      "thumbnail": "assets/objects/advanced/reflectors/static/light_receptor_inactive.png",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/light_receptor_inactive.png"
+          ]
+        },
+        "light_receptor_inactive": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/light_receptor_inactive.png"
+          ]
+        },
+        "light_receptor_activated": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/light_receptor_activated.png"
+          ]
+        },
+        "receptor_glow_active": {
+          "layers": [
+            "assets/objects/advanced/reflectors/static/receptor_glow_active.png"
+          ]
+        },
+        "receptor_activation": {
+          "animation": "receptor_activation"
+        }
+      }
+    },
+    {
+      "id": "pulley_platform",
+      "label": "Plataforma de polea",
+      "width": 1024,
+      "height": 512,
+      "thumbnail": "assets/objects/advanced/pulleys/static/movable_platform.png",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/movable_platform.png"
+          ]
+        },
+        "movable_platform": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/movable_platform.png"
+          ]
+        },
+        "pulley_housing": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/pulley_housing.png"
+          ]
+        },
+        "pulley_wheel": {
+          "layers": ["assets/objects/advanced/pulleys/static/pulley_wheel.png"]
+        },
+        "rope_vertical_tile": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/rope_vertical_tile.png"
+          ]
+        },
+        "upper_mechanical_stop": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/upper_mechanical_stop.png"
+          ]
+        },
+        "lower_mechanical_stop": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/lower_mechanical_stop.png"
+          ]
+        },
+        "pulley_rotation": {
+          "animation": "pulley_rotation"
+        }
+      }
+    },
+    {
+      "id": "pulley_counterweight",
+      "label": "Contrapeso de polea",
+      "width": 512,
+      "height": 512,
+      "thumbnail": "assets/objects/advanced/pulleys/static/counterweight.png",
+      "states": {
+        "idle": {
+          "layers": ["assets/objects/advanced/pulleys/static/counterweight.png"]
+        },
+        "counterweight": {
+          "layers": ["assets/objects/advanced/pulleys/static/counterweight.png"]
+        },
+        "counterweight_active_glow": {
+          "layers": [
+            "assets/objects/advanced/pulleys/static/counterweight_active_glow.png"
+          ]
+        },
+        "counterweight_activation": {
+          "animation": "counterweight_activation"
+        }
+      }
+    },
+    {
+      "id": "conveyor",
+      "label": "Cinta transportadora",
+      "width": 1280,
+      "height": 256,
+      "thumbnail": "assets/objects/advanced/conveyors/static/conveyor_center_segment.png",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+          ]
+        },
+        "conveyor_center_segment": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+          ]
+        },
+        "conveyor_left_end_cap": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_left_end_cap.png"
+          ]
+        },
+        "conveyor_right_end_cap": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_right_end_cap.png"
+          ]
+        },
+        "conveyor_support": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_support.png"
+          ]
+        },
+        "conveyor_direction_right": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_direction_right.png"
+          ]
+        },
+        "conveyor_direction_left": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_direction_left.png"
+          ]
+        },
+        "conveyor_control_switch": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_control_switch.png"
+          ]
+        },
+        "conveyor_belt_idle": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_belt_idle.png"
+          ]
+        },
+        "conveyor_roller_idle": {
+          "layers": [
+            "assets/objects/advanced/conveyors/static/conveyor_roller_idle.png"
+          ]
+        },
+        "conveyor_belt_moving_right": {
+          "animation": "conveyor_belt_moving_right"
+        },
+        "conveyor_roller_moving_right": {
+          "animation": "conveyor_roller_moving_right"
+        },
+        "conveyor_belt_moving_left": {
+          "animation": "conveyor_belt_moving_left"
+        },
+        "conveyor_roller_moving_left": {
+          "animation": "conveyor_roller_moving_left"
+        },
+        "conveyor_belt_starting": {
+          "animation": "conveyor_belt_starting"
+        },
+        "conveyor_roller_starting": {
+          "animation": "conveyor_roller_starting"
+        },
+        "conveyor_belt_stopping": {
+          "animation": "conveyor_belt_stopping"
+        },
+        "conveyor_roller_stopping": {
+          "animation": "conveyor_roller_stopping"
+        }
+      }
+    },
+    {
+      "id": "directional_gate",
+      "label": "Compuerta direccional",
+      "width": 512,
+      "height": 512,
+      "thumbnail": "assets/objects/advanced/directional_gates/static/gate_frame.png",
+      "states": {
+        "idle": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_frame.png"
+          ]
+        },
+        "gate_frame": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_frame.png"
+          ]
+        },
+        "gate_panel": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_panel.png"
+          ]
+        },
+        "gate_direction_right": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_direction_right.png"
+          ]
+        },
+        "gate_panel_closed": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_panel_closed.png"
+          ]
+        },
+        "gate_panel_open": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_panel_open.png"
+          ]
+        },
+        "gate_locked_indicator": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_locked_indicator.png"
+          ]
+        },
+        "gate_unlocked_indicator": {
+          "layers": [
+            "assets/objects/advanced/directional_gates/static/gate_unlocked_indicator.png"
+          ]
+        },
+        "gate_open": {
+          "animation": "gate_open"
+        },
+        "gate_close": {
+          "animation": "gate_close"
+        },
+        "gate_unlock": {
+          "animation": "gate_unlock"
+        }
+      }
+    }
+  ],
+  "animations": [
+    {
+      "id": "receptor_activation",
+      "family": "reflectors",
+      "frames": [
+        "assets/objects/advanced/reflectors/frames/receptor_activation_01.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_02.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_03.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_04.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_05.png",
+        "assets/objects/advanced/reflectors/frames/receptor_activation_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/reflectors/spritesheets/receptor_activation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [256, 480],
+      "origin": [0.5, 0.9375],
+      "backLayers": [
+        "assets/objects/advanced/reflectors/static/light_receptor_inactive.png"
+      ],
+      "frontLayers": [],
+      "note": "Emission overlay only. Keep inactive receptor underneath. Frame 6 matches receptor_glow_active.",
+      "next": "light_receptor_activated",
+      "preview": "assets/objects/advanced/reflectors/previews/receptor_activation.gif",
+      "object": "light_receiver",
+      "tile": false
+    },
+    {
+      "id": "pulley_rotation",
+      "family": "pulleys",
+      "frames": [
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_01.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_02.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_03.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_04.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_05.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_06.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_07.png",
+        "assets/objects/advanced/pulleys/frames/pulley_rotation_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/pulleys/spritesheets/pulley_rotation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [256, 64],
+      "origin": [0.5, 0.125],
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/advanced/pulleys/static/pulley_housing.png"
+      ],
+      "note": "45 degrees per frame, no duplicate terminal frame. Independent rotor; axle [256,211].",
+      "next": null,
+      "preview": "assets/objects/advanced/pulleys/previews/pulley_rotation.gif",
+      "object": "pulley_platform",
+      "tile": false
+    },
+    {
+      "id": "counterweight_activation",
+      "family": "pulleys",
+      "frames": [
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_01.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_02.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_03.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_04.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_05.png",
+        "assets/objects/advanced/pulleys/frames/counterweight_activation_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/pulleys/spritesheets/counterweight_activation_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [256, 88],
+      "origin": [0.5, 0.171875],
+      "backLayers": [
+        "assets/objects/advanced/pulleys/static/counterweight.png"
+      ],
+      "frontLayers": [],
+      "note": "Rune illumination overlay; counterweight position remains fixed.",
+      "next": "counterweight_active_glow",
+      "preview": "assets/objects/advanced/pulleys/previews/counterweight_activation.gif",
+      "object": "pulley_counterweight",
+      "tile": false
+    },
+    {
+      "id": "conveyor_belt_moving_right",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_right_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_moving_right_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [0, 80],
+      "origin": [0, 0.3125],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Belt advances right 8 px per frame.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_moving_right.gif",
+      "phasePixels": [14, 22, 30, 38, 46, 54, 62, 70],
+      "companionAnimation": "conveyor_roller_moving_right",
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_roller_moving_right",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_right_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_moving_right_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [128, 128],
+      "origin": [0.5, 0.5],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_moving_right. Reuse at both end-cap mounts.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_moving_right.gif",
+      "phasePixels": [14, 22, 30, 38, 46, 54, 62, 70],
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_belt_moving_left",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_moving_left_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_moving_left_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [0, 80],
+      "origin": [0, 0.3125],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Belt advances left 8 px per frame.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_moving_left.gif",
+      "phasePixels": [-14, -22, -30, -38, -46, -54, -62, -70],
+      "companionAnimation": "conveyor_roller_moving_left",
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_roller_moving_left",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_04.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_05.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_06.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_07.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_moving_left_08.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_moving_left_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 8,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": -1,
+      "anchor": [128, 128],
+      "origin": [0.5, 0.5],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_moving_left. Reuse at both end-cap mounts.",
+      "next": null,
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_moving_left.gif",
+      "phasePixels": [-14, -22, -30, -38, -46, -54, -62, -70],
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_belt_starting",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_starting_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_starting_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [0, 80],
+      "origin": [0, 0.3125],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Starts from idle phase 0; accelerates into moving-right frame 1.",
+      "next": "conveyor_belt_moving_right",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_starting.gif",
+      "phasePixels": [0, 1, 3, 6],
+      "companionAnimation": "conveyor_roller_starting",
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_roller_starting",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_starting_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_starting_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [128, 128],
+      "origin": [0.5, 0.5],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_starting. Reuse at both end-cap mounts.",
+      "next": "conveyor_roller_moving_right",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_starting.gif",
+      "phasePixels": [0, 1, 3, 6],
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_belt_stopping",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_belt_stopping_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_belt_stopping_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [0, 80],
+      "origin": [0, 0.3125],
+      "backLayers": [
+        "assets/objects/advanced/conveyors/static/conveyor_center_segment.png"
+      ],
+      "frontLayers": [],
+      "note": "Trigger after moving-right frame 5 (phase 46). Decelerates 8,6,3,1 px and ends exactly at idle phase 0.",
+      "next": "conveyor_belt_idle",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_belt_stopping.gif",
+      "phasePixels": [54, 60, 63, 64],
+      "companionAnimation": "conveyor_roller_stopping",
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "conveyor_roller_stopping",
+      "family": "conveyors",
+      "frames": [
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_01.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_02.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_03.png",
+        "assets/objects/advanced/conveyors/frames/conveyor_roller_stopping_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/conveyors/spritesheets/conveyor_roller_stopping_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [128, 128],
+      "origin": [0.5, 0.5],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "Companion hub; synchronize frame index with conveyor_belt_stopping. Reuse at both end-cap mounts.",
+      "next": "conveyor_roller_idle",
+      "preview": "assets/objects/advanced/conveyors/previews/conveyor_roller_stopping.gif",
+      "phasePixels": [54, 60, 63, 64],
+      "object": "conveyor",
+      "tile": false
+    },
+    {
+      "id": "gate_open",
+      "family": "directional_gates",
+      "frames": [
+        "assets/objects/advanced/directional_gates/frames/gate_open_01.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_02.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_03.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_04.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_05.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/directional_gates/spritesheets/gate_open_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [256, 480],
+      "origin": [0.5, 0.9375],
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/advanced/directional_gates/static/gate_frame.png"
+      ],
+      "note": "Independent panel layer, masked at y=147 to simulate occlusion behind the lintel. Frame 6 fully transparent; static full leaf is also provided.",
+      "next": "gate_panel_open",
+      "preview": "assets/objects/advanced/directional_gates/previews/gate_open.gif",
+      "object": "directional_gate",
+      "tile": false
+    },
+    {
+      "id": "gate_close",
+      "family": "directional_gates",
+      "frames": [
+        "assets/objects/advanced/directional_gates/frames/gate_close_01.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_02.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_03.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_04.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_05.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/directional_gates/spritesheets/gate_close_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [256, 480],
+      "origin": [0.5, 0.9375],
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/advanced/directional_gates/static/gate_frame.png"
+      ],
+      "note": "Reverse of opening with identical registration.",
+      "next": "gate_panel_closed",
+      "preview": "assets/objects/advanced/directional_gates/previews/gate_close.gif",
+      "object": "directional_gate",
+      "tile": false
+    },
+    {
+      "id": "gate_unlock",
+      "family": "directional_gates",
+      "frames": [
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_01.png",
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_02.png",
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_03.png",
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/directional_gates/spritesheets/gate_unlock_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [128, 224],
+      "origin": [0.5, 0.875],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "The same lock body remains fixed while its shackle lifts and swings. Red gem changes to green.",
+      "next": "gate_unlocked_indicator",
+      "preview": "assets/objects/advanced/directional_gates/previews/gate_unlock.gif",
+      "object": "directional_gate",
+      "tile": false
+    }
+  ]
+}

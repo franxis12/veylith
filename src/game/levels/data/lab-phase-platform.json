@@ -1,0 +1,175 @@
+{
+  "version": 1,
+  "id": "lab-phase-platform",
+  "name": "Laboratorio · Plataforma evanescente",
+  "theme": "ancient-forest",
+  "width": 2048,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 30000,
+    "twoStarsMs": 60000
+  },
+  "objects": [
+    {
+      "id": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2048,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 16,
+        "y": 0,
+        "width": 2016,
+        "height": 450
+      },
+      "type": "terrain"
+    },
+    {
+      "id": "spawn",
+      "asset": null,
+      "x": 590,
+      "y": 100,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "type": "spawn",
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "asset": "portal",
+      "x": 1672.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "type": "exit",
+      "requires": []
+    },
+    {
+      "id": "label",
+      "asset": null,
+      "x": 100,
+      "y": 95,
+      "width": 1100,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": 2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 400,
+        "height": 70
+      },
+      "type": "label",
+      "text": "La primera plataforma desaparece 1.2 s después de pisarla. La segunda alterna por ciclo. R restaura ambas."
+    },
+    {
+      "id": "disappearing-platform",
+      "asset": "world:disappearing_platform",
+      "x": 500,
+      "y": 350,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 20,
+        "y": 150,
+        "width": 216,
+        "height": 12
+      },
+      "kind": "disappearing_platform",
+      "effect": {
+        "enabled": false,
+        "x": 20,
+        "y": 150,
+        "width": 216,
+        "height": 12
+      },
+      "behavior": {
+        "kind": "phasePlatform",
+        "requires": [],
+        "autostart": true,
+        "mode": "contact",
+        "solidMs": 1200,
+        "hiddenMs": 1500,
+        "initiallySolid": true
+      },
+      "state": "solid",
+      "hint": "Alterna solidez por ciclo o después de pisarla. Reaparece cuando el hueco queda libre.",
+      "type": "world"
+    },
+    {
+      "id": "disappearing-platform-2",
+      "asset": "world:disappearing_platform",
+      "x": 950,
+      "y": 350,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 20,
+        "y": 150,
+        "width": 216,
+        "height": 12
+      },
+      "kind": "disappearing_platform",
+      "effect": {
+        "enabled": false,
+        "x": 20,
+        "y": 150,
+        "width": 216,
+        "height": 12
+      },
+      "behavior": {
+        "kind": "phasePlatform",
+        "requires": [],
+        "autostart": true,
+        "mode": "cycle",
+        "solidMs": 2000,
+        "hiddenMs": 1500,
+        "initiallySolid": true
+      },
+      "state": "solid",
+      "hint": "Alterna solidez por ciclo o después de pisarla. Reaparece cuando el hueco queda libre.",
+      "type": "world"
+    }
+  ]
+}

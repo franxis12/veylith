@@ -1,0 +1,518 @@
+{
+  "version": 1,
+  "id": "forest-8",
+  "name": "La escalera rota",
+  "theme": "ancient-forest",
+  "width": 4608,
+  "height": 1400,
+  "fallLimit": 1300,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 45000,
+    "twoStarsMs": 90000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 586,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "lower-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 760,
+      "width": 1024,
+      "height": 640,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 640
+      }
+    },
+    {
+      "id": "lift-lever",
+      "type": "world",
+      "asset": "world:interactive_lever",
+      "x": 756,
+      "y": 640,
+      "width": 128,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 128,
+        "height": 128
+      },
+      "kind": "interactive_lever",
+      "behavior": {
+        "kind": "lever",
+        "initiallyActive": false
+      },
+      "state": "off",
+      "effect": {
+        "enabled": true,
+        "x": 8,
+        "y": -54,
+        "width": 112,
+        "height": 174
+      },
+      "hint": "La pared es demasiado alta: activa el ascensor y espera su regreso."
+    },
+    {
+      "id": "lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 998.8571428571429,
+      "y": 685,
+      "width": 402.2857142857143,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 25.142857142857142,
+        "y": 115,
+        "width": 352,
+        "height": 14
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "requires": ["lift-lever"],
+        "autostart": false,
+        "travelX": 0,
+        "travelY": -320,
+        "speed": 95,
+        "mode": "pingpong"
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 402.2857142857143,
+        "height": 256
+      },
+      "hint": "El ascensor vuelve: espera en el borde y sube cuando llegue."
+    },
+    {
+      "id": "high-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1408,
+      "y": 480,
+      "width": 768,
+      "height": 920,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 920
+      }
+    },
+    {
+      "id": "high-wall",
+      "type": "world",
+      "asset": "world:stone_wall",
+      "x": 1806,
+      "y": 205,
+      "width": 100,
+      "height": 293.3333333333,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 14,
+        "y": 55,
+        "width": 72,
+        "height": 220
+      },
+      "kind": "stone_wall",
+      "behavior": {
+        "kind": "breakable",
+        "strikes": 1
+      },
+      "state": "intact",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 293.3333333333
+      },
+      "hint": "Rompe el muro agrietado con Poder, desde el suelo."
+    },
+    {
+      "id": "ruin-bridge",
+      "type": "world",
+      "asset": "world:retractable_bridge",
+      "x": 2064.4752475247524,
+      "y": 335,
+      "width": 648.8712871287129,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": true,
+        "x": 111.52475247524752,
+        "y": 145,
+        "width": 512,
+        "height": 10
+      },
+      "kind": "retractable_bridge",
+      "behavior": {
+        "kind": "bridge",
+        "requires": ["high-wall"],
+        "autostart": false,
+        "duration": 850
+      },
+      "state": "retracted",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 648.8712871287129,
+        "height": 256
+      },
+      "hint": "Espera a que el puente termine de extenderse."
+    },
+    {
+      "id": "landing",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 2688,
+      "y": 480,
+      "width": 512,
+      "height": 920,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 512,
+        "height": 920
+      }
+    },
+    {
+      "id": "upper-steps-1",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3200,
+      "y": 440,
+      "width": 256,
+      "height": 960,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 960
+      }
+    },
+    {
+      "id": "upper-steps-2",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3456,
+      "y": 400,
+      "width": 256,
+      "height": 1000,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 1000
+      }
+    },
+    {
+      "id": "upper-steps-3",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3712,
+      "y": 360,
+      "width": 256,
+      "height": 1040,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 1040
+      }
+    },
+    {
+      "id": "upper-exit",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 3968,
+      "y": 360,
+      "width": 640,
+      "height": 1040,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 640,
+        "height": 1040
+      }
+    },
+    {
+      "id": "double-jump-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 3500,
+      "y": 170,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 4232.5,
+      "y": 84,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["lift-lever", "high-wall"]
+    },
+    {
+      "id": "deep-pool",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 1024,
+      "y": 950,
+      "width": 1664,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 1664,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 1664,
+        "height": 370
+      },
+      "hint": "Tierra se hunde. Cruza por las plataformas."
+    },
+    {
+      "id": "lift-sign",
+      "type": "label",
+      "asset": null,
+      "x": 540,
+      "y": 410,
+      "width": 320,
+      "height": 60,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 60
+      },
+      "text": "La escalera se ha derrumbado.\nLa máquina aún puede subirte."
+    },
+    {
+      "id": "fern-1",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 45,
+      "y": 699.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-1",
+      "type": "decoration",
+      "asset": "column",
+      "x": 874,
+      "y": 400,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-4",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 1453,
+      "y": 419.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "ruin-4",
+      "type": "decoration",
+      "asset": "column",
+      "x": 2026,
+      "y": 120,
+      "width": 99,
+      "height": 360,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 99,
+        "height": 360
+      }
+    },
+    {
+      "id": "fern-7",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 2733,
+      "y": 419.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    },
+    {
+      "id": "fern-11",
+      "type": "decoration",
+      "asset": "fern",
+      "x": 4013,
+      "y": 299.2,
+      "width": 94.4,
+      "height": 60.8,
+      "rotation": 0,
+      "visible": true,
+      "layer": -3,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 94.4,
+        "height": 60.8
+      }
+    }
+  ]
+}

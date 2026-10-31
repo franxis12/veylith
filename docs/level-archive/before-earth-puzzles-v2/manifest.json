@@ -1,0 +1,27 @@
+{
+  "description": "Dise\u00f1os anteriores al redise\u00f1o de puzzles de Tierra; IDs de campa\u00f1a y ledger conservados.",
+  "order": [
+    "forest-1",
+    "forest-2",
+    "forest-6",
+    "forest-7",
+    "forest-8",
+    "forest-9",
+    "forest-10",
+    "forest-3",
+    "forest-4",
+    "forest-5"
+  ],
+  "sha256": {
+    "forest-9.json": "6a77c3108cbbd967e36db7a6d9902215e88498a399c75c67eb8fb0075789e91b",
+    "forest-5.json": "7683267cfc2c34913c7cd4e2b8d8d5584158437618ab180b2bab9c633eff2233",
+    "forest-4.json": "28136602cc41dab4feca5f300be5e87d2991c3ab96c872925c1a202b040cd19f",
+    "forest-8.json": "3f8ab0840a8336a95a74c43041a1ed9c594441ff386fc80a06088a3a988ffc81",
+    "forest-3.json": "0db35197ceba772e394a2a351c67ef681274e95c5b419ac150f80bf0e6d25401",
+    "forest-2.json": "3277eb10298672ddf6978bd6c8f04974e434a6cd3a00b92de691a087a74bca4f",
+    "forest-1.json": "6912c6d8704dbf975938b4116a37341b2a86730e764ced4333ea01c013ffcac2",
+    "forest-10.json": "8de8b81d16c02a518a55b3a830ce75ad4f79ab82ed4f46ad2559191ad20e5603",
+    "forest-7.json": "9a0d80db58071d8f9ea8ae26ee0d81b60f0a11bd8ab8c5b1e2d7c63a4c1ce20a",
+    "forest-6.json": "129be2e76e665166665def1f2470486122322c4a1ca70f96055fe986ea7d8fb4"
+  }
+}

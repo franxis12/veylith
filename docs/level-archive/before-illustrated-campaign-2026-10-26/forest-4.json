@@ -1,0 +1,363 @@
+{
+  "version": 1,
+  "id": "forest-4",
+  "name": "La cámara de las decisiones",
+  "theme": "ancient-forest",
+  "width": 2560,
+  "height": 1200,
+  "fallLimit": 1120,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 75000,
+    "twoStarsMs": 180000
+  },
+  "puzzle": {
+    "brief": "Dos cámaras alimentan una sola salida.",
+    "hints": [
+      "Ambas cámaras deben enviar señal, pero sus accesos se alternan.",
+      "El mando central cambia dos barreras a la vez.",
+      "Los sellos laterales recuerdan la visita. Conserva uno mientras cambias de acceso al otro."
+    ]
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 1209,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "earth"
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 1262.5,
+      "y": 24,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["west-seal", "east-seal"]
+    },
+    {
+      "id": "floor",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 2560,
+      "height": 500,
+      "rotation": 0,
+      "visible": true,
+      "layer": -5,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 2560,
+        "height": 500
+      }
+    },
+    {
+      "id": "west-barrier",
+      "type": "world",
+      "asset": "world:energy_barrier",
+      "x": 590,
+      "y": 0,
+      "width": 184,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 60,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "kind": "energy_barrier",
+      "behavior": {
+        "kind": "barrier",
+        "requires": [],
+        "autostart": true
+      },
+      "state": "barrier_active",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 184,
+        "height": 650
+      }
+    },
+    {
+      "id": "east-barrier",
+      "type": "world",
+      "asset": "world:energy_barrier",
+      "x": 1590,
+      "y": 0,
+      "width": 184,
+      "height": 650,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 60,
+        "y": 0,
+        "width": 64,
+        "height": 650
+      },
+      "kind": "energy_barrier",
+      "behavior": {
+        "kind": "barrier",
+        "requires": [],
+        "autostart": false
+      },
+      "state": "barrier_active",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 184,
+        "height": 650
+      }
+    },
+    {
+      "id": "selector",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 1142,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "toggle",
+        "trigger": "interact",
+        "targets": ["west-barrier", "east-barrier"],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "west-seal",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 352,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": [],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "east-seal",
+      "type": "world",
+      "asset": "world:fire_switch",
+      "x": 1882,
+      "y": 522,
+      "width": 96,
+      "height": 128,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 128
+      },
+      "kind": "fire_switch",
+      "behavior": {
+        "kind": "switch",
+        "action": "activate",
+        "trigger": "interact",
+        "targets": [],
+        "initiallyActive": false,
+        "cooldownMs": 250
+      },
+      "state": "unlit",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": true,
+        "x": 16,
+        "y": -20,
+        "width": 64,
+        "height": 140
+      }
+    },
+    {
+      "id": "judgment-lift",
+      "type": "world",
+      "asset": "world:mechanical_elevator",
+      "x": 818,
+      "y": 505,
+      "width": 320,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 32,
+        "y": 115,
+        "width": 256,
+        "height": 24
+      },
+      "kind": "mechanical_elevator",
+      "behavior": {
+        "kind": "elevator",
+        "travelX": 0,
+        "travelY": -320,
+        "speed": 100,
+        "mode": "pingpong",
+        "requires": ["west-seal", "east-seal"],
+        "autostart": false
+      },
+      "state": "idle",
+      "hint": "Observa el mecanismo y sus conexiones.",
+      "effect": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 320,
+        "height": 256
+      }
+    },
+    {
+      "id": "sanctuary",
+      "type": "platform",
+      "asset": "platform",
+      "x": 1152,
+      "y": 300,
+      "width": 384,
+      "height": 32,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 384,
+        "height": 32
+      }
+    },
+    {
+      "id": "decision-cue",
+      "type": "label",
+      "asset": null,
+      "x": 810,
+      "y": 70,
+      "width": 550,
+      "height": 70,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 550,
+        "height": 70
+      },
+      "text": "OESTE + ESTE\nDos señales, una salida"
+    },
+    {
+      "id": "plate-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 870,
+      "y": 550,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    }
+  ]
+}

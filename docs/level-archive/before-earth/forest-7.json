@@ -1,0 +1,244 @@
+{
+  "version": 1,
+  "id": "forest-7",
+  "name": "El lago olvidado",
+  "theme": "ancient-forest",
+  "width": 2560,
+  "height": 1100,
+  "fallLimit": 1000,
+  "background": {
+    "sky": true,
+    "forest": true,
+    "foreground": true
+  },
+  "timer": {
+    "threeStarsMs": 25000,
+    "twoStarsMs": 50000
+  },
+  "objects": [
+    {
+      "id": "spawn",
+      "type": "spawn",
+      "asset": null,
+      "x": 149,
+      "y": 476,
+      "width": 62,
+      "height": 174,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 62,
+        "height": 174
+      },
+      "element": "fire"
+    },
+    {
+      "id": "near-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 0,
+      "y": 650,
+      "width": 768,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 450
+      }
+    },
+    {
+      "id": "far-bank",
+      "type": "terrain",
+      "asset": "ground",
+      "x": 1664,
+      "y": 650,
+      "width": 896,
+      "height": 450,
+      "rotation": 0,
+      "visible": true,
+      "layer": -1,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 896,
+        "height": 450
+      }
+    },
+    {
+      "id": "water",
+      "type": "gem",
+      "asset": "gem:water",
+      "x": 298,
+      "y": 513,
+      "width": 104,
+      "height": 104,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 30,
+        "y": 12,
+        "width": 44,
+        "height": 80
+      },
+      "element": "water",
+      "respawn": "restart"
+    },
+    {
+      "id": "lake",
+      "type": "world",
+      "asset": "world:deep_water",
+      "x": 768,
+      "y": 570,
+      "width": 896,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 896,
+        "height": 256
+      },
+      "kind": "deep_water",
+      "behavior": {
+        "kind": "lake"
+      },
+      "state": "water_surface",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 80,
+        "width": 896,
+        "height": 450
+      },
+      "hint": "Solo Agua cruza el lago."
+    },
+    {
+      "id": "lake-wheel",
+      "type": "world",
+      "asset": "world:waterwheel",
+      "x": 1840,
+      "y": 410,
+      "width": 256,
+      "height": 256,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 256
+      },
+      "kind": "waterwheel",
+      "behavior": {
+        "kind": "waterwheel",
+        "hits": 2
+      },
+      "state": "idle",
+      "effect": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 256,
+        "height": 240
+      },
+      "hint": "Conserva Agua: cruza el lago y dispara dos veces a la rueda."
+    },
+    {
+      "id": "lake-warning",
+      "type": "label",
+      "asset": null,
+      "x": 80,
+      "y": 290,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "AGUA → LAGO\nLas otras formas reinician al tocar el agua."
+    },
+    {
+      "id": "lake-route",
+      "type": "label",
+      "asset": null,
+      "x": 850,
+      "y": 300,
+      "width": 440,
+      "height": 72,
+      "rotation": 0,
+      "visible": true,
+      "layer": 1,
+      "collider": {
+        "enabled": false,
+        "x": 0,
+        "y": 0,
+        "width": 440,
+        "height": 72
+      },
+      "text": "Con Agua puedes caminar por la superficie.\nAl otro lado: rueda ×2 → portal."
+    },
+    {
+      "id": "lake-reward",
+      "type": "coin",
+      "asset": "coin",
+      "x": 1440,
+      "y": 530,
+      "width": 40,
+      "height": 40,
+      "rotation": 0,
+      "visible": true,
+      "layer": 3,
+      "collider": {
+        "enabled": true,
+        "x": 0,
+        "y": 0,
+        "width": 40,
+        "height": 40
+      },
+      "value": 5
+    },
+    {
+      "id": "exit",
+      "type": "exit",
+      "asset": "portal",
+      "x": 2212.5,
+      "y": 374,
+      "width": 255,
+      "height": 276,
+      "rotation": 0,
+      "visible": true,
+      "layer": -2,
+      "collider": {
+        "enabled": true,
+        "x": 62.5,
+        "y": 273,
+        "width": 130,
+        "height": 6
+      },
+      "requires": ["lake-wheel"]
+    }
+  ]
+}

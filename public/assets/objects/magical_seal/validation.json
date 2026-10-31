@@ -1,0 +1,358 @@
+{
+  "dimensions": {
+    "width": 512,
+    "height": 1024
+  },
+  "counts": {
+    "idle": 8,
+    "break": 10,
+    "activate": 8
+  },
+  "allFramesSameDimensions": true,
+  "allFramesHaveRealAlpha": true,
+  "outsideSilhouettePixels": 0,
+  "idleSupportIdentical": true,
+  "idleFrameHashes": [
+    "84e506bd61dfc5893a505fc5d3cf8f1388aea0dbceeb21a5ebe81145a00761db",
+    "f35493f4643402bb5fc6c33af819a4835ad8e728989a1682cd3f6fe726c60c79",
+    "9b051deb84aa76a14971431034c7c83c4289fdc22346a906805132005ff983e8",
+    "75e0aa826aa583d942c520c922fe7e6757809aef6605c7a7c0081caa3918580c",
+    "31345c8d69465d6a1f280e46a7f8a7262db0a39cff9320f7abb59723c788424a",
+    "5854ede9dea13e927084377ded52848a27a55279bd3f742c5c826bc87922228a",
+    "e6e79f525a4f72e87ad2402b3aa223e14ecd8dc1e75da0ca9e1cff239ab2eb30",
+    "8f1a5b63084e07a131998d188b56ab185f455ed2d3e0b77d03ccd8d734a98496"
+  ],
+  "idleTransitions": [
+    4.117040727654487,
+    5.533720010871455,
+    1.5107998604869195,
+    6.338956582313519,
+    5.850471582599706,
+    1.9261308296035893,
+    5.71523128771321,
+    4.0832017524589155
+  ],
+  "frameStats": {
+    "idle": [
+      {
+        "frame": 1,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 62448305,
+        "maxAlpha": 140,
+        "outsideMaskPixels": 0,
+        "sha256": "4a8b5114b37cd64256bad7b62ec15a450740371d7b5bd0bd84a5216a7288f28e"
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 64642983,
+        "maxAlpha": 144,
+        "outsideMaskPixels": 0,
+        "sha256": "dbe88cc53506ce81848660a40f7922d6206ca7840d36403f7ab31814b9f5c847"
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 65145593,
+        "maxAlpha": 146,
+        "outsideMaskPixels": 0,
+        "sha256": "affe3d53706604df8c6cea0c110c2e6ab3d50c46e298ddb2abeff0ee48a0d305"
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 64629866,
+        "maxAlpha": 144,
+        "outsideMaskPixels": 0,
+        "sha256": "4a3daf9876c82d94f272839c62535cdc1eca3bfc2d73efee603a90ad7c32f4d2"
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 62448985,
+        "maxAlpha": 140,
+        "outsideMaskPixels": 0,
+        "sha256": "48df75b90558c7b0de0fd0d88b37c1c73dc735cdd8ed58cd47f27cadc3fdf512"
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 60586774,
+        "maxAlpha": 135,
+        "outsideMaskPixels": 0,
+        "sha256": "c9ced47a15e2fb3b91e630d9a0d2acdeb5b1cc9b2eab4cb200657243d9901e3a"
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 59688594,
+        "maxAlpha": 133,
+        "outsideMaskPixels": 0,
+        "sha256": "06c03c4555089f96ebba95c53ba805dd19d9845d8e3094706451f84861cd07c1"
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 60600502,
+        "maxAlpha": 135,
+        "outsideMaskPixels": 0,
+        "sha256": "a5d7f158a9268a0609336d88ab1a42d28c6e2755533ae5103f6c0715bcdc98ef"
+      }
+    ],
+    "break": [
+      {
+        "frame": 1,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 62448305,
+        "maxAlpha": 140,
+        "outsideMaskPixels": 0,
+        "sha256": "4a8b5114b37cd64256bad7b62ec15a450740371d7b5bd0bd84a5216a7288f28e"
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 66938147,
+        "maxAlpha": 150,
+        "outsideMaskPixels": 0,
+        "sha256": "dcab9f966615df029d0ae73e039a73c26ed80db90d8187724153674f40a105e6"
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 71426086,
+        "maxAlpha": 159,
+        "outsideMaskPixels": 0,
+        "sha256": "d31d95bfadc2f25ccce7d0ed44d0d6730103f6a6cd44ae94fdd765830feddc27"
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 73672919,
+        "maxAlpha": 164,
+        "outsideMaskPixels": 0,
+        "sha256": "7ac57017256e956177966b4d0c6101ace704f0494c7a884a7b80936f920d6500"
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 450255,
+        "partialPixels": 450255,
+        "alphaMass": 57838687,
+        "maxAlpha": 158,
+        "outsideMaskPixels": 0,
+        "sha256": "e8335f655883c198aa5c7eb879d86e2ebf8272d2572615c2b4db6b6358763a0e"
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 446800,
+        "partialPixels": 446800,
+        "alphaMass": 36184415,
+        "maxAlpha": 147,
+        "outsideMaskPixels": 0,
+        "sha256": "a6b1296999a410ede7d5bcfdf1d07272a68c348ba328815951467cbec09e69a7"
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 247986,
+        "partialPixels": 247986,
+        "alphaMass": 15793048,
+        "maxAlpha": 127,
+        "outsideMaskPixels": 0,
+        "sha256": "555cee3e1adc3c9d8294996e6e0ecc6d13b2841fda89627e04558e6b795ae9bf"
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 148160,
+        "partialPixels": 148160,
+        "alphaMass": 2816649,
+        "maxAlpha": 99,
+        "outsideMaskPixels": 0,
+        "sha256": "4115b511e473d2d718e23eadc121c7ae2d7d6dca333fed91fd47bc4920dd9575"
+      },
+      {
+        "frame": 9,
+        "visiblePixels": 8324,
+        "partialPixels": 8324,
+        "alphaMass": 71986,
+        "maxAlpha": 62,
+        "outsideMaskPixels": 0,
+        "sha256": "27bf2649fcc4643ea64236cd868c191ac0206d72e55aed987f4c25f14d43e0a2"
+      },
+      {
+        "frame": 10,
+        "visiblePixels": 0,
+        "partialPixels": 0,
+        "alphaMass": 0,
+        "maxAlpha": 0,
+        "outsideMaskPixels": 0,
+        "sha256": "c32f195bb4628f5a3ee4fb4a3f8a01ae716474a3f202321cb9575ec23e252cf6"
+      }
+    ],
+    "activate": [
+      {
+        "frame": 1,
+        "visiblePixels": 0,
+        "partialPixels": 0,
+        "alphaMass": 0,
+        "maxAlpha": 0,
+        "outsideMaskPixels": 0,
+        "sha256": "c32f195bb4628f5a3ee4fb4a3f8a01ae716474a3f202321cb9575ec23e252cf6"
+      },
+      {
+        "frame": 2,
+        "visiblePixels": 8324,
+        "partialPixels": 8324,
+        "alphaMass": 71986,
+        "maxAlpha": 62,
+        "outsideMaskPixels": 0,
+        "sha256": "27bf2649fcc4643ea64236cd868c191ac0206d72e55aed987f4c25f14d43e0a2"
+      },
+      {
+        "frame": 3,
+        "visiblePixels": 148160,
+        "partialPixels": 148160,
+        "alphaMass": 2816649,
+        "maxAlpha": 99,
+        "outsideMaskPixels": 0,
+        "sha256": "4115b511e473d2d718e23eadc121c7ae2d7d6dca333fed91fd47bc4920dd9575"
+      },
+      {
+        "frame": 4,
+        "visiblePixels": 247986,
+        "partialPixels": 247986,
+        "alphaMass": 15793048,
+        "maxAlpha": 127,
+        "outsideMaskPixels": 0,
+        "sha256": "555cee3e1adc3c9d8294996e6e0ecc6d13b2841fda89627e04558e6b795ae9bf"
+      },
+      {
+        "frame": 5,
+        "visiblePixels": 446800,
+        "partialPixels": 446800,
+        "alphaMass": 36184415,
+        "maxAlpha": 147,
+        "outsideMaskPixels": 0,
+        "sha256": "a6b1296999a410ede7d5bcfdf1d07272a68c348ba328815951467cbec09e69a7"
+      },
+      {
+        "frame": 6,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 73672919,
+        "maxAlpha": 164,
+        "outsideMaskPixels": 0,
+        "sha256": "7ac57017256e956177966b4d0c6101ace704f0494c7a884a7b80936f920d6500"
+      },
+      {
+        "frame": 7,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 66938147,
+        "maxAlpha": 150,
+        "outsideMaskPixels": 0,
+        "sha256": "dcab9f966615df029d0ae73e039a73c26ed80db90d8187724153674f40a105e6"
+      },
+      {
+        "frame": 8,
+        "visiblePixels": 450389,
+        "partialPixels": 450389,
+        "alphaMass": 62448305,
+        "maxAlpha": 140,
+        "outsideMaskPixels": 0,
+        "sha256": "4a8b5114b37cd64256bad7b62ec15a450740371d7b5bd0bd84a5216a7288f28e"
+      }
+    ]
+  },
+  "endpoints": {
+    "breakFirstEqualsIdle": true,
+    "breakLastCompletelyTransparent": true,
+    "activateFirstCompletelyTransparent": true,
+    "activateLastExactlyEqualsIdle": true
+  },
+  "referenceFit": {
+    "manuallyTracedInsideOpening": true,
+    "stoneBorderCheckedVisually": true,
+    "floorContactVerified": false,
+    "floorLimitation": "The floor is below / cut by the screenshot bottom; baseline is provisional.",
+    "changedPixelsOutsideSprite": 0,
+    "visualReview": "Overlay and all-state contact sheet inspected: rounded top and vertical sides stay inside the existing opening; surrounding masonry is visible. Floor contact below the cropped image remains unverified."
+  },
+  "idleLoop": {
+    "method": "Periodic cosine-eased interpolation of registered painted interior poses; fixed contour and no temporal reset.",
+    "seamDelta": 4.0832017524589155,
+    "medianAdjacentDelta": 4.825380369262971,
+    "seamToMedianRatio": 0.8461927226438698,
+    "seamIsNotLargest": true,
+    "perceptualReview": "All eight registered poses and the cycle contact sheet inspected. Contour is stable. The last-to-first premultiplied change is 0.846 times the median adjacent change, with periodic easing and no reset."
+  },
+  "atlasChecks": {
+    "SEALED_IDLE": {
+      "width": 2048,
+      "height": 2048,
+      "frames": 8,
+      "emptyCellsOkay": true,
+      "maxVisibleChannelRoundoff": 0,
+      "pixelIdenticalToIndividualFrames": true
+    },
+    "SEAL_BREAK": {
+      "width": 2560,
+      "height": 2048,
+      "frames": 10,
+      "emptyCellsOkay": true,
+      "maxVisibleChannelRoundoff": 0,
+      "pixelIdenticalToIndividualFrames": true
+    },
+    "SEAL_ACTIVATE": {
+      "width": 2048,
+      "height": 2048,
+      "frames": 8,
+      "emptyCellsOkay": true,
+      "maxVisibleChannelRoundoff": 0,
+      "pixelIdenticalToIndividualFrames": true
+    }
+  },
+  "previewChecks": {
+    "idle": {
+      "frameCount": 8,
+      "width": 512,
+      "height": 1024,
+      "loop": 0,
+      "durationMs": 1333,
+      "hasAlpha": true
+    },
+    "break": {
+      "frameCount": 10,
+      "width": 512,
+      "height": 1024,
+      "loop": 1,
+      "durationMs": 1000,
+      "hasAlpha": true
+    },
+    "activate": {
+      "frameCount": 8,
+      "width": 512,
+      "height": 1024,
+      "loop": 1,
+      "durationMs": 1000,
+      "hasAlpha": true
+    }
+  },
+  "exportInventory": {
+    "pngCount": 56,
+    "mainFrames": 26,
+    "auxiliaryFrames": 16,
+    "mainSpritesheets": 3,
+    "auxiliarySpritesheets": 4
+  }
+}

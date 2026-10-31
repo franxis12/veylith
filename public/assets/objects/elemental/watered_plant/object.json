@@ -1,0 +1,33 @@
+{
+  "id": "watered_plant",
+  "label": "Planta regable",
+  "category": "elemental",
+  "width": 512,
+  "height": 512,
+  "anchor": [
+    256,
+    480
+  ],
+  "notes": "Six drawn growth stages. Fully grown leaves provide three optional one-way steps; see collider hints.",
+  "states": {
+    "seed": {
+      "layers": [
+        "assets/objects/elemental/watered_plant/plant_seed.png"
+      ]
+    },
+    "fully_grown": {
+      "layers": [
+        "assets/objects/elemental/watered_plant/plant_fully_grown.png"
+      ]
+    },
+    "plant_growing": {
+      "animation": "plant_growing"
+    }
+  },
+  "components": [
+    "assets/objects/elemental/watered_plant/plant_seed.png",
+    "assets/objects/elemental/watered_plant/plant_fully_grown.png"
+  ],
+  "directory": "assets/objects/elemental/watered_plant",
+  "thumbnail": "assets/objects/elemental/watered_plant/preview.png"
+}

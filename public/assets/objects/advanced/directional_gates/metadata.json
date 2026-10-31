@@ -1,0 +1,225 @@
+{
+  "id": "directional_gates",
+  "label": "Compuertas direccionales",
+  "directory": "assets/objects/advanced/directional_gates",
+  "components": [
+    {
+      "id": "gate_frame",
+      "path": "assets/objects/advanced/directional_gates/static/gate_frame.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Draw in front of the moving panel. Guide aperture approx [166,147,180,330]."
+    },
+    {
+      "id": "gate_panel",
+      "path": "assets/objects/advanced/directional_gates/static/gate_panel.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Complete independent leaf. Opening frames conceal it behind the fixed lintel."
+    },
+    {
+      "id": "gate_direction_right",
+      "path": "assets/objects/advanced/directional_gates/static/gate_direction_right.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        128
+      ],
+      "origin": [
+        0.5,
+        0.5
+      ],
+      "note": "Allowed passage points right. Mount separately, e.g. scaled to 64×32 at [256,93] on the frame."
+    },
+    {
+      "id": "gate_panel_closed",
+      "path": "assets/objects/advanced/directional_gates/static/gate_panel_closed.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": ""
+    },
+    {
+      "id": "gate_panel_open",
+      "path": "assets/objects/advanced/directional_gates/static/gate_panel_open.png",
+      "width": 512,
+      "height": 512,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "note": "Intentionally transparent: panel fully retracted behind lintel."
+    },
+    {
+      "id": "gate_locked_indicator",
+      "path": "assets/objects/advanced/directional_gates/static/gate_locked_indicator.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        224
+      ],
+      "origin": [
+        0.5,
+        0.875
+      ],
+      "note": ""
+    },
+    {
+      "id": "gate_unlocked_indicator",
+      "path": "assets/objects/advanced/directional_gates/static/gate_unlocked_indicator.png",
+      "width": 256,
+      "height": 256,
+      "anchor": [
+        128,
+        224
+      ],
+      "origin": [
+        0.5,
+        0.875
+      ],
+      "note": ""
+    }
+  ],
+  "animations": [
+    {
+      "id": "gate_open",
+      "family": "directional_gates",
+      "frames": [
+        "assets/objects/advanced/directional_gates/frames/gate_open_01.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_02.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_03.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_04.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_05.png",
+        "assets/objects/advanced/directional_gates/frames/gate_open_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/directional_gates/spritesheets/gate_open_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/advanced/directional_gates/static/gate_frame.png"
+      ],
+      "note": "Independent panel layer, masked at y=147 to simulate occlusion behind the lintel. Frame 6 fully transparent; static full leaf is also provided.",
+      "next": "gate_panel_open",
+      "preview": "assets/objects/advanced/directional_gates/previews/gate_open.gif"
+    },
+    {
+      "id": "gate_close",
+      "family": "directional_gates",
+      "frames": [
+        "assets/objects/advanced/directional_gates/frames/gate_close_01.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_02.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_03.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_04.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_05.png",
+        "assets/objects/advanced/directional_gates/frames/gate_close_06.png"
+      ],
+      "spritesheet": "assets/objects/advanced/directional_gates/spritesheets/gate_close_spritesheet.png",
+      "frameWidth": 512,
+      "frameHeight": 512,
+      "columns": 6,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        256,
+        480
+      ],
+      "origin": [
+        0.5,
+        0.9375
+      ],
+      "backLayers": [],
+      "frontLayers": [
+        "assets/objects/advanced/directional_gates/static/gate_frame.png"
+      ],
+      "note": "Reverse of opening with identical registration.",
+      "next": "gate_panel_closed",
+      "preview": "assets/objects/advanced/directional_gates/previews/gate_close.gif"
+    },
+    {
+      "id": "gate_unlock",
+      "family": "directional_gates",
+      "frames": [
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_01.png",
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_02.png",
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_03.png",
+        "assets/objects/advanced/directional_gates/frames/gate_unlock_04.png"
+      ],
+      "spritesheet": "assets/objects/advanced/directional_gates/spritesheets/gate_unlock_spritesheet.png",
+      "frameWidth": 256,
+      "frameHeight": 256,
+      "columns": 4,
+      "rows": 1,
+      "spacing": 0,
+      "padding": 0,
+      "frameRate": 12,
+      "repeat": 0,
+      "anchor": [
+        128,
+        224
+      ],
+      "origin": [
+        0.5,
+        0.875
+      ],
+      "backLayers": [],
+      "frontLayers": [],
+      "note": "The same lock body remains fixed while its shackle lifts and swings. Red gem changes to green.",
+      "next": "gate_unlocked_indicator",
+      "preview": "assets/objects/advanced/directional_gates/previews/gate_unlock.gif"
+    }
+  ],
+  "assemblyNotes": [
+    "Fixed frame, full panel, panel-only animations, direction arrow and lock indicator are separate. All gate panel/frame layers share [256,480].",
+    "Allowed passage is rightward. This is a visual indicator only; collision rules and triggers are not included.",
+    "Retracting pixels are intentionally hidden at the lintel, not clipped by the canvas. The full unmasked panel is included for other mount arrangements."
+  ],
+  "thumbnail": "assets/objects/advanced/directional_gates/preview.png",
+  "overviewPreview": "assets/objects/advanced/directional_gates/previews/family_overview.gif"
+}
