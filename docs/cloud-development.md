@@ -102,6 +102,8 @@ Mantén Vite ejecutándose en otra terminal, en el mismo entorno que el navegado
 npm run dev -- --host 127.0.0.1 --port 5187 --strictPort
 ```
 
+Termina antes las comprobaciones de Vitest/build; evita ejecutarlas mientras arranca ese mismo servidor. Si el primer arranque devuelve `504 (Outdated Optimize Dep)`, detén Vite y vuelve a iniciarlo con el mismo comando añadiendo `--force`, y repite la prueba en un contexto nuevo. No aceptes un recorrido con errores de carga.
+
 Después ejecuta los recorridos **de uno en uno**:
 
 ```sh
@@ -161,3 +163,7 @@ npm run ios:open
 `cap:sync` genera la copia web y la configuración nativa ignoradas por Git. El proyecto usa Swift Package Manager; no sustituyas su estructura por otra ni ejecutes `cap add ios` sobre el proyecto existente. Configura firma en el entorno autorizado sin guardar certificados, perfiles, claves ni estado personal de Xcode en el repo.
 
 El entorno original tenía la licencia de Xcode pendiente. Eso no impide construir la web y no demuestra un problema del juego. Las pruebas web no certifican memoria GPU, rendimiento térmico ni manejo táctil en dispositivo físico.
+
+## Verificación de este arranque
+
+La guía se comprobó desde un clon nuevo e independiente, con `npm ci` y Playwright 1.62.1/Chromium instalados desde cero, en macOS. Pasaron typecheck, lint, build, formato y ambas auditorías; Vitest reprodujo exactamente los 574 aciertos y tres fallos descritos. En ese clon también pasaron la presentación de la puerta, una victoria y reinicio en `forest-2`, y guardar/cargar/playtest/reinicio del editor en `forest-1`, sin errores de navegador. Este último recorrido comprueba el editor, no una solución del nivel 1. Los pasos específicos de Linux y la compilación nativa no se ejecutaron en esta comprobación.
