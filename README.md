@@ -26,6 +26,16 @@ Los assets están incluidos en Git; **no hace falta Git LFS ni copiar archivos d
 
 ## Estado real de esta entrega
 
+### Preparación iOS y Game Center (1 de noviembre de 2026)
+
+La rama `Dev` incorpora el identificador `com.francismartinez.veylith`, el puente nativo de Game Center, diez clasificaciones por tiempo y dos logros propuestos, interfaz opcional de conexión, enlaces de privacidad/soporte y branding nativo de Veylith. Los resultados solo se envían desde intentos iniciados por el mismo jugador autenticado; el progreso sigue siendo local y no se sincroniza en la nube. Los registros de Apple y las páginas web todavía requieren configuración/verificación externa.
+
+Lee el [comportamiento y contrato con la web](docs/game-center.md), la [configuración nativa y de App Store Connect](docs/game-center-ios.md) y la [lista de publicación iOS](docs/ios-release-checklist.md). Esta implementación no certifica compilación nativa, firma, Game Center real ni pruebas en iPhone: el entorno de trabajo es Linux. Francis revisará los niveles por separado; sus archivos no se han modificado en esta preparación.
+
+La suite actual reproduce **590 pruebas correctas y los mismos 3 fallos conocidos** descritos abajo. No se han sustituido hashes ni omitido comprobaciones para ocultarlos.
+
+### Evidencia anterior de la campaña
+
 La comprobación del 31 de octubre de 2026 pasó typecheck, lint, build, formato y ambas auditorías de assets. La suite tiene **574 pruebas correctas y 3 fallos pendientes**:
 
 - Una prueba de integridad de `forest-1`: hay colliders fuera del mundo, inicio intersectando terreno y salida sin soporte válido.

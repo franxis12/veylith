@@ -152,6 +152,8 @@ Al terminar una tarea, informa archivos cambiados, validaciones aprobadas/fallid
 
 Linux puede instalar dependencias, desarrollar web, editar mapas, ejecutar Vitest y probar Chromium. La compilación, simulador, firma y pruebas de iPhone requieren un Mac con Xcode compatible con Capacitor 8. Consulta los requisitos del entorno nativo instalado antes de actualizar Xcode o Capacitor.
 
+El identificador de la app es `com.francismartinez.veylith`, basado en el dominio personal `francismartinez.com`. Está definido en `src/app/config.ts` (usado por Capacitor) y en las configuraciones Debug/Release de Xcode. Mantén ambos alineados. El subdominio web `veylith.francismartinez.com` no cambia este identificador. Este ajuste local no registra el App ID en Apple ni configura firma o App Store Connect; esos pasos siguen pendientes de verificación.
+
 En un Mac preparado:
 
 ```sh

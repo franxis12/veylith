@@ -1,7 +1,7 @@
 export const APP_CONFIG = {
   name: 'Veylith',
-  // Replace here AND in Xcode's bundle identifier before distribution.
-  id: 'com.example.elements',
+  // Keep this aligned with both Xcode build configurations.
+  id: 'com.francismartinez.veylith',
   orientation: 'landscape',
   initialScreen: 'menu',
   audioEnabledByDefault: true,

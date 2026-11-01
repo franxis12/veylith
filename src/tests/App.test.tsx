@@ -4,6 +4,8 @@ import { createRoot } from 'react-dom/client';
 import type { Root } from 'react-dom/client';
 import { afterEach, beforeEach, expect, it, vi } from 'vitest';
 import { App } from '../app/App';
+import { gameCenter } from '../services/gameCenter/gameCenter';
+import type { GameCenterSnapshot } from '../services/gameCenter/types';
 import { useAppStore } from '../stores/appStore';
 import { useProgressStore } from '../stores/progressStore';
 import { emptyProgress } from '../services/progress/progress';
@@ -187,7 +189,9 @@ it('returns keyboard focus from menu options and traps Tab inside them', async (
   await click('Options');
   const dialog = host.querySelector<HTMLElement>('[role="dialog"]')!;
   const controls = [
-    ...dialog.querySelectorAll<HTMLElement>('button, input, select'),
+    ...dialog.querySelectorAll<HTMLElement>(
+      'button:not(:disabled), input:not(:disabled), select:not(:disabled), a[href]',
+    ),
   ];
   controls.at(-1)!.focus();
   await act(() =>
@@ -217,4 +221,81 @@ it('does not swallow a HUD restart when active button controls unmount', async (
   expect(options.run?.getSnapshot().phase).toBe('loading');
   expect(options.input?.read().restartPressed).toBe(true);
   expect(options.input?.read().restartPressed).toBe(false);
+});
+
+it('provides accessible external privacy/support links without replacing the game', async () => {
+  await mount();
+  await click('Options');
+  const links = [
+    ...host.querySelectorAll<HTMLAnchorElement>('.release-links a'),
+  ];
+  expect(links.map((link) => link.href)).toEqual([
+    'https://veylith.francismartinez.com/privacy',
+    'https://veylith.francismartinez.com/support',
+  ]);
+  expect(
+    links.every(
+      (link) => link.target === '_blank' && link.rel.includes('noopener'),
+    ),
+  ).toBe(true);
+  expect(host.textContent).toContain(
+    'Game Center is available in the iPhone app.',
+  );
+});
+
+it('pauses native overlay gameplay and never resumes automatically after dashboard dismissal', async () => {
+  let snapshot: GameCenterSnapshot = {
+    available: true,
+    authenticated: true,
+    playerId: 'A',
+    busy: false,
+    uiActive: false,
+    notice: 'none',
+  };
+  const listeners = new Set<() => void>();
+  vi.spyOn(gameCenter, 'getSnapshot').mockImplementation(() => snapshot);
+  vi.spyOn(gameCenter, 'subscribe').mockImplementation((listener) => {
+    listeners.add(listener);
+    return () => {
+      listeners.delete(listener);
+    };
+  });
+  await mount();
+  await click('Play');
+  now = 1000;
+  await click('Options');
+  expect(options.run?.getSnapshot().phase).toBe('paused');
+  await act(() => {
+    snapshot = { ...snapshot, uiActive: true };
+    listeners.forEach((listener) => listener());
+  });
+  now = 12000;
+  await act(() => {
+    snapshot = { ...snapshot, uiActive: false };
+    listeners.forEach((listener) => listener());
+  });
+  await click('Close options');
+  expect(options.run?.getSnapshot().phase).toBe('paused');
+  await click('Continue');
+  expect(options.run?.getSnapshot().elapsedMs).toBe(1000);
+});
+
+it('shows bundled licenses as inert text inside options and keeps the focus trap usable', async () => {
+  vi.spyOn(globalThis, 'fetch').mockResolvedValue(
+    new Response('MIT License\n<script>not executed</script>'),
+  );
+  await mount();
+  await click('Options');
+  await click('Third-party licenses');
+  await act(() => Promise.resolve());
+  expect(host.querySelector('.license-notices pre')?.textContent).toContain(
+    '<script>not executed</script>',
+  );
+  expect(host.querySelector('.license-notices script')).toBeNull();
+  expect(globalThis.fetch).toHaveBeenCalledWith(
+    `${import.meta.env.BASE_URL}third-party-notices.txt`,
+    expect.objectContaining({ signal: expect.any(AbortSignal) }),
+  );
+  await click('Third-party licenses');
+  expect(host.querySelector('.license-notices pre')).toBeNull();
 });

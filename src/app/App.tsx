@@ -1,3 +1,6 @@
+import { gameCenter } from '../services/gameCenter/gameCenter';
+import { bindRankedRun } from '../services/gameCenter/bindRun';
+import { observeAppActivity } from '../services/lifecycle/observeAppActivity';
 import { uiAudio } from '../services/audio/gameAudio';
 import { OptionsMenu } from '../components/ui/OptionsMenu';
 import { useTranslation } from '../services/i18n/useTranslation';
@@ -20,7 +23,7 @@ import '../components/ui/ui.css';
 
 type Session = ReturnType<typeof createSession>;
 function createSession(level: LevelId) {
-  return {
+  const session = {
     level,
     actions: new ActionState(),
     progress: new LevelProgress(),
@@ -33,6 +36,8 @@ function createSession(level: LevelId) {
         : undefined,
     ),
   };
+  if (isCampaignLevel(level)) bindRankedRun(session.run, level, gameCenter);
+  return session;
 }
 function initialSession(): Session | null {
   const params = new URLSearchParams(window.location.search);
@@ -60,6 +65,23 @@ export function App() {
   const saved = useProgressStore((state) => state.progress);
   const storageStatus = useProgressStore((state) => state.storageStatus);
   const [session, setSession] = useState(initialSession);
+  const gameCenterState = useSyncExternalStore(
+    gameCenter.subscribe,
+    gameCenter.getSnapshot,
+  );
+  useEffect(() => {
+    void gameCenter.initialize();
+    return observeAppActivity((active) => {
+      if (active) void gameCenter.refresh();
+    });
+  }, []);
+  useEffect(() => {
+    if (!gameCenterState.uiActive || !session) return;
+    session.actions.reset();
+    session.run.pause();
+    // Native overlays never resume a run automatically.
+    resumeAfterOptions.current = false;
+  }, [gameCenterState.uiActive, session]);
   const [screen, setScreen] = useState<'menu' | 'levels'>('menu');
   const [generation, setGeneration] = useState(0);
   const [preview] = useState(

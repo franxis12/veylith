@@ -1,5 +1,33 @@
 /** Spanish source copy remains available; English is the initial locale. */
 export const english = {
+  'Licencias de terceros': 'Third-party licenses',
+  'Cargando licencias…': 'Loading licenses…',
+  'No se pudieron cargar las licencias. Cierra y vuelve a abrir esta sección.':
+    'Licenses could not be loaded. Close and reopen this section.',
+  'Game Center': 'Game Center',
+  'Conectando…': 'Connecting…',
+  'Revisar Game Center': 'Check Game Center',
+  'Si no aparece el inicio de sesión, abre Ajustes de iOS > Game Center y vuelve al juego.':
+    'If sign-in does not appear, open iOS Settings > Game Center, then return to the game.',
+  'Conectado como {name}': 'Signed in as {name}',
+  'Sin conexión a Game Center. Puedes seguir jugando.':
+    'Not signed in to Game Center. You can keep playing.',
+  'Game Center está disponible en la app para iPhone.':
+    'Game Center is available in the iPhone app.',
+  'No se pudo abrir Game Center. Revisa la conexión y tu sesión en Ajustes de iOS.':
+    'Game Center could not be opened. Check your connection and sign-in in iOS Settings.',
+  'El resultado no se pudo enviar. Puedes seguir jugando; vuelve a completar el nivel con conexión para enviar un tiempo.':
+    'The result could not be sent. You can keep playing; complete the level again while connected to submit a time.',
+  'Resultado enviado a Game Center.': 'Result sent to Game Center.',
+  Clasificaciones: 'Leaderboards',
+  Logros: 'Achievements',
+  'Los tiempos y logros se envían solo de partidas iniciadas con Game Center conectado. El progreso del juego se guarda únicamente en este dispositivo.':
+    'Times and achievements are sent only for runs started while signed in to Game Center. Game progress is saved only on this device.',
+  'Privacidad y soporte': 'Privacy and support',
+  'Política de privacidad': 'Privacy policy',
+  Soporte: 'Support',
+  'Los enlaces se abren en el navegador.': 'Links open in your browser.',
+
   'Desliza para explorar el mapa': 'Swipe to explore the map',
   'Mantén Acción / E para girar el reflector':
     'Hold Action / E to rotate the reflector',

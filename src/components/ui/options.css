@@ -156,3 +156,38 @@
     grid-template-columns: 1fr;
   }
 }
+
+.options-grid .game-center-settings,
+.options-grid .release-links {
+  grid-column: 1 / -1;
+}
+.game-center-actions,
+.release-links nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+.game-center-actions button:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+.release-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #ffe0a1;
+  padding: 8px 12px;
+  border: 1px solid #79948d;
+  border-radius: 9px;
+}
+.license-notices {
+  margin-top: 12px;
+}
+.license-notices pre {
+  max-height: 200px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 12px;
+}

@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it, vi } from 'vitest';
 import capacitorConfig from '../../capacitor.config';
 import { APP_CONFIG } from '../app/config';
@@ -14,9 +15,21 @@ describe('application configuration', () => {
   it('keeps native identity and built web assets aligned', () => {
     expect(capacitorConfig.appName).toBe(APP_CONFIG.name);
     expect(capacitorConfig.appId).toBe(APP_CONFIG.id);
+    expect(APP_CONFIG.id).toBe('com.francismartinez.veylith');
     expect(APP_CONFIG.id).toMatch(/^[a-z][\w]*(\.[a-z][\w]*){2,}$/);
     expect(capacitorConfig.webDir).toBe('dist');
     expect(APP_CONFIG.orientation).toBe('landscape');
+  });
+
+  it('uses the same bundle identifier in both Xcode build configurations', () => {
+    const project = readFileSync(
+      'ios/App/App.xcodeproj/project.pbxproj',
+      'utf8',
+    );
+    const identifiers = [
+      ...project.matchAll(/PRODUCT_BUNDLE_IDENTIFIER = ([^;]+);/g),
+    ].map((match) => match[1]);
+    expect(identifiers).toEqual([APP_CONFIG.id, APP_CONFIG.id]);
   });
 
   it('lets CSS own safe areas without native scrolling or a development server', () => {

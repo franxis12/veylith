@@ -1,3 +1,5 @@
+import { GameCenterSettings } from './GameCenterSettings';
+import { ReleaseLinks } from './ReleaseLinks';
 import { Art, ArtButton } from './Art';
 import { UI } from './assets';
 import { useEffect, useRef, useState } from 'react';
@@ -58,7 +60,7 @@ export function OptionsMenu({ onClose }: { onClose: () => void }) {
           if (event.key !== 'Tab') return;
           const controls = [
             ...event.currentTarget.querySelectorAll<HTMLElement>(
-              'button, input, select',
+              'button:not(:disabled), input:not(:disabled), select:not(:disabled), a[href], [tabindex="0"]',
             ),
           ];
           const first = controls[0],
@@ -202,6 +204,8 @@ export function OptionsMenu({ onClose }: { onClose: () => void }) {
               <li>{t('Pausa: Esc · Reiniciar: R')}</li>
             </ul>
           </section>
+          <GameCenterSettings />
+          <ReleaseLinks />
         </div>
       </div>
     </div>
